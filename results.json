@@ -1,0 +1,176 @@
+{
+  "baseline": {
+    "model": {
+      "hidden": [
+        32
+      ],
+      "act": "sigmoid"
+    },
+    "opt": {
+      "opt_name": "sgd",
+      "lr": 0.1
+    },
+    "acc": 22.22,
+    "time_s": 0.09
+  },
+  "exp1": {
+    "model": {
+      "hidden": [
+        32
+      ],
+      "act": "relu"
+    },
+    "opt": {
+      "opt_name": "sgd",
+      "lr": 0.1
+    },
+    "acc": 47.5,
+    "time_s": 0.082
+  },
+  "exp2": {
+    "model": {
+      "hidden": [
+        128,
+        128
+      ],
+      "act": "sigmoid"
+    },
+    "opt": {
+      "opt_name": "sgd",
+      "lr": 0.1
+    },
+    "acc": 7.22,
+    "time_s": 0.22
+  },
+  "exp3": {
+    "model": {
+      "hidden": [
+        32
+      ],
+      "act": "sigmoid"
+    },
+    "opt": {
+      "opt_name": "adam",
+      "lr": 0.01
+    },
+    "acc": 82.22,
+    "time_s": 0.112
+  },
+  "exp4": {
+    "model": {
+      "hidden": [
+        32
+      ],
+      "act": "sigmoid"
+    },
+    "opt": {
+      "opt_name": "sgd",
+      "lr": 0.01
+    },
+    "acc": 10.0,
+    "time_s": 0.097
+  },
+  "exp5": {
+    "model": {
+      "hidden": [
+        32
+      ],
+      "act": "sigmoid"
+    },
+    "opt": {
+      "opt_name": "sgd",
+      "lr": 0.1,
+      "wd": 0.0001
+    },
+    "acc": 22.22,
+    "time_s": 0.088
+  },
+  "exp6": {
+    "model": {
+      "hidden": [
+        32
+      ],
+      "act": "sigmoid",
+      "dropout": 0.2
+    },
+    "opt": {
+      "opt_name": "sgd",
+      "lr": 0.1
+    },
+    "acc": 20.0,
+    "time_s": 0.157
+  },
+  "exp7": {
+    "model": {
+      "hidden": [
+        32
+      ],
+      "act": "sigmoid",
+      "use_bn": true
+    },
+    "opt": {
+      "opt_name": "sgd",
+      "lr": 0.1
+    },
+    "acc": 79.17,
+    "time_s": 0.15
+  },
+  "lr_too_big": {
+    "acc": 36.94,
+    "time_s": 0.094
+  },
+  "lr_scan": {
+    "0.1": {
+      "acc": 22.22,
+      "time_s": 0.137
+    },
+    "1.0": {
+      "acc": 78.89,
+      "time_s": 0.127
+    },
+    "5.0": {
+      "acc": 64.72,
+      "time_s": 0.09
+    },
+    "10.0": {
+      "acc": 36.94,
+      "time_s": 0.113
+    },
+    "20.0": {
+      "acc": 10.28,
+      "time_s": 0.1
+    }
+  },
+  "exp8": {
+    "model": {
+      "hidden": [
+        128,
+        128
+      ],
+      "act": "relu",
+      "use_bn": true
+    },
+    "opt": {
+      "opt_name": "adam",
+      "lr": 0.001
+    },
+    "runs": [
+      {
+        "seed": 42,
+        "acc": 97.22,
+        "time_s": 0.464
+      },
+      {
+        "seed": 123,
+        "acc": 96.11,
+        "time_s": 0.46
+      },
+      {
+        "seed": 2024,
+        "acc": 95.56,
+        "time_s": 0.383
+      }
+    ],
+    "acc_mean": 96.3
+  }
+}
