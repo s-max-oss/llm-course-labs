@@ -5,7 +5,7 @@
 - 作者：孙驰（2024311281）。
 - 正式运行采用哈尔滨工业大学（深圳）HPC 的单张 NVIDIA A30；支持 CPU 本地复现。
 - AI 协作实际使用 Codex，记录见 [AI_COLLABORATION.md](AI_COLLABORATION.md)。未虚构 TRAE 操作或 DeepSeek 对话。
-- 本目录提供代码、运行说明和实验原始证据；Word/PDF 实验报告待另行填写模板。
+- 已按课程模板完成12页实验报告：[Word](report/2024311281_孙驰_实验作业二.docx) / [PDF](report/2024311281_孙驰_实验作业二.pdf)。封面班级为计算机10班，协作工具据实际记录为 Codex。
 
 ## 已完成的正式结果
 
