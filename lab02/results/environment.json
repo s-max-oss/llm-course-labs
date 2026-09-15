@@ -1,0 +1,19 @@
+{
+  "python": "3.10.20",
+  "platform": "Linux-5.4.0-100-generic-x86_64-with-glibc2.28",
+  "torch": "2.6.0+cu124",
+  "numpy": "1.24.4",
+  "matplotlib": "3.10.9",
+  "device": "cuda",
+  "gpu": "NVIDIA A30",
+  "cuda_runtime": "12.4",
+  "source_sha256": "9a386178af9950c8bd3a7fcba814d2b90f3a678e15ffd540c657eaf4b0a57c67",
+  "threads": 4,
+  "micro_batch": 64,
+  "smoke": false,
+  "data_counts": [
+    2000,
+    200,
+    200
+  ]
+}

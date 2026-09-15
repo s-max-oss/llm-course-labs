@@ -1,0 +1,22 @@
+{
+  "platform": "HIT Shenzhen HPC",
+  "documentation": "http://hpc.hitsz.edu.cn/docs/zh/manual/cluster-login",
+  "job_id": "10044",
+  "job_name": "lab02-convlstm",
+  "partition": "gpu-a30",
+  "node": "gpu4",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:02:24",
+  "allocated_cpus": 4,
+  "allocated_gpus": 1,
+  "gpu": "NVIDIA A30",
+  "gpu_memory_mib": 24576,
+  "driver_version": "570.195.03",
+  "scope": "Includes environment startup, six unit tests, tiny pipeline smoke suite, full suite and figure saving. Per-run JSON timers exclude startup, figures and saving.",
+  "status_source_command": "sacct -j 10044 --format=JobID,JobName,Partition,State,ExitCode,Elapsed,AllocCPUS,AllocTRES -P",
+  "resources_released": true,
+  "environment_probe_job": "10042",
+  "environment_probe_state": "COMPLETED",
+  "environment_probe_elapsed": "00:01:42"
+}

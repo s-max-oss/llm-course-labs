@@ -1,0 +1,112 @@
+gpu4
+name, driver_version, memory.total [MiB]
+NVIDIA A30, 570.195.03, 24576 MiB
+test_ablations_change_exactly_one_variable (test_convlstm.ConvLSTMTests) ... ok
+test_cell_matches_gate_equations (test_convlstm.ConvLSTMTests) ... ok
+test_data_reproducibility_no_clipping_and_independent_splits (test_convlstm.ConvLSTMTests) ... ok
+test_gradient_accumulation_matches_full_batch_including_tail (test_convlstm.ConvLSTMTests) ... ok
+test_parameter_counts (test_convlstm.ConvLSTMTests) ... ok
+test_shapes_temporal_gradient_and_stateless_calls (test_convlstm.ConvLSTMTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.682s
+
+OK
+START baseline {'architecture': 'convlstm', 'hidden': 32, 'kernel': 3, 'layers': 1, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=38433
+baseline epoch 1/1 train=0.0152178 test_MSE=0.0146931 test_MAE=0.0504102 val_MSE=0.0144867 seconds=11.2
+START exp1 {'architecture': 'convlstm', 'hidden': 32, 'kernel': 3, 'layers': 2, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=112289
+exp1 epoch 1/1 train=0.0130827 test_MSE=0.0127389 test_MAE=0.0238391 val_MSE=0.0124935 seconds=0.1
+START exp2 {'architecture': 'convlstm', 'hidden': 64, 'kernel': 3, 'layers': 1, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=150593
+exp2 epoch 1/1 train=0.0123399 test_MSE=0.0120585 test_MAE=0.0144391 val_MSE=0.0117903 seconds=0.1
+START exp3 {'architecture': 'convlstm', 'hidden': 32, 'kernel': 5, 'layers': 1, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=106017
+exp3 epoch 1/1 train=0.0153343 test_MSE=0.0143775 test_MAE=0.0482575 val_MSE=0.0140548 seconds=0.0
+START exp4 {'architecture': 'convlstm', 'hidden': 32, 'kernel': 3, 'layers': 1, 'input_frames': 8, 'loss': 'mse', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=38433
+exp4 epoch 1/1 train=0.0157165 test_MSE=0.0140364 test_MAE=0.0485953 val_MSE=0.0145142 seconds=0.0
+START exp5 {'architecture': 'flatten_lstm', 'hidden': 32, 'kernel': 3, 'layers': 1, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=1575936
+exp5 epoch 1/1 train=0.0140243 test_MSE=0.0140538 test_MAE=0.0462973 val_MSE=0.0136305 seconds=1.4
+START exp6 {'architecture': 'convlstm', 'hidden': 32, 'kernel': 3, 'layers': 1, 'input_frames': 4, 'loss': 'l1', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=38433
+exp6 epoch 1/1 train=0.0584531 test_MSE=0.0146944 test_MAE=0.0504148 val_MSE=0.0144953 seconds=0.3
+START best_run1 {'architecture': 'convlstm', 'hidden': 64, 'kernel': 5, 'layers': 2, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=1236289
+best_run1 epoch 1/1 train=0.0135124 test_MSE=0.0123298 test_MAE=0.0156122 val_MSE=0.0120990 seconds=0.1
+START best_run2 {'architecture': 'convlstm', 'hidden': 64, 'kernel': 5, 'layers': 2, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=1236289
+best_run2 epoch 1/1 train=0.0135124 test_MSE=0.0123298 test_MAE=0.0156122 val_MSE=0.0120990 seconds=0.1
+START best_run3 {'architecture': 'convlstm', 'hidden': 64, 'kernel': 5, 'layers': 2, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 1, 'batch_size': 64, 'seed': 42} params=1236289
+best_run3 epoch 1/1 train=0.0135124 test_MSE=0.0123298 test_MAE=0.0156122 val_MSE=0.0120990 seconds=0.1
+{
+  "recommended_model": "exp2",
+  "combination_mean": {
+    "mse": 0.012329824428313894,
+    "mae": 0.015612177333271878
+  },
+  "combination_mean_seconds": 0.10212890990078449,
+  "combination_test_mse_std": 0.0
+}
+START baseline {'architecture': 'convlstm', 'hidden': 32, 'kernel': 3, 'layers': 1, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=38433
+baseline epoch 1/5 train=0.0110855 test_MSE=0.0088030 test_MAE=0.0238868 val_MSE=0.0089667 seconds=1.0
+baseline epoch 2/5 train=0.0071131 test_MSE=0.0057111 test_MAE=0.0159043 val_MSE=0.0059580 seconds=0.7
+baseline epoch 3/5 train=0.0054759 test_MSE=0.0050588 test_MAE=0.0146257 val_MSE=0.0052412 seconds=0.6
+baseline epoch 4/5 train=0.0050162 test_MSE=0.0047383 test_MAE=0.0141848 val_MSE=0.0049084 seconds=0.6
+baseline epoch 5/5 train=0.0047997 test_MSE=0.0045474 test_MAE=0.0131564 val_MSE=0.0047111 seconds=0.6
+START exp1 {'architecture': 'convlstm', 'hidden': 32, 'kernel': 3, 'layers': 2, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=112289
+exp1 epoch 1/5 train=0.0110819 test_MSE=0.0077853 test_MAE=0.0250422 val_MSE=0.0079148 seconds=1.4
+exp1 epoch 2/5 train=0.0056904 test_MSE=0.0047376 test_MAE=0.0140299 val_MSE=0.0048666 seconds=1.4
+exp1 epoch 3/5 train=0.0047547 test_MSE=0.0044852 test_MAE=0.0145589 val_MSE=0.0046370 seconds=1.3
+exp1 epoch 4/5 train=0.0045409 test_MSE=0.0042153 test_MAE=0.0139500 val_MSE=0.0043998 seconds=1.4
+exp1 epoch 5/5 train=0.0042382 test_MSE=0.0038972 test_MAE=0.0126333 val_MSE=0.0040509 seconds=1.3
+START exp2 {'architecture': 'convlstm', 'hidden': 64, 'kernel': 3, 'layers': 1, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=150593
+exp2 epoch 1/5 train=0.0095797 test_MSE=0.0064969 test_MAE=0.0155029 val_MSE=0.0066293 seconds=1.0
+exp2 epoch 2/5 train=0.0055720 test_MSE=0.0048885 test_MAE=0.0132124 val_MSE=0.0050713 seconds=0.9
+exp2 epoch 3/5 train=0.0048599 test_MSE=0.0045947 test_MAE=0.0155152 val_MSE=0.0047420 seconds=0.8
+exp2 epoch 4/5 train=0.0046499 test_MSE=0.0043923 test_MAE=0.0135005 val_MSE=0.0045616 seconds=0.8
+exp2 epoch 5/5 train=0.0044432 test_MSE=0.0041914 test_MAE=0.0142141 val_MSE=0.0043487 seconds=0.8
+START exp3 {'architecture': 'convlstm', 'hidden': 32, 'kernel': 5, 'layers': 1, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=106017
+exp3 epoch 1/5 train=0.0099299 test_MSE=0.0068281 test_MAE=0.0185396 val_MSE=0.0069261 seconds=0.6
+exp3 epoch 2/5 train=0.0054481 test_MSE=0.0044627 test_MAE=0.0163697 val_MSE=0.0046969 seconds=0.6
+exp3 epoch 3/5 train=0.0044312 test_MSE=0.0040628 test_MAE=0.0149411 val_MSE=0.0042821 seconds=0.6
+exp3 epoch 4/5 train=0.0042191 test_MSE=0.0039407 test_MAE=0.0141465 val_MSE=0.0041508 seconds=0.6
+exp3 epoch 5/5 train=0.0040253 test_MSE=0.0037624 test_MAE=0.0137665 val_MSE=0.0039801 seconds=0.6
+START exp4 {'architecture': 'convlstm', 'hidden': 32, 'kernel': 3, 'layers': 1, 'input_frames': 8, 'loss': 'mse', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=38433
+exp4 epoch 1/5 train=0.0110620 test_MSE=0.0090964 test_MAE=0.0225820 val_MSE=0.0090204 seconds=1.3
+exp4 epoch 2/5 train=0.0073329 test_MSE=0.0059241 test_MAE=0.0176269 val_MSE=0.0060031 seconds=1.3
+exp4 epoch 3/5 train=0.0055286 test_MSE=0.0050723 test_MAE=0.0147377 val_MSE=0.0051853 seconds=1.3
+exp4 epoch 4/5 train=0.0049388 test_MSE=0.0047197 test_MAE=0.0140212 val_MSE=0.0048397 seconds=1.3
+exp4 epoch 5/5 train=0.0047502 test_MSE=0.0045863 test_MAE=0.0130422 val_MSE=0.0047230 seconds=1.3
+START exp5 {'architecture': 'flatten_lstm', 'hidden': 32, 'kernel': 3, 'layers': 1, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=1575936
+exp5 epoch 1/5 train=0.0117852 test_MSE=0.0103310 test_MAE=0.0336900 val_MSE=0.0104496 seconds=0.1
+exp5 epoch 2/5 train=0.0095797 test_MSE=0.0092306 test_MAE=0.0313827 val_MSE=0.0093134 seconds=0.1
+exp5 epoch 3/5 train=0.0084731 test_MSE=0.0084731 test_MAE=0.0316622 val_MSE=0.0085298 seconds=0.1
+exp5 epoch 4/5 train=0.0075992 test_MSE=0.0078405 test_MAE=0.0329551 val_MSE=0.0079102 seconds=0.1
+exp5 epoch 5/5 train=0.0068640 test_MSE=0.0073189 test_MAE=0.0335425 val_MSE=0.0073919 seconds=0.1
+START exp6 {'architecture': 'convlstm', 'hidden': 32, 'kernel': 3, 'layers': 1, 'input_frames': 4, 'loss': 'l1', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=38433
+exp6 epoch 1/5 train=0.0204914 test_MSE=0.0119363 test_MAE=0.0149159 val_MSE=0.0121553 seconds=0.7
+exp6 epoch 2/5 train=0.0144270 test_MSE=0.0121058 test_MAE=0.0145257 val_MSE=0.0123299 seconds=0.6
+exp6 epoch 3/5 train=0.0139177 test_MSE=0.0120790 test_MAE=0.0131813 val_MSE=0.0123026 seconds=0.6
+exp6 epoch 4/5 train=0.0135551 test_MSE=0.0120474 test_MAE=0.0130075 val_MSE=0.0122702 seconds=0.6
+exp6 epoch 5/5 train=0.0136578 test_MSE=0.0119966 test_MAE=0.0127367 val_MSE=0.0122186 seconds=0.6
+START best_run1 {'architecture': 'convlstm', 'hidden': 64, 'kernel': 5, 'layers': 2, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=1236289
+best_run1 epoch 1/5 train=0.0091435 test_MSE=0.0053438 test_MAE=0.0232083 val_MSE=0.0053810 seconds=3.3
+best_run1 epoch 2/5 train=0.0043821 test_MSE=0.0038943 test_MAE=0.0140958 val_MSE=0.0041042 seconds=3.1
+best_run1 epoch 3/5 train=0.0037036 test_MSE=0.0034191 test_MAE=0.0136597 val_MSE=0.0035659 seconds=3.1
+best_run1 epoch 4/5 train=0.0032750 test_MSE=0.0029509 test_MAE=0.0114876 val_MSE=0.0030827 seconds=3.1
+best_run1 epoch 5/5 train=0.0029542 test_MSE=0.0027619 test_MAE=0.0102870 val_MSE=0.0028688 seconds=3.1
+START best_run2 {'architecture': 'convlstm', 'hidden': 64, 'kernel': 5, 'layers': 2, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=1236289
+best_run2 epoch 1/5 train=0.0091435 test_MSE=0.0053438 test_MAE=0.0232083 val_MSE=0.0053810 seconds=3.1
+best_run2 epoch 2/5 train=0.0043821 test_MSE=0.0038943 test_MAE=0.0140958 val_MSE=0.0041042 seconds=3.1
+best_run2 epoch 3/5 train=0.0037036 test_MSE=0.0034191 test_MAE=0.0136597 val_MSE=0.0035659 seconds=3.1
+best_run2 epoch 4/5 train=0.0032750 test_MSE=0.0029509 test_MAE=0.0114876 val_MSE=0.0030827 seconds=3.1
+best_run2 epoch 5/5 train=0.0029542 test_MSE=0.0027619 test_MAE=0.0102870 val_MSE=0.0028688 seconds=3.1
+START best_run3 {'architecture': 'convlstm', 'hidden': 64, 'kernel': 5, 'layers': 2, 'input_frames': 4, 'loss': 'mse', 'lr': 0.001, 'epochs': 5, 'batch_size': 64, 'seed': 42} params=1236289
+best_run3 epoch 1/5 train=0.0091435 test_MSE=0.0053438 test_MAE=0.0232083 val_MSE=0.0053810 seconds=3.1
+best_run3 epoch 2/5 train=0.0043821 test_MSE=0.0038943 test_MAE=0.0140958 val_MSE=0.0041042 seconds=3.1
+best_run3 epoch 3/5 train=0.0037036 test_MSE=0.0034191 test_MAE=0.0136597 val_MSE=0.0035659 seconds=3.1
+best_run3 epoch 4/5 train=0.0032750 test_MSE=0.0029509 test_MAE=0.0114876 val_MSE=0.0030827 seconds=3.1
+best_run3 epoch 5/5 train=0.0029542 test_MSE=0.0027619 test_MAE=0.0102870 val_MSE=0.0028688 seconds=3.1
+{
+  "recommended_model": "best_run1",
+  "combination_mean": {
+    "mse": 0.0027618547965821273,
+    "mae": 0.01028703239393053
+  },
+  "combination_mean_seconds": 15.528695036967596,
+  "combination_test_mse_std": 0.0
+}

@@ -1,0 +1,23 @@
+{
+  "rule": "Combine ConvLSTM ablations whose final validation MSE beats baseline; exclude architecture swap",
+  "selected": [
+    "exp1",
+    "exp2",
+    "exp3"
+  ],
+  "candidate_config": {
+    "architecture": "convlstm",
+    "hidden": 64,
+    "kernel": 5,
+    "layers": 2,
+    "input_frames": 4,
+    "loss": "mse",
+    "lr": 0.001,
+    "epochs": 5,
+    "batch_size": 64,
+    "seed": 42
+  },
+  "validation_seed": 43,
+  "test_used_for_selection": false,
+  "repeats": "identical seed 42; reproducibility check, not independent-seed uncertainty"
+}

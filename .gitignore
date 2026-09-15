@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+lab02/smoke_results/
+lab02/results/.run.lock
+lab02/results/*_partial.pt

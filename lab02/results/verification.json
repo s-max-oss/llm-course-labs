@@ -1,0 +1,92 @@
+{
+  "source_sha256": "9a386178af9950c8bd3a7fcba814d2b90f3a678e15ffd540c657eaf4b0a57c67",
+  "data_sha256": [
+    "d4b0b4cab8ad2f525b73f658e228f6e0df1889cc4d3117f6e76f265d0d485a67",
+    "b49b79b0cdc80a629af37df5d8d578d6f6b0d1bc67a4e54263e8e28d344e8b8b",
+    "89b4d7373d83a5cbb4bf3e16b5ea7928e03d09e618a4fcc4a5eb103cf2727027"
+  ],
+  "groups": {
+    "baseline": {
+      "metrics_recomputed": {
+        "mse": 0.004547417186054383,
+        "mae": 0.01315642860035041
+      },
+      "cpu_replay_max_absolute_error": 4.76837158203125e-07,
+      "passed": true
+    },
+    "exp1": {
+      "metrics_recomputed": {
+        "mse": 0.003897238755160115,
+        "mae": 0.01263329326204257
+      },
+      "cpu_replay_max_absolute_error": 7.152557373046875e-07,
+      "passed": true
+    },
+    "exp2": {
+      "metrics_recomputed": {
+        "mse": 0.004191406613379866,
+        "mae": 0.01421408526682626
+      },
+      "cpu_replay_max_absolute_error": 7.152557373046875e-07,
+      "passed": true
+    },
+    "exp3": {
+      "metrics_recomputed": {
+        "mse": 0.00376243755132208,
+        "mae": 0.013766497245169375
+      },
+      "cpu_replay_max_absolute_error": 4.172325134277344e-07,
+      "passed": true
+    },
+    "exp4": {
+      "metrics_recomputed": {
+        "mse": 0.004586272772914273,
+        "mae": 0.013042199180381431
+      },
+      "cpu_replay_max_absolute_error": 4.172325134277344e-07,
+      "passed": true
+    },
+    "exp5": {
+      "metrics_recomputed": {
+        "mse": 0.00731893758692299,
+        "mae": 0.03354250728853003
+      },
+      "cpu_replay_max_absolute_error": 1.7881393432617188e-07,
+      "passed": true
+    },
+    "exp6": {
+      "metrics_recomputed": {
+        "mse": 0.011996584407261207,
+        "mae": 0.012736677090488228
+      },
+      "cpu_replay_max_absolute_error": 3.818422555923462e-08,
+      "passed": true
+    },
+    "best_run1": {
+      "metrics_recomputed": {
+        "mse": 0.0027618547965821264,
+        "mae": 0.01028703239393053
+      },
+      "cpu_replay_max_absolute_error": 7.748603820800781e-07,
+      "passed": true
+    },
+    "best_run2": {
+      "metrics_recomputed": {
+        "mse": 0.0027618547965821264,
+        "mae": 0.01028703239393053
+      },
+      "cpu_replay_max_absolute_error": 7.748603820800781e-07,
+      "passed": true
+    },
+    "best_run3": {
+      "metrics_recomputed": {
+        "mse": 0.0027618547965821264,
+        "mae": 0.01028703239393053
+      },
+      "cpu_replay_max_absolute_error": 7.748603820800781e-07,
+      "passed": true
+    }
+  },
+  "fixed_seed_repeats_bitwise_equal": true,
+  "passed": true
+}

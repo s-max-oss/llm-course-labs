@@ -1,0 +1,20 @@
+{
+  "hand_calculated": {
+    "cell": 38144,
+    "output": 289,
+    "baseline_total": 38433,
+    "wide_cell": 150016,
+    "wide_cell_ratio": 3.9328859060402683,
+    "flatten_recurrent": 1312768,
+    "flatten_output": 263168,
+    "flatten_total": 1575936
+  },
+  "code_counts": {
+    "cell": 38144,
+    "output": 289,
+    "baseline_total": 38433,
+    "wide_cell": 150016,
+    "flatten_total": 1575936
+  },
+  "verified": true
+}

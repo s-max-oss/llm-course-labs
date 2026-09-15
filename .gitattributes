@@ -1,0 +1,5 @@
+/lab02/*.py text eol=lf
+/lab02/*.slurm text eol=lf
+*.pt binary
+*.npz binary
+*.png binary
