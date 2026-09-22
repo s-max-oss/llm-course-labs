@@ -1,8 +1,8 @@
 /lab02/*.py text eol=lf
 /lab02/*.slurm text eol=lf
-/lab03/*.py text eol=lf
-/lab03/*.slurm text eol=lf
-/lab03/corpus.txt text eol=lf
+/lab03/** text eol=lf
+# Preserve generated text exactly, including sampled trailing newlines.
+/lab03/results/** whitespace=-blank-at-eof
 *.pt binary
 *.npz binary
 *.png binary
