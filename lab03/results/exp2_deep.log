@@ -1,0 +1,11 @@
+CPU threads=4 chars=2163 V=699 params=899200 initial=6.59919 lnV=6.54965
+step 100/1000 loss=1.98398 fit=1.95960 train_seconds=10.8
+step 200/1000 loss=0.19903 fit=0.19203 train_seconds=21.6
+step 300/1000 loss=0.08196 fit=0.09487 train_seconds=32.4
+step 400/1000 loss=0.04986 fit=0.05284 train_seconds=43.1
+step 500/1000 loss=0.04813 fit=0.03929 train_seconds=53.9
+step 600/1000 loss=0.03405 fit=0.03662 train_seconds=64.7
+step 700/1000 loss=0.03349 fit=0.03049 train_seconds=75.4
+step 800/1000 loss=0.02815 fit=0.03036 train_seconds=86.2
+step 900/1000 loss=0.03051 fit=0.02528 train_seconds=96.9
+step 1000/1000 loss=0.03241 fit=0.02765 train_seconds=107.7

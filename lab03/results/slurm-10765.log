@@ -1,0 +1,22 @@
+gpu4
+test_causal_outputs_and_gradients_with_or_without_position (test_min_llm.LanguageModelTests) ... ok
+test_controlled_configurations (test_min_llm.LanguageModelTests) ... ok
+test_exact_parameters_and_actual_weight_sharing (test_min_llm.LanguageModelTests) ... ok
+test_initial_loss_and_loss_shape (test_min_llm.LanguageModelTests) ... ok
+test_sampling_determinism_top1_and_repetition_rule (test_min_llm.LanguageModelTests) ... ok
+test_tokenizer_and_shift_including_last_window (test_min_llm.LanguageModelTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.193s
+
+OK
+exp2_deep exit 0
+baseline exit 0
+exp3_large exit 0
+exp1_lr_low exit 0
+exp2_shallow exit 0
+exp4_short exit 0
+exp3_small exit 0
+exp1_lr_high exit 0
+exp5_no_pos exit 0
+Verified all models; sampling and comparison materials saved.

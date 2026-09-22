@@ -1,0 +1,11 @@
+{
+  "python": "3.10.20",
+  "torch": "2.6.0+cu124",
+  "platform": "Linux-5.4.0-100-generic-x86_64-with-glibc2.28",
+  "host": "gpu4",
+  "cpu": "x86_64",
+  "threads": 4,
+  "device": "cpu",
+  "slurm_job_id": "10765",
+  "slurm_array_task_id": null
+}

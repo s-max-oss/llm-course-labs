@@ -1,0 +1,7 @@
+{
+  "step": 1000,
+  "last_batch_loss": 0.027141913771629333,
+  "last100_mean_loss": 0.02833012627437711,
+  "training_window_loss": 0.02284495742060244,
+  "training_seconds": 59.91818279027939
+}

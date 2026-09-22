@@ -3,3 +3,7 @@ __pycache__/
 lab02/smoke_results/
 lab02/results/.run.lock
 lab02/results/*_partial.pt
+lab03/results/**/.run.lock
+lab03/results/**/partial.pt
+lab03/results/**/*.tmp
+lab03/smoke_results/

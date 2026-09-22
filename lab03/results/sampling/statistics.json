@@ -1,0 +1,218 @@
+{
+  "temp05_k20": {
+    "temperature": 0.5,
+    "top_k": 20,
+    "no_repeat_ngram": 0,
+    "samples": [
+      {
+        "prompt": "春",
+        "seed": 1001,
+        "new_characters": 200,
+        "unique_character_ratio": 0.64,
+        "repeated_trigram_fraction": 0.005050505050505083,
+        "corpus_10gram_fraction": 1.0
+      },
+      {
+        "prompt": "月",
+        "seed": 1002,
+        "new_characters": 200,
+        "unique_character_ratio": 0.715,
+        "repeated_trigram_fraction": 0.005050505050505083,
+        "corpus_10gram_fraction": 1.0
+      },
+      {
+        "prompt": "山",
+        "seed": 1003,
+        "new_characters": 200,
+        "unique_character_ratio": 0.725,
+        "repeated_trigram_fraction": 0.0,
+        "corpus_10gram_fraction": 0.9947643979057592
+      }
+    ],
+    "mean": {
+      "unique_character_ratio": 0.6933333333333334,
+      "repeated_trigram_fraction": 0.0033670033670033885,
+      "corpus_10gram_fraction": 0.9982547993019196
+    }
+  },
+  "temp10_k20": {
+    "temperature": 1.0,
+    "top_k": 20,
+    "no_repeat_ngram": 0,
+    "samples": [
+      {
+        "prompt": "春",
+        "seed": 1001,
+        "new_characters": 200,
+        "unique_character_ratio": 0.73,
+        "repeated_trigram_fraction": 0.0,
+        "corpus_10gram_fraction": 1.0
+      },
+      {
+        "prompt": "月",
+        "seed": 1002,
+        "new_characters": 200,
+        "unique_character_ratio": 0.715,
+        "repeated_trigram_fraction": 0.005050505050505083,
+        "corpus_10gram_fraction": 1.0
+      },
+      {
+        "prompt": "山",
+        "seed": 1003,
+        "new_characters": 200,
+        "unique_character_ratio": 0.615,
+        "repeated_trigram_fraction": 0.005050505050505083,
+        "corpus_10gram_fraction": 1.0
+      }
+    ],
+    "mean": {
+      "unique_character_ratio": 0.6866666666666665,
+      "repeated_trigram_fraction": 0.0033670033670033885,
+      "corpus_10gram_fraction": 1.0
+    }
+  },
+  "temp15_k20": {
+    "temperature": 1.5,
+    "top_k": 20,
+    "no_repeat_ngram": 0,
+    "samples": [
+      {
+        "prompt": "春",
+        "seed": 1001,
+        "new_characters": 200,
+        "unique_character_ratio": 0.7,
+        "repeated_trigram_fraction": 0.010101010101010055,
+        "corpus_10gram_fraction": 0.5549738219895288
+      },
+      {
+        "prompt": "月",
+        "seed": 1002,
+        "new_characters": 200,
+        "unique_character_ratio": 0.705,
+        "repeated_trigram_fraction": 0.005050505050505083,
+        "corpus_10gram_fraction": 0.8795811518324608
+      },
+      {
+        "prompt": "山",
+        "seed": 1003,
+        "new_characters": 200,
+        "unique_character_ratio": 0.59,
+        "repeated_trigram_fraction": 0.0505050505050505,
+        "corpus_10gram_fraction": 0.5287958115183246
+      }
+    ],
+    "mean": {
+      "unique_character_ratio": 0.6649999999999999,
+      "repeated_trigram_fraction": 0.02188552188552188,
+      "corpus_10gram_fraction": 0.6544502617801048
+    }
+  },
+  "temp10_k5": {
+    "temperature": 1.0,
+    "top_k": 5,
+    "no_repeat_ngram": 0,
+    "samples": [
+      {
+        "prompt": "春",
+        "seed": 1001,
+        "new_characters": 200,
+        "unique_character_ratio": 0.73,
+        "repeated_trigram_fraction": 0.0,
+        "corpus_10gram_fraction": 1.0
+      },
+      {
+        "prompt": "月",
+        "seed": 1002,
+        "new_characters": 200,
+        "unique_character_ratio": 0.715,
+        "repeated_trigram_fraction": 0.005050505050505083,
+        "corpus_10gram_fraction": 1.0
+      },
+      {
+        "prompt": "山",
+        "seed": 1003,
+        "new_characters": 200,
+        "unique_character_ratio": 0.74,
+        "repeated_trigram_fraction": 0.005050505050505083,
+        "corpus_10gram_fraction": 1.0
+      }
+    ],
+    "mean": {
+      "unique_character_ratio": 0.7283333333333332,
+      "repeated_trigram_fraction": 0.0033670033670033885,
+      "corpus_10gram_fraction": 1.0
+    }
+  },
+  "temp10_all": {
+    "temperature": 1.0,
+    "top_k": 699,
+    "no_repeat_ngram": 0,
+    "samples": [
+      {
+        "prompt": "春",
+        "seed": 1001,
+        "new_characters": 200,
+        "unique_character_ratio": 0.73,
+        "repeated_trigram_fraction": 0.0,
+        "corpus_10gram_fraction": 1.0
+      },
+      {
+        "prompt": "月",
+        "seed": 1002,
+        "new_characters": 200,
+        "unique_character_ratio": 0.715,
+        "repeated_trigram_fraction": 0.005050505050505083,
+        "corpus_10gram_fraction": 1.0
+      },
+      {
+        "prompt": "山",
+        "seed": 1003,
+        "new_characters": 200,
+        "unique_character_ratio": 0.615,
+        "repeated_trigram_fraction": 0.005050505050505083,
+        "corpus_10gram_fraction": 1.0
+      }
+    ],
+    "mean": {
+      "unique_character_ratio": 0.6866666666666665,
+      "repeated_trigram_fraction": 0.0033670033670033885,
+      "corpus_10gram_fraction": 1.0
+    }
+  },
+  "bonus_no_repeat3": {
+    "temperature": 1.0,
+    "top_k": 20,
+    "no_repeat_ngram": 3,
+    "samples": [
+      {
+        "prompt": "春",
+        "seed": 1001,
+        "new_characters": 200,
+        "unique_character_ratio": 0.73,
+        "repeated_trigram_fraction": 0.0,
+        "corpus_10gram_fraction": 1.0
+      },
+      {
+        "prompt": "月",
+        "seed": 1002,
+        "new_characters": 200,
+        "unique_character_ratio": 0.715,
+        "repeated_trigram_fraction": 0.0,
+        "corpus_10gram_fraction": 0.8429319371727748
+      },
+      {
+        "prompt": "山",
+        "seed": 1003,
+        "new_characters": 200,
+        "unique_character_ratio": 0.615,
+        "repeated_trigram_fraction": 0.0,
+        "corpus_10gram_fraction": 0.9685863874345549
+      }
+    ],
+    "mean": {
+      "unique_character_ratio": 0.6866666666666665,
+      "repeated_trigram_fraction": 0.0,
+      "corpus_10gram_fraction": 0.93717277486911
+    }
+  }
+}

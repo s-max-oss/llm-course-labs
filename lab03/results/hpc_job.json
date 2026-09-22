@@ -1,0 +1,16 @@
+{
+  "job_id": 10765,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:04:36",
+  "allocated_cpus": 12,
+  "allocated_tres": "billing=12,cpu=12,node=1",
+  "node": "gpu4",
+  "cpu_model": "Intel Xeon Platinum 8358 @ 2.60GHz",
+  "workers": 3,
+  "threads_per_model": 4,
+  "gpu_requested": false,
+  "model_device": "cpu",
+  "source_sha256": "6182ebcbba6a74d7563f48bac4c467a8ff65bdd36906398012d70ec61bee973f",
+  "review": "6 behavior tests passed; independent reviewer verified interrupted resume and artifact integrity"
+}
