@@ -1,0 +1,10 @@
+Actual local CPU execution: MiniGPT(699, Config())
+token_embedding: 89472
+position_embedding: 16384
+per_block: 198272
+final_layernorm: 256
+approximate: 499072
+exact: 502656
+approximation_relative_error: 0.0071301247771836
+sum(p.numel() for p in model.parameters()): 502656
+head.weight is tok_emb.weight: True

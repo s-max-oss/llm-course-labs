@@ -1,0 +1,163 @@
+{
+  "groups": {
+    "baseline": {
+      "passed": true,
+      "replayed_training_window_loss": 0.023165919817984104,
+      "absolute_difference": 1.1548399925231934e-07
+    },
+    "exp1_lr_high": {
+      "passed": true,
+      "replayed_training_window_loss": 0.09000324085354805,
+      "absolute_difference": 4.6566128730773926e-09
+    },
+    "exp1_lr_low": {
+      "passed": true,
+      "replayed_training_window_loss": 0.6136559247970581,
+      "absolute_difference": 7.450580596923828e-09
+    },
+    "exp2_shallow": {
+      "passed": true,
+      "replayed_training_window_loss": 0.027899182867258787,
+      "absolute_difference": 6.356276571750641e-08
+    },
+    "exp2_deep": {
+      "passed": true,
+      "replayed_training_window_loss": 0.027648020768538117,
+      "absolute_difference": 6.28642737865448e-08
+    },
+    "exp3_small": {
+      "passed": true,
+      "replayed_training_window_loss": 0.046518683899194,
+      "absolute_difference": 5.681067705154419e-08
+    },
+    "exp3_large": {
+      "passed": true,
+      "replayed_training_window_loss": 0.020954598323442042,
+      "absolute_difference": 6.239861249923706e-08
+    },
+    "exp4_short": {
+      "passed": true,
+      "replayed_training_window_loss": 0.09009320568293333,
+      "absolute_difference": 4.377216100692749e-08
+    },
+    "exp5_no_pos": {
+      "passed": true,
+      "replayed_training_window_loss": 0.0279117776080966,
+      "absolute_difference": 5.145557224750519e-08
+    }
+  },
+  "baseline1000": "passed",
+  "passed": true,
+  "independent_final_checks": {
+    "git_head": "e01c944130152c2052df5fbc98bc55e771e1ef4f",
+    "source_sha256": "6182ebcbba6a74d7563f48bac4c467a8ff65bdd36906398012d70ec61bee973f",
+    "manifest_artifacts_verified": 47,
+    "saved_samples_checked": 58,
+    "sample_statistics_recomputed": true,
+    "txt_json_consistency": true,
+    "summary_source_consistency": true,
+    "required_artifact_sets_complete": true,
+    "unit_tests_passed": 6,
+    "torch_reviewer": "2.14.0+cpu",
+    "torch_original": "2.6.0+cu124",
+    "python_reviewer": "3.11.16",
+    "sampling_replay_limitation": "The first baseline sample with seed 1001 differs on reviewer PyTorch 2.14.0+cpu versus original PyTorch 2.6.0+cu124. Cross-version bit-exact generation is not established; original sample artifact hashes, saved statistics, and model loss replay all pass.",
+    "training_sample_statistics": [
+      {
+        "group": "baseline",
+        "sample_count": 4,
+        "initial_loss": 6.566851198673248,
+        "stats": {
+          "unique_character_ratio": 0.6887500000000001,
+          "repeated_trigram_fraction": 0.0,
+          "corpus_10gram_fraction": 1.0
+        }
+      },
+      {
+        "group": "exp1_lr_high",
+        "sample_count": 4,
+        "initial_loss": 6.566851198673248,
+        "stats": {
+          "unique_character_ratio": 0.5925,
+          "repeated_trigram_fraction": 0.07828282828282829,
+          "corpus_10gram_fraction": 0.5615183246073299
+        }
+      },
+      {
+        "group": "exp1_lr_low",
+        "sample_count": 4,
+        "initial_loss": 6.566851198673248,
+        "stats": {
+          "unique_character_ratio": 0.60125,
+          "repeated_trigram_fraction": 0.023989898989899006,
+          "corpus_10gram_fraction": 0.0
+        }
+      },
+      {
+        "group": "exp2_shallow",
+        "sample_count": 4,
+        "initial_loss": 6.566801369190216,
+        "stats": {
+          "unique_character_ratio": 0.68375,
+          "repeated_trigram_fraction": 0.005050505050505055,
+          "corpus_10gram_fraction": 0.9463350785340314
+        }
+      },
+      {
+        "group": "exp2_deep",
+        "sample_count": 4,
+        "initial_loss": 6.599186360836029,
+        "stats": {
+          "unique_character_ratio": 0.6837500000000001,
+          "repeated_trigram_fraction": 0.01010101010101011,
+          "corpus_10gram_fraction": 0.9712041884816756
+        }
+      },
+      {
+        "group": "exp3_small",
+        "sample_count": 4,
+        "initial_loss": 6.564317584037781,
+        "stats": {
+          "unique_character_ratio": 0.63625,
+          "repeated_trigram_fraction": 0.04545454545454547,
+          "corpus_10gram_fraction": 0.6335078534031413
+        }
+      },
+      {
+        "group": "exp3_large",
+        "sample_count": 4,
+        "initial_loss": 6.627805650234222,
+        "stats": {
+          "unique_character_ratio": 0.6875,
+          "repeated_trigram_fraction": 0.007575757575757569,
+          "corpus_10gram_fraction": 0.9541884816753927
+        }
+      },
+      {
+        "group": "exp4_short",
+        "sample_count": 4,
+        "initial_loss": 6.567488729953766,
+        "stats": {
+          "unique_character_ratio": 0.67,
+          "repeated_trigram_fraction": 0.005050505050505055,
+          "corpus_10gram_fraction": 0.9149214659685864
+        }
+      },
+      {
+        "group": "exp5_no_pos",
+        "sample_count": 4,
+        "initial_loss": 6.597955822944641,
+        "stats": {
+          "unique_character_ratio": 0.61375,
+          "repeated_trigram_fraction": 0.047979797979797956,
+          "corpus_10gram_fraction": 0.8782722513089005
+        }
+      }
+    ],
+    "guide_corpus_exact_match": {
+      "entries": 72,
+      "characters": 2163,
+      "vocabulary": 699
+    }
+  }
+}

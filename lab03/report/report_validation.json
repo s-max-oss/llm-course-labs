@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-23",
+  "pages": 18,
+  "template_unchanged": true,
+  "preserved_package_parts_verified": true,
+  "tables": 7,
+  "figures": 8,
+  "baseline_full_samples": 4,
+  "visual_check": "All 18 final page PNGs inspected; no clipping, overlap or blank spill pages.",
+  "code_data_base_commit": "e01c944130152c2052df5fbc98bc55e771e1ef4f",
+  "hpc": {
+    "queue_empty": true,
+    "job_id": "10765",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:04:36",
+    "allocated_cpu": 12,
+    "allocated_gpu": 0,
+    "ssh_check_finished": true,
+    "matplotlib_rechecked": "3.10.9"
+  },
+  "reports": {
+    "2024311281_孙驰_实验作业三.docx": "2c74aa450bc2fb7fe09e4177f01cb61506c224b9b3b05859e55ae165671a2a0b",
+    "2024311281_孙驰_实验作业三.pdf": "6a5930d8c18d1928df12a4e0c8eef0fb5e8abb7f661a94c5af80846908ca2eea"
+  }
+}
