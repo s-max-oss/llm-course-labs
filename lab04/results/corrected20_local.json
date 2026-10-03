@@ -1,0 +1,6083 @@
+{
+  "k": 5,
+  "scope": "local",
+  "question_count": 20,
+  "aggregate": [
+    {
+      "system": "GraphRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 0.8333333333333334,
+      "mrr": 0.8333333333333334,
+      "full_hits": 5
+    },
+    {
+      "system": "GraphRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 0.9523809523809523,
+      "mrr": 0.9285714285714286,
+      "full_hits": 6
+    },
+    {
+      "system": "GraphRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.6428571428571429,
+      "mrr": 0.46904761904761905,
+      "full_hits": 3
+    },
+    {
+      "system": "GraphRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.8083333333333332,
+      "mrr": 0.7391666666666666,
+      "full_hits": 14
+    },
+    {
+      "system": "WikiRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 0.6944444444444445,
+      "full_hits": 6
+    },
+    {
+      "system": "WikiRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 0.9047619047619048,
+      "mrr": 1.0,
+      "full_hits": 5
+    },
+    {
+      "system": "WikiRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.6428571428571429,
+      "mrr": 0.5238095238095238,
+      "full_hits": 4
+    },
+    {
+      "system": "WikiRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.8416666666666666,
+      "mrr": 0.7416666666666667,
+      "full_hits": 15
+    }
+  ],
+  "rows": [
+    {
+      "system": "GraphRAG",
+      "id": "Q01",
+      "type": "multi",
+      "q": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+        "doc04",
+        "doc06",
+        "doc02"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc02",
+        "doc04",
+        "doc06"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc06",
+          "doc02",
+          "doc04",
+          "doc11",
+          "doc10"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "大模型通识课",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.5483455061912537
+          },
+          {
+            "hop": 1,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "开设学期",
+            "tail": "春季学期",
+            "doc_id": "doc06",
+            "triple_id": 27,
+            "score": 0.5369840860366821
+          },
+          {
+            "hop": 1,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "课程代码",
+            "tail": "AI2101",
+            "doc_id": "doc06",
+            "triple_id": 25,
+            "score": 0.5181082487106323
+          },
+          {
+            "hop": 1,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "学分",
+            "tail": "3学分",
+            "doc_id": "doc06",
+            "triple_id": 26,
+            "score": 0.5064125061035156
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.48422694206237793
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.4523979425430298
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.42649972438812256
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.408866286277771
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.40187591314315796
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.3917405605316162
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.3904277980327606
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.3896948993206024
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.385534405708313
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.38316237926483154
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.37950998544692993
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.33490872383117676
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.32973676919937134
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.2802940011024475
+          },
+          {
+            "hop": 2,
+            "from": "春季学期",
+            "head": "春季学期",
+            "relation": "开学日期",
+            "tail": "3月2日",
+            "doc_id": "doc12",
+            "triple_id": 39,
+            "score": 0.21960635483264923
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "大模型通识课"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "课程代码",
+            "tail": "AI2101",
+            "doc_id": "doc06",
+            "triple_id": 25,
+            "score": 0.5181082487106323
+          },
+          {
+            "hop": 1,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "学分",
+            "tail": "3学分",
+            "doc_id": "doc06",
+            "triple_id": 26,
+            "score": 0.5064125061035156
+          },
+          {
+            "hop": 1,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "开设学期",
+            "tail": "春季学期",
+            "doc_id": "doc06",
+            "triple_id": 27,
+            "score": 0.5369840860366821
+          },
+          {
+            "hop": 1,
+            "from": "大模型通识课",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.5483455061912537
+          },
+          {
+            "hop": 2,
+            "from": "春季学期",
+            "head": "春季学期",
+            "relation": "开学日期",
+            "tail": "3月2日",
+            "doc_id": "doc12",
+            "triple_id": 39,
+            "score": 0.21960635483264923
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.408866286277771
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.4523979425430298
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.2802940011024475
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.33490872383117676
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.32973676919937134
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.42649972438812256
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.48422694206237793
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.385534405708313
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.37950998544692993
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.38316237926483154
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.3904277980327606
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.3896948993206024
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.40187591314315796
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.3917405605316162
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q02",
+      "type": "multi",
+      "q": "AI 协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+        "doc11",
+        "doc04",
+        "doc06"
+      ],
+      "recall": 0.6666666666666666,
+      "reciprocal_rank": 0.5,
+      "first_rank": 2,
+      "full_hit": false,
+      "matched": [
+        "doc04",
+        "doc06"
+      ],
+      "missed": [
+        "doc11"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc04",
+          "doc06",
+          "doc07",
+          "doc08"
+        ],
+        "units": [
+          {
+            "summary_id": 1,
+            "text": "社区C1 教学与课程：人工智能学院设三个系，开设《大模型通识课》（AI2101，李文瀚主讲）与《知识图谱导论》（AI3305，赵婉晴主讲），AI3305 需先修《数据结构》。",
+            "sources": [
+              "doc02",
+              "doc04",
+              "doc06",
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.5930647850036621
+          },
+          {
+            "summary_id": 3,
+            "text": "社区C3 学生生活：奖学金分国家（8000 元）、校长（20000 元）、云山一等（3000 元）三级；社团有 AI 协会与机器人战队，图书馆藏书 380 万册、7:00-22:00 开放。",
+            "sources": [
+              "doc09",
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.5087749361991882
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          }
+        ],
+        "scope": "local",
+        "document_order": "summary cosine then listed source order",
+        "fallback": "global: no entity edge matched",
+        "entities": [],
+        "walk": []
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q03",
+      "type": "multi",
+      "q": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+        "doc10",
+        "doc02"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc02",
+        "doc10"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc10",
+          "doc02",
+          "doc04",
+          "doc07",
+          "doc11"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "认知计算全国重点实验室",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.746870756149292
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.5986220836639404
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.5828106999397278
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.474237859249115
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.4558483958244324
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.4482731819152832
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.44354742765426636
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.4267442524433136
+          },
+          {
+            "hop": 3,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.4255039393901825
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.410977303981781
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.39351388812065125
+          },
+          {
+            "hop": 3,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.38811638951301575
+          },
+          {
+            "hop": 3,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.3751370310783386
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.34061428904533386
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.32190749049186707
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.304980605840683
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.3038952946662903
+          },
+          {
+            "hop": 3,
+            "from": "孙浩然",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.2986001968383789
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.29538285732269287
+          },
+          {
+            "hop": 3,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.2545164227485657
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "认知计算全国重点实验室"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "认知计算全国重点实验室",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.746870756149292
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.4482731819152832
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.5986220836639404
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.4558483958244324
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.474237859249115
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.5828106999397278
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.410977303981781
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.4267442524433136
+          },
+          {
+            "hop": 2,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.44354742765426636
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.34061428904533386
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.29538285732269287
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.39351388812065125
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.304980605840683
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.3038952946662903
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.32190749049186707
+          },
+          {
+            "hop": 3,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.4255039393901825
+          },
+          {
+            "hop": 3,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.3751370310783386
+          },
+          {
+            "hop": 3,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.38811638951301575
+          },
+          {
+            "hop": 3,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.2545164227485657
+          },
+          {
+            "hop": 3,
+            "from": "孙浩然",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.2986001968383789
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q04",
+      "type": "multi",
+      "q": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+        "doc07",
+        "doc04"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc04",
+        "doc07"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc04",
+          "doc07",
+          "doc08",
+          "doc10",
+          "doc02"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "知识图谱",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.6369341611862183
+          },
+          {
+            "hop": 1,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "课程代码",
+            "tail": "AI3305",
+            "doc_id": "doc07",
+            "triple_id": 28,
+            "score": 0.6073296070098877
+          },
+          {
+            "hop": 1,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "先修课程",
+            "tail": "数据结构",
+            "doc_id": "doc08",
+            "triple_id": 29,
+            "score": 0.6051400899887085
+          },
+          {
+            "hop": 1,
+            "from": "知识图谱导论",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.5855979323387146
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.4754021465778351
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.4390246570110321
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.40893903374671936
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.4079214930534363
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.39947205781936646
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.39839088916778564
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.38287466764450073
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.3716849088668823
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.35040777921676636
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "知识图谱导论",
+          "知识图谱"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "课程代码",
+            "tail": "AI3305",
+            "doc_id": "doc07",
+            "triple_id": 28,
+            "score": 0.6073296070098877
+          },
+          {
+            "hop": 1,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "先修课程",
+            "tail": "数据结构",
+            "doc_id": "doc08",
+            "triple_id": 29,
+            "score": 0.6051400899887085
+          },
+          {
+            "hop": 1,
+            "from": "知识图谱导论",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.5855979323387146
+          },
+          {
+            "hop": 1,
+            "from": "知识图谱",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.6369341611862183
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.3716849088668823
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.40893903374671936
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.35040777921676636
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.39947205781936646
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.38287466764450073
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.4390246570110321
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.39839088916778564
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.4079214930534363
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.4754021465778351
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q05",
+      "type": "multi",
+      "q": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+        "doc11",
+        "doc04"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc04",
+        "doc11"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc11",
+          "doc04",
+          "doc02",
+          "doc10"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "机器人战队",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.6664235591888428
+          },
+          {
+            "hop": 1,
+            "from": "机器人战队",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.590010404586792
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.4771668016910553
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.47526878118515015
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.47514182329177856
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.4577081501483917
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.44189900159835815
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.42302316427230835
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.4130387306213379
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.4027237594127655
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.388450026512146
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.37715208530426025
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "机器人战队"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "机器人战队",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.6664235591888428
+          },
+          {
+            "hop": 1,
+            "from": "机器人战队",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.590010404586792
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.44189900159835815
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.4771668016910553
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.47514182329177856
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.388450026512146
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.47526878118515015
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.4027237594127655
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.37715208530426025
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.4577081501483917
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.42302316427230835
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.4130387306213379
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q06",
+      "type": "fact",
+      "q": "云山大学的校训是什么？",
+      "evidence": [
+        "doc01"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc01"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc01"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "校训",
+            "tail": "格物致知",
+            "doc_id": "doc01",
+            "triple_id": 35,
+            "score": 0.6348490715026855
+          },
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "建校于",
+            "tail": "1958年",
+            "doc_id": "doc01",
+            "triple_id": 36,
+            "score": 0.5867782235145569
+          },
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "位于",
+            "tail": "岭南省云州市",
+            "doc_id": "doc01",
+            "triple_id": 37,
+            "score": 0.5443367958068848
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc01",
+            "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "云山大学"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "校训",
+            "tail": "格物致知",
+            "doc_id": "doc01",
+            "triple_id": 35,
+            "score": 0.6348490715026855
+          },
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "建校于",
+            "tail": "1958年",
+            "doc_id": "doc01",
+            "triple_id": 36,
+            "score": 0.5867782235145569
+          },
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "位于",
+            "tail": "岭南省云州市",
+            "doc_id": "doc01",
+            "triple_id": 37,
+            "score": 0.5443367958068848
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q07",
+      "type": "fact",
+      "q": "国家奖学金的金额是多少？",
+      "evidence": [
+        "doc09"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc09"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc09"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "国家奖学金",
+            "head": "国家奖学金",
+            "relation": "金额",
+            "tail": "8000元/年",
+            "doc_id": "doc09",
+            "triple_id": 32,
+            "score": 0.7529157400131226
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc09",
+            "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "国家奖学金"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "国家奖学金",
+            "head": "国家奖学金",
+            "relation": "金额",
+            "tail": "8000元/年",
+            "doc_id": "doc09",
+            "triple_id": 32,
+            "score": 0.7529157400131226
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q08",
+      "type": "fact",
+      "q": "图书馆每天几点到几点开放？",
+      "evidence": [
+        "doc13"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc13"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc13"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "图书馆",
+            "head": "图书馆",
+            "relation": "藏书量",
+            "tail": "380万册",
+            "doc_id": "doc13",
+            "triple_id": 38,
+            "score": 0.48763686418533325
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "图书馆"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "图书馆",
+            "head": "图书馆",
+            "relation": "藏书量",
+            "tail": "380万册",
+            "doc_id": "doc13",
+            "triple_id": 38,
+            "score": 0.48763686418533325
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q09",
+      "type": "fact",
+      "q": "人工智能学院成立于哪一年？",
+      "evidence": [
+        "doc02"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc02"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc10",
+          "doc04",
+          "doc11",
+          "doc07"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.807308554649353
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.6402401924133301
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.6250467896461487
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.6208878755569458
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.5994554162025452
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.588301956653595
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.5848914384841919
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.5803804993629456
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.5587525963783264
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.4163183867931366
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.4126105308532715
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.3882037401199341
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "课程代码",
+            "tail": "AI3305",
+            "doc_id": "doc07",
+            "triple_id": 28,
+            "score": 0.37047475576400757
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "开设学期",
+            "tail": "春季学期",
+            "doc_id": "doc06",
+            "triple_id": 27,
+            "score": 0.3704564571380615
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.3598533868789673
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.35594260692596436
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "课程代码",
+            "tail": "AI2101",
+            "doc_id": "doc06",
+            "triple_id": 25,
+            "score": 0.35253119468688965
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.33793583512306213
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "先修课程",
+            "tail": "数据结构",
+            "doc_id": "doc08",
+            "triple_id": 29,
+            "score": 0.3350675404071808
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.3301902413368225
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.3110426962375641
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.30229300260543823
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.28247207403182983
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.266914963722229
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "学分",
+            "tail": "3学分",
+            "doc_id": "doc06",
+            "triple_id": 26,
+            "score": 0.25555598735809326
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "人工智能学院"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.6250467896461487
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.807308554649353
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.6208878755569458
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.6402401924133301
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.5848914384841919
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.5803804993629456
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.5587525963783264
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.588301956653595
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.5994554162025452
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.30229300260543823
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.33793583512306213
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.3301902413368225
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.28247207403182983
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.4126105308532715
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.4163183867931366
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.3110426962375641
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.266914963722229
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.3598533868789673
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.35594260692596436
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.3882037401199341
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "课程代码",
+            "tail": "AI2101",
+            "doc_id": "doc06",
+            "triple_id": 25,
+            "score": 0.35253119468688965
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "学分",
+            "tail": "3学分",
+            "doc_id": "doc06",
+            "triple_id": 26,
+            "score": 0.25555598735809326
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "开设学期",
+            "tail": "春季学期",
+            "doc_id": "doc06",
+            "triple_id": 27,
+            "score": 0.3704564571380615
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "课程代码",
+            "tail": "AI3305",
+            "doc_id": "doc07",
+            "triple_id": 28,
+            "score": 0.37047475576400757
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "先修课程",
+            "tail": "数据结构",
+            "doc_id": "doc08",
+            "triple_id": 29,
+            "score": 0.3350675404071808
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q10",
+      "type": "fact",
+      "q": "春季学期什么时候开学？",
+      "evidence": [
+        "doc12"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc12"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc12",
+          "doc06",
+          "doc04",
+          "doc11"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "春季学期",
+            "head": "春季学期",
+            "relation": "开学日期",
+            "tail": "3月2日",
+            "doc_id": "doc12",
+            "triple_id": 39,
+            "score": 0.717560887336731
+          },
+          {
+            "hop": 1,
+            "from": "春季学期",
+            "head": "大模型通识课",
+            "relation": "开设学期",
+            "tail": "春季学期",
+            "doc_id": "doc06",
+            "triple_id": 27,
+            "score": 0.5692355632781982
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.30786317586898804
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.29951831698417664
+          },
+          {
+            "hop": 2,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "学分",
+            "tail": "3学分",
+            "doc_id": "doc06",
+            "triple_id": 26,
+            "score": 0.2961597442626953
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.2862662672996521
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.2859621047973633
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.27574968338012695
+          },
+          {
+            "hop": 2,
+            "from": "大模型通识课",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.2589488923549652
+          },
+          {
+            "hop": 2,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "课程代码",
+            "tail": "AI2101",
+            "doc_id": "doc06",
+            "triple_id": 25,
+            "score": 0.2519870400428772
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.2445397824048996
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc12",
+            "text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+          },
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "春季学期"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "春季学期",
+            "head": "春季学期",
+            "relation": "开学日期",
+            "tail": "3月2日",
+            "doc_id": "doc12",
+            "triple_id": 39,
+            "score": 0.717560887336731
+          },
+          {
+            "hop": 1,
+            "from": "春季学期",
+            "head": "大模型通识课",
+            "relation": "开设学期",
+            "tail": "春季学期",
+            "doc_id": "doc06",
+            "triple_id": 27,
+            "score": 0.5692355632781982
+          },
+          {
+            "hop": 2,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "课程代码",
+            "tail": "AI2101",
+            "doc_id": "doc06",
+            "triple_id": 25,
+            "score": 0.2519870400428772
+          },
+          {
+            "hop": 2,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "学分",
+            "tail": "3学分",
+            "doc_id": "doc06",
+            "triple_id": 26,
+            "score": 0.2961597442626953
+          },
+          {
+            "hop": 2,
+            "from": "大模型通识课",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.2589488923549652
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.30786317586898804
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.27574968338012695
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.29951831698417664
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.2859621047973633
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.2445397824048996
+          },
+          {
+            "hop": 3,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.2862662672996521
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q11",
+      "type": "global",
+      "q": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+        "doc10",
+        "doc02",
+        "doc03"
+      ],
+      "recall": 0.0,
+      "reciprocal_rank": 0,
+      "first_rank": 0,
+      "full_hit": false,
+      "matched": [],
+      "missed": [
+        "doc02",
+        "doc03",
+        "doc10"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc01"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "建校于",
+            "tail": "1958年",
+            "doc_id": "doc01",
+            "triple_id": 36,
+            "score": 0.638485312461853
+          },
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "位于",
+            "tail": "岭南省云州市",
+            "doc_id": "doc01",
+            "triple_id": 37,
+            "score": 0.5994227528572083
+          },
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "校训",
+            "tail": "格物致知",
+            "doc_id": "doc01",
+            "triple_id": 35,
+            "score": 0.4713096618652344
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc01",
+            "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "云山大学"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "校训",
+            "tail": "格物致知",
+            "doc_id": "doc01",
+            "triple_id": 35,
+            "score": 0.4713096618652344
+          },
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "建校于",
+            "tail": "1958年",
+            "doc_id": "doc01",
+            "triple_id": 36,
+            "score": 0.638485312461853
+          },
+          {
+            "hop": 1,
+            "from": "云山大学",
+            "head": "云山大学",
+            "relation": "位于",
+            "tail": "岭南省云州市",
+            "doc_id": "doc01",
+            "triple_id": 37,
+            "score": 0.5994227528572083
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q12",
+      "type": "global",
+      "q": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+        "doc09"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc09"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc09",
+          "doc11",
+          "doc13",
+          "doc02",
+          "doc03"
+        ],
+        "units": [
+          {
+            "summary_id": 3,
+            "text": "社区C3 学生生活：奖学金分国家（8000 元）、校长（20000 元）、云山一等（3000 元）三级；社团有 AI 协会与机器人战队，图书馆藏书 380 万册、7:00-22:00 开放。",
+            "sources": [
+              "doc09",
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.519287645816803
+          },
+          {
+            "summary_id": 2,
+            "text": "社区C2 科研与国际：认知计算全国重点实验室依托人工智能学院，岭南超算中心由计算机学院参与运行管理；学院与新加坡南洋理工大学有联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc03",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.4246300160884857
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc09",
+            "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc03",
+            "text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+          }
+        ],
+        "scope": "local",
+        "document_order": "summary cosine then listed source order",
+        "fallback": "global: no entity edge matched",
+        "entities": [],
+        "walk": []
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q13",
+      "type": "global",
+      "q": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+        "doc04"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "first_rank": 2,
+      "full_hit": true,
+      "matched": [
+        "doc04"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc04",
+          "doc10",
+          "doc11",
+          "doc07"
+        ],
+        "units": [
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.6589697003364563
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.6264917850494385
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.6207889318466187
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.6110782623291016
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.6110504269599915
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.6020805239677429
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.5949241518974304
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.5738412737846375
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.5698825716972351
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.565911054611206
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.5499750375747681
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "课程代码",
+            "tail": "AI3305",
+            "doc_id": "doc07",
+            "triple_id": 28,
+            "score": 0.4851579964160919
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.48435747623443604
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.4843541383743286
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.4606383442878723
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.4589211046695709
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.44476962089538574
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.44357848167419434
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "课程代码",
+            "tail": "AI2101",
+            "doc_id": "doc06",
+            "triple_id": 25,
+            "score": 0.43689918518066406
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "先修课程",
+            "tail": "数据结构",
+            "doc_id": "doc08",
+            "triple_id": 29,
+            "score": 0.4305230975151062
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.39570385217666626
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.3732692003250122
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "开设学期",
+            "tail": "春季学期",
+            "doc_id": "doc06",
+            "triple_id": 27,
+            "score": 0.3605418801307678
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.3387508988380432
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "学分",
+            "tail": "3学分",
+            "doc_id": "doc06",
+            "triple_id": 26,
+            "score": 0.3147173523902893
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "人工智能学院"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.6589697003364563
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.5949241518974304
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.6020805239677429
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.6110504269599915
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.5738412737846375
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.6264917850494385
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.5698825716972351
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.6207889318466187
+          },
+          {
+            "hop": 1,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.6110782623291016
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "职称",
+            "tail": "教授",
+            "doc_id": "doc04",
+            "triple_id": 1,
+            "score": 0.4843541383743286
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "入职年份",
+            "tail": "2019年",
+            "doc_id": "doc04",
+            "triple_id": 2,
+            "score": 0.3387508988380432
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "研究方向",
+            "tail": "检索增强生成",
+            "doc_id": "doc04",
+            "triple_id": 3,
+            "score": 0.4606383442878723
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "主讲",
+            "tail": "大模型通识课",
+            "doc_id": "doc06",
+            "triple_id": 4,
+            "score": 0.39570385217666626
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "李文瀚",
+            "relation": "指导",
+            "tail": "AI协会",
+            "doc_id": "doc11",
+            "triple_id": 5,
+            "score": 0.4589211046695709
+          },
+          {
+            "hop": 2,
+            "from": "李文瀚",
+            "head": "AI协会",
+            "relation": "指导教师",
+            "tail": "李文瀚",
+            "doc_id": "doc11",
+            "triple_id": 30,
+            "score": 0.565911054611206
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.44476962089538574
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.3732692003250122
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.48435747623443604
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.44357848167419434
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.5499750375747681
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "课程代码",
+            "tail": "AI2101",
+            "doc_id": "doc06",
+            "triple_id": 25,
+            "score": 0.43689918518066406
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "学分",
+            "tail": "3学分",
+            "doc_id": "doc06",
+            "triple_id": 26,
+            "score": 0.3147173523902893
+          },
+          {
+            "hop": 3,
+            "from": "大模型通识课",
+            "head": "大模型通识课",
+            "relation": "开设学期",
+            "tail": "春季学期",
+            "doc_id": "doc06",
+            "triple_id": 27,
+            "score": 0.3605418801307678
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "课程代码",
+            "tail": "AI3305",
+            "doc_id": "doc07",
+            "triple_id": 28,
+            "score": 0.4851579964160919
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "先修课程",
+            "tail": "数据结构",
+            "doc_id": "doc08",
+            "triple_id": 29,
+            "score": 0.4305230975151062
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q14",
+      "type": "global",
+      "q": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+        "doc08"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 0.2,
+      "first_rank": 5,
+      "full_hit": true,
+      "matched": [
+        "doc08"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc04",
+          "doc06",
+          "doc07",
+          "doc08"
+        ],
+        "units": [
+          {
+            "summary_id": 1,
+            "text": "社区C1 教学与课程：人工智能学院设三个系，开设《大模型通识课》（AI2101，李文瀚主讲）与《知识图谱导论》（AI3305，赵婉晴主讲），AI3305 需先修《数据结构》。",
+            "sources": [
+              "doc02",
+              "doc04",
+              "doc06",
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.43407949805259705
+          },
+          {
+            "summary_id": 3,
+            "text": "社区C3 学生生活：奖学金分国家（8000 元）、校长（20000 元）、云山一等（3000 元）三级；社团有 AI 协会与机器人战队，图书馆藏书 380 万册、7:00-22:00 开放。",
+            "sources": [
+              "doc09",
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.4055483341217041
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          }
+        ],
+        "scope": "local",
+        "document_order": "summary cosine then listed source order",
+        "fallback": "global: no entity edge matched",
+        "entities": [],
+        "walk": []
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q15",
+      "type": "global",
+      "q": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+        "doc06",
+        "doc11"
+      ],
+      "recall": 0.5,
+      "reciprocal_rank": 0.3333333333333333,
+      "first_rank": 3,
+      "full_hit": false,
+      "matched": [
+        "doc06"
+      ],
+      "missed": [
+        "doc11"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc04",
+          "doc06",
+          "doc07",
+          "doc08"
+        ],
+        "units": [
+          {
+            "summary_id": 1,
+            "text": "社区C1 教学与课程：人工智能学院设三个系，开设《大模型通识课》（AI2101，李文瀚主讲）与《知识图谱导论》（AI3305，赵婉晴主讲），AI3305 需先修《数据结构》。",
+            "sources": [
+              "doc02",
+              "doc04",
+              "doc06",
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.5292345881462097
+          },
+          {
+            "summary_id": 3,
+            "text": "社区C3 学生生活：奖学金分国家（8000 元）、校长（20000 元）、云山一等（3000 元）三级；社团有 AI 协会与机器人战队，图书馆藏书 380 万册、7:00-22:00 开放。",
+            "sources": [
+              "doc09",
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.45121458172798157
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          }
+        ],
+        "scope": "local",
+        "document_order": "summary cosine then listed source order",
+        "fallback": "global: no entity edge matched",
+        "entities": [],
+        "walk": []
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q16",
+      "type": "fact",
+      "q": "校内校巴共有几条线路，多久一班？",
+      "evidence": [
+        "doc14"
+      ],
+      "recall": 0.0,
+      "reciprocal_rank": 0,
+      "first_rank": 0,
+      "full_hit": false,
+      "matched": [],
+      "missed": [
+        "doc14"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc09",
+          "doc11",
+          "doc13",
+          "doc02",
+          "doc04"
+        ],
+        "units": [
+          {
+            "summary_id": 3,
+            "text": "社区C3 学生生活：奖学金分国家（8000 元）、校长（20000 元）、云山一等（3000 元）三级；社团有 AI 协会与机器人战队，图书馆藏书 380 万册、7:00-22:00 开放。",
+            "sources": [
+              "doc09",
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.4054308831691742
+          },
+          {
+            "summary_id": 1,
+            "text": "社区C1 教学与课程：人工智能学院设三个系，开设《大模型通识课》（AI2101，李文瀚主讲）与《知识图谱导论》（AI3305，赵婉晴主讲），AI3305 需先修《数据结构》。",
+            "sources": [
+              "doc02",
+              "doc04",
+              "doc06",
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.37640833854675293
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc09",
+            "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          }
+        ],
+        "scope": "local",
+        "document_order": "summary cosine then listed source order",
+        "fallback": "global: no entity edge matched",
+        "entities": [],
+        "walk": []
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q17",
+      "type": "multi",
+      "q": "研究知识图谱的教师所授课程要求先修什么课程？",
+      "evidence": [
+        "doc04",
+        "doc07",
+        "doc08"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc04",
+        "doc07",
+        "doc08"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc08",
+          "doc07",
+          "doc04",
+          "doc10",
+          "doc02"
+        ],
+        "units": [
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "先修课程",
+            "tail": "数据结构",
+            "doc_id": "doc08",
+            "triple_id": 29,
+            "score": 0.6797634363174438
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "课程代码",
+            "tail": "AI3305",
+            "doc_id": "doc07",
+            "triple_id": 28,
+            "score": 0.6100329160690308
+          },
+          {
+            "hop": 1,
+            "from": "知识图谱",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.5522324442863464
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.537754237651825
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.44826245307922363
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.43243932723999023
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.41387832164764404
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.4119267761707306
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.3888331651687622
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.37101882696151733
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.34805092215538025
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.32941707968711853
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.3185476064682007
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "知识图谱"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "知识图谱",
+            "head": "赵婉晴",
+            "relation": "研究方向",
+            "tail": "知识图谱",
+            "doc_id": "doc04",
+            "triple_id": 7,
+            "score": 0.5522324442863464
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.3185476064682007
+          },
+          {
+            "hop": 2,
+            "from": "赵婉晴",
+            "head": "赵婉晴",
+            "relation": "主讲",
+            "tail": "知识图谱导论",
+            "doc_id": "doc07",
+            "triple_id": 8,
+            "score": 0.537754237651825
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.3888331651687622
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.32941707968711853
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.41387832164764404
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.4119267761707306
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.43243932723999023
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.34805092215538025
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.37101882696151733
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.44826245307922363
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "课程代码",
+            "tail": "AI3305",
+            "doc_id": "doc07",
+            "triple_id": 28,
+            "score": 0.6100329160690308
+          },
+          {
+            "hop": 3,
+            "from": "知识图谱导论",
+            "head": "知识图谱导论",
+            "relation": "先修课程",
+            "tail": "数据结构",
+            "doc_id": "doc08",
+            "triple_id": 29,
+            "score": 0.6797634363174438
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q18",
+      "type": "multi",
+      "q": "机器人战队指导教师所在学院下设哪些系？",
+      "evidence": [
+        "doc11",
+        "doc04",
+        "doc02"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc02",
+        "doc04",
+        "doc11"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc11",
+          "doc04",
+          "doc10"
+        ],
+        "units": [
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.6347768306732178
+          },
+          {
+            "hop": 1,
+            "from": "机器人战队",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.6275022029876709
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.5871932506561279
+          },
+          {
+            "hop": 1,
+            "from": "机器人战队",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.5622986555099487
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.5292671322822571
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.48713570833206177
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.46833741664886475
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.4487811028957367
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.44441646337509155
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.4282433092594147
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.41781729459762573
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.3754871189594269
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          }
+        ],
+        "scope": "local",
+        "entities": [
+          "机器人战队"
+        ],
+        "walk": [
+          {
+            "hop": 1,
+            "from": "机器人战队",
+            "head": "机器人战队",
+            "relation": "指导教师",
+            "tail": "孙浩然",
+            "doc_id": "doc11",
+            "triple_id": 31,
+            "score": 0.6275022029876709
+          },
+          {
+            "hop": 1,
+            "from": "机器人战队",
+            "head": "孙浩然",
+            "relation": "指导",
+            "tail": "机器人战队",
+            "doc_id": "doc11",
+            "triple_id": 11,
+            "score": 0.5622986555099487
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 9,
+            "score": 0.4487811028957367
+          },
+          {
+            "hop": 2,
+            "from": "孙浩然",
+            "head": "孙浩然",
+            "relation": "研究方向",
+            "tail": "强化学习",
+            "doc_id": "doc04",
+            "triple_id": 10,
+            "score": 0.3754871189594269
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "院长",
+            "tail": "王启明",
+            "doc_id": "doc02",
+            "triple_id": 12,
+            "score": 0.48713570833206177
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "成立于",
+            "tail": "2018年",
+            "doc_id": "doc02",
+            "triple_id": 13,
+            "score": 0.46833741664886475
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "机器学习系",
+            "doc_id": "doc02",
+            "triple_id": 14,
+            "score": 0.6347768306732178
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "智能科学系",
+            "doc_id": "doc02",
+            "triple_id": 15,
+            "score": 0.5871932506561279
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "人工智能学院",
+            "relation": "下设系",
+            "tail": "认知计算系",
+            "doc_id": "doc02",
+            "triple_id": 16,
+            "score": 0.5292671322822571
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "李文瀚",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 0,
+            "score": 0.44441646337509155
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "赵婉晴",
+            "relation": "任职于",
+            "tail": "人工智能学院",
+            "doc_id": "doc04",
+            "triple_id": 6,
+            "score": 0.41781729459762573
+          },
+          {
+            "hop": 3,
+            "from": "人工智能学院",
+            "head": "认知计算全国重点实验室",
+            "relation": "依托",
+            "tail": "人工智能学院",
+            "doc_id": "doc10",
+            "triple_id": 17,
+            "score": 0.4282433092594147
+          }
+        ],
+        "fallback": null
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q19",
+      "type": "global",
+      "q": "学校在图书资源和国际交流方面有哪些安排？",
+      "evidence": [
+        "doc13",
+        "doc15"
+      ],
+      "recall": 0.5,
+      "reciprocal_rank": 0.25,
+      "first_rank": 4,
+      "full_hit": false,
+      "matched": [
+        "doc15"
+      ],
+      "missed": [
+        "doc13"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc03",
+          "doc10",
+          "doc15",
+          "doc09"
+        ],
+        "units": [
+          {
+            "summary_id": 2,
+            "text": "社区C2 科研与国际：认知计算全国重点实验室依托人工智能学院，岭南超算中心由计算机学院参与运行管理；学院与新加坡南洋理工大学有联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc03",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.4809950590133667
+          },
+          {
+            "summary_id": 3,
+            "text": "社区C3 学生生活：奖学金分国家（8000 元）、校长（20000 元）、云山一等（3000 元）三级；社团有 AI 协会与机器人战队，图书馆藏书 380 万册、7:00-22:00 开放。",
+            "sources": [
+              "doc09",
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.4809000492095947
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc03",
+            "text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc15",
+            "text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+          },
+          {
+            "doc_id": "doc09",
+            "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+          }
+        ],
+        "scope": "local",
+        "document_order": "summary cosine then listed source order",
+        "fallback": "global: no entity edge matched",
+        "entities": [],
+        "walk": []
+      }
+    },
+    {
+      "system": "GraphRAG",
+      "id": "Q20",
+      "type": "global",
+      "q": "两所学院分别开设哪些本科专业或下属系，负责人是谁？",
+      "evidence": [
+        "doc02",
+        "doc03"
+      ],
+      "recall": 0.5,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": false,
+      "matched": [
+        "doc02"
+      ],
+      "missed": [
+        "doc03"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc04",
+          "doc06",
+          "doc07",
+          "doc08"
+        ],
+        "units": [
+          {
+            "summary_id": 1,
+            "text": "社区C1 教学与课程：人工智能学院设三个系，开设《大模型通识课》（AI2101，李文瀚主讲）与《知识图谱导论》（AI3305，赵婉晴主讲），AI3305 需先修《数据结构》。",
+            "sources": [
+              "doc02",
+              "doc04",
+              "doc06",
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.503608226776123
+          },
+          {
+            "summary_id": 2,
+            "text": "社区C2 科研与国际：认知计算全国重点实验室依托人工智能学院，岭南超算中心由计算机学院参与运行管理；学院与新加坡南洋理工大学有联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc03",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.47257691621780396
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          }
+        ],
+        "scope": "local",
+        "document_order": "summary cosine then listed source order",
+        "fallback": "global: no entity edge matched",
+        "entities": [],
+        "walk": []
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q01",
+      "type": "multi",
+      "q": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "evidence": [
+        "doc04",
+        "doc06",
+        "doc02"
+      ],
+      "recall": 0.6666666666666666,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": false,
+      "matched": [
+        "doc04",
+        "doc06"
+      ],
+      "missed": [
+        "doc02"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc06",
+          "doc04",
+          "doc11",
+          "doc05"
+        ],
+        "units": [
+          {
+            "entry_id": 6,
+            "title": "大模型通识课",
+            "body": "《大模型通识课》（AI2101）：3 学分 32 学时，春季学期开设，李文瀚主讲，面向全校本科生，无先修要求。",
+            "sources": [
+              "doc06"
+            ],
+            "score": 0.6193115711212158
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.5569531917572021
+          },
+          {
+            "entry_id": 5,
+            "title": "计算机学院教师",
+            "body": "周天宇：教授，研究分布式系统。林小雨：副教授，研究数据库系统。",
+            "sources": [
+              "doc05"
+            ],
+            "score": 0.4605591297149658
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc05",
+            "text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q02",
+      "type": "multi",
+      "q": "AI 协会的指导教师主讲课程的课程代码是什么？",
+      "evidence": [
+        "doc11",
+        "doc04",
+        "doc06"
+      ],
+      "recall": 0.6666666666666666,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": false,
+      "matched": [
+        "doc04",
+        "doc11"
+      ],
+      "missed": [
+        "doc06"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc11",
+          "doc13",
+          "doc04",
+          "doc07",
+          "doc08"
+        ],
+        "units": [
+          {
+            "entry_id": 9,
+            "title": "学生社团与校园生活",
+            "body": "AI 协会：指导教师李文瀚，每周三晚论文研读。机器人战队：指导教师孙浩然，参加全国机器人大赛。图书馆藏书 380 万册，每天 7:00-22:00 开放，人工智能分馆在理科楼 B 座。",
+            "sources": [
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.6275137066841125
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.6192132234573364
+          },
+          {
+            "entry_id": 7,
+            "title": "知识图谱导论",
+            "body": "《知识图谱导论》（AI3305）：2 学分，秋季学期，赵婉晴主讲，面向人工智能学院研究生，需先修《数据结构》。",
+            "sources": [
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.5616950988769531
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q03",
+      "type": "multi",
+      "q": "认知计算全国重点实验室依托的学院成立于哪一年？",
+      "evidence": [
+        "doc10",
+        "doc02"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc02",
+        "doc10"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc10",
+          "doc15",
+          "doc03",
+          "doc07"
+        ],
+        "units": [
+          {
+            "entry_id": 2,
+            "title": "人工智能学院",
+            "body": "人工智能学院成立于 2018 年，院长王启明教授，下设机器学习系、智能科学系、认知计算系。认知计算全国重点实验室依托本院建设。与新加坡南洋理工大学有本科联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.6687796115875244
+          },
+          {
+            "entry_id": 3,
+            "title": "计算机学院",
+            "body": "计算机学院前身是 1985 年成立的计算机系，院长陈国峰教授，设计算机科学与技术、软件工程两个专业。参与岭南超算中心运行管理。",
+            "sources": [
+              "doc03",
+              "doc10"
+            ],
+            "score": 0.5673922300338745
+          },
+          {
+            "entry_id": 7,
+            "title": "知识图谱导论",
+            "body": "《知识图谱导论》（AI3305）：2 学分，秋季学期，赵婉晴主讲，面向人工智能学院研究生，需先修《数据结构》。",
+            "sources": [
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.48712101578712463
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc15",
+            "text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+          },
+          {
+            "doc_id": "doc03",
+            "text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q04",
+      "type": "multi",
+      "q": "《知识图谱导论》授课教师的研究方向是什么？",
+      "evidence": [
+        "doc07",
+        "doc04"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc04",
+        "doc07"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc07",
+          "doc08",
+          "doc04",
+          "doc11",
+          "doc05"
+        ],
+        "units": [
+          {
+            "entry_id": 7,
+            "title": "知识图谱导论",
+            "body": "《知识图谱导论》（AI3305）：2 学分，秋季学期，赵婉晴主讲，面向人工智能学院研究生，需先修《数据结构》。",
+            "sources": [
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.6559303402900696
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.5970160961151123
+          },
+          {
+            "entry_id": 5,
+            "title": "计算机学院教师",
+            "body": "周天宇：教授，研究分布式系统。林小雨：副教授，研究数据库系统。",
+            "sources": [
+              "doc05"
+            ],
+            "score": 0.5070961713790894
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc05",
+            "text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q05",
+      "type": "multi",
+      "q": "机器人战队的指导教师的研究方向是什么？",
+      "evidence": [
+        "doc11",
+        "doc04"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc04",
+        "doc11"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc04",
+          "doc11",
+          "doc13",
+          "doc02",
+          "doc10"
+        ],
+        "units": [
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.6126740574836731
+          },
+          {
+            "entry_id": 9,
+            "title": "学生社团与校园生活",
+            "body": "AI 协会：指导教师李文瀚，每周三晚论文研读。机器人战队：指导教师孙浩然，参加全国机器人大赛。图书馆藏书 380 万册，每天 7:00-22:00 开放，人工智能分馆在理科楼 B 座。",
+            "sources": [
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.6035957932472229
+          },
+          {
+            "entry_id": 2,
+            "title": "人工智能学院",
+            "body": "人工智能学院成立于 2018 年，院长王启明教授，下设机器学习系、智能科学系、认知计算系。认知计算全国重点实验室依托本院建设。与新加坡南洋理工大学有本科联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.46781453490257263
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q06",
+      "type": "fact",
+      "q": "云山大学的校训是什么？",
+      "evidence": [
+        "doc01"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc01"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc01",
+          "doc12",
+          "doc14",
+          "doc09",
+          "doc06"
+        ],
+        "units": [
+          {
+            "entry_id": 1,
+            "title": "云山大学",
+            "body": "云山大学位于岭南省云州市，建于 1958 年，省属重点大学，本科生约 2.1 万人，校训「格物致知」。地铁 3 号线「云大站」距东门 200 米，校巴 5 条线路。校历：春季学期 3 月 2 日开学。",
+            "sources": [
+              "doc01",
+              "doc12",
+              "doc14"
+            ],
+            "score": 0.6298794746398926
+          },
+          {
+            "entry_id": 8,
+            "title": "奖学金体系",
+            "body": "国家奖学金 8000 元/年（约 2%）；校长奖学金 20000 元/年（全校 10 人）；云山一等奖学金 3000 元/年（约 5%）。",
+            "sources": [
+              "doc09"
+            ],
+            "score": 0.4907127022743225
+          },
+          {
+            "entry_id": 6,
+            "title": "大模型通识课",
+            "body": "《大模型通识课》（AI2101）：3 学分 32 学时，春季学期开设，李文瀚主讲，面向全校本科生，无先修要求。",
+            "sources": [
+              "doc06"
+            ],
+            "score": 0.46545884013175964
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc01",
+            "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+          },
+          {
+            "doc_id": "doc12",
+            "text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+          },
+          {
+            "doc_id": "doc14",
+            "text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+          },
+          {
+            "doc_id": "doc09",
+            "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+          },
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q07",
+      "type": "fact",
+      "q": "国家奖学金的金额是多少？",
+      "evidence": [
+        "doc09"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc09"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc09",
+          "doc04",
+          "doc11",
+          "doc13"
+        ],
+        "units": [
+          {
+            "entry_id": 8,
+            "title": "奖学金体系",
+            "body": "国家奖学金 8000 元/年（约 2%）；校长奖学金 20000 元/年（全校 10 人）；云山一等奖学金 3000 元/年（约 5%）。",
+            "sources": [
+              "doc09"
+            ],
+            "score": 0.6704058051109314
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.3645950257778168
+          },
+          {
+            "entry_id": 9,
+            "title": "学生社团与校园生活",
+            "body": "AI 协会：指导教师李文瀚，每周三晚论文研读。机器人战队：指导教师孙浩然，参加全国机器人大赛。图书馆藏书 380 万册，每天 7:00-22:00 开放，人工智能分馆在理科楼 B 座。",
+            "sources": [
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.35125666856765747
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc09",
+            "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q08",
+      "type": "fact",
+      "q": "图书馆每天几点到几点开放？",
+      "evidence": [
+        "doc13"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 0.5,
+      "first_rank": 2,
+      "full_hit": true,
+      "matched": [
+        "doc13"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc11",
+          "doc13",
+          "doc05",
+          "doc06"
+        ],
+        "units": [
+          {
+            "entry_id": 9,
+            "title": "学生社团与校园生活",
+            "body": "AI 协会：指导教师李文瀚，每周三晚论文研读。机器人战队：指导教师孙浩然，参加全国机器人大赛。图书馆藏书 380 万册，每天 7:00-22:00 开放，人工智能分馆在理科楼 B 座。",
+            "sources": [
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.4486671984195709
+          },
+          {
+            "entry_id": 5,
+            "title": "计算机学院教师",
+            "body": "周天宇：教授，研究分布式系统。林小雨：副教授，研究数据库系统。",
+            "sources": [
+              "doc05"
+            ],
+            "score": 0.3475831151008606
+          },
+          {
+            "entry_id": 6,
+            "title": "大模型通识课",
+            "body": "《大模型通识课》（AI2101）：3 学分 32 学时，春季学期开设，李文瀚主讲，面向全校本科生，无先修要求。",
+            "sources": [
+              "doc06"
+            ],
+            "score": 0.3214373290538788
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          },
+          {
+            "doc_id": "doc05",
+            "text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+          },
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q09",
+      "type": "fact",
+      "q": "人工智能学院成立于哪一年？",
+      "evidence": [
+        "doc02"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc02"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc10",
+          "doc15",
+          "doc11",
+          "doc13"
+        ],
+        "units": [
+          {
+            "entry_id": 2,
+            "title": "人工智能学院",
+            "body": "人工智能学院成立于 2018 年，院长王启明教授，下设机器学习系、智能科学系、认知计算系。认知计算全国重点实验室依托本院建设。与新加坡南洋理工大学有本科联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.747586190700531
+          },
+          {
+            "entry_id": 9,
+            "title": "学生社团与校园生活",
+            "body": "AI 协会：指导教师李文瀚，每周三晚论文研读。机器人战队：指导教师孙浩然，参加全国机器人大赛。图书馆藏书 380 万册，每天 7:00-22:00 开放，人工智能分馆在理科楼 B 座。",
+            "sources": [
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.5587788820266724
+          },
+          {
+            "entry_id": 3,
+            "title": "计算机学院",
+            "body": "计算机学院前身是 1985 年成立的计算机系，院长陈国峰教授，设计算机科学与技术、软件工程两个专业。参与岭南超算中心运行管理。",
+            "sources": [
+              "doc03",
+              "doc10"
+            ],
+            "score": 0.5565369129180908
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc15",
+            "text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q10",
+      "type": "fact",
+      "q": "春季学期什么时候开学？",
+      "evidence": [
+        "doc12"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "first_rank": 3,
+      "full_hit": true,
+      "matched": [
+        "doc12"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc06",
+          "doc01",
+          "doc12",
+          "doc14",
+          "doc07"
+        ],
+        "units": [
+          {
+            "entry_id": 6,
+            "title": "大模型通识课",
+            "body": "《大模型通识课》（AI2101）：3 学分 32 学时，春季学期开设，李文瀚主讲，面向全校本科生，无先修要求。",
+            "sources": [
+              "doc06"
+            ],
+            "score": 0.5001380443572998
+          },
+          {
+            "entry_id": 1,
+            "title": "云山大学",
+            "body": "云山大学位于岭南省云州市，建于 1958 年，省属重点大学，本科生约 2.1 万人，校训「格物致知」。地铁 3 号线「云大站」距东门 200 米，校巴 5 条线路。校历：春季学期 3 月 2 日开学。",
+            "sources": [
+              "doc01",
+              "doc12",
+              "doc14"
+            ],
+            "score": 0.435924768447876
+          },
+          {
+            "entry_id": 7,
+            "title": "知识图谱导论",
+            "body": "《知识图谱导论》（AI3305）：2 学分，秋季学期，赵婉晴主讲，面向人工智能学院研究生，需先修《数据结构》。",
+            "sources": [
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.42754697799682617
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc01",
+            "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+          },
+          {
+            "doc_id": "doc12",
+            "text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+          },
+          {
+            "doc_id": "doc14",
+            "text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q11",
+      "type": "global",
+      "q": "云山大学有哪些科研平台？分别依托谁建设？",
+      "evidence": [
+        "doc10",
+        "doc02",
+        "doc03"
+      ],
+      "recall": 0.0,
+      "reciprocal_rank": 0,
+      "first_rank": 0,
+      "full_hit": false,
+      "matched": [],
+      "missed": [
+        "doc02",
+        "doc03",
+        "doc10"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc01",
+          "doc12",
+          "doc14",
+          "doc04",
+          "doc11"
+        ],
+        "units": [
+          {
+            "entry_id": 1,
+            "title": "云山大学",
+            "body": "云山大学位于岭南省云州市，建于 1958 年，省属重点大学，本科生约 2.1 万人，校训「格物致知」。地铁 3 号线「云大站」距东门 200 米，校巴 5 条线路。校历：春季学期 3 月 2 日开学。",
+            "sources": [
+              "doc01",
+              "doc12",
+              "doc14"
+            ],
+            "score": 0.6172020435333252
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.5614151954650879
+          },
+          {
+            "entry_id": 9,
+            "title": "学生社团与校园生活",
+            "body": "AI 协会：指导教师李文瀚，每周三晚论文研读。机器人战队：指导教师孙浩然，参加全国机器人大赛。图书馆藏书 380 万册，每天 7:00-22:00 开放，人工智能分馆在理科楼 B 座。",
+            "sources": [
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.5283359885215759
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc01",
+            "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+          },
+          {
+            "doc_id": "doc12",
+            "text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+          },
+          {
+            "doc_id": "doc14",
+            "text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q12",
+      "type": "global",
+      "q": "学校的学生奖励体系包含哪些项目？",
+      "evidence": [
+        "doc09"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc09"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc09",
+          "doc02",
+          "doc10",
+          "doc15",
+          "doc03"
+        ],
+        "units": [
+          {
+            "entry_id": 8,
+            "title": "奖学金体系",
+            "body": "国家奖学金 8000 元/年（约 2%）；校长奖学金 20000 元/年（全校 10 人）；云山一等奖学金 3000 元/年（约 5%）。",
+            "sources": [
+              "doc09"
+            ],
+            "score": 0.5525397062301636
+          },
+          {
+            "entry_id": 2,
+            "title": "人工智能学院",
+            "body": "人工智能学院成立于 2018 年，院长王启明教授，下设机器学习系、智能科学系、认知计算系。认知计算全国重点实验室依托本院建设。与新加坡南洋理工大学有本科联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.41806066036224365
+          },
+          {
+            "entry_id": 3,
+            "title": "计算机学院",
+            "body": "计算机学院前身是 1985 年成立的计算机系，院长陈国峰教授，设计算机科学与技术、软件工程两个专业。参与岭南超算中心运行管理。",
+            "sources": [
+              "doc03",
+              "doc10"
+            ],
+            "score": 0.4132123589515686
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc09",
+            "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc15",
+            "text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+          },
+          {
+            "doc_id": "doc03",
+            "text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q13",
+      "type": "global",
+      "q": "人工智能学院有哪些教师？各自做什么研究方向？",
+      "evidence": [
+        "doc04"
+      ],
+      "recall": 0.0,
+      "reciprocal_rank": 0,
+      "first_rank": 0,
+      "full_hit": false,
+      "matched": [],
+      "missed": [
+        "doc04"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc10",
+          "doc15",
+          "doc11",
+          "doc13"
+        ],
+        "units": [
+          {
+            "entry_id": 2,
+            "title": "人工智能学院",
+            "body": "人工智能学院成立于 2018 年，院长王启明教授，下设机器学习系、智能科学系、认知计算系。认知计算全国重点实验室依托本院建设。与新加坡南洋理工大学有本科联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.6975510120391846
+          },
+          {
+            "entry_id": 9,
+            "title": "学生社团与校园生活",
+            "body": "AI 协会：指导教师李文瀚，每周三晚论文研读。机器人战队：指导教师孙浩然，参加全国机器人大赛。图书馆藏书 380 万册，每天 7:00-22:00 开放，人工智能分馆在理科楼 B 座。",
+            "sources": [
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.6601380109786987
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.645318329334259
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc15",
+            "text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q14",
+      "type": "global",
+      "q": "本科生选课有哪些限制和先修要求？",
+      "evidence": [
+        "doc08"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "first_rank": 3,
+      "full_hit": true,
+      "matched": [
+        "doc08"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc06",
+          "doc07",
+          "doc08",
+          "doc04",
+          "doc11"
+        ],
+        "units": [
+          {
+            "entry_id": 6,
+            "title": "大模型通识课",
+            "body": "《大模型通识课》（AI2101）：3 学分 32 学时，春季学期开设，李文瀚主讲，面向全校本科生，无先修要求。",
+            "sources": [
+              "doc06"
+            ],
+            "score": 0.4937981367111206
+          },
+          {
+            "entry_id": 7,
+            "title": "知识图谱导论",
+            "body": "《知识图谱导论》（AI3305）：2 学分，秋季学期，赵婉晴主讲，面向人工智能学院研究生，需先修《数据结构》。",
+            "sources": [
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.46901872754096985
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.42691969871520996
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q15",
+      "type": "global",
+      "q": "对想深入学习大模型的学生，学校提供哪些课程和课外活动？",
+      "evidence": [
+        "doc06",
+        "doc11"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc06",
+        "doc11"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc06",
+          "doc04",
+          "doc11",
+          "doc07",
+          "doc08"
+        ],
+        "units": [
+          {
+            "entry_id": 6,
+            "title": "大模型通识课",
+            "body": "《大模型通识课》（AI2101）：3 学分 32 学时，春季学期开设，李文瀚主讲，面向全校本科生，无先修要求。",
+            "sources": [
+              "doc06"
+            ],
+            "score": 0.6250313520431519
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.5300485491752625
+          },
+          {
+            "entry_id": 7,
+            "title": "知识图谱导论",
+            "body": "《知识图谱导论》（AI3305）：2 学分，秋季学期，赵婉晴主讲，面向人工智能学院研究生，需先修《数据结构》。",
+            "sources": [
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.42089715600013733
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q16",
+      "type": "fact",
+      "q": "校内校巴共有几条线路，多久一班？",
+      "evidence": [
+        "doc14"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "first_rank": 3,
+      "full_hit": true,
+      "matched": [
+        "doc14"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc01",
+          "doc12",
+          "doc14",
+          "doc09",
+          "doc06"
+        ],
+        "units": [
+          {
+            "entry_id": 1,
+            "title": "云山大学",
+            "body": "云山大学位于岭南省云州市，建于 1958 年，省属重点大学，本科生约 2.1 万人，校训「格物致知」。地铁 3 号线「云大站」距东门 200 米，校巴 5 条线路。校历：春季学期 3 月 2 日开学。",
+            "sources": [
+              "doc01",
+              "doc12",
+              "doc14"
+            ],
+            "score": 0.45068374276161194
+          },
+          {
+            "entry_id": 8,
+            "title": "奖学金体系",
+            "body": "国家奖学金 8000 元/年（约 2%）；校长奖学金 20000 元/年（全校 10 人）；云山一等奖学金 3000 元/年（约 5%）。",
+            "sources": [
+              "doc09"
+            ],
+            "score": 0.41247498989105225
+          },
+          {
+            "entry_id": 6,
+            "title": "大模型通识课",
+            "body": "《大模型通识课》（AI2101）：3 学分 32 学时，春季学期开设，李文瀚主讲，面向全校本科生，无先修要求。",
+            "sources": [
+              "doc06"
+            ],
+            "score": 0.3957577347755432
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc01",
+            "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+          },
+          {
+            "doc_id": "doc12",
+            "text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+          },
+          {
+            "doc_id": "doc14",
+            "text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+          },
+          {
+            "doc_id": "doc09",
+            "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+          },
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q17",
+      "type": "multi",
+      "q": "研究知识图谱的教师所授课程要求先修什么课程？",
+      "evidence": [
+        "doc04",
+        "doc07",
+        "doc08"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc04",
+        "doc07",
+        "doc08"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc07",
+          "doc08",
+          "doc06",
+          "doc04",
+          "doc11"
+        ],
+        "units": [
+          {
+            "entry_id": 7,
+            "title": "知识图谱导论",
+            "body": "《知识图谱导论》（AI3305）：2 学分，秋季学期，赵婉晴主讲，面向人工智能学院研究生，需先修《数据结构》。",
+            "sources": [
+              "doc07",
+              "doc08"
+            ],
+            "score": 0.6258783340454102
+          },
+          {
+            "entry_id": 6,
+            "title": "大模型通识课",
+            "body": "《大模型通识课》（AI2101）：3 学分 32 学时，春季学期开设，李文瀚主讲，面向全校本科生，无先修要求。",
+            "sources": [
+              "doc06"
+            ],
+            "score": 0.5249961614608765
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.5234820246696472
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc07",
+            "text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+          },
+          {
+            "doc_id": "doc08",
+            "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+          },
+          {
+            "doc_id": "doc06",
+            "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q18",
+      "type": "multi",
+      "q": "机器人战队指导教师所在学院下设哪些系？",
+      "evidence": [
+        "doc11",
+        "doc04",
+        "doc02"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc02",
+        "doc04",
+        "doc11"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc04",
+          "doc11",
+          "doc13",
+          "doc02",
+          "doc10"
+        ],
+        "units": [
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.5460376143455505
+          },
+          {
+            "entry_id": 9,
+            "title": "学生社团与校园生活",
+            "body": "AI 协会：指导教师李文瀚，每周三晚论文研读。机器人战队：指导教师孙浩然，参加全国机器人大赛。图书馆藏书 380 万册，每天 7:00-22:00 开放，人工智能分馆在理科楼 B 座。",
+            "sources": [
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.5281250476837158
+          },
+          {
+            "entry_id": 2,
+            "title": "人工智能学院",
+            "body": "人工智能学院成立于 2018 年，院长王启明教授，下设机器学习系、智能科学系、认知计算系。认知计算全国重点实验室依托本院建设。与新加坡南洋理工大学有本科联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.5157777070999146
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          },
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q19",
+      "type": "global",
+      "q": "学校在图书资源和国际交流方面有哪些安排？",
+      "evidence": [
+        "doc13",
+        "doc15"
+      ],
+      "recall": 0.5,
+      "reciprocal_rank": 0.3333333333333333,
+      "first_rank": 3,
+      "full_hit": false,
+      "matched": [
+        "doc13"
+      ],
+      "missed": [
+        "doc15"
+      ],
+      "retrieval": {
+        "documents": [
+          "doc05",
+          "doc11",
+          "doc13",
+          "doc04"
+        ],
+        "units": [
+          {
+            "entry_id": 5,
+            "title": "计算机学院教师",
+            "body": "周天宇：教授，研究分布式系统。林小雨：副教授，研究数据库系统。",
+            "sources": [
+              "doc05"
+            ],
+            "score": 0.4391644597053528
+          },
+          {
+            "entry_id": 9,
+            "title": "学生社团与校园生活",
+            "body": "AI 协会：指导教师李文瀚，每周三晚论文研读。机器人战队：指导教师孙浩然，参加全国机器人大赛。图书馆藏书 380 万册，每天 7:00-22:00 开放，人工智能分馆在理科楼 B 座。",
+            "sources": [
+              "doc11",
+              "doc13"
+            ],
+            "score": 0.4370114803314209
+          },
+          {
+            "entry_id": 4,
+            "title": "人工智能学院教师",
+            "body": "李文瀚：教授，2019 年入职，研究检索增强生成，主讲《大模型通识课》，指导AI 协会。赵婉晴：副教授，研究知识图谱，主讲《知识图谱导论》。孙浩然：讲师，研究强化学习，指导机器人战队。",
+            "sources": [
+              "doc04",
+              "doc11"
+            ],
+            "score": 0.4336117208003998
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc05",
+            "text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+          },
+          {
+            "doc_id": "doc11",
+            "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+          },
+          {
+            "doc_id": "doc13",
+            "text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+          },
+          {
+            "doc_id": "doc04",
+            "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    },
+    {
+      "system": "WikiRAG",
+      "id": "Q20",
+      "type": "global",
+      "q": "两所学院分别开设哪些本科专业或下属系，负责人是谁？",
+      "evidence": [
+        "doc02",
+        "doc03"
+      ],
+      "recall": 1.0,
+      "reciprocal_rank": 1.0,
+      "first_rank": 1,
+      "full_hit": true,
+      "matched": [
+        "doc02",
+        "doc03"
+      ],
+      "missed": [],
+      "retrieval": {
+        "documents": [
+          "doc02",
+          "doc10",
+          "doc15",
+          "doc05",
+          "doc03"
+        ],
+        "units": [
+          {
+            "entry_id": 2,
+            "title": "人工智能学院",
+            "body": "人工智能学院成立于 2018 年，院长王启明教授，下设机器学习系、智能科学系、认知计算系。认知计算全国重点实验室依托本院建设。与新加坡南洋理工大学有本科联合培养项目。",
+            "sources": [
+              "doc02",
+              "doc10",
+              "doc15"
+            ],
+            "score": 0.5183918476104736
+          },
+          {
+            "entry_id": 5,
+            "title": "计算机学院教师",
+            "body": "周天宇：教授，研究分布式系统。林小雨：副教授，研究数据库系统。",
+            "sources": [
+              "doc05"
+            ],
+            "score": 0.5124635696411133
+          },
+          {
+            "entry_id": 3,
+            "title": "计算机学院",
+            "body": "计算机学院前身是 1985 年成立的计算机系，院长陈国峰教授，设计算机科学与技术、软件工程两个专业。参与岭南超算中心运行管理。",
+            "sources": [
+              "doc03",
+              "doc10"
+            ],
+            "score": 0.5039530992507935
+          }
+        ],
+        "context": [
+          {
+            "doc_id": "doc02",
+            "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+          },
+          {
+            "doc_id": "doc10",
+            "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+          },
+          {
+            "doc_id": "doc15",
+            "text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+          },
+          {
+            "doc_id": "doc05",
+            "text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+          },
+          {
+            "doc_id": "doc03",
+            "text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+          }
+        ],
+        "document_order": "entry cosine then listed source order"
+      }
+    }
+  ]
+}

@@ -1,6 +1,9 @@
 /lab02/*.py text eol=lf
 /lab02/*.slurm text eol=lf
 /lab03/** text eol=lf
+/lab04/** text eol=lf
+# Keep recorded JSON bytes exact so SHA256 manifests survive Git checkout.
+/lab04/**/*.json -text -eol whitespace=cr-at-eol
 # Preserve generated text exactly, including sampled trailing newlines.
 /lab03/results/** whitespace=-blank-at-eof
 *.pt binary

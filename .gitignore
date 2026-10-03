@@ -7,3 +7,6 @@ lab03/results/**/.run.lock
 lab03/results/**/partial.pt
 lab03/results/**/*.tmp
 lab03/smoke_results/
+
+lab04/.embedding_cache/
+lab04/.venv/

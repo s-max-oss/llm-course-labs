@@ -1,0 +1,122 @@
+[
+  {
+    "system": "Vector RAG",
+    "question_ids": [
+      "Q01",
+      "Q06",
+      "Q11"
+    ],
+    "ranks": [
+      1,
+      1,
+      1
+    ],
+    "terms": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "mrr": 1.0,
+    "formula": "(1/1 + 1/1 + 1/1) / 3",
+    "documents": [
+      [
+        "doc06",
+        "doc04",
+        "doc05",
+        "doc02",
+        "doc08"
+      ],
+      [
+        "doc01",
+        "doc14",
+        "doc09",
+        "doc06",
+        "doc10"
+      ],
+      [
+        "doc10",
+        "doc01",
+        "doc04",
+        "doc11",
+        "doc05"
+      ]
+    ]
+  },
+  {
+    "system": "GraphRAG",
+    "question_ids": [
+      "Q01",
+      "Q06",
+      "Q11"
+    ],
+    "ranks": [
+      1,
+      1,
+      0
+    ],
+    "terms": [
+      1.0,
+      1.0,
+      0
+    ],
+    "mrr": 0.6666666666666666,
+    "formula": "(1/1 + 1/1 + 0) / 3",
+    "documents": [
+      [
+        "doc06",
+        "doc02",
+        "doc04",
+        "doc11",
+        "doc10"
+      ],
+      [
+        "doc01"
+      ],
+      [
+        "doc01"
+      ]
+    ]
+  },
+  {
+    "system": "WikiRAG",
+    "question_ids": [
+      "Q01",
+      "Q06",
+      "Q11"
+    ],
+    "ranks": [
+      1,
+      1,
+      0
+    ],
+    "terms": [
+      1.0,
+      1.0,
+      0
+    ],
+    "mrr": 0.6666666666666666,
+    "formula": "(1/1 + 1/1 + 0) / 3",
+    "documents": [
+      [
+        "doc06",
+        "doc04",
+        "doc11",
+        "doc05"
+      ],
+      [
+        "doc01",
+        "doc12",
+        "doc14",
+        "doc09",
+        "doc06"
+      ],
+      [
+        "doc01",
+        "doc12",
+        "doc14",
+        "doc04",
+        "doc11"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-03",
+  "template_unchanged": true,
+  "preserve_only_package_parts_match": true,
+  "pages": 18,
+  "tables": 12,
+  "figures": 4,
+  "sections": 7,
+  "thought_questions": 6,
+  "visual_check": "All 18 page PNGs inspected. After final edits, unchanged page pixels verified by SHA256; modified pages re-inspected. No clipping, broken table rows or short spill pages.",
+  "renderer": "Microsoft Word read-only export plus bundled pypdfium2; packaged renderer unavailable because soffice.exe not installed.",
+  "code_results_review": "passed",
+  "report_content_review": "passed",
+  "human_faithfulness_review_complete": false,
+  "hpc": {
+    "lab04_jobs_started": 0,
+    "lab04_ssh_sessions_opened": 0
+  },
+  "report_sha256": {
+    "2024311281_孙驰_实验作业四.docx": "77988db2e225dfe133cb28b17ddb64567d4e304fb6a35d4318e1166effc61f1e",
+    "2024311281_孙驰_实验作业四.pdf": "ef32b143b76bd17630978a04370ea764c7dcc42f3b6725b38536711bdbc883dc"
+  },
+  "page_sha256": {
+    "page-1.png": "679dde03090cb410e36d1d72c80afd11d9735afe12586c7889a56469810f0afe",
+    "page-2.png": "0dcded73c181c1ebc3683642cad0042f605b589fb6e7e1a7ed35a8b3d592189f",
+    "page-3.png": "5e5f23ca0a99714ad5c98b2c5ef546519cbd78bd10b1f7edb814d87fdc6a7729",
+    "page-4.png": "403aab07b22d81fbf56f6adc6b3e3463dbb3de7c3ebcc9d646e6fb02edff8d92",
+    "page-5.png": "a4f56319eceed76f473af87e2d126561efa1dbd00d60d8240320c3da9226523e",
+    "page-6.png": "6754d556841f1bb9ad1ed884782372696a073833c15fab8be54841294d78add0",
+    "page-7.png": "a4dfdb2d7e04c41e1d13467ebf02fc8676122f4e1d50af7f9890aba109f46dcd",
+    "page-8.png": "b6c8991945f5520d3c08d4e0db4d749134df93cda885d3c89ca5e6fd935d9a72",
+    "page-9.png": "99d9060eac99e718340ed4576f8dd8ccec4a1323fbc946b08a61c1554f9e156f",
+    "page-10.png": "0641e857c7cd75cd835b9deb843ecbbe55370fe6213ae49ed22f2baa9c9881c0",
+    "page-11.png": "cf38e2375f0fb03e65895fea788b45c41d486f56a7bfaddb734f43737e71715f",
+    "page-12.png": "748873e3132ef4d76564801186b9c6f1f1b7bfbf8fc27c7394698b6d5f2bab7f",
+    "page-13.png": "743a5c246cc0d2ee10af4d12045536101baf6686861e93ccad70d6421137728c",
+    "page-14.png": "df56217c5d1ecccfd634d806d2f4021fd68b65ec6735c817b1edef78fde36d36",
+    "page-15.png": "87b83367366e7153c24d72d4c005f7db513269dd642d5762b860842a482df7b4",
+    "page-16.png": "4cf26b20df2604214c60c7f3c329f3a54202571f868776cb3225d47be97c6b42",
+    "page-17.png": "fd3f200ed61b4cfd0d518acdfe510f8c0ec45ab853d03ef4b6f0e24e38076af9",
+    "page-18.png": "8f0c212b791cb12b8c692927a14de24f6187c59f53a3d0607b49795cd7a61321"
+  }
+}

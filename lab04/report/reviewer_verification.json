@@ -1,0 +1,647 @@
+{
+  "review_scope": "独立只读代码、来源与结果审查；全部实验结果指标重算与NPZ离线回放",
+  "status": "passed",
+  "issues": [],
+  "counts": {
+    "metric_rows": 730,
+    "independent_ranking_rows": 730,
+    "full_retrieval_replay_rows": 730,
+    "aggregate_rows": 180,
+    "evaluation_sets": 19,
+    "normalization_replay_rows": 4,
+    "manual_mrr_sets": 3
+  },
+  "embedding_archive": {
+    "shape": [
+      92,
+      512
+    ],
+    "dtype": "float32",
+    "norm_min": 0.9999999403953552,
+    "norm_max": 1.0000001192092896,
+    "negative_fraction": 0.5197223165760869,
+    "texts_replayed": 92,
+    "all_archive_texts_used": true,
+    "model_metadata": {
+      "model": "BAAI/bge-small-zh-v1.5",
+      "revision": "7999e1d3359715c523056ef9478215996d62a620",
+      "dimension": 512,
+      "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+      "device": "cpu",
+      "threads": 4
+    }
+  },
+  "metric_definition": "Each question uses top-K unique documents; recall=|gold intersection retrieved|/|gold|; RR=1/first matching rank or 0; macro mean per type/system.",
+  "aggregate_eval20_local": [
+    {
+      "system": "Vector RAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "Vector RAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 7
+    },
+    {
+      "system": "Vector RAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.9047619047619048,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "Vector RAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.9666666666666666,
+      "mrr": 1.0,
+      "full_hits": 19
+    },
+    {
+      "system": "GraphRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 0.8333333333333334,
+      "mrr": 0.8333333333333334,
+      "full_hits": 5
+    },
+    {
+      "system": "GraphRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 0.9523809523809523,
+      "mrr": 0.9285714285714286,
+      "full_hits": 6
+    },
+    {
+      "system": "GraphRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.6428571428571429,
+      "mrr": 0.46904761904761905,
+      "full_hits": 3
+    },
+    {
+      "system": "GraphRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.8083333333333332,
+      "mrr": 0.7391666666666666,
+      "full_hits": 14
+    },
+    {
+      "system": "WikiRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 0.6944444444444445,
+      "full_hits": 6
+    },
+    {
+      "system": "WikiRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 0.9523809523809523,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "WikiRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.6428571428571429,
+      "mrr": 0.5476190476190477,
+      "full_hits": 4
+    },
+    {
+      "system": "WikiRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.8583333333333332,
+      "mrr": 0.75,
+      "full_hits": 16
+    }
+  ],
+  "aggregate_eval20_global": [
+    {
+      "system": "Vector RAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "Vector RAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 7
+    },
+    {
+      "system": "Vector RAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.9047619047619048,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "Vector RAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.9666666666666666,
+      "mrr": 1.0,
+      "full_hits": 19
+    },
+    {
+      "system": "GraphRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 0.5,
+      "mrr": 0.38888888888888884,
+      "full_hits": 3
+    },
+    {
+      "system": "GraphRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 0.8333333333333333,
+      "mrr": 0.7142857142857143,
+      "full_hits": 4
+    },
+    {
+      "system": "GraphRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.7857142857142857,
+      "mrr": 0.6119047619047618,
+      "full_hits": 4
+    },
+    {
+      "system": "GraphRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.7166666666666666,
+      "mrr": 0.5808333333333333,
+      "full_hits": 11
+    },
+    {
+      "system": "WikiRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 0.6944444444444445,
+      "full_hits": 6
+    },
+    {
+      "system": "WikiRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 0.9523809523809523,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "WikiRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.6428571428571429,
+      "mrr": 0.5476190476190477,
+      "full_hits": 4
+    },
+    {
+      "system": "WikiRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.8583333333333332,
+      "mrr": 0.75,
+      "full_hits": 16
+    }
+  ],
+  "manual_mrr": [
+    {
+      "system": "Vector RAG",
+      "question_ids": [
+        "Q01",
+        "Q06",
+        "Q11"
+      ],
+      "ranks": [
+        1,
+        1,
+        1
+      ],
+      "terms": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mrr": 1.0,
+      "formula": "(1/1 + 1/1 + 1/1) / 3",
+      "documents": [
+        [
+          "doc06",
+          "doc04",
+          "doc05",
+          "doc02",
+          "doc08"
+        ],
+        [
+          "doc01",
+          "doc14",
+          "doc09",
+          "doc06",
+          "doc10"
+        ],
+        [
+          "doc10",
+          "doc01",
+          "doc04",
+          "doc11",
+          "doc05"
+        ]
+      ]
+    },
+    {
+      "system": "GraphRAG",
+      "question_ids": [
+        "Q01",
+        "Q06",
+        "Q11"
+      ],
+      "ranks": [
+        1,
+        1,
+        0
+      ],
+      "terms": [
+        1.0,
+        1.0,
+        0
+      ],
+      "mrr": 0.6666666666666666,
+      "formula": "(1/1 + 1/1 + 0) / 3",
+      "documents": [
+        [
+          "doc06",
+          "doc02",
+          "doc04",
+          "doc11",
+          "doc10"
+        ],
+        [
+          "doc01"
+        ],
+        [
+          "doc01"
+        ]
+      ]
+    },
+    {
+      "system": "WikiRAG",
+      "question_ids": [
+        "Q01",
+        "Q06",
+        "Q11"
+      ],
+      "ranks": [
+        1,
+        1,
+        0
+      ],
+      "terms": [
+        1.0,
+        1.0,
+        0
+      ],
+      "mrr": 0.6666666666666666,
+      "formula": "(1/1 + 1/1 + 0) / 3",
+      "documents": [
+        [
+          "doc06",
+          "doc04",
+          "doc11",
+          "doc05"
+        ],
+        [
+          "doc01",
+          "doc12",
+          "doc14",
+          "doc09",
+          "doc06"
+        ],
+        [
+          "doc01",
+          "doc12",
+          "doc14",
+          "doc04",
+          "doc11"
+        ]
+      ]
+    }
+  ],
+  "source_provenance": {
+    "reference_data_matches": {
+      "corpus": true,
+      "questions": true,
+      "triples": true,
+      "entries": true,
+      "community_summaries": true
+    },
+    "guide_corpus_matches": {
+      "doc01": true,
+      "doc02": true,
+      "doc03": true,
+      "doc04": true,
+      "doc05": true,
+      "doc06": true,
+      "doc07": true,
+      "doc08": true,
+      "doc09": true,
+      "doc10": true,
+      "doc11": true,
+      "doc12": true,
+      "doc13": true,
+      "doc14": true,
+      "doc15": true
+    },
+    "guide_builtin_question_matches": {
+      "Q01": true,
+      "Q02": true,
+      "Q03": true,
+      "Q04": true,
+      "Q05": true,
+      "Q06": true,
+      "Q07": true,
+      "Q08": true,
+      "Q09": true,
+      "Q10": true,
+      "Q11": true,
+      "Q12": true,
+      "Q13": true,
+      "Q14": true,
+      "Q15": true
+    },
+    "reviewed_source_sha256": "6a960a7cfc812ad36aecf7f6973a7814ae9e9037d61cea8ec7d41b305fe81e2d",
+    "manifest_checks": {
+      "analysis_verification.json": true,
+      "answer_review.json": true,
+      "corrected20_global.json": true,
+      "corrected20_local.json": true,
+      "embedding_vectors.npz": true,
+      "entity_normalization.json": true,
+      "environment.json": true,
+      "eval15_global.json": true,
+      "eval15_local.json": true,
+      "eval20_global.json": true,
+      "eval20_local.json": true,
+      "failure_cases.json": true,
+      "hybrid20.json": true,
+      "hybrid_k_scan.json": true,
+      "knowledge_inventory.json": true,
+      "k_scan.json": true,
+      "mrr_manual.json": true,
+      "questions.json": true
+    },
+    "live_extraction_calls": 0,
+    "preset_summaries": 3,
+    "discovered_communities": 10,
+    "known_reference_defects": [
+      {
+        "kind": "triple and summary",
+        "problem": "计算机学院参与共建",
+        "source": "doc10",
+        "supported": "计算机学院参与运行管理"
+      },
+      {
+        "kind": "wiki",
+        "problem": "每年15人",
+        "source": "doc15",
+        "supported": null
+      },
+      {
+        "kind": "wiki",
+        "problem": "教材名称",
+        "source": "doc06",
+        "supported": null
+      }
+    ]
+  },
+  "test": {
+    "command": "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\lab04_rag\\.venv\\Scripts\\python.exe -B -m unittest -v test_hw4_rag.py",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "test_chunk_boundaries_and_validation (test_hw4_rag.RagTests.test_chunk_boundaries_and_validation) ... ok\ntest_document_metrics_deduplicate_and_cutoff (test_hw4_rag.RagTests.test_document_metrics_deduplicate_and_cutoff) ... ok\ntest_extraction_json_shape_without_execution (test_hw4_rag.RagTests.test_extraction_json_shape_without_execution) ... ok\ntest_normalization_and_bounded_walk (test_hw4_rag.RagTests.test_normalization_and_bounded_walk) ... ok\ntest_reference_and_added_data (test_hw4_rag.RagTests.test_reference_and_added_data) ... ok\ntest_rrf_and_corrected_knowledge (test_hw4_rag.RagTests.test_rrf_and_corrected_knowledge) ... ok\ntest_scope_forwarding_and_gold_not_used (test_hw4_rag.RagTests.test_scope_forwarding_and_gold_not_used) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.009s\n\nOK\n"
+  },
+  "requirement_checks": {
+    "builtin_questions": 15,
+    "added_questions": 5,
+    "added_type_counts": {
+      "fact": 1,
+      "multi": 2,
+      "global": 2
+    },
+    "k_values": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "explicit_graph_scopes": [
+      "local",
+      "global"
+    ],
+    "failure_examples_available": [
+      {
+        "system": "Vector RAG",
+        "partial_or_missed_count": 1,
+        "examples": [
+          {
+            "id": "Q11",
+            "documents": [
+              "doc10",
+              "doc01",
+              "doc04",
+              "doc11",
+              "doc05"
+            ],
+            "missed": [
+              "doc02",
+              "doc03"
+            ],
+            "recall": 0.3333333333333333,
+            "first_rank": 1
+          }
+        ],
+        "additional_K2_case": {
+          "id": "Q01",
+          "k": 2,
+          "documents": [
+            "doc06",
+            "doc04"
+          ],
+          "missed": [
+            "doc02"
+          ],
+          "recall": 0.6666666666666666,
+          "first_rank": 1,
+          "doc02_full_ranking": 4
+        }
+      },
+      {
+        "system": "GraphRAG",
+        "partial_or_missed_count": 6,
+        "examples": [
+          {
+            "id": "Q02",
+            "documents": [
+              "doc02",
+              "doc04",
+              "doc06",
+              "doc07",
+              "doc08"
+            ],
+            "missed": [
+              "doc11"
+            ],
+            "recall": 0.6666666666666666,
+            "first_rank": 2
+          },
+          {
+            "id": "Q11",
+            "documents": [
+              "doc01"
+            ],
+            "missed": [
+              "doc02",
+              "doc03",
+              "doc10"
+            ],
+            "recall": 0.0,
+            "first_rank": 0
+          },
+          {
+            "id": "Q15",
+            "documents": [
+              "doc02",
+              "doc04",
+              "doc06",
+              "doc07",
+              "doc08"
+            ],
+            "missed": [
+              "doc11"
+            ],
+            "recall": 0.5,
+            "first_rank": 3
+          }
+        ]
+      },
+      {
+        "system": "WikiRAG",
+        "partial_or_missed_count": 4,
+        "examples": [
+          {
+            "id": "Q01",
+            "documents": [
+              "doc06",
+              "doc04",
+              "doc11",
+              "doc05"
+            ],
+            "missed": [
+              "doc02"
+            ],
+            "recall": 0.6666666666666666,
+            "first_rank": 1
+          },
+          {
+            "id": "Q11",
+            "documents": [
+              "doc01",
+              "doc12",
+              "doc14",
+              "doc04",
+              "doc11"
+            ],
+            "missed": [
+              "doc02",
+              "doc03",
+              "doc10"
+            ],
+            "recall": 0.0,
+            "first_rank": 0
+          },
+          {
+            "id": "Q13",
+            "documents": [
+              "doc02",
+              "doc10",
+              "doc15",
+              "doc11",
+              "doc13"
+            ],
+            "missed": [
+              "doc04"
+            ],
+            "recall": 0.0,
+            "first_rank": 0
+          }
+        ]
+      }
+    ],
+    "artificial_human_scoring_or_live_llm_claims_in_code": false
+  },
+  "limitations": [
+    "The report was being prepared separately and has not yet been reviewed.",
+    "Detected communities are diagnostics; Global retrieval uses three course-provided summaries with listed source order.",
+    "Human faithfulness grading is not fabricated; report should distinguish any AI draft assessment from actual human scoring."
+  ],
+  "git": {
+    "head": "7ed7a05e7763f4a6b28996d5860b6a7411865edc",
+    "status": "M .gitattributes\n M .gitignore\n?? lab04/",
+    "git_commands_read_only": true
+  },
+  "assessment": "代码与已保存检索结果可接受；未发现正确性阻塞问题。报告须如实说明无API抽取、预置摘要与知识来源偏差，以及尚未获得真实人工忠实度评分。",
+  "independent_model_inference": {
+    "status": "passed",
+    "local_snapshot": "C:\\Users\\20805\\.cache\\huggingface\\hub\\models--BAAI--bge-small-zh-v1.5\\snapshots\\7999e1d3359715c523056ef9478215996d62a620",
+    "network_offline": true,
+    "device": "cpu",
+    "shape": [
+      92,
+      512
+    ],
+    "max_absolute_difference": 1.4528632164001465e-07,
+    "min_cosine": 0.9999998807907104,
+    "weights_sha256": "354763b9b1357bc9c44f62c6be2276321081ed2567773608c0d0785b61d5a026",
+    "inputs": 92
+  },
+  "strengths": [
+    "All 730 question-level document metrics and 180 aggregate metrics independently recomputed without discrepancy.",
+    "Independent ranking code and production-class replay reproduce every saved retrieval using archived vectors.",
+    "Pinned cached BGE snapshot independently re-encodes all 92 archived inputs on CPU with no network access.",
+    "Document-level deduplication, explicit scope forwarding, and extraction JSON validation are covered by seven passing unit tests.",
+    "Reference source defects are explicitly audited and compared against a corrected knowledge variant."
+  ],
+  "issues_by_severity": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "recommendations": [
+    "Use Vector Q11 at K=5 and Q01 at K=2 as two distinct, accurately labelled failure cases; the 20-question Vector K=5 run has only one partial-hit question.",
+    "State that community detection yields 10 diagnostic communities while Global retrieval uses 3 course-provided summaries.",
+    "Label any faithfulness scores prepared by AI as a draft; actual human scores must be recorded separately."
+  ]
+}

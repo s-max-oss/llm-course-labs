@@ -1,0 +1,40 @@
+{
+  "embedding": {
+    "model": "BAAI/bge-small-zh-v1.5",
+    "revision": "7999e1d3359715c523056ef9478215996d62a620",
+    "dimension": 512,
+    "query_prefix": "为这个句子生成表示以用于检索相关文章：",
+    "device": "cpu",
+    "threads": 4
+  },
+  "corpus_docs": 15,
+  "triples": 40,
+  "wiki_entries": 9,
+  "discovered_communities": 10,
+  "preset_summaries": 3,
+  "chunk_size": 120,
+  "overlap": 20,
+  "chunks": 15,
+  "entry_top_n": 3,
+  "summary_top_n": 2,
+  "max_hops": 3,
+  "frontier_limit": 6,
+  "ranking_ties": "stable insertion order",
+  "knowledge": "reference",
+  "model_load_seconds": 7.586529400000018,
+  "index_seconds": {
+    "Vector RAG": 0.15090839999993477,
+    "GraphRAG": 0.15197290000014618,
+    "WikiRAG": 0.0888835000000654
+  },
+  "python": "3.11.16",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "versions": {
+    "torch": "2.14.0",
+    "numpy": "2.4.6",
+    "networkx": "3.6.1",
+    "sentence-transformers": "6.1.0",
+    "transformers": "5.18.0"
+  },
+  "source_sha256": "6a960a7cfc812ad36aecf7f6973a7814ae9e9037d61cea8ec7d41b305fe81e2d"
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "system": "Vector RAG",
+    "question_id": "Q11",
+    "k": 5,
+    "documents": [
+      "doc10",
+      "doc01",
+      "doc04",
+      "doc11",
+      "doc05"
+    ],
+    "missed": [
+      "doc02",
+      "doc03"
+    ],
+    "recall": 0.3333333333333333,
+    "reason": "平台原文doc10排第1，但两学院背景doc02/doc03均未入Top-5；保留指南gold，语义排序未覆盖完整标注。"
+  },
+  {
+    "system": "Vector RAG",
+    "question_id": "Q01",
+    "k": 3,
+    "documents": [
+      "doc06",
+      "doc04",
+      "doc05"
+    ],
+    "missed": [
+      "doc02"
+    ],
+    "recall": 0.6666666666666666,
+    "reason": "桥接的学院院长doc02排第4；K=3时被计算机学院教师doc05挤出。K=5恢复，并非Top-5失败。"
+  },
+  {
+    "system": "GraphRAG",
+    "question_id": "Q02",
+    "k": 5,
+    "documents": [
+      "doc02",
+      "doc04",
+      "doc06",
+      "doc07",
+      "doc08"
+    ],
+    "missed": [
+      "doc11"
+    ],
+    "recall": 0.6666666666666666,
+    "reason": "AI 协会含空格，节点AI协会不含空格，未匹配实体而回退Global；未返回doc11。"
+  },
+  {
+    "system": "GraphRAG",
+    "question_id": "Q11",
+    "k": 5,
+    "documents": [
+      "doc01"
+    ],
+    "missed": [
+      "doc02",
+      "doc03",
+      "doc10"
+    ],
+    "recall": 0.0,
+    "reason": "只匹配云山大学，图中大学只连基本信息（均doc01）；院系与平台子图未接入，局部走边只返回doc01。Global可补齐gold。"
+  },
+  {
+    "system": "WikiRAG",
+    "question_id": "Q01",
+    "k": 5,
+    "documents": [
+      "doc06",
+      "doc04",
+      "doc11",
+      "doc05"
+    ],
+    "missed": [
+      "doc02"
+    ],
+    "recall": 0.6666666666666666,
+    "reason": "Top-3条目未选中人工智能学院，返回doc06/doc04/doc11/doc05，缺少doc02；条目数与文档K是两层预算。"
+  },
+  {
+    "system": "WikiRAG",
+    "question_id": "Q13",
+    "k": 5,
+    "documents": [
+      "doc02",
+      "doc10",
+      "doc15",
+      "doc11",
+      "doc13"
+    ],
+    "missed": [
+      "doc04"
+    ],
+    "recall": 0.0,
+    "reason": "学院教师条目未进Top-3，学院条目并不含教师研究方向，doc04遗漏。"
+  }
+]
