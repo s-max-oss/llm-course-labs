@@ -1,0 +1,75 @@
+{
+  "confirmed_on": "2026-10-03",
+  "confirmed_by": "孙驰",
+  "scoring_method": "user_confirmation_of_ai_preliminary_scores",
+  "confirmation_basis": "用户表示人工打分可沿用AI初评，并认可评分理由。",
+  "human_scores_confirmed": true,
+  "independent_blind_review_performed": false,
+  "source_answer_review": "../results/live_api/answer_review.json",
+  "source_answer_review_sha256": "440e5a40b687bf87e659039fb1550f1589bf2afba3de4cf81bc4d87aed92806c",
+  "answers": [
+    {
+      "system": "Vector RAG",
+      "question_id": "Q01",
+      "ai_initial_score": 5,
+      "human_score": 5,
+      "human_review_status": "confirmed_ai_preliminary_score"
+    },
+    {
+      "system": "Vector RAG",
+      "question_id": "Q06",
+      "ai_initial_score": 5,
+      "human_score": 5,
+      "human_review_status": "confirmed_ai_preliminary_score"
+    },
+    {
+      "system": "Vector RAG",
+      "question_id": "Q11",
+      "ai_initial_score": 5,
+      "human_score": 5,
+      "human_review_status": "confirmed_ai_preliminary_score"
+    },
+    {
+      "system": "GraphRAG",
+      "question_id": "Q01",
+      "ai_initial_score": 5,
+      "human_score": 5,
+      "human_review_status": "confirmed_ai_preliminary_score"
+    },
+    {
+      "system": "GraphRAG",
+      "question_id": "Q06",
+      "ai_initial_score": 5,
+      "human_score": 5,
+      "human_review_status": "confirmed_ai_preliminary_score"
+    },
+    {
+      "system": "GraphRAG",
+      "question_id": "Q11",
+      "ai_initial_score": 5,
+      "human_score": 5,
+      "human_review_status": "confirmed_ai_preliminary_score"
+    },
+    {
+      "system": "WikiRAG",
+      "question_id": "Q01",
+      "ai_initial_score": 5,
+      "human_score": 5,
+      "human_review_status": "confirmed_ai_preliminary_score"
+    },
+    {
+      "system": "WikiRAG",
+      "question_id": "Q06",
+      "ai_initial_score": 5,
+      "human_score": 5,
+      "human_review_status": "confirmed_ai_preliminary_score"
+    },
+    {
+      "system": "WikiRAG",
+      "question_id": "Q11",
+      "ai_initial_score": 5,
+      "human_score": 5,
+      "human_review_status": "confirmed_ai_preliminary_score"
+    }
+  ]
+}

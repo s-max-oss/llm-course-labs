@@ -2,13 +2,16 @@
   "status": "passed",
   "must_fix": [],
   "checked_files": {
-    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\提交材料\\2024311281_孙驰_实验作业四.docx": "f97b788a70432e8310ca4ae3ff746bcd38bf7aedb806981a24ad4fd01cd7219b",
-    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\tmp\\lab04\\render_api_4\\report.pdf": "8c444854a4279ef574cce21e19f1d83dccb699c86168141d3d515c32fa2da671",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\提交材料\\2024311281_孙驰_实验作业四.docx": "a589a54aa1365e8285e6d7ffff2c6d7f65864e155100f082c60f9e367e6a4400",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\tmp\\lab04\\render_collaboration_3\\report.pdf": "2bbbd9cf98f425d636848cf5470ba2d477d9550f26afa985fee3f84240d48e05",
     "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\实验指南与模板\\作业四_VectorRAG_GraphRAG与WikiRAG对比实验_实验报告样板.docx": "44291aa256a78b072afea597f70e0b369715b305a581feb1f6dcbcd35e8816fd",
     "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\实验指南与模板\\作业四_VectorRAG_GraphRAG与WikiRAG对比实验_实验指南.pdf": "effdd9c94432457e20d8cde06b6ee73e6a1c8d3713d620a413dce1f0222c37ab",
     "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\tmp\\lab04\\guide.txt": "1038b932a2e382f38404031b5cbb1f6a68fc5516700e9cf2d66f2c06fe91e141",
-    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\README.md": "888c19a94a23e64efa88e1232294c2759a03d3fd4f9bb443ceb68f42d1a44e36",
-    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\report\\human_review.md": "61eaef1f6ae65c7bc01957665ecf8e97b980405eb81825a42e1dea11a7c55183",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\README.md": "45d7a2d0559afd030cda22030d3b35b0d2e5645323fff5e59004a82fdeca7af8",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\README.md": "474221d540ba02e88c9e05c4d75465b91c52ba9944da918a65baa78b7c979c13",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\report\\human_review.md": "9b6754be08eeb5fd5e3d54ab9a44a956d945a530e6ed50b31090b3659ddbb32f",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\report\\human_scores.json": "fef5595ce00a49ec6ef8efa4cbd58ac62be289e61e755dd0bd18a16313071d74",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\tmp\\lab04\\finalize_report_api.py": "df1e099c4260e186609818d3739ffca05be732a96a38f2e78335e45dad0ee42b",
     "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\hw4_rag.py": "6a960a7cfc812ad36aecf7f6973a7814ae9e9037d61cea8ec7d41b305fe81e2d",
     "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\deepseek_live.py": "ef6f83c974715b9f7fce360081f6d74e6f7970b2a1c27c76f98a1c8706a2b9ba",
     "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\test_deepseek_live.py": "7e337458211db9ca9f435eafd8841b37356cbbb95e49114138709addd711e472",
@@ -55,7 +58,7 @@
   "pdf_pages": 20,
   "counts": {
     "pdf_paragraphs": 126,
-    "pdf_table_cells": 500,
+    "pdf_table_cells": 504,
     "numeric_table_cells": 97,
     "full_hit_cells": 8,
     "manual_rows": 9,
@@ -298,11 +301,11 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF paragraph consistency: 表 5  DeepSeek答案忠实度AI初评 待人工确认",
+      "check": "DOCX/PDF paragraph consistency: 表 5  忠实度AI初评与本人确认评分",
       "passed": true
     },
     {
-      "check": "DOCX/PDF paragraph consistency: 预选Q01/Q06/Q11，覆盖三类题；九例都使用参考基线K=5返回的原始文档，调用Dee",
+      "check": "DOCX/PDF paragraph consistency: Q01（多跳）、Q06（事实）、Q11（全局）各由三范式回答，共3题×3范式=9个答案样例",
       "passed": true
     },
     {
@@ -434,15 +437,15 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF paragraph consistency: 6  AI 协作记录 Codex 使用情况",
+      "check": "DOCX/PDF paragraph consistency: 6  AI 协作记录 任务分工与反馈",
       "passed": true
     },
     {
-      "check": "DOCX/PDF paragraph consistency: 表 9  Codex 协作过程记录",
+      "check": "DOCX/PDF paragraph consistency: 表 9  实验组织与AI辅助过程",
       "passed": true
     },
     {
-      "check": "DOCX/PDF paragraph consistency: 本次由我指定实验资料、委托实现并提供DeepSeek接口；Codex完成代码、运行、审查和",
+      "check": "DOCX/PDF paragraph consistency: 我负责明确实验要求、提供资料与接口，并对协作记录、样例选取和提交形式提出修改意见。Code",
       "passed": true
     },
     {
@@ -642,7 +645,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 61次真实调用；同模型AI初评，非人工评分",
+      "check": "DOCX/PDF table-cell consistency: 61次真实调用；本人参考同模型初评确认评分",
       "passed": true
     },
     {
@@ -1450,7 +1453,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 初评分",
+      "check": "DOCX/PDF table-cell consistency: AI / 本人",
       "passed": true
     },
     {
@@ -1470,7 +1473,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 5待确认",
+      "check": "DOCX/PDF table-cell consistency: 5 / 5",
       "passed": true
     },
     {
@@ -1490,7 +1493,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 5待确认",
+      "check": "DOCX/PDF table-cell consistency: 5 / 5",
       "passed": true
     },
     {
@@ -1510,7 +1513,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 5待确认",
+      "check": "DOCX/PDF table-cell consistency: 5 / 5",
       "passed": true
     },
     {
@@ -1530,7 +1533,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 5待确认",
+      "check": "DOCX/PDF table-cell consistency: 5 / 5",
       "passed": true
     },
     {
@@ -1550,7 +1553,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 5待确认",
+      "check": "DOCX/PDF table-cell consistency: 5 / 5",
       "passed": true
     },
     {
@@ -1570,7 +1573,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 5待确认",
+      "check": "DOCX/PDF table-cell consistency: 5 / 5",
       "passed": true
     },
     {
@@ -1590,7 +1593,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 5待确认",
+      "check": "DOCX/PDF table-cell consistency: 5 / 5",
       "passed": true
     },
     {
@@ -1610,7 +1613,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 5待确认",
+      "check": "DOCX/PDF table-cell consistency: 5 / 5",
       "passed": true
     },
     {
@@ -1630,7 +1633,7 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 5待确认",
+      "check": "DOCX/PDF table-cell consistency: 5 / 5",
       "passed": true
     },
     {
@@ -2146,15 +2149,15 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 使用场景",
+      "check": "DOCX/PDF table-cell consistency: 实验环节",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 实际提示词 / 操作",
+      "check": "DOCX/PDF table-cell consistency: 我的参与",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: AI输出与采纳",
+      "check": "DOCX/PDF table-cell consistency: Codex辅助与结果",
       "passed": true
     },
     {
@@ -2162,15 +2165,15 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 启动实验四",
+      "check": "DOCX/PDF table-cell consistency: 任务规划",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: “实验四已更新。”",
+      "check": "DOCX/PDF table-cell consistency: 明确实验要求，提供课程资料，确定按指南与样板组织实验",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: Codex按指南与样板分析范围，沿用前次目录结构",
+      "check": "DOCX/PDF table-cell consistency: 梳理实现流程与评价指标，形成统一语料、模型和题集的对比方案",
       "passed": true
     },
     {
@@ -2178,15 +2181,15 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 确定实现与API",
+      "check": "DOCX/PDF table-cell consistency: 实施安排",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: “你来就行，还需要api吗？”",
+      "check": "DOCX/PDF table-cell consistency: 确定协作方式，委托实现与检验，并提供补充试验所需的资源",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 先完成本地BGE参考检索；保留原始基线便于比较",
+      "check": "DOCX/PDF table-cell consistency: 实现三种RAG和复现脚本，保留参考基线及独立现场结果",
       "passed": true
     },
     {
@@ -2194,15 +2197,15 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 提供生成接口",
+      "check": "DOCX/PDF table-cell consistency: 资源支持",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 本人提供DeepSeek API，授权追加调用",
+      "check": "DOCX/PDF table-cell consistency: 提供DeepSeek接口，支持现场生成和知识构建",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 密钥不记录；61次真实调用完成答案、抽取、社区摘要和Wiki构建",
+      "check": "DOCX/PDF table-cell consistency: 完成61次实际调用，保存输出与用量；密钥不进入代码或报告",
       "passed": true
     },
     {
@@ -2210,15 +2213,15 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 代码与结果核验",
+      "check": "DOCX/PDF table-cell consistency: 审阅与反馈",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: Codex实现、13项测试、独立审查与结果回放",
+      "check": "DOCX/PDF table-cell consistency: 检查协作记录与样例选取，提出表述调整和评测设计核查要求",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 检查scope、去重、来源、实体、路径边界和API缓存/错误处理",
+      "check": "DOCX/PDF table-cell consistency: 核对指南与对照方案，检查实现和来源；13项测试通过，保留实际失败",
       "passed": true
     },
     {
@@ -2226,15 +2229,31 @@
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 分析与报告",
+      "check": "DOCX/PDF table-cell consistency: 评分确认",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: Codex复核参考与现场指标、逐条审计原文",
+      "check": "DOCX/PDF table-cell consistency: 参考AI初评和理由，决定沿用九例忠实度分数",
       "passed": true
     },
     {
-      "check": "DOCX/PDF table-cell consistency: 保留未提升及生成错误；同模型评分仍待本人确认",
+      "check": "DOCX/PDF table-cell consistency: 记录本人确认的九例5分，保留拒答、完整性及评审漏拆的区别",
+      "passed": true
+    },
+    {
+      "check": "DOCX/PDF table-cell consistency: 6",
+      "passed": true
+    },
+    {
+      "check": "DOCX/PDF table-cell consistency: 报告完善",
+      "passed": true
+    },
+    {
+      "check": "DOCX/PDF table-cell consistency: 明确模板、归档和提交要求，提出内容修改意见",
+      "passed": true
+    },
+    {
+      "check": "DOCX/PDF table-cell consistency: 整理分析、修改排版并同步材料，保留可复核结果",
       "passed": true
     },
     {
@@ -3298,7 +3317,7 @@
       "passed": true
     },
     {
-      "check": "Nine actual answers with human review incomplete",
+      "check": "Nine original API answers preserve historical pending human state",
       "passed": true
     },
     {
@@ -3306,11 +3325,35 @@
       "passed": true
     },
     {
+      "check": "Confirmed scores bind unchanged raw API answers by SHA256",
+      "passed": true
+    },
+    {
+      "check": "Confirmed scores source path resolves to original API record",
+      "passed": true
+    },
+    {
+      "check": "Current score method is user confirmation of AI suggestions, no independent blind review",
+      "passed": true
+    },
+    {
+      "check": "Confirmed student and date agree with trusted task context",
+      "passed": true
+    },
+    {
+      "check": "Exactly nine unique score confirmations match actual generated answers",
+      "passed": true
+    },
+    {
       "check": "Human review has nine sections",
       "passed": true
     },
     {
-      "check": "Table5 AI-only score Vector/Q01",
+      "check": "Table5 AI / student confirmation score Vector/Q01",
+      "passed": true
+    },
+    {
+      "check": "Raw API historical fields unchanged Vector/Q01",
       "passed": true
     },
     {
@@ -3326,11 +3369,19 @@
       "passed": true
     },
     {
-      "check": "Human fields blank Vector/Q01",
+      "check": "Human confirmation accurately recorded Vector/Q01",
       "passed": true
     },
     {
-      "check": "Table5 AI-only score Vector/Q06",
+      "check": "Completeness / refusal / missed fact retained Vector/Q01",
+      "passed": true
+    },
+    {
+      "check": "Table5 AI / student confirmation score Vector/Q06",
+      "passed": true
+    },
+    {
+      "check": "Raw API historical fields unchanged Vector/Q06",
       "passed": true
     },
     {
@@ -3346,11 +3397,19 @@
       "passed": true
     },
     {
-      "check": "Human fields blank Vector/Q06",
+      "check": "Human confirmation accurately recorded Vector/Q06",
       "passed": true
     },
     {
-      "check": "Table5 AI-only score Vector/Q11",
+      "check": "Completeness / refusal / missed fact retained Vector/Q06",
+      "passed": true
+    },
+    {
+      "check": "Table5 AI / student confirmation score Vector/Q11",
+      "passed": true
+    },
+    {
+      "check": "Raw API historical fields unchanged Vector/Q11",
       "passed": true
     },
     {
@@ -3366,11 +3425,19 @@
       "passed": true
     },
     {
-      "check": "Human fields blank Vector/Q11",
+      "check": "Human confirmation accurately recorded Vector/Q11",
       "passed": true
     },
     {
-      "check": "Table5 AI-only score Graph Local/Q01",
+      "check": "Completeness / refusal / missed fact retained Vector/Q11",
+      "passed": true
+    },
+    {
+      "check": "Table5 AI / student confirmation score Graph Local/Q01",
+      "passed": true
+    },
+    {
+      "check": "Raw API historical fields unchanged Graph Local/Q01",
       "passed": true
     },
     {
@@ -3386,11 +3453,19 @@
       "passed": true
     },
     {
-      "check": "Human fields blank Graph Local/Q01",
+      "check": "Human confirmation accurately recorded Graph Local/Q01",
       "passed": true
     },
     {
-      "check": "Table5 AI-only score Graph Local/Q06",
+      "check": "Completeness / refusal / missed fact retained Graph Local/Q01",
+      "passed": true
+    },
+    {
+      "check": "Table5 AI / student confirmation score Graph Local/Q06",
+      "passed": true
+    },
+    {
+      "check": "Raw API historical fields unchanged Graph Local/Q06",
       "passed": true
     },
     {
@@ -3406,11 +3481,19 @@
       "passed": true
     },
     {
-      "check": "Human fields blank Graph Local/Q06",
+      "check": "Human confirmation accurately recorded Graph Local/Q06",
       "passed": true
     },
     {
-      "check": "Table5 AI-only score Graph Local/Q11",
+      "check": "Completeness / refusal / missed fact retained Graph Local/Q06",
+      "passed": true
+    },
+    {
+      "check": "Table5 AI / student confirmation score Graph Local/Q11",
+      "passed": true
+    },
+    {
+      "check": "Raw API historical fields unchanged Graph Local/Q11",
       "passed": true
     },
     {
@@ -3426,11 +3509,19 @@
       "passed": true
     },
     {
-      "check": "Human fields blank Graph Local/Q11",
+      "check": "Human confirmation accurately recorded Graph Local/Q11",
       "passed": true
     },
     {
-      "check": "Table5 AI-only score WikiRAG/Q01",
+      "check": "Completeness / refusal / missed fact retained Graph Local/Q11",
+      "passed": true
+    },
+    {
+      "check": "Table5 AI / student confirmation score WikiRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Raw API historical fields unchanged WikiRAG/Q01",
       "passed": true
     },
     {
@@ -3446,11 +3537,19 @@
       "passed": true
     },
     {
-      "check": "Human fields blank WikiRAG/Q01",
+      "check": "Human confirmation accurately recorded WikiRAG/Q01",
       "passed": true
     },
     {
-      "check": "Table5 AI-only score WikiRAG/Q06",
+      "check": "Completeness / refusal / missed fact retained WikiRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Table5 AI / student confirmation score WikiRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Raw API historical fields unchanged WikiRAG/Q06",
       "passed": true
     },
     {
@@ -3466,11 +3565,19 @@
       "passed": true
     },
     {
-      "check": "Human fields blank WikiRAG/Q06",
+      "check": "Human confirmation accurately recorded WikiRAG/Q06",
       "passed": true
     },
     {
-      "check": "Table5 AI-only score WikiRAG/Q11",
+      "check": "Completeness / refusal / missed fact retained WikiRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Table5 AI / student confirmation score WikiRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Raw API historical fields unchanged WikiRAG/Q11",
       "passed": true
     },
     {
@@ -3486,7 +3593,11 @@
       "passed": true
     },
     {
-      "check": "Human fields blank WikiRAG/Q11",
+      "check": "Human confirmation accurately recorded WikiRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Completeness / refusal / missed fact retained WikiRAG/Q11",
       "passed": true
     },
     {
@@ -3498,11 +3609,55 @@
       "passed": true
     },
     {
-      "check": "AI initial scores, pending human scores and no RAGAS / misleading mean",
+      "check": "Current AI-confirmed human scores distinguish independent review and completeness; no RAGAS / misleading mean",
+      "passed": true
+    },
+    {
+      "check": "Current confirmed status distinguished from unchanged historical pending fields",
+      "passed": true
+    },
+    {
+      "check": "Report nine examples are three questions paired across three paradigms",
+      "passed": true
+    },
+    {
+      "check": "Actual 3 x 3 answer pairing, no nine-distinct-question claim",
+      "passed": true
+    },
+    {
+      "check": "Three selected questions cover three question types",
+      "passed": true
+    },
+    {
+      "check": "Human sheet pairing, sampling scope and current scoring method agree",
       "passed": true
     },
     {
       "check": "Human review distinguishes actual zero-claim refusals",
+      "passed": true
+    },
+    {
+      "check": "Collaboration table summarizes six actual responsibility areas",
+      "passed": true
+    },
+    {
+      "check": "Collaboration table removes specific user prompts as requested",
+      "passed": true
+    },
+    {
+      "check": "Actual student planning/resources/confirmation and Codex implementation distinguished",
+      "passed": true
+    },
+    {
+      "check": "No fabricated student coding or independent blind-scoring role",
+      "passed": true
+    },
+    {
+      "check": "Collaboration prose accurately summarizes delegation and feedback",
+      "passed": true
+    },
+    {
+      "check": "All experiment code and original/API result files unchanged from supplied base",
       "passed": true
     },
     {
@@ -3586,7 +3741,7 @@
       "passed": true
     },
     {
-      "check": "Thinking5 actual decomposition failure and evaluator limitations",
+      "check": "Thinking5 actual decomposition failure, human confirmation and evaluator limitations",
       "passed": true
     },
     {
@@ -3626,7 +3781,11 @@
       "passed": true
     },
     {
-      "check": "README human/API/source provenance agrees",
+      "check": "README current human confirmation, historical API state and source provenance agree",
+      "passed": true
+    },
+    {
+      "check": "README three-question paired sample accurately explained",
       "passed": true
     },
     {
@@ -3635,6 +3794,18 @@
     },
     {
       "check": "README actual archive/knowledge counts",
+      "passed": true
+    },
+    {
+      "check": "Repository README agrees with current confirmed scores",
+      "passed": true
+    },
+    {
+      "check": "Finalizer archived report README planned text accurately records current confirmation and paired examples",
+      "passed": true
+    },
+    {
+      "check": "Finalizer validation uses explicit confirmation method and no blind-review claim",
       "passed": true
     }
   ],
@@ -3672,11 +3843,118 @@
     "2": "7/12 and 0.4 arithmetic; rank and coverage distinction accurate.",
     "3": "Reference Q11 per-paradigm failures; corpus gold vs sufficient answer evidence distinguished.",
     "4": "Proposed incremental steps; no invented timing / production implementation.",
-    "5": "Uniform rubric, atomic facts, LLM support checking, genuine missed decomposition and same-model bias risk; no RAGAS or human score claim.",
+    "5": "Uniform rubric, atomic facts, LLM support checking, missed decomposition and same-model bias risk; current student confirmation accurately distinguished from independent blind review; no RAGAS claim.",
     "6": "Two prompts actually pre-defined, only three common documents; increased constraints lose facts as well as add membership; semantic and boundary checks stated."
   },
-  "provenance": "No API calls, credential reads, chat/session logs, HPC access, official code/result edits or git mutations performed. Nine DeepSeek answers and initial same-model judgements are original baseline K5 examples; the separate two live Q11 answers use live indexes. Human scoring remains pending. Parent separately reviews visual layout.",
+  "provenance": "No API calls, credential reads, chat/session logs, HPC access, official code/result edits or git mutations performed. All code/result files are unchanged from supplied base. Nine DeepSeek answers and same-model judgements are original baseline K5 examples; the two live Q11 answers are separate. Student has now confirmed all nine scores by accepting AI preliminary scores/reasons, explicitly without independent blind review. Raw API human_score=null/pending fields remain historical and unchanged. Parent reviews visual layout and performs the planned archival synchronization.",
   "historical_review_preserved": "1b712e7b49c23e9524a22fb8cb0166e6752731b212fcfb5e20dc7b690427d67d",
   "pdf_extraction_note": "PDFium emits U+FFFE at a line-breaking hyphen in reference [5] api-docs URL. Parent visual inspection confirms the printed hyphen; normalization maps U+FFFE to hyphen for full paragraph comparison, without omitting words or paragraphs.",
-  "advisory": []
+  "advisory": [],
+  "base_commit": "da7d1f7ab8165a9087a38ac6fc7b09503f96a7c5",
+  "human_score_confirmation": {
+    "confirmed": true,
+    "method": "user_confirmation_of_ai_preliminary_scores",
+    "independent_blind_review_performed": false,
+    "confirmed_scores": [
+      {
+        "system": "Vector RAG",
+        "question_id": "Q01",
+        "ai_initial_score": 5,
+        "human_score": 5,
+        "human_review_status": "confirmed_ai_preliminary_score"
+      },
+      {
+        "system": "Vector RAG",
+        "question_id": "Q06",
+        "ai_initial_score": 5,
+        "human_score": 5,
+        "human_review_status": "confirmed_ai_preliminary_score"
+      },
+      {
+        "system": "Vector RAG",
+        "question_id": "Q11",
+        "ai_initial_score": 5,
+        "human_score": 5,
+        "human_review_status": "confirmed_ai_preliminary_score"
+      },
+      {
+        "system": "GraphRAG",
+        "question_id": "Q01",
+        "ai_initial_score": 5,
+        "human_score": 5,
+        "human_review_status": "confirmed_ai_preliminary_score"
+      },
+      {
+        "system": "GraphRAG",
+        "question_id": "Q06",
+        "ai_initial_score": 5,
+        "human_score": 5,
+        "human_review_status": "confirmed_ai_preliminary_score"
+      },
+      {
+        "system": "GraphRAG",
+        "question_id": "Q11",
+        "ai_initial_score": 5,
+        "human_score": 5,
+        "human_review_status": "confirmed_ai_preliminary_score"
+      },
+      {
+        "system": "WikiRAG",
+        "question_id": "Q01",
+        "ai_initial_score": 5,
+        "human_score": 5,
+        "human_review_status": "confirmed_ai_preliminary_score"
+      },
+      {
+        "system": "WikiRAG",
+        "question_id": "Q06",
+        "ai_initial_score": 5,
+        "human_score": 5,
+        "human_review_status": "confirmed_ai_preliminary_score"
+      },
+      {
+        "system": "WikiRAG",
+        "question_id": "Q11",
+        "ai_initial_score": 5,
+        "human_score": 5,
+        "human_review_status": "confirmed_ai_preliminary_score"
+      }
+    ],
+    "original_answer_review_sha256": "440e5a40b687bf87e659039fb1550f1589bf2afba3de4cf81bc4d87aed92806c",
+    "original_api_human_state": "pending historical fields preserved unchanged",
+    "authorization_evidence": "Direct trusted parent task conveys user statement: 那我的打分跟ai差不多就行了，我看ai的打分也有理有据的。 No chat-log or credential access used."
+  },
+  "paired_examples": {
+    "independent_question_ids": [
+      "Q01",
+      "Q06",
+      "Q11"
+    ],
+    "types": [
+      "multi",
+      "fact",
+      "global"
+    ],
+    "paradigms": [
+      "Vector RAG",
+      "GraphRAG Local",
+      "WikiRAG"
+    ],
+    "answer_instances": 9,
+    "independent_questions": 3,
+    "scope": "Only these three questions; repeated questions across methods are intentional paired comparisons, not nine independent questions."
+  },
+  "collaboration_fact_review": {
+    "specific_prompts_removed": true,
+    "student_roles": "Task planning, source/resource provision, delegation, review feedback, score confirmation and submission requirements, as evidenced by trusted task context.",
+    "codex_roles": "Implementation, execution, checks, source audit and report preparation.",
+    "student_direct_coding_claimed": false,
+    "student_independent_blind_scoring_claimed": false
+  },
+  "planned_archive_metadata": {
+    "finalizer_sha256": "df1e099c4260e186609818d3739ffca05be732a96a38f2e78335e45dad0ee42b",
+    "planned_report_readme_sha256": "79a62ad3b34d14d95979032a35330d118c1517b33877737f5705d31d4b5c360e",
+    "readme_and_validation_content_reviewed": true,
+    "scope": "The finalizer writes the updated report README/validation after this review gate. Their planned text and scoring flags were inspected; current root/lab READMEs are already updated."
+  }
 }

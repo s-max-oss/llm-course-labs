@@ -7,11 +7,22 @@
   "figures": 4,
   "sections": 7,
   "thought_questions": 6,
-  "visual_check": "All 20 page PNGs inspected at 2x raster resolution after final edits. No clipping, broken table rows, overlaps or short spill pages.",
+  "visual_check": "Changed pages 1, 2, 9, 15, 18 and 20 inspected at 2x raster resolution; the other 14 pages match previously inspected renders by SHA256. No clipping, broken table rows, overlaps or short spill pages.",
+  "visually_reinspected_pages": [
+    1,
+    2,
+    9,
+    15,
+    18,
+    20
+  ],
+  "unchanged_pages_verified_by_sha256": 14,
   "renderer": "Microsoft Word independent hidden read-only export plus bundled pypdfium2; packaged renderer unavailable because soffice.exe not installed.",
   "code_results_review": "passed",
   "report_content_review": "passed",
-  "human_faithfulness_review_complete": false,
+  "human_faithfulness_review_complete": true,
+  "human_scoring_method": "user_confirmation_of_ai_preliminary_scores",
+  "independent_blind_review_performed": false,
   "logic_tests": 7,
   "offline_api_tests": 6,
   "actual_api_calls": 61,
@@ -35,29 +46,29 @@
     "lab04_ssh_sessions_opened": 0
   },
   "report_sha256": {
-    "2024311281_孙驰_实验作业四.docx": "f97b788a70432e8310ca4ae3ff746bcd38bf7aedb806981a24ad4fd01cd7219b",
-    "2024311281_孙驰_实验作业四.pdf": "8c444854a4279ef574cce21e19f1d83dccb699c86168141d3d515c32fa2da671"
+    "2024311281_孙驰_实验作业四.docx": "a589a54aa1365e8285e6d7ffff2c6d7f65864e155100f082c60f9e367e6a4400",
+    "2024311281_孙驰_实验作业四.pdf": "2bbbd9cf98f425d636848cf5470ba2d477d9550f26afa985fee3f84240d48e05"
   },
   "page_sha256": {
-    "page-1.png": "a90bb1709cb22a4130e18a2a143d2a73ec279a6c2802631f037249a2dabe5358",
-    "page-2.png": "bb8c5521da08b85c197a017df6ae73f78a74c67e9dfaa4f14c08ebcf6cfa0b69",
+    "page-1.png": "c29da228bb330f0c4f920acf1b54017d727dc7431b46d36a413a2e0b830dff61",
+    "page-2.png": "ce9d566f8821a72d998d9f85a72b728bcb7969c97441d7bf12199bc3504700da",
     "page-3.png": "965e0a46727bf880d982adabc0b5ed484fc15aabc34a09606fc5239c2e57f1ee",
     "page-4.png": "945b9dadb645596b6e4507b52d740339d84ea31645a7b77deddaea9a05ec4a8e",
     "page-5.png": "f39bba39ca86dffb811de64b4f4d7c6b5c56f93fc4042906bfbadc78736be35f",
     "page-6.png": "9c274024e9064b4e53c77076e133126387f30e442b8023f0f71805cfc3bdb0de",
     "page-7.png": "eeac9eb1c7758f54a7e0b7fc1040f8381d63f89a72aa05f617ccaf0a1522819c",
     "page-8.png": "0eedca08b0b674d6866d0efcdf12c1f39ca08b8ad29f897697936ac8bf975eae",
-    "page-9.png": "71cbefd76f07503ee7a45f3425bc82cd23346d89f23ebe78bfef0be2063c3824",
+    "page-9.png": "2784cbad8bb3c892feea783866ef27803e04899aefdfd906af0cb9e544b5b291",
     "page-10.png": "29b894bc272c722aef7e50457e5386271fd925c9c784b8fb0d6fdeb311bc63af",
     "page-11.png": "242bae30a7e5f28a72989b1ab985b317c8e9e4ccac0b42640780409ac9285487",
     "page-12.png": "888cdb54931ed73939d883bf139ae0ae87da4f92b27ad1dc43b0bf303a0c0e46",
     "page-13.png": "89e4193dd6f4309c08d26bd7d5fa5845a66d399037b230f013aba47f5aed478e",
     "page-14.png": "319157d3f1048df0368a319b754c208cc510ee1a589759bf1f9378e5f1814209",
-    "page-15.png": "858e65b6e7486b4d2e3a295c69316e44d31d424646c3455be1499650adee49f8",
+    "page-15.png": "1164ece86611e798a676f1e61c5b58bb1d65b32ee3cd04f7b13acebd856ec309",
     "page-16.png": "fe530cb4cebbb3cf6205c03ddb22098f9a2fa1806b5908cd31c4be9f2176f4b4",
     "page-17.png": "e4f084fa598755fcdf428e1b3089ffb32e653606cd421fb6d81983bc37154542",
-    "page-18.png": "c7e908d70b3fc5b15aa2e9a347535cc780cc207dbdcbb4d48dadf7b26002ec9c",
+    "page-18.png": "46acc9141e8fe60488eb9e7bc7d08a93d825d649c8783e8105d4759e46aef209",
     "page-19.png": "f788ffaef4d22335e0b788f4a2a5d40f2e16402ad2cfc64a8d8de93b3b0ffc0a",
-    "page-20.png": "9eb960ab5c2fcdb5965445ee4f54b45ee273844caf4ab0006e643b12ca52cfd5"
+    "page-20.png": "b67abad4d4ee6a3b588dc60a4be480e925894f19485ec66ff6dbce66182f5141"
   }
 }
