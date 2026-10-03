@@ -1,0 +1,42 @@
+{
+  "label": "community_5",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:13.447085+00:00",
+  "elapsed_seconds": 0.6676347999996324,
+  "request_sha256": "6f244b98eeb555b532d1eb31fd12e9fa9e0184a92f89d34052d50dfb904e5e93",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "依据社区内三元组与来源原文，用80至150个中文字符总结社区主题。只保留原文支持的事实，不补人数或教材，区别共建和运行管理。只返回JSON对象{\"summary\":\"正文\"}。\n{\"entities\": [\"1958年\", \"云山大学\", \"岭南省云州市\", \"岭南超算中心\", \"格物致知\", \"省属重点大学\", \"省科技厅\"], \"triples\": [[\"云山大学\", \"位于\", \"岭南省云州市\", \"doc01\"], [\"云山大学\", \"建于\", \"1958年\", \"doc01\"], [\"云山大学\", \"是\", \"省属重点大学\", \"doc01\"], [\"云山大学\", \"校训为\", \"格物致知\", \"doc01\"], [\"岭南超算中心\", \"共建\", \"云山大学\", \"doc10\"], [\"岭南超算中心\", \"共建\", \"省科技厅\", \"doc10\"]], \"sources\": {\"doc01\": \"云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。\", \"doc10\": \"科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "259ff37a-f899-42ca-a55e-5521b21ec1e0",
+    "created": 1790993898,
+    "model": "deepseek-flash",
+    "content": "{\"summary\":\"云山大学位于岭南省云州市，建于1958年，是省属重点大学，校训为格物致知。岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 52,
+      "total_tokens": 377,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 325
+    }
+  }
+}

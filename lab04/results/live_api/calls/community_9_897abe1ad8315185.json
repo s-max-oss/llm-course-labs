@@ -1,0 +1,42 @@
+{
+  "label": "community_9",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:14.292350+00:00",
+  "elapsed_seconds": 0.6453458999999384,
+  "request_sha256": "897abe1ad83151851e64bfca073873343acf109ac8bd7955c3f47abeadbbd22c",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "依据社区内三元组与来源原文，用80至150个中文字符总结社区主题。只保留原文支持的事实，不补人数或教材，区别共建和运行管理。只返回JSON对象{\"summary\":\"正文\"}。\n{\"entities\": [\"人工智能分馆\", \"大模型与智能体专题图书\", \"理科楼B座3层\"], \"triples\": [[\"人工智能分馆\", \"位于\", \"理科楼B座3层\", \"doc13\"], [\"人工智能分馆\", \"收藏\", \"大模型与智能体专题图书\", \"doc13\"]], \"sources\": {\"doc13\": \"图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "258e9c3e-c732-477a-8465-90c195fc907b",
+    "created": 1790993899,
+    "model": "deepseek-flash",
+    "content": "{\"summary\":\"人工智能分馆位于理科楼B座3层，收藏大模型与智能体专题图书。该分馆作为图书馆的组成部分，其馆藏与空间由图书馆统一建设，日常开放运行管理遵循图书馆整体安排。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 201,
+      "completion_tokens": 51,
+      "total_tokens": 252,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 201
+    }
+  }
+}

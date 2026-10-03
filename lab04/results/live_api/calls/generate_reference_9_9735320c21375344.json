@@ -1,0 +1,43 @@
+{
+  "label": "generate_reference_9",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:06.854331+00:00",
+  "elapsed_seconds": 0.5046290000000226,
+  "request_sha256": "9735320c213753442a38b4ee244c7e1da05a86c77b807beb3b49dc16e2fa242c",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是严格基于资料回答的助手。只使用给出的原始文档，不用外部知识或猜测。资料不足时说明缺少什么，允许部分回答和拒答。每个事实用[docXX]标注来源。简洁回答。"
+      },
+      {
+        "role": "user",
+        "content": "原始资料：\n[doc01] 云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。\n[doc12] 校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。\n[doc14] 校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。\n[doc04] 人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。\n[doc11] 学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。\n\n问题：云山大学有哪些科研平台？分别依托谁建设？"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 600,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "response": {
+    "id": "55813c02-73bf-4b30-916b-a7b262035b1e",
+    "created": 1790993892,
+    "model": "deepseek-flash",
+    "content": "资料中没有关于云山大学科研平台及其依托单位的信息，无法回答。[doc01][doc04][doc11][doc12][doc14]",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 311,
+      "completion_tokens": 31,
+      "total_tokens": 342,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 311
+    }
+  }
+}

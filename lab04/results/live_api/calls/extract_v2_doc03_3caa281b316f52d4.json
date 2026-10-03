@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc03",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:08.622360+00:00",
+  "elapsed_seconds": 0.9181179000001976,
+  "request_sha256": "3caa281b316f52d41a120d94289911588212f974ee45b6fda61dce33ff7e278e",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "c6fbd10b-ccbb-41e3-b239-46f704b47496",
+    "created": 1790993893,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"计算机学院\",\"前身为\",\"计算机系\"],[\"计算机系\",\"成立于\",\"1985年\"],[\"陈国峰\",\"现任院长\",\"计算机学院\"],[\"计算机学院\",\"设计\",\"计算机科学与技术\"],[\"计算机学院\",\"设计\",\"软件工程\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 148,
+      "completion_tokens": 56,
+      "total_tokens": 204,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 148
+    }
+  }
+}

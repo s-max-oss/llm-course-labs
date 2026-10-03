@@ -1,0 +1,509 @@
+{
+  "protocol": "Reference knowledge and actual saved K=5 raw document contexts; three preselected questions per paradigm; Graph Local.",
+  "generator": "deepseek-flash",
+  "judge": "deepseek-flash",
+  "human_review_complete": false,
+  "answers": [
+    {
+      "system": "Vector RAG",
+      "question_id": "Q01",
+      "question": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "context": [
+        {
+          "doc_id": "doc06",
+          "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+        },
+        {
+          "doc_id": "doc04",
+          "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+        },
+        {
+          "doc_id": "doc05",
+          "text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+        },
+        {
+          "doc_id": "doc02",
+          "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+        },
+        {
+          "doc_id": "doc08",
+          "text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+        }
+      ],
+      "documents": [
+        "doc06",
+        "doc04",
+        "doc05",
+        "doc02",
+        "doc08"
+      ],
+      "answer": "《大模型通识课》授课教师是李文瀚[doc06]，他属于人工智能学院[doc04]。该学院现任院长为王启明教授[doc02]。",
+      "call_label": "generate_reference_1",
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "human_score": null,
+      "human_review_status": "pending",
+      "ai_initial_score": 5,
+      "claims": [
+        {
+          "claim": "《大模型通识课》授课教师是李文瀚",
+          "supported": true,
+          "sources": [
+            "doc06"
+          ],
+          "exact_quote": "授课教师李文瀚",
+          "quote_found_in_source": true
+        },
+        {
+          "claim": "李文瀚属于人工智能学院",
+          "supported": true,
+          "sources": [
+            "doc04"
+          ],
+          "exact_quote": "人工智能学院教师：李文瀚",
+          "quote_found_in_source": true
+        },
+        {
+          "claim": "人工智能学院现任院长为王启明教授",
+          "supported": true,
+          "sources": [
+            "doc02"
+          ],
+          "exact_quote": "首任及现任院长为王启明教授",
+          "quote_found_in_source": true
+        }
+      ],
+      "faithfulness_fraction": 1.0,
+      "abstained_or_incomplete": false,
+      "ai_score_reason": "三条事实声明均可由原文直接推出：doc06明确授课教师为李文瀚，doc04明确李文瀚为人工智能学院教师，doc02明确人工智能学院现任院长为王启明教授。行政负责人以院长作答，与原文一致。",
+      "judge_call": "judge_reference_1",
+      "judge": "DeepSeek same model as generator; automated preliminary review, not human scoring or RAGAS"
+    },
+    {
+      "system": "Vector RAG",
+      "question_id": "Q06",
+      "question": "云山大学的校训是什么？",
+      "context": [
+        {
+          "doc_id": "doc01",
+          "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+        },
+        {
+          "doc_id": "doc14",
+          "text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+        },
+        {
+          "doc_id": "doc09",
+          "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+        },
+        {
+          "doc_id": "doc06",
+          "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+        },
+        {
+          "doc_id": "doc10",
+          "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+        }
+      ],
+      "documents": [
+        "doc01",
+        "doc14",
+        "doc09",
+        "doc06",
+        "doc10"
+      ],
+      "answer": "云山大学的校训是「格物致知」[doc01]。",
+      "call_label": "generate_reference_2",
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "human_score": null,
+      "human_review_status": "pending",
+      "ai_initial_score": 5,
+      "claims": [
+        {
+          "claim": "云山大学的校训是「格物致知」。",
+          "supported": true,
+          "sources": [
+            "doc01"
+          ],
+          "exact_quote": "校训为「格物致知」。",
+          "quote_found_in_source": true
+        }
+      ],
+      "faithfulness_fraction": 1.0,
+      "abstained_or_incomplete": false,
+      "ai_score_reason": "回答仅包含一条事实声明，且该声明可由doc01原文直接推出，引用准确。",
+      "judge_call": "judge_reference_2",
+      "judge": "DeepSeek same model as generator; automated preliminary review, not human scoring or RAGAS"
+    },
+    {
+      "system": "Vector RAG",
+      "question_id": "Q11",
+      "question": "云山大学有哪些科研平台？分别依托谁建设？",
+      "context": [
+        {
+          "doc_id": "doc10",
+          "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+        },
+        {
+          "doc_id": "doc01",
+          "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+        },
+        {
+          "doc_id": "doc04",
+          "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+        },
+        {
+          "doc_id": "doc11",
+          "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+        },
+        {
+          "doc_id": "doc05",
+          "text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+        }
+      ],
+      "documents": [
+        "doc10",
+        "doc01",
+        "doc04",
+        "doc11",
+        "doc05"
+      ],
+      "answer": "云山大学有两个科研平台：\n\n1. **认知计算全国重点实验室**：依托人工智能学院建设[doc10]。\n2. **岭南超算中心**：由云山大学与省科技厅共建，计算机学院参与运行管理[doc10]。",
+      "call_label": "generate_reference_3",
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "human_score": null,
+      "human_review_status": "pending",
+      "ai_initial_score": 5,
+      "claims": [
+        {
+          "claim": "云山大学有两个科研平台。",
+          "supported": true,
+          "sources": [
+            "doc10"
+          ],
+          "exact_quote": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。",
+          "quote_found_in_source": true
+        },
+        {
+          "claim": "认知计算全国重点实验室依托人工智能学院建设。",
+          "supported": true,
+          "sources": [
+            "doc10"
+          ],
+          "exact_quote": "认知计算全国重点实验室依托人工智能学院建设",
+          "quote_found_in_source": true
+        },
+        {
+          "claim": "岭南超算中心由云山大学与省科技厅共建。",
+          "supported": true,
+          "sources": [
+            "doc10"
+          ],
+          "exact_quote": "岭南超算中心由云山大学与省科技厅共建",
+          "quote_found_in_source": true
+        },
+        {
+          "claim": "计算机学院参与岭南超算中心运行管理。",
+          "supported": true,
+          "sources": [
+            "doc10"
+          ],
+          "exact_quote": "计算机学院参与运行管理",
+          "quote_found_in_source": true
+        }
+      ],
+      "faithfulness_fraction": 1.0,
+      "abstained_or_incomplete": false,
+      "ai_score_reason": "回答中的全部事实声明均可在doc10原文中找到直接依据，无编造或超出上下文的信息。",
+      "judge_call": "judge_reference_3",
+      "judge": "DeepSeek same model as generator; automated preliminary review, not human scoring or RAGAS"
+    },
+    {
+      "system": "GraphRAG",
+      "question_id": "Q01",
+      "question": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "context": [
+        {
+          "doc_id": "doc06",
+          "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+        },
+        {
+          "doc_id": "doc02",
+          "text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+        },
+        {
+          "doc_id": "doc04",
+          "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+        },
+        {
+          "doc_id": "doc11",
+          "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+        },
+        {
+          "doc_id": "doc10",
+          "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+        }
+      ],
+      "documents": [
+        "doc06",
+        "doc02",
+        "doc04",
+        "doc11",
+        "doc10"
+      ],
+      "answer": "《大模型通识课》授课教师是李文瀚[doc06]，其所在学院为人工智能学院[doc04]。该学院现任院长为王启明教授[doc02]。",
+      "call_label": "generate_reference_4",
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "human_score": null,
+      "human_review_status": "pending",
+      "ai_initial_score": 5,
+      "claims": [
+        {
+          "claim": "《大模型通识课》授课教师是李文瀚",
+          "supported": true,
+          "sources": [
+            "doc06"
+          ],
+          "exact_quote": "授课教师李文瀚",
+          "quote_found_in_source": true
+        },
+        {
+          "claim": "李文瀚所在学院为人工智能学院",
+          "supported": true,
+          "sources": [
+            "doc04"
+          ],
+          "exact_quote": "人工智能学院教师：李文瀚",
+          "quote_found_in_source": true
+        },
+        {
+          "claim": "人工智能学院现任院长为王启明教授",
+          "supported": true,
+          "sources": [
+            "doc02"
+          ],
+          "exact_quote": "首任及现任院长为王启明教授",
+          "quote_found_in_source": true
+        }
+      ],
+      "faithfulness_fraction": 1.0,
+      "abstained_or_incomplete": false,
+      "ai_score_reason": "回答中的三条事实声明均可由原文直接推出：doc06明确授课教师为李文瀚，doc04将李文瀚列为人工智能学院教师，doc02明确人工智能学院现任院长为王启明教授。行政负责人以院长对应，信息完整且有依据。",
+      "judge_call": "judge_reference_4",
+      "judge": "DeepSeek same model as generator; automated preliminary review, not human scoring or RAGAS"
+    },
+    {
+      "system": "GraphRAG",
+      "question_id": "Q06",
+      "question": "云山大学的校训是什么？",
+      "context": [
+        {
+          "doc_id": "doc01",
+          "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+        }
+      ],
+      "documents": [
+        "doc01"
+      ],
+      "answer": "云山大学的校训是「格物致知」[doc01]。",
+      "call_label": "generate_reference_5",
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "human_score": null,
+      "human_review_status": "pending",
+      "ai_initial_score": 5,
+      "claims": [
+        {
+          "claim": "云山大学的校训是「格物致知」。",
+          "supported": true,
+          "sources": [
+            "doc01"
+          ],
+          "exact_quote": "校训为「格物致知」。",
+          "quote_found_in_source": true
+        }
+      ],
+      "faithfulness_fraction": 1.0,
+      "abstained_or_incomplete": false,
+      "ai_score_reason": "回答仅包含一条事实声明，且该声明可由doc01原文直接推出，引用准确。",
+      "judge_call": "judge_reference_5",
+      "judge": "DeepSeek same model as generator; automated preliminary review, not human scoring or RAGAS"
+    },
+    {
+      "system": "GraphRAG",
+      "question_id": "Q11",
+      "question": "云山大学有哪些科研平台？分别依托谁建设？",
+      "context": [
+        {
+          "doc_id": "doc01",
+          "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+        }
+      ],
+      "documents": [
+        "doc01"
+      ],
+      "answer": "资料中没有关于云山大学科研平台及其依托单位的信息，无法回答。[doc01]",
+      "call_label": "generate_reference_6",
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "human_score": null,
+      "human_review_status": "pending",
+      "ai_initial_score": 5,
+      "claims": [],
+      "faithfulness_fraction": null,
+      "abstained_or_incomplete": true,
+      "ai_score_reason": "回答为纯拒答，未提出任何事实声明，且上下文确实未提供科研平台信息，符合谨慎拒答。",
+      "judge_call": "judge_reference_6",
+      "judge": "DeepSeek same model as generator; automated preliminary review, not human scoring or RAGAS"
+    },
+    {
+      "system": "WikiRAG",
+      "question_id": "Q01",
+      "question": "《大模型通识课》授课教师所在学院的行政负责人是谁？",
+      "context": [
+        {
+          "doc_id": "doc06",
+          "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+        },
+        {
+          "doc_id": "doc04",
+          "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+        },
+        {
+          "doc_id": "doc11",
+          "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+        },
+        {
+          "doc_id": "doc05",
+          "text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+        }
+      ],
+      "documents": [
+        "doc06",
+        "doc04",
+        "doc11",
+        "doc05"
+      ],
+      "answer": "资料中没有提供《大模型通识课》授课教师所在学院（人工智能学院）的行政负责人信息，因此无法回答。[doc06][doc04]",
+      "call_label": "generate_reference_7",
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "human_score": null,
+      "human_review_status": "pending",
+      "ai_initial_score": 5,
+      "claims": [],
+      "faithfulness_fraction": null,
+      "abstained_or_incomplete": true,
+      "ai_score_reason": "回答为纯拒答，未提出任何事实声明，符合谨慎拒答标准。",
+      "judge_call": "judge_reference_7",
+      "judge": "DeepSeek same model as generator; automated preliminary review, not human scoring or RAGAS"
+    },
+    {
+      "system": "WikiRAG",
+      "question_id": "Q06",
+      "question": "云山大学的校训是什么？",
+      "context": [
+        {
+          "doc_id": "doc01",
+          "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+        },
+        {
+          "doc_id": "doc12",
+          "text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+        },
+        {
+          "doc_id": "doc14",
+          "text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+        },
+        {
+          "doc_id": "doc09",
+          "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+        },
+        {
+          "doc_id": "doc06",
+          "text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+        }
+      ],
+      "documents": [
+        "doc01",
+        "doc12",
+        "doc14",
+        "doc09",
+        "doc06"
+      ],
+      "answer": "云山大学的校训是「格物致知」[doc01]。",
+      "call_label": "generate_reference_8",
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "human_score": null,
+      "human_review_status": "pending",
+      "ai_initial_score": 5,
+      "claims": [
+        {
+          "claim": "云山大学的校训是「格物致知」。",
+          "supported": true,
+          "sources": [
+            "doc01"
+          ],
+          "exact_quote": "校训为「格物致知」。",
+          "quote_found_in_source": true
+        }
+      ],
+      "faithfulness_fraction": 1.0,
+      "abstained_or_incomplete": false,
+      "ai_score_reason": "回答仅包含一条事实声明，且该声明可由doc01原文直接推出，引用准确。",
+      "judge_call": "judge_reference_8",
+      "judge": "DeepSeek same model as generator; automated preliminary review, not human scoring or RAGAS"
+    },
+    {
+      "system": "WikiRAG",
+      "question_id": "Q11",
+      "question": "云山大学有哪些科研平台？分别依托谁建设？",
+      "context": [
+        {
+          "doc_id": "doc01",
+          "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+        },
+        {
+          "doc_id": "doc12",
+          "text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+        },
+        {
+          "doc_id": "doc14",
+          "text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+        },
+        {
+          "doc_id": "doc04",
+          "text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+        },
+        {
+          "doc_id": "doc11",
+          "text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+        }
+      ],
+      "documents": [
+        "doc01",
+        "doc12",
+        "doc14",
+        "doc04",
+        "doc11"
+      ],
+      "answer": "资料中没有关于云山大学科研平台及其依托单位的信息，无法回答。[doc01][doc04][doc11][doc12][doc14]",
+      "call_label": "generate_reference_9",
+      "requested_model": "deepseek-flash",
+      "response_model": "deepseek-flash",
+      "human_score": null,
+      "human_review_status": "pending",
+      "ai_initial_score": 5,
+      "claims": [],
+      "faithfulness_fraction": null,
+      "abstained_or_incomplete": true,
+      "ai_score_reason": "回答为纯拒答，未提出任何事实声明，符合上下文：所有文档均未提及云山大学的科研平台及其依托单位。",
+      "judge_call": "judge_reference_9",
+      "judge": "DeepSeek same model as generator; automated preliminary review, not human scoring or RAGAS"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc02",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:08.335988+00:00",
+  "elapsed_seconds": 0.6312722000002395,
+  "request_sha256": "2cd3eb7d2f1fadb94d97a3465cd3055630c1b37f89e78c2a2072221dad657b89",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "a8ea20c6-e402-4d96-8c35-78f55f9b75ca",
+    "created": 1790993893,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"人工智能学院\",\"成立年份\",\"2018年\"],[\"王启明教授\",\"担任院长\",\"人工智能学院\"],[\"人工智能学院\",\"下设\",\"机器学习系\"],[\"人工智能学院\",\"下设\",\"智能科学系\"],[\"人工智能学院\",\"下设\",\"认知计算系\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 150,
+      "completion_tokens": 58,
+      "total_tokens": 208,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 150
+    }
+  }
+}

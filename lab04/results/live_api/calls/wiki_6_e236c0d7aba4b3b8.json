@@ -1,0 +1,42 @@
+{
+  "label": "wiki_6",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:17.568443+00:00",
+  "elapsed_seconds": 0.699536099999932,
+  "request_sha256": "e236c0d7aba4b3b8cd1a7b9df86b4256b31d255740bec3303430737f00399a38",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "将来源原文重写聚合为题名对应的知识条目。保留与主题相关的时间、数量、人员和关系，正文100至180字内；只用原文，不补教材或联合培养人数，区别共建和运行管理。只返回JSON对象{\"body\":\"正文\"}。\n{\"title\": \"大模型通识课\", \"sources\": {\"doc06\": \"《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "be2340fb-1cd5-42ab-a9e6-14f4e8a46148",
+    "created": 1790993903,
+    "model": "deepseek-flash",
+    "content": "{\"body\":\"《大模型通识课》课程代码为AI2101，3学分、32学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 145,
+      "completion_tokens": 43,
+      "total_tokens": 188,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 145
+    }
+  }
+}

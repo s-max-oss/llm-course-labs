@@ -1,0 +1,42 @@
+{
+  "label": "community_6",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:13.645570+00:00",
+  "elapsed_seconds": 0.8493938000001435,
+  "request_sha256": "94aaafc4e42c8bfefd6772729eb61f14e8c2a4b9152cf2a91c8b9d56c0f954f0",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "依据社区内三元组与来源原文，用80至150个中文字符总结社区主题。只保留原文支持的事实，不补人数或教材，区别共建和运行管理。只返回JSON对象{\"summary\":\"正文\"}。\n{\"entities\": [\"2%\", \"8000元/年\", \"国家奖学金\"], \"triples\": [[\"国家奖学金\", \"金额为\", \"8000元/年\", \"doc09\"], [\"国家奖学金\", \"评定比例约\", \"2%\", \"doc09\"]], \"sources\": {\"doc09\": \"奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "9dd25eb6-2030-43c5-b4e2-084b5b39968d",
+    "created": 1790993898,
+    "model": "deepseek-flash",
+    "content": "{\"summary\":\"国家奖学金金额为8000元/年，评定比例约2%。来源原文还提及校长奖学金、云山一等奖学金，但未涉及共建或运行管理内容。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 200,
+      "completion_tokens": 40,
+      "total_tokens": 240,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 200
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc11",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:10.682508+00:00",
+  "elapsed_seconds": 0.7497563000001719,
+  "request_sha256": "a0ce86489f987c499b65f2c0b1d8c6c1864e01460c243914dbc7bffb2c5ac000",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "ba068443-abe8-4110-8a26-038f06155e88",
+    "created": 1790993896,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"AI 协会\",\"指导教师\",\"李文瀚\"],[\"机器人战队\",\"指导教师\",\"孙浩然\"],[\"机器人战队\",\"参加\",\"全国机器人大赛\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 149,
+      "completion_tokens": 36,
+      "total_tokens": 185,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 149
+    }
+  }
+}

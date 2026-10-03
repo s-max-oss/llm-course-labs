@@ -1,0 +1,42 @@
+{
+  "label": "wiki_7",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:18.120200+00:00",
+  "elapsed_seconds": 0.576714599999832,
+  "request_sha256": "532e88b636ba02828525e7115314d88bbef1e85961c91af45487a1d596b0dcf6",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "将来源原文重写聚合为题名对应的知识条目。保留与主题相关的时间、数量、人员和关系，正文100至180字内；只用原文，不补教材或联合培养人数，区别共建和运行管理。只返回JSON对象{\"body\":\"正文\"}。\n{\"title\": \"知识图谱导论\", \"sources\": {\"doc07\": \"《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。\", \"doc08\": \"选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "88002638-a78d-43cd-8173-31c9d033f8b0",
+    "created": 1790993903,
+    "model": "deepseek-flash",
+    "content": "{\"body\":\"《知识图谱导论》课程代码为AI3305，2学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。该课程需先修《数据结构》。选课规则方面，本科生每学期最多修30学分；GPA低于2.0给予学术警告。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 194,
+      "completion_tokens": 66,
+      "total_tokens": 260,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 194
+    }
+  }
+}

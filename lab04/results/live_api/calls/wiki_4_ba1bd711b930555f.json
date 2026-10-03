@@ -1,0 +1,42 @@
+{
+  "label": "wiki_4",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:17.543376+00:00",
+  "elapsed_seconds": 0.8447791000003235,
+  "request_sha256": "ba1bd711b930555f697e4b4baa2a72c084c3f0e48ca8f9af4feb7a8ff41ccb3d",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "将来源原文重写聚合为题名对应的知识条目。保留与主题相关的时间、数量、人员和关系，正文100至180字内；只用原文，不补教材或联合培养人数，区别共建和运行管理。只返回JSON对象{\"body\":\"正文\"}。\n{\"title\": \"人工智能学院教师\", \"sources\": {\"doc04\": \"人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。\", \"doc11\": \"学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "e481a5b8-405c-4187-b53c-050e227bf5c2",
+    "created": 1790993902,
+    "model": "deepseek-flash",
+    "content": "{\"body\":\"人工智能学院教师包括李文瀚、赵婉晴和孙浩然。李文瀚为教授，2019年入职，研究方向为检索增强生成，主讲《大模型通识课》，并担任AI协会指导教师，该协会每周三晚组织论文研读。赵婉晴为副教授，研究方向为知识图谱，主讲《知识图谱导论》。孙浩然为讲师，研究方向为强化学习，并担任机器人战队指导教师，该战队每年参加全国机器人大赛。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 199,
+      "completion_tokens": 101,
+      "total_tokens": 300,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 199
+    }
+  }
+}

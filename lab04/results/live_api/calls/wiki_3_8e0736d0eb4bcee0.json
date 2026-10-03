@@ -1,0 +1,42 @@
+{
+  "label": "wiki_3",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:16.775064+00:00",
+  "elapsed_seconds": 0.9428572000001623,
+  "request_sha256": "8e0736d0eb4bcee08a2d79d286cb7bffbcee27dcb13e640e324739b1817b11a6",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "将来源原文重写聚合为题名对应的知识条目。保留与主题相关的时间、数量、人员和关系，正文100至180字内；只用原文，不补教材或联合培养人数，区别共建和运行管理。只返回JSON对象{\"body\":\"正文\"}。\n{\"title\": \"计算机学院\", \"sources\": {\"doc03\": \"计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。\", \"doc10\": \"科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "eff12f82-fc92-45bf-9f89-e8de062745cb",
+    "created": 1790993901,
+    "model": "deepseek-flash",
+    "content": "{\"body\":\"计算机学院前身为1985年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 173,
+      "completion_tokens": 64,
+      "total_tokens": 237,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 173
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "label": "generate_reference_4",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:05.942471+00:00",
+  "elapsed_seconds": 0.4823000999999749,
+  "request_sha256": "44eea8f071583b02466ed0fd15b98ca51decff92521a0ea26382539b414eb3a4",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是严格基于资料回答的助手。只使用给出的原始文档，不用外部知识或猜测。资料不足时说明缺少什么，允许部分回答和拒答。每个事实用[docXX]标注来源。简洁回答。"
+      },
+      {
+        "role": "user",
+        "content": "原始资料：\n[doc06] 《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。\n[doc02] 人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。\n[doc04] 人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。\n[doc11] 学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。\n[doc10] 科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。\n\n问题：《大模型通识课》授课教师所在学院的行政负责人是谁？"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 600,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "response": {
+    "id": "f6b0c767-c70e-4f9d-8b95-f81e7c112e09",
+    "created": 1790993891,
+    "model": "deepseek-flash",
+    "content": "《大模型通识课》授课教师是李文瀚[doc06]，其所在学院为人工智能学院[doc04]。该学院现任院长为王启明教授[doc02]。",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 38,
+      "total_tokens": 330,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 292
+    }
+  }
+}

@@ -10,3 +10,4 @@ lab03/smoke_results/
 
 lab04/.embedding_cache/
 lab04/.venv/
+lab04/.env*

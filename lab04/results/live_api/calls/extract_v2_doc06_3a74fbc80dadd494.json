@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc06",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:09.412575+00:00",
+  "elapsed_seconds": 0.7917788999998265,
+  "request_sha256": "3a74fbc80dadd494506f964c9ee228014d861685a36112aa18d6eeb818421b34",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "a7890b79-c55a-41b3-a22c-74914a73b041",
+    "created": 1790993894,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"《大模型通识课》\",\"课程代码\",\"AI2101\"],[\"《大模型通识课》\",\"学分\",\"3\"],[\"《大模型通识课》\",\"学时\",\"32\"],[\"《大模型通识课》\",\"开设学期\",\"春季学期\"],[\"《大模型通识课》\",\"授课教师\",\"李文瀚\"],[\"《大模型通识课》\",\"面向\",\"全校本科生\"],[\"《大模型通识课》\",\"先修课程要求\",\"无\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 156,
+      "completion_tokens": 108,
+      "total_tokens": 264,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 156
+    }
+  }
+}

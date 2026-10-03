@@ -1,0 +1,42 @@
+{
+  "label": "wiki_1",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:16.696787+00:00",
+  "elapsed_seconds": 0.8655629999998382,
+  "request_sha256": "e937e6c680ca90b8edef5730ffc69f87376ee04bd4f5493588b08abb6e7d7903",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "将来源原文重写聚合为题名对应的知识条目。保留与主题相关的时间、数量、人员和关系，正文100至180字内；只用原文，不补教材或联合培养人数，区别共建和运行管理。只返回JSON对象{\"body\":\"正文\"}。\n{\"title\": \"云山大学\", \"sources\": {\"doc01\": \"云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。\", \"doc12\": \"校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。\", \"doc14\": \"校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "34517097-c114-40c0-a12a-9c574b3ad7a7",
+    "created": 1790993902,
+    "model": "deepseek-flash",
+    "content": "{\"body\":\"云山大学位于岭南省云州市，建于1958年，是省属重点大学，现有全日制本科生约2.1万人，校训为「格物致知」。春季学期3月2日开学、7月5日放暑假；秋季学期9月1日开学、次年1月15日放寒假。地铁3号线「云大站」距东门200米；校内校巴共5条线路，10分钟一班。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 241,
+      "completion_tokens": 99,
+      "total_tokens": 340,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 241
+    }
+  }
+}

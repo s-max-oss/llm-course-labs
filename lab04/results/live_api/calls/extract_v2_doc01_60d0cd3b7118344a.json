@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc01",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:08.624461+00:00",
+  "elapsed_seconds": 0.9202308000003541,
+  "request_sha256": "60d0cd3b7118344ad564d44bf0af94afe34d4cb2405accb4f98deef78fefb7be",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "f5710951-c21b-48ad-a4b1-47d9e267a33d",
+    "created": 1790993893,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"云山大学\",\"位于\",\"岭南省云州市\"],[\"云山大学\",\"建于\",\"1958年\"],[\"云山大学\",\"是\",\"省属重点大学\"],[\"云山大学\",\"校训为\",\"格物致知\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 158,
+      "completion_tokens": 55,
+      "total_tokens": 213,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 158
+    }
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "system": "GraphRAG",
+    "question_id": "Q11",
+    "question": "云山大学有哪些科研平台？分别依托谁建设？",
+    "context": [
+      {
+        "doc_id": "doc01",
+        "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+      },
+      {
+        "doc_id": "doc10",
+        "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+      },
+      {
+        "doc_id": "doc09",
+        "text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+      }
+    ],
+    "documents": [
+      "doc01",
+      "doc10",
+      "doc09"
+    ],
+    "answer": "云山大学有两个科研平台：\n\n- **认知计算全国重点实验室**：依托人工智能学院建设[doc10]。\n- **岭南超算中心**：由云山大学与省科技厅共建，计算机学院参与运行管理[doc10]。",
+    "call_label": "generate_live_q11_1",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "human_score": null,
+    "human_review_status": "pending"
+  },
+  {
+    "system": "WikiRAG",
+    "question_id": "Q11",
+    "question": "云山大学有哪些科研平台？分别依托谁建设？",
+    "context": [
+      {
+        "doc_id": "doc01",
+        "text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+      },
+      {
+        "doc_id": "doc12",
+        "text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+      },
+      {
+        "doc_id": "doc14",
+        "text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+      },
+      {
+        "doc_id": "doc03",
+        "text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+      },
+      {
+        "doc_id": "doc10",
+        "text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+      }
+    ],
+    "documents": [
+      "doc01",
+      "doc12",
+      "doc14",
+      "doc03",
+      "doc10"
+    ],
+    "answer": "根据资料，云山大学有两个科研平台：\n\n- **认知计算全国重点实验室**：依托人工智能学院建设[doc10]。\n- **岭南超算中心**：由云山大学与省科技厅共建，计算机学院参与运行管理[doc10]。",
+    "call_label": "generate_live_q11_2",
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "human_score": null,
+    "human_review_status": "pending"
+  }
+]

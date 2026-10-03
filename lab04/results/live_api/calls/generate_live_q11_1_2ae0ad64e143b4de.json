@@ -1,0 +1,43 @@
+{
+  "label": "generate_live_q11_1",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:26.248372+00:00",
+  "elapsed_seconds": 0.6538913000003959,
+  "request_sha256": "2ae0ad64e143b4de36af7d93be0e64caec81290ed5aeedf6d6d4f534228026ea",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是严格基于资料回答的助手。只使用给出的原始文档，不用外部知识或猜测。资料不足时说明缺少什么，允许部分回答和拒答。每个事实用[docXX]标注来源。简洁回答。"
+      },
+      {
+        "role": "user",
+        "content": "原始资料：\n[doc01] 云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。\n[doc10] 科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。\n[doc09] 奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。\n\n问题：云山大学有哪些科研平台？分别依托谁建设？"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 600,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "response": {
+    "id": "10e17892-0a7e-499c-9c29-60b145297af0",
+    "created": 1790993911,
+    "model": "deepseek-flash",
+    "content": "云山大学有两个科研平台：\n\n- **认知计算全国重点实验室**：依托人工智能学院建设[doc10]。\n- **岭南超算中心**：由云山大学与省科技厅共建，计算机学院参与运行管理[doc10]。",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 52,
+      "total_tokens": 264,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 212
+    }
+  }
+}

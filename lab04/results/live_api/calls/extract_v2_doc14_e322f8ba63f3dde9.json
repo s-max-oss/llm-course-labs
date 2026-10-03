@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc14",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:11.605766+00:00",
+  "elapsed_seconds": 0.9214538000001085,
+  "request_sha256": "e322f8ba63f3dde945a16ff7ac660c01f32968fe24997e7c8f0b52f1dd35e437",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "bec1b604-e6ba-49c9-9c45-73f385bce102",
+    "created": 1790993896,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"地铁3号线「云大站」\",\"距\",\"东门\"],[\"校内校巴\",\"线路数\",\"5条\"],[\"校内校巴\",\"发车间隔\",\"10分钟\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 152,
+      "completion_tokens": 44,
+      "total_tokens": 196,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 152
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "label": "extract_v1_doc15",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:07.409254+00:00",
+  "elapsed_seconds": 0.5523451999997633,
+  "request_sha256": "38405708ec6fff2f76b580c36082ad89d59c09039f80030e4f04d7e463701b90",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取头实体、关系、尾实体，只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}。"
+      },
+      {
+        "role": "user",
+        "content": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "21b11c4f-4245-48b1-9277-3bcbe8ae374f",
+    "created": 1790993892,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"学校\",\"与...签有交换协议\",\"12个国家的47所高校\"],[\"人工智能学院\",\"与...有本科联合培养项目\",\"新加坡南洋理工大学\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 93,
+      "completion_tokens": 39,
+      "total_tokens": 132,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 93
+    }
+  }
+}

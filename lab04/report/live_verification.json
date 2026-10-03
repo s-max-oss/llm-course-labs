@@ -1,0 +1,369 @@
+{
+  "status": "passed",
+  "must_fix_computation_or_code": [],
+  "counts": {
+    "request_records": 61,
+    "raw_extraction_triples": 80,
+    "community_summaries": 14,
+    "wiki_entries": 9,
+    "evaluation_rows": 480,
+    "aggregate_rows": 120,
+    "evaluation_sets": 10,
+    "generated_answers": 11,
+    "judged_claims": 13,
+    "ai_reviews": 9
+  },
+  "call_stage_counts": {
+    "community": 14,
+    "extract_v1": 3,
+    "extract_v2": 15,
+    "generate_live_q11": 2,
+    "generate_reference": 9,
+    "judge_reference": 9,
+    "wiki": 9
+  },
+  "usage_independently_summed": {
+    "prompt_tokens": 15088,
+    "completion_tokens": 3768,
+    "total_tokens": 18856,
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 14832
+  },
+  "neural_archive": {
+    "shape": [
+      123,
+      512
+    ],
+    "dtype": "float32",
+    "unit_norm_max_error": 1.1920928955078125e-07,
+    "all_inputs_replayed": true
+  },
+  "construction": {
+    "raw_triples": 65,
+    "normalized_triples": 65,
+    "nodes": 73,
+    "communities": 14,
+    "wiki_entries": 9
+  },
+  "eval20_local": [
+    {
+      "system": "Vector RAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "Vector RAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 7
+    },
+    {
+      "system": "Vector RAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.9047619047619048,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "Vector RAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.9666666666666666,
+      "mrr": 1.0,
+      "full_hits": 19
+    },
+    {
+      "system": "GraphRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "GraphRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 7
+    },
+    {
+      "system": "GraphRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.5238095238095238,
+      "mrr": 0.47619047619047616,
+      "full_hits": 2
+    },
+    {
+      "system": "GraphRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.8333333333333333,
+      "mrr": 0.8166666666666667,
+      "full_hits": 15
+    },
+    {
+      "system": "WikiRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 0.7222222222222222,
+      "full_hits": 6
+    },
+    {
+      "system": "WikiRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 0.8571428571428571,
+      "mrr": 0.9285714285714286,
+      "full_hits": 4
+    },
+    {
+      "system": "WikiRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.8809523809523808,
+      "mrr": 0.6785714285714286,
+      "full_hits": 5
+    },
+    {
+      "system": "WikiRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.9083333333333334,
+      "mrr": 0.7791666666666666,
+      "full_hits": 15
+    }
+  ],
+  "eval20_global": [
+    {
+      "system": "Vector RAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "Vector RAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "full_hits": 7
+    },
+    {
+      "system": "Vector RAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.9047619047619048,
+      "mrr": 1.0,
+      "full_hits": 6
+    },
+    {
+      "system": "Vector RAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.9666666666666666,
+      "mrr": 1.0,
+      "full_hits": 19
+    },
+    {
+      "system": "GraphRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 0.875,
+      "full_hits": 6
+    },
+    {
+      "system": "GraphRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 0.9523809523809523,
+      "mrr": 0.9285714285714286,
+      "full_hits": 6
+    },
+    {
+      "system": "GraphRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.7619047619047619,
+      "mrr": 0.7142857142857143,
+      "full_hits": 4
+    },
+    {
+      "system": "GraphRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.9,
+      "mrr": 0.8375,
+      "full_hits": 16
+    },
+    {
+      "system": "WikiRAG",
+      "type": "fact",
+      "n": 6,
+      "recall": 1.0,
+      "mrr": 0.7222222222222222,
+      "full_hits": 6
+    },
+    {
+      "system": "WikiRAG",
+      "type": "multi",
+      "n": 7,
+      "recall": 0.8571428571428571,
+      "mrr": 0.9285714285714286,
+      "full_hits": 4
+    },
+    {
+      "system": "WikiRAG",
+      "type": "global",
+      "n": 7,
+      "recall": 0.8809523809523808,
+      "mrr": 0.6785714285714286,
+      "full_hits": 5
+    },
+    {
+      "system": "WikiRAG",
+      "type": "all",
+      "n": 20,
+      "recall": 0.9083333333333334,
+      "mrr": 0.7791666666666666,
+      "full_hits": 15
+    }
+  ],
+  "checks_total": 67663,
+  "failed_checks": [],
+  "manifest_checks": {
+    "answer_review.json": true,
+    "calls/community_10_30e3777e858db77a.json": true,
+    "calls/community_11_fd666da2e649a0ce.json": true,
+    "calls/community_12_802b71c5f40d2f01.json": true,
+    "calls/community_13_c1a43dc260c6e4fb.json": true,
+    "calls/community_14_3d77c2260207603e.json": true,
+    "calls/community_1_84ee6dfae9f8ba6c.json": true,
+    "calls/community_2_8ccf68a3d1de6d90.json": true,
+    "calls/community_3_4acd887a887504a2.json": true,
+    "calls/community_4_f1f24499aceb426a.json": true,
+    "calls/community_5_6f244b98eeb555b5.json": true,
+    "calls/community_6_94aaafc4e42c8bfe.json": true,
+    "calls/community_7_9ea4585598251ef8.json": true,
+    "calls/community_8_b657b1f7dbaec52a.json": true,
+    "calls/community_9_897abe1ad8315185.json": true,
+    "calls/extract_v1_doc04_da36e2c84e331b00.json": true,
+    "calls/extract_v1_doc10_9de202d3d13b71c9.json": true,
+    "calls/extract_v1_doc15_38405708ec6fff2f.json": true,
+    "calls/extract_v2_doc01_60d0cd3b7118344a.json": true,
+    "calls/extract_v2_doc02_2cd3eb7d2f1fadb9.json": true,
+    "calls/extract_v2_doc03_3caa281b316f52d4.json": true,
+    "calls/extract_v2_doc04_7485c719b6a1ad8e.json": true,
+    "calls/extract_v2_doc05_ddce5f2c475088e1.json": true,
+    "calls/extract_v2_doc06_3a74fbc80dadd494.json": true,
+    "calls/extract_v2_doc07_a79b2541dc9cda63.json": true,
+    "calls/extract_v2_doc08_02d6a7c5629f837d.json": true,
+    "calls/extract_v2_doc09_0000ea149dc54463.json": true,
+    "calls/extract_v2_doc10_4abc10f4ff01b6a9.json": true,
+    "calls/extract_v2_doc11_a0ce86489f987c49.json": true,
+    "calls/extract_v2_doc12_bf76546d2961aec7.json": true,
+    "calls/extract_v2_doc13_e23c161abbe742a0.json": true,
+    "calls/extract_v2_doc14_e322f8ba63f3dde9.json": true,
+    "calls/extract_v2_doc15_03b2e6977f2c0447.json": true,
+    "calls/generate_live_q11_1_2ae0ad64e143b4de.json": true,
+    "calls/generate_live_q11_2_81a2b8791c6dda29.json": true,
+    "calls/generate_reference_1_e7de29b90cc62e42.json": true,
+    "calls/generate_reference_2_5825909de9e08f2e.json": true,
+    "calls/generate_reference_3_201e000f0b6e646d.json": true,
+    "calls/generate_reference_4_44eea8f071583b02.json": true,
+    "calls/generate_reference_5_8d6693485fb778e0.json": true,
+    "calls/generate_reference_6_b090d6e526eec9f0.json": true,
+    "calls/generate_reference_7_e921caeff9c934f0.json": true,
+    "calls/generate_reference_8_a61fd2a46e65c3e3.json": true,
+    "calls/generate_reference_9_9735320c21375344.json": true,
+    "calls/judge_reference_1_c17dd3290d93bc04.json": true,
+    "calls/judge_reference_2_85f7c54385d701cd.json": true,
+    "calls/judge_reference_3_078c1d184608f6ef.json": true,
+    "calls/judge_reference_4_7ca695184abdce87.json": true,
+    "calls/judge_reference_5_25f13d60713cdc53.json": true,
+    "calls/judge_reference_6_1fa68448be3d54da.json": true,
+    "calls/judge_reference_7_29edd16420b3a1b6.json": true,
+    "calls/judge_reference_8_ac7010015d721e22.json": true,
+    "calls/judge_reference_9_badd27b0a1cfc255.json": true,
+    "calls/wiki_1_e937e6c680ca90b8.json": true,
+    "calls/wiki_2_a892dcf50403d276.json": true,
+    "calls/wiki_3_8e0736d0eb4bcee0.json": true,
+    "calls/wiki_4_ba1bd711b930555f.json": true,
+    "calls/wiki_5_735eed9230607e1b.json": true,
+    "calls/wiki_6_e236c0d7aba4b3b8.json": true,
+    "calls/wiki_7_532e88b636ba0282.json": true,
+    "calls/wiki_8_528a4b1c5c104141.json": true,
+    "calls/wiki_9_3bef0bb2d10690b3.json": true,
+    "community_summaries.json": true,
+    "embedding_vectors.npz": true,
+    "eval20_global.json": true,
+    "eval20_local.json": true,
+    "extractions_v1.json": true,
+    "extractions_v2.json": true,
+    "k_scan.json": true,
+    "live_knowledge.json": true,
+    "live_knowledge_audit.json": true,
+    "live_q11_answers.json": true,
+    "reference_answers.json": true,
+    "run_summary.json": true,
+    "source_at_run.py": true,
+    "wiki_entries.json": true
+  },
+  "core_sha256": "6a960a7cfc812ad36aecf7f6973a7814ae9e9037d61cea8ec7d41b305fe81e2d",
+  "reference_generation_protocol": "Nine answers use original reference K5 contexts; two added Q11 answers use newly constructed live indexes; they are not interchangeable.",
+  "ai_review_protocol": "Same DeepSeek model generates and judges; scores are preliminary, human_score remains null.",
+  "knowledge_audit_path": "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\tmp\\lab04\\live_knowledge_audit.json",
+  "limitations": [
+    "No API calls or credential/session-log reads were performed.",
+    "Arithmetic/byte reproduction passing does not mean generated knowledge is factually clean; see separate source audit."
+  ],
+  "independent_model_inference": {
+    "status": "passed",
+    "inputs": 123,
+    "shape": [
+      123,
+      512
+    ],
+    "device": "cpu",
+    "offline": true,
+    "snapshot": "C:\\Users\\20805\\.cache\\huggingface\\hub\\models--BAAI--bge-small-zh-v1.5\\snapshots\\7999e1d3359715c523056ef9478215996d62a620",
+    "max_absolute_difference": 1.4528632164001465e-07,
+    "min_cosine": 0.9999998807907104
+  },
+  "offline_behavior_tests": {
+    "command": "python -B -m unittest -v test_deepseek_live.py",
+    "tests": 6,
+    "passed": 6,
+    "credential_policy": "Tests inject a literal fake key and mock httpx; no real credential read or API request occurred.",
+    "current_source_changes_reviewed": "Only adds conclusion bool/reason str, source item str and exact_quote str validation; serialized valid requests and outputs unchanged.",
+    "source_at_run_sha256": "a31a66d86e63edd44eedbd42babe7d30dfd925a6a7c5ca25ed47200a1cf0c528"
+  },
+  "manifest_resolution": {
+    "status": "passed",
+    "entries": 76,
+    "actual_files": 76,
+    "missing": [],
+    "stale": [],
+    "all_sha256_match": true,
+    "resolved_previous_failure": [
+      {
+        "check": "Live manifest file set complete",
+        "original_status": "failed: source_at_run.py added after initial manifest",
+        "resolution": "Rebuilt manifest includes original runtime source and semantic audit; 76 actual files all listed and byte hashes match."
+      }
+    ],
+    "manifest_sha256": "1b54d16f44e4e4305a17f6fc2340ff9b674fc0f2b1a4e555d16ef1a3fd6e1042"
+  }
+}

@@ -14,7 +14,7 @@
 | [lab02](./lab02) | ConvLSTM 的算法应用与改进 | 弹跳小球预测、参数量核对、6组单变量对照、组合3次复测；[Word/PDF报告](./lab02/report/)已完成 |
 | [lab03](./lab03) | 手搓最小LLM，CPU训练 | MiniGPT基线、8个训练变体、温度/top-k采样及禁止重复3-gram；代码、结果与[Word/PDF报告](./lab03/report/)已完成 |
 
-| [lab04](./lab04) | Vector RAG、GraphRAG与WikiRAG对比 | 本地BGE真实检索、20题评测、K扫描、RRF选做、来源审计；报告忠实度人工评分待确认 |
+| [lab04](./lab04) | Vector RAG、GraphRAG与WikiRAG对比 | 本地BGE、20题评测、K扫描、RRF及DeepSeek现场知识构建/生成；报告人工评分待确认 |
 
 ## 本地课程资料归档
 

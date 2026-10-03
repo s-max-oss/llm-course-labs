@@ -1,0 +1,46 @@
+{
+  "label": "extract_v1_doc04",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:07.698756+00:00",
+  "elapsed_seconds": 0.8425269999997909,
+  "request_sha256": "da36e2c84e331b003c765a473bd3f12d1077a7af4bd685b47da28130af861ea9",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取头实体、关系、尾实体，只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}。"
+      },
+      {
+        "role": "user",
+        "content": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "0410935e-26cc-49ab-ae55-236d6cea8dcf",
+    "created": 1790993892,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"李文瀚\",\"职称\",\"教授\"],[\"李文瀚\",\"入职年份\",\"2019年\"],[\"李文瀚\",\"研究方向\",\"检索增强生成\"],[\"李文瀚\",\"主讲课程\",\"《大模型通识课》\"],[\"赵婉晴\",\"职称\",\"副教授\"],[\"赵婉晴\",\"研究方向\",\"知识图谱\"],[\"赵婉晴\",\"主讲课程\",\"《知识图谱导论》\"],[\"孙浩然\",\"职称\",\"讲师\"],[\"孙浩然\",\"研究方向\",\"强化学习\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 118,
+      "completion_tokens": 101,
+      "total_tokens": 219,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 118
+    }
+  }
+}

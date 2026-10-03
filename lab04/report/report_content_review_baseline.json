@@ -1,0 +1,1507 @@
+{
+  "status": "passed",
+  "must_fix": [],
+  "counts": {
+    "pdf_paragraphs_checked": 110,
+    "numeric_table_cells": 89,
+    "full_hit_cells": 4,
+    "manual_rank_cells": 9,
+    "question_gold_rows": 28,
+    "answer_records": 9,
+    "failure_records": 6,
+    "readme_metric_rows": 5
+  },
+  "graph_statistics": {
+    "nodes": 45,
+    "triples": 40,
+    "detected_communities": 10,
+    "preset_summaries": 3
+  },
+  "checked_files": {
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\tmp\\lab04\\report_content.py": "1f00b6ecb68d1d895b988b41cf3b8b82da6bfc7e6ba7e863136c123350db9f72",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\提交材料\\2024311281_孙驰_实验作业四.docx": "77988db2e225dfe133cb28b17ddb64567d4e304fb6a35d4318e1166effc61f1e",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\tmp\\lab04\\render_approved\\report.pdf": "ef32b143b76bd17630978a04370ea764c7dcc42f3b6725b38536711bdbc883dc",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\README.md": "8ce1b8edd50c8d7ac158338817fbc9ee4214fba82866c2272daaa97aa1f34ee2",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\requirements.txt": "3f51fc837075e35b05a315ae23eb1f9649bf6e47200648bf1c0054a18d70374a",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\results\\answer_review.json": "2def62800dedce55e2b5d81ec6b508e0618aef05d76eaadba955e8b556ca7996",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab04\\results\\failure_cases.json": "0c535af5c36f7d5fe1253b2d40a91e6bb19295c7d9dff946184f695f6c9438c9"
+  },
+  "final_pdf_pages": 18,
+  "checks": [
+    {
+      "check": "PDF contains expected report sections",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 《人工智能——深度学习大模型智能体》",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 实验报告",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 实验作业四",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Vector RAG、GraphRAG 与 WikiRAG",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 对比实验",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 姓　　名：孙驰",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 学　　号：2024311281",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 班　　级：计算机10班",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 完成日期：2026年10月3日",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 基于同一校园语料的检索评测与来源核查",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 使用本地真实中文嵌入模型，比较向量、图谱与条目化知识的证据覆盖；记录窗口扫描、失败例与可复核的原始结果。人工忠实度评分待确认。",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 1  实验概述",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 1.1  实验目的",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 本实验在指南提供的15篇虚构校园文档上实现Vector RAG、GraphRAG与WikiRAG，保持同一嵌入模型、问题集和文档级评价口径，",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 实验重点是观察知识组织如何影响证据获取：桥接文档可能相关性低，图的连通性与实体名称会限制多跳展开，条目化会改变事实粒度与来源顺序。通过K扫描",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 1.2  实验环境",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 1  实验环境清单",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 模型版本固定为7999e1d3359715c523056ef9478215996d62a620，经镜像下载后本地推理。所有表示单位归一化；仅",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 完整逐题记录和92个实际512维向量随结果保存，独立重编码最大向量差约1.45×10⁻⁷。逻辑测试的char3后端需显式选择，正式套件拒绝该",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 2  三种 RAG 系统实现",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 2.1  Vector RAG 基线",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 配置：块长120中文字符，重叠20，步长100，Top-K=5。末块不足120字符时原样保留，覆盖到原文末尾就停止，不产生多余空块。索引先按",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 本语料的15篇文档都短于120字符，实际形成15块。因此重叠参数已实现，但本次没有实际跨块重叠；不能用当前结果证明长文档分块策略优劣。",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 图 1  Q01 实际检索结果排版 文档号 分数与原文摘录",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Q01前三名为doc06、doc04、doc05，院长所在doc02排第4。K=5覆盖全部三篇gold；K=3缺院长证据。图中内容来自保存的",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 2.2  GraphRAG（三元组 + 图 + 社区）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 使用NetworkX MultiDiGraph保留不同关系及来源，完整图45节点、40条三元组。将图投影为无向图，采用greedy modu",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Local最多匹配2个实体，从入边与出边双向展开；最多3跳、每轮前沿最多6节点，节点与三元组边分别去重，稳定处理同分项。候选三元组按余弦排名",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 图 2  完整知识图谱中的 Q01 关系子图",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 实际Q01只匹配“大模型通识课”：第1跳沿李文瀚主讲课程的入边得到doc06，第2跳李文瀚任职于人工智能学院得到doc04，第3跳学院院长得",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 默认保留严格子串匹配作为基线。另用空格、书名号归一及“云大→云山大学”别名做诊断：Q02的AI 协会由无匹配变为AI协会；归一后补回doc1",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 2.3  WikiRAG（条目化知识库）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 保留指南9个条目，平均正文长度为74.4444字符。正文嵌入相似度取Top-3条目，按相似度及来源列表顺序展开，再做文档去重。标题用于展示，",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 例如“人工智能学院”聚合doc02的院长和系、doc10的重点实验室、doc15的联合培养。条目减少跨文档阅读，但学院条目不含教师研究方向，",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 图 3  参考条目原文 聚合来源与核查结果",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 主实验保留参考数据以便对照指南，修正版只移除无依据的信息并修正关系，不改原文或gold。生成示例仅使用检索返回的原始文档，不把这些条目增写直",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 3  对比实验设计",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 内置15题各类型5题；增加5题覆盖事实、多跳和全局，合计事实6、多跳7、全局7。新增题在评测前固定证据，不根据排名修改gold。三范式共享模",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Recall@K=命中的gold文档数÷gold文档总数，逐题宏平均。MRR先对返回文档去重，取前K篇中第一篇相关文档的排名r，记1/r；完",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 2  内置题示例与全部五道新增题",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 新增证据依据：Q16用doc14核查校巴线路和频率；Q17以doc04教师研究方向→doc07授课→doc08先修规则关联；Q18以doc1",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Q11沿用指南gold doc10、doc02、doc03，但科研平台及依托关系主要已写在doc10。金标准覆盖不足不一定代表无法答题；后续",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 4  实验结果与数据记录",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 4.1  检索质量（Recall@5 与 MRR）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 3  三范式 × 三类问题检索结果（20 题）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表3统一为20题、文档K=5。Vector在事实与多跳题上Recall及MRR均为1；全局Recall为0.9048。Graph Globa",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 3a  全题宏平均与全证据命中",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 本语料只有15篇短文；Vector的高分与BGE中文匹配及小检索空间有关，不代表一般场景下向量检索必然最优。Graph Local包含无实体",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 所有逐题返回文档、分数、路径、未命中证据保存于eval20_local/global.json。未改成按问题类型自动选择Graph模式，也未",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 4.2  窗口敏感性（Top-K 扫描，任务四⑤）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 4  不同 Top-K 下三类问题的 Recall（内置 15 题）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 图 4  真实嵌入的窗口扫描 每类型五题",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: K扫描只用内置15题，每类型5题，与表3的20题分开。多跳gold有2—3篇文档，K=1结构上不能拿满。例如Vector多跳Recall从K",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 4.3  忠实度评分（每范式抽 3 题）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 5  忠实度 AI 初评 待人工确认",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 预选Q01/Q06/Q11，覆盖三类题。Codex只据各自K=5返回原文整理答案，无生成API；完整答案、上下文和声明见answer_rev",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 量表：5=断言均受支持或谨慎拒答；4=个别边界含糊；3=部分无依据；2=多项无依据；1=主要内容无依据。九例未编造，初评均5，不代表答题能力",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Graph/Wiki的Q11缺平台资料而拒答，Wiki的Q01缺院长资料而部分回答。无事实声明时式8-8分母为0，比例不定义；拒答5分只表示",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 4.4  工程账对比",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 6  三范式构建与更新成本",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 索引计时不含下载、7.59秒模型加载、人工整理、关系抽取或改写。未做新增文档计时，更新栏只列所需步骤；预热与缓存也会影响秒数，不能据此判断生",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 4.5  MRR 手算验证（必做）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 选题在查看排名前固定为Q01、Q06、Q11，包含多跳题。0表示Top-5未命中，倒数贡献为0而非1/0；以下均按原始返回的文档级顺序计算。",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 7  MRR 手算与脚本核对",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Vector：(1+1+1)/3=1.000000；Graph Local：(1+1+0)/3=0.666667；Wiki：(1+1+0)/",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 5  结果分析",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 5.1  分问题类型分析",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 在本次20题上，Vector各类型Recall最高或并列最高，事实与多跳全部gold命中。多跳题的向量弱点主要在窗口收窄时显现：Q01的课程",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 对全局题，Graph Global比Local更适合聚合多个主题；Q11 Local仅返回doc01中的大学基本信息边，Global摘要却含",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Recall描述证据是否齐全，MRR只看首个相关文档来得早不早。Vector Q11第1名doc10已支持完整平台事实，但gold doc0",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 5.1.1  选做 RRF 与来源修正对照",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 选做使用中文字符bigram词面余弦排名与稠密排名，按RRF=1/(60+r_dense)+1/(60+r_sparse)融合。20题事实R",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 单独修正三处来源问题后，Graph Local全题Recall/MRR仍为0.8083/0.7392；Wiki变为0.8417/0.7417",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 5.2  失败案例分析（每范式至少 2 例）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 8  失败案例归因",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Vector的第二例明确来自K=3：在K=5的20题中只有Q11未全证据命中。Graph Q02是词面不匹配并触发回退；Q11是关系链与学校",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 额外来源失败：Graph三元组/摘要将计算机学院的“参与运行管理”改成“参与共建”；Wiki增写“每年15人”及教材名称。前者改变责任关系，",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 6  AI 协作记录 Codex 使用情况",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 9  Codex 协作过程记录",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 本次由我指定实验资料并委托Codex实现、检查和整理。表9的引号内容是实际用户消息，其余为系统操作摘要；没有把生成的提示词草案写成我已经执行",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 7  思考题作答",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: (1) 以Q01写出完整关系链，说明Vector与Graph获取多篇证据的机制。",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 完整关系链为：李文瀚—主讲→大模型通识课（doc06）；李文瀚—任职于→人工智能学院（doc04）；人工智能学院—院长→王启明（doc02）",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Vector没有显式链约束，doc02的院长资料与问题的课程名相似度较低。本次doc02排第4，Top-5实际取全，Top-3才失败；不能为",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: (2) 设某 3 题首次命中排名分别为 2、1、4，MRR 是多少？另 3 题 Recall@5 均为 1.0 而 MRR 仅 0.4，两个",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: MRR=(1/2+1/1+1/4)/3=7/12≈0.583333。Recall@5=1说明所需证据都在前5篇，MRR=0.4说明第一篇相关",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 二者必须一起看：MRR只关心第一次命中，漏掉链后段的必要文档也可能得1；Recall关心覆盖，却不反映答案文档排在第1还是第5。手算与脚本应",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: (3) 全局问题（如 Q11「有哪些科研平台」）Vector RAG 会怎么失败？GraphRAG 的社区摘要为什么适合？WikiRAG 又",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 全局问题需要跨主题聚合。Vector可能取到几个高度相关片段却遗漏较弱的院系背景；本次Q11命中doc10，但doc03第6、doc02第1",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Graph Global以预置主题摘要汇总来源，Q11取得doc02、doc03、doc10等，全证据命中；Local则因大学与平台子图未连",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: (4) 增量更新：学校新增一位教师。三种范式各自要改动什么（重算哪些块 / 图 / 条目）？从更新成本解释表 8-4 中三种范式的工程定位。",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 新增教师时，Vector为新文档生成块向量并更新索引，原有文档不必全部重编码；若分块边界因编辑变化，替换受影响块。Graph需抽取任职、研究",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: Wiki需把教师信息并入学院教师或课程等主题，检查旧事实冲突并保留新来源，再更新这些条目向量。本代码尚未实现持久化增量维护，当前只是重新构建",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: (5) 忠实度人工评分的主观性如何缓解？RAGAS 用 LLM 自动评忠实度的思路是什么（式 8-8），这种「用 LLM 评 LLM」又引入",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 人工评分可用统一量表、隐藏范式名称、先拆原子事实、逐条标注来源，再由两人独立评分并讨论分歧。必须同时记录答案完整性，防止拒答总获高忠实度却没",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 按教材式8-8，自动评忠实度先把答案拆成事实声明，再检查每条是否能由检索上下文推出，以支持声明数÷总声明数得到比例。RAGAS采用此类LLM",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: (6) GraphRAG 的抽取提示词与代码审查中有哪些关键检查？",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 本次保留两版抽取提示词草案，但没有进行现场LLM抽取或多轮API试验。第一版仅要求头实体、关系、尾实体和JSON；第二版补充“只抽取原文支持",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 代码需检查：JSON只用json.loads，禁止eval，数组必须由三个非空字符串组成；来源号存在并可追溯。实体归一需保留原名、处理空格和",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 附录  全部问题与复核记录",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 表 A1  全部20题与固定gold",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 独立复核：7项逻辑测试通过；19组实验共730条逐题结果、180条汇总指标与完整检索对象离线回放一致；4条实体归一诊断与3组MRR核对一致。",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 复现入口：python run_experiments.py --revision 7999e1d3359715c523056ef94782",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 本地依照实验一至三的文件结构：提交材料保存正式报告，lab04_rag保存代码、原始结果与报告副本，tools保存构建与排版核验。Git规范",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 仓库：https://github.com/s-max-oss/llm-course-labs/tree/main/lab04",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: 参考资料",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: [1] 课程资料：作业四实验指南、更新后的实验报告样板；Lesson08 第八章，特别是式8-6、8-8至8-10。",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: [2] BAAI. bge-small-zh-v1.5 官方模型卡。https://huggingface.co/BAAI/bge-smal",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: [3] Sentence Transformers 模型API文档；NetworkX greedy_modularity_communiti",
+      "passed": true
+    },
+    {
+      "check": "DOCX paragraph survives final PDF extraction: [4] Es S, et al. RAGAS Automated Evaluation of Retrieval Augmented Gen",
+      "passed": true
+    },
+    {
+      "check": "Table3 Vector fact Recall expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table3 Vector fact MRR expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table3 Vector multi Recall expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table3 Vector multi MRR expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table3 Vector global Recall expected 0.9048, got 0.9048",
+      "passed": true
+    },
+    {
+      "check": "Table3 Vector global MRR expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Local fact Recall expected 0.8333, got 0.8333",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Local fact MRR expected 0.8333, got 0.8333",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Local multi Recall expected 0.9524, got 0.9524",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Local multi MRR expected 0.9286, got 0.9286",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Local global Recall expected 0.6429, got 0.6429",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Local global MRR expected 0.4690, got 0.4690",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Global fact Recall expected 0.5000, got 0.5000",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Global fact MRR expected 0.3889, got 0.3889",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Global multi Recall expected 0.8333, got 0.8333",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Global multi MRR expected 0.7143, got 0.7143",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Global global Recall expected 0.7857, got 0.7857",
+      "passed": true
+    },
+    {
+      "check": "Table3 Graph Global global MRR expected 0.6119, got 0.6119",
+      "passed": true
+    },
+    {
+      "check": "Table3 Wiki fact Recall expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table3 Wiki fact MRR expected 0.6944, got 0.6944",
+      "passed": true
+    },
+    {
+      "check": "Table3 Wiki multi Recall expected 0.9524, got 0.9524",
+      "passed": true
+    },
+    {
+      "check": "Table3 Wiki multi MRR expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table3 Wiki global Recall expected 0.6429, got 0.6429",
+      "passed": true
+    },
+    {
+      "check": "Table3 Wiki global MRR expected 0.5476, got 0.5476",
+      "passed": true
+    },
+    {
+      "check": "Table3a Vector Recall expected 0.9667, got 0.9667",
+      "passed": true
+    },
+    {
+      "check": "Table3a Vector MRR expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table3a Vector full-hit count",
+      "passed": true
+    },
+    {
+      "check": "Table3a Graph Local Recall expected 0.8083, got 0.8083",
+      "passed": true
+    },
+    {
+      "check": "Table3a Graph Local MRR expected 0.7392, got 0.7392",
+      "passed": true
+    },
+    {
+      "check": "Table3a Graph Local full-hit count",
+      "passed": true
+    },
+    {
+      "check": "Table3a Graph Global Recall expected 0.7167, got 0.7167",
+      "passed": true
+    },
+    {
+      "check": "Table3a Graph Global MRR expected 0.5808, got 0.5808",
+      "passed": true
+    },
+    {
+      "check": "Table3a Graph Global full-hit count",
+      "passed": true
+    },
+    {
+      "check": "Table3a Wiki Recall expected 0.8583, got 0.8583",
+      "passed": true
+    },
+    {
+      "check": "Table3a Wiki MRR expected 0.7500, got 0.7500",
+      "passed": true
+    },
+    {
+      "check": "Table3a Wiki full-hit count",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector fact K1 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector fact K2 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector fact K3 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector fact K5 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector multi K1 expected 0.4333, got 0.4333",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector multi K2 expected 0.8000, got 0.8000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector multi K3 expected 0.8667, got 0.8667",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector multi K5 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector global K1 expected 0.7667, got 0.7667",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector global K2 expected 0.7667, got 0.7667",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector global K3 expected 0.7667, got 0.7667",
+      "passed": true
+    },
+    {
+      "check": "Table4 Vector global K5 expected 0.8667, got 0.8667",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local fact K1 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local fact K2 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local fact K3 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local fact K5 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local multi K1 expected 0.3667, got 0.3667",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local multi K2 expected 0.8000, got 0.8000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local multi K3 expected 0.9333, got 0.9333",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local multi K5 expected 0.9333, got 0.9333",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local global K1 expected 0.2000, got 0.2000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local global K2 expected 0.4000, got 0.4000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local global K3 expected 0.5000, got 0.5000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Local global K5 expected 0.7000, got 0.7000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global fact K1 expected 0.4000, got 0.4000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global fact K2 expected 0.4000, got 0.4000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global fact K3 expected 0.6000, got 0.6000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global fact K5 expected 0.6000, got 0.6000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global multi K1 expected 0.1667, got 0.1667",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global multi K2 expected 0.5000, got 0.5000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global multi K3 expected 0.7333, got 0.7333",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global multi K5 expected 0.8333, got 0.8333",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global global K1 expected 0.2667, got 0.2667",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global global K2 expected 0.5333, got 0.5333",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global global K3 expected 0.7000, got 0.7000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Graph Global global K5 expected 0.9000, got 0.9000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki fact K1 expected 0.6000, got 0.6000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki fact K2 expected 0.8000, got 0.8000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki fact K3 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki fact K5 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki multi K1 expected 0.4333, got 0.4333",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki multi K2 expected 0.7000, got 0.7000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki multi K3 expected 0.8667, got 0.8667",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki multi K5 expected 0.9333, got 0.9333",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki global K1 expected 0.3000, got 0.3000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki global K2 expected 0.5000, got 0.5000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki global K3 expected 0.6000, got 0.6000",
+      "passed": true
+    },
+    {
+      "check": "Table4 Wiki global K5 expected 0.6000, got 0.6000",
+      "passed": true
+    },
+    {
+      "check": "Table7 rank Vector / Q01",
+      "passed": true
+    },
+    {
+      "check": "Table7 RR Vector / Q01 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table7 rank Vector / Q06",
+      "passed": true
+    },
+    {
+      "check": "Table7 RR Vector / Q06 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table7 rank Vector / Q11",
+      "passed": true
+    },
+    {
+      "check": "Table7 RR Vector / Q11 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table7 rank GraphRAG / Q01",
+      "passed": true
+    },
+    {
+      "check": "Table7 RR GraphRAG / Q01 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table7 rank GraphRAG / Q06",
+      "passed": true
+    },
+    {
+      "check": "Table7 RR GraphRAG / Q06 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table7 rank GraphRAG / Q11",
+      "passed": true
+    },
+    {
+      "check": "Table7 RR GraphRAG / Q11 expected 0.0000, got 0.0000",
+      "passed": true
+    },
+    {
+      "check": "Table7 rank WikiRAG / Q01",
+      "passed": true
+    },
+    {
+      "check": "Table7 RR WikiRAG / Q01 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table7 rank WikiRAG / Q06",
+      "passed": true
+    },
+    {
+      "check": "Table7 RR WikiRAG / Q06 expected 1.0000, got 1.0000",
+      "passed": true
+    },
+    {
+      "check": "Table7 rank WikiRAG / Q11",
+      "passed": true
+    },
+    {
+      "check": "Table7 RR WikiRAG / Q11 expected 0.0000, got 0.0000",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q01",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q06",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q11",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q16",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q17",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q18",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q19",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q20",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q01",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q02",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q03",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q04",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q05",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q06",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q07",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q08",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q09",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q10",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q11",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q12",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q13",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q14",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q15",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q16",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q17",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q18",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q19",
+      "passed": true
+    },
+    {
+      "check": "Question/gold table Q20",
+      "passed": true
+    },
+    {
+      "check": "20-question type counts 6/7/7",
+      "passed": true
+    },
+    {
+      "check": "Human review marked incomplete",
+      "passed": true
+    },
+    {
+      "check": "Nine answer records",
+      "passed": true
+    },
+    {
+      "check": "Actual context for Vector RAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "No fabricated human score Vector RAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Claim sources are retrieved Vector RAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Faithfulness denominator Vector RAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "AI-only score labelled Vector/Q01",
+      "passed": true
+    },
+    {
+      "check": "Answer excerpt matches full record Vector/Q01",
+      "passed": true
+    },
+    {
+      "check": "Answer completeness label Vector/Q01",
+      "passed": true
+    },
+    {
+      "check": "Actual context for Vector RAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "No fabricated human score Vector RAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Claim sources are retrieved Vector RAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Faithfulness denominator Vector RAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "AI-only score labelled Vector/Q06",
+      "passed": true
+    },
+    {
+      "check": "Answer excerpt matches full record Vector/Q06",
+      "passed": true
+    },
+    {
+      "check": "Answer completeness label Vector/Q06",
+      "passed": true
+    },
+    {
+      "check": "Actual context for Vector RAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "No fabricated human score Vector RAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Claim sources are retrieved Vector RAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Faithfulness denominator Vector RAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "AI-only score labelled Vector/Q11",
+      "passed": true
+    },
+    {
+      "check": "Answer excerpt matches full record Vector/Q11",
+      "passed": true
+    },
+    {
+      "check": "Answer completeness label Vector/Q11",
+      "passed": true
+    },
+    {
+      "check": "Actual context for GraphRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "No fabricated human score GraphRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Claim sources are retrieved GraphRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Faithfulness denominator GraphRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "AI-only score labelled Graph Local/Q01",
+      "passed": true
+    },
+    {
+      "check": "Answer excerpt matches full record Graph Local/Q01",
+      "passed": true
+    },
+    {
+      "check": "Answer completeness label Graph Local/Q01",
+      "passed": true
+    },
+    {
+      "check": "Actual context for GraphRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "No fabricated human score GraphRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Claim sources are retrieved GraphRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Faithfulness denominator GraphRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "AI-only score labelled Graph Local/Q06",
+      "passed": true
+    },
+    {
+      "check": "Answer excerpt matches full record Graph Local/Q06",
+      "passed": true
+    },
+    {
+      "check": "Answer completeness label Graph Local/Q06",
+      "passed": true
+    },
+    {
+      "check": "Actual context for GraphRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "No fabricated human score GraphRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Claim sources are retrieved GraphRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Faithfulness denominator GraphRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "AI-only score labelled Graph Local/Q11",
+      "passed": true
+    },
+    {
+      "check": "Answer excerpt matches full record Graph Local/Q11",
+      "passed": true
+    },
+    {
+      "check": "Answer completeness label Graph Local/Q11",
+      "passed": true
+    },
+    {
+      "check": "Actual context for WikiRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "No fabricated human score WikiRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Claim sources are retrieved WikiRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Faithfulness denominator WikiRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "AI-only score labelled WikiRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Answer excerpt matches full record WikiRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Answer completeness label WikiRAG/Q01",
+      "passed": true
+    },
+    {
+      "check": "Actual context for WikiRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "No fabricated human score WikiRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Claim sources are retrieved WikiRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Faithfulness denominator WikiRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "AI-only score labelled WikiRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Answer excerpt matches full record WikiRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Answer completeness label WikiRAG/Q06",
+      "passed": true
+    },
+    {
+      "check": "Actual context for WikiRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "No fabricated human score WikiRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Claim sources are retrieved WikiRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Faithfulness denominator WikiRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "AI-only score labelled WikiRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Answer excerpt matches full record WikiRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Answer completeness label WikiRAG/Q11",
+      "passed": true
+    },
+    {
+      "check": "Report distinguishes pending human scores and abstention",
+      "passed": true
+    },
+    {
+      "check": "Two failure cases per paradigm",
+      "passed": true
+    },
+    {
+      "check": "Failure record verified Vector RAG/Q11/K5",
+      "passed": true
+    },
+    {
+      "check": "Failure table matches record Vector K=5/Q11",
+      "passed": true
+    },
+    {
+      "check": "Failure record verified Vector RAG/Q01/K3",
+      "passed": true
+    },
+    {
+      "check": "Failure table matches record Vector K=3/Q01",
+      "passed": true
+    },
+    {
+      "check": "Failure record verified GraphRAG/Q02/K5",
+      "passed": true
+    },
+    {
+      "check": "Failure table matches record GraphRAG K=5/Q02",
+      "passed": true
+    },
+    {
+      "check": "Failure record verified GraphRAG/Q11/K5",
+      "passed": true
+    },
+    {
+      "check": "Failure table matches record GraphRAG K=5/Q11",
+      "passed": true
+    },
+    {
+      "check": "Failure record verified WikiRAG/Q01/K5",
+      "passed": true
+    },
+    {
+      "check": "Failure table matches record WikiRAG K=5/Q01",
+      "passed": true
+    },
+    {
+      "check": "Failure record verified WikiRAG/Q13/K5",
+      "passed": true
+    },
+    {
+      "check": "Failure table matches record WikiRAG K=5/Q13",
+      "passed": true
+    },
+    {
+      "check": "Second Vector failure explicitly K=3",
+      "passed": true
+    },
+    {
+      "check": "Report labels K3 failure distinct from K5",
+      "passed": true
+    },
+    {
+      "check": "Graph counts independently derived",
+      "passed": true
+    },
+    {
+      "check": "Graph count prose matches and separates preset summaries",
+      "passed": true
+    },
+    {
+      "check": "Wiki average entry length 74.4444",
+      "passed": true
+    },
+    {
+      "check": "Two accepted factual wording corrections in DOCX",
+      "passed": true
+    },
+    {
+      "check": "Two wording corrections synced to final PDF",
+      "passed": true
+    },
+    {
+      "check": "Superseded wording absent",
+      "passed": true
+    },
+    {
+      "check": "Measured index time Vector",
+      "passed": true
+    },
+    {
+      "check": "Measured index time Graph",
+      "passed": true
+    },
+    {
+      "check": "Measured index time Wiki",
+      "passed": true
+    },
+    {
+      "check": "Measured model load time 7.59",
+      "passed": true
+    },
+    {
+      "check": "Hybrid Recall inline value",
+      "passed": true
+    },
+    {
+      "check": "Hybrid MRR inline value",
+      "passed": true
+    },
+    {
+      "check": "Corrected Wiki Recall inline value",
+      "passed": true
+    },
+    {
+      "check": "Corrected Wiki MRR inline value",
+      "passed": true
+    },
+    {
+      "check": "Hybrid full hits 19 to 18",
+      "passed": true
+    },
+    {
+      "check": "Thinking Q2 exact hand arithmetic",
+      "passed": true
+    },
+    {
+      "check": "Thinking Q2 example MRR=0.4",
+      "passed": true
+    },
+    {
+      "check": "K scan multi drop 0.5667",
+      "passed": true
+    },
+    {
+      "check": "No fabricated incremental timing or implementation",
+      "passed": true
+    },
+    {
+      "check": "No fabricated API extraction or RAGAS run",
+      "passed": true
+    },
+    {
+      "check": "Six thinking questions are present",
+      "passed": true
+    },
+    {
+      "check": "README metrics Vector RAG",
+      "passed": true
+    },
+    {
+      "check": "README metrics GraphRAG Local",
+      "passed": true
+    },
+    {
+      "check": "README metrics GraphRAG Global",
+      "passed": true
+    },
+    {
+      "check": "README metrics WikiRAG",
+      "passed": true
+    },
+    {
+      "check": "README metrics Hybrid RRF 选做",
+      "passed": true
+    },
+    {
+      "check": "README human scores pending",
+      "passed": true
+    },
+    {
+      "check": "requirements pins match recorded/independently observed versions",
+      "passed": true
+    },
+    {
+      "check": "All referenced reproduction commands have scripts",
+      "passed": true
+    },
+    {
+      "check": "Current result manifest hashes all match",
+      "passed": true
+    }
+  ],
+  "manifest_checks": {
+    "analysis_verification.json": true,
+    "answer_review.json": true,
+    "corrected20_global.json": true,
+    "corrected20_local.json": true,
+    "embedding_vectors.npz": true,
+    "entity_normalization.json": true,
+    "environment.json": true,
+    "eval15_global.json": true,
+    "eval15_local.json": true,
+    "eval20_global.json": true,
+    "eval20_local.json": true,
+    "failure_cases.json": true,
+    "hybrid20.json": true,
+    "hybrid_k_scan.json": true,
+    "knowledge_inventory.json": true,
+    "k_scan.json": true,
+    "mrr_manual.json": true,
+    "questions.json": true
+  },
+  "resolved_minor_findings": [
+    {
+      "original": "大学仅连校训 / Local仅找到大学校训边",
+      "correction": "大学基本信息边，均来自doc01",
+      "verified_in_docx": true,
+      "verified_in_final_pdf": true
+    },
+    {
+      "original": "预置改写省略了教师研究方向",
+      "correction": "学院条目不含教师研究方向，校园条目省略校巴频率",
+      "verified_in_docx": true,
+      "verified_in_final_pdf": true
+    }
+  ],
+  "thinking_question_content_review": {
+    "Q1": "完整三关系链、3跳与doc02第4名准确；没有声称Vector K5失败。",
+    "Q2": "MRR=7/12≈0.583333与例子0.4准确；区分覆盖与排名。",
+    "Q3": "准确区分Vector gold覆盖不足、Graph Local断连/Global摘要、Wiki条目漏选。",
+    "Q4": "增量步骤合理，明确当前没有持久化增量接口及新增计时。",
+    "Q5": "声明拆分、上下文支持比例、零声明分母、人工分歧控制和LLM偏差说明合理；未声称运行RAGAS。",
+    "Q6": "两版仅是草案，零现场抽取；JSON/实体归一/边界/来源核查与代码对应。"
+  },
+  "human_provenance": {
+    "user_quotes": "Parent confirmed the two quoted user messages match the main chat verbatim.",
+    "identity_and_class": "Parent confirmed student name/id from prior experiment records and class explicitly supplied by user.",
+    "date": "System environment current_date=2026-10-03.",
+    "human_review_complete": false,
+    "human_scores": null,
+    "nine_actual_context_answers_checked": true,
+    "claims_semantically_read_by_reviewer": true
+  },
+  "primary_source_validation": [
+    {
+      "url": "https://huggingface.co/BAAI/bge-small-zh-v1.5",
+      "validated": "Model card lists 512 dimensions, query instruction, and no passage instruction."
+    },
+    {
+      "url": "https://aclanthology.org/2024.eacl-demo.16.pdf",
+      "validated": "Section3 faithfulness extracts statements and checks entailment against context."
+    }
+  ],
+  "scope_limit": "Content review only; final visual layout review delegated to parent per task. Initial render_1 was superseded; latest rendered PDF text was reviewed: D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\tmp\\lab04\\render_approved\\report.pdf",
+  "assessment": "没有尚未解决的内容阻塞问题。九例人工忠实度评分仍待用户确认，报告/README/JSON均如实标注；这不是已经完成的人工评分。"
+}

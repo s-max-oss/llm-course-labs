@@ -1,0 +1,30 @@
+{
+  "requested_model": "deepseek-flash",
+  "response_models": [
+    "deepseek-flash"
+  ],
+  "thinking": "disabled",
+  "temperature": 0,
+  "endpoint": "https://api.deepseek.com",
+  "calls": 61,
+  "usage": {
+    "prompt_tokens": 15088,
+    "completion_tokens": 3768,
+    "total_tokens": 18856,
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 14832
+  },
+  "construction": {
+    "raw_triples": 65,
+    "normalized_triples": 65,
+    "nodes": 73,
+    "communities": 14,
+    "wiki_entries": 9
+  },
+  "elapsed_this_invocation_seconds": 24.935818599999948,
+  "sum_call_seconds": 47.203441899998325,
+  "reference_source_sha256": "6a960a7cfc812ad36aecf7f6973a7814ae9e9037d61cea8ec7d41b305fe81e2d",
+  "live_source_sha256": "a31a66d86e63edd44eedbd42babe7d30dfd925a6a7c5ca25ed47200a1cf0c528",
+  "credential_storage": "environment only; no key in recorded request, response or repository",
+  "human_review_complete": false
+}

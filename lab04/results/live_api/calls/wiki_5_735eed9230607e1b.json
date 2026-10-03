@@ -1,0 +1,42 @@
+{
+  "label": "wiki_5",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:17.552367+00:00",
+  "elapsed_seconds": 0.776388599999791,
+  "request_sha256": "735eed9230607e1bf0e43e3844f1bb14cc6b88f5d696e20b787f398a87a320d7",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "将来源原文重写聚合为题名对应的知识条目。保留与主题相关的时间、数量、人员和关系，正文100至180字内；只用原文，不补教材或联合培养人数，区别共建和运行管理。只返回JSON对象{\"body\":\"正文\"}。\n{\"title\": \"计算机学院教师\", \"sources\": {\"doc05\": \"计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "b7a2684d-126b-472c-87af-666bb1fcac27",
+    "created": 1790993902,
+    "model": "deepseek-flash",
+    "content": "{\"body\":\"计算机学院教师包括周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 128,
+      "completion_tokens": 29,
+      "total_tokens": 157,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 128
+    }
+  }
+}

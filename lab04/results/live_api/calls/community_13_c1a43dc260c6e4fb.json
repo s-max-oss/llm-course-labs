@@ -1,0 +1,42 @@
+{
+  "label": "community_13",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:15.309546+00:00",
+  "elapsed_seconds": 0.6370436000001973,
+  "request_sha256": "c1a43dc260c6e4fb1753ea24f23c9d447931a6e85b0a8258bdc10682f78d92a2",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "依据社区内三元组与来源原文，用80至150个中文字符总结社区主题。只保留原文支持的事实，不补人数或教材，区别共建和运行管理。只返回JSON对象{\"summary\":\"正文\"}。\n{\"entities\": [\"东门\", \"地铁3号线云大站\"], \"triples\": [[\"地铁3号线云大站\", \"距\", \"东门\", \"doc14\"]], \"sources\": {\"doc14\": \"校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "e4d9ea0c-619f-4753-ab72-507506901989",
+    "created": 1790993900,
+    "model": "deepseek-flash",
+    "content": "{\"summary\":\"地铁3号线云大站距东门200米，属校园交通运行管理信息；校内校巴共5条线路，10分钟一班，同样为运行管理事实。原文未涉及共建内容。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 163,
+      "completion_tokens": 47,
+      "total_tokens": 210,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 163
+    }
+  }
+}

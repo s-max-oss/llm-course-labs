@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc10",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:10.162829+00:00",
+  "elapsed_seconds": 0.5429800000001705,
+  "request_sha256": "4abc10f4ff01b6a93f67f201ffee2e832f7933f68bf551593f8235941d1062ac",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "d76b7ff2-289a-4eb8-ad35-b189e3294a9a",
+    "created": 1790993895,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"认知计算全国重点实验室\",\"依托\",\"人工智能学院\"],[\"岭南超算中心\",\"共建\",\"云山大学\"],[\"岭南超算中心\",\"共建\",\"省科技厅\"],[\"计算机学院\",\"参与运行管理\",\"岭南超算中心\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 149,
+      "completion_tokens": 55,
+      "total_tokens": 204,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 149
+    }
+  }
+}

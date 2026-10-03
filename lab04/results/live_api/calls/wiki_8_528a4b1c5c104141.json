@@ -1,0 +1,42 @@
+{
+  "label": "wiki_8",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:18.068794+00:00",
+  "elapsed_seconds": 0.5157816000000821,
+  "request_sha256": "528a4b1c5c1041412e19a0b73e3127e89b98034c1a90c44db06907c9c3e87a3f",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "将来源原文重写聚合为题名对应的知识条目。保留与主题相关的时间、数量、人员和关系，正文100至180字内；只用原文，不补教材或联合培养人数，区别共建和运行管理。只返回JSON对象{\"body\":\"正文\"}。\n{\"title\": \"奖学金体系\", \"sources\": {\"doc09\": \"奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "0655050a-af60-44ee-b6bd-110aec78b5e8",
+    "created": 1790993903,
+    "model": "deepseek-flash",
+    "content": "{\"body\":\"奖学金体系包括国家奖学金、校长奖学金和云山一等奖学金。国家奖学金为8000元/年，评定比例约2%；校长奖学金为20000元/年，全校每年10人；云山一等奖学金为3000元/年，比例约5%。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 155,
+      "completion_tokens": 61,
+      "total_tokens": 216,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 155
+    }
+  }
+}

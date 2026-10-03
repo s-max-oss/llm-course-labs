@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc12",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:11.108284+00:00",
+  "elapsed_seconds": 0.9451731999997719,
+  "request_sha256": "bf76546d2961aec71c514655302b7076d14290547e56c9ddd6e827164b9c703a",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "88fe0899-4eee-4ef0-933c-5c1d2a4702b3",
+    "created": 1790993896,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"春季学期\",\"开学\",\"3月2日\"],[\"春季学期\",\"放暑假\",\"7月5日\"],[\"秋季学期\",\"开学\",\"9月1日\"],[\"秋季学期\",\"放寒假\",\"次年1月15日\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 164,
+      "completion_tokens": 53,
+      "total_tokens": 217,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 164
+    }
+  }
+}

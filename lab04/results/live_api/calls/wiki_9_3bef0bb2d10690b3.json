@@ -1,0 +1,42 @@
+{
+  "label": "wiki_9",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:18.455723+00:00",
+  "elapsed_seconds": 0.8906686999998783,
+  "request_sha256": "3bef0bb2d10690b3462c08e12aa3b4c319ddf338ae8e541c855cb46e02155722",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "将来源原文重写聚合为题名对应的知识条目。保留与主题相关的时间、数量、人员和关系，正文100至180字内；只用原文，不补教材或联合培养人数，区别共建和运行管理。只返回JSON对象{\"body\":\"正文\"}。\n{\"title\": \"学生社团与校园生活\", \"sources\": {\"doc11\": \"学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。\", \"doc13\": \"图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "08c263d3-391b-4474-b197-ab12267503d2",
+    "created": 1790993903,
+    "model": "deepseek-flash",
+    "content": "{\"body\":\"学生社团方面，AI协会由指导教师李文瀚负责，每周三晚组织论文研读；机器人战队由指导教师孙浩然负责，每年参加全国机器人大赛。校园生活方面，图书馆藏书380万册，开放时间为每天7:00-22:00；人工智能分馆位于理科楼B座3层，收藏大模型与智能体专题图书。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 186,
+      "completion_tokens": 80,
+      "total_tokens": 266,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 186
+    }
+  }
+}

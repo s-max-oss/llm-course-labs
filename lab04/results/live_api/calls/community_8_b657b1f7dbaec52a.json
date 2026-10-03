@@ -1,0 +1,42 @@
+{
+  "label": "community_8",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:14.169179+00:00",
+  "elapsed_seconds": 0.7148554999998851,
+  "request_sha256": "b657b1f7dbaec52a63587b0c5825f6337ae11b27b050ac6d29ead942e6e91e3c",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "依据社区内三元组与来源原文，用80至150个中文字符总结社区主题。只保留原文支持的事实，不补人数或教材，区别共建和运行管理。只返回JSON对象{\"summary\":\"正文\"}。\n{\"entities\": [\"3000元/年\", \"5%\", \"云山一等奖学金\"], \"triples\": [[\"云山一等奖学金\", \"金额为\", \"3000元/年\", \"doc09\"], [\"云山一等奖学金\", \"比例约\", \"5%\", \"doc09\"]], \"sources\": {\"doc09\": \"奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "b94e6ea5-c2c7-4889-8f19-1fc7d24ab040",
+    "created": 1790993899,
+    "model": "deepseek-flash",
+    "content": "{\"summary\":\"云山一等奖学金金额为3000元/年，评定比例约5%。该信息来自奖学金体系说明，与共建及运行管理无关。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 35,
+      "total_tokens": 240,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 205
+    }
+  }
+}

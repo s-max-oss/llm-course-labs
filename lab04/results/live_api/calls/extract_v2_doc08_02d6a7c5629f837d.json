@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc08",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:09.932334+00:00",
+  "elapsed_seconds": 0.562202999999954,
+  "request_sha256": "02d6a7c5629f837d64cb21cb0389f879943158a99cca9b14295b9acff5585a6d",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "efaa7db7-8e1d-4143-8974-fa3bbae8f8c0",
+    "created": 1790993895,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"本科生\",\"每学期最多修\",\"30 学分\"],[\"GPA 低于 2.0\",\"给予\",\"学术警告\"],[\"《知识图谱导论》\",\"需先修\",\"《数据结构》\"],[\"《大模型通识课》\",\"无先修要求\",\"无\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 169,
+      "completion_tokens": 65,
+      "total_tokens": 234,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 169
+    }
+  }
+}

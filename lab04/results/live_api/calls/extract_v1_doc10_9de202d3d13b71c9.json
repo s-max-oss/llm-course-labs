@@ -1,0 +1,46 @@
+{
+  "label": "extract_v1_doc10",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:07.698756+00:00",
+  "elapsed_seconds": 0.843196799999987,
+  "request_sha256": "9de202d3d13b71c924df6e9317bfdae07e979170ebee7db70de9458b1839cb34",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取头实体、关系、尾实体，只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}。"
+      },
+      {
+        "role": "user",
+        "content": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "2afb06ef-15fd-447c-9411-727514c83d88",
+    "created": 1790993892,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"认知计算全国重点实验室\",\"依托建设\",\"人工智能学院\"],[\"岭南超算中心\",\"共建\",\"云山大学\"],[\"岭南超算中心\",\"共建\",\"省科技厅\"],[\"计算机学院\",\"参与运行管理\",\"岭南超算中心\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 94,
+      "completion_tokens": 56,
+      "total_tokens": 150,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 94
+    }
+  }
+}

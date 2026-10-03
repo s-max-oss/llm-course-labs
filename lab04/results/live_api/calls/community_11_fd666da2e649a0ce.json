@@ -1,0 +1,42 @@
+{
+  "label": "community_11",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:15.088689+00:00",
+  "elapsed_seconds": 0.9191977000000406,
+  "request_sha256": "fd666da2e649a0ce409d203f5480cd9f80612cf054b39e132312cceea4024bec",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "依据社区内三元组与来源原文，用80至150个中文字符总结社区主题。只保留原文支持的事实，不补人数或教材，区别共建和运行管理。只返回JSON对象{\"summary\":\"正文\"}。\n{\"entities\": [\"30学分\", \"本科生\"], \"triples\": [[\"本科生\", \"每学期最多修\", \"30学分\", \"doc08\"]], \"sources\": {\"doc08\": \"选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "e821fab2-cd7a-4f62-9b6b-b7ee653f4dd5",
+    "created": 1790993900,
+    "model": "deepseek-flash",
+    "content": "{\"summary\":\"本科生每学期最多修30学分，GPA低于2.0给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 173,
+      "completion_tokens": 48,
+      "total_tokens": 221,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 173
+    }
+  }
+}

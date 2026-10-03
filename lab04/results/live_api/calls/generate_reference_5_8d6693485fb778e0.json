@@ -1,0 +1,43 @@
+{
+  "label": "generate_reference_5",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:06.108526+00:00",
+  "elapsed_seconds": 0.6357548999999381,
+  "request_sha256": "8d6693485fb778e03412e373d1b4268ba4ddc8bcc119b8638e9588638913e24e",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是严格基于资料回答的助手。只使用给出的原始文档，不用外部知识或猜测。资料不足时说明缺少什么，允许部分回答和拒答。每个事实用[docXX]标注来源。简洁回答。"
+      },
+      {
+        "role": "user",
+        "content": "原始资料：\n[doc01] 云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。\n\n问题：云山大学的校训是什么？"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 600,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "response": {
+    "id": "801780cb-a67f-493d-b6b4-0e5456411503",
+    "created": 1790993891,
+    "model": "deepseek-flash",
+    "content": "云山大学的校训是「格物致知」[doc01]。",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 111,
+      "completion_tokens": 16,
+      "total_tokens": 127,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 111
+    }
+  }
+}

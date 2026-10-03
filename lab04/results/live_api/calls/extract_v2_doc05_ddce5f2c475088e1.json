@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc05",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:09.368990+00:00",
+  "elapsed_seconds": 0.7438904999999068,
+  "request_sha256": "ddce5f2c475088e141cfd3307a79d4e7a899bd8a574291a30ed807bc3f45eead",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "265ff989-1be1-49c2-8b11-54fd22633fe5",
+    "created": 1790993894,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"周天宇\",\"任职于\",\"计算机学院\"],[\"周天宇\",\"职称是\",\"教授\"],[\"周天宇\",\"研究方向为\",\"分布式系统\"],[\"林小雨\",\"任职于\",\"计算机学院\"],[\"林小雨\",\"职称是\",\"副教授\"],[\"林小雨\",\"研究方向为\",\"数据库系统\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 141,
+      "completion_tokens": 67,
+      "total_tokens": 208,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 141
+    }
+  }
+}

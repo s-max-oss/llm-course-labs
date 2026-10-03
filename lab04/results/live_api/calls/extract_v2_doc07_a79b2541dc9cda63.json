@@ -1,0 +1,46 @@
+{
+  "label": "extract_v2_doc07",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:09.616693+00:00",
+  "elapsed_seconds": 0.57174729999997,
+  "request_sha256": "a79b2541dc9cda63d11e472bf87e92bf5713d18e923a6994b6ccbb8f63752396",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "从给定文档抽取原文明确支持的事实，不推测、不补人数年份教材，不把运行管理写成共建。\n保留机构和人物全称；关系简短明确，注意方向；课程名称可带书名号。每条为三个非空字符串。\n只返回JSON对象，格式{\"triples\":[[\"头实体\",\"关系\",\"尾实体\"]]}；覆盖任职、授课、院长、学院组织等原文明示关系。"
+      },
+      {
+        "role": "user",
+        "content": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 1200,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "4df7ae53-7bd0-4343-b835-410744e6fc33",
+    "created": 1790993895,
+    "model": "deepseek-flash",
+    "content": "{\"triples\":[[\"《知识图谱导论》\",\"课程代码\",\"AI3305\"],[\"《知识图谱导论》\",\"学分\",\"2\"],[\"《知识图谱导论》\",\"开设学期\",\"秋季学期\"],[\"《知识图谱导论》\",\"授课教师\",\"赵婉晴\"],[\"《知识图谱导论》\",\"面向\",\"人工智能学院研究生\"]]}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 147,
+      "completion_tokens": 76,
+      "total_tokens": 223,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 147
+    }
+  }
+}

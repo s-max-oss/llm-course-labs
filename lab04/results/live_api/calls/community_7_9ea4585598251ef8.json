@@ -1,0 +1,42 @@
+{
+  "label": "community_7",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:14.163648+00:00",
+  "elapsed_seconds": 0.7112627999999859,
+  "request_sha256": "9ea4585598251ef8ef82aada4ca6521fb34711f3202d9f9887655e799934b598",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "依据社区内三元组与来源原文，用80至150个中文字符总结社区主题。只保留原文支持的事实，不补人数或教材，区别共建和运行管理。只返回JSON对象{\"summary\":\"正文\"}。\n{\"entities\": [\"10人\", \"20000元/年\", \"校长奖学金\"], \"triples\": [[\"校长奖学金\", \"金额为\", \"20000元/年\", \"doc09\"], [\"校长奖学金\", \"全校每年\", \"10人\", \"doc09\"]], \"sources\": {\"doc09\": \"奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。\"}}"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 900,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "response": {
+    "id": "1e575c55-f3e7-4630-8954-2d68bf90ee2d",
+    "created": 1790993899,
+    "model": "deepseek-flash",
+    "content": "{\"summary\":\"校长奖学金金额为20000元/年，全校每年10人，依据doc09原文，该信息属于奖学金体系中的评定设置，未涉及共建或运行管理内容。\"}",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 199,
+      "completion_tokens": 41,
+      "total_tokens": 240,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 199
+    }
+  }
+}

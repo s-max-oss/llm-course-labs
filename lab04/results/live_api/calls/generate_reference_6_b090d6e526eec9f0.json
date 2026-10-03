@@ -1,0 +1,43 @@
+{
+  "label": "generate_reference_6",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "timestamp_utc": "2026-10-03T02:18:06.346046+00:00",
+  "elapsed_seconds": 0.5782454999998663,
+  "request_sha256": "b090d6e526eec9f0aa44ec86d7c7da8a56c9d5d2b029bf21f3808e0c7950485b",
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是严格基于资料回答的助手。只使用给出的原始文档，不用外部知识或猜测。资料不足时说明缺少什么，允许部分回答和拒答。每个事实用[docXX]标注来源。简洁回答。"
+      },
+      {
+        "role": "user",
+        "content": "原始资料：\n[doc01] 云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。\n\n问题：云山大学有哪些科研平台？分别依托谁建设？"
+      }
+    ],
+    "temperature": 0,
+    "max_tokens": 600,
+    "stream": false,
+    "thinking": {
+      "type": "disabled"
+    }
+  },
+  "response": {
+    "id": "455aa70e-10b5-47d7-9e70-6de4ca264155",
+    "created": 1790993891,
+    "model": "deepseek-flash",
+    "content": "资料中没有关于云山大学科研平台及其依托单位的信息，无法回答。[doc01]",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 116,
+      "completion_tokens": 19,
+      "total_tokens": 135,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 116
+    }
+  }
+}

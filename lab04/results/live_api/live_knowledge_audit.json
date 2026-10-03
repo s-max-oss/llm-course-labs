@@ -1,0 +1,1989 @@
+{
+  "status": "audit_complete_with_real_model_errors",
+  "audit_method": "Reviewer read every original document and every saved triple/summary/wiki entry/answer; judgments are reviewer analysis, not user human scoring.",
+  "source_documents": {
+    "doc01": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。",
+    "doc02": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。",
+    "doc03": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。",
+    "doc04": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。",
+    "doc05": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。",
+    "doc06": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。",
+    "doc07": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。",
+    "doc08": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。",
+    "doc09": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。",
+    "doc10": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。",
+    "doc11": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。",
+    "doc12": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。",
+    "doc13": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。",
+    "doc14": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。",
+    "doc15": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+  },
+  "triple_item_audit": [
+    {
+      "prompt_version": "v1",
+      "source_document": "doc04",
+      "source_local_index": 1,
+      "triple": [
+        "李文瀚",
+        "职称",
+        "教授",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc04",
+      "source_local_index": 2,
+      "triple": [
+        "李文瀚",
+        "入职年份",
+        "2019年",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc04",
+      "source_local_index": 3,
+      "triple": [
+        "李文瀚",
+        "研究方向",
+        "检索增强生成",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc04",
+      "source_local_index": 4,
+      "triple": [
+        "李文瀚",
+        "主讲课程",
+        "《大模型通识课》",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc04",
+      "source_local_index": 5,
+      "triple": [
+        "赵婉晴",
+        "职称",
+        "副教授",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc04",
+      "source_local_index": 6,
+      "triple": [
+        "赵婉晴",
+        "研究方向",
+        "知识图谱",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc04",
+      "source_local_index": 7,
+      "triple": [
+        "赵婉晴",
+        "主讲课程",
+        "《知识图谱导论》",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc04",
+      "source_local_index": 8,
+      "triple": [
+        "孙浩然",
+        "职称",
+        "讲师",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc04",
+      "source_local_index": 9,
+      "triple": [
+        "孙浩然",
+        "研究方向",
+        "强化学习",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc10",
+      "source_local_index": 1,
+      "triple": [
+        "认知计算全国重点实验室",
+        "依托建设",
+        "人工智能学院",
+        "doc10"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc10",
+      "source_local_index": 2,
+      "triple": [
+        "岭南超算中心",
+        "共建",
+        "云山大学",
+        "doc10"
+      ],
+      "status": "direction_ambiguous",
+      "reason": "原文是中心“由云山大学与省科技厅共建”；若共建按主动谓词理解，本三元组会反向表示中心共建大学/科技厅。应显式写“由…共建/共建方”或调换主体。当前检索双向走边，仍可追回正确原文。",
+      "source_text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc10",
+      "source_local_index": 3,
+      "triple": [
+        "岭南超算中心",
+        "共建",
+        "省科技厅",
+        "doc10"
+      ],
+      "status": "direction_ambiguous",
+      "reason": "原文是中心“由云山大学与省科技厅共建”；若共建按主动谓词理解，本三元组会反向表示中心共建大学/科技厅。应显式写“由…共建/共建方”或调换主体。当前检索双向走边，仍可追回正确原文。",
+      "source_text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc10",
+      "source_local_index": 4,
+      "triple": [
+        "计算机学院",
+        "参与运行管理",
+        "岭南超算中心",
+        "doc10"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc15",
+      "source_local_index": 1,
+      "triple": [
+        "学校",
+        "与...签有交换协议",
+        "12个国家的47所高校",
+        "doc15"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+    },
+    {
+      "prompt_version": "v1",
+      "source_document": "doc15",
+      "source_local_index": 2,
+      "triple": [
+        "人工智能学院",
+        "与...有本科联合培养项目",
+        "新加坡南洋理工大学",
+        "doc15"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc01",
+      "source_local_index": 1,
+      "triple": [
+        "云山大学",
+        "位于",
+        "岭南省云州市",
+        "doc01"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc01",
+      "source_local_index": 2,
+      "triple": [
+        "云山大学",
+        "建于",
+        "1958年",
+        "doc01"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc01",
+      "source_local_index": 3,
+      "triple": [
+        "云山大学",
+        "是",
+        "省属重点大学",
+        "doc01"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc01",
+      "source_local_index": 4,
+      "triple": [
+        "云山大学",
+        "校训为",
+        "格物致知",
+        "doc01"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc02",
+      "source_local_index": 1,
+      "triple": [
+        "人工智能学院",
+        "成立年份",
+        "2018年",
+        "doc02"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc02",
+      "source_local_index": 2,
+      "triple": [
+        "王启明教授",
+        "担任院长",
+        "人工智能学院",
+        "doc02"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc02",
+      "source_local_index": 3,
+      "triple": [
+        "人工智能学院",
+        "下设",
+        "机器学习系",
+        "doc02"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc02",
+      "source_local_index": 4,
+      "triple": [
+        "人工智能学院",
+        "下设",
+        "智能科学系",
+        "doc02"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc02",
+      "source_local_index": 5,
+      "triple": [
+        "人工智能学院",
+        "下设",
+        "认知计算系",
+        "doc02"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc03",
+      "source_local_index": 1,
+      "triple": [
+        "计算机学院",
+        "前身为",
+        "计算机系",
+        "doc03"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc03",
+      "source_local_index": 2,
+      "triple": [
+        "计算机系",
+        "成立于",
+        "1985年",
+        "doc03"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc03",
+      "source_local_index": 3,
+      "triple": [
+        "陈国峰",
+        "现任院长",
+        "计算机学院",
+        "doc03"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc03",
+      "source_local_index": 4,
+      "triple": [
+        "计算机学院",
+        "设计",
+        "计算机科学与技术",
+        "doc03"
+      ],
+      "status": "semantic_error",
+      "reason": "原文“设…两个本科专业”表示开设专业；“设计”改变谓词语义，不能由原文推出。",
+      "source_text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc03",
+      "source_local_index": 5,
+      "triple": [
+        "计算机学院",
+        "设计",
+        "软件工程",
+        "doc03"
+      ],
+      "status": "semantic_error",
+      "reason": "原文“设…两个本科专业”表示开设专业；“设计”改变谓词语义，不能由原文推出。",
+      "source_text": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc04",
+      "source_local_index": 1,
+      "triple": [
+        "李文瀚",
+        "任职于",
+        "人工智能学院",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc04",
+      "source_local_index": 2,
+      "triple": [
+        "李文瀚",
+        "主讲",
+        "《大模型通识课》",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc04",
+      "source_local_index": 3,
+      "triple": [
+        "赵婉晴",
+        "任职于",
+        "人工智能学院",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc04",
+      "source_local_index": 4,
+      "triple": [
+        "赵婉晴",
+        "主讲",
+        "《知识图谱导论》",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc04",
+      "source_local_index": 5,
+      "triple": [
+        "孙浩然",
+        "任职于",
+        "人工智能学院",
+        "doc04"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc05",
+      "source_local_index": 1,
+      "triple": [
+        "周天宇",
+        "任职于",
+        "计算机学院",
+        "doc05"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc05",
+      "source_local_index": 2,
+      "triple": [
+        "周天宇",
+        "职称是",
+        "教授",
+        "doc05"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc05",
+      "source_local_index": 3,
+      "triple": [
+        "周天宇",
+        "研究方向为",
+        "分布式系统",
+        "doc05"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc05",
+      "source_local_index": 4,
+      "triple": [
+        "林小雨",
+        "任职于",
+        "计算机学院",
+        "doc05"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc05",
+      "source_local_index": 5,
+      "triple": [
+        "林小雨",
+        "职称是",
+        "副教授",
+        "doc05"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc05",
+      "source_local_index": 6,
+      "triple": [
+        "林小雨",
+        "研究方向为",
+        "数据库系统",
+        "doc05"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc06",
+      "source_local_index": 1,
+      "triple": [
+        "《大模型通识课》",
+        "课程代码",
+        "AI2101",
+        "doc06"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc06",
+      "source_local_index": 2,
+      "triple": [
+        "《大模型通识课》",
+        "学分",
+        "3",
+        "doc06"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc06",
+      "source_local_index": 3,
+      "triple": [
+        "《大模型通识课》",
+        "学时",
+        "32",
+        "doc06"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc06",
+      "source_local_index": 4,
+      "triple": [
+        "《大模型通识课》",
+        "开设学期",
+        "春季学期",
+        "doc06"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc06",
+      "source_local_index": 5,
+      "triple": [
+        "《大模型通识课》",
+        "授课教师",
+        "李文瀚",
+        "doc06"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc06",
+      "source_local_index": 6,
+      "triple": [
+        "《大模型通识课》",
+        "面向",
+        "全校本科生",
+        "doc06"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc06",
+      "source_local_index": 7,
+      "triple": [
+        "《大模型通识课》",
+        "先修课程要求",
+        "无",
+        "doc06"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc07",
+      "source_local_index": 1,
+      "triple": [
+        "《知识图谱导论》",
+        "课程代码",
+        "AI3305",
+        "doc07"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc07",
+      "source_local_index": 2,
+      "triple": [
+        "《知识图谱导论》",
+        "学分",
+        "2",
+        "doc07"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc07",
+      "source_local_index": 3,
+      "triple": [
+        "《知识图谱导论》",
+        "开设学期",
+        "秋季学期",
+        "doc07"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc07",
+      "source_local_index": 4,
+      "triple": [
+        "《知识图谱导论》",
+        "授课教师",
+        "赵婉晴",
+        "doc07"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc07",
+      "source_local_index": 5,
+      "triple": [
+        "《知识图谱导论》",
+        "面向",
+        "人工智能学院研究生",
+        "doc07"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc08",
+      "source_local_index": 1,
+      "triple": [
+        "本科生",
+        "每学期最多修",
+        "30 学分",
+        "doc08"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc08",
+      "source_local_index": 2,
+      "triple": [
+        "GPA 低于 2.0",
+        "给予",
+        "学术警告",
+        "doc08"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc08",
+      "source_local_index": 3,
+      "triple": [
+        "《知识图谱导论》",
+        "需先修",
+        "《数据结构》",
+        "doc08"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc08",
+      "source_local_index": 4,
+      "triple": [
+        "《大模型通识课》",
+        "无先修要求",
+        "无",
+        "doc08"
+      ],
+      "status": "supported",
+      "reason": "原文支持无先修要求；关系和尾实体“无”重复表达否定，表示冗余但不另判事实错误。",
+      "source_text": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc09",
+      "source_local_index": 1,
+      "triple": [
+        "国家奖学金",
+        "金额为",
+        "8000 元/年",
+        "doc09"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc09",
+      "source_local_index": 2,
+      "triple": [
+        "国家奖学金",
+        "评定比例约",
+        "2%",
+        "doc09"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc09",
+      "source_local_index": 3,
+      "triple": [
+        "校长奖学金",
+        "金额为",
+        "20000 元/年",
+        "doc09"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc09",
+      "source_local_index": 4,
+      "triple": [
+        "校长奖学金",
+        "全校每年",
+        "10 人",
+        "doc09"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc09",
+      "source_local_index": 5,
+      "triple": [
+        "云山一等奖学金",
+        "金额为",
+        "3000 元/年",
+        "doc09"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc09",
+      "source_local_index": 6,
+      "triple": [
+        "云山一等奖学金",
+        "比例约",
+        "5%",
+        "doc09"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc10",
+      "source_local_index": 1,
+      "triple": [
+        "认知计算全国重点实验室",
+        "依托",
+        "人工智能学院",
+        "doc10"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc10",
+      "source_local_index": 2,
+      "triple": [
+        "岭南超算中心",
+        "共建",
+        "云山大学",
+        "doc10"
+      ],
+      "status": "direction_ambiguous",
+      "reason": "原文是中心“由云山大学与省科技厅共建”；若共建按主动谓词理解，本三元组会反向表示中心共建大学/科技厅。应显式写“由…共建/共建方”或调换主体。当前检索双向走边，仍可追回正确原文。",
+      "source_text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc10",
+      "source_local_index": 3,
+      "triple": [
+        "岭南超算中心",
+        "共建",
+        "省科技厅",
+        "doc10"
+      ],
+      "status": "direction_ambiguous",
+      "reason": "原文是中心“由云山大学与省科技厅共建”；若共建按主动谓词理解，本三元组会反向表示中心共建大学/科技厅。应显式写“由…共建/共建方”或调换主体。当前检索双向走边，仍可追回正确原文。",
+      "source_text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc10",
+      "source_local_index": 4,
+      "triple": [
+        "计算机学院",
+        "参与运行管理",
+        "岭南超算中心",
+        "doc10"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc11",
+      "source_local_index": 1,
+      "triple": [
+        "AI 协会",
+        "指导教师",
+        "李文瀚",
+        "doc11"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc11",
+      "source_local_index": 2,
+      "triple": [
+        "机器人战队",
+        "指导教师",
+        "孙浩然",
+        "doc11"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc11",
+      "source_local_index": 3,
+      "triple": [
+        "机器人战队",
+        "参加",
+        "全国机器人大赛",
+        "doc11"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc12",
+      "source_local_index": 1,
+      "triple": [
+        "春季学期",
+        "开学",
+        "3月2日",
+        "doc12"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc12",
+      "source_local_index": 2,
+      "triple": [
+        "春季学期",
+        "放暑假",
+        "7月5日",
+        "doc12"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc12",
+      "source_local_index": 3,
+      "triple": [
+        "秋季学期",
+        "开学",
+        "9月1日",
+        "doc12"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc12",
+      "source_local_index": 4,
+      "triple": [
+        "秋季学期",
+        "放寒假",
+        "次年1月15日",
+        "doc12"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc13",
+      "source_local_index": 1,
+      "triple": [
+        "人工智能分馆",
+        "位于",
+        "理科楼B座3层",
+        "doc13"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc13",
+      "source_local_index": 2,
+      "triple": [
+        "人工智能分馆",
+        "收藏",
+        "大模型与智能体专题图书",
+        "doc13"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc14",
+      "source_local_index": 1,
+      "triple": [
+        "地铁3号线「云大站」",
+        "距",
+        "东门",
+        "doc14"
+      ],
+      "status": "incomplete_quantified_relation",
+      "reason": "保留了车站和东门，但三元组丢失关键距离200米；关系“距”没有数值。原始上下文仍保留该数量。",
+      "source_text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc14",
+      "source_local_index": 2,
+      "triple": [
+        "校内校巴",
+        "线路数",
+        "5条",
+        "doc14"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc14",
+      "source_local_index": 3,
+      "triple": [
+        "校内校巴",
+        "发车间隔",
+        "10分钟",
+        "doc14"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc15",
+      "source_local_index": 1,
+      "triple": [
+        "学校",
+        "签有交换协议",
+        "12个国家的47所高校",
+        "doc15"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+    },
+    {
+      "prompt_version": "v2",
+      "source_document": "doc15",
+      "source_local_index": 2,
+      "triple": [
+        "人工智能学院",
+        "有本科联合培养项目",
+        "新加坡南洋理工大学",
+        "doc15"
+      ],
+      "status": "supported",
+      "reason": "该实体与关系由所列原文直接支持，或由“学院教师”标题明确限定任职关系。",
+      "source_text": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+    }
+  ],
+  "triple_status_counts": {
+    "v1/supported": 13,
+    "v1/direction_ambiguous": 2,
+    "v2/supported": 60,
+    "v2/semantic_error": 2,
+    "v2/direction_ambiguous": 2,
+    "v2/incomplete_quantified_relation": 1
+  },
+  "v2_omissions": [
+    {
+      "document": "doc01",
+      "facts": [
+        "全日制本科生约2.1万人"
+      ],
+      "effect": "人口数量未进入三元组。"
+    },
+    {
+      "document": "doc02",
+      "facts": [
+        "王启明首任及现任院长的时间限定"
+      ],
+      "effect": "“担任院长”未分别表示首任/现任。"
+    },
+    {
+      "document": "doc03",
+      "facts": [
+        "陈国峰教授职称"
+      ],
+      "effect": "负责人实体保留姓名，未保留职称关系；与王启明教授实体保留职称的粒度不同。"
+    },
+    {
+      "document": "doc04",
+      "facts": [
+        "李文瀚研究检索增强生成",
+        "赵婉晴研究知识图谱",
+        "孙浩然研究强化学习",
+        "李文瀚教授职称",
+        "赵婉晴副教授职称",
+        "孙浩然讲师职称",
+        "李文瀚2019年入职"
+      ],
+      "effect": "V1提取这些七条，但未提取任职学院；V2增加任职关系，却丢掉七条。不能称V2全面改善事实覆盖。Q04/Q05/Q13/Q17若依赖结构化图答案，会缺研究方向；当前返回整篇doc04可能掩盖缺边。"
+    },
+    {
+      "document": "doc11",
+      "facts": [
+        "AI协会每周三晚组织论文研读",
+        "机器人战队每年参加全国机器人大赛的周期"
+      ],
+      "effect": "V2保留指导和参赛关系但漏活动时间/周期；摘要C3可从整篇来源恢复论文研读信息。"
+    },
+    {
+      "document": "doc13",
+      "facts": [
+        "图书馆藏书380万册",
+        "图书馆每天7:00-22:00开放"
+      ],
+      "effect": "V2只提取分馆位置与图书主题，图中没有图书馆节点；社区C9还以无依据运行安排补齐篇幅。"
+    },
+    {
+      "document": "doc14",
+      "facts": [
+        "地铁站距东门200米"
+      ],
+      "effect": "三元组少数量，C10/C13从doc14恢复该事实。"
+    },
+    {
+      "document": "doc15",
+      "facts": [
+        "“学校”对应云山大学的实体归一"
+      ],
+      "effect": "“学校”被保留为独立节点，与“云山大学”未合并；名称规范化仅去空格、书名号，未统一这一别名。"
+    }
+  ],
+  "community_summary_audit": [
+    {
+      "community_id": 1,
+      "summary": "计算机学院前身为1985年成立的计算机系，现任院长陈国峰。学院设计算机科学与技术、软件工程两个本科专业。教师周天宇为教授，研究方向为分布式系统；林小雨为副教授，研究方向为数据库系统。",
+      "sources": [
+        "doc03",
+        "doc05"
+      ],
+      "source_texts": {
+        "doc03": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。",
+        "doc05": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+      },
+      "supported_claim_groups": [
+        "计算机学院前身/1985/院长/两个本科专业（doc03）",
+        "周天宇与林小雨的职称/方向（doc05）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [],
+      "status": "supported",
+      "length": 91,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": true,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 2,
+      "summary": "人工智能学院2018年成立，王启明教授任院长，下设机器学习系、智能科学系、认知计算系。孙浩然任职并指导机器人战队参加全国机器人大赛。认知计算全国重点实验室依托学院建设。学院与新加坡南洋理工大学有本科联合培养项目。",
+      "sources": [
+        "doc02",
+        "doc04",
+        "doc10",
+        "doc11",
+        "doc15"
+      ],
+      "source_texts": {
+        "doc02": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。",
+        "doc04": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。",
+        "doc10": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。",
+        "doc11": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。",
+        "doc15": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+      },
+      "supported_claim_groups": [
+        "学院成立/院长/系（doc02）",
+        "孙浩然任职（doc04）",
+        "社团指导与参赛（doc11）",
+        "实验室依托（doc10）",
+        "联合培养（doc15）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [],
+      "status": "supported",
+      "length": 106,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": true,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 3,
+      "summary": "《大模型通识课》代码AI2101，3学分32学时，春季学期开设，李文瀚主讲，面向全校本科生，无先修要求。AI协会由李文瀚指导，每周三晚组织论文研读。春季学期3月2日开学、7月5日放暑假。",
+      "sources": [
+        "doc04",
+        "doc06",
+        "doc08",
+        "doc11",
+        "doc12"
+      ],
+      "source_texts": {
+        "doc04": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。",
+        "doc06": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。",
+        "doc08": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。",
+        "doc11": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。",
+        "doc12": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+      },
+      "supported_claim_groups": [
+        "课程代码/学分/学时/学期/授课/本科生/先修（doc06及doc08）",
+        "AI协会指导与周三研读（doc11）",
+        "春季日期（doc12）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [],
+      "status": "supported",
+      "length": 93,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": true,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 4,
+      "summary": "《知识图谱导论》课程代码AI3305，2学分，秋季学期开设，由赵婉晴主讲，面向人工智能学院研究生，需先修数据结构。秋季学期9月1日开学，次年1月15日放寒假。",
+      "sources": [
+        "doc04",
+        "doc07",
+        "doc08",
+        "doc12"
+      ],
+      "source_texts": {
+        "doc04": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。",
+        "doc07": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。",
+        "doc08": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。",
+        "doc12": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。"
+      },
+      "supported_claim_groups": [
+        "知识图谱课程信息（doc07）",
+        "先修数据结构（doc08）",
+        "秋季日期（doc12）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [],
+      "status": "supported",
+      "length": 79,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": false,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 5,
+      "summary": "云山大学位于岭南省云州市，建于1958年，是省属重点大学，校训为格物致知。岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。",
+      "sources": [
+        "doc01",
+        "doc10"
+      ],
+      "source_texts": {
+        "doc01": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。",
+        "doc10": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+      },
+      "supported_claim_groups": [
+        "大学基本资料（doc01）",
+        "超算中心共建方与计算机学院运行管理（doc10）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [],
+      "status": "supported",
+      "length": 68,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": false,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 6,
+      "summary": "国家奖学金金额为8000元/年，评定比例约2%。来源原文还提及校长奖学金、云山一等奖学金，但未涉及共建或运行管理内容。",
+      "sources": [
+        "doc09"
+      ],
+      "source_texts": {
+        "doc09": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+      },
+      "supported_claim_groups": [
+        "国家奖学金金额/比例，原文列其他奖学金（doc09）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [
+        "奖学金摘要额外讨论与共建/运行管理无关，属于提示词内容污染；未构成原文事实矛盾，但使向量表征偏离主题。"
+      ],
+      "status": "supported_with_prompt_noise",
+      "length": 59,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": false,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 7,
+      "summary": "校长奖学金金额为20000元/年，全校每年10人，依据doc09原文，该信息属于奖学金体系中的评定设置，未涉及共建或运行管理内容。",
+      "sources": [
+        "doc09"
+      ],
+      "source_texts": {
+        "doc09": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+      },
+      "supported_claim_groups": [
+        "校长奖学金金额与全校每年10人（doc09）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [
+        "奖学金摘要额外讨论与共建/运行管理无关，属于提示词内容污染；未构成原文事实矛盾，但使向量表征偏离主题。"
+      ],
+      "status": "supported_with_prompt_noise",
+      "length": 65,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": false,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 8,
+      "summary": "云山一等奖学金金额为3000元/年，评定比例约5%。该信息来自奖学金体系说明，与共建及运行管理无关。",
+      "sources": [
+        "doc09"
+      ],
+      "source_texts": {
+        "doc09": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+      },
+      "supported_claim_groups": [
+        "云山一等奖学金金额与比例（doc09）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [
+        "奖学金摘要额外讨论与共建/运行管理无关，属于提示词内容污染；未构成原文事实矛盾，但使向量表征偏离主题。"
+      ],
+      "status": "supported_with_prompt_noise",
+      "length": 50,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": false,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 9,
+      "summary": "人工智能分馆位于理科楼B座3层，收藏大模型与智能体专题图书。该分馆作为图书馆的组成部分，其馆藏与空间由图书馆统一建设，日常开放运行管理遵循图书馆整体安排。",
+      "sources": [
+        "doc13"
+      ],
+      "source_texts": {
+        "doc13": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+      },
+      "supported_claim_groups": [
+        "人工智能分馆位置与馆藏主题（doc13）"
+      ],
+      "unsupported_claims": [
+        {
+          "text": "其馆藏与空间由图书馆统一建设",
+          "reason": "doc13仅提供馆藏数量、开放时间、分馆位置和书籍主题，没有建设主体或统一建设安排。"
+        },
+        {
+          "text": "日常开放运行管理遵循图书馆整体安排",
+          "reason": "doc13没有分馆运行管理规则或分馆适用的开放安排。"
+        }
+      ],
+      "prompt_contamination": [],
+      "status": "contains_unsupported_claims",
+      "length": 77,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": false,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 10,
+      "summary": "校园交通方面，地铁3号线云大站距东门200米；校内校巴共5条线路，10分钟一班。",
+      "sources": [
+        "doc14"
+      ],
+      "source_texts": {
+        "doc14": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+      },
+      "supported_claim_groups": [
+        "地铁距离与校巴线路/频率（doc14）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [],
+      "status": "supported",
+      "length": 40,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": false,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 11,
+      "summary": "本科生每学期最多修30学分，GPA低于2.0给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。",
+      "sources": [
+        "doc08"
+      ],
+      "source_texts": {
+        "doc08": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+      },
+      "supported_claim_groups": [
+        "本科上限/GPA警告/两课程先修要求（doc08）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [],
+      "status": "supported",
+      "length": 66,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": false,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 12,
+      "summary": "该社区围绕选课规则与学业预警：本科生每学期最多修30学分，GPA低于2.0给予学术警告。先修要求方面，《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。上述内容属于课程共建与运行管理中的规则性事实。",
+      "sources": [
+        "doc08"
+      ],
+      "source_texts": {
+        "doc08": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+      },
+      "supported_claim_groups": [
+        "本科上限/GPA警告/两课程先修要求（doc08）"
+      ],
+      "unsupported_claims": [
+        {
+          "text": "上述内容属于课程共建与运行管理中的规则性事实",
+          "reason": "doc08只是选课/GPA/先修规则；未写课程共建，分类受通用提示词“区别共建和运行管理”牵引。"
+        }
+      ],
+      "prompt_contamination": [],
+      "status": "contains_unsupported_claims",
+      "length": 106,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": true,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 13,
+      "summary": "地铁3号线云大站距东门200米，属校园交通运行管理信息；校内校巴共5条线路，10分钟一班，同样为运行管理事实。原文未涉及共建内容。",
+      "sources": [
+        "doc14"
+      ],
+      "source_texts": {
+        "doc14": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+      },
+      "supported_claim_groups": [
+        "地铁距离与校巴线路/频率（doc14）"
+      ],
+      "unsupported_claims": [],
+      "prompt_contamination": [
+        "把交通事实统称运行管理、强调没有共建，语义分类偏离事实摘要；没有新增管理主体，作为措辞越界观察。"
+      ],
+      "status": "supported_with_prompt_noise",
+      "length": 65,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": false,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    },
+    {
+      "community_id": 14,
+      "summary": "社区内三元组显示，学校与12个国家的47所高校签有交换协议，来源原文还提到人工智能学院与新加坡南洋理工大学有本科联合培养项目。这些事实属于共建类合作，未涉及运行管理。",
+      "sources": [
+        "doc15"
+      ],
+      "source_texts": {
+        "doc15": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+      },
+      "supported_claim_groups": [
+        "12国家47高校交换协议/人工智能学院联合培养（doc15）"
+      ],
+      "unsupported_claims": [
+        {
+          "text": "这些事实属于共建类合作",
+          "reason": "交换协议和联合培养不等于原文明确主张“共建”；该标签超出原文。"
+        }
+      ],
+      "prompt_contamination": [],
+      "status": "contains_unsupported_claims",
+      "length": 83,
+      "requested_length": [
+        80,
+        150
+      ],
+      "in_requested_length_band": true,
+      "whole_source_expansion": "摘要允许读取内部边涉及的完整原文，因此可恢复社区三元组以外的事实；这不等于仅对内部三元组概括。"
+    }
+  ],
+  "wiki_entry_audit": [
+    {
+      "entry_id": 1,
+      "title": "云山大学",
+      "body": "云山大学位于岭南省云州市，建于1958年，是省属重点大学，现有全日制本科生约2.1万人，校训为「格物致知」。春季学期3月2日开学、7月5日放暑假；秋季学期9月1日开学、次年1月15日放寒假。地铁3号线「云大站」距东门200米；校内校巴共5条线路，10分钟一班。",
+      "sources": [
+        "doc01",
+        "doc12",
+        "doc14"
+      ],
+      "call_label": "wiki_1",
+      "source_texts": {
+        "doc01": "云山大学位于岭南省云州市，建于 1958 年，是省属重点大学，现有全日制本科生约 2.1 万人。校训为「格物致知」。",
+        "doc12": "校历：春季学期 3 月 2 日开学、7 月 5 日放暑假；秋季学期 9 月 1 日开学、次年 1 月15 日放寒假。",
+        "doc14": "校园交通：地铁 3 号线「云大站」距东门 200 米；校内校巴共 5 条线路，10 分钟一班。"
+      },
+      "status": "supported",
+      "unsupported_factual_claims": [],
+      "observations": [],
+      "length": 130,
+      "requested_length": [
+        100,
+        180
+      ],
+      "in_requested_length_band": true,
+      "source_check": "逐句与返回的来源对照，未发现预置版的“每年15人”、教材名称或运行管理误写成参与共建。"
+    },
+    {
+      "entry_id": 2,
+      "title": "人工智能学院",
+      "body": "人工智能学院成立于2018年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。认知计算全国重点实验室依托人工智能学院建设。岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。人工智能学院与新加坡南洋理工大学有本科联合培养项目。",
+      "sources": [
+        "doc02",
+        "doc10",
+        "doc15"
+      ],
+      "call_label": "wiki_2",
+      "source_texts": {
+        "doc02": "人工智能学院成立于 2018 年，首任及现任院长为王启明教授。学院下设机器学习系、智能科学系、认知计算系三个系。",
+        "doc10": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。",
+        "doc15": "国际交流：学校与 12 个国家的 47 所高校签有交换协议；人工智能学院与新加坡南洋理工大学有本科联合培养项目。"
+      },
+      "status": "supported",
+      "unsupported_factual_claims": [],
+      "observations": [
+        "学院主题条目包含另一学院的平台事实；全部有doc10依据，属于主题范围扩大，可能影响检索排序。"
+      ],
+      "length": 133,
+      "requested_length": [
+        100,
+        180
+      ],
+      "in_requested_length_band": true,
+      "source_check": "逐句与返回的来源对照，未发现预置版的“每年15人”、教材名称或运行管理误写成参与共建。"
+    },
+    {
+      "entry_id": 3,
+      "title": "计算机学院",
+      "body": "计算机学院前身为1985年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。",
+      "sources": [
+        "doc03",
+        "doc10"
+      ],
+      "call_label": "wiki_3",
+      "source_texts": {
+        "doc03": "计算机学院前身为 1985 年成立的计算机系，现任院长陈国峰教授，设计算机科学与技术、软件工程两个本科专业。",
+        "doc10": "科研平台：认知计算全国重点实验室依托人工智能学院建设；岭南超算中心由云山大学与省科技厅共建，计算机学院参与运行管理。"
+      },
+      "status": "supported",
+      "unsupported_factual_claims": [],
+      "observations": [
+        "学院主题条目包含另一学院的平台事实；全部有doc10依据，属于主题范围扩大，可能影响检索排序。"
+      ],
+      "length": 105,
+      "requested_length": [
+        100,
+        180
+      ],
+      "in_requested_length_band": true,
+      "source_check": "逐句与返回的来源对照，未发现预置版的“每年15人”、教材名称或运行管理误写成参与共建。"
+    },
+    {
+      "entry_id": 4,
+      "title": "人工智能学院教师",
+      "body": "人工智能学院教师包括李文瀚、赵婉晴和孙浩然。李文瀚为教授，2019年入职，研究方向为检索增强生成，主讲《大模型通识课》，并担任AI协会指导教师，该协会每周三晚组织论文研读。赵婉晴为副教授，研究方向为知识图谱，主讲《知识图谱导论》。孙浩然为讲师，研究方向为强化学习，并担任机器人战队指导教师，该战队每年参加全国机器人大赛。",
+      "sources": [
+        "doc04",
+        "doc11"
+      ],
+      "call_label": "wiki_4",
+      "source_texts": {
+        "doc04": "人工智能学院教师：李文瀚，教授，2019 年入职，研究方向为检索增强生成，主讲《大模型通识课》；赵婉晴，副教授，研究方向为知识图谱，主讲《知识图谱导论》；孙浩然，讲师，研究方向为强化学习。",
+        "doc11": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。"
+      },
+      "status": "supported",
+      "unsupported_factual_claims": [],
+      "observations": [],
+      "length": 160,
+      "requested_length": [
+        100,
+        180
+      ],
+      "in_requested_length_band": true,
+      "source_check": "逐句与返回的来源对照，未发现预置版的“每年15人”、教材名称或运行管理误写成参与共建。"
+    },
+    {
+      "entry_id": 5,
+      "title": "计算机学院教师",
+      "body": "计算机学院教师包括周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。",
+      "sources": [
+        "doc05"
+      ],
+      "call_label": "wiki_5",
+      "source_texts": {
+        "doc05": "计算机学院教师：周天宇，教授，研究方向为分布式系统；林小雨，副教授，研究方向为数据库系统。"
+      },
+      "status": "supported",
+      "unsupported_factual_claims": [],
+      "observations": [],
+      "length": 46,
+      "requested_length": [
+        100,
+        180
+      ],
+      "in_requested_length_band": false,
+      "source_check": "逐句与返回的来源对照，未发现预置版的“每年15人”、教材名称或运行管理误写成参与共建。"
+    },
+    {
+      "entry_id": 6,
+      "title": "大模型通识课",
+      "body": "《大模型通识课》课程代码为AI2101，3学分、32学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。",
+      "sources": [
+        "doc06"
+      ],
+      "call_label": "wiki_6",
+      "source_texts": {
+        "doc06": "《大模型通识课》课程代码 AI2101，3 学分、32 学时，春季学期开设，授课教师李文瀚，面向全校本科生，无先修课程要求。"
+      },
+      "status": "supported",
+      "unsupported_factual_claims": [],
+      "observations": [],
+      "length": 60,
+      "requested_length": [
+        100,
+        180
+      ],
+      "in_requested_length_band": false,
+      "source_check": "逐句与返回的来源对照，未发现预置版的“每年15人”、教材名称或运行管理误写成参与共建。"
+    },
+    {
+      "entry_id": 7,
+      "title": "知识图谱导论",
+      "body": "《知识图谱导论》课程代码为AI3305，2学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。该课程需先修《数据结构》。选课规则方面，本科生每学期最多修30学分；GPA低于2.0给予学术警告。",
+      "sources": [
+        "doc07",
+        "doc08"
+      ],
+      "call_label": "wiki_7",
+      "source_texts": {
+        "doc07": "《知识图谱导论》课程代码 AI3305，2 学分，秋季学期开设，授课教师赵婉晴，面向人工智能学院研究生。",
+        "doc08": "选课规则：本科生每学期最多修 30 学分；GPA 低于 2.0 给予学术警告。先修要求：《知识图谱导论》需先修《数据结构》，《大模型通识课》无先修要求。"
+      },
+      "status": "supported",
+      "unsupported_factual_claims": [],
+      "observations": [],
+      "length": 100,
+      "requested_length": [
+        100,
+        180
+      ],
+      "in_requested_length_band": true,
+      "source_check": "逐句与返回的来源对照，未发现预置版的“每年15人”、教材名称或运行管理误写成参与共建。"
+    },
+    {
+      "entry_id": 8,
+      "title": "奖学金体系",
+      "body": "奖学金体系包括国家奖学金、校长奖学金和云山一等奖学金。国家奖学金为8000元/年，评定比例约2%；校长奖学金为20000元/年，全校每年10人；云山一等奖学金为3000元/年，比例约5%。",
+      "sources": [
+        "doc09"
+      ],
+      "call_label": "wiki_8",
+      "source_texts": {
+        "doc09": "奖学金体系：国家奖学金 8000 元/年，评定比例约 2%；校长奖学金 20000 元/年，全校每年10 人；云山一等奖学金 3000 元/年，比例约 5%。"
+      },
+      "status": "supported",
+      "unsupported_factual_claims": [],
+      "observations": [],
+      "length": 94,
+      "requested_length": [
+        100,
+        180
+      ],
+      "in_requested_length_band": false,
+      "source_check": "逐句与返回的来源对照，未发现预置版的“每年15人”、教材名称或运行管理误写成参与共建。"
+    },
+    {
+      "entry_id": 9,
+      "title": "学生社团与校园生活",
+      "body": "学生社团方面，AI协会由指导教师李文瀚负责，每周三晚组织论文研读；机器人战队由指导教师孙浩然负责，每年参加全国机器人大赛。校园生活方面，图书馆藏书380万册，开放时间为每天7:00-22:00；人工智能分馆位于理科楼B座3层，收藏大模型与智能体专题图书。",
+      "sources": [
+        "doc11",
+        "doc13"
+      ],
+      "call_label": "wiki_9",
+      "source_texts": {
+        "doc11": "学生社团：AI 协会，指导教师李文瀚，每周三晚组织论文研读；机器人战队，指导教师孙浩然，每年参加全国机器人大赛。",
+        "doc13": "图书馆藏书 380 万册，开放时间为每天 7:00-22:00；人工智能分馆位于理科楼 B 座 3层，收藏大模型与智能体专题图书。"
+      },
+      "status": "supported_with_wording_boundary",
+      "unsupported_factual_claims": [],
+      "observations": [
+        "原文仅标注“指导教师”；“由指导教师…负责”可能暗示更广管理责任。未添加具体职责，列为措辞边界而非确定幻觉。"
+      ],
+      "length": 127,
+      "requested_length": [
+        100,
+        180
+      ],
+      "in_requested_length_band": true,
+      "source_check": "逐句与返回的来源对照，未发现预置版的“每年15人”、教材名称或运行管理误写成参与共建。"
+    }
+  ],
+  "generated_answer_and_judge_audit": [
+    {
+      "system": "Vector RAG",
+      "question_id": "Q01",
+      "answer": "《大模型通识课》授课教师是李文瀚[doc06]，他属于人工智能学院[doc04]。该学院现任院长为王启明教授[doc02]。",
+      "ai_score": 5,
+      "reported_claim_count": 3,
+      "reported_faithfulness_fraction": 1.0,
+      "all_recorded_quotes_found": true,
+      "source_check": "所有生成事实与检索原文一致；未使用未返回的院长/平台资料补答。",
+      "audit_findings": [],
+      "human_score": null,
+      "judge_is_same_model": true,
+      "human_review_status": "pending"
+    },
+    {
+      "system": "Vector RAG",
+      "question_id": "Q06",
+      "answer": "云山大学的校训是「格物致知」[doc01]。",
+      "ai_score": 5,
+      "reported_claim_count": 1,
+      "reported_faithfulness_fraction": 1.0,
+      "all_recorded_quotes_found": true,
+      "source_check": "所有生成事实与检索原文一致；未使用未返回的院长/平台资料补答。",
+      "audit_findings": [],
+      "human_score": null,
+      "judge_is_same_model": true,
+      "human_review_status": "pending"
+    },
+    {
+      "system": "Vector RAG",
+      "question_id": "Q11",
+      "answer": "云山大学有两个科研平台：\n\n1. **认知计算全国重点实验室**：依托人工智能学院建设[doc10]。\n2. **岭南超算中心**：由云山大学与省科技厅共建，计算机学院参与运行管理[doc10]。",
+      "ai_score": 5,
+      "reported_claim_count": 4,
+      "reported_faithfulness_fraction": 1.0,
+      "all_recorded_quotes_found": true,
+      "source_check": "所有生成事实与检索原文一致；未使用未返回的院长/平台资料补答。",
+      "audit_findings": [],
+      "human_score": null,
+      "judge_is_same_model": true,
+      "human_review_status": "pending"
+    },
+    {
+      "system": "GraphRAG",
+      "question_id": "Q01",
+      "answer": "《大模型通识课》授课教师是李文瀚[doc06]，其所在学院为人工智能学院[doc04]。该学院现任院长为王启明教授[doc02]。",
+      "ai_score": 5,
+      "reported_claim_count": 3,
+      "reported_faithfulness_fraction": 1.0,
+      "all_recorded_quotes_found": true,
+      "source_check": "所有生成事实与检索原文一致；未使用未返回的院长/平台资料补答。",
+      "audit_findings": [],
+      "human_score": null,
+      "judge_is_same_model": true,
+      "human_review_status": "pending"
+    },
+    {
+      "system": "GraphRAG",
+      "question_id": "Q06",
+      "answer": "云山大学的校训是「格物致知」[doc01]。",
+      "ai_score": 5,
+      "reported_claim_count": 1,
+      "reported_faithfulness_fraction": 1.0,
+      "all_recorded_quotes_found": true,
+      "source_check": "所有生成事实与检索原文一致；未使用未返回的院长/平台资料补答。",
+      "audit_findings": [],
+      "human_score": null,
+      "judge_is_same_model": true,
+      "human_review_status": "pending"
+    },
+    {
+      "system": "GraphRAG",
+      "question_id": "Q11",
+      "answer": "资料中没有关于云山大学科研平台及其依托单位的信息，无法回答。[doc01]",
+      "ai_score": 5,
+      "reported_claim_count": 0,
+      "reported_faithfulness_fraction": null,
+      "all_recorded_quotes_found": true,
+      "source_check": "所有生成事实与检索原文一致；未使用未返回的院长/平台资料补答。",
+      "audit_findings": [],
+      "human_score": null,
+      "judge_is_same_model": true,
+      "human_review_status": "pending"
+    },
+    {
+      "system": "WikiRAG",
+      "question_id": "Q01",
+      "answer": "资料中没有提供《大模型通识课》授课教师所在学院（人工智能学院）的行政负责人信息，因此无法回答。[doc06][doc04]",
+      "ai_score": 5,
+      "reported_claim_count": 0,
+      "reported_faithfulness_fraction": null,
+      "all_recorded_quotes_found": true,
+      "source_check": "所有生成事实与检索原文一致；未使用未返回的院长/平台资料补答。",
+      "audit_findings": [
+        {
+          "type": "judge_missed_atomic_claim",
+          "text": "授课教师所在学院（人工智能学院）",
+          "reason": "括号包含“授课教师所属学院为人工智能学院”的事实，可由doc04支持；AI却claims=[]并称纯拒答。零声明比例null是模型漏拆的结果，不应当作人工确定的事实。",
+          "supporting_source": "doc04",
+          "suggested_audit_only_claim": {
+            "claim": "大模型通识课授课教师所属学院为人工智能学院",
+            "supported": true,
+            "sources": [
+              "doc04",
+              "doc06"
+            ]
+          },
+          "do_not_overwrite_raw_judgement": true
+        }
+      ],
+      "human_score": null,
+      "judge_is_same_model": true,
+      "human_review_status": "pending"
+    },
+    {
+      "system": "WikiRAG",
+      "question_id": "Q06",
+      "answer": "云山大学的校训是「格物致知」[doc01]。",
+      "ai_score": 5,
+      "reported_claim_count": 1,
+      "reported_faithfulness_fraction": 1.0,
+      "all_recorded_quotes_found": true,
+      "source_check": "所有生成事实与检索原文一致；未使用未返回的院长/平台资料补答。",
+      "audit_findings": [],
+      "human_score": null,
+      "judge_is_same_model": true,
+      "human_review_status": "pending"
+    },
+    {
+      "system": "WikiRAG",
+      "question_id": "Q11",
+      "answer": "资料中没有关于云山大学科研平台及其依托单位的信息，无法回答。[doc01][doc04][doc11][doc12][doc14]",
+      "ai_score": 5,
+      "reported_claim_count": 0,
+      "reported_faithfulness_fraction": null,
+      "all_recorded_quotes_found": true,
+      "source_check": "所有生成事实与检索原文一致；未使用未返回的院长/平台资料补答。",
+      "audit_findings": [],
+      "human_score": null,
+      "judge_is_same_model": true,
+      "human_review_status": "pending"
+    }
+  ],
+  "findings_to_disclose_in_report": [
+    "V2 doc03两个“设计”语义错误",
+    "doc10两个“共建”关系方向含糊（V1/V2均有）",
+    "community9两条无来源的建设/运行安排",
+    "community12/14无依据共建分类",
+    "V2 doc04七项信息遗漏和doc13两项信息遗漏",
+    "WikiQ01评审漏拆括号中的学院事实",
+    "同模型生成与评分；human_score为空，非人工/RAGAS结论"
+  ],
+  "critical_code_or_computation_errors": [],
+  "important_experiment_observations": [
+    "V2 65条三元组、73节点、14个实际检测社区；Vector使用同一原文与BGE，不变。LiveGraph同时更换知识与开启实体归一，改进不能全归因于API抽取。",
+    "新增真实Wiki条目补回校巴频率、图书分馆层数、本科上限及GPA警告；正文没有预置版的联合培养人数和教材增写。",
+    "社区摘要三处含无依据断言；至少四处另有共建/运行管理相关提示词噪声。延长较小社区摘要时可能诱发补写，不能把真实生成视为天然忠实。",
+    "Graph Global Q11与Wiki Q11的补充生成都获得doc10并正确列出平台；gold含学院背景的Recall不足不代表不能答题。",
+    "九例评分使用原基线检索上下文；其Graph/Wiki Q11拒答与新增live_q11_answers中的成功回答来自不同检索条件，需分别报告。",
+    "没有改写原始API响应、triple、summary、body或评审结果。本审计指出错误，主实验继续保留真实失败。"
+  ],
+  "recommendation": "保留原始生成结果与基线，不以人工修正替换真实响应。通过审计或另存修正版说明错误；报告须明确来源限度、归一化变化、AI评审漏拆及待人工评分状态。"
+}
