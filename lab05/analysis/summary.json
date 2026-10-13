@@ -1,0 +1,2822 @@
+{
+  "manifest_files_verified": 115,
+  "stage_scores": {
+    "baseline_bf16": {
+      "main": {
+        "rows": [
+          {
+            "id": "P01",
+            "type": "count",
+            "img": "img01",
+            "question": "图中有几个红色圆形？",
+            "gold": "2",
+            "prediction": "1.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 1.0044828094542027,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P02",
+            "type": "count",
+            "img": "img02",
+            "question": "图中有几个绿色圆形？",
+            "gold": "3",
+            "prediction": "0.0.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.18650579825043678,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P03",
+            "type": "count",
+            "img": "img03",
+            "question": "图中有几个黄色方形？",
+            "gold": "2",
+            "prediction": "1.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.1333237960934639,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P04",
+            "type": "count",
+            "img": "img06",
+            "question": "图中有几个黄色圆形？",
+            "gold": "4",
+            "prediction": "Yes, the image contains a yellow circle.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.2771291583776474,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P05",
+            "type": "count",
+            "img": "img10",
+            "question": "图中有几个蓝色圆形？",
+            "gold": "3",
+            "prediction": "1.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.13158137910068035,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P06",
+            "type": "attr",
+            "img": "img01",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "The image is a simple, two-dimensional graphical representation of a simple, two-dimensional graph. The graph is a simple line graph, with a single horizontal",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.8067751284688711,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P07",
+            "type": "attr",
+            "img": "img05",
+            "question": "图中红色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "The image represents a simple, yet effective, design layout for a website. The layout is divided into two main sections: the header and the footer.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.800803491845727,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P08",
+            "type": "attr",
+            "img": "img09",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "The green square is a common symbol in many cultures, often representing purity, purity of nature, or purity of the soul. It is a symbol of purity and",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.8015115279704332,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "明确把绿色对象绑定为square；附加圆形/位置描述的忠实度另评"
+          },
+          {
+            "id": "P09",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中黄色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "The image contains a circular shape with a green and yellow color. The circle is made up of a series of lines that are interconnected, creating a pattern that resembles",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.804255535826087,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P10",
+            "type": "attr",
+            "img": "img14",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "1. The image is a square.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.27590456046164036,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P11",
+            "type": "exist",
+            "img": "img11",
+            "question": "图里有没有黄色方形？",
+            "gold": "有",
+            "prediction": "No.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.10917535610496998,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P12",
+            "type": "exist",
+            "img": "img12",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "No.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.10808114893734455,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P13",
+            "type": "exist",
+            "img": "img07",
+            "question": "图里有没有绿色圆形？",
+            "gold": "有",
+            "prediction": "No.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.1074513103812933,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P14",
+            "type": "exist",
+            "img": "img08",
+            "question": "图里有没有绿色方形？",
+            "gold": "没有",
+            "prediction": "No.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.10773659124970436,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P15",
+            "type": "exist",
+            "img": "img15",
+            "question": "图里有没有蓝色图形？",
+            "gold": "没有",
+            "prediction": "No.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.1073562428355217,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "attr": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "exist": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "overall": {
+            "correct": 6,
+            "n": 15,
+            "accuracy": 0.4
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "attr": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "exist": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "overall": {
+            "correct": 6,
+            "n": 15,
+            "accuracy": 0.4
+          }
+        }
+      },
+      "added": {
+        "rows": [
+          {
+            "id": "A01",
+            "type": "count",
+            "img": "img04",
+            "question": "图中有几个红色方形？",
+            "gold": "3",
+            "prediction": "1.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.13322871550917625,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A02",
+            "type": "count",
+            "img": "img07",
+            "question": "图中有几个蓝色方形？",
+            "gold": "2",
+            "prediction": "[1, 2, 3]",
+            "correct": false,
+            "legacy_correct": true,
+            "seconds": 0.27476820908486843,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A03",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "The green and yellow color scheme is a common color scheme used in many graphic design and design projects. It is often used to create a sense of vibrancy and",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.9227609541267157,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A04",
+            "type": "exist",
+            "img": "img14",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "No.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.10950281284749508,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A05",
+            "type": "count",
+            "img": "img15",
+            "question": "图中有几个绿色圆形？",
+            "gold": "2",
+            "prediction": "0.0.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.18030516803264618,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 0,
+            "n": 3,
+            "accuracy": 0.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "overall": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 0,
+            "n": 3,
+            "accuracy": 0.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "overall": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          }
+        }
+      }
+    },
+    "baseline_nf4": {
+      "main": {
+        "rows": [
+          {
+            "id": "P01",
+            "type": "count",
+            "img": "img01",
+            "question": "图中有几个红色圆形？",
+            "gold": "2",
+            "prediction": "The image contains a square with a blue square in the top left corner.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 1.5036416985094547,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P02",
+            "type": "count",
+            "img": "img02",
+            "question": "图中有几个绿色圆形？",
+            "gold": "3",
+            "prediction": "There are two colored circles in the image.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5532984901219606,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P03",
+            "type": "count",
+            "img": "img03",
+            "question": "图中有几个黄色方形？",
+            "gold": "2",
+            "prediction": "The image contains a square with a blue circle inside it.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.6983663905411959,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P04",
+            "type": "count",
+            "img": "img06",
+            "question": "图中有几个黄色圆形？",
+            "gold": "4",
+            "prediction": "There are two circles in the image.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5013367477804422,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P05",
+            "type": "count",
+            "img": "img10",
+            "question": "图中有几个蓝色圆形？",
+            "gold": "3",
+            "prediction": "There are three circles in the image.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.49737647362053394,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P06",
+            "type": "attr",
+            "img": "img01",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "The image contains a square with a blue square in the top left corner.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.8436019737273455,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P07",
+            "type": "attr",
+            "img": "img05",
+            "question": "图中红色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "The image is a screenshot of a graphical user interface.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.6475807726383209,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P08",
+            "type": "attr",
+            "img": "img09",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "The image is a circular shape with a green square in the center.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.7929475922137499,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "明确把绿色对象绑定为square；附加圆形/位置描述的忠实度另评"
+          },
+          {
+            "id": "P09",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中黄色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "The image contains a circle.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.40074552223086357,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P10",
+            "type": "attr",
+            "img": "img14",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "The image is a square with three squares in it.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.644635047763586,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P11",
+            "type": "exist",
+            "img": "img11",
+            "question": "图里有没有黄色方形？",
+            "gold": "有",
+            "prediction": "The image is a screenshot of a webpage.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5479677394032478,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P12",
+            "type": "exist",
+            "img": "img12",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "Yes, there are blue squares.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.44971984066069126,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P13",
+            "type": "exist",
+            "img": "img07",
+            "question": "图里有没有绿色圆形？",
+            "gold": "有",
+            "prediction": "Yes, there are.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.35048748925328255,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P14",
+            "type": "exist",
+            "img": "img08",
+            "question": "图里有没有绿色方形？",
+            "gold": "没有",
+            "prediction": "No.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.20801346562802792,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P15",
+            "type": "exist",
+            "img": "img15",
+            "question": "图里有没有蓝色图形？",
+            "gold": "没有",
+            "prediction": "The image does not contain any text.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.49552384950220585,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          },
+          "attr": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "exist": {
+            "correct": 2,
+            "n": 5,
+            "accuracy": 0.4
+          },
+          "overall": {
+            "correct": 6,
+            "n": 15,
+            "accuracy": 0.4
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          },
+          "attr": {
+            "correct": 4,
+            "n": 5,
+            "accuracy": 0.8
+          },
+          "exist": {
+            "correct": 2,
+            "n": 5,
+            "accuracy": 0.4
+          },
+          "overall": {
+            "correct": 7,
+            "n": 15,
+            "accuracy": 0.4666666666666667
+          }
+        }
+      },
+      "added": {
+        "rows": [
+          {
+            "id": "A01",
+            "type": "count",
+            "img": "img04",
+            "question": "图中有几个红色方形？",
+            "gold": "3",
+            "prediction": "There are two squares in the image.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.4984823688864708,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A02",
+            "type": "count",
+            "img": "img07",
+            "question": "图中有几个蓝色方形？",
+            "gold": "2",
+            "prediction": "There are three square shapes.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.40208994783461094,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A03",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "The image contains a circle.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.40217582881450653,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A04",
+            "type": "exist",
+            "img": "img14",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "Yes.",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.2067548669874668,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A05",
+            "type": "count",
+            "img": "img15",
+            "question": "图中有几个绿色圆形？",
+            "gold": "2",
+            "prediction": "There are two circles in the image.",
+            "correct": true,
+            "legacy_correct": false,
+            "seconds": 0.4982992932200432,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 1,
+            "n": 3,
+            "accuracy": 0.3333333333333333
+          },
+          "attr": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "exist": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "overall": {
+            "correct": 2,
+            "n": 5,
+            "accuracy": 0.4
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 1,
+            "n": 3,
+            "accuracy": 0.3333333333333333
+          },
+          "attr": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "exist": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "overall": {
+            "correct": 2,
+            "n": 5,
+            "accuracy": 0.4
+          }
+        }
+      }
+    },
+    "sft": {
+      "main": {
+        "rows": [
+          {
+            "id": "P01",
+            "type": "count",
+            "img": "img01",
+            "question": "图中有几个红色圆形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.38583872467279434,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P02",
+            "type": "count",
+            "img": "img02",
+            "question": "图中有几个绿色圆形？",
+            "gold": "3",
+            "prediction": "2个。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.37280282005667686,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P03",
+            "type": "count",
+            "img": "img03",
+            "question": "图中有几个黄色方形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.37329879589378834,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P04",
+            "type": "count",
+            "img": "img06",
+            "question": "图中有几个黄色圆形？",
+            "gold": "4",
+            "prediction": "2个。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3794994167983532,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P05",
+            "type": "count",
+            "img": "img10",
+            "question": "图中有几个蓝色圆形？",
+            "gold": "3",
+            "prediction": "3个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.38060779869556427,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P06",
+            "type": "attr",
+            "img": "img01",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "形状。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5719819366931915,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P07",
+            "type": "attr",
+            "img": "img05",
+            "question": "图中红色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "三角。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5090335439890623,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P08",
+            "type": "attr",
+            "img": "img09",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "主题。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5079476274549961,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P09",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中黄色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "三角。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5088300090283155,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P10",
+            "type": "attr",
+            "img": "img14",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "形状。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5729443617165089,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P11",
+            "type": "exist",
+            "img": "img11",
+            "question": "图里有没有黄色方形？",
+            "gold": "有",
+            "prediction": "没有。",
+            "correct": false,
+            "legacy_correct": true,
+            "seconds": 0.4459468927234411,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P12",
+            "type": "exist",
+            "img": "img12",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.4431608635932207,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P13",
+            "type": "exist",
+            "img": "img07",
+            "question": "图里有没有绿色圆形？",
+            "gold": "有",
+            "prediction": "没有。",
+            "correct": false,
+            "legacy_correct": true,
+            "seconds": 0.4403423760086298,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P14",
+            "type": "exist",
+            "img": "img08",
+            "question": "图里有没有绿色方形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.44233934208750725,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P15",
+            "type": "exist",
+            "img": "img15",
+            "question": "图里有没有蓝色图形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.44178226590156555,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "overall": {
+            "correct": 6,
+            "n": 15,
+            "accuracy": 0.4
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "overall": {
+            "correct": 6,
+            "n": 15,
+            "accuracy": 0.4
+          }
+        }
+      },
+      "added": {
+        "rows": [
+          {
+            "id": "A01",
+            "type": "count",
+            "img": "img04",
+            "question": "图中有几个红色方形？",
+            "gold": "3",
+            "prediction": "3个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.3784988559782505,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A02",
+            "type": "count",
+            "img": "img07",
+            "question": "图中有几个蓝色方形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.37876319885253906,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A03",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "的。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.32033703103661537,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A04",
+            "type": "exist",
+            "img": "img14",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.443599259480834,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A05",
+            "type": "count",
+            "img": "img15",
+            "question": "图中有几个绿色圆形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.37946128100156784,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 3,
+            "n": 3,
+            "accuracy": 1.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "overall": {
+            "correct": 4,
+            "n": 5,
+            "accuracy": 0.8
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 3,
+            "n": 3,
+            "accuracy": 1.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "overall": {
+            "correct": 4,
+            "n": 5,
+            "accuracy": 0.8
+          }
+        }
+      }
+    },
+    "dpo_original_b01": {
+      "main": {
+        "rows": [
+          {
+            "id": "P01",
+            "type": "count",
+            "img": "img01",
+            "question": "图中有几个红色圆形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.39985737204551697,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P02",
+            "type": "count",
+            "img": "img02",
+            "question": "图中有几个绿色圆形？",
+            "gold": "3",
+            "prediction": "5。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.31978740729391575,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P03",
+            "type": "count",
+            "img": "img03",
+            "question": "图中有几个黄色方形？",
+            "gold": "2",
+            "prediction": "3。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.32013156451284885,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P04",
+            "type": "count",
+            "img": "img06",
+            "question": "图中有几个黄色圆形？",
+            "gold": "4",
+            "prediction": "5。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.31938684172928333,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P05",
+            "type": "count",
+            "img": "img10",
+            "question": "图中有几个蓝色圆形？",
+            "gold": "3",
+            "prediction": "5。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3208594527095556,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P06",
+            "type": "attr",
+            "img": "img01",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "行。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.32981667295098305,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P07",
+            "type": "attr",
+            "img": "img05",
+            "question": "图中红色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "另。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.38946448266506195,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P08",
+            "type": "attr",
+            "img": "img09",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "行。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3253676686435938,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P09",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中黄色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "二。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39036959409713745,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P10",
+            "type": "attr",
+            "img": "img14",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "形状。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.588812043890357,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P11",
+            "type": "exist",
+            "img": "img11",
+            "question": "图里有没有黄色方形？",
+            "gold": "有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39075153693556786,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P12",
+            "type": "exist",
+            "img": "img12",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39126852713525295,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P13",
+            "type": "exist",
+            "img": "img07",
+            "question": "图里有没有绿色圆形？",
+            "gold": "有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3893645126372576,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P14",
+            "type": "exist",
+            "img": "img08",
+            "question": "图里有没有绿色方形？",
+            "gold": "没有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39106630347669125,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P15",
+            "type": "exist",
+            "img": "img15",
+            "question": "图里有没有蓝色图形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.4553271271288395,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          },
+          "overall": {
+            "correct": 2,
+            "n": 15,
+            "accuracy": 0.13333333333333333
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "overall": {
+            "correct": 4,
+            "n": 15,
+            "accuracy": 0.26666666666666666
+          }
+        }
+      },
+      "added": {
+        "rows": [
+          {
+            "id": "A01",
+            "type": "count",
+            "img": "img04",
+            "question": "图中有几个红色方形？",
+            "gold": "3",
+            "prediction": "4。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.32586742006242275,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A02",
+            "type": "count",
+            "img": "img07",
+            "question": "图中有几个蓝色方形？",
+            "gold": "2",
+            "prediction": "2。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.3247654028236866,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A03",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "行。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.32407656125724316,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A04",
+            "type": "exist",
+            "img": "img14",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39005909115076065,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "A05",
+            "type": "count",
+            "img": "img15",
+            "question": "图中有几个绿色圆形？",
+            "gold": "2",
+            "prediction": "5个。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39007388055324554,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 1,
+            "n": 3,
+            "accuracy": 0.3333333333333333
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "overall": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 1,
+            "n": 3,
+            "accuracy": 0.3333333333333333
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "overall": {
+            "correct": 2,
+            "n": 5,
+            "accuracy": 0.4
+          }
+        }
+      }
+    },
+    "dpo_augmented_b01": {
+      "main": {
+        "rows": [
+          {
+            "id": "P01",
+            "type": "count",
+            "img": "img01",
+            "question": "图中有几个红色圆形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.6926044132560492,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P02",
+            "type": "count",
+            "img": "img02",
+            "question": "图中有几个绿色圆形？",
+            "gold": "3",
+            "prediction": "2个。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3861085493117571,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P03",
+            "type": "count",
+            "img": "img03",
+            "question": "图中有几个黄色方形？",
+            "gold": "2",
+            "prediction": "2。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.3188568614423275,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P04",
+            "type": "count",
+            "img": "img06",
+            "question": "图中有几个黄色圆形？",
+            "gold": "4",
+            "prediction": "2。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3207616526633501,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P05",
+            "type": "count",
+            "img": "img10",
+            "question": "图中有几个蓝色圆形？",
+            "gold": "3",
+            "prediction": "3个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.3906680438667536,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P06",
+            "type": "attr",
+            "img": "img01",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "变。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3913874663412571,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P07",
+            "type": "attr",
+            "img": "img05",
+            "question": "图中红色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "三。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3902830984443426,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P08",
+            "type": "attr",
+            "img": "img09",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "行。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3250690810382366,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P09",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中黄色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "二。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3907585758715868,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P10",
+            "type": "attr",
+            "img": "img14",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "形状。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5903160739690065,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P11",
+            "type": "exist",
+            "img": "img11",
+            "question": "图里有没有黄色方形？",
+            "gold": "有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39367507584393024,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P12",
+            "type": "exist",
+            "img": "img12",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3904701601713896,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P13",
+            "type": "exist",
+            "img": "img07",
+            "question": "图里有没有绿色圆形？",
+            "gold": "有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39015437103807926,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P14",
+            "type": "exist",
+            "img": "img08",
+            "question": "图里有没有绿色方形？",
+            "gold": "没有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3909541442990303,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P15",
+            "type": "exist",
+            "img": "img15",
+            "question": "图里有没有蓝色图形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.4605488069355488,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          },
+          "overall": {
+            "correct": 4,
+            "n": 15,
+            "accuracy": 0.26666666666666666
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "overall": {
+            "correct": 6,
+            "n": 15,
+            "accuracy": 0.4
+          }
+        }
+      },
+      "added": {
+        "rows": [
+          {
+            "id": "A01",
+            "type": "count",
+            "img": "img04",
+            "question": "图中有几个红色方形？",
+            "gold": "3",
+            "prediction": "3。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.32616800628602505,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A02",
+            "type": "count",
+            "img": "img07",
+            "question": "图中有几个蓝色方形？",
+            "gold": "2",
+            "prediction": "2。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.32536482997238636,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A03",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "的。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.32760574109852314,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A04",
+            "type": "exist",
+            "img": "img14",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3905142266303301,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "A05",
+            "type": "count",
+            "img": "img15",
+            "question": "图中有几个绿色圆形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.39615899696946144,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 3,
+            "n": 3,
+            "accuracy": 1.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "overall": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 3,
+            "n": 3,
+            "accuracy": 1.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "overall": {
+            "correct": 4,
+            "n": 5,
+            "accuracy": 0.8
+          }
+        }
+      }
+    },
+    "dpo_augmented_b005": {
+      "main": {
+        "rows": [
+          {
+            "id": "P01",
+            "type": "count",
+            "img": "img01",
+            "question": "图中有几个红色圆形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.600486034527421,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P02",
+            "type": "count",
+            "img": "img02",
+            "question": "图中有几个绿色圆形？",
+            "gold": "3",
+            "prediction": "2个。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.392676280811429,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P03",
+            "type": "count",
+            "img": "img03",
+            "question": "图中有几个黄色方形？",
+            "gold": "2",
+            "prediction": "2。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.32577360048890114,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P04",
+            "type": "count",
+            "img": "img06",
+            "question": "图中有几个黄色圆形？",
+            "gold": "4",
+            "prediction": "2。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.326699947938323,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P05",
+            "type": "count",
+            "img": "img10",
+            "question": "图中有几个蓝色圆形？",
+            "gold": "3",
+            "prediction": "3个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.393458005040884,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P06",
+            "type": "attr",
+            "img": "img01",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "变。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39068960025906563,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P07",
+            "type": "attr",
+            "img": "img05",
+            "question": "图中红色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "三。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3904354888945818,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P08",
+            "type": "attr",
+            "img": "img09",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "行。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.325758371502161,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P09",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中黄色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "二。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3919137008488178,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P10",
+            "type": "attr",
+            "img": "img14",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "形状。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5890746135264635,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P11",
+            "type": "exist",
+            "img": "img11",
+            "question": "图里有没有黄色方形？",
+            "gold": "有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3911520801484585,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P12",
+            "type": "exist",
+            "img": "img12",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39014740474522114,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P13",
+            "type": "exist",
+            "img": "img07",
+            "question": "图里有没有绿色圆形？",
+            "gold": "有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.39050309732556343,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P14",
+            "type": "exist",
+            "img": "img08",
+            "question": "图里有没有绿色方形？",
+            "gold": "没有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3908889386802912,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "P15",
+            "type": "exist",
+            "img": "img15",
+            "question": "图里有没有蓝色图形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.45870374515652657,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 5,
+            "accuracy": 0.2
+          },
+          "overall": {
+            "correct": 4,
+            "n": 15,
+            "accuracy": 0.26666666666666666
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "overall": {
+            "correct": 6,
+            "n": 15,
+            "accuracy": 0.4
+          }
+        }
+      },
+      "added": {
+        "rows": [
+          {
+            "id": "A01",
+            "type": "count",
+            "img": "img04",
+            "question": "图中有几个红色方形？",
+            "gold": "3",
+            "prediction": "3。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.33204779028892517,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A02",
+            "type": "count",
+            "img": "img07",
+            "question": "图中有几个蓝色方形？",
+            "gold": "2",
+            "prediction": "2。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.32825079560279846,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A03",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "的。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.328246409073472,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A04",
+            "type": "exist",
+            "img": "img14",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3943251520395279,
+            "original_auto_correct": false,
+            "semantic_correct": true,
+            "semantic_review_reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+          },
+          {
+            "id": "A05",
+            "type": "count",
+            "img": "img15",
+            "question": "图中有几个绿色圆形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.3943959716707468,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 3,
+            "n": 3,
+            "accuracy": 1.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "overall": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 3,
+            "n": 3,
+            "accuracy": 1.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "overall": {
+            "correct": 4,
+            "n": 5,
+            "accuracy": 0.8
+          }
+        }
+      }
+    },
+    "dpo_augmented_b05": {
+      "main": {
+        "rows": [
+          {
+            "id": "P01",
+            "type": "count",
+            "img": "img01",
+            "question": "图中有几个红色圆形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.4078690391033888,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P02",
+            "type": "count",
+            "img": "img02",
+            "question": "图中有几个绿色圆形？",
+            "gold": "3",
+            "prediction": "2个。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3848900757730007,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P03",
+            "type": "count",
+            "img": "img03",
+            "question": "图中有几个黄色方形？",
+            "gold": "2",
+            "prediction": "2。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.32465473748743534,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P04",
+            "type": "count",
+            "img": "img06",
+            "question": "图中有几个黄色圆形？",
+            "gold": "4",
+            "prediction": "2。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3225338328629732,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P05",
+            "type": "count",
+            "img": "img10",
+            "question": "图中有几个蓝色圆形？",
+            "gold": "3",
+            "prediction": "3个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.3875785544514656,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P06",
+            "type": "attr",
+            "img": "img01",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "另。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.3877768758684397,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P07",
+            "type": "attr",
+            "img": "img05",
+            "question": "图中红色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "三角。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5315659493207932,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P08",
+            "type": "attr",
+            "img": "img09",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "主题。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.541897639632225,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P09",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中黄色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "三角。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5393327325582504,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P10",
+            "type": "attr",
+            "img": "img14",
+            "question": "图中蓝色的图形是什么形状？",
+            "gold": "方形",
+            "prediction": "形状。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5817246586084366,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P11",
+            "type": "exist",
+            "img": "img11",
+            "question": "图里有没有黄色方形？",
+            "gold": "有",
+            "prediction": "没有。",
+            "correct": false,
+            "legacy_correct": true,
+            "seconds": 0.4533756710588932,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P12",
+            "type": "exist",
+            "img": "img12",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.4543487410992384,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P13",
+            "type": "exist",
+            "img": "img07",
+            "question": "图里有没有绿色圆形？",
+            "gold": "有",
+            "prediction": "没有。",
+            "correct": false,
+            "legacy_correct": true,
+            "seconds": 0.45179399102926254,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P14",
+            "type": "exist",
+            "img": "img08",
+            "question": "图里有没有绿色方形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.4518239237368107,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "P15",
+            "type": "exist",
+            "img": "img15",
+            "question": "图里有没有蓝色图形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.4514653477817774,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "overall": {
+            "correct": 6,
+            "n": 15,
+            "accuracy": 0.4
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "attr": {
+            "correct": 0,
+            "n": 5,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 3,
+            "n": 5,
+            "accuracy": 0.6
+          },
+          "overall": {
+            "correct": 6,
+            "n": 15,
+            "accuracy": 0.4
+          }
+        }
+      },
+      "added": {
+        "rows": [
+          {
+            "id": "A01",
+            "type": "count",
+            "img": "img04",
+            "question": "图中有几个红色方形？",
+            "gold": "3",
+            "prediction": "3。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.3239073362201452,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A02",
+            "type": "count",
+            "img": "img07",
+            "question": "图中有几个蓝色方形？",
+            "gold": "2",
+            "prediction": "2。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.32373894937336445,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A03",
+            "type": "attr",
+            "img": "img13",
+            "question": "图中绿色的图形是什么形状？",
+            "gold": "圆形",
+            "prediction": "三角。",
+            "correct": false,
+            "legacy_correct": false,
+            "seconds": 0.5179538205265999,
+            "original_auto_correct": false,
+            "semantic_correct": false,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A04",
+            "type": "exist",
+            "img": "img14",
+            "question": "图里有没有红色圆形？",
+            "gold": "没有",
+            "prediction": "没有。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.453474560752511,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          },
+          {
+            "id": "A05",
+            "type": "count",
+            "img": "img15",
+            "question": "图中有几个绿色圆形？",
+            "gold": "2",
+            "prediction": "2个。",
+            "correct": true,
+            "legacy_correct": true,
+            "seconds": 0.38757336512207985,
+            "original_auto_correct": true,
+            "semantic_correct": true,
+            "semantic_review_reason": "宽松答案匹配经逐题来源复核；附加断言另作忠实度判断"
+          }
+        ],
+        "metrics": {
+          "count": {
+            "correct": 3,
+            "n": 3,
+            "accuracy": 1.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "overall": {
+            "correct": 4,
+            "n": 5,
+            "accuracy": 0.8
+          }
+        },
+        "semantic_metrics": {
+          "count": {
+            "correct": 3,
+            "n": 3,
+            "accuracy": 1.0
+          },
+          "attr": {
+            "correct": 0,
+            "n": 1,
+            "accuracy": 0.0
+          },
+          "exist": {
+            "correct": 1,
+            "n": 1,
+            "accuracy": 1.0
+          },
+          "overall": {
+            "correct": 4,
+            "n": 5,
+            "accuracy": 0.8
+          }
+        }
+      }
+    }
+  },
+  "rescoring_changes": [],
+  "full_preference_pool": {
+    "dpo_original_b01": {
+      "before": {
+        "loss": 0.4978091418007623,
+        "margin": 0.6072142995893955,
+        "positive_margin_pairs": 10,
+        "n": 12,
+        "policy_chosen": -10.563374263544878,
+        "policy_rejected": -29.755439897378285
+      },
+      "after": {
+        "loss": 0.27634376479060935,
+        "margin": 2.302253160874049,
+        "positive_margin_pairs": 11,
+        "n": 12,
+        "policy_chosen": -12.915819346904755,
+        "policy_rejected": -49.058273593584694
+      }
+    },
+    "dpo_augmented_b01": {
+      "before": {
+        "loss": 0.5112588307004654,
+        "margin": 0.5431824931327035,
+        "positive_margin_pairs": 13,
+        "n": 17,
+        "policy_chosen": -8.17488137939397,
+        "policy_rejected": -29.311225302079144
+      },
+      "after": {
+        "loss": 0.3398259676443878,
+        "margin": 1.6909596948062673,
+        "positive_margin_pairs": 14,
+        "n": 17,
+        "policy_chosen": -9.03314580636866,
+        "policy_rejected": -41.64726174578947
+      }
+    },
+    "dpo_augmented_b005": {
+      "before": {
+        "loss": 0.581086700535069,
+        "margin": 0.27159124656635175,
+        "positive_margin_pairs": 13,
+        "n": 17,
+        "policy_chosen": -8.17488137939397,
+        "policy_rejected": -29.311225302079144
+      },
+      "after": {
+        "loss": 0.41188344997952486,
+        "margin": 0.9125136301797979,
+        "positive_margin_pairs": 14,
+        "n": 17,
+        "policy_chosen": -9.07058187793283,
+        "policy_rejected": -43.025373472886926
+      }
+    },
+    "dpo_augmented_b05": {
+      "before": {
+        "loss": 0.5229446338746115,
+        "margin": 2.7159124656635174,
+        "positive_margin_pairs": 13,
+        "n": 17,
+        "policy_chosen": -8.17488137939397,
+        "policy_rejected": -29.311225302079144
+      },
+      "after": {
+        "loss": 0.2534412877521196,
+        "margin": 5.0067932833643525,
+        "positive_margin_pairs": 14,
+        "n": 17,
+        "policy_chosen": -8.908980709664961,
+        "policy_rejected": -34.62708626775181
+      }
+    }
+  },
+  "semantic_review_changes": [
+    {
+      "stage": "baseline_nf4",
+      "file": "evaluation.json",
+      "id": "P08",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "明确把绿色对象绑定为square；附加圆形/位置描述的忠实度另评"
+    },
+    {
+      "stage": "dpo_original_b01",
+      "file": "evaluation.json",
+      "id": "P12",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+    },
+    {
+      "stage": "dpo_original_b01",
+      "file": "evaluation.json",
+      "id": "P14",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+    },
+    {
+      "stage": "dpo_original_b01",
+      "file": "added_evaluation.json",
+      "id": "A04",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+    },
+    {
+      "stage": "dpo_augmented_b01",
+      "file": "evaluation.json",
+      "id": "P12",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+    },
+    {
+      "stage": "dpo_augmented_b01",
+      "file": "evaluation.json",
+      "id": "P14",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+    },
+    {
+      "stage": "dpo_augmented_b01",
+      "file": "added_evaluation.json",
+      "id": "A04",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+    },
+    {
+      "stage": "dpo_augmented_b005",
+      "file": "evaluation.json",
+      "id": "P12",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+    },
+    {
+      "stage": "dpo_augmented_b005",
+      "file": "evaluation.json",
+      "id": "P14",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+    },
+    {
+      "stage": "dpo_augmented_b005",
+      "file": "added_evaluation.json",
+      "id": "A04",
+      "auto_correct": false,
+      "semantic_correct": true,
+      "reason": "单字口语‘没’在有没有问句下是明确否定；表达质量另评"
+    }
+  ],
+  "semantic_review_method": "Codex source-grounded review, independently checked by a second Codex reviewer; not student blind scoring",
+  "current_evaluator_source_sha256": "19d24732055fc94a8ce48707dfe02d2b741f2694c7bacc9909d0c8affa27446a",
+  "original_training_source_sha256": "359546e7814128a9ab5a082ec775043ae5ab5293942204c5d26434930a80c2d6",
+  "primary_stages": [
+    "baseline_nf4",
+    "sft",
+    "dpo_augmented_b01"
+  ],
+  "limits": [
+    "15 evaluation questions reuse SFT images/questions; no generalization claim",
+    "5 added questions are DPO training examples in augmented runs, not held-out",
+    "Rule matching is separate from image-grounded faithfulness review",
+    "Single seed, no statistical uncertainty estimate"
+  ]
+}

@@ -1,0 +1,23 @@
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[baseline_bf16 P01] FAIL '1.' gold=2
+[baseline_bf16 P02] FAIL '0.0.' gold=3
+[baseline_bf16 P03] FAIL '1.' gold=2
+[baseline_bf16 P04] FAIL 'Yes, the image contains a yellow circle.' gold=4
+[baseline_bf16 P05] FAIL '1.' gold=3
+[baseline_bf16 P06] FAIL 'The image is a simple, two-dimensional graphical representation of a simple, two-dimensional graph. The graph is a simple line graph, with a single horizontal' gold=方形
+[baseline_bf16 P07] FAIL 'The image represents a simple, yet effective, design layout for a website. The layout is divided into two main sections: the header and the footer.' gold=圆形
+[baseline_bf16 P08] OK 'The green square is a common symbol in many cultures, often representing purity, purity of nature, or purity of the soul. It is a symbol of purity and' gold=方形
+[baseline_bf16 P09] OK 'The image contains a circular shape with a green and yellow color. The circle is made up of a series of lines that are interconnected, creating a pattern that resembles' gold=圆形
+[baseline_bf16 P10] OK '1. The image is a square.' gold=方形
+[baseline_bf16 P11] FAIL 'No.' gold=有
+[baseline_bf16 P12] OK 'No.' gold=没有
+[baseline_bf16 P13] FAIL 'No.' gold=有
+[baseline_bf16 P14] OK 'No.' gold=没有
+[baseline_bf16 P15] OK 'No.' gold=没有
+[baseline_bf16_added A01] FAIL '1.' gold=3
+[baseline_bf16_added A02] FAIL '[1, 2, 3]' gold=2
+[baseline_bf16_added A03] FAIL 'The green and yellow color scheme is a common color scheme used in many graphic design and design projects. It is often used to create a sense of vibrancy and' gold=圆形
+[baseline_bf16_added A04] OK 'No.' gold=没有
+[baseline_bf16_added A05] FAIL '0.0.' gold=2

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "R01",
+    "policy_chosen": -12.758696556091309,
+    "policy_rejected": -93.41712951660156,
+    "reference_chosen": -20.007308959960938,
+    "reference_rejected": -62.223175048828125,
+    "chosen_tokens": 6,
+    "rejected_tokens": 30
+  },
+  {
+    "id": "R02",
+    "policy_chosen": -11.826362609863281,
+    "policy_rejected": -16.78705596923828,
+    "reference_chosen": -25.18972396850586,
+    "reference_rejected": -24.113977432250977,
+    "chosen_tokens": 6,
+    "rejected_tokens": 6
+  },
+  {
+    "id": "R03",
+    "policy_chosen": -14.641383171081543,
+    "policy_rejected": -63.37084197998047,
+    "reference_chosen": -20.502803802490234,
+    "reference_rejected": -34.106204986572266,
+    "chosen_tokens": 6,
+    "rejected_tokens": 19
+  },
+  {
+    "id": "R04",
+    "policy_chosen": -9.746813774108887,
+    "policy_rejected": -11.860958099365234,
+    "reference_chosen": -23.653430938720703,
+    "reference_rejected": -22.997100830078125,
+    "chosen_tokens": 6,
+    "rejected_tokens": 6
+  },
+  {
+    "id": "R05",
+    "policy_chosen": -12.319369316101074,
+    "policy_rejected": -61.103004455566406,
+    "reference_chosen": -20.015216827392578,
+    "reference_rejected": -30.57233428955078,
+    "chosen_tokens": 6,
+    "rejected_tokens": 19
+  },
+  {
+    "id": "R06",
+    "policy_chosen": -3.136831760406494,
+    "policy_rejected": -8.486570358276367,
+    "reference_chosen": -17.38560676574707,
+    "reference_rejected": -18.843820571899414,
+    "chosen_tokens": 7,
+    "rejected_tokens": 7
+  },
+  {
+    "id": "R07",
+    "policy_chosen": -8.97789478302002,
+    "policy_rejected": -61.89178466796875,
+    "reference_chosen": -18.828092575073242,
+    "reference_rejected": -52.898963928222656,
+    "chosen_tokens": 7,
+    "rejected_tokens": 24
+  },
+  {
+    "id": "R08",
+    "policy_chosen": -4.6464619636535645,
+    "policy_rejected": -62.33953094482422,
+    "reference_chosen": -17.312591552734375,
+    "reference_rejected": -31.235227584838867,
+    "chosen_tokens": 7,
+    "rejected_tokens": 18
+  },
+  {
+    "id": "R09",
+    "policy_chosen": -3.9953525066375732,
+    "policy_rejected": -4.390519618988037,
+    "reference_chosen": -17.315088272094727,
+    "reference_rejected": -10.801063537597656,
+    "chosen_tokens": 4,
+    "rejected_tokens": 6
+  },
+  {
+    "id": "R10",
+    "policy_chosen": -3.049955368041992,
+    "policy_rejected": -83.95968627929688,
+    "reference_chosen": -8.858573913574219,
+    "reference_rejected": -40.977386474609375,
+    "chosen_tokens": 6,
+    "rejected_tokens": 22
+  },
+  {
+    "id": "R11",
+    "policy_chosen": -2.830758571624756,
+    "policy_rejected": -74.01942443847656,
+    "reference_chosen": -8.25491714477539,
+    "reference_rejected": -38.40373992919922,
+    "chosen_tokens": 6,
+    "rejected_tokens": 19
+  },
+  {
+    "id": "R12",
+    "policy_chosen": -67.05995178222656,
+    "policy_rejected": -47.072776794433594,
+    "reference_chosen": -53.54380798339844,
+    "reference_rejected": -41.13323974609375,
+    "chosen_tokens": 29,
+    "rejected_tokens": 18
+  }
+]

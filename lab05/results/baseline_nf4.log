@@ -1,0 +1,23 @@
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[baseline_nf4 P01] FAIL 'The image contains a square with a blue square in the top left corner.' gold=2
+[baseline_nf4 P02] FAIL 'There are two colored circles in the image.' gold=3
+[baseline_nf4 P03] FAIL 'The image contains a square with a blue circle inside it.' gold=2
+[baseline_nf4 P04] FAIL 'There are two circles in the image.' gold=4
+[baseline_nf4 P05] OK 'There are three circles in the image.' gold=3
+[baseline_nf4 P06] OK 'The image contains a square with a blue square in the top left corner.' gold=方形
+[baseline_nf4 P07] FAIL 'The image is a screenshot of a graphical user interface.' gold=圆形
+[baseline_nf4 P08] FAIL 'The image is a circular shape with a green square in the center.' gold=方形
+[baseline_nf4 P09] OK 'The image contains a circle.' gold=圆形
+[baseline_nf4 P10] OK 'The image is a square with three squares in it.' gold=方形
+[baseline_nf4 P11] FAIL 'The image is a screenshot of a webpage.' gold=有
+[baseline_nf4 P12] FAIL 'Yes, there are blue squares.' gold=没有
+[baseline_nf4 P13] OK 'Yes, there are.' gold=有
+[baseline_nf4 P14] OK 'No.' gold=没有
+[baseline_nf4 P15] FAIL 'The image does not contain any text.' gold=没有
+[baseline_nf4_added A01] FAIL 'There are two squares in the image.' gold=3
+[baseline_nf4_added A02] FAIL 'There are three square shapes.' gold=2
+[baseline_nf4_added A03] OK 'The image contains a circle.' gold=圆形
+[baseline_nf4_added A04] FAIL 'Yes.' gold=没有
+[baseline_nf4_added A05] OK 'There are two circles in the image.' gold=2

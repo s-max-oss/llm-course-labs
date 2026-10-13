@@ -1,0 +1,10 @@
+JobID|State|ExitCode|Elapsed|Start|End|NodeList|AllocTRES
+14588|COMPLETED|0:0|00:01:30|2026-10-13T23:47:58|2026-10-13T23:49:28|gpu5|billing=4,cpu=4,node=1
+14588.batch|COMPLETED|0:0|00:01:30|2026-10-13T23:47:58|2026-10-13T23:49:28|gpu5|cpu=4,mem=0,node=1
+14588.extern|COMPLETED|0:0|00:01:30|2026-10-13T23:47:58|2026-10-13T23:49:28|gpu5|billing=4,cpu=4,node=1
+14593|COMPLETED|0:0|00:02:09|2026-10-13T23:51:29|2026-10-13T23:53:38|gpu4|billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1
+14593.batch|COMPLETED|0:0|00:02:09|2026-10-13T23:51:29|2026-10-13T23:53:38|gpu4|cpu=4,gres/gpu:a30=1,gres/gpu=1,mem=0,node=1
+14593.extern|COMPLETED|0:0|00:02:09|2026-10-13T23:51:29|2026-10-13T23:53:38|gpu4|billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1
+14595|COMPLETED|0:0|00:05:12|2026-10-13T23:57:41|2026-10-14T00:02:53|gpu4|billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1
+14595.batch|COMPLETED|0:0|00:05:12|2026-10-13T23:57:41|2026-10-14T00:02:53|gpu4|cpu=4,gres/gpu:a30=1,gres/gpu=1,mem=0,node=1
+14595.extern|COMPLETED|0:0|00:05:12|2026-10-13T23:57:41|2026-10-14T00:02:53|gpu4|billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1

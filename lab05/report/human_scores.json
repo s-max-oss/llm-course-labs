@@ -1,0 +1,149 @@
+{
+  "confirmed_by": "孙驰",
+  "confirmed_on": "2026-10-14",
+  "confirmation_basis": "用户认可以上九例评分和依据",
+  "human_scores_confirmed": true,
+  "scoring_method": "user_confirmation_of_ai_suggested_faithfulness_and_expression_scores",
+  "independent_blind_review_performed": false,
+  "scale": "5忠实且表达完整；4轻微问题；3部分事实正确或表达不足；2主要答案错误/残缺；1场景编造",
+  "scope": "3道题各由3阶段回答，共9份回答；同时考察忠实度与表达质量",
+  "answers": [
+    {
+      "stage": "baseline_nf4",
+      "id": "P04",
+      "image": "img06",
+      "question": "图中有几个黄色圆形？",
+      "prediction": "There are two circles in the image.",
+      "ground_truth": "img06有4个黄色圆形",
+      "ai_proposed_score": 2,
+      "human_confirmed_score": 2,
+      "reason": "计数2而非4，主要事实错误",
+      "source_file_sha256": "9f2088aff8fdfeb12cc934e774c89103d990082b22fdbd312e7c4c4adbba2e04"
+    },
+    {
+      "stage": "baseline_nf4",
+      "id": "P07",
+      "image": "img05",
+      "question": "图中红色的图形是什么形状？",
+      "prediction": "The image is a screenshot of a graphical user interface.",
+      "ground_truth": "img05红色对象为圆形，另有2个绿色方形",
+      "ai_proposed_score": 1,
+      "human_confirmed_score": 1,
+      "reason": "将几何图描述为GUI截图，场景幻觉",
+      "source_file_sha256": "9f2088aff8fdfeb12cc934e774c89103d990082b22fdbd312e7c4c4adbba2e04"
+    },
+    {
+      "stage": "baseline_nf4",
+      "id": "P12",
+      "image": "img12",
+      "question": "图里有没有红色圆形？",
+      "prediction": "Yes, there are blue squares.",
+      "ground_truth": "img12有红、蓝方形各1，没有红色圆形",
+      "ai_proposed_score": 3,
+      "human_confirmed_score": 3,
+      "reason": "蓝方事实正确，但Yes错误回答红圆存在性",
+      "source_file_sha256": "9f2088aff8fdfeb12cc934e774c89103d990082b22fdbd312e7c4c4adbba2e04"
+    },
+    {
+      "stage": "sft",
+      "id": "P04",
+      "image": "img06",
+      "question": "图中有几个黄色圆形？",
+      "prediction": "2个。",
+      "ground_truth": "img06有4个黄色圆形",
+      "ai_proposed_score": 2,
+      "human_confirmed_score": 2,
+      "reason": "计数2而非4，主要事实错误",
+      "source_file_sha256": "dcfbebba460d406149cc44beaeff8d0f6dbfbe3dfa39c5565b363cdbf6246c3a"
+    },
+    {
+      "stage": "sft",
+      "id": "P07",
+      "image": "img05",
+      "question": "图中红色的图形是什么形状？",
+      "prediction": "三角。",
+      "ground_truth": "img05红色对象为圆形，另有2个绿色方形",
+      "ai_proposed_score": 2,
+      "human_confirmed_score": 2,
+      "reason": "将红圆答为三角，形状错误",
+      "source_file_sha256": "dcfbebba460d406149cc44beaeff8d0f6dbfbe3dfa39c5565b363cdbf6246c3a"
+    },
+    {
+      "stage": "sft",
+      "id": "P12",
+      "image": "img12",
+      "question": "图里有没有红色圆形？",
+      "prediction": "没有。",
+      "ground_truth": "img12有红、蓝方形各1，没有红色圆形",
+      "ai_proposed_score": 5,
+      "human_confirmed_score": 5,
+      "reason": "完整否定与图中事实一致",
+      "source_file_sha256": "dcfbebba460d406149cc44beaeff8d0f6dbfbe3dfa39c5565b363cdbf6246c3a"
+    },
+    {
+      "stage": "dpo_augmented_b01",
+      "id": "P04",
+      "image": "img06",
+      "question": "图中有几个黄色圆形？",
+      "prediction": "2。",
+      "ground_truth": "img06有4个黄色圆形",
+      "ai_proposed_score": 2,
+      "human_confirmed_score": 2,
+      "reason": "计数2而非4，主要事实错误",
+      "source_file_sha256": "50d784a52250bcb5afe9323c55ef0d9b369e7ff0dfa38957d9f3d928461c6a31"
+    },
+    {
+      "stage": "dpo_augmented_b01",
+      "id": "P07",
+      "image": "img05",
+      "question": "图中红色的图形是什么形状？",
+      "prediction": "三。",
+      "ground_truth": "img05红色对象为圆形，另有2个绿色方形",
+      "ai_proposed_score": 2,
+      "human_confirmed_score": 2,
+      "reason": "三字没有给出所问形状，答复质量低",
+      "source_file_sha256": "50d784a52250bcb5afe9323c55ef0d9b369e7ff0dfa38957d9f3d928461c6a31"
+    },
+    {
+      "stage": "dpo_augmented_b01",
+      "id": "P12",
+      "image": "img12",
+      "question": "图里有没有红色圆形？",
+      "prediction": "没。",
+      "ground_truth": "img12有红、蓝方形各1，没有红色圆形",
+      "ai_proposed_score": 3,
+      "human_confirmed_score": 3,
+      "reason": "口语没是正确否定；学生认可按表达完整性扣分，不认定为事实方向错误",
+      "source_file_sha256": "50d784a52250bcb5afe9323c55ef0d9b369e7ff0dfa38957d9f3d928461c6a31"
+    }
+  ],
+  "paired_comparisons_derived_from_scores": [
+    {
+      "candidate": "sft",
+      "reference": "baseline_nf4",
+      "wins": 2,
+      "ties": 1,
+      "losses": 0,
+      "n": 3,
+      "win_rate_including_ties": 0.6666666666666666
+    },
+    {
+      "candidate": "dpo_augmented_b01",
+      "reference": "sft",
+      "wins": 0,
+      "ties": 2,
+      "losses": 1,
+      "n": 3,
+      "win_rate_including_ties": 0.0
+    },
+    {
+      "candidate": "dpo_augmented_b01",
+      "reference": "baseline_nf4",
+      "wins": 1,
+      "ties": 2,
+      "losses": 0,
+      "n": 3,
+      "win_rate_including_ties": 0.3333333333333333
+    }
+  ]
+}

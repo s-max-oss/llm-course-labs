@@ -1,0 +1,203 @@
+[
+  {
+    "name": "make_data",
+    "argv": [
+      "/home/u2024311281/llm_course_lab05/.venv/bin/python",
+      "/home/u2024311281/llm_course_lab05/hw5_dpo.py",
+      "--mode",
+      "make_data"
+    ],
+    "seconds": 1.5142478458583355
+  },
+  {
+    "name": "environment",
+    "argv": [
+      "/home/u2024311281/llm_course_lab05/.venv/bin/python",
+      "/home/u2024311281/llm_course_lab05/hw5_dpo.py",
+      "--mode",
+      "environment",
+      "--output",
+      "/home/u2024311281/llm_course_lab05/results"
+    ],
+    "seconds": 1.5662766825407743
+  },
+  {
+    "name": "baseline_bf16",
+    "argv": [
+      "/home/u2024311281/llm_course_lab05/.venv/bin/python",
+      "/home/u2024311281/llm_course_lab05/hw5_dpo.py",
+      "--model",
+      "/home/u2024311281/llm_course_lab05/model",
+      "--offline",
+      "--device",
+      "cuda",
+      "--require_nf4",
+      "--images",
+      "/home/u2024311281/llm_course_lab05/data",
+      "--mode",
+      "infer",
+      "--full_precision",
+      "--stage",
+      "baseline_bf16",
+      "--output",
+      "/home/u2024311281/llm_course_lab05/results/baseline_bf16"
+    ],
+    "seconds": 13.491332601755857
+  },
+  {
+    "name": "baseline_nf4",
+    "argv": [
+      "/home/u2024311281/llm_course_lab05/.venv/bin/python",
+      "/home/u2024311281/llm_course_lab05/hw5_dpo.py",
+      "--model",
+      "/home/u2024311281/llm_course_lab05/model",
+      "--offline",
+      "--device",
+      "cuda",
+      "--require_nf4",
+      "--images",
+      "/home/u2024311281/llm_course_lab05/data",
+      "--mode",
+      "infer",
+      "--stage",
+      "baseline_nf4",
+      "--output",
+      "/home/u2024311281/llm_course_lab05/results/baseline_nf4"
+    ],
+    "seconds": 18.900593096390367
+  },
+  {
+    "name": "sft",
+    "argv": [
+      "/home/u2024311281/llm_course_lab05/.venv/bin/python",
+      "/home/u2024311281/llm_course_lab05/hw5_dpo.py",
+      "--model",
+      "/home/u2024311281/llm_course_lab05/model",
+      "--offline",
+      "--device",
+      "cuda",
+      "--require_nf4",
+      "--images",
+      "/home/u2024311281/llm_course_lab05/data",
+      "--mode",
+      "sft",
+      "--steps",
+      "60",
+      "--output",
+      "/home/u2024311281/llm_course_lab05/results/sft"
+    ],
+    "seconds": 39.848023334518075
+  },
+  {
+    "name": "dpo_original_b01",
+    "argv": [
+      "/home/u2024311281/llm_course_lab05/.venv/bin/python",
+      "/home/u2024311281/llm_course_lab05/hw5_dpo.py",
+      "--model",
+      "/home/u2024311281/llm_course_lab05/model",
+      "--offline",
+      "--device",
+      "cuda",
+      "--require_nf4",
+      "--images",
+      "/home/u2024311281/llm_course_lab05/data",
+      "--mode",
+      "dpo",
+      "--steps",
+      "40",
+      "--sft_adapter",
+      "/home/u2024311281/llm_course_lab05/results/sft/adapter",
+      "--pairs",
+      "original",
+      "--beta",
+      "0.1",
+      "--output",
+      "/home/u2024311281/llm_course_lab05/results/dpo_original_b01"
+    ],
+    "seconds": 43.373063715174794
+  },
+  {
+    "name": "dpo_augmented_b01",
+    "argv": [
+      "/home/u2024311281/llm_course_lab05/.venv/bin/python",
+      "/home/u2024311281/llm_course_lab05/hw5_dpo.py",
+      "--model",
+      "/home/u2024311281/llm_course_lab05/model",
+      "--offline",
+      "--device",
+      "cuda",
+      "--require_nf4",
+      "--images",
+      "/home/u2024311281/llm_course_lab05/data",
+      "--mode",
+      "dpo",
+      "--steps",
+      "40",
+      "--sft_adapter",
+      "/home/u2024311281/llm_course_lab05/results/sft/adapter",
+      "--pairs",
+      "augmented",
+      "--beta",
+      "0.1",
+      "--output",
+      "/home/u2024311281/llm_course_lab05/results/dpo_augmented_b01"
+    ],
+    "seconds": 51.74430443160236
+  },
+  {
+    "name": "dpo_augmented_b005",
+    "argv": [
+      "/home/u2024311281/llm_course_lab05/.venv/bin/python",
+      "/home/u2024311281/llm_course_lab05/hw5_dpo.py",
+      "--model",
+      "/home/u2024311281/llm_course_lab05/model",
+      "--offline",
+      "--device",
+      "cuda",
+      "--require_nf4",
+      "--images",
+      "/home/u2024311281/llm_course_lab05/data",
+      "--mode",
+      "dpo",
+      "--steps",
+      "40",
+      "--sft_adapter",
+      "/home/u2024311281/llm_course_lab05/results/sft/adapter",
+      "--pairs",
+      "augmented",
+      "--beta",
+      "0.05",
+      "--output",
+      "/home/u2024311281/llm_course_lab05/results/dpo_augmented_b005"
+    ],
+    "seconds": 84.34601479768753
+  },
+  {
+    "name": "dpo_augmented_b05",
+    "argv": [
+      "/home/u2024311281/llm_course_lab05/.venv/bin/python",
+      "/home/u2024311281/llm_course_lab05/hw5_dpo.py",
+      "--model",
+      "/home/u2024311281/llm_course_lab05/model",
+      "--offline",
+      "--device",
+      "cuda",
+      "--require_nf4",
+      "--images",
+      "/home/u2024311281/llm_course_lab05/data",
+      "--mode",
+      "dpo",
+      "--steps",
+      "40",
+      "--sft_adapter",
+      "/home/u2024311281/llm_course_lab05/results/sft/adapter",
+      "--pairs",
+      "augmented",
+      "--beta",
+      "0.5",
+      "--output",
+      "/home/u2024311281/llm_course_lab05/results/dpo_augmented_b05"
+    ],
+    "seconds": 53.52443235553801
+  }
+]

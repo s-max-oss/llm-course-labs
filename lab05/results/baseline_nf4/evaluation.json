@@ -1,0 +1,201 @@
+{
+  "stage": "baseline_nf4",
+  "rows": [
+    {
+      "id": "P01",
+      "type": "count",
+      "img": "img01",
+      "question": "图中有几个红色圆形？",
+      "gold": "2",
+      "prediction": "The image contains a square with a blue square in the top left corner.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 1.5036416985094547
+    },
+    {
+      "id": "P02",
+      "type": "count",
+      "img": "img02",
+      "question": "图中有几个绿色圆形？",
+      "gold": "3",
+      "prediction": "There are two colored circles in the image.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.5532984901219606
+    },
+    {
+      "id": "P03",
+      "type": "count",
+      "img": "img03",
+      "question": "图中有几个黄色方形？",
+      "gold": "2",
+      "prediction": "The image contains a square with a blue circle inside it.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.6983663905411959
+    },
+    {
+      "id": "P04",
+      "type": "count",
+      "img": "img06",
+      "question": "图中有几个黄色圆形？",
+      "gold": "4",
+      "prediction": "There are two circles in the image.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.5013367477804422
+    },
+    {
+      "id": "P05",
+      "type": "count",
+      "img": "img10",
+      "question": "图中有几个蓝色圆形？",
+      "gold": "3",
+      "prediction": "There are three circles in the image.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.49737647362053394
+    },
+    {
+      "id": "P06",
+      "type": "attr",
+      "img": "img01",
+      "question": "图中蓝色的图形是什么形状？",
+      "gold": "方形",
+      "prediction": "The image contains a square with a blue square in the top left corner.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.8436019737273455
+    },
+    {
+      "id": "P07",
+      "type": "attr",
+      "img": "img05",
+      "question": "图中红色的图形是什么形状？",
+      "gold": "圆形",
+      "prediction": "The image is a screenshot of a graphical user interface.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.6475807726383209
+    },
+    {
+      "id": "P08",
+      "type": "attr",
+      "img": "img09",
+      "question": "图中绿色的图形是什么形状？",
+      "gold": "方形",
+      "prediction": "The image is a circular shape with a green square in the center.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.7929475922137499
+    },
+    {
+      "id": "P09",
+      "type": "attr",
+      "img": "img13",
+      "question": "图中黄色的图形是什么形状？",
+      "gold": "圆形",
+      "prediction": "The image contains a circle.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.40074552223086357
+    },
+    {
+      "id": "P10",
+      "type": "attr",
+      "img": "img14",
+      "question": "图中蓝色的图形是什么形状？",
+      "gold": "方形",
+      "prediction": "The image is a square with three squares in it.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.644635047763586
+    },
+    {
+      "id": "P11",
+      "type": "exist",
+      "img": "img11",
+      "question": "图里有没有黄色方形？",
+      "gold": "有",
+      "prediction": "The image is a screenshot of a webpage.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.5479677394032478
+    },
+    {
+      "id": "P12",
+      "type": "exist",
+      "img": "img12",
+      "question": "图里有没有红色圆形？",
+      "gold": "没有",
+      "prediction": "Yes, there are blue squares.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.44971984066069126
+    },
+    {
+      "id": "P13",
+      "type": "exist",
+      "img": "img07",
+      "question": "图里有没有绿色圆形？",
+      "gold": "有",
+      "prediction": "Yes, there are.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.35048748925328255
+    },
+    {
+      "id": "P14",
+      "type": "exist",
+      "img": "img08",
+      "question": "图里有没有绿色方形？",
+      "gold": "没有",
+      "prediction": "No.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.20801346562802792
+    },
+    {
+      "id": "P15",
+      "type": "exist",
+      "img": "img15",
+      "question": "图里有没有蓝色图形？",
+      "gold": "没有",
+      "prediction": "The image does not contain any text.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.49552384950220585
+    }
+  ],
+  "metrics": {
+    "count": {
+      "correct": 1,
+      "n": 5,
+      "accuracy": 0.2,
+      "legacy_correct": 0
+    },
+    "attr": {
+      "correct": 3,
+      "n": 5,
+      "accuracy": 0.6,
+      "legacy_correct": 0
+    },
+    "exist": {
+      "correct": 2,
+      "n": 5,
+      "accuracy": 0.4,
+      "legacy_correct": 0
+    },
+    "overall": {
+      "correct": 6,
+      "n": 15,
+      "accuracy": 0.4,
+      "legacy_correct": 0
+    }
+  },
+  "seconds": 9.135704897344112,
+  "max_new_tokens": 32,
+  "decoding": "greedy",
+  "seed": 42,
+  "evaluation_scope": "training-image resubstitution, NOT held-out generalization"
+}

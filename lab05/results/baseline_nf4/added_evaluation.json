@@ -1,0 +1,91 @@
+{
+  "stage": "baseline_nf4_added",
+  "rows": [
+    {
+      "id": "A01",
+      "type": "count",
+      "img": "img04",
+      "question": "图中有几个红色方形？",
+      "gold": "3",
+      "prediction": "There are two squares in the image.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.4984823688864708
+    },
+    {
+      "id": "A02",
+      "type": "count",
+      "img": "img07",
+      "question": "图中有几个蓝色方形？",
+      "gold": "2",
+      "prediction": "There are three square shapes.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.40208994783461094
+    },
+    {
+      "id": "A03",
+      "type": "attr",
+      "img": "img13",
+      "question": "图中绿色的图形是什么形状？",
+      "gold": "圆形",
+      "prediction": "The image contains a circle.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.40217582881450653
+    },
+    {
+      "id": "A04",
+      "type": "exist",
+      "img": "img14",
+      "question": "图里有没有红色圆形？",
+      "gold": "没有",
+      "prediction": "Yes.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.2067548669874668
+    },
+    {
+      "id": "A05",
+      "type": "count",
+      "img": "img15",
+      "question": "图中有几个绿色圆形？",
+      "gold": "2",
+      "prediction": "There are two circles in the image.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.4982992932200432
+    }
+  ],
+  "metrics": {
+    "count": {
+      "correct": 1,
+      "n": 3,
+      "accuracy": 0.3333333333333333,
+      "legacy_correct": 0
+    },
+    "attr": {
+      "correct": 1,
+      "n": 1,
+      "accuracy": 1.0,
+      "legacy_correct": 0
+    },
+    "exist": {
+      "correct": 0,
+      "n": 1,
+      "accuracy": 0.0,
+      "legacy_correct": 0
+    },
+    "overall": {
+      "correct": 2,
+      "n": 5,
+      "accuracy": 0.4,
+      "legacy_correct": 0
+    }
+  },
+  "seconds": 2.0079658534377813,
+  "max_new_tokens": 32,
+  "decoding": "greedy",
+  "seed": 42,
+  "evaluation_scope": "training-image resubstitution, NOT held-out generalization"
+}

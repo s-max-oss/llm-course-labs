@@ -1,0 +1,166 @@
+{
+  "review_type": "Read-only code review following requesting-code-review; not a blind review and not evidence of student-independent implementation",
+  "base_sha_supplied": "919aba0bb9bd6c0701a3fa17b5579c4c365fccd4",
+  "scope": {
+    "reviewed_files": [
+      "hw5_dpo.py",
+      "test_hw5_dpo.py",
+      "run_suite.py",
+      "run_hpc.slurm",
+      "requirements.txt"
+    ],
+    "requirements": [
+      "tmp/lab05/guide.txt",
+      "tmp/lab05/template.txt"
+    ],
+    "git_commands_performed": false,
+    "hpc_connections_performed": false,
+    "credential_or_conversation_access": false,
+    "implementation_edits_performed_by_reviewer": false
+  },
+  "reviewed_file_sha256": {
+    "hw5_dpo.py": "359546e7814128a9ab5a082ec775043ae5ab5293942204c5d26434930a80c2d6",
+    "test_hw5_dpo.py": "361ec00f938f22e1e0d6391579f4fed26927ff0dc43ccfdfda36368e812d5a7a",
+    "run_suite.py": "9a6787cda51f614e0726fe6606b2b866fb41ec968fdab2df74672bc7b078c50c",
+    "run_hpc.slurm": "39c71c1a20f99ad4429fe08d4b775a6f8de08b30e30a0d692ccf2348c890c1b1",
+    "requirements.txt": "154b3279fe06591ac2b307c8f2adc7166f6c54c3ccc749754d41b8fb2a74ddb1"
+  },
+  "strengths": [
+    {
+      "file": "hw5_dpo.py",
+      "details": "Answer tokens are appended to an exact multimodal prompt prefix; EOS is included; prompt labels are masked with -100. sequence_logprob uses causal shift and a sum over supervised tokens."
+    },
+    {
+      "file": "hw5_dpo.py",
+      "details": "DPO uses -logsigmoid(beta*((policy_chosen-ref_chosen)-(policy_rejected-ref_rejected))). The reference is the same frozen NF4 base with adapters disabled, in eval mode and under no_grad; cached reference scalars are detached."
+    },
+    {
+      "file": "hw5_dpo.py",
+      "details": "DPO starts from a fresh base plus one saved SFT adapter wrapper. Language-only q/k/v/o adapter targets exclude vision. Exact requested steps are completed and adapters are saved afterward."
+    },
+    {
+      "file": "run_suite.py",
+      "details": "NF4 baseline matches the prepared base used during training; BF16 baseline is separately labeled. Each DPO variant starts in a fresh process from the same SFT checkpoint, with the same seed and hyperparameters except the intended pair pool/beta."
+    },
+    {
+      "file": "hw5_dpo.py",
+      "details": "12 original and 5 added preference pairs match declared image facts and document their failure modes. Predictions, old/new scoring, training traces, masks, source hash and SFT parent hash are retained. Resubstitution evaluation is explicitly identified."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "severity": "Important/P2",
+      "file": "hw5_dpo.py",
+      "original_line": 497,
+      "issue": "All modes defaulted to results/baseline, causing normal infer->sft execution to refuse a completed baseline output and preventing default dpo from finding a default SFT adapter.",
+      "resolution": "Mode-dependent output defaults are now selected after argparse; new CLI behavior test passes."
+    },
+    {
+      "severity": "Important/P2",
+      "file": "run_suite.py",
+      "original_lines": [
+        19,
+        21,
+        28
+      ],
+      "issue": "Parent log/results paths and child model/output paths used different current directories when launched outside lab05.",
+      "resolution": "Model and results resolve against script root and are passed as absolute paths; data is also absolute."
+    },
+    {
+      "severity": "Important/P2",
+      "file": "hw5_dpo.py",
+      "original_line": 166,
+      "issue": "Single-character Chinese number matching counted 十二个/十三个/十四个 as 2/3/4.",
+      "resolution": "Full Chinese numeral tokens are parsed; 12/22 and unsupported 102 do not match a gold 2. Expanded tests pass."
+    },
+    {
+      "severity": "Important/P2",
+      "file": "hw5_dpo.py",
+      "original_lines": [
+        152,
+        155
+      ],
+      "issue": "English descriptive affirmative answers were not recognized and unrelated negatives could falsely match existence questions.",
+      "resolution": "English affirmative patterns and queried-object guards have been added, with focused regression cases. Multi-clause scope remains a limitation as recorded below."
+    }
+  ],
+  "findings": [
+    {
+      "severity": "Important/P2",
+      "file": "hw5_dpo.py",
+      "line_start": 165,
+      "line_end": 172,
+      "title": "Existence scoring still treats any negative clause as a negative answer to the queried object",
+      "reproduction": {
+        "question_id": "P12",
+        "prediction": "There is a red circle, but no blue squares.",
+        "actual_judge": true,
+        "expected_judge": false
+      },
+      "impact": "The sentence explicitly asserts the queried red circle exists, so it is wrong for P12. The unrelated no blue squares clause currently makes it count as correct. Automatic existence totals can therefore be inflated by fluent multi-clause model output.",
+      "recommendation": "Before writing final report totals, audit all raw existence outputs against the query and preserve any corrections alongside the original automatic score. If improving automation, bind negation to the clause describing the queried object or conservatively mark multi-clause ambiguous outputs for manual review, and add this regression case. This does not block formal training."
+    }
+  ],
+  "validation": [
+    {
+      "check": "Unmodified initial offline suite",
+      "result": "8/8 passed"
+    },
+    {
+      "check": "Updated offline suite after parent fixes",
+      "result": "9/9 passed; unittest runtime 0.219 s"
+    },
+    {
+      "check": "Additional Chinese compound numeral probes",
+      "result": "Initial false positives reproduced; fixes and updated tests verified"
+    },
+    {
+      "check": "Tiny Idefics3 + PEFT CPU integration using installed libraries",
+      "result": "Forward/backward, safe adapter save/reload, single default adapter, and absence of non-LoRA parameter gradients passed. This used a synthetic tiny model and is not a course experiment result."
+    },
+    {
+      "check": "Installed library imports",
+      "result": "torch 2.14.0, transformers 4.57.6, peft 0.17.1, accelerate 1.10.1, huggingface_hub 0.36.2, Pillow 12.3.0; CPU only"
+    },
+    {
+      "check": "Real GPU/NF4 compatibility",
+      "result": "Not independently tested by reviewer. Parent reported successful real two-step SFT/DPO GPU smoke (job 14593, exit 0:0); formal suite results remain pending."
+    }
+  ],
+  "assessment": {
+    "ready_for_formal_suite": true,
+    "ready_for_final_report": false,
+    "reason": "Training mathematics, adapter continuation, step counts and controls have no identified blocker. All three concrete entry/number-scoring findings are fixed. Final report must use actual formal-suite results and manually verified existence scores, with accurate AI collaboration attribution and no copied template results."
+  },
+  "report_notes": [
+    "Use actual language-only adapter parameter counts; parent GPU smoke reports 921600/257406528=0.3580%, not the template 1.36M/0.529%. Confirm against final run metadata before publication.",
+    "The guide hand-example loss for margin 0.01 is 0.6881596805; template/guide approximation 0.693 is too coarse.",
+    "Do not infer held-out generalization from the training-image evaluation or pair diagnostic.",
+    "Do not claim manually scored faithfulness or preference wins until the specified outputs have actually been inspected."
+  ],
+  "follow_up_reviews": [
+    {
+      "date": "2026-10-14",
+      "reviewed_evaluator_source_sha256": "9c49de2a7a64dff53c162daf7b4922ec99c4eba70134d4d53515fc73a639584a",
+      "resolved_findings": [
+        "Original unrelated-clause negation P2 fixed by target-specific clause selection.",
+        "Follow-up same-target contradictory English clauses P2 fixed by rejecting mixed per-clause polarity sets."
+      ],
+      "validation": "Latest nine offline tests independently rerun and passed; contradiction regression is included.",
+      "current_status": "Identified implementation findings fixed. Actual-output semantic scoring corrections are documented separately in results_review.json; preserve original raw rule results.",
+      "results_review": "tmp/lab05/results_review.json"
+    },
+    {
+      "date": "2026-10-14",
+      "reviewed_source_sha256": "19d24732055fc94a8ce48707dfe02d2b741f2694c7bacc9909d0c8affa27446a",
+      "changed_from_run": [
+        "judge",
+        "main"
+      ],
+      "all_other_AST_equal": true,
+      "validation": "11/11 tests passed; new guide-compatible eval loads fresh base for every stage. Raw manifest still115/115;140 original rule scores unchanged;10 separately reviewed semantic corrections.",
+      "report_review": "tmp/lab05/report_review.json",
+      "report_status": "passed"
+    }
+  ]
+}

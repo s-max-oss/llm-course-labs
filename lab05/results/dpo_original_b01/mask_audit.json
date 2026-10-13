@@ -1,0 +1,86 @@
+[
+  {
+    "id": "R01",
+    "prompt_tokens": 92,
+    "chosen_tokens": 6,
+    "rejected_tokens": 30,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R02",
+    "prompt_tokens": 92,
+    "chosen_tokens": 6,
+    "rejected_tokens": 6,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R03",
+    "prompt_tokens": 92,
+    "chosen_tokens": 6,
+    "rejected_tokens": 19,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R04",
+    "prompt_tokens": 93,
+    "chosen_tokens": 6,
+    "rejected_tokens": 6,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R05",
+    "prompt_tokens": 93,
+    "chosen_tokens": 6,
+    "rejected_tokens": 19,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R06",
+    "prompt_tokens": 99,
+    "chosen_tokens": 7,
+    "rejected_tokens": 7,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R07",
+    "prompt_tokens": 98,
+    "chosen_tokens": 7,
+    "rejected_tokens": 24,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R08",
+    "prompt_tokens": 98,
+    "chosen_tokens": 7,
+    "rejected_tokens": 18,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R09",
+    "prompt_tokens": 94,
+    "chosen_tokens": 4,
+    "rejected_tokens": 6,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R10",
+    "prompt_tokens": 94,
+    "chosen_tokens": 6,
+    "rejected_tokens": 22,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R11",
+    "prompt_tokens": 93,
+    "chosen_tokens": 6,
+    "rejected_tokens": 19,
+    "reference_requires_grad": false
+  },
+  {
+    "id": "R12",
+    "prompt_tokens": 94,
+    "chosen_tokens": 29,
+    "rejected_tokens": 18,
+    "reference_requires_grad": false
+  }
+]

@@ -1,0 +1,70 @@
+test_answer_boundary_and_eos_masks (test_hw5_dpo.CoreTests) ... ok
+test_counts_and_shapes_reject_ambiguous_outputs (test_hw5_dpo.CoreTests) ... ok
+test_dpo_gradient_direction_and_detached_reference (test_hw5_dpo.CoreTests) ... ok
+test_dpo_hand_computation_and_stability (test_hw5_dpo.CoreTests) ... ok
+test_exist_negation_is_not_positive (test_hw5_dpo.CoreTests) ... ok
+test_gold_matches_declared_image_objects (test_hw5_dpo.CoreTests) ... ok
+test_image_generation_reproducible (test_hw5_dpo.CoreTests) ... [data] 15 guide images; 15 questions; 12+5 preferences
+[data] 15 guide images; 15 questions; 12+5 preferences
+ok
+test_sequence_sum_causal_shift_and_prompt_mask (test_hw5_dpo.CoreTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.984s
+
+OK
+[data] 15 guide images; 15 questions; 12+5 preferences
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+trainable params: 921,600 || all params: 257,406,528 || trainable%: 0.3580
+/home/u2024311281/.conda/envs/yolo/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+[sft] 1/2 loss=4.328772
+[sft] 2/2 loss=3.379404
+[sft P01] FAIL 'The image contains a square with a blue square in the top left corner.' gold=2
+[sft P02] FAIL 'There are two colored circles in the image.' gold=3
+[sft P03] FAIL 'The image contains a square with a blue circle inside it.' gold=2
+[sft P04] FAIL 'There are two circles in the image.' gold=4
+[sft P05] OK 'There are three circles in the image.' gold=3
+[sft P06] OK 'The image contains a square with a blue square in the top left corner.' gold=方形
+[sft P07] FAIL 'The image is a graphical representation of a graph. The graph is composed of two main components: the horizontal axis (x) and the vertical axis (y).' gold=圆形
+[sft P08] FAIL 'The image is a circular shape with a green square in the center.' gold=方形
+[sft P09] OK 'The image contains a circle.' gold=圆形
+[sft P10] OK 'The image is a square with three squares in it.' gold=方形
+[sft P11] FAIL 'The image is a screenshot of a webpage.' gold=有
+[sft P12] FAIL 'Yes, there are blue squares.' gold=没有
+[sft P13] FAIL 'There is no color scenery.' gold=有
+[sft P14] OK 'No.' gold=没有
+[sft P15] OK 'The image does not contain any text.' gold=没有
+[sft_added A01] FAIL 'There are two squares in the image.' gold=3
+[sft_added A02] OK 'There are two square icons.' gold=2
+[sft_added A03] OK 'The image contains a circle.' gold=圆形
+[sft_added A04] FAIL 'Yes.' gold=没有
+[sft_added A05] OK 'There are two circles in the image.' gold=2
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+trainable params: 921,600 || all params: 257,406,528 || trainable%: 0.3580
+[dpo] 1/2 loss=0.696298 margin=-0.006291
+[dpo] 2/2 loss=0.693781 margin=-0.001266
+[dpo P01] FAIL 'The image contains a square with a blue square in the top left corner.' gold=2
+[dpo P02] FAIL 'There are two colored circles in the image.' gold=3
+[dpo P03] FAIL 'The image contains a square with a blue circle inside it.' gold=2
+[dpo P04] FAIL 'There are two circles in the image.' gold=4
+[dpo P05] OK 'There are three circles in the image.' gold=3
+[dpo P06] OK 'The image is a square with a square in the top left corner.' gold=方形
+[dpo P07] FAIL 'The image is a graphical representation of a graph. The graph is composed of two main components: the horizontal axis (x) and the vertical axis (y).' gold=圆形
+[dpo P08] FAIL 'The image is a circular shape with a green square in the center.' gold=方形
+[dpo P09] OK 'The image contains a circle.' gold=圆形
+[dpo P10] OK 'The image is a square with three squares in it.' gold=方形
+[dpo P11] FAIL 'The image is a screenshot of a webpage.' gold=有
+[dpo P12] OK 'The image does not contain any text.' gold=没有
+[dpo P13] FAIL 'There is no color scenery.' gold=有
+[dpo P14] OK 'No.' gold=没有
+[dpo P15] OK 'The image does not contain any text.' gold=没有
+[dpo_added A01] FAIL 'There are two squares in the image.' gold=3
+[dpo_added A02] OK 'There are two square icons.' gold=2
+[dpo_added A03] OK 'The image contains a circle.' gold=圆形
+[dpo_added A04] FAIL 'Yes.' gold=没有
+[dpo_added A05] OK 'There are two circles in the image.' gold=2

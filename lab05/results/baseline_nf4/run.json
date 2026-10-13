@@ -1,0 +1,15 @@
+{
+  "device": "cuda:0",
+  "nf4": true,
+  "double_quant": true,
+  "compute_dtype": "torch.bfloat16",
+  "processor_longest_edge": 512,
+  "image_splitting": false,
+  "reference": "adapter-disabled base",
+  "rank": 8,
+  "alpha": 16,
+  "lora_dropout": 0.05,
+  "parameters": null,
+  "source_sha256": "359546e7814128a9ab5a082ec775043ae5ab5293942204c5d26434930a80c2d6",
+  "inference_seconds": 9.135704897344112
+}

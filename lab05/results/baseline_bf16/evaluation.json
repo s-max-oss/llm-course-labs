@@ -1,0 +1,201 @@
+{
+  "stage": "baseline_bf16",
+  "rows": [
+    {
+      "id": "P01",
+      "type": "count",
+      "img": "img01",
+      "question": "图中有几个红色圆形？",
+      "gold": "2",
+      "prediction": "1.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 1.0044828094542027
+    },
+    {
+      "id": "P02",
+      "type": "count",
+      "img": "img02",
+      "question": "图中有几个绿色圆形？",
+      "gold": "3",
+      "prediction": "0.0.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.18650579825043678
+    },
+    {
+      "id": "P03",
+      "type": "count",
+      "img": "img03",
+      "question": "图中有几个黄色方形？",
+      "gold": "2",
+      "prediction": "1.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.1333237960934639
+    },
+    {
+      "id": "P04",
+      "type": "count",
+      "img": "img06",
+      "question": "图中有几个黄色圆形？",
+      "gold": "4",
+      "prediction": "Yes, the image contains a yellow circle.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.2771291583776474
+    },
+    {
+      "id": "P05",
+      "type": "count",
+      "img": "img10",
+      "question": "图中有几个蓝色圆形？",
+      "gold": "3",
+      "prediction": "1.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.13158137910068035
+    },
+    {
+      "id": "P06",
+      "type": "attr",
+      "img": "img01",
+      "question": "图中蓝色的图形是什么形状？",
+      "gold": "方形",
+      "prediction": "The image is a simple, two-dimensional graphical representation of a simple, two-dimensional graph. The graph is a simple line graph, with a single horizontal",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.8067751284688711
+    },
+    {
+      "id": "P07",
+      "type": "attr",
+      "img": "img05",
+      "question": "图中红色的图形是什么形状？",
+      "gold": "圆形",
+      "prediction": "The image represents a simple, yet effective, design layout for a website. The layout is divided into two main sections: the header and the footer.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.800803491845727
+    },
+    {
+      "id": "P08",
+      "type": "attr",
+      "img": "img09",
+      "question": "图中绿色的图形是什么形状？",
+      "gold": "方形",
+      "prediction": "The green square is a common symbol in many cultures, often representing purity, purity of nature, or purity of the soul. It is a symbol of purity and",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.8015115279704332
+    },
+    {
+      "id": "P09",
+      "type": "attr",
+      "img": "img13",
+      "question": "图中黄色的图形是什么形状？",
+      "gold": "圆形",
+      "prediction": "The image contains a circular shape with a green and yellow color. The circle is made up of a series of lines that are interconnected, creating a pattern that resembles",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.804255535826087
+    },
+    {
+      "id": "P10",
+      "type": "attr",
+      "img": "img14",
+      "question": "图中蓝色的图形是什么形状？",
+      "gold": "方形",
+      "prediction": "1. The image is a square.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.27590456046164036
+    },
+    {
+      "id": "P11",
+      "type": "exist",
+      "img": "img11",
+      "question": "图里有没有黄色方形？",
+      "gold": "有",
+      "prediction": "No.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.10917535610496998
+    },
+    {
+      "id": "P12",
+      "type": "exist",
+      "img": "img12",
+      "question": "图里有没有红色圆形？",
+      "gold": "没有",
+      "prediction": "No.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.10808114893734455
+    },
+    {
+      "id": "P13",
+      "type": "exist",
+      "img": "img07",
+      "question": "图里有没有绿色圆形？",
+      "gold": "有",
+      "prediction": "No.",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.1074513103812933
+    },
+    {
+      "id": "P14",
+      "type": "exist",
+      "img": "img08",
+      "question": "图里有没有绿色方形？",
+      "gold": "没有",
+      "prediction": "No.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.10773659124970436
+    },
+    {
+      "id": "P15",
+      "type": "exist",
+      "img": "img15",
+      "question": "图里有没有蓝色图形？",
+      "gold": "没有",
+      "prediction": "No.",
+      "correct": true,
+      "legacy_correct": false,
+      "seconds": 0.1073562428355217
+    }
+  ],
+  "metrics": {
+    "count": {
+      "correct": 0,
+      "n": 5,
+      "accuracy": 0.0,
+      "legacy_correct": 0
+    },
+    "attr": {
+      "correct": 3,
+      "n": 5,
+      "accuracy": 0.6,
+      "legacy_correct": 0
+    },
+    "exist": {
+      "correct": 3,
+      "n": 5,
+      "accuracy": 0.6,
+      "legacy_correct": 0
+    },
+    "overall": {
+      "correct": 6,
+      "n": 15,
+      "accuracy": 0.4,
+      "legacy_correct": 0
+    }
+  },
+  "seconds": 5.762544251978397,
+  "max_new_tokens": 32,
+  "decoding": "greedy",
+  "seed": 42,
+  "evaluation_scope": "training-image resubstitution, NOT held-out generalization"
+}

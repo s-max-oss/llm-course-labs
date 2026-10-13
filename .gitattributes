@@ -11,3 +11,11 @@
 *.png binary
 *.docx binary
 *.pdf binary
+*.safetensors binary
+/lab05/** text eol=lf
+/lab05/**/*.json -text -eol whitespace=cr-at-eol
+/lab05/**/*.png binary
+/lab05/**/*.docx binary
+/lab05/**/*.pdf binary
+/lab05/**/*.safetensors binary
+/lab05/provenance/slurm-*.log whitespace=-blank-at-eol

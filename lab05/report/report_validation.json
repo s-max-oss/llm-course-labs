@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-14",
+  "pages": 17,
+  "tables": 16,
+  "figures": 5,
+  "native_equations": 6,
+  "chapters": 9,
+  "thought_questions": 6,
+  "hand_checks": 4,
+  "new_preference_pairs": 5,
+  "template_sha256_unchanged": true,
+  "preserve_only_package_parts_match": true,
+  "section_and_bookmarks_preserved": true,
+  "visual_check": "All 17 page images inspected at 2x; final pages5/16 reinspected, other15 pixel-identical to inspected renders. No overlaps, clipping or short spill pages.",
+  "renderer": "Independent hidden read-only Word PDF export plus bundled pypdfium2; packaged renderer lacks soffice.exe",
+  "tests": 11,
+  "raw_manifest_files_verified": 115,
+  "answers_reviewed": 140,
+  "optimizer_steps": 220,
+  "primary_semantic_correct": [
+    7,
+    6,
+    6
+  ],
+  "primary_rule_correct": [
+    6,
+    6,
+    4
+  ],
+  "semantic_corrections": 10,
+  "human_scores_confirmed": true,
+  "human_scoring_method": "user_confirmation_of_ai_suggested_faithfulness_and_expression_scores",
+  "independent_blind_review_performed": false,
+  "hpc": {
+    "jobs": [
+      14588,
+      14593,
+      14595
+    ],
+    "all_completed": true,
+    "exit_code": "0:0",
+    "queue_empty": true
+  },
+  "report_sha256": {
+    "2024311281_孙驰_实验作业五.docx": "bc0cc86b34513656718cd1da1b2771b0abc46691cb7ab7d0ad53d4760d3dbfc2",
+    "2024311281_孙驰_实验作业五.pdf": "ea48c624177146aa3244cd643f87e39766f67bbb69ba4c49f117388519ae0f71"
+  },
+  "page_sha256": {
+    "page-1.png": "6861aee2a746a65ca269c1fa930ab4cdf3990f5c15e053fbc22977bb812e2d07",
+    "page-2.png": "ecc9d6a76c0751d0365c7f3c9b37d58f570a686d2ab0d097fdbda449c31830c2",
+    "page-3.png": "04f6325ed0edd9e3a8b41ad38ef82b91f190e85e204b23c9ee17015ee7df2239",
+    "page-4.png": "c1f9d3543174507ff51421ce2d9884fdea86ed7bbc53cfbe8f2915061ae7c614",
+    "page-5.png": "b4d8a54f84f80c3aaf04a056e5bdf1a506b6a12d7e37c164ae83ac028ef68e0b",
+    "page-6.png": "d8bc1c55660727198999e3c053ab47088a34c9b61432d5b0f256a63a88aebb3f",
+    "page-7.png": "0501b0035795d883d2c92c816872e0649dd2da7c6213ae18fd4274c0ec151645",
+    "page-8.png": "1ebdfb1592fba5dce65c8aaa9e61d2ab21ad40e35ff1dccfd7ce5fcd9849669f",
+    "page-9.png": "766edc1d12cf2664d2f6109f37b65c15e3988785f53e005547182f34e4dd38d4",
+    "page-10.png": "24661311b6006f7b0cd488a0fe36ff70321ebe74dab62831978f09f401b43bcb",
+    "page-11.png": "99f2086ba3cf9bc06ef0b44115b0c959fa1eb64ae3610091b669ab5b47543967",
+    "page-12.png": "2aacf749dca545c19b543df41ec032a077751d4f572a27ca887905b32fd303dc",
+    "page-13.png": "8956aec70731eaee29c95a09689ef36f85083a331e80932fd7545957d5b62e44",
+    "page-14.png": "b2d9e4991ef32e4a176b502b0367091a3e07a4988ddca3e97d54fc5c09b9ef5f",
+    "page-15.png": "7b24f2559a5fa7f5888f3af87893cb30361b9917dbd0a77a91cfad1a9e875bc3",
+    "page-16.png": "cec0336ebfb110076ea82ec011a861b46260d1b082e8ceb90b2625595ffe7197",
+    "page-17.png": "e4858a03d5e5d66e12d7be3034b9cc1540276cc206ecda5e5b1ae004fe98ff51"
+  }
+}

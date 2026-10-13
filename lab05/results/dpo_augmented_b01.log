@@ -1,0 +1,64 @@
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+trainable params: 921,600 || all params: 257,406,528 || trainable%: 0.3580
+[dpo] 1/40 loss=0.726387 margin=-0.065411
+[dpo] 2/40 loss=0.293708 margin=1.074723
+[dpo] 3/40 loss=1.296340 margin=-0.976781
+[dpo] 4/40 loss=0.255938 margin=1.232122
+[dpo] 5/40 loss=0.267129 margin=1.183487
+[dpo] 6/40 loss=0.730373 margin=-0.073115
+[dpo] 7/40 loss=0.181709 margin=1.613118
+[dpo] 8/40 loss=0.601348 margin=0.192884
+[dpo] 9/40 loss=0.522325 margin=0.376960
+[dpo] 10/40 loss=0.361394 margin=0.831655
+[dpo] 11/40 loss=0.368936 margin=0.807000
+[dpo] 12/40 loss=0.752416 margin=-0.115221
+[dpo] 13/40 loss=0.537624 margin=0.339768
+[dpo] 14/40 loss=0.500519 margin=0.431434
+[dpo] 15/40 loss=0.642543 margin=0.103905
+[dpo] 16/40 loss=0.238211 margin=1.313130
+[dpo] 17/40 loss=0.095196 margin=2.303844
+[dpo] 18/40 loss=0.574203 margin=0.253971
+[dpo] 19/40 loss=0.209131 margin=1.458405
+[dpo] 20/40 loss=1.169323 margin=-0.797422
+[dpo] 21/40 loss=0.724753 margin=-0.062243
+[dpo] 22/40 loss=0.104596 margin=2.204895
+[dpo] 23/40 loss=0.069966 margin=2.624565
+[dpo] 24/40 loss=0.617877 margin=0.156670
+[dpo] 25/40 loss=0.108968 margin=2.161718
+[dpo] 26/40 loss=0.748861 margin=-0.108487
+[dpo] 27/40 loss=0.516024 margin=0.392519
+[dpo] 28/40 loss=0.092915 margin=2.329258
+[dpo] 29/40 loss=0.096295 margin=2.291800
+[dpo] 30/40 loss=0.347554 margin=0.878030
+[dpo] 31/40 loss=0.684993 margin=0.016376
+[dpo] 32/40 loss=0.307929 margin=1.019975
+[dpo] 33/40 loss=0.246051 margin=1.276670
+[dpo] 34/40 loss=0.077740 margin=2.515257
+[dpo] 35/40 loss=0.294741 margin=1.070671
+[dpo] 36/40 loss=0.677235 margin=0.032082
+[dpo] 37/40 loss=0.051887 margin=2.932631
+[dpo] 38/40 loss=0.256766 margin=1.228460
+[dpo] 39/40 loss=0.171581 margin=1.675684
+[dpo] 40/40 loss=0.040206 margin=3.193568
+[dpo_augmented_b01 P01] OK '2个。' gold=2
+[dpo_augmented_b01 P02] FAIL '2个。' gold=3
+[dpo_augmented_b01 P03] OK '2。' gold=2
+[dpo_augmented_b01 P04] FAIL '2。' gold=4
+[dpo_augmented_b01 P05] OK '3个。' gold=3
+[dpo_augmented_b01 P06] FAIL '变。' gold=方形
+[dpo_augmented_b01 P07] FAIL '三。' gold=圆形
+[dpo_augmented_b01 P08] FAIL '行。' gold=方形
+[dpo_augmented_b01 P09] FAIL '二。' gold=圆形
+[dpo_augmented_b01 P10] FAIL '形状。' gold=方形
+[dpo_augmented_b01 P11] FAIL '没。' gold=有
+[dpo_augmented_b01 P12] FAIL '没。' gold=没有
+[dpo_augmented_b01 P13] FAIL '没。' gold=有
+[dpo_augmented_b01 P14] FAIL '没。' gold=没有
+[dpo_augmented_b01 P15] OK '没有。' gold=没有
+[dpo_augmented_b01_added A01] OK '3。' gold=3
+[dpo_augmented_b01_added A02] OK '2。' gold=2
+[dpo_augmented_b01_added A03] FAIL '的。' gold=圆形
+[dpo_augmented_b01_added A04] FAIL '没。' gold=没有
+[dpo_augmented_b01_added A05] OK '2个。' gold=2

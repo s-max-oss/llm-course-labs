@@ -15,6 +15,7 @@
 | [lab03](./lab03) | 手搓最小LLM，CPU训练 | MiniGPT基线、8个训练变体、温度/top-k采样及禁止重复3-gram；代码、结果与[Word/PDF报告](./lab03/report/)已完成 |
 
 | [lab04](./lab04) | Vector RAG、GraphRAG与WikiRAG对比 | 本地BGE、20题评测、K扫描、RRF及DeepSeek现场知识构建/生成；九例评分由本人参考初评确认 |
+| [lab05](./lab05) | SmolVLM QLoRA与DPO偏好对齐 | A30正式SFT60步、DPO40步、12/17偏好对与β扫描；代码、结果及[Word/PDF报告](./lab05/report/)已完成 |
 
 ## 本地课程资料归档
 

@@ -1,0 +1,253 @@
+{
+  "status": "passed",
+  "must_fix": [],
+  "review_scope": "Read-only independent numerical,mathematical,provenance,requirements and attribution review. Final full-page visual QA performed by parent task; not a student blind review.",
+  "checked_files": {
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\提交材料\\2024311281_孙驰_实验作业五.docx": "bc0cc86b34513656718cd1da1b2771b0abc46691cb7ab7d0ad53d4760d3dbfc2",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\tmp\\lab05\\render_7\\report.pdf": "ea48c624177146aa3244cd643f87e39766f67bbb69ba4c49f117388519ae0f71",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\hw5_dpo.py": "19d24732055fc94a8ce48707dfe02d2b741f2694c7bacc9909d0c8affa27446a",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\test_hw5_dpo.py": "c4f0857fb8ffc3e9d70ca0b9fd70bd31cf66fa3f52176c24f656ca7334880e2a",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\analyze_results.py": "06e723f0973dc04fe89b75d12f01eeef1bd8e847059934d6eb7a3b975b8c8a89",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\analysis\\summary.json": "ba2a1ab5e4217016a98767bfe6d5a676604e8b2de93eee607a43440f3433d3fb",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\analysis\\dpo_hand_checks.json": "577f2f7994ce9da036aae7eba77fbe6280bcf07b6c473af598667cf28c0cb90d",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\report\\human_scores.json": "efca566043b648654dc6012ca98b77c0f157c2b99c81ae381516071e1b3ba169",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\README.md": "281d13c292c901b7d70e8ea594dbef80726e6b38d73f34d1e23b3a7990574153",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\report\\README.md": "170c8e20db25c2049164b10a88aba3c7d030f5b4cf9c33b2e9bd8228f944276d",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\bootstrap_model.py": "ec163643547150ba749d61f29ce7ed764b62e957462f0989cd0291d15873d25c",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\results\\manifest.json": "2ace0c4bc04988c03980a7431b758e30bfeb02ea67249c88418042928bcbc74d",
+    "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\provenance\\source_at_run.py": "359546e7814128a9ab5a082ec775043ae5ab5293942204c5d26434930a80c2d6"
+  },
+  "docx_sha256": "bc0cc86b34513656718cd1da1b2771b0abc46691cb7ab7d0ad53d4760d3dbfc2",
+  "pdf_sha256": "ea48c624177146aa3244cd643f87e39766f67bbb69ba4c49f117388519ae0f71",
+  "pdf_pages": 17,
+  "table_count": 16,
+  "figure_count": 5,
+  "native_math_count": 6,
+  "check_table": [
+    {
+      "check": "requirements_and_template",
+      "status": "passed",
+      "finding": "Nine original template chapters preserved, all six guide questions answered, five added pairs and beta option included.",
+      "report_location": "pp1-17"
+    },
+    {
+      "check": "experiment_environment",
+      "status": "passed",
+      "finding": "A30, Python3.10.20, torch2.6.0+cu124, package versions, processor 512 single view and 64 visual tokens match metadata and primary model card.",
+      "report_location": "pp1-3"
+    },
+    {
+      "check": "optimizer_steps_and_timing",
+      "status": "passed",
+      "finding": "60 SFT plus four DPO x40 =220; command wall times,312s Slurm elapsed and training/peak allocation values match original logs.",
+      "report_location": "pp1-2"
+    },
+    {
+      "check": "parameter_scope",
+      "status": "passed",
+      "finding": "921600/257406528=0.358033%, 30 language q/k/v/o layers,240 tensors; vision excluded; r16 estimate and denominator correct.",
+      "report_location": "pp2-3,11"
+    },
+    {
+      "check": "masking_sequence_math",
+      "status": "passed",
+      "finding": "Prompt -100 labels, answer+EOS, causal shift, SFT mean CE versus DPO sum log probability described correctly.",
+      "report_location": "p3"
+    },
+    {
+      "check": "nf4_bf16_control",
+      "status": "passed",
+      "finding": "NF4 main baseline matches training base preparation; BF16 is separately labeled and not mixed into the primary comparison.",
+      "report_location": "pp3-6"
+    },
+    {
+      "check": "main_semantic_scores",
+      "status": "passed",
+      "finding": "Main NF4/SFT/17-pair DPO scores7/15,6/15,6/15 and category counts1/4/2,3/0/3,3/0/3 match independent audit.",
+      "report_location": "pp5-6"
+    },
+    {
+      "check": "raw_rule_and_semantic",
+      "status": "passed",
+      "finding": "Original6/15,6/15,4/15 table and10/140 semantic changes are preserved separately; no original JSON or manifest alteration.",
+      "report_location": "pp4-6,17"
+    },
+    {
+      "check": "all_fifteen_rows",
+      "status": "passed",
+      "finding": "All45 main-stage correctness marks match source rows and image-grounded semantic decisions; failure rows retained.",
+      "report_location": "p6"
+    },
+    {
+      "check": "nine_quoted_answers",
+      "status": "passed",
+      "finding": "3questions x3stages, all9 full quotes match raw evaluation JSON exactly and human_scores source hashes.",
+      "report_location": "p7"
+    },
+    {
+      "check": "human_confirmation",
+      "status": "passed",
+      "finding": "Nine scores2/1/3,2/2/5,2/2/3 match human_scores.json; student confirmed AI suggestions and is explicitly not described as blind reviewer.",
+      "report_location": "pp7,10"
+    },
+    {
+      "check": "bare_negative_quality",
+      "status": "passed",
+      "finding": "P12 DPO 没 remains a correct negative answer;3/5 penalizes expression completeness without reversing factual polarity.",
+      "report_location": "pp7,9,16"
+    },
+    {
+      "check": "paired_preference_scope",
+      "status": "passed",
+      "finding": "SFT over base2wins1tie; DPO over SFT0wins2ties1loss correctly derived from confirmed9scores and limited to3questions.",
+      "report_location": "p7"
+    },
+    {
+      "check": "loss_accuracy_conclusion",
+      "status": "passed",
+      "finding": "Full-pool loss .5113→.3398 and margin .5432→1.6910 with falling absolute chosen logp are correct; no claim semantic accuracy improved.",
+      "report_location": "pp8,15"
+    },
+    {
+      "check": "beta_conclusion",
+      "status": "passed",
+      "finding": "All three betas semantically6/15 and added4/5; no semantic winner or unsupported beta.5 factual benefit. Wording now says rule score and expression completeness, not unperformed beta ratings.",
+      "report_location": "pp8,16"
+    },
+    {
+      "check": "failure_examples",
+      "status": "passed",
+      "finding": "Two count failures,two existence failures,and two answer-correct/extra-claim examples are real outputs; low-quality short answers are not fabricated new hallucinations.",
+      "report_location": "pp8-9"
+    },
+    {
+      "check": "reference_and_adapter",
+      "status": "passed",
+      "finding": "Reference is frozen adapter-disabled same NF4 base,not frozen SFT; eval/no_grad/detached cache and policy dropout off explained; same SFT start,no nesting.",
+      "report_location": "p13"
+    },
+    {
+      "check": "four_hand_calculations",
+      "status": "passed",
+      "finding": "Two prescribed plus two self-chosen cases independently recomputed and all four actual CLI commands rerun with exact matching JSON.",
+      "report_location": "pp11,14"
+    },
+    {
+      "check": "implicit_reward_theory",
+      "status": "passed",
+      "finding": "r=beta*log(policy/reference)+beta*logZ and Bradley-Terry cancellation are correct; beta as KL coefficient is appropriately qualified.",
+      "report_location": "p11"
+    },
+    {
+      "check": "added_pair_data",
+      "status": "passed",
+      "finding": "All five chosen/rejected texts and failure modes match declared image facts; added outputs match original records and no unsupported hallucination-suppression claim.",
+      "report_location": "pp13,16"
+    },
+    {
+      "check": "pool_before_after",
+      "status": "passed",
+      "finding": "All four full-pool before/after loss,margin,positive-pair counts match independent double-precision recalculation.",
+      "report_location": "p15"
+    },
+    {
+      "check": "training_scope_limits",
+      "status": "passed",
+      "finding": "15 original questions reused for SFT/evaluation; five added questions used by augmented DPO; no held-out or multi-seed generalization claim.",
+      "report_location": "pp4,8,16"
+    },
+    {
+      "check": "scaffold_and_resources",
+      "status": "passed",
+      "finding": "DPO check sign,30/12-step ceilings,save/default paths,substring scoring and reference/nesting bugs documented accurately;14588/14593/14595 completed0:0 and queue empty.",
+      "report_location": "p9"
+    },
+    {
+      "check": "ai_attribution",
+      "status": "passed",
+      "finding": "Codex implementation/execution/checking and student resource/scope/scoring confirmation roles disclosed; no false student-independent coding claim.",
+      "report_location": "pp10,12"
+    },
+    {
+      "check": "local_regressions_and_code_diff",
+      "status": "passed",
+      "finding": "11/11 tests independently rerun; only judge and main differ in training source AST; all training and loading functions unchanged.",
+      "report_location": "p17"
+    },
+    {
+      "check": "readme_and_reproduction",
+      "status": "passed",
+      "finding": "Both READMEs match report and raw/semantic data; bootstrap defaults to recorded immutable revision; CPU fallback labeled unquantized FP32+LoRA.",
+      "report_location": "README files"
+    },
+    {
+      "check": "document_structure_and_images",
+      "status": "passed",
+      "finding": "17 PDF pages,16 tables,5 embedded PNGs,6 native math objects; final body/tables/math unchanged,only two plot image parts changed.",
+      "report_location": "entire document"
+    },
+    {
+      "check": "raw_integrity_after_report",
+      "status": "passed",
+      "finding": "All115 original manifest hashes independently checked again after report creation.",
+      "report_location": "results/manifest.json"
+    }
+  ],
+  "unit_tests": {
+    "passed": 11,
+    "failed": 0,
+    "seconds": 0.415,
+    "interpreter": "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\lab05_smolvlm\\.venv\\Scripts\\python.exe",
+    "fresh_base_three_stage_eval_mock_regression_passed": true
+  },
+  "code_diff": {
+    "original_training_sha256": "359546e7814128a9ab5a082ec775043ae5ab5293942204c5d26434930a80c2d6",
+    "current_source_sha256": "19d24732055fc94a8ce48707dfe02d2b741f2694c7bacc9909d0c8affa27446a",
+    "changed_functions": [
+      "judge",
+      "main"
+    ],
+    "AST_equal_after_removing_judge_and_main": true,
+    "all_training_functions_unchanged": true,
+    "original_manifest_verified": 115,
+    "rule_rescoring_changes": 0,
+    "semantic_review_changes": 10
+  },
+  "resolved_review_notes": [
+    {
+      "initial_location": "Initial candidate PDF p9, chapter5 paragraph4",
+      "issue": "Beta output-form comparison could be read as measured expression scores for every beta.",
+      "resolution": "Changed to 原规则得分和表达完整性不同; verified in final body and PDF p8."
+    }
+  ],
+  "visual_qa": {
+    "performed_by": "parent task",
+    "status": "passed_as_reported_by_parent",
+    "pages_checked": 17,
+    "method": "Pages1-3 pixel hashes match previously inspected render4; pages4-17 inspected in render6; render6-to-render7 changes limited to pages5 and16, both reinspected after plot layout correction.",
+    "reviewer_independent_checks": "Final PDF text matches render6 on every page; DOCX tables/body/native math unchanged. Embedded chart hashes match latest source PNGs. Sample image panel independently inspected."
+  },
+  "primary_sources_cross_checked": [
+    {
+      "url": "https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct",
+      "supports": "Model card English language and64 tokens for512x512 patches, also matched saved processor_config."
+    },
+    {
+      "url": "https://arxiv.org/pdf/2305.18290",
+      "supports": "DPO log-ratio loss,implicit reward and KL regularization convention."
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.14314",
+      "supports": "QLoRA frozen4-bit base,adapter training,NF4/double quantization/paged optimizer."
+    },
+    {
+      "url": "https://arxiv.org/abs/2106.09685",
+      "supports": "LoRA low-rank trainable update on frozen model."
+    }
+  ],
+  "limitations_and_packaging": [
+    "Base model files were not downloaded to reviewer workspace; their recorded provenance hashes originate from HPC bootstrap,as the report accurately says.",
+    "Parent finalization will copy these exact final DOCX/PDF bytes into report/ so the README links resolve; this is packaging,not a report-body correction.",
+    "The report evidence is one-seed training-set resubstitution; semantic accuracy and confirmed expression/faithfulness ratings remain distinct."
+  ]
+}

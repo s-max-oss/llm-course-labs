@@ -1,0 +1,74 @@
+[
+  {
+    "label": "指南给定例",
+    "arguments": "1.2,0.8,0.9,0.6,0.1",
+    "command": [
+      "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\lab05_smolvlm\\.venv\\Scripts\\python.exe",
+      "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\hw5_dpo.py",
+      "--dpo_check=1.2,0.8,0.9,0.6,0.1"
+    ],
+    "output": {
+      "policy_chosen": 1.2,
+      "reference_chosen": 0.8,
+      "policy_rejected": 0.9,
+      "reference_rejected": 0.6,
+      "beta": 0.1,
+      "margin": 0.009999999999999988,
+      "loss": 0.6881596805078624
+    }
+  },
+  {
+    "label": "思考题2",
+    "arguments": "1.5,1.0,0.2,0.6,0.1",
+    "command": [
+      "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\lab05_smolvlm\\.venv\\Scripts\\python.exe",
+      "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\hw5_dpo.py",
+      "--dpo_check=1.5,1.0,0.2,0.6,0.1"
+    ],
+    "output": {
+      "policy_chosen": 1.5,
+      "reference_chosen": 1.0,
+      "policy_rejected": 0.2,
+      "reference_rejected": 0.6,
+      "beta": 0.1,
+      "margin": 0.09,
+      "loss": 0.6491593390256101
+    }
+  },
+  {
+    "label": "自选A",
+    "arguments": "-4,-3,-2,-3,0.1",
+    "command": [
+      "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\lab05_smolvlm\\.venv\\Scripts\\python.exe",
+      "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\hw5_dpo.py",
+      "--dpo_check=-4,-3,-2,-3,0.1"
+    ],
+    "output": {
+      "policy_chosen": -4.0,
+      "reference_chosen": -3.0,
+      "policy_rejected": -2.0,
+      "reference_rejected": -3.0,
+      "beta": 0.1,
+      "margin": -0.2,
+      "loss": 0.7981388693815918
+    }
+  },
+  {
+    "label": "自选B",
+    "arguments": "-2,-3,-4,-3,0.5",
+    "command": [
+      "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\lab05_smolvlm\\.venv\\Scripts\\python.exe",
+      "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab05\\hw5_dpo.py",
+      "--dpo_check=-2,-3,-4,-3,0.5"
+    ],
+    "output": {
+      "policy_chosen": -2.0,
+      "reference_chosen": -3.0,
+      "policy_rejected": -4.0,
+      "reference_rejected": -3.0,
+      "beta": 0.5,
+      "margin": 1.0,
+      "loss": 0.31326168751822286
+    }
+  }
+]

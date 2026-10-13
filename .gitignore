@@ -11,3 +11,8 @@ lab03/smoke_results/
 lab04/.embedding_cache/
 lab04/.venv/
 lab04/.env*
+
+lab05/.venv/
+lab05/model/
+lab05/.cache/
+lab05/.env*

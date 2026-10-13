@@ -1,0 +1,29 @@
+[
+  {
+    "policy_chosen": 1.2,
+    "reference_chosen": 0.8,
+    "policy_rejected": 0.9,
+    "reference_rejected": 0.6,
+    "beta": 0.1,
+    "margin": 0.009999999999999988,
+    "loss": 0.6881596805078624
+  },
+  {
+    "policy_chosen": 1.5,
+    "reference_chosen": 1.0,
+    "policy_rejected": 0.2,
+    "reference_rejected": 0.6,
+    "beta": 0.1,
+    "margin": 0.09,
+    "loss": 0.6491593390256101
+  },
+  {
+    "policy_chosen": -4.0,
+    "reference_chosen": -3.0,
+    "policy_rejected": -2.0,
+    "reference_rejected": -3.0,
+    "beta": 0.1,
+    "margin": -0.2,
+    "loss": 0.7981388693815918
+  }
+]

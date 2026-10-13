@@ -1,0 +1,57 @@
+gpu4
+Tue Oct 13 23:57:41 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.195.03             Driver Version: 570.195.03     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A30                     Off |   00000000:39:00.0 Off |                    0 |
+| N/A   36C    P0             30W /  165W |       0MiB /  24576MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+test_answer_boundary_and_eos_masks (test_hw5_dpo.CoreTests) ... ok
+test_cli_training_modes_use_matching_adapter_locations (test_hw5_dpo.CoreTests) ... [data] 15 guide images; 15 questions; 12+5 preferences
+ok
+test_counts_and_shapes_reject_ambiguous_outputs (test_hw5_dpo.CoreTests) ... ok
+test_dpo_gradient_direction_and_detached_reference (test_hw5_dpo.CoreTests) ... ok
+test_dpo_hand_computation_and_stability (test_hw5_dpo.CoreTests) ... ok
+test_exist_negation_is_not_positive (test_hw5_dpo.CoreTests) ... ok
+test_gold_matches_declared_image_objects (test_hw5_dpo.CoreTests) ... ok
+test_image_generation_reproducible (test_hw5_dpo.CoreTests) ... [data] 15 guide images; 15 questions; 12+5 preferences
+[data] 15 guide images; 15 questions; 12+5 preferences
+ok
+test_sequence_sum_causal_shift_and_prompt_mask (test_hw5_dpo.CoreTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.234s
+
+OK
+RUN make_data ['/home/u2024311281/llm_course_lab05/.venv/bin/python', '/home/u2024311281/llm_course_lab05/hw5_dpo.py', '--mode', 'make_data']
+DONE make_data 1.5142478458583355
+RUN environment ['/home/u2024311281/llm_course_lab05/.venv/bin/python', '/home/u2024311281/llm_course_lab05/hw5_dpo.py', '--mode', 'environment', '--output', '/home/u2024311281/llm_course_lab05/results']
+DONE environment 1.5662766825407743
+RUN baseline_bf16 ['/home/u2024311281/llm_course_lab05/.venv/bin/python', '/home/u2024311281/llm_course_lab05/hw5_dpo.py', '--model', '/home/u2024311281/llm_course_lab05/model', '--offline', '--device', 'cuda', '--require_nf4', '--images', '/home/u2024311281/llm_course_lab05/data', '--mode', 'infer', '--full_precision', '--stage', 'baseline_bf16', '--output', '/home/u2024311281/llm_course_lab05/results/baseline_bf16']
+DONE baseline_bf16 13.491332601755857
+RUN baseline_nf4 ['/home/u2024311281/llm_course_lab05/.venv/bin/python', '/home/u2024311281/llm_course_lab05/hw5_dpo.py', '--model', '/home/u2024311281/llm_course_lab05/model', '--offline', '--device', 'cuda', '--require_nf4', '--images', '/home/u2024311281/llm_course_lab05/data', '--mode', 'infer', '--stage', 'baseline_nf4', '--output', '/home/u2024311281/llm_course_lab05/results/baseline_nf4']
+DONE baseline_nf4 18.900593096390367
+RUN sft ['/home/u2024311281/llm_course_lab05/.venv/bin/python', '/home/u2024311281/llm_course_lab05/hw5_dpo.py', '--model', '/home/u2024311281/llm_course_lab05/model', '--offline', '--device', 'cuda', '--require_nf4', '--images', '/home/u2024311281/llm_course_lab05/data', '--mode', 'sft', '--steps', '60', '--output', '/home/u2024311281/llm_course_lab05/results/sft']
+DONE sft 39.848023334518075
+RUN dpo_original_b01 ['/home/u2024311281/llm_course_lab05/.venv/bin/python', '/home/u2024311281/llm_course_lab05/hw5_dpo.py', '--model', '/home/u2024311281/llm_course_lab05/model', '--offline', '--device', 'cuda', '--require_nf4', '--images', '/home/u2024311281/llm_course_lab05/data', '--mode', 'dpo', '--steps', '40', '--sft_adapter', '/home/u2024311281/llm_course_lab05/results/sft/adapter', '--pairs', 'original', '--beta', '0.1', '--output', '/home/u2024311281/llm_course_lab05/results/dpo_original_b01']
+DONE dpo_original_b01 43.373063715174794
+RUN dpo_augmented_b01 ['/home/u2024311281/llm_course_lab05/.venv/bin/python', '/home/u2024311281/llm_course_lab05/hw5_dpo.py', '--model', '/home/u2024311281/llm_course_lab05/model', '--offline', '--device', 'cuda', '--require_nf4', '--images', '/home/u2024311281/llm_course_lab05/data', '--mode', 'dpo', '--steps', '40', '--sft_adapter', '/home/u2024311281/llm_course_lab05/results/sft/adapter', '--pairs', 'augmented', '--beta', '0.1', '--output', '/home/u2024311281/llm_course_lab05/results/dpo_augmented_b01']
+DONE dpo_augmented_b01 51.74430443160236
+RUN dpo_augmented_b005 ['/home/u2024311281/llm_course_lab05/.venv/bin/python', '/home/u2024311281/llm_course_lab05/hw5_dpo.py', '--model', '/home/u2024311281/llm_course_lab05/model', '--offline', '--device', 'cuda', '--require_nf4', '--images', '/home/u2024311281/llm_course_lab05/data', '--mode', 'dpo', '--steps', '40', '--sft_adapter', '/home/u2024311281/llm_course_lab05/results/sft/adapter', '--pairs', 'augmented', '--beta', '0.05', '--output', '/home/u2024311281/llm_course_lab05/results/dpo_augmented_b005']
+DONE dpo_augmented_b005 84.34601479768753
+RUN dpo_augmented_b05 ['/home/u2024311281/llm_course_lab05/.venv/bin/python', '/home/u2024311281/llm_course_lab05/hw5_dpo.py', '--model', '/home/u2024311281/llm_course_lab05/model', '--offline', '--device', 'cuda', '--require_nf4', '--images', '/home/u2024311281/llm_course_lab05/data', '--mode', 'dpo', '--steps', '40', '--sft_adapter', '/home/u2024311281/llm_course_lab05/results/sft/adapter', '--pairs', 'augmented', '--beta', '0.5', '--output', '/home/u2024311281/llm_course_lab05/results/dpo_augmented_b05']
+DONE dpo_augmented_b05 53.52443235553801
+SUITE_COMPLETE

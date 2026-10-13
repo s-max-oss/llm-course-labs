@@ -1,0 +1,2956 @@
+{
+  "review_type": "Independent read-only artifact and image-grounded answer audit; not a blind review",
+  "checks": {
+    "manifest": {
+      "listed_files": 115,
+      "hash_mismatches": [],
+      "missing_or_unlisted_files": [],
+      "manifest_sha256": "2ace0c4bc04988c03980a7431b758e30bfeb02ea67249c88418042928bcbc74d"
+    },
+    "source": {
+      "training_sha256": "359546e7814128a9ab5a082ec775043ae5ab5293942204c5d26434930a80c2d6",
+      "evaluator_sha256": "9c49de2a7a64dff53c162daf7b4922ec99c4eba70134d4d53515fc73a639584a",
+      "suite_sha256": "9a6787cda51f614e0726fe6606b2b866fb41ec968fdab2df74672bc7b078c50c",
+      "all_non_judge_ast_equal": true,
+      "local_archives_match_provenance": true
+    },
+    "images": {
+      "hashes_verified": 15,
+      "gold_truth_verified": [
+        {
+          "id": "P01",
+          "img": "img01",
+          "gold": "2"
+        },
+        {
+          "id": "P02",
+          "img": "img02",
+          "gold": "3"
+        },
+        {
+          "id": "P03",
+          "img": "img03",
+          "gold": "2"
+        },
+        {
+          "id": "P04",
+          "img": "img06",
+          "gold": "4"
+        },
+        {
+          "id": "P05",
+          "img": "img10",
+          "gold": "3"
+        },
+        {
+          "id": "P06",
+          "img": "img01",
+          "gold": "方形"
+        },
+        {
+          "id": "P07",
+          "img": "img05",
+          "gold": "圆形"
+        },
+        {
+          "id": "P08",
+          "img": "img09",
+          "gold": "方形"
+        },
+        {
+          "id": "P09",
+          "img": "img13",
+          "gold": "圆形"
+        },
+        {
+          "id": "P10",
+          "img": "img14",
+          "gold": "方形"
+        },
+        {
+          "id": "P11",
+          "img": "img11",
+          "gold": "有"
+        },
+        {
+          "id": "P12",
+          "img": "img12",
+          "gold": "没有"
+        },
+        {
+          "id": "P13",
+          "img": "img07",
+          "gold": "有"
+        },
+        {
+          "id": "P14",
+          "img": "img08",
+          "gold": "没有"
+        },
+        {
+          "id": "P15",
+          "img": "img15",
+          "gold": "没有"
+        },
+        {
+          "id": "A01",
+          "img": "img04",
+          "gold": "3"
+        },
+        {
+          "id": "A02",
+          "img": "img07",
+          "gold": "2"
+        },
+        {
+          "id": "A03",
+          "img": "img13",
+          "gold": "圆形"
+        },
+        {
+          "id": "A04",
+          "img": "img14",
+          "gold": "没有"
+        },
+        {
+          "id": "A05",
+          "img": "img15",
+          "gold": "2"
+        }
+      ],
+      "visual_inspection": "All 15 PNGs inspected in a contact sheet; declared colors/shapes/counts agree. Some shapes overlap (e.g. img10/img14), but objects remain visible.",
+      "contact_sheet": "tmp/lab05/review_contact_sheet.png",
+      "data_questions_and_preference_pairs_exactly_match_training_source": true
+    },
+    "evaluations": {
+      "rows_verified": 140,
+      "raw_log_answer_matches": 140,
+      "metric_aggregations_verified": 14,
+      "current_rule_vs_original_changes": [],
+      "semantic_vs_rule_changes": [
+        {
+          "stage": "baseline_nf4",
+          "id": "P08",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "The image is a circular shape with a green square in the center.",
+          "reason": "The question targets the green object; the output explicitly says green square. Additional circular-shape claim belongs in faithfulness assessment."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "id": "P12",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "id": "P14",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "id": "A04",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "id": "P12",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "id": "P14",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "id": "A04",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "id": "P12",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "id": "P14",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "id": "A04",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        }
+      ],
+      "stage_scores": {
+        "baseline_bf16": {
+          "main": {
+            "original_rule": {
+              "count": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "attr": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 0
+              },
+              "overall": {
+                "correct": 6,
+                "n": 15,
+                "accuracy": 0.4,
+                "legacy_correct": 0
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0
+              },
+              "attr": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "exist": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "overall": {
+                "correct": 6,
+                "n": 15,
+                "accuracy": 0.4
+              }
+            }
+          },
+          "added": {
+            "original_rule": {
+              "count": {
+                "correct": 0,
+                "n": 3,
+                "accuracy": 0.0,
+                "legacy_correct": 1
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0,
+                "legacy_correct": 0
+              },
+              "overall": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2,
+                "legacy_correct": 1
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 0,
+                "n": 3,
+                "accuracy": 0.0
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0
+              },
+              "overall": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2
+              }
+            }
+          }
+        },
+        "baseline_nf4": {
+          "main": {
+            "original_rule": {
+              "count": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2,
+                "legacy_correct": 0
+              },
+              "attr": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 2,
+                "n": 5,
+                "accuracy": 0.4,
+                "legacy_correct": 0
+              },
+              "overall": {
+                "correct": 6,
+                "n": 15,
+                "accuracy": 0.4,
+                "legacy_correct": 0
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2
+              },
+              "attr": {
+                "correct": 4,
+                "n": 5,
+                "accuracy": 0.8
+              },
+              "exist": {
+                "correct": 2,
+                "n": 5,
+                "accuracy": 0.4
+              },
+              "overall": {
+                "correct": 7,
+                "n": 15,
+                "accuracy": 0.4666666666666667
+              }
+            }
+          },
+          "added": {
+            "original_rule": {
+              "count": {
+                "correct": 1,
+                "n": 3,
+                "accuracy": 0.3333333333333333,
+                "legacy_correct": 0
+              },
+              "attr": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "overall": {
+                "correct": 2,
+                "n": 5,
+                "accuracy": 0.4,
+                "legacy_correct": 0
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 1,
+                "n": 3,
+                "accuracy": 0.3333333333333333
+              },
+              "attr": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0
+              },
+              "exist": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0
+              },
+              "overall": {
+                "correct": 2,
+                "n": 5,
+                "accuracy": 0.4
+              }
+            }
+          }
+        },
+        "sft": {
+          "main": {
+            "original_rule": {
+              "count": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 3
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 5
+              },
+              "overall": {
+                "correct": 6,
+                "n": 15,
+                "accuracy": 0.4,
+                "legacy_correct": 8
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "overall": {
+                "correct": 6,
+                "n": 15,
+                "accuracy": 0.4
+              }
+            }
+          },
+          "added": {
+            "original_rule": {
+              "count": {
+                "correct": 3,
+                "n": 3,
+                "accuracy": 1.0,
+                "legacy_correct": 3
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0,
+                "legacy_correct": 1
+              },
+              "overall": {
+                "correct": 4,
+                "n": 5,
+                "accuracy": 0.8,
+                "legacy_correct": 4
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 3,
+                "n": 3,
+                "accuracy": 1.0
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0
+              },
+              "overall": {
+                "correct": 4,
+                "n": 5,
+                "accuracy": 0.8
+              }
+            }
+          }
+        },
+        "dpo_original_b01": {
+          "main": {
+            "original_rule": {
+              "count": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2,
+                "legacy_correct": 1
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2,
+                "legacy_correct": 1
+              },
+              "overall": {
+                "correct": 2,
+                "n": 15,
+                "accuracy": 0.13333333333333333,
+                "legacy_correct": 2
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "overall": {
+                "correct": 4,
+                "n": 15,
+                "accuracy": 0.26666666666666666
+              }
+            }
+          },
+          "added": {
+            "original_rule": {
+              "count": {
+                "correct": 1,
+                "n": 3,
+                "accuracy": 0.3333333333333333,
+                "legacy_correct": 1
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "overall": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2,
+                "legacy_correct": 1
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 1,
+                "n": 3,
+                "accuracy": 0.3333333333333333
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0
+              },
+              "overall": {
+                "correct": 2,
+                "n": 5,
+                "accuracy": 0.4
+              }
+            }
+          }
+        },
+        "dpo_augmented_b01": {
+          "main": {
+            "original_rule": {
+              "count": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 3
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2,
+                "legacy_correct": 1
+              },
+              "overall": {
+                "correct": 4,
+                "n": 15,
+                "accuracy": 0.26666666666666666,
+                "legacy_correct": 4
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "overall": {
+                "correct": 6,
+                "n": 15,
+                "accuracy": 0.4
+              }
+            }
+          },
+          "added": {
+            "original_rule": {
+              "count": {
+                "correct": 3,
+                "n": 3,
+                "accuracy": 1.0,
+                "legacy_correct": 3
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "overall": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 3
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 3,
+                "n": 3,
+                "accuracy": 1.0
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0
+              },
+              "overall": {
+                "correct": 4,
+                "n": 5,
+                "accuracy": 0.8
+              }
+            }
+          }
+        },
+        "dpo_augmented_b005": {
+          "main": {
+            "original_rule": {
+              "count": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 3
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 5,
+                "accuracy": 0.2,
+                "legacy_correct": 1
+              },
+              "overall": {
+                "correct": 4,
+                "n": 15,
+                "accuracy": 0.26666666666666666,
+                "legacy_correct": 4
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "overall": {
+                "correct": 6,
+                "n": 15,
+                "accuracy": 0.4
+              }
+            }
+          },
+          "added": {
+            "original_rule": {
+              "count": {
+                "correct": 3,
+                "n": 3,
+                "accuracy": 1.0,
+                "legacy_correct": 3
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "overall": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 3
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 3,
+                "n": 3,
+                "accuracy": 1.0
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0
+              },
+              "overall": {
+                "correct": 4,
+                "n": 5,
+                "accuracy": 0.8
+              }
+            }
+          }
+        },
+        "dpo_augmented_b05": {
+          "main": {
+            "original_rule": {
+              "count": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 3
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6,
+                "legacy_correct": 5
+              },
+              "overall": {
+                "correct": 6,
+                "n": 15,
+                "accuracy": 0.4,
+                "legacy_correct": 8
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "attr": {
+                "correct": 0,
+                "n": 5,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 3,
+                "n": 5,
+                "accuracy": 0.6
+              },
+              "overall": {
+                "correct": 6,
+                "n": 15,
+                "accuracy": 0.4
+              }
+            }
+          },
+          "added": {
+            "original_rule": {
+              "count": {
+                "correct": 3,
+                "n": 3,
+                "accuracy": 1.0,
+                "legacy_correct": 3
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0,
+                "legacy_correct": 0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0,
+                "legacy_correct": 1
+              },
+              "overall": {
+                "correct": 4,
+                "n": 5,
+                "accuracy": 0.8,
+                "legacy_correct": 4
+              }
+            },
+            "reviewer_semantic": {
+              "count": {
+                "correct": 3,
+                "n": 3,
+                "accuracy": 1.0
+              },
+              "attr": {
+                "correct": 0,
+                "n": 1,
+                "accuracy": 0.0
+              },
+              "exist": {
+                "correct": 1,
+                "n": 1,
+                "accuracy": 1.0
+              },
+              "overall": {
+                "correct": 4,
+                "n": 5,
+                "accuracy": 0.8
+              }
+            }
+          }
+        }
+      },
+      "full_row_audit": [
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P01",
+          "gold": "2",
+          "prediction": "1.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P02",
+          "gold": "3",
+          "prediction": "0.0.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P03",
+          "gold": "2",
+          "prediction": "1.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P04",
+          "gold": "4",
+          "prediction": "Yes, the image contains a yellow circle.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P05",
+          "gold": "3",
+          "prediction": "1.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P06",
+          "gold": "方形",
+          "prediction": "The image is a simple, two-dimensional graphical representation of a simple, two-dimensional graph. The graph is a simple line graph, with a single horizontal",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P07",
+          "gold": "圆形",
+          "prediction": "The image represents a simple, yet effective, design layout for a website. The layout is divided into two main sections: the header and the footer.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P08",
+          "gold": "方形",
+          "prediction": "The green square is a common symbol in many cultures, often representing purity, purity of nature, or purity of the soul. It is a symbol of purity and",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P09",
+          "gold": "圆形",
+          "prediction": "The image contains a circular shape with a green and yellow color. The circle is made up of a series of lines that are interconnected, creating a pattern that resembles",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P10",
+          "gold": "方形",
+          "prediction": "1. The image is a square.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P11",
+          "gold": "有",
+          "prediction": "No.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P12",
+          "gold": "没有",
+          "prediction": "No.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P13",
+          "gold": "有",
+          "prediction": "No.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P14",
+          "gold": "没有",
+          "prediction": "No.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "main",
+          "id": "P15",
+          "gold": "没有",
+          "prediction": "No.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "added",
+          "id": "A01",
+          "gold": "3",
+          "prediction": "1.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "added",
+          "id": "A02",
+          "gold": "2",
+          "prediction": "[1, 2, 3]",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "added",
+          "id": "A03",
+          "gold": "圆形",
+          "prediction": "The green and yellow color scheme is a common color scheme used in many graphic design and design projects. It is often used to create a sense of vibrancy and",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "added",
+          "id": "A04",
+          "gold": "没有",
+          "prediction": "No.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_bf16",
+          "set": "added",
+          "id": "A05",
+          "gold": "2",
+          "prediction": "0.0.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P01",
+          "gold": "2",
+          "prediction": "The image contains a square with a blue square in the top left corner.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P02",
+          "gold": "3",
+          "prediction": "There are two colored circles in the image.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P03",
+          "gold": "2",
+          "prediction": "The image contains a square with a blue circle inside it.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P04",
+          "gold": "4",
+          "prediction": "There are two circles in the image.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P05",
+          "gold": "3",
+          "prediction": "There are three circles in the image.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P06",
+          "gold": "方形",
+          "prediction": "The image contains a square with a blue square in the top left corner.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P07",
+          "gold": "圆形",
+          "prediction": "The image is a screenshot of a graphical user interface.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P08",
+          "gold": "方形",
+          "prediction": "The image is a circular shape with a green square in the center.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "The question targets the green object; the output explicitly says green square. Additional circular-shape claim belongs in faithfulness assessment."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P09",
+          "gold": "圆形",
+          "prediction": "The image contains a circle.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P10",
+          "gold": "方形",
+          "prediction": "The image is a square with three squares in it.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P11",
+          "gold": "有",
+          "prediction": "The image is a screenshot of a webpage.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P12",
+          "gold": "没有",
+          "prediction": "Yes, there are blue squares.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P13",
+          "gold": "有",
+          "prediction": "Yes, there are.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P14",
+          "gold": "没有",
+          "prediction": "No.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "main",
+          "id": "P15",
+          "gold": "没有",
+          "prediction": "The image does not contain any text.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "added",
+          "id": "A01",
+          "gold": "3",
+          "prediction": "There are two squares in the image.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "added",
+          "id": "A02",
+          "gold": "2",
+          "prediction": "There are three square shapes.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "added",
+          "id": "A03",
+          "gold": "圆形",
+          "prediction": "The image contains a circle.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "added",
+          "id": "A04",
+          "gold": "没有",
+          "prediction": "Yes.",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "baseline_nf4",
+          "set": "added",
+          "id": "A05",
+          "gold": "2",
+          "prediction": "There are two circles in the image.",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P01",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P02",
+          "gold": "3",
+          "prediction": "2个。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P03",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P04",
+          "gold": "4",
+          "prediction": "2个。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P05",
+          "gold": "3",
+          "prediction": "3个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P06",
+          "gold": "方形",
+          "prediction": "形状。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P07",
+          "gold": "圆形",
+          "prediction": "三角。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P08",
+          "gold": "方形",
+          "prediction": "主题。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P09",
+          "gold": "圆形",
+          "prediction": "三角。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P10",
+          "gold": "方形",
+          "prediction": "形状。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P11",
+          "gold": "有",
+          "prediction": "没有。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P12",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P13",
+          "gold": "有",
+          "prediction": "没有。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P14",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "main",
+          "id": "P15",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "added",
+          "id": "A01",
+          "gold": "3",
+          "prediction": "3个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "added",
+          "id": "A02",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "added",
+          "id": "A03",
+          "gold": "圆形",
+          "prediction": "的。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "added",
+          "id": "A04",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "sft",
+          "set": "added",
+          "id": "A05",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P01",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P02",
+          "gold": "3",
+          "prediction": "5。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P03",
+          "gold": "2",
+          "prediction": "3。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P04",
+          "gold": "4",
+          "prediction": "5。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P05",
+          "gold": "3",
+          "prediction": "5。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P06",
+          "gold": "方形",
+          "prediction": "行。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P07",
+          "gold": "圆形",
+          "prediction": "另。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P08",
+          "gold": "方形",
+          "prediction": "行。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P09",
+          "gold": "圆形",
+          "prediction": "二。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P10",
+          "gold": "方形",
+          "prediction": "形状。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P11",
+          "gold": "有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P12",
+          "gold": "没有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P13",
+          "gold": "有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P14",
+          "gold": "没有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "main",
+          "id": "P15",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "added",
+          "id": "A01",
+          "gold": "3",
+          "prediction": "4。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "added",
+          "id": "A02",
+          "gold": "2",
+          "prediction": "2。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "added",
+          "id": "A03",
+          "gold": "圆形",
+          "prediction": "行。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "added",
+          "id": "A04",
+          "gold": "没有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "set": "added",
+          "id": "A05",
+          "gold": "2",
+          "prediction": "5个。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P01",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P02",
+          "gold": "3",
+          "prediction": "2个。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P03",
+          "gold": "2",
+          "prediction": "2。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P04",
+          "gold": "4",
+          "prediction": "2。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P05",
+          "gold": "3",
+          "prediction": "3个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P06",
+          "gold": "方形",
+          "prediction": "变。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P07",
+          "gold": "圆形",
+          "prediction": "三。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P08",
+          "gold": "方形",
+          "prediction": "行。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P09",
+          "gold": "圆形",
+          "prediction": "二。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P10",
+          "gold": "方形",
+          "prediction": "形状。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P11",
+          "gold": "有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P12",
+          "gold": "没有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P13",
+          "gold": "有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P14",
+          "gold": "没有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "main",
+          "id": "P15",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "added",
+          "id": "A01",
+          "gold": "3",
+          "prediction": "3。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "added",
+          "id": "A02",
+          "gold": "2",
+          "prediction": "2。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "added",
+          "id": "A03",
+          "gold": "圆形",
+          "prediction": "的。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "added",
+          "id": "A04",
+          "gold": "没有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "set": "added",
+          "id": "A05",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P01",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P02",
+          "gold": "3",
+          "prediction": "2个。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P03",
+          "gold": "2",
+          "prediction": "2。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P04",
+          "gold": "4",
+          "prediction": "2。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P05",
+          "gold": "3",
+          "prediction": "3个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P06",
+          "gold": "方形",
+          "prediction": "变。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P07",
+          "gold": "圆形",
+          "prediction": "三。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P08",
+          "gold": "方形",
+          "prediction": "行。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P09",
+          "gold": "圆形",
+          "prediction": "二。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P10",
+          "gold": "方形",
+          "prediction": "形状。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P11",
+          "gold": "有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P12",
+          "gold": "没有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P13",
+          "gold": "有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P14",
+          "gold": "没有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "main",
+          "id": "P15",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "added",
+          "id": "A01",
+          "gold": "3",
+          "prediction": "3。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "added",
+          "id": "A02",
+          "gold": "2",
+          "prediction": "2。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "added",
+          "id": "A03",
+          "gold": "圆形",
+          "prediction": "的。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "added",
+          "id": "A04",
+          "gold": "没有",
+          "prediction": "没。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": true,
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "set": "added",
+          "id": "A05",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P01",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P02",
+          "gold": "3",
+          "prediction": "2个。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P03",
+          "gold": "2",
+          "prediction": "2。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P04",
+          "gold": "4",
+          "prediction": "2。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P05",
+          "gold": "3",
+          "prediction": "3个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P06",
+          "gold": "方形",
+          "prediction": "另。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P07",
+          "gold": "圆形",
+          "prediction": "三角。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P08",
+          "gold": "方形",
+          "prediction": "主题。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P09",
+          "gold": "圆形",
+          "prediction": "三角。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P10",
+          "gold": "方形",
+          "prediction": "形状。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P11",
+          "gold": "有",
+          "prediction": "没有。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P12",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P13",
+          "gold": "有",
+          "prediction": "没有。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P14",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "main",
+          "id": "P15",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "added",
+          "id": "A01",
+          "gold": "3",
+          "prediction": "3。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "added",
+          "id": "A02",
+          "gold": "2",
+          "prediction": "2。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "added",
+          "id": "A03",
+          "gold": "圆形",
+          "prediction": "三角。",
+          "original_rule_correct": false,
+          "current_rule_correct": false,
+          "reviewer_semantic_correct": false,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "added",
+          "id": "A04",
+          "gold": "没有",
+          "prediction": "没有。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        },
+        {
+          "stage": "dpo_augmented_b05",
+          "set": "added",
+          "id": "A05",
+          "gold": "2",
+          "prediction": "2个。",
+          "original_rule_correct": true,
+          "current_rule_correct": true,
+          "reviewer_semantic_correct": true,
+          "reason": "Image-grounded target answer agrees with recorded rule decision."
+        }
+      ]
+    },
+    "training": {
+      "optimizer_steps_total": 220,
+      "per_stage": {
+        "sft": {
+          "optimizer_steps": 60,
+          "loss_first": 4.328772068023682,
+          "loss_last": 0.11877987533807755,
+          "loss_min": 0.08816403150558472,
+          "gradient_norm_min": 0.8015855550765991,
+          "gradient_norm_max": 7.881479263305664,
+          "sample_counts": {
+            "P11": 4,
+            "P02": 4,
+            "P01": 4,
+            "P12": 4,
+            "P05": 4,
+            "P04": 4,
+            "P10": 4,
+            "P03": 4,
+            "P06": 4,
+            "P13": 4,
+            "P15": 4,
+            "P07": 4,
+            "P08": 4,
+            "P14": 4,
+            "P09": 4
+          },
+          "run_train_seconds": 24.00635035149753,
+          "peak_cuda_allocated_bytes": 713713152
+        },
+        "dpo_original_b01": {
+          "optimizer_steps": 40,
+          "loss_first": 0.34331411123275757,
+          "loss_last": 1.145096778869629,
+          "loss_min": 0.014186443760991096,
+          "gradient_norm_min": 0.2207968682050705,
+          "gradient_norm_max": 12.83803653717041,
+          "sample_counts": {
+            "R11": 3,
+            "R02": 3,
+            "R01": 3,
+            "R05": 4,
+            "R04": 3,
+            "R12": 4,
+            "R07": 4,
+            "R10": 3,
+            "R09": 3,
+            "R03": 3,
+            "R06": 3,
+            "R08": 4
+          },
+          "run_train_seconds": 29.163111736997962,
+          "peak_cuda_allocated_bytes": 2757170176
+        },
+        "dpo_augmented_b01": {
+          "optimizer_steps": 40,
+          "loss_first": 0.7263871431350708,
+          "loss_last": 0.04020603001117706,
+          "loss_min": 0.04020603001117706,
+          "gradient_norm_min": 0.7132610082626343,
+          "gradient_norm_max": 6.6345720291137695,
+          "sample_counts": {
+            "R04": 3,
+            "R01": 2,
+            "R12": 2,
+            "R05": 3,
+            "A05": 2,
+            "A01": 2,
+            "R03": 3,
+            "R02": 2,
+            "R09": 2,
+            "R10": 2,
+            "A02": 3,
+            "A03": 2,
+            "A04": 3,
+            "R07": 3,
+            "R06": 2,
+            "R11": 2,
+            "R08": 2
+          },
+          "run_train_seconds": 34.35752228461206,
+          "peak_cuda_allocated_bytes": 2813124096
+        },
+        "dpo_augmented_b005": {
+          "optimizer_steps": 40,
+          "loss_first": 0.709633469581604,
+          "loss_last": 0.16546866297721863,
+          "loss_min": 0.16546866297721863,
+          "gradient_norm_min": 0.5117880702018738,
+          "gradient_norm_max": 2.9432690143585205,
+          "sample_counts": {
+            "R04": 3,
+            "R01": 2,
+            "R12": 2,
+            "R05": 3,
+            "A05": 2,
+            "A01": 2,
+            "R03": 3,
+            "R02": 2,
+            "R09": 2,
+            "R10": 2,
+            "A02": 3,
+            "A03": 2,
+            "A04": 3,
+            "R07": 3,
+            "R06": 2,
+            "R11": 2,
+            "R08": 2
+          },
+          "run_train_seconds": 40.222689842805266,
+          "peak_cuda_allocated_bytes": 2813124096
+        },
+        "dpo_augmented_b05": {
+          "optimizer_steps": 40,
+          "loss_first": 0.8699847459793091,
+          "loss_last": 0.0002754787856247276,
+          "loss_min": 1.5047129636514e-05,
+          "gradient_norm_min": 0.0006748692831024528,
+          "gradient_norm_max": 40.836727142333984,
+          "sample_counts": {
+            "R04": 3,
+            "R01": 2,
+            "R12": 2,
+            "R05": 3,
+            "A05": 2,
+            "A01": 2,
+            "R03": 3,
+            "R02": 2,
+            "R09": 2,
+            "R10": 2,
+            "A02": 3,
+            "A03": 2,
+            "A04": 3,
+            "R07": 3,
+            "R06": 2,
+            "R11": 2,
+            "R08": 2
+          },
+          "run_train_seconds": 32.31097833067179,
+          "peak_cuda_allocated_bytes": 2813124096
+        }
+      },
+      "DPO_margin_max_abs_error": 4.76837158203125e-07,
+      "DPO_loss_max_abs_error": 1.4488631616682568e-07,
+      "reference_scalars_fixed_before_after_and_steps": true,
+      "same_SFT_before_probabilities_across_all_DPO_runs": true,
+      "common_sft_sha256": "0e3ce63be613ad7d21db2cb62a0fe97f625dcdd57c29205ebb6059014dbaadba",
+      "full_preference_pool": {
+        "dpo_original_b01": {
+          "before": {
+            "loss": 0.4978091418007623,
+            "margin": 0.6072142995893955,
+            "positive_margin_pairs": 10,
+            "n": 12,
+            "policy_chosen": -10.563374263544878,
+            "policy_rejected": -29.755439897378285
+          },
+          "after": {
+            "loss": 0.27634376479060935,
+            "margin": 2.302253160874049,
+            "positive_margin_pairs": 11,
+            "n": 12,
+            "policy_chosen": -12.915819346904755,
+            "policy_rejected": -49.058273593584694
+          }
+        },
+        "dpo_augmented_b01": {
+          "before": {
+            "loss": 0.5112588307004654,
+            "margin": 0.5431824931327035,
+            "positive_margin_pairs": 13,
+            "n": 17,
+            "policy_chosen": -8.17488137939397,
+            "policy_rejected": -29.311225302079144
+          },
+          "after": {
+            "loss": 0.3398259676443878,
+            "margin": 1.6909596948062673,
+            "positive_margin_pairs": 14,
+            "n": 17,
+            "policy_chosen": -9.03314580636866,
+            "policy_rejected": -41.64726174578947
+          }
+        },
+        "dpo_augmented_b005": {
+          "before": {
+            "loss": 0.581086700535069,
+            "margin": 0.27159124656635175,
+            "positive_margin_pairs": 13,
+            "n": 17,
+            "policy_chosen": -8.17488137939397,
+            "policy_rejected": -29.311225302079144
+          },
+          "after": {
+            "loss": 0.41188344997952486,
+            "margin": 0.9125136301797979,
+            "positive_margin_pairs": 14,
+            "n": 17,
+            "policy_chosen": -9.07058187793283,
+            "policy_rejected": -43.025373472886926
+          }
+        },
+        "dpo_augmented_b05": {
+          "before": {
+            "loss": 0.5229446338746115,
+            "margin": 2.7159124656635174,
+            "positive_margin_pairs": 13,
+            "n": 17,
+            "policy_chosen": -8.17488137939397,
+            "policy_rejected": -29.311225302079144
+          },
+          "after": {
+            "loss": 0.2534412877521196,
+            "margin": 5.0067932833643525,
+            "positive_margin_pairs": 14,
+            "n": 17,
+            "policy_chosen": -8.908980709664961,
+            "policy_rejected": -34.62708626775181
+          }
+        }
+      }
+    },
+    "adapters": {
+      "sft": {
+        "sha256": "0e3ce63be613ad7d21db2cb62a0fe97f625dcdd57c29205ebb6059014dbaadba",
+        "tensor_count": 240,
+        "parameter_count": 921600,
+        "shape_counts": {
+          "(8, 576)": 120,
+          "(192, 8)": 60,
+          "(576, 8)": 60
+        },
+        "nonzero_B_tensors": 120,
+        "changed_tensors_from_SFT": 0,
+        "delta_L2_from_SFT": 0.0
+      },
+      "dpo_original_b01": {
+        "sha256": "3f1c600a919d9a0cd0269bfd9b97beba42fcb55ef4eff0108b3cd67192fc261a",
+        "tensor_count": 240,
+        "parameter_count": 921600,
+        "shape_counts": {
+          "(8, 576)": 120,
+          "(192, 8)": 60,
+          "(576, 8)": 60
+        },
+        "nonzero_B_tensors": 120,
+        "changed_tensors_from_SFT": 240,
+        "delta_L2_from_SFT": 0.7849240234337589
+      },
+      "dpo_augmented_b01": {
+        "sha256": "ada44a570f8b673dd44efadf699ef5749060a22c9a308e9fe54745f5dfc63517",
+        "tensor_count": 240,
+        "parameter_count": 921600,
+        "shape_counts": {
+          "(8, 576)": 120,
+          "(192, 8)": 60,
+          "(576, 8)": 60
+        },
+        "nonzero_B_tensors": 120,
+        "changed_tensors_from_SFT": 240,
+        "delta_L2_from_SFT": 0.6515247785494336
+      },
+      "dpo_augmented_b005": {
+        "sha256": "85863fc9756b2b4eee28ee9d58f60d246c9f5c0070ecfd2356f638d83078a60b",
+        "tensor_count": 240,
+        "parameter_count": 921600,
+        "shape_counts": {
+          "(8, 576)": 120,
+          "(192, 8)": 60,
+          "(576, 8)": 60
+        },
+        "nonzero_B_tensors": 120,
+        "changed_tensors_from_SFT": 240,
+        "delta_L2_from_SFT": 0.6895758923711045
+      },
+      "dpo_augmented_b05": {
+        "sha256": "e25cc1a4fd5ec8f306ff5f989c693f32d3adb6317f5a46bfb28cb147f5066d23",
+        "tensor_count": 240,
+        "parameter_count": 921600,
+        "shape_counts": {
+          "(8, 576)": 120,
+          "(192, 8)": 60,
+          "(576, 8)": 60
+        },
+        "nonzero_B_tensors": 120,
+        "changed_tensors_from_SFT": 240,
+        "delta_L2_from_SFT": 0.44233939146238344
+      },
+      "trainable_percent": 0.3580328778608132
+    },
+    "provenance": {
+      "job_id": 14595,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed_seconds": 312,
+      "queue_after_empty": true,
+      "gpu": "NVIDIA A30",
+      "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+      "packages": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.57.6",
+        "peft": "0.17.1",
+        "accelerate": "1.10.1",
+        "bitsandbytes": "0.48.1",
+        "pillow": "12.2.0",
+        "huggingface_hub": "0.36.2",
+        "numpy": "1.24.4"
+      },
+      "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+      "revision": "7e3e67edbbed1bf9888184d9df282b700a323964",
+      "model_file_hashes_recorded": 10,
+      "revision_matches_bootstrap_log": true,
+      "download_method": "bootstrap_model.py resolves model commit SHA, then snapshot_download(revision=SHA)",
+      "limitation": "Base model files were not copied locally. Their ten recorded hashes and pinned revision are provenance evidence; the reviewer could not independently rehash their bytes without retrieving the model.",
+      "all_ten_model_hashes_match_bootstrap_log": true
+    },
+    "commands": {
+      "commands_verified": 9,
+      "argv_and_duration_exactly_match_slurm": true,
+      "command_wall_seconds_sum": 308.3082888610661,
+      "slurm_elapsed_seconds": 312
+    },
+    "latest_unit_tests": {
+      "passed": 11,
+      "failed": 0,
+      "seconds": 0.415
+    }
+  },
+  "findings": [
+    {
+      "severity": "Important/P1 for report interpretation",
+      "issue": "Current automatic scoring rejects a natural bare negative answer and confuses target-specific shape answer with incidental shape claims.",
+      "resolution_needed": "Use the preserved original rule table plus a separate semantic review table. Under the requested loose task-answer standard, 10 of 140 judgments change; faithfulness is scored separately.",
+      "affected_cases": [
+        {
+          "stage": "baseline_nf4",
+          "id": "P08",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "The image is a circular shape with a green square in the center.",
+          "reason": "The question targets the green object; the output explicitly says green square. Additional circular-shape claim belongs in faithfulness assessment."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "id": "P12",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "id": "P14",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_original_b01",
+          "id": "A04",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "id": "P12",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "id": "P14",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b01",
+          "id": "A04",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "id": "P12",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "id": "P14",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        },
+        {
+          "stage": "dpo_augmented_b005",
+          "id": "A04",
+          "original_rule": false,
+          "human_semantic": true,
+          "prediction": "没。",
+          "reason": "Bare 没 is a natural unambiguous negative answer to 有没有; concise form affects expression quality, not factual polarity."
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "artifact_integrity_passed": true,
+    "training_and_numerics_passed": true,
+    "semantic_answer_audit_completed": true,
+    "additional_semantic_corrections_beyond_the_ten_reported": 0,
+    "report_ready_after_using_semantic_table": true,
+    "main_semantic_scores": {
+      "baseline_bf16": {
+        "correct": 6,
+        "n": 15,
+        "accuracy": 0.4
+      },
+      "baseline_nf4": {
+        "correct": 7,
+        "n": 15,
+        "accuracy": 0.4666666666666667
+      },
+      "sft": {
+        "correct": 6,
+        "n": 15,
+        "accuracy": 0.4
+      },
+      "dpo_original_b01": {
+        "correct": 4,
+        "n": 15,
+        "accuracy": 0.26666666666666666
+      },
+      "dpo_augmented_b01": {
+        "correct": 6,
+        "n": 15,
+        "accuracy": 0.4
+      },
+      "dpo_augmented_b005": {
+        "correct": 6,
+        "n": 15,
+        "accuracy": 0.4
+      },
+      "dpo_augmented_b05": {
+        "correct": 6,
+        "n": 15,
+        "accuracy": 0.4
+      }
+    },
+    "limits": [
+      "Train-set/image resubstitution only; no held-out generalization conclusion",
+      "Single seed; small dataset; no uncertainty estimates",
+      "SFT-to-augmented-DPO semantic accuracy stays 6/15, so rule-only drop is not evidence of factual deterioration",
+      "All three augmented beta runs are 6/15 semantically; beta .5 is not factually superior in this run",
+      "12-pair DPO remains lower at 4/15; loss reduction alone does not prove answer accuracy or faithfulness improvement",
+      "The five added questions are preference-training examples for augmented DPO, not held-out validation",
+      "Human scores may reasonably penalize incomplete wording while accepting its factual polarity"
+    ],
+    "remaining_report_review": "Report content passed and parent final17-page visual QA passed; final artifact hashes recorded in report_review.json."
+  },
+  "follow_up_reviews": [
+    {
+      "date": "2026-10-14",
+      "reviewed_source_sha256": "19d24732055fc94a8ce48707dfe02d2b741f2694c7bacc9909d0c8affa27446a",
+      "changed_from_run": [
+        "judge",
+        "main"
+      ],
+      "all_other_AST_equal": true,
+      "validation": "11/11 tests passed; new guide-compatible eval loads fresh base for every stage. Raw manifest still115/115;140 original rule scores unchanged;10 separately reviewed semantic corrections.",
+      "report_review": "tmp/lab05/report_review.json",
+      "report_status": "passed"
+    }
+  ]
+}

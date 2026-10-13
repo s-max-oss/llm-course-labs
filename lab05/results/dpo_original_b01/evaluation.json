@@ -1,0 +1,201 @@
+{
+  "stage": "dpo_original_b01",
+  "rows": [
+    {
+      "id": "P01",
+      "type": "count",
+      "img": "img01",
+      "question": "图中有几个红色圆形？",
+      "gold": "2",
+      "prediction": "2个。",
+      "correct": true,
+      "legacy_correct": true,
+      "seconds": 0.39985737204551697
+    },
+    {
+      "id": "P02",
+      "type": "count",
+      "img": "img02",
+      "question": "图中有几个绿色圆形？",
+      "gold": "3",
+      "prediction": "5。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.31978740729391575
+    },
+    {
+      "id": "P03",
+      "type": "count",
+      "img": "img03",
+      "question": "图中有几个黄色方形？",
+      "gold": "2",
+      "prediction": "3。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.32013156451284885
+    },
+    {
+      "id": "P04",
+      "type": "count",
+      "img": "img06",
+      "question": "图中有几个黄色圆形？",
+      "gold": "4",
+      "prediction": "5。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.31938684172928333
+    },
+    {
+      "id": "P05",
+      "type": "count",
+      "img": "img10",
+      "question": "图中有几个蓝色圆形？",
+      "gold": "3",
+      "prediction": "5。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.3208594527095556
+    },
+    {
+      "id": "P06",
+      "type": "attr",
+      "img": "img01",
+      "question": "图中蓝色的图形是什么形状？",
+      "gold": "方形",
+      "prediction": "行。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.32981667295098305
+    },
+    {
+      "id": "P07",
+      "type": "attr",
+      "img": "img05",
+      "question": "图中红色的图形是什么形状？",
+      "gold": "圆形",
+      "prediction": "另。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.38946448266506195
+    },
+    {
+      "id": "P08",
+      "type": "attr",
+      "img": "img09",
+      "question": "图中绿色的图形是什么形状？",
+      "gold": "方形",
+      "prediction": "行。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.3253676686435938
+    },
+    {
+      "id": "P09",
+      "type": "attr",
+      "img": "img13",
+      "question": "图中黄色的图形是什么形状？",
+      "gold": "圆形",
+      "prediction": "二。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.39036959409713745
+    },
+    {
+      "id": "P10",
+      "type": "attr",
+      "img": "img14",
+      "question": "图中蓝色的图形是什么形状？",
+      "gold": "方形",
+      "prediction": "形状。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.588812043890357
+    },
+    {
+      "id": "P11",
+      "type": "exist",
+      "img": "img11",
+      "question": "图里有没有黄色方形？",
+      "gold": "有",
+      "prediction": "没。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.39075153693556786
+    },
+    {
+      "id": "P12",
+      "type": "exist",
+      "img": "img12",
+      "question": "图里有没有红色圆形？",
+      "gold": "没有",
+      "prediction": "没。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.39126852713525295
+    },
+    {
+      "id": "P13",
+      "type": "exist",
+      "img": "img07",
+      "question": "图里有没有绿色圆形？",
+      "gold": "有",
+      "prediction": "没。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.3893645126372576
+    },
+    {
+      "id": "P14",
+      "type": "exist",
+      "img": "img08",
+      "question": "图里有没有绿色方形？",
+      "gold": "没有",
+      "prediction": "没。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.39106630347669125
+    },
+    {
+      "id": "P15",
+      "type": "exist",
+      "img": "img15",
+      "question": "图里有没有蓝色图形？",
+      "gold": "没有",
+      "prediction": "没有。",
+      "correct": true,
+      "legacy_correct": true,
+      "seconds": 0.4553271271288395
+    }
+  ],
+  "metrics": {
+    "count": {
+      "correct": 1,
+      "n": 5,
+      "accuracy": 0.2,
+      "legacy_correct": 1
+    },
+    "attr": {
+      "correct": 0,
+      "n": 5,
+      "accuracy": 0.0,
+      "legacy_correct": 0
+    },
+    "exist": {
+      "correct": 1,
+      "n": 5,
+      "accuracy": 0.2,
+      "legacy_correct": 1
+    },
+    "overall": {
+      "correct": 2,
+      "n": 15,
+      "accuracy": 0.13333333333333333,
+      "legacy_correct": 2
+    }
+  },
+  "seconds": 5.722064172849059,
+  "max_new_tokens": 32,
+  "decoding": "greedy",
+  "seed": 42,
+  "evaluation_scope": "training-image resubstitution, NOT held-out generalization"
+}

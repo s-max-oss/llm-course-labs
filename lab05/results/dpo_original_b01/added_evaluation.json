@@ -1,0 +1,91 @@
+{
+  "stage": "dpo_original_b01_added",
+  "rows": [
+    {
+      "id": "A01",
+      "type": "count",
+      "img": "img04",
+      "question": "图中有几个红色方形？",
+      "gold": "3",
+      "prediction": "4。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.32586742006242275
+    },
+    {
+      "id": "A02",
+      "type": "count",
+      "img": "img07",
+      "question": "图中有几个蓝色方形？",
+      "gold": "2",
+      "prediction": "2。",
+      "correct": true,
+      "legacy_correct": true,
+      "seconds": 0.3247654028236866
+    },
+    {
+      "id": "A03",
+      "type": "attr",
+      "img": "img13",
+      "question": "图中绿色的图形是什么形状？",
+      "gold": "圆形",
+      "prediction": "行。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.32407656125724316
+    },
+    {
+      "id": "A04",
+      "type": "exist",
+      "img": "img14",
+      "question": "图里有没有红色圆形？",
+      "gold": "没有",
+      "prediction": "没。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.39005909115076065
+    },
+    {
+      "id": "A05",
+      "type": "count",
+      "img": "img15",
+      "question": "图中有几个绿色圆形？",
+      "gold": "2",
+      "prediction": "5个。",
+      "correct": false,
+      "legacy_correct": false,
+      "seconds": 0.39007388055324554
+    }
+  ],
+  "metrics": {
+    "count": {
+      "correct": 1,
+      "n": 3,
+      "accuracy": 0.3333333333333333,
+      "legacy_correct": 1
+    },
+    "attr": {
+      "correct": 0,
+      "n": 1,
+      "accuracy": 0.0,
+      "legacy_correct": 0
+    },
+    "exist": {
+      "correct": 0,
+      "n": 1,
+      "accuracy": 0.0,
+      "legacy_correct": 0
+    },
+    "overall": {
+      "correct": 1,
+      "n": 5,
+      "accuracy": 0.2,
+      "legacy_correct": 1
+    }
+  },
+  "seconds": 1.7550109960138798,
+  "max_new_tokens": 32,
+  "decoding": "greedy",
+  "seed": 42,
+  "evaluation_scope": "training-image resubstitution, NOT held-out generalization"
+}
