@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "device": "cuda:0",
+    "dtype": "torch.bfloat16",
+    "nf4": true,
+    "processor_longest_edge": 512,
+    "image_splitting": false,
+    "parameters": {
+      "trainable": 921600,
+      "total": 257406528,
+      "percent": 0.3580328778608132
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "loss": 2.1823081970214844
+    },
+    {
+      "step": 2,
+      "loss": 2.0606789588928223
+    },
+    {
+      "step": 3,
+      "loss": 1.7023338079452515
+    },
+    {
+      "step": 4,
+      "loss": 1.716046690940857
+    },
+    {
+      "step": 5,
+      "loss": 2.0298964977264404
+    },
+    {
+      "step": 6,
+      "loss": 1.5186527967453003
+    },
+    {
+      "step": 7,
+      "loss": 4.695195198059082
+    },
+    {
+      "step": 8,
+      "loss": 4.488273620605469
+    },
+    {
+      "step": 9,
+      "loss": 7.793200969696045
+    },
+    {
+      "step": 10,
+      "loss": 8.213725090026855
+    }
+  ]
+}

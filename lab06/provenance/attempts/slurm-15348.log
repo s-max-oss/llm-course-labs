@@ -1,0 +1,122 @@
+gpu4
+Wed Oct 21 16:30:18 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.195.03             Driver Version: 570.195.03     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A30                     Off |   00000000:35:00.0 Off |                    0 |
+| N/A   30C    P0             28W /  165W |       0MiB /  24576MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+versions 3.10.20 2.6.0+cu124 4.57.6 0.17.1 0.48.1
+[data] 40 train + 15 held-out eval images; seed/rsi/eval: 15/15/15; root=.
+[seed] 15 training-only GT records
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[baseline E00] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[baseline E01] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[baseline E02] 0 '解决：小明的小明的小明的小明的小明的�' -> '解决：小明的小明的小明的小明的小明的�' | 第2行第4列
+[baseline E03] 0 '输：第1行第2行第3行第4行.' -> '输：第1行第2行第3行第4行.' | 第2行第3列
+[baseline E04] 0 '输：第几行第几列？\n\nThe answer is: 4×4' -> '输：第几行第几列？\n\nThe answer is: 4×4' | 第1行第4列
+[baseline E05] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第4列
+[baseline E06] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[baseline E07] 0 '实在，我们都知道，第几行第几列是第几行' -> '实在，我们都知道，第几行第几列是第几行' | 第3行第4列
+[baseline E08] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[baseline E09] 0 'There are two circles.' -> 'There are two circles.' | 1个
+[baseline E10] 0 'The image contains two distinct elements: a circle and a square. Here are the details:\n\n1. **Circle**:\n   - The circle is positioned at' -> 'The image contains two distinct elements: a circle and a square. Here are the details:\n\n1. **Circle**:\n   - The circle is positioned at' | 1个
+[baseline E11] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[baseline E12] 0 'The image contains a blue square with a red square inside it.' -> 'The image contains a blue square with a red square inside it.' | 有
+[baseline E13] 0 'The image does not contain any color gradients.' -> 'The image does not contain any color gradients.' | 有
+[baseline E14] 0 'Yes, there are no color patterns in this image.' -> 'Yes, there are no color patterns in this image.' | 没有
+[baseline] loc=0/8 count=0/4 exist=0/3 total=0/15 IoU=0.0000
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=921600/257406528 (0.3580%) NF4=True
+/home/u2024311281/.conda/envs/yolo/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+[sft] 1/10 loss=2.1823
+[sft] 2/10 loss=2.0607
+[sft] 3/10 loss=1.7023
+[sft] 4/10 loss=1.7160
+[sft] 5/10 loss=2.0299
+[sft] 6/10 loss=1.5187
+[sft] 7/10 loss=4.6952
+[sft] 8/10 loss=4.4883
+[sft] 9/10 loss=7.7932
+[sft] 10/10 loss=8.2137
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[baseline E00] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[baseline E01] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[baseline E02] 0 '解决：小明的小明的小明的小明的小明的�' -> '解决：小明的小明的小明的小明的小明的�' | 第2行第4列
+[baseline E03] 0 '输：第1行第2行第3行第4行.' -> '输：第1行第2行第3行第4行.' | 第2行第3列
+[baseline E04] 0 '输：第几行第几列？\n\nThe answer is: 4×4' -> '输：第几行第几列？\n\nThe answer is: 4×4' | 第1行第4列
+[baseline E05] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第4列
+[baseline E06] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[baseline E07] 0 '实在，我们都知道，第几行第几列是第几行' -> '实在，我们都知道，第几行第几列是第几行' | 第3行第4列
+[baseline E08] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[baseline E09] 0 'There are two circles.' -> 'There are two circles.' | 1个
+[baseline E10] 0 'The image contains two distinct elements: a circle and a square. Here are the details:\n\n1. **Circle**:\n   - The circle is positioned at' -> 'The image contains two distinct elements: a circle and a square. Here are the details:\n\n1. **Circle**:\n   - The circle is positioned at' | 1个
+[baseline E11] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[baseline E12] 0 'The image contains a blue square with a red square inside it.' -> 'The image contains a blue square with a red square inside it.' | 有
+[baseline E13] 0 'The image does not contain any color gradients.' -> 'The image does not contain any color gradients.' | 有
+[baseline E14] 0 'Yes, there are no color patterns in this image.' -> 'Yes, there are no color patterns in this image.' | 没有
+[baseline] loc=0/8 count=0/4 exist=0/3 total=0/15 IoU=0.0000
+[sft_eval E00] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[sft_eval E01] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[sft_eval E02] 0 '解决：小明的小明的小明的小明的小明的�' -> '解决：小明的小明的小明的小明的小明的�' | 第2行第4列
+[sft_eval E03] 0 '输出：第1行第2行。' -> '输出：第1行第2行。' | 第2行第3列
+[sft_eval E04] 0 '输：第1行第2行第3行\n\nThe answer is 4×4.' -> '输：第1行第2行第3行\n\nThe answer is 4×4.' | 第1行第4列
+[sft_eval E05] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第4列
+[sft_eval E06] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[sft_eval E07] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[sft_eval E08] 1 '1.' -> '1.' | 1个
+[sft_eval E09] 1 '1.' -> '1.' | 1个
+[sft_eval E10] 0 'The image contains two distinct elements: a circle and a square.' -> 'The image contains two distinct elements: a circle and a square.' | 1个
+[sft_eval E11] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[sft_eval E12] 1 'Yes.' -> 'Yes.' | 有
+[sft_eval E13] 1 'Yes.' -> 'Yes.' | 有
+[sft_eval E14] 0 'Yes.' -> 'Yes.' | 没有
+[sft_eval] loc=0/8 count=2/4 exist=2/3 total=4/15 IoU=0.0000
+[sft_tool_eval E00] 0 '4×4 = 16' -> '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' | 第3行第4列
+[sft_tool_eval E01] 0 '4×4 = 16' -> '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' | 第2行第1列
+[sft_tool_eval E02] 1 '解决：小明的小明的小明的小明的小明的�' -> '解决如下：\n1. 请用第2行第4列的问题样式' | 第2行第4列
+[sft_tool_eval E03] 0 '输出：第1行第2行。' -> '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' | 第2行第3列
+[sft_tool_eval E04] 1 '输：第1行第2行第3行\n\nThe answer is 4×4.' -> '1. 请用第1行第4列的问题样式回答。' | 第1行第4列
+[sft_tool_eval E05] 0 '4×4 = 16' -> '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' | 第1行第4列
+[sft_tool_eval E06] 1 '4×4 = 16' -> '1. 请用第1行第1列的问题样式回答。\n2. �' | 第1行第1列
+[sft_tool_eval E07] 0 '4×4 = 16' -> '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' | 第3行第4列
+[sft_tool_eval E08] 1 '1.' -> '1.' | 1个
+[sft_tool_eval E09] 1 '1.' -> '1.' | 1个
+[sft_tool_eval E10] 1 'The image contains two distinct elements: a circle and a square.' -> '1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1' | 1个
+[sft_tool_eval E11] 0 'There are two circles in the image.' -> '1.11111111111111111111111111111' | 1个
+[sft_tool_eval E12] 1 'Yes.' -> 'Yes.' | 有
+[sft_tool_eval E13] 1 'Yes.' -> 'Yes.' | 有
+[sft_tool_eval E14] 0 'Yes.' -> '不能验证像素检查发现绿色方形的' | 没有
+[sft_tool_eval] loc=3/8 count=3/4 exist=2/3 total=8/15 IoU=0.1586
+[baseline] 0/15
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=921600/257406528 (0.3580%) NF4=True
+[rsi1_direct T15] 0 '解决：小数表示第几行第几列？\n\n第几行第' -> '解决：小数表示第几行第几列？\n\n第几行第' | 第2行第3列
+[rsi1_direct T16] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[rsi1_direct T17] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第3列
+[rsi1_direct T18] 0 '4×4 = 16' -> '4×4 = 16' | 第4行第3列
+[rsi1_direct T19] 0 '输：第1行第2行第3行\n\nThe answer is 4×4.' -> '输：第1行第2行第3行\n\nThe answer is 4×4.' | 第3行第1列
+[rsi1_direct T20] 0 '4×4 = 16' -> '4×4 = 16' | 第4行第4列
+slurmstepd: error: *** JOB 15348 ON gpu4 CANCELLED AT 2026-10-21T16:33:03 ***

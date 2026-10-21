@@ -19,3 +19,11 @@
 /lab05/**/*.pdf binary
 /lab05/**/*.safetensors binary
 /lab05/provenance/slurm-*.log whitespace=-blank-at-eol
+/lab06/** text eol=lf
+/lab06/**/*.json -text -eol whitespace=cr-at-eol
+/lab06/**/*.png binary
+/lab06/**/*.docx binary
+/lab06/**/*.pdf binary
+/lab06/**/*.safetensors binary
+/lab06/provenance/slurm-*.log whitespace=-blank-at-eol
+/lab06/provenance/**/*.log whitespace=-blank-at-eol

@@ -1,0 +1,238 @@
+gpu4
+Thu Oct 22 00:00:12 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.195.03             Driver Version: 570.195.03     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A30                     Off |   00000000:35:00.0 Off |                    0 |
+| N/A   37C    P0             30W /  165W |       0MiB /  24576MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+versions 3.10.20 2.6.0+cu124 4.57.6 0.17.1 0.48.1
+[data] 40 train + 15 held-out eval images; seed/rsi/eval: 15/15/15; root=.
+[seed] 15 training-only GT records
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[baseline E00] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[baseline E01] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[baseline E02] 0 '解决：小明的小明的小明的小明的小明的�' -> '解决：小明的小明的小明的小明的小明的�' | 第2行第4列
+[baseline E03] 0 '输：第1行第2行第3行第4行.' -> '输：第1行第2行第3行第4行.' | 第2行第3列
+[baseline E04] 0 '输：第几行第几列？\n\nThe answer is: 4×4' -> '输：第几行第几列？\n\nThe answer is: 4×4' | 第1行第4列
+[baseline E05] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第4列
+[baseline E06] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[baseline E07] 0 '实在，我们都知道，第几行第几列是第几行' -> '实在，我们都知道，第几行第几列是第几行' | 第3行第4列
+[baseline E08] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[baseline E09] 0 'There are two circles.' -> 'There are two circles.' | 1个
+[baseline E10] 0 'The image contains two distinct elements: a circle and a square. Here are the details:\n\n1. **Circle**:\n   - The circle is positioned at' -> 'The image contains two distinct elements: a circle and a square. Here are the details:\n\n1. **Circle**:\n   - The circle is positioned at' | 1个
+[baseline E11] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[baseline E12] 0 'The image contains a blue square with a red square inside it.' -> 'The image contains a blue square with a red square inside it.' | 有
+[baseline E13] 0 'The image does not contain any color gradients.' -> 'The image does not contain any color gradients.' | 有
+[baseline E14] 0 'Yes, there are no color patterns in this image.' -> 'Yes, there are no color patterns in this image.' | 没有
+[baseline] loc=0/8 count=0/4 exist=0/3 total=0/15 IoU=0.0000
+[seed] 15 training-only GT records
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=921600/257406528 (0.3580%) NF4=True
+/home/u2024311281/.conda/envs/yolo/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+[sft] 1/10 loss=2.1823
+[sft] 2/10 loss=2.0607
+[sft] 3/10 loss=1.7023
+[sft] 4/10 loss=1.7160
+[sft] 5/10 loss=2.0299
+[sft] 6/10 loss=1.5187
+[sft] 7/10 loss=4.6952
+[sft] 8/10 loss=4.4883
+[sft] 9/10 loss=7.7932
+[sft] 10/10 loss=8.2137
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[baseline E00] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[baseline E01] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[baseline E02] 0 '解决：小明的小明的小明的小明的小明的�' -> '解决：小明的小明的小明的小明的小明的�' | 第2行第4列
+[baseline E03] 0 '输：第1行第2行第3行第4行.' -> '输：第1行第2行第3行第4行.' | 第2行第3列
+[baseline E04] 0 '输：第几行第几列？\n\nThe answer is: 4×4' -> '输：第几行第几列？\n\nThe answer is: 4×4' | 第1行第4列
+[baseline E05] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第4列
+[baseline E06] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[baseline E07] 0 '实在，我们都知道，第几行第几列是第几行' -> '实在，我们都知道，第几行第几列是第几行' | 第3行第4列
+[baseline E08] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[baseline E09] 0 'There are two circles.' -> 'There are two circles.' | 1个
+[baseline E10] 0 'The image contains two distinct elements: a circle and a square. Here are the details:\n\n1. **Circle**:\n   - The circle is positioned at' -> 'The image contains two distinct elements: a circle and a square. Here are the details:\n\n1. **Circle**:\n   - The circle is positioned at' | 1个
+[baseline E11] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[baseline E12] 0 'The image contains a blue square with a red square inside it.' -> 'The image contains a blue square with a red square inside it.' | 有
+[baseline E13] 0 'The image does not contain any color gradients.' -> 'The image does not contain any color gradients.' | 有
+[baseline E14] 0 'Yes, there are no color patterns in this image.' -> 'Yes, there are no color patterns in this image.' | 没有
+[baseline] loc=0/8 count=0/4 exist=0/3 total=0/15 IoU=0.0000
+[sft_eval E00] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[sft_eval E01] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[sft_eval E02] 0 '解决：小明的小明的小明的小明的小明的�' -> '解决：小明的小明的小明的小明的小明的�' | 第2行第4列
+[sft_eval E03] 0 '输出：第1行第2行。' -> '输出：第1行第2行。' | 第2行第3列
+[sft_eval E04] 0 '输：第1行第2行第3行\n\nThe answer is 4×4.' -> '输：第1行第2行第3行\n\nThe answer is 4×4.' | 第1行第4列
+[sft_eval E05] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第4列
+[sft_eval E06] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[sft_eval E07] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[sft_eval E08] 1 '1.' -> '1.' | 1个
+[sft_eval E09] 1 '1.' -> '1.' | 1个
+[sft_eval E10] 0 'The image contains two distinct elements: a circle and a square.' -> 'The image contains two distinct elements: a circle and a square.' | 1个
+[sft_eval E11] 0 'There are two circles in the image.' -> 'There are two circles in the image.' | 1个
+[sft_eval E12] 1 'Yes.' -> 'Yes.' | 有
+[sft_eval E13] 1 'Yes.' -> 'Yes.' | 有
+[sft_eval E14] 0 'Yes.' -> 'Yes.' | 没有
+[sft_eval] loc=0/8 count=2/4 exist=2/3 total=4/15 IoU=0.0000
+[sft_tool_eval E00] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[sft_tool_eval E01] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[sft_tool_eval E02] 0 '解决：小明的小明的小明的小明的小明的�' -> '4×4.' | 第2行第4列
+[sft_tool_eval E03] 0 '输出：第1行第2行。' -> '4×4 = 16' | 第2行第3列
+[sft_tool_eval E04] 0 '输：第1行第2行第3行\n\nThe answer is 4×4.' -> '4×4 = 16' | 第1行第4列
+[sft_tool_eval E05] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第4列
+[sft_tool_eval E06] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[sft_tool_eval E07] 0 '4×4 = 16' -> '4×4.' | 第3行第4列
+[sft_tool_eval E08] 1 '1.' -> '1.' | 1个
+[sft_tool_eval E09] 1 '1.' -> '1.' | 1个
+[sft_tool_eval E10] 1 'The image contains two distinct elements: a circle and a square.' -> '1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1' | 1个
+[sft_tool_eval E11] 1 'There are two circles in the image.' -> '1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1' | 1个
+[sft_tool_eval E12] 1 'Yes.' -> 'Yes.' | 有
+[sft_tool_eval E13] 1 'Yes.' -> 'Yes.' | 有
+[sft_tool_eval E14] 1 'Yes.' -> '没有绿色方形。' | 没有
+[sft_tool_eval] loc=0/8 count=4/4 exist=3/3 total=7/15 IoU=0.0000
+[baseline] 0/15
+[seed] 15 training-only GT records
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=921600/257406528 (0.3580%) NF4=True
+[rsi1_direct T15] 0 '解决：小数表示第几行第几列？\n\n第几行第' -> '解决：小数表示第几行第几列？\n\n第几行第' | 第2行第3列
+[rsi1_direct T16] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[rsi1_direct T17] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第3列
+[rsi1_direct T18] 0 '4×4 = 16' -> '4×4 = 16' | 第4行第3列
+[rsi1_direct T19] 0 '输：第1行第2行第3行\n\nThe answer is 4×4.' -> '输：第1行第2行第3行\n\nThe answer is 4×4.' | 第3行第1列
+[rsi1_direct T20] 0 '4×4 = 16' -> '4×4 = 16' | 第4行第4列
+[rsi1_direct T21] 0 '输：第1行第2行第3行' -> '输：第1行第2行第3行' | 第4行第1列
+[rsi1_direct T22] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[rsi1_direct T23] 1 '1.' -> '1.' | 1个
+[rsi1_direct T24] 1 '1.' -> '1.' | 1个
+[rsi1_direct T25] 1 '1.' -> '1.' | 1个
+[rsi1_direct T26] 0 'The image contains three squares.' -> 'The image contains three squares.' | 1个
+[rsi1_direct T27] 1 'Yes, there is a yellow square in the right corner of the image.' -> 'Yes, there is a yellow square in the right corner of the image.' | 有
+[rsi1_direct T28] 1 'Yes.' -> 'Yes.' | 有
+[rsi1_direct T29] 0 'Yes.' -> 'Yes.' | 没有
+[rsi1_direct] loc=0/8 count=3/4 exist=2/3 total=5/15 IoU=0.0000
+[rsi1_corrected T15] 0 '解决：小数表示第几行第几列？\n\n第几行第' -> '4×4 = 16' | 第2行第3列
+[rsi1_corrected T16] 0 '4×4 = 16' -> '4×4' | 第1行第1列
+[rsi1_corrected T17] 0 '4×4 = 16' -> '4×4.' | 第2行第3列
+[rsi1_corrected T18] 0 '4×4 = 16' -> '4×4' | 第4行第3列
+[rsi1_corrected T19] 0 '输：第1行第2行第3行\n\nThe answer is 4×4.' -> '4×4 = 16' | 第3行第1列
+[rsi1_corrected T20] 0 '4×4 = 16' -> '4×4 = 16' | 第4行第4列
+[rsi1_corrected T21] 0 '输：第1行第2行第3行' -> '4×4 = 16' | 第4行第1列
+[rsi1_corrected T22] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[rsi1_corrected T23] 1 '1.' -> '1.' | 1个
+[rsi1_corrected T24] 1 '1.' -> '1.' | 1个
+[rsi1_corrected T25] 1 '1.' -> '1.' | 1个
+[rsi1_corrected T26] 1 'The image contains three squares.' -> '1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1' | 1个
+[rsi1_corrected T27] 1 'Yes, there is a yellow square in the right corner of the image.' -> 'Yes, there is a yellow square in the right corner of the image.' | 有
+[rsi1_corrected T28] 1 'Yes.' -> 'Yes.' | 有
+[rsi1_corrected T29] 1 'Yes.' -> '没有蓝色方形。' | 没有
+[rsi1_corrected] loc=0/8 count=4/4 exist=3/3 total=7/15 IoU=0.0000
+/home/u2024311281/.conda/envs/yolo/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+[rsi1] 1/10 loss=0.7046
+[rsi1] 2/10 loss=0.4116
+[rsi1] 3/10 loss=1.7142
+[rsi1] 4/10 loss=1.2292
+[rsi1] 5/10 loss=1.3746
+[rsi1] 6/10 loss=1.5927
+[rsi1] 7/10 loss=3.6888
+[rsi1] 8/10 loss=3.9940
+[rsi1] 9/10 loss=7.4531
+[rsi1] 10/10 loss=2.9103
+[rsi1_eval E00] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[rsi1_eval E01] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[rsi1_eval E02] 0 '解决：第1行第2行，第3行第4行，第4行第5行' -> '解决：第1行第2行，第3行第4行，第4行第5行' | 第2行第4列
+[rsi1_eval E03] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第3列
+[rsi1_eval E04] 0 '输：第1行第2行' -> '输：第1行第2行' | 第1行第4列
+[rsi1_eval E05] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第4列
+[rsi1_eval E06] 0 '4×4 = 16' -> '4×4 = 16' | 第1行第1列
+[rsi1_eval E07] 0 '4×4 = 16' -> '4×4 = 16' | 第3行第4列
+[rsi1_eval E08] 1 '1.' -> '1.' | 1个
+[rsi1_eval E09] 1 '1.' -> '1.' | 1个
+[rsi1_eval E10] 1 '1.' -> '1.' | 1个
+[rsi1_eval E11] 1 '1.' -> '1.' | 1个
+[rsi1_eval E12] 1 'Yes.' -> 'Yes.' | 有
+[rsi1_eval E13] 1 'Yes.' -> 'Yes.' | 有
+[rsi1_eval E14] 1 '没有绿色方形。' -> '没有绿色方形。' | 没有
+[rsi1_eval] loc=0/8 count=4/4 exist=3/3 total=7/15 IoU=0.0000
+[rsi1] pool=17 added=2 heldout=7/15
+[rsi2_direct T15] 0 '解决：第1行第2行第3行\n\n第1行第2行第3行' -> '解决：第1行第2行第3行\n\n第1行第2行第3行' | 第2行第3列
+[rsi2_direct T16] 0 '4×4' -> '4×4' | 第1行第1列
+[rsi2_direct T17] 0 '4×4' -> '4×4' | 第2行第3列
+[rsi2_direct T18] 0 '4×4' -> '4×4' | 第4行第3列
+[rsi2_direct T19] 0 '输：第1行第4列。' -> '输：第1行第4列。' | 第3行第1列
+[rsi2_direct T20] 0 '4×4' -> '4×4' | 第4行第4列
+[rsi2_direct T21] 0 '4×4 = 16' -> '4×4 = 16' | 第4行第1列
+[rsi2_direct T22] 0 '4×4 = 16' -> '4×4 = 16' | 第2行第1列
+[rsi2_direct T23] 1 '1' -> '1' | 1个
+[rsi2_direct T24] 1 '1.' -> '1.' | 1个
+[rsi2_direct T25] 1 '1' -> '1' | 1个
+[rsi2_direct T26] 1 '1.' -> '1.' | 1个
+[rsi2_direct T27] 1 'Yes, there is a yellow square in the right corner.' -> 'Yes, there is a yellow square in the right corner.' | 有
+[rsi2_direct T28] 1 'Yes.' -> 'Yes.' | 有
+[rsi2_direct T29] 0 'Yes.' -> 'Yes.' | 没有
+[rsi2_direct] loc=0/8 count=4/4 exist=2/3 total=6/15 IoU=0.0000
+[rsi2_corrected T15] 0 '解决：第1行第2行第3行\n\n第1行第2行第3行' -> '4×4.' | 第2行第3列
+[rsi2_corrected T16] 0 '4×4' -> '4×4' | 第1行第1列
+[rsi2_corrected T17] 0 '4×4' -> '4×4' | 第2行第3列
+[rsi2_corrected T18] 0 '4×4' -> '4×4' | 第4行第3列
+[rsi2_corrected T19] 0 '输：第1行第4列。' -> '4×4 = 16' | 第3行第1列
+[rsi2_corrected T20] 0 '4×4' -> '4×4' | 第4行第4列
+[rsi2_corrected T21] 0 '4×4 = 16' -> '4×4.' | 第4行第1列
+[rsi2_corrected T22] 0 '4×4 = 16' -> '4×4.' | 第2行第1列
+[rsi2_corrected T23] 1 '1' -> '1' | 1个
+[rsi2_corrected T24] 1 '1.' -> '1.' | 1个
+[rsi2_corrected T25] 1 '1' -> '1' | 1个
+[rsi2_corrected T26] 1 '1.' -> '1.' | 1个
+[rsi2_corrected T27] 1 'Yes, there is a yellow square in the right corner.' -> 'Yes, there is a yellow square in the right corner.' | 有
+[rsi2_corrected T28] 1 'Yes.' -> 'Yes.' | 有
+[rsi2_corrected T29] 1 'Yes.' -> 'No.' | 没有
+[rsi2_corrected] loc=0/8 count=4/4 exist=3/3 total=7/15 IoU=0.0000
+[rsi2] 1/10 loss=1.4274
+[rsi2] 2/10 loss=1.2759
+[rsi2] 3/10 loss=1.0178
+[rsi2] 4/10 loss=0.9049
+[rsi2] 5/10 loss=1.1332
+[rsi2] 6/10 loss=2.8684
+[rsi2] 7/10 loss=3.0792
+[rsi2] 8/10 loss=2.7049
+[rsi2] 9/10 loss=7.8634
+[rsi2] 10/10 loss=0.7208
+[rsi2_eval E00] 0 '4×4' -> '4×4' | 第3行第4列
+[rsi2_eval E01] 0 '4×4' -> '4×4' | 第2行第1列
+[rsi2_eval E02] 0 '艢艢' -> '艢艢' | 第2行第4列
+[rsi2_eval E03] 0 '4×4' -> '4×4' | 第2行第3列
+[rsi2_eval E04] 0 '2' -> '2' | 第1行第4列
+[rsi2_eval E05] 0 '4×4' -> '4×4' | 第1行第4列
+[rsi2_eval E06] 0 '2' -> '2' | 第1行第1列
+[rsi2_eval E07] 0 '4×4' -> '4×4' | 第3行第4列
+[rsi2_eval E08] 1 '1' -> '1' | 1个
+[rsi2_eval E09] 0 '2' -> '2' | 1个
+[rsi2_eval E10] 1 '1.' -> '1.' | 1个
+[rsi2_eval E11] 1 '1' -> '1' | 1个
+[rsi2_eval E12] 0 '没有红色方形' -> '没有红色方形' | 有
+[rsi2_eval E13] 0 'No.' -> 'No.' | 有
+[rsi2_eval E14] 1 'No.' -> 'No.' | 没有
+[rsi2_eval] loc=0/8 count=3/4 exist=1/3 total=4/15 IoU=0.0000
+[rsi2] pool=17 added=0 heldout=4/15
+[complete] lab06

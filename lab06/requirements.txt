@@ -1,0 +1,9 @@
+# Install a platform-appropriate PyTorch separately; formal run: torch 2.6.0+cu124.
+transformers==4.57.6
+peft==0.17.1
+accelerate==1.10.1
+bitsandbytes==0.48.1
+huggingface_hub==0.36.2
+Pillow>=10
+matplotlib>=3.8
+safetensors>=0.4

@@ -1,0 +1,19 @@
+{
+  "formal_job": 15391,
+  "raw_files_verified": 85,
+  "source_matches_run": true,
+  "image_hashes_verified": 55,
+  "template_unchanged": true,
+  "xml_parts_valid": 17,
+  "modified_template_parts": [
+    "[Content_Types].xml",
+    "word/_rels/document.xml.rels",
+    "word/document.xml"
+  ],
+  "report_pages": 3,
+  "three_report_copies_identical": true,
+  "docx_sha256": "bff3a2795c3dc3b960ef9f089c2fe6add52c6b39139cff4451543762449ef41c",
+  "pdf_sha256": "a2b31f2e123e0d2f912d6a055a4f4655f161ffcf92fe79b17e27eb80f2eb6481",
+  "visual_review": "all 3 pages inspected, no clipping or overlap",
+  "review": "independent Codex review passed after fixes"
+}

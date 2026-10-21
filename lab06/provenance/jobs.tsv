@@ -1,0 +1,7 @@
+job_id	state	exit_code	start	end	elapsed	purpose
+15347	CANCELLED	0:15	2026-10-21T16:29:18	2026-10-21T16:30:02	00:00:44	stopped before inference after discovering training sampling omission
+15348	CANCELLED	0:15	2026-10-21T16:30:18	2026-10-21T16:33:03	00:02:45	stopped after finding copied verifier hint was accepted as an answer
+15350	COMPLETED	0:0	2026-10-21T16:33:47	2026-10-21T16:36:44	00:02:57	oracle-assisted historical comparison; superseded by 15391
+15391	COMPLETED	0:0	2026-10-22T00:00:11	2026-10-22T00:04:27	00:04:16	formal run after code review fixes
+
+Post-run squeue -u u2024311281 returned no jobs. The cancelled attempts' logs are retained under attempts/.

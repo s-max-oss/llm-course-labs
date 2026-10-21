@@ -1,0 +1,420 @@
+{
+  "stage": "sft_eval",
+  "split": "held-out eval",
+  "correction": false,
+  "rows": [
+    {
+      "id": "E00",
+      "type": "loc",
+      "img": "e00",
+      "question": "图中的绿色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第3行第4列",
+      "raw": "4×4 = 16",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第3行第4列",
+        "evidence": {
+          "box": [
+            210,
+            137,
+            246,
+            173
+          ],
+          "components": 1
+        },
+        "hint": "像素检查结果：第3行第4列。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "4×4 = 16",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E01",
+      "type": "loc",
+      "img": "e01",
+      "question": "图中的绿色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第2行第1列",
+      "raw": "4×4 = 16",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第2行第1列",
+        "evidence": {
+          "box": [
+            7,
+            70,
+            53,
+            116
+          ],
+          "components": 1
+        },
+        "hint": "像素检查结果：第2行第1列。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "4×4 = 16",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E02",
+      "type": "loc",
+      "img": "e02",
+      "question": "图中的红色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第2行第4列",
+      "raw": "解决：小明的小明的小明的小明的小明的�",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第2行第4列",
+        "evidence": {
+          "box": [
+            198,
+            72,
+            246,
+            120
+          ],
+          "components": 1
+        },
+        "hint": "像素检查结果：第2行第4列。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "解决：小明的小明的小明的小明的小明的�",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E03",
+      "type": "loc",
+      "img": "e03",
+      "question": "图中的黄色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第2行第3列",
+      "raw": "输出：第1行第2行。",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第2行第3列",
+        "evidence": {
+          "box": [
+            138,
+            78,
+            181,
+            121
+          ],
+          "components": 1
+        },
+        "hint": "像素检查结果：第2行第3列。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "输出：第1行第2行。",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E04",
+      "type": "loc",
+      "img": "e04",
+      "question": "图中的绿色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第1行第4列",
+      "raw": "输：第1行第2行第3行\n\nThe answer is 4×4.",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第1行第4列",
+        "evidence": {
+          "box": [
+            207,
+            19,
+            243,
+            55
+          ],
+          "components": 1
+        },
+        "hint": "像素检查结果：第1行第4列。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "输：第1行第2行第3行\n\nThe answer is 4×4.",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E05",
+      "type": "loc",
+      "img": "e05",
+      "question": "图中的绿色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第1行第4列",
+      "raw": "4×4 = 16",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第1行第4列",
+        "evidence": {
+          "box": [
+            209,
+            11,
+            246,
+            48
+          ],
+          "components": 1
+        },
+        "hint": "像素检查结果：第1行第4列。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "4×4 = 16",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E06",
+      "type": "loc",
+      "img": "e06",
+      "question": "图中的蓝色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第1行第1列",
+      "raw": "4×4 = 16",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第1行第1列",
+        "evidence": {
+          "box": [
+            15,
+            12,
+            58,
+            55
+          ],
+          "components": 1
+        },
+        "hint": "像素检查结果：第1行第1列。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "4×4 = 16",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E07",
+      "type": "loc",
+      "img": "e07",
+      "question": "图中的黄色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第3行第4列",
+      "raw": "4×4 = 16",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第3行第4列",
+        "evidence": {
+          "box": [
+            205,
+            136,
+            243,
+            174
+          ],
+          "components": 1
+        },
+        "hint": "像素检查结果：第3行第4列。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "4×4 = 16",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E08",
+      "type": "count",
+      "img": "e08",
+      "question": "图中有几个红色圆形？",
+      "gold": "1个",
+      "raw": "1.",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "1个",
+        "pixel_result": "1个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "像素检查结果：1个。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1.",
+      "correct": true,
+      "iou": null
+    },
+    {
+      "id": "E09",
+      "type": "count",
+      "img": "e09",
+      "question": "图中有几个蓝色方形？",
+      "gold": "1个",
+      "raw": "1.",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "1个",
+        "pixel_result": "1个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "像素检查结果：1个。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1.",
+      "correct": true,
+      "iou": null
+    },
+    {
+      "id": "E10",
+      "type": "count",
+      "img": "e10",
+      "question": "图中有几个绿色方形？",
+      "gold": "1个",
+      "raw": "The image contains two distinct elements: a circle and a square.",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": "2个",
+        "pixel_result": "1个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "像素检查结果：1个。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "The image contains two distinct elements: a circle and a square.",
+      "correct": false,
+      "iou": null
+    },
+    {
+      "id": "E11",
+      "type": "count",
+      "img": "e11",
+      "question": "图中有几个蓝色圆形？",
+      "gold": "1个",
+      "raw": "There are two circles in the image.",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": "2个",
+        "pixel_result": "1个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "像素检查结果：1个。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "There are two circles in the image.",
+      "correct": false,
+      "iou": null
+    },
+    {
+      "id": "E12",
+      "type": "exist",
+      "img": "e12",
+      "question": "图中有没有红色方形？",
+      "gold": "有",
+      "raw": "Yes.",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "有",
+        "pixel_result": "有",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "像素检查结果：有。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "Yes.",
+      "correct": true,
+      "iou": null
+    },
+    {
+      "id": "E13",
+      "type": "exist",
+      "img": "e13",
+      "question": "图中有没有绿色圆形？",
+      "gold": "有",
+      "raw": "Yes.",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "有",
+        "pixel_result": "有",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "像素检查结果：有。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "Yes.",
+      "correct": true,
+      "iou": null
+    },
+    {
+      "id": "E14",
+      "type": "exist",
+      "img": "e14",
+      "question": "图中有没有绿色方形？",
+      "gold": "没有",
+      "raw": "Yes.",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": "有",
+        "pixel_result": "没有",
+        "evidence": {
+          "components": 0
+        },
+        "hint": "像素检查结果：没有。只输出这个结果，不要复述提示或列出步骤。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "Yes.",
+      "correct": false,
+      "iou": null
+    }
+  ],
+  "summary": {
+    "loc": {
+      "correct": 0,
+      "n": 8
+    },
+    "count": {
+      "correct": 2,
+      "n": 4
+    },
+    "exist": {
+      "correct": 2,
+      "n": 3
+    },
+    "total": {
+      "correct": 4,
+      "n": 15
+    },
+    "loc_mean_iou": 0.0
+  },
+  "seconds": 12.158381089568138
+}
