@@ -1,0 +1,46 @@
+{
+  "device": "cpu",
+  "dtype": "float32",
+  "nf4": false,
+  "threads": 8,
+  "date": "2026-10-22T01:37:32.137940+08:00",
+  "python": "3.11.16 | packaged by conda-forge | (main, Sep  2 2026, 23:31:17) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.14.0+cpu",
+  "transformers": "4.57.6",
+  "peft": "0.17.1",
+  "stages": [
+    {
+      "mode": "make_data",
+      "exit_code": 0,
+      "seconds": 0.2058484999997745
+    },
+    {
+      "mode": "make_sft",
+      "exit_code": 0,
+      "seconds": 0.14745640000001004
+    },
+    {
+      "mode": "infer",
+      "exit_code": 0,
+      "seconds": 53.6732966999989
+    },
+    {
+      "mode": "sft",
+      "exit_code": 0,
+      "seconds": 62.059636600000886
+    },
+    {
+      "mode": "eval",
+      "exit_code": 0,
+      "seconds": 197.03271490000043
+    },
+    {
+      "mode": "rsi",
+      "exit_code": 0,
+      "seconds": 371.24241670000083
+    }
+  ],
+  "seconds": 690.5794282999996,
+  "success": true,
+  "source_sha256": "b18f0c0e960b92fbcd553af6b43375b4ae5c1c2e0c6cae0160018aefb3f2615f"
+}

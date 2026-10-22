@@ -1,0 +1,114 @@
+[
+  {
+    "img": "t00",
+    "prompt": "图中的红色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+    "answer": "第3行第3列",
+    "source": "train-GT",
+    "type": "loc"
+  },
+  {
+    "img": "t01",
+    "prompt": "图中的绿色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+    "answer": "第3行第2列",
+    "source": "train-GT",
+    "type": "loc"
+  },
+  {
+    "img": "t02",
+    "prompt": "图中的绿色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+    "answer": "第3行第4列",
+    "source": "train-GT",
+    "type": "loc"
+  },
+  {
+    "img": "t03",
+    "prompt": "图中的黄色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+    "answer": "第1行第1列",
+    "source": "train-GT",
+    "type": "loc"
+  },
+  {
+    "img": "t04",
+    "prompt": "图中的红色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+    "answer": "第1行第3列",
+    "source": "train-GT",
+    "type": "loc"
+  },
+  {
+    "img": "t05",
+    "prompt": "图中的黄色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+    "answer": "第3行第4列",
+    "source": "train-GT",
+    "type": "loc"
+  },
+  {
+    "img": "t06",
+    "prompt": "图中的红色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+    "answer": "第4行第4列",
+    "source": "train-GT",
+    "type": "loc"
+  },
+  {
+    "img": "t07",
+    "prompt": "图中的绿色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+    "answer": "第3行第4列",
+    "source": "train-GT",
+    "type": "loc"
+  },
+  {
+    "img": "t08",
+    "prompt": "图中有几个红色圆形？",
+    "answer": "1个",
+    "source": "train-GT",
+    "type": "count"
+  },
+  {
+    "img": "t09",
+    "prompt": "图中有几个蓝色方形？",
+    "answer": "1个",
+    "source": "train-GT",
+    "type": "count"
+  },
+  {
+    "img": "t10",
+    "prompt": "图中有几个绿色方形？",
+    "answer": "1个",
+    "source": "train-GT",
+    "type": "count"
+  },
+  {
+    "img": "t11",
+    "prompt": "图中有几个黄色方形？",
+    "answer": "1个",
+    "source": "train-GT",
+    "type": "count"
+  },
+  {
+    "img": "t12",
+    "prompt": "图中有没有绿色圆形？",
+    "answer": "有",
+    "source": "train-GT",
+    "type": "exist"
+  },
+  {
+    "img": "t13",
+    "prompt": "图中有没有绿色圆形？",
+    "answer": "有",
+    "source": "train-GT",
+    "type": "exist"
+  },
+  {
+    "img": "t14",
+    "prompt": "图中有没有黄色圆形？",
+    "answer": "没有",
+    "source": "train-GT",
+    "type": "exist"
+  },
+  {
+    "img": "t24",
+    "prompt": "图中有几个绿色方形？",
+    "answer": "1. 在图片中，我们可以选择以下方法：\n1. 选",
+    "source": "verified-rsi-1",
+    "type": "count"
+  }
+]

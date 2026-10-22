@@ -1,0 +1,13 @@
+{
+  "initial_adapter": "improvement/augmented_v1/step4000/adapter",
+  "joint_steps": 400,
+  "rsi_steps": 80,
+  "seed": 2026,
+  "compact": true,
+  "augmented_pool": true,
+  "final_selection": "max development localization, then overall accuracy; earlier stage wins exact ties",
+  "tool_training": "Every fifth scheduled non-bootstrap step includes neutral pixel-derived bbox observations; actual flags are logged; no row/column answer string",
+  "rsi_feedback": "self-check, bbox evidence, then finite legal-candidate scoring and pixel verification; candidate search is tool-driven",
+  "bootstrap_sampling": "all verified pool examples replayed every other update, new examples first; remaining updates from regular task-balanced pool",
+  "source_sha256": "a79cdcdb7e0021281882be5bc7519a412a02e8171645d2f58e6876be2a167e9e"
+}

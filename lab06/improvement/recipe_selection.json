@@ -1,0 +1,60 @@
+{
+  "rule": "max correct/128 on fixed development localization; first candidate wins ties",
+  "candidates_in_tie_order": [
+    {
+      "adapter": "improvement/ablation_v1/seed_extended_cn/adapter",
+      "compact": false,
+      "correct": 10,
+      "n": 128
+    },
+    {
+      "adapter": "improvement/ablation_v1/balanced_cn/adapter",
+      "compact": false,
+      "correct": 8,
+      "n": 128
+    },
+    {
+      "adapter": "improvement/ablation_v1/balanced_compact/adapter",
+      "compact": true,
+      "correct": 11,
+      "n": 128
+    },
+    {
+      "adapter": "improvement/vision_compact_v1/step400/adapter",
+      "compact": true,
+      "correct": 13,
+      "n": 128
+    },
+    {
+      "adapter": "improvement/vision_compact_v1/step1200/adapter",
+      "compact": true,
+      "correct": 16,
+      "n": 128
+    },
+    {
+      "adapter": "improvement/augmented_v1/step1000/adapter",
+      "compact": true,
+      "correct": 25,
+      "n": 128
+    },
+    {
+      "adapter": "improvement/augmented_v1/step2500/adapter",
+      "compact": true,
+      "correct": 45,
+      "n": 128
+    },
+    {
+      "adapter": "improvement/augmented_v1/step4000/adapter",
+      "compact": true,
+      "correct": 78,
+      "n": 128
+    }
+  ],
+  "selected": {
+    "adapter": "improvement/augmented_v1/step4000/adapter",
+    "compact": true,
+    "correct": 78,
+    "n": 128
+  },
+  "final_test_evaluated": false
+}

@@ -1,0 +1,75 @@
+{
+  "name": "legacy",
+  "n": 8,
+  "correct": 1,
+  "valid": 8,
+  "mean_iou": 0.0538330078125,
+  "blank_image": false,
+  "rows": [
+    {
+      "id": "E00",
+      "gold": "第3行第4列",
+      "prediction": "r1c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E01",
+      "gold": "第2行第1列",
+      "prediction": "r1c1",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E02",
+      "gold": "第2行第4列",
+      "prediction": "r3c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E03",
+      "gold": "第2行第3列",
+      "prediction": "r1c1",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E04",
+      "gold": "第1行第4列",
+      "prediction": "r1c1",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E05",
+      "gold": "第1行第4列",
+      "prediction": "r1c1",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "E06",
+      "gold": "第1行第1列",
+      "prediction": "r1c1",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.4306640625
+    },
+    {
+      "id": "E07",
+      "gold": "第3行第4列",
+      "prediction": "r1c1",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    }
+  ],
+  "seconds": 2.9744341038167477
+}

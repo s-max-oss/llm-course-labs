@@ -1,0 +1,52 @@
+{
+  "n": 128,
+  "coordinate": {
+    "row_correct": 49,
+    "col_correct": 60,
+    "selects_object": 74
+  },
+  "per_target": {
+    "红圆": {
+      "n": 16,
+      "correct": 3
+    },
+    "红方": {
+      "n": 16,
+      "correct": 4
+    },
+    "蓝圆": {
+      "n": 16,
+      "correct": 1
+    },
+    "蓝方": {
+      "n": 16,
+      "correct": 3
+    },
+    "绿圆": {
+      "n": 16,
+      "correct": 2
+    },
+    "绿方": {
+      "n": 16,
+      "correct": 3
+    },
+    "黄圆": {
+      "n": 16,
+      "correct": 4
+    },
+    "黄方": {
+      "n": 16,
+      "correct": 5
+    }
+  },
+  "wrong_selected_object_classes": {
+    "绿方": 8,
+    "黄圆": 9,
+    "绿圆": 3,
+    "红方": 9,
+    "黄方": 3,
+    "红圆": 7,
+    "蓝圆": 3,
+    "蓝方": 7
+  }
+}

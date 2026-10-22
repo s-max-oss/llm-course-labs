@@ -1,0 +1,39 @@
+[recipe] {"adapter": "improvement/augmented_v1/step4000/adapter", "compact": true, "correct": 78, "n": 128}
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=1614336/258099264 (0.6255%) NF4=True
+[eval] initial_validation {'loc': {'correct': 78, 'n': 128, 'valid': 128}, 'count': {'correct': 8, 'n': 40, 'valid': 40}, 'exist': {'correct': 14, 'n': 16, 'valid': 16}, 'total': {'correct': 100, 'n': 184}, 'loc_iou': 0.22882461547851562}
+[eval] initial_legacy {'loc': {'correct': 5, 'n': 8, 'valid': 8}, 'count': {'correct': 0, 'n': 4, 'valid': 4}, 'exist': {'correct': 2, 'n': 3, 'valid': 3}, 'total': {'correct': 7, 'n': 15}, 'loc_iou': 0.209930419921875}
+[train] sft 50/400 mean50=1.0274
+[train] sft 100/400 mean50=0.4649
+[train] sft 150/400 mean50=0.3390
+[train] sft 200/400 mean50=0.2196
+[train] sft 250/400 mean50=0.2657
+[train] sft 300/400 mean50=0.1630
+[train] sft 350/400 mean50=0.2215
+[train] sft 400/400 mean50=0.2198
+[eval] sft_validation {'loc': {'correct': 106, 'n': 128, 'valid': 128}, 'count': {'correct': 22, 'n': 40, 'valid': 40}, 'exist': {'correct': 14, 'n': 16, 'valid': 15}, 'total': {'correct': 142, 'n': 184}, 'loc_iou': 0.309417724609375}
+[eval] sft_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 2, 'n': 3, 'valid': 3}, 'total': {'correct': 12, 'n': 15}, 'loc_iou': 0.392974853515625}
+[eval] sft_weak_tool_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 13, 'n': 15}, 'loc_iou': 0.392974853515625}
+[eval] sft_tool_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 3, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 14, 'n': 15}, 'loc_iou': 0.392974853515625}
+[eval] sft_search_tool_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 4, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 15, 'n': 15}, 'loc_iou': 0.392974853515625}
+[eval] rsi1_feedback {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 4, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 15, 'n': 15}, 'loc_iou': 0.392730712890625}
+[train] rsi1 50/80 mean50=0.3267
+[eval] rsi1_bootstrap_posttrain {'loc': {'correct': 1, 'n': 2, 'valid': 2}, 'count': {'correct': 2, 'n': 3, 'valid': 3}, 'exist': {'correct': 2, 'n': 2, 'valid': 2}, 'total': {'correct': 5, 'n': 7}, 'loc_iou': 0.2052001953125}
+[eval] rsi1_validation {'loc': {'correct': 104, 'n': 128, 'valid': 128}, 'count': {'correct': 23, 'n': 40, 'valid': 40}, 'exist': {'correct': 12, 'n': 16, 'valid': 15}, 'total': {'correct': 139, 'n': 184}, 'loc_iou': 0.3041248321533203}
+[eval] rsi1_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 2, 'n': 3, 'valid': 3}, 'total': {'correct': 12, 'n': 15}, 'loc_iou': 0.392974853515625}
+[rsi1] pool=4119 added=7 corrected=15/15
+[eval] rsi2_feedback {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 4, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 15, 'n': 15}, 'loc_iou': 0.392730712890625}
+[train] rsi2 50/80 mean50=0.1013
+[eval] rsi2_bootstrap_posttrain {'loc': {'correct': 3, 'n': 3, 'valid': 3}, 'count': {'correct': 3, 'n': 3, 'valid': 3}, 'exist': {'correct': 2, 'n': 2, 'valid': 2}, 'total': {'correct': 8, 'n': 8}, 'loc_iou': 0.4418131510416667}
+[eval] rsi2_validation {'loc': {'correct': 100, 'n': 128, 'valid': 128}, 'count': {'correct': 19, 'n': 40, 'valid': 40}, 'exist': {'correct': 12, 'n': 16, 'valid': 15}, 'total': {'correct': 131, 'n': 184}, 'loc_iou': 0.2921123504638672}
+[eval] rsi2_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 13, 'n': 15}, 'loc_iou': 0.392974853515625}
+[rsi2] pool=4120 added=1 corrected=15/15
+[eval] selected_final_test {'loc': {'correct': 109, 'n': 128, 'valid': 128}, 'count': {'correct': 22, 'n': 40, 'valid': 40}, 'exist': {'correct': 13, 'n': 16, 'valid': 16}, 'total': {'correct': 144, 'n': 184}, 'loc_iou': 0.3254222869873047}
+[eval] selected_weak_tool_final_test {'loc': {'correct': 118, 'n': 128, 'valid': 128}, 'count': {'correct': 26, 'n': 40, 'valid': 39}, 'exist': {'correct': 14, 'n': 16, 'valid': 16}, 'total': {'correct': 158, 'n': 184}, 'loc_iou': 0.3506278991699219}
+[eval] selected_rich_tool_final_test {'loc': {'correct': 120, 'n': 128, 'valid': 128}, 'count': {'correct': 27, 'n': 40, 'valid': 40}, 'exist': {'correct': 15, 'n': 16, 'valid': 16}, 'total': {'correct': 162, 'n': 184}, 'loc_iou': 0.35468101501464844}
+[eval] selected_search_tool_final_test {'loc': {'correct': 128, 'n': 128, 'valid': 128}, 'count': {'correct': 40, 'n': 40, 'valid': 40}, 'exist': {'correct': 16, 'n': 16, 'valid': 16}, 'total': {'correct': 184, 'n': 184}, 'loc_iou': 0.37859344482421875}
+[eval] selected_blank16 correct=1/16 format=16/16
+[final] selected=sft loc=109/128 total=144/184
+[complete] optimized SFT, two RSI rounds and sealed final test

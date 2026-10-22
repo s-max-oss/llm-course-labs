@@ -1,0 +1,26 @@
+{
+  "model": {
+    "device": "cuda:0",
+    "dtype": "torch.bfloat16",
+    "nf4": true,
+    "processor_longest_edge": 512,
+    "image_splitting": false,
+    "parameters": {
+      "trainable": 921600,
+      "total": 257406528,
+      "percent": 0.3580328778608132
+    }
+  },
+  "data_n": 8,
+  "coverage": {
+    "第3行第3列": 1,
+    "第3行第2列": 1,
+    "第3行第4列": 3,
+    "第1行第1列": 1,
+    "第1行第3列": 1,
+    "第4行第4列": 1
+  },
+  "compact": false,
+  "steps": 400,
+  "seed": 2026
+}

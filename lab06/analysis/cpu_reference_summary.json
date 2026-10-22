@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "device": "cpu",
+    "dtype": "float32",
+    "nf4": false,
+    "threads": 8,
+    "date": "2026-10-22T01:37:32.137940+08:00",
+    "python": "3.11.16 | packaged by conda-forge | (main, Sep  2 2026, 23:31:17) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.14.0+cpu",
+    "transformers": "4.57.6",
+    "peft": "0.17.1",
+    "stages": [
+      {
+        "mode": "make_data",
+        "exit_code": 0,
+        "seconds": 0.2058484999997745
+      },
+      {
+        "mode": "make_sft",
+        "exit_code": 0,
+        "seconds": 0.14745640000001004
+      },
+      {
+        "mode": "infer",
+        "exit_code": 0,
+        "seconds": 53.6732966999989
+      },
+      {
+        "mode": "sft",
+        "exit_code": 0,
+        "seconds": 62.059636600000886
+      },
+      {
+        "mode": "eval",
+        "exit_code": 0,
+        "seconds": 197.03271490000043
+      },
+      {
+        "mode": "rsi",
+        "exit_code": 0,
+        "seconds": 371.24241670000083
+      }
+    ],
+    "seconds": 690.5794282999996,
+    "success": true,
+    "source_sha256": "b18f0c0e960b92fbcd553af6b43375b4ae5c1c2e0c6cae0160018aefb3f2615f"
+  },
+  "stages": {
+    "baseline": {
+      "loc": {
+        "correct": 0,
+        "n": 8
+      },
+      "count": {
+        "correct": 0,
+        "n": 4
+      },
+      "exist": {
+        "correct": 3,
+        "n": 3
+      },
+      "total": {
+        "correct": 3,
+        "n": 15
+      },
+      "loc_mean_iou": 0.0
+    },
+    "sft_eval": {
+      "loc": {
+        "correct": 0,
+        "n": 8
+      },
+      "count": {
+        "correct": 1,
+        "n": 4
+      },
+      "exist": {
+        "correct": 2,
+        "n": 3
+      },
+      "total": {
+        "correct": 3,
+        "n": 15
+      },
+      "loc_mean_iou": 0.0
+    },
+    "sft_tool_eval": {
+      "loc": {
+        "correct": 0,
+        "n": 8
+      },
+      "count": {
+        "correct": 2,
+        "n": 4
+      },
+      "exist": {
+        "correct": 2,
+        "n": 3
+      },
+      "total": {
+        "correct": 4,
+        "n": 15
+      },
+      "loc_mean_iou": 0.0
+    },
+    "rsi1_eval": {
+      "loc": {
+        "correct": 0,
+        "n": 8
+      },
+      "count": {
+        "correct": 2,
+        "n": 4
+      },
+      "exist": {
+        "correct": 1,
+        "n": 3
+      },
+      "total": {
+        "correct": 3,
+        "n": 15
+      },
+      "loc_mean_iou": 0.0
+    },
+    "rsi2_eval": {
+      "loc": {
+        "correct": 0,
+        "n": 8
+      },
+      "count": {
+        "correct": 2,
+        "n": 4
+      },
+      "exist": {
+        "correct": 1,
+        "n": 3
+      },
+      "total": {
+        "correct": 3,
+        "n": 15
+      },
+      "loc_mean_iou": 0.0
+    }
+  },
+  "model_sha256_matches_hpc": true,
+  "model_sha256": "74dea5904032e5ae99a2e0eef5179e6ac0f1dedc3ab0c7c2a5d4d387c843203e",
+  "identical_reference_pixel_images": 55,
+  "source_matches": true,
+  "pixel_hashes": {
+    "hw6_imgs/eval/e00.png": "38711422713474664a3806c4a528f083cba7b9c2db7d5dcf1f54814459620561",
+    "hw6_imgs/eval/e01.png": "e9ba8db0edf70e16dc33c53c3b0906549259b7d411a69c12dd12632dcf2fbb02",
+    "hw6_imgs/eval/e02.png": "fcc95d30e2075b2a9f0990c92db455c9c89d24cd1921c38ff0a0ae54ace196ed",
+    "hw6_imgs/eval/e03.png": "70d772004cb8a3838ae2b3919ea7f88cbafa4f007f6aab0141da4bef5ef63cbc",
+    "hw6_imgs/eval/e04.png": "55ce652e2d5b9feedc431a87992013a11cbad58b554cdfdafdd2dc7d91723b81",
+    "hw6_imgs/eval/e05.png": "2d617ed2e61b6da7081295eecaa8f3461bbca8752af1d568d0507187e6e7de22",
+    "hw6_imgs/eval/e06.png": "e6a383d59d5e4baeff18d5377ab8af108f557db5efa3cc62667d60f7aea934a6",
+    "hw6_imgs/eval/e07.png": "72433539439e2e784e0491b0117ee2ca78f928ca9e8728126d6f70f8120c77ec",
+    "hw6_imgs/eval/e08.png": "42fd16fcb0eec31fcba4b32379195dbd530bba6ba4e5b16d13f9b00895c7cc53",
+    "hw6_imgs/eval/e09.png": "593a24bad59d2b662d51cc5e5dccca953e8372febf2323b8a30f1bfecbd76d1e",
+    "hw6_imgs/eval/e10.png": "d171346ee530de8a076c3a5bfebfac0d203143fefd33ac850a82a6f0a54347c9",
+    "hw6_imgs/eval/e11.png": "e335bae2e23acb778ffd6d904283b2400774b43c58accfa9294ca7f9526a6206",
+    "hw6_imgs/eval/e12.png": "189d8af73a8b33b3173e1e9d53d1519f534fc655b4cc2fc7fcb69439e8241623",
+    "hw6_imgs/eval/e13.png": "b8f7b00c48a55d913d473400aa93db76ea17cdd230f770261fae5a8c22b983b1",
+    "hw6_imgs/eval/e14.png": "140b652fe488eda7a778155e876cdc0de24302877b14c8fdafebccb3da43f6aa",
+    "hw6_imgs/train/t00.png": "08e6c134f8627a050bb1cddc6409fca81d26fda396933ac8a742113601767132",
+    "hw6_imgs/train/t01.png": "5ff3aac49487eba113792d921dd4af8bd2d4a0607ba10dda64e88d153602384d",
+    "hw6_imgs/train/t02.png": "3a019c79fccd292a62110956464a76e13bc261d3645a698ad9515178b5b5510f",
+    "hw6_imgs/train/t03.png": "7d8c2512e103e01b5f9ede86bfdeea1c504f5e2ffa71328ae98696941c659987",
+    "hw6_imgs/train/t04.png": "30fabc920af6c42d77e1e1c864b13d0f8b0f586dcf75b5a7920f9e13872be7ea",
+    "hw6_imgs/train/t05.png": "fce014af854636ccb350cb35433320c2807fcb86836ea025a59e0a4a8ed40464",
+    "hw6_imgs/train/t06.png": "acea60b8970b6b85dddd811b40217ead603e1fa488db07e46e73b4fb6e7e072a",
+    "hw6_imgs/train/t07.png": "16f289dce21d4d8e2addaa6bbbb95a0a08d0bb6bff40968678106c77ff20110f",
+    "hw6_imgs/train/t08.png": "f521dd9868facf9f66b6454c6b0eec03b20ccdc29173d30eb80b71c7d4916225",
+    "hw6_imgs/train/t09.png": "2f52280e0ceb8e93c211f06d64bd86ae68bfaebeb89b7c1ebd3d84d4673d54c6",
+    "hw6_imgs/train/t10.png": "9abe1e93a8095b3b4d6d530d8d54153699085f50111f40139587c129e9c52259",
+    "hw6_imgs/train/t11.png": "851186829d8ab9e8cc5c0ec5d996e80287e795f1bcf6cd5aad1101b9b8914c47",
+    "hw6_imgs/train/t12.png": "39d00a5ad48925c5a6906608034f31f0240030fe5548bef71d2a192378aee644",
+    "hw6_imgs/train/t13.png": "8687a675b68353a76b29fb3e728525cdbed72c1f9fa4ea1efad6401c9935c776",
+    "hw6_imgs/train/t14.png": "5d69e3723a947fd74d233dedc0eadd3cc3612c0163060139a92c16942d1e7899",
+    "hw6_imgs/train/t15.png": "379834c1f0f387aafe9c4837f8b2eaf74f136035b744a038de366b5842c1acb4",
+    "hw6_imgs/train/t16.png": "9a978cfb013da7bd962622307daa6b78f8e3c964ab12a2c1c25855cee093dcde",
+    "hw6_imgs/train/t17.png": "ac19ca2d811db22273ffa601114fd66a958ec6b6595c6a0247c4768452ac8f70",
+    "hw6_imgs/train/t18.png": "20c0de49e515d9d94ec219828281a5eb96376a0a661ed8313f939a6ebc877a85",
+    "hw6_imgs/train/t19.png": "7349928d0673cbd7d1723b08520654a4b4e3b5ba77789c4943434abd0d689fbc",
+    "hw6_imgs/train/t20.png": "218df1b1a9117a869970c9bfecc86ab923331e96e705f3c8ba2479661e8eaf0b",
+    "hw6_imgs/train/t21.png": "7d9fb09c77edef1cdd59b1a1e2bebe323e07db4d8483f353fbd6ba7af184aed1",
+    "hw6_imgs/train/t22.png": "530da243607af8f431632059c531d3efed4bbad6ff533def698ceb6f4814671c",
+    "hw6_imgs/train/t23.png": "dcc353deba79e2f7c30edc934d00c9af1b1c13e3ca0d7a3618920d8ba1ce2319",
+    "hw6_imgs/train/t24.png": "c8661df509399f26ade66cccd378fea72c9ac13274a5701cc420f0ce1b422e44",
+    "hw6_imgs/train/t25.png": "6ddd18b1a0cd1f8afe0ef7a84b1081771359262099d7bbd4d212cf39e624cc0c",
+    "hw6_imgs/train/t26.png": "3f97e711244da4885e2274de75a373b04bfd512225c8b8255012777d09d6a23f",
+    "hw6_imgs/train/t27.png": "4e869c1cab9cba84b89f6edbac98b4203e91449642a58f56d0389746d079e11a",
+    "hw6_imgs/train/t28.png": "bf5ade086e6a6aeaba8a5a3468d59255e36d74736d920d833da9be19dfdc7883",
+    "hw6_imgs/train/t29.png": "a97d8a3fe31eaf0227ac905f9f618d03b138b06bf97ab02dbcaad121290d6990",
+    "hw6_imgs/train/t30.png": "a3e8ec723b89f966b67dd61d51a2a589306e77299efc5323c74709c084f1af34",
+    "hw6_imgs/train/t31.png": "4446128eebabaeaa99030774c66978142dc5a8dbb9830f08bc8bd3050660a45d",
+    "hw6_imgs/train/t32.png": "093afffcd4291badfd058e9ac70602a7bb7346c90e84c70b5095f0e9052512d8",
+    "hw6_imgs/train/t33.png": "ed5ac1a98b6d1ac2c763ecb760adf941c701c95a5d3be3ac8c979191351ee830",
+    "hw6_imgs/train/t34.png": "10164272bdbdb519f2e65e400fcc7768f0e16ec0f8a655aea77f63c58e4b84fa",
+    "hw6_imgs/train/t35.png": "de972e10816d8e67142a7a17e33f67276750143ed0536b78865fae184b2be663",
+    "hw6_imgs/train/t36.png": "8d6096c7492cd245f8bfec4df0c4377ee2723f737d74093811ca03d2fe09a4f7",
+    "hw6_imgs/train/t37.png": "db3996c4446cd74f83214cb7c3414ec0d1ce858461d0b4b454034c2fb606c9f9",
+    "hw6_imgs/train/t38.png": "11a29317376eb9f35eb4d2ebc95be46b4d379ec54c5516886fb5432dbb982bcb",
+    "hw6_imgs/train/t39.png": "d8465409c9c1fd1bd37f7424b6d0644d6d6d9eaf8a0778e5acce108f437d8043"
+  },
+  "png_container_note": "PNG compression bytes differ across environments; decoded RGB pixels are identical"
+}

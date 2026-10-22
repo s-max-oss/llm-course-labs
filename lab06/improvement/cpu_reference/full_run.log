@@ -1,0 +1,217 @@
+[command] D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Scripts\python.exe D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\hw6_rsi_localize.py --mode make_data --root D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\improvement\cpu_reference --model D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\model --device cpu --no-quant --offline
+[data] 40 train + 15 held-out eval images; seed/rsi/eval: 15/15/15; root=D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\improvement\cpu_reference
+[command] D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Scripts\python.exe D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\hw6_rsi_localize.py --mode make_sft --root D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\improvement\cpu_reference --model D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\model --device cpu --no-quant --offline
+[seed] 15 training-only GT records
+[command] D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Scripts\python.exe D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\hw6_rsi_localize.py --mode infer --root D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\improvement\cpu_reference --model D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\model --device cpu --no-quant --offline
+D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Lib\site-packages\transformers\models\auto\modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[baseline E00] 0 '1. The number of rows and columns in the table is 4 rows and 4 columns.\n2. The first row is labeled "X"' -> '1. The number of rows and columns in the table is 4 rows and 4 columns.\n2. The first row is labeled "X"' | 第3行第4列
+[baseline E01] 0 '1. First, we need to identify the number of squares in the image.\n2. We can see that there are 4 squares in the image' -> '1. First, we need to identify the number of squares in the image.\n2. We can see that there are 4 squares in the image' | 第2行第1列
+[baseline E02] 0 '1. The number of squares in the image is 4.\n2. The square in the first row is orange.\n3. The square in' -> '1. The number of squares in the image is 4.\n2. The square in the first row is orange.\n3. The square in' | 第2行第4列
+[baseline E03] 0 '1. 将第几行的黄色位于第几行的第几' -> '1. 将第几行的黄色位于第几行的第几' | 第2行第3列
+[baseline E04] 0 '1. The green square is located at the top left corner of the image.\n2. The blue square is located at the top right corner of the' -> '1. The green square is located at the top left corner of the image.\n2. The blue square is located at the top right corner of the' | 第1行第4列
+[baseline E05] 0 '1. First, I will identify the number of rows and columns in the table.\n2. I will look for the number of rows and columns in' -> '1. First, I will identify the number of rows and columns in the table.\n2. I will look for the number of rows and columns in' | 第1行第4列
+[baseline E06] 0 '1. 在图中，有一个小明的名字，可以是“第X行第Y列”' -> '1. 在图中，有一个小明的名字，可以是“第X行第Y列”' | 第1行第1列
+[baseline E07] 0 '1. 在图中，黄色的位于第几行第几列？' -> '1. 在图中，黄色的位于第几行第几列？' | 第3行第4列
+[baseline E08] 0 'The image contains a circular shape with a red and blue color. The shape is a circle with a diameter of 10 units. The color of the circle' -> 'The image contains a circular shape with a red and blue color. The shape is a circle with a diameter of 10 units. The color of the circle' | 1个
+[baseline E09] 0 '1.0.' -> '1.0.' | 1个
+[baseline E10] 0 'The image contains a table with two columns and three rows. The first column is labeled "Color," and the second column is labeled "Color." The table is' -> 'The image contains a table with two columns and three rows. The first column is labeled "Color," and the second column is labeled "Color." The table is' | 1个
+[baseline E11] 0 'The image contains a circular shape with a green and blue gradient. The gradient is a gradient of green and blue, with the green gradient being the darker shade and' -> 'The image contains a circular shape with a green and blue gradient. The gradient is a gradient of green and blue, with the green gradient being the darker shade and' | 1个
+[baseline E12] 1 'Yes, there is a red square in the image.' -> 'Yes, there is a red square in the image.' | 有
+[baseline E13] 1 'Yes, there are no green squares.' -> 'Yes, there are no green squares.' | 有
+[baseline E14] 1 'No, there are no green color squares in the image.' -> 'No, there are no green color squares in the image.' | 没有
+[baseline] loc=0/8 count=0/4 exist=3/3 total=3/15 IoU=0.0000
+[command] D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Scripts\python.exe D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\hw6_rsi_localize.py --mode sft --root D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\improvement\cpu_reference --model D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\model --device cpu --no-quant --offline --steps 10
+[seed] 15 training-only GT records
+D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Lib\site-packages\transformers\models\auto\modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=921600/257406528 (0.3580%) NF4=False
+[sft] 1/10 loss=2.3585
+[sft] 2/10 loss=2.2349
+[sft] 3/10 loss=1.5616
+[sft] 4/10 loss=1.7285
+[sft] 5/10 loss=1.8831
+[sft] 6/10 loss=1.6772
+[sft] 7/10 loss=5.8254
+[sft] 8/10 loss=4.9388
+[sft] 9/10 loss=8.1667
+[sft] 10/10 loss=8.2037
+[command] D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Scripts\python.exe D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\hw6_rsi_localize.py --mode eval --root D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\improvement\cpu_reference --model D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\model --device cpu --no-quant --offline
+D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Lib\site-packages\transformers\models\auto\modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[baseline E00] 0 '1. The number of rows and columns in the table is 4 rows and 4 columns.\n2. The first row is labeled "X"' -> '1. The number of rows and columns in the table is 4 rows and 4 columns.\n2. The first row is labeled "X"' | 第3行第4列
+[baseline E01] 0 '1. First, we need to identify the number of squares in the image.\n2. We can see that there are 4 squares in the image' -> '1. First, we need to identify the number of squares in the image.\n2. We can see that there are 4 squares in the image' | 第2行第1列
+[baseline E02] 0 '1. The number of squares in the image is 4.\n2. The square in the first row is orange.\n3. The square in' -> '1. The number of squares in the image is 4.\n2. The square in the first row is orange.\n3. The square in' | 第2行第4列
+[baseline E03] 0 '1. 将第几行的黄色位于第几行的第几' -> '1. 将第几行的黄色位于第几行的第几' | 第2行第3列
+[baseline E04] 0 '1. The green square is located at the top left corner of the image.\n2. The blue square is located at the top right corner of the' -> '1. The green square is located at the top left corner of the image.\n2. The blue square is located at the top right corner of the' | 第1行第4列
+[baseline E05] 0 '1. First, I will identify the number of rows and columns in the table.\n2. I will look for the number of rows and columns in' -> '1. First, I will identify the number of rows and columns in the table.\n2. I will look for the number of rows and columns in' | 第1行第4列
+[baseline E06] 0 '1. 在图中，有一个小明的名字，可以是“第X行第Y列”' -> '1. 在图中，有一个小明的名字，可以是“第X行第Y列”' | 第1行第1列
+[baseline E07] 0 '1. 在图中，黄色的位于第几行第几列？' -> '1. 在图中，黄色的位于第几行第几列？' | 第3行第4列
+[baseline E08] 0 'The image contains a circular shape with a red and blue color. The shape is a circle with a diameter of 10 units. The color of the circle' -> 'The image contains a circular shape with a red and blue color. The shape is a circle with a diameter of 10 units. The color of the circle' | 1个
+[baseline E09] 0 '1.0.' -> '1.0.' | 1个
+[baseline E10] 0 'The image contains a table with two columns and three rows. The first column is labeled "Color," and the second column is labeled "Color." The table is' -> 'The image contains a table with two columns and three rows. The first column is labeled "Color," and the second column is labeled "Color." The table is' | 1个
+[baseline E11] 0 'The image contains a circular shape with a green and blue gradient. The gradient is a gradient of green and blue, with the green gradient being the darker shade and' -> 'The image contains a circular shape with a green and blue gradient. The gradient is a gradient of green and blue, with the green gradient being the darker shade and' | 1个
+[baseline E12] 1 'Yes, there is a red square in the image.' -> 'Yes, there is a red square in the image.' | 有
+[baseline E13] 1 'Yes, there are no green squares.' -> 'Yes, there are no green squares.' | 有
+[baseline E14] 1 'No, there are no green color squares in the image.' -> 'No, there are no green color squares in the image.' | 没有
+[baseline] loc=0/8 count=0/4 exist=3/3 total=3/15 IoU=0.0000
+[sft_eval E00] 0 '1. 在图片的中间，有一个小明的白色表示。\n2.' -> '1. 在图片的中间，有一个小明的白色表示。\n2.' | 第3行第4列
+[sft_eval E01] 0 '1. 绿色圆形位于第几行第几列？\n绿' -> '1. 绿色圆形位于第几行第几列？\n绿' | 第2行第1列
+[sft_eval E02] 0 '1. The number of squares in the image is 4.\n2. The square in the first row is orange.\n3. The square in' -> '1. The number of squares in the image is 4.\n2. The square in the first row is orange.\n3. The square in' | 第2行第4列
+[sft_eval E03] 0 '1. 将第几行第几列的黄色方形位于第' -> '1. 将第几行第几列的黄色方形位于第' | 第2行第3列
+[sft_eval E04] 0 '1. The green square is located at the top left corner of the image.\n2. The blue square is located at the top right corner of the' -> '1. The green square is located at the top left corner of the image.\n2. The blue square is located at the top right corner of the' | 第1行第4列
+[sft_eval E05] 0 '1.1.' -> '1.1.' | 第1行第4列
+[sft_eval E06] 0 '1. 在图中，第1行的蓝色位于第1行的第2' -> '1. 在图中，第1行的蓝色位于第1行的第2' | 第1行第1列
+[sft_eval E07] 0 '1. 在第几行第几列？\n2. 1. 1. 1. 1' -> '1. 在第几行第几列？\n2. 1. 1. 1. 1' | 第3行第4列
+[sft_eval E08] 0 '1. The first circle is red.\n2. The second circle is blue.\n3. The third circle is orange.\n4. The fourth' -> '1. The first circle is red.\n2. The second circle is blue.\n3. The third circle is orange.\n4. The fourth' | 1个
+[sft_eval E09] 1 '1.' -> '1.' | 1个
+[sft_eval E10] 0 '1.0.' -> '1.0.' | 1个
+[sft_eval E11] 0 'The image contains a circular shape with a green and blue gradient background. The gradient is a gradient of green and blue, with the green gradient at the top and' -> 'The image contains a circular shape with a green and blue gradient background. The gradient is a gradient of green and blue, with the green gradient at the top and' | 1个
+[sft_eval E12] 1 'Yes, there are no color gradients in the image.' -> 'Yes, there are no color gradients in the image.' | 有
+[sft_eval E13] 0 'No.' -> 'No.' | 有
+[sft_eval E14] 1 'No.' -> 'No.' | 没有
+[sft_eval] loc=0/8 count=1/4 exist=2/3 total=3/15 IoU=0.0000
+[sft_tool_eval E00] 0 '1. 在图片的中间，有一个小明的白色表示。\n2.' -> '1. 在图片的中间，有一个小明的名字。\n2. 他的名字' | 第3行第4列
+[sft_tool_eval E01] 0 '1. 绿色圆形位于第几行第几列？\n绿' -> '1. 在图片的中间，有一个小白字，可以是“第X行第' | 第2行第1列
+[sft_tool_eval E02] 0 '1. The number of squares in the image is 4.\n2. The square in the first row is orange.\n3. The square in' -> '1. 在图片的中间，有一个小红色的位置，可以看' | 第2行第4列
+[sft_tool_eval E03] 0 '1. 将第几行第几列的黄色方形位于第' -> '1. 在图片的黄色方形位于第几行第几' | 第2行第3列
+[sft_tool_eval E04] 0 '1. The green square is located at the top left corner of the image.\n2. The blue square is located at the top right corner of the' -> '1. 在图片的中间，有一个小明的眼睛，他的�' | 第1行第4列
+[sft_tool_eval E05] 0 '1.1.' -> '1. 在图片的中间，有一个小明的名字。\n2. 他的名字' | 第1行第4列
+[sft_tool_eval E06] 0 '1. 在图中，第1行的蓝色位于第1行的第2' -> '1. 在图片的中间，有一个小明字位于第几行第�' | 第1行第1列
+[sft_tool_eval E07] 0 '1. 在第几行第几列？\n2. 1. 1. 1. 1' -> '1. 在图片的黄色位置，可以看到一个小明的' | 第3行第4列
+[sft_tool_eval E08] 0 '1. The first circle is red.\n2. The second circle is blue.\n3. The third circle is orange.\n4. The fourth' -> '1. 在图片的中间，有一个小红色圆形。\n2. �' | 1个
+[sft_tool_eval E09] 1 '1.' -> '1.' | 1个
+[sft_tool_eval E10] 0 '1.0.' -> '1. 在图片的顶部，有一个小粒子。\n\n2. 在图' | 1个
+[sft_tool_eval E11] 1 'The image contains a circular shape with a green and blue gradient background. The gradient is a gradient of green and blue, with the green gradient at the top and' -> '1. 在图片的中间，有一个小明字符符号，可以用于标' | 1个
+[sft_tool_eval E12] 1 'Yes, there are no color gradients in the image.' -> 'Yes, there are no color gradients in the image.' | 有
+[sft_tool_eval E13] 0 'No.' -> '我们需要在这个问题中解决。我们需要在这' | 有
+[sft_tool_eval E14] 1 'No.' -> 'No.' | 没有
+[sft_tool_eval] loc=0/8 count=2/4 exist=2/3 total=4/15 IoU=0.0000
+[baseline] 3/15
+[command] D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Scripts\python.exe D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\hw6_rsi_localize.py --mode rsi --root D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\improvement\cpu_reference --model D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab06\model --device cpu --no-quant --offline --steps 10 --rounds 2
+[seed] 15 training-only GT records
+D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\lab05_smolvlm\.venv\Lib\site-packages\transformers\models\auto\modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=921600/257406528 (0.3580%) NF4=False
+[rsi1_direct T15] 0 '1. The number of squares in the image is 4.\n2. The number of squares in the image is 4.\n3. The' -> '1. The number of squares in the image is 4.\n2. The number of squares in the image is 4.\n3. The' | 第2行第3列
+[rsi1_direct T16] 0 '1.0.' -> '1.0.' | 第1行第1列
+[rsi1_direct T17] 0 '1. 在图片的中间，有一个小明的蓝色位于第' -> '1. 在图片的中间，有一个小明的蓝色位于第' | 第2行第3列
+[rsi1_direct T18] 0 '1. 结果是第几行第几列？' -> '1. 结果是第几行第几列？' | 第4行第3列
+[rsi1_direct T19] 0 '1. The green squares are located at the top left and bottom right of the image.\n2. The yellow squares are located at the top left and' -> '1. The green squares are located at the top left and bottom right of the image.\n2. The yellow squares are located at the top left and' | 第3行第1列
+[rsi1_direct T20] 0 '1. 在图片的黄色位于第几行第几列。' -> '1. 在图片的黄色位于第几行第几列。' | 第4行第4列
+[rsi1_direct T21] 0 '1. The green square is located in the first row.\n2. The green square is located in the second row.\n3. The green square' -> '1. The green square is located in the first row.\n2. The green square is located in the second row.\n3. The green square' | 第4行第1列
+[rsi1_direct T22] 0 '1. 在图中，小明有一个小明的眼睛，他的�' -> '1. 在图中，小明有一个小明的眼睛，他的�' | 第2行第1列
+[rsi1_direct T23] 1 '1.' -> '1.' | 1个
+[rsi1_direct T24] 0 'Yes, the answer is yes.' -> 'Yes, the answer is yes.' | 1个
+[rsi1_direct T25] 1 '1' -> '1' | 1个
+[rsi1_direct T26] 1 '1.' -> '1.' | 1个
+[rsi1_direct T27] 1 'Yes, there is a yellow square in the image.' -> 'Yes, there is a yellow square in the image.' | 有
+[rsi1_direct T28] 1 'Yes, there is a blue circle in the image.' -> 'Yes, there is a blue circle in the image.' | 有
+[rsi1_direct T29] 1 'No.' -> 'No.' | 没有
+[rsi1_direct] loc=0/8 count=3/4 exist=3/3 total=6/15 IoU=0.0000
+[rsi1_corrected T15] 0 '1. The number of squares in the image is 4.\n2. The number of squares in the image is 4.\n3. The' -> '1. 在图片的中间，有一个小红色的位置，可以看' | 第2行第3列
+[rsi1_corrected T16] 0 '1.0.' -> '1. 在图片的中间，有一个小明字笔，可以看到他的' | 第1行第1列
+[rsi1_corrected T17] 0 '1. 在图片的中间，有一个小明的蓝色位于第' -> '1. 在图片的中间，有一个小明的名字。\n2. 他的名字' | 第2行第3列
+[rsi1_corrected T18] 0 '1. 结果是第几行第几列？' -> '1. 在图片的黄色位置，可以看到一个小红�' | 第4行第3列
+[rsi1_corrected T19] 0 '1. The green squares are located at the top left and bottom right of the image.\n2. The yellow squares are located at the top left and' -> '1. 在图片的中间，有一个小明的白色表示。\n2.' | 第3行第1列
+[rsi1_corrected T20] 0 '1. 在图片的黄色位于第几行第几列。' -> '1. 在图片的黄色位于第几行第几列？' | 第4行第4列
+[rsi1_corrected T21] 0 '1. The green square is located in the first row.\n2. The green square is located in the second row.\n3. The green square' -> '1. 在图片的中间，有一个小明的眼睛，他的�' | 第4行第1列
+[rsi1_corrected T22] 0 '1. 在图中，小明有一个小明的眼睛，他的�' -> '1. 在图片的中间，有一个小红色的位置，可以看' | 第2行第1列
+[rsi1_corrected T23] 1 '1.' -> '1.' | 1个
+[rsi1_corrected T24] 1 'Yes, the answer is yes.' -> '1. 在图片中，我们可以选择以下方法：\n1. 选' | 1个
+[rsi1_corrected T25] 1 '1' -> '1' | 1个
+[rsi1_corrected T26] 1 '1.' -> '1.' | 1个
+[rsi1_corrected T27] 1 'Yes, there is a yellow square in the image.' -> 'Yes, there is a yellow square in the image.' | 有
+[rsi1_corrected T28] 1 'Yes, there is a blue circle in the image.' -> 'Yes, there is a blue circle in the image.' | 有
+[rsi1_corrected T29] 1 'No.' -> 'No.' | 没有
+[rsi1_corrected] loc=0/8 count=4/4 exist=3/3 total=7/15 IoU=0.0000
+[rsi1] 1/10 loss=1.5214
+[rsi1] 2/10 loss=1.7343
+[rsi1] 3/10 loss=1.6624
+[rsi1] 4/10 loss=1.1051
+[rsi1] 5/10 loss=1.2269
+[rsi1] 6/10 loss=1.1700
+[rsi1] 7/10 loss=3.8441
+[rsi1] 8/10 loss=3.9815
+[rsi1] 9/10 loss=7.6206
+[rsi1] 10/10 loss=2.7453
+[rsi1_eval E00] 0 '1.1.' -> '1.1.' | 第3行第4列
+[rsi1_eval E01] 0 '1. 1.' -> '1. 1.' | 第2行第1列
+[rsi1_eval E02] 0 '输：第1行第4列' -> '输：第1行第4列' | 第2行第4列
+[rsi1_eval E03] 0 '1.00000000000000000000000000000' -> '1.00000000000000000000000000000' | 第2行第3列
+[rsi1_eval E04] 0 '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' -> '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' | 第1行第4列
+[rsi1_eval E05] 0 '1.0000000000.' -> '1.0000000000.' | 第1行第4列
+[rsi1_eval E06] 0 '1. 在图中，第1行的第2列是“第X行第Y列”。\n2' -> '1. 在图中，第1行的第2列是“第X行第Y列”。\n2' | 第1行第1列
+[rsi1_eval E07] 0 '1. 在第几行第几列？\n\n第1行第1列是第1' -> '1. 在第几行第几列？\n\n第1行第1列是第1' | 第3行第4列
+[rsi1_eval E08] 1 '1. 1.' -> '1. 1.' | 1个
+[rsi1_eval E09] 1 '1' -> '1' | 1个
+[rsi1_eval E10] 0 '1.0' -> '1.0' | 1个
+[rsi1_eval E11] 0 '1.0' -> '1.0' | 1个
+[rsi1_eval E12] 0 'No.' -> 'No.' | 有
+[rsi1_eval E13] 0 'No.' -> 'No.' | 有
+[rsi1_eval E14] 1 'No.' -> 'No.' | 没有
+[rsi1_eval] loc=0/8 count=2/4 exist=1/3 total=3/15 IoU=0.0000
+[rsi1] pool=16 added=1 heldout=3/15
+[rsi2_direct T15] 0 '1.1' -> '1.1' | 第2行第3列
+[rsi2_direct T16] 0 '0.' -> '0.' | 第1行第1列
+[rsi2_direct T17] 0 '1.0000000000.' -> '1.0000000000.' | 第2行第3列
+[rsi2_direct T18] 0 '1.0.' -> '1.0.' | 第4行第3列
+[rsi2_direct T19] 0 '1. 1.' -> '1. 1.' | 第3行第1列
+[rsi2_direct T20] 0 '0.' -> '0.' | 第4行第4列
+[rsi2_direct T21] 0 '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' -> '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' | 第4行第1列
+[rsi2_direct T22] 0 '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' -> '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' | 第2行第1列
+[rsi2_direct T23] 1 '1' -> '1' | 1个
+[rsi2_direct T24] 1 '1.' -> '1.' | 1个
+[rsi2_direct T25] 1 '1' -> '1' | 1个
+[rsi2_direct T26] 1 '1' -> '1' | 1个
+[rsi2_direct T27] 1 'Yes, there are no blue squares in the image.' -> 'Yes, there are no blue squares in the image.' | 有
+[rsi2_direct T28] 0 'No.' -> 'No.' | 有
+[rsi2_direct T29] 1 'No.' -> 'No.' | 没有
+[rsi2_direct] loc=0/8 count=4/4 exist=2/3 total=6/15 IoU=0.0000
+[rsi2_corrected T15] 0 '1.1' -> '1. 在图片的顶部，有一个小红色的位置，可以' | 第2行第3列
+[rsi2_corrected T16] 0 '0.' -> '1. 在图片的中间，有一个小明字笔，可以看到他的' | 第1行第1列
+[rsi2_corrected T17] 0 '1.0000000000.' -> '1. 在图片的中间，有一个小明字位置，可以看到小' | 第2行第3列
+[rsi2_corrected T18] 0 '1.0.' -> '1. 在图片的黄色位置，可以看到一个白�' | 第4行第3列
+[rsi2_corrected T19] 0 '1. 1.' -> '1. 在图片的中间，有一个小明的白色的窗户，' | 第3行第1列
+[rsi2_corrected T20] 0 '0.' -> '1. 在图片的黄色位于第几行第几列？' | 第4行第4列
+[rsi2_corrected T21] 0 '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' -> '1. 在图片的中间，有一个小明字笔，可以看到他的' | 第4行第1列
+[rsi2_corrected T22] 0 '1. 1. 2. 3. 4. 5. 6. 7. 8. 9. 1' -> '1. 在图片的中间，有一个小红色的位置。\n2. �' | 第2行第1列
+[rsi2_corrected T23] 1 '1' -> '1' | 1个
+[rsi2_corrected T24] 1 '1.' -> '1.' | 1个
+[rsi2_corrected T25] 1 '1' -> '1' | 1个
+[rsi2_corrected T26] 1 '1' -> '1' | 1个
+[rsi2_corrected T27] 1 'Yes, there are no blue squares in the image.' -> 'Yes, there are no blue squares in the image.' | 有
+[rsi2_corrected T28] 0 'No.' -> '我们需要在这个问题中检查是否有没有�' | 有
+[rsi2_corrected T29] 1 'No.' -> 'No.' | 没有
+[rsi2_corrected] loc=0/8 count=4/4 exist=2/3 total=6/15 IoU=0.0000
+[rsi2] 1/10 loss=1.2727
+[rsi2] 2/10 loss=1.1477
+[rsi2] 3/10 loss=0.7008
+[rsi2] 4/10 loss=0.8003
+[rsi2] 5/10 loss=0.6939
+[rsi2] 6/10 loss=3.3012
+[rsi2] 7/10 loss=3.4339
+[rsi2] 8/10 loss=2.8780
+[rsi2] 9/10 loss=6.9203
+[rsi2] 10/10 loss=2.0722
+[rsi2_eval E00] 0 '1' -> '1' | 第3行第4列
+[rsi2_eval E01] 0 '1' -> '1' | 第2行第1列
+[rsi2_eval E02] 0 '1' -> '1' | 第2行第4列
+[rsi2_eval E03] 0 '1' -> '1' | 第2行第3列
+[rsi2_eval E04] 0 '1' -> '1' | 第1行第4列
+[rsi2_eval E05] 0 '1' -> '1' | 第1行第4列
+[rsi2_eval E06] 0 '0 1 2 3 4' -> '0 1 2 3 4' | 第1行第1列
+[rsi2_eval E07] 0 '1' -> '1' | 第3行第4列
+[rsi2_eval E08] 0 '1.0' -> '1.0' | 1个
+[rsi2_eval E09] 1 '1' -> '1' | 1个
+[rsi2_eval E10] 1 '1' -> '1' | 1个
+[rsi2_eval E11] 0 '1.0' -> '1.0' | 1个
+[rsi2_eval E12] 0 'No' -> 'No' | 有
+[rsi2_eval E13] 0 'No' -> 'No' | 有
+[rsi2_eval E14] 1 'No.' -> 'No.' | 没有
+[rsi2_eval] loc=0/8 count=2/4 exist=1/3 total=3/15 IoU=0.0000
+[rsi2] pool=16 added=0 heldout=3/15

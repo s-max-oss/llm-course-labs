@@ -1,0 +1,25 @@
+{
+  "reason": "Disambiguate bbox-assisted and self-check decoding from raw independent generation; no prediction or training target changed",
+  "runtime_source_sha256": "a79cdcdb7e0021281882be5bc7519a412a02e8171645d2f58e6876be2a167e9e",
+  "submitted_source_sha256": "dd2bdd6b16237c075de18874840d855eae43a3bfe80b11db68815b41c4047e3b",
+  "source_ast_equal_except_origin_annotation": true,
+  "raw_pool_backups": "provenance\\origin_labels_raw_15397",
+  "rounds": {
+    "1": {
+      "origins": {
+        "constrained_candidate": 4,
+        "bbox_tool": 3
+      },
+      "labels_changed": 3,
+      "answers_and_other_fields_unchanged": true
+    },
+    "2": {
+      "origins": {
+        "constrained_candidate": 5,
+        "bbox_tool": 3
+      },
+      "labels_changed": 3,
+      "answers_and_other_fields_unchanged": true
+    }
+  }
+}

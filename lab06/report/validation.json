@@ -1,8 +1,18 @@
 {
-  "formal_job": 15391,
-  "raw_files_verified": 85,
-  "source_matches_run": true,
-  "image_hashes_verified": 55,
+  "formal_job": 15397,
+  "default_reference_job": 15391,
+  "default_raw_files_verified": 85,
+  "improved_audit": {
+    "joint_questions_checked": 4480,
+    "unique_images": 4416,
+    "strict_scores": "passed",
+    "bootstrap_provenance": "passed",
+    "selection": "passed",
+    "split_isolation": "passed"
+  },
+  "unit_tests_passed": 10,
+  "cpu_full_chain_stages": 6,
+  "source_ast_equal_except_origin_annotation": true,
   "template_unchanged": true,
   "xml_parts_valid": 17,
   "modified_template_parts": [
@@ -12,8 +22,12 @@
   ],
   "report_pages": 3,
   "three_report_copies_identical": true,
-  "docx_sha256": "bff3a2795c3dc3b960ef9f089c2fe6add52c6b39139cff4451543762449ef41c",
-  "pdf_sha256": "a2b31f2e123e0d2f912d6a055a4f4655f161ffcf92fe79b17e27eb80f2eb6481",
-  "visual_review": "all 3 pages inspected, no clipping or overlap",
-  "review": "independent Codex review passed after fixes"
+  "docx_sha256": "8c50909eb02e8f45ae9c04045bad33418c17e4342d45c0339e46f546f165826d",
+  "pdf_sha256": "da8ae67f67d9cd920e43c6455ab9020f47864ba20ff14fadda01f8d8f530fe8a",
+  "figure_matches_report": true,
+  "visual_review": "All three final pages inspected; no clipping, overlap or blank page",
+  "renderer": "Word COM read-only PDF export and pypdfium2; packaged renderer unavailable because LibreOffice is absent",
+  "independent_review": "All important findings resolved; numeric and attribution checks passed",
+  "hpc_allocations_released": true,
+  "queue_after": []
 }

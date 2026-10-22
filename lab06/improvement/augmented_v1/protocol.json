@@ -1,0 +1,23 @@
+{
+  "initial_adapter": "improvement/vision_compact_v1/step1200/adapter",
+  "model": {
+    "device": "cuda:0",
+    "dtype": "torch.bfloat16",
+    "nf4": true,
+    "processor_longest_edge": 512,
+    "image_splitting": false,
+    "parameters": {
+      "trainable": 1614336,
+      "total": 258099264,
+      "percent": 0.6254709815832717
+    }
+  },
+  "steps": 4000,
+  "lr": 0.0001,
+  "seed": 2026,
+  "image_seed": 20261028,
+  "new_image_every_step": true,
+  "curriculum": "256 single-object; 512 two-object; remaining 2-4 objects",
+  "final_test_evaluated": false,
+  "source_sha256": "982db438d3009d5fa9d44f102be4c5f8dea3596e1c2aa0932d3ce244f05ddfd2"
+}

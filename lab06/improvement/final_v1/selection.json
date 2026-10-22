@@ -1,0 +1,94 @@
+{
+  "selected": "sft",
+  "validation": {
+    "initial": {
+      "loc": {
+        "correct": 78,
+        "n": 128,
+        "valid": 128
+      },
+      "count": {
+        "correct": 8,
+        "n": 40,
+        "valid": 40
+      },
+      "exist": {
+        "correct": 14,
+        "n": 16,
+        "valid": 16
+      },
+      "total": {
+        "correct": 100,
+        "n": 184
+      },
+      "loc_iou": 0.22882461547851562
+    },
+    "sft": {
+      "loc": {
+        "correct": 106,
+        "n": 128,
+        "valid": 128
+      },
+      "count": {
+        "correct": 22,
+        "n": 40,
+        "valid": 40
+      },
+      "exist": {
+        "correct": 14,
+        "n": 16,
+        "valid": 15
+      },
+      "total": {
+        "correct": 142,
+        "n": 184
+      },
+      "loc_iou": 0.309417724609375
+    },
+    "rsi1": {
+      "loc": {
+        "correct": 104,
+        "n": 128,
+        "valid": 128
+      },
+      "count": {
+        "correct": 23,
+        "n": 40,
+        "valid": 40
+      },
+      "exist": {
+        "correct": 12,
+        "n": 16,
+        "valid": 15
+      },
+      "total": {
+        "correct": 139,
+        "n": 184
+      },
+      "loc_iou": 0.3041248321533203
+    },
+    "rsi2": {
+      "loc": {
+        "correct": 100,
+        "n": 128,
+        "valid": 128
+      },
+      "count": {
+        "correct": 19,
+        "n": 40,
+        "valid": 40
+      },
+      "exist": {
+        "correct": 12,
+        "n": 16,
+        "valid": 15
+      },
+      "total": {
+        "correct": 131,
+        "n": 184
+      },
+      "loc_iou": 0.2921123504638672
+    }
+  },
+  "final_test_evaluated_at_selection": false
+}

@@ -1,0 +1,50 @@
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=1614336/258099264 (0.6255%) NF4=True
+[train] 100/4000 mean100=0.2798
+[train] 200/4000 mean100=0.0719
+[train] 300/4000 mean100=0.3542
+[train] 400/4000 mean100=0.4755
+[train] 500/4000 mean100=0.4584
+[train] 600/4000 mean100=0.4453
+[train] 700/4000 mean100=0.4497
+[train] 800/4000 mean100=0.4236
+[train] 900/4000 mean100=0.4659
+[train] 1000/4000 mean100=0.4925
+[eval] validation correct=25/128 format=128/128
+[train] 1100/4000 mean100=0.4643
+[train] 1200/4000 mean100=0.4965
+[train] 1300/4000 mean100=0.4687
+[train] 1400/4000 mean100=0.4461
+[train] 1500/4000 mean100=0.4482
+[train] 1600/4000 mean100=0.4610
+[train] 1700/4000 mean100=0.4498
+[train] 1800/4000 mean100=0.4296
+[train] 1900/4000 mean100=0.4364
+[train] 2000/4000 mean100=0.4372
+[train] 2100/4000 mean100=0.3981
+[train] 2200/4000 mean100=0.4013
+[train] 2300/4000 mean100=0.4209
+[train] 2400/4000 mean100=0.3752
+[train] 2500/4000 mean100=0.3941
+[eval] validation correct=45/128 format=128/128
+[train] 2600/4000 mean100=0.3772
+[train] 2700/4000 mean100=0.3932
+[train] 2800/4000 mean100=0.3381
+[train] 2900/4000 mean100=0.3622
+[train] 3000/4000 mean100=0.3207
+[train] 3100/4000 mean100=0.3462
+[train] 3200/4000 mean100=0.2889
+[train] 3300/4000 mean100=0.2361
+[train] 3400/4000 mean100=0.2651
+[train] 3500/4000 mean100=0.2476
+[train] 3600/4000 mean100=0.2448
+[train] 3700/4000 mean100=0.2210
+[train] 3800/4000 mean100=0.2409
+[train] 3900/4000 mean100=0.2301
+[train] 4000/4000 mean100=0.2151
+[eval] validation correct=78/128 format=128/128
+[eval] legacy correct=5/8 format=8/8
+[eval] blank16 correct=1/16 format=16/16
+[complete] online augmentation development run

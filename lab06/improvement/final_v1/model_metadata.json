@@ -1,0 +1,12 @@
+{
+  "device": "cuda:0",
+  "dtype": "torch.bfloat16",
+  "nf4": true,
+  "processor_longest_edge": 512,
+  "image_splitting": false,
+  "parameters": {
+    "trainable": 1614336,
+    "total": 258099264,
+    "percent": 0.6254709815832717
+  }
+}

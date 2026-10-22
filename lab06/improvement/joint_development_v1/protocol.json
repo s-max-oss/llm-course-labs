@@ -1,0 +1,10 @@
+{
+  "initial_adapter": "improvement/vision_compact_v1/step1200/adapter",
+  "joint_steps": 400,
+  "rsi_steps": 80,
+  "seed": 2026,
+  "compact": true,
+  "final_selection": "max development localization, then overall accuracy",
+  "tool_training": "Every fifth scheduled non-bootstrap step includes neutral pixel-derived bbox observations; actual flags are logged; no row/column answer string",
+  "source_sha256": "aec2cb2620cf215a107f1c297e6f1112798655e28545c58157fc7d835baaf6c0"
+}

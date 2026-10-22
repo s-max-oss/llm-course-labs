@@ -1,0 +1,33 @@
+{
+  "validation_checkpoints": {
+    "1000": {
+      "name": "validation",
+      "n": 128,
+      "correct": 25,
+      "valid": 128,
+      "mean_iou": 0.0803070068359375,
+      "blank_image": false,
+      "seconds": 47.871285835281014
+    },
+    "2500": {
+      "name": "validation",
+      "n": 128,
+      "correct": 45,
+      "valid": 128,
+      "mean_iou": 0.13335227966308594,
+      "blank_image": false,
+      "seconds": 48.39812466315925
+    },
+    "4000": {
+      "name": "validation",
+      "n": 128,
+      "correct": 78,
+      "valid": 128,
+      "mean_iou": 0.22882461547851562,
+      "blank_image": false,
+      "seconds": 47.767237620428205
+    }
+  },
+  "seconds": 1999.786554960534,
+  "final_test_evaluated": false
+}

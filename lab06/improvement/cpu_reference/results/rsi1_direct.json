@@ -1,0 +1,420 @@
+{
+  "stage": "rsi1_direct",
+  "split": "train feedback",
+  "correction": false,
+  "rows": [
+    {
+      "id": "T15",
+      "type": "loc",
+      "img": "t15",
+      "question": "图中的红色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第2行第3列",
+      "raw": "1. The number of squares in the image is 4.\n2. The number of squares in the image is 4.\n3. The",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第2行第3列",
+        "evidence": {
+          "box": [
+            134,
+            72,
+            183,
+            121
+          ],
+          "components": 1
+        },
+        "hint": "回答格式未通过检查。请重新观察图片，定位只回答“第X行第Y列”，计数只回答数量，存在性只回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1. The number of squares in the image is 4.\n2. The number of squares in the image is 4.\n3. The",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "T16",
+      "type": "loc",
+      "img": "t16",
+      "question": "图中的绿色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第1行第1列",
+      "raw": "1.0.",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第1行第1列",
+        "evidence": {
+          "box": [
+            19,
+            24,
+            54,
+            59
+          ],
+          "components": 1
+        },
+        "hint": "回答格式未通过检查。请重新观察图片，定位只回答“第X行第Y列”，计数只回答数量，存在性只回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1.0.",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "T17",
+      "type": "loc",
+      "img": "t17",
+      "question": "图中的蓝色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第2行第3列",
+      "raw": "1. 在图片的中间，有一个小明的蓝色位于第",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第2行第3列",
+        "evidence": {
+          "box": [
+            134,
+            80,
+            177,
+            123
+          ],
+          "components": 1
+        },
+        "hint": "回答格式未通过检查。请重新观察图片，定位只回答“第X行第Y列”，计数只回答数量，存在性只回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1. 在图片的中间，有一个小明的蓝色位于第",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "T18",
+      "type": "loc",
+      "img": "t18",
+      "question": "图中的黄色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第4行第3列",
+      "raw": "1. 结果是第几行第几列？",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第4行第3列",
+        "evidence": {
+          "box": [
+            139,
+            200,
+            178,
+            239
+          ],
+          "components": 1
+        },
+        "hint": "回答格式未通过检查。请重新观察图片，定位只回答“第X行第Y列”，计数只回答数量，存在性只回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1. 结果是第几行第几列？",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "T19",
+      "type": "loc",
+      "img": "t19",
+      "question": "图中的绿色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第3行第1列",
+      "raw": "1. The green squares are located at the top left and bottom right of the image.\n2. The yellow squares are located at the top left and",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第3行第1列",
+        "evidence": {
+          "box": [
+            16,
+            141,
+            58,
+            183
+          ],
+          "components": 1
+        },
+        "hint": "回答格式未通过检查。请重新观察图片，定位只回答“第X行第Y列”，计数只回答数量，存在性只回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1. The green squares are located at the top left and bottom right of the image.\n2. The yellow squares are located at the top left and",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "T20",
+      "type": "loc",
+      "img": "t20",
+      "question": "图中的黄色圆形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第4行第4列",
+      "raw": "1. 在图片的黄色位于第几行第几列。",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第4行第4列",
+        "evidence": {
+          "box": [
+            199,
+            199,
+            242,
+            242
+          ],
+          "components": 1
+        },
+        "hint": "回答格式未通过检查。请重新观察图片，定位只回答“第X行第Y列”，计数只回答数量，存在性只回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1. 在图片的黄色位于第几行第几列。",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "T21",
+      "type": "loc",
+      "img": "t21",
+      "question": "图中的绿色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第4行第1列",
+      "raw": "1. The green square is located in the first row.\n2. The green square is located in the second row.\n3. The green square",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第4行第1列",
+        "evidence": {
+          "box": [
+            24,
+            204,
+            59,
+            239
+          ],
+          "components": 1
+        },
+        "hint": "回答格式未通过检查。请重新观察图片，定位只回答“第X行第Y列”，计数只回答数量，存在性只回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1. The green square is located in the first row.\n2. The green square is located in the second row.\n3. The green square",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "T22",
+      "type": "loc",
+      "img": "t22",
+      "question": "图中的红色方形位于第几行第几列？请用“第X行第Y列”回答，网格为4×4。",
+      "gold": "第2行第1列",
+      "raw": "1. 在图中，小明有一个小明的眼睛，他的�",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "第2行第1列",
+        "evidence": {
+          "box": [
+            11,
+            82,
+            52,
+            123
+          ],
+          "components": 1
+        },
+        "hint": "回答格式未通过检查。请重新观察图片，定位只回答“第X行第Y列”，计数只回答数量，存在性只回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1. 在图中，小明有一个小明的眼睛，他的�",
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "T23",
+      "type": "count",
+      "img": "t23",
+      "question": "图中有几个蓝色圆形？",
+      "gold": "1个",
+      "raw": "1.",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "1个",
+        "pixel_result": "1个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "候选计数通过目标颜色与形状的连通块检查。请重新数目标，不要包含其他颜色或形状。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1.",
+      "correct": true,
+      "iou": null
+    },
+    {
+      "id": "T24",
+      "type": "count",
+      "img": "t24",
+      "question": "图中有几个绿色方形？",
+      "gold": "1个",
+      "raw": "Yes, the answer is yes.",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "parsed": null,
+        "pixel_result": "1个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "回答格式未通过检查。请重新观察图片，定位只回答“第X行第Y列”，计数只回答数量，存在性只回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "Yes, the answer is yes.",
+      "correct": false,
+      "iou": null
+    },
+    {
+      "id": "T25",
+      "type": "count",
+      "img": "t25",
+      "question": "图中有几个蓝色圆形？",
+      "gold": "1个",
+      "raw": "1",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "1个",
+        "pixel_result": "1个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "候选计数通过目标颜色与形状的连通块检查。请重新数目标，不要包含其他颜色或形状。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1",
+      "correct": true,
+      "iou": null
+    },
+    {
+      "id": "T26",
+      "type": "count",
+      "img": "t26",
+      "question": "图中有几个黄色方形？",
+      "gold": "1个",
+      "raw": "1.",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "1个",
+        "pixel_result": "1个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "候选计数通过目标颜色与形状的连通块检查。请重新数目标，不要包含其他颜色或形状。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "1.",
+      "correct": true,
+      "iou": null
+    },
+    {
+      "id": "T27",
+      "type": "exist",
+      "img": "t27",
+      "question": "图中有没有蓝色方形？",
+      "gold": "有",
+      "raw": "Yes, there is a yellow square in the image.",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "有",
+        "pixel_result": "有",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "候选存在性结论通过目标颜色与形状检查。请重新观察并回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "Yes, there is a yellow square in the image.",
+      "correct": true,
+      "iou": null
+    },
+    {
+      "id": "T28",
+      "type": "exist",
+      "img": "t28",
+      "question": "图中有没有蓝色圆形？",
+      "gold": "有",
+      "raw": "Yes, there is a blue circle in the image.",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "有",
+        "pixel_result": "有",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "候选存在性结论通过目标颜色与形状检查。请重新观察并回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "Yes, there is a blue circle in the image.",
+      "correct": true,
+      "iou": null
+    },
+    {
+      "id": "T29",
+      "type": "exist",
+      "img": "t29",
+      "question": "图中有没有蓝色方形？",
+      "gold": "没有",
+      "raw": "No.",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "parsed": "没有",
+        "pixel_result": "没有",
+        "evidence": {
+          "components": 0
+        },
+        "hint": "候选存在性结论通过目标颜色与形状检查。请重新观察并回答有或没有。"
+      },
+      "self_check": null,
+      "tool_check": null,
+      "final": "No.",
+      "correct": true,
+      "iou": null
+    }
+  ],
+  "summary": {
+    "loc": {
+      "correct": 0,
+      "n": 8
+    },
+    "count": {
+      "correct": 3,
+      "n": 4
+    },
+    "exist": {
+      "correct": 3,
+      "n": 3
+    },
+    "total": {
+      "correct": 6,
+      "n": 15
+    },
+    "loc_mean_iou": 0.0
+  },
+  "seconds": 37.41762000000017
+}

@@ -27,3 +27,6 @@
 /lab06/**/*.safetensors binary
 /lab06/provenance/slurm-*.log whitespace=-blank-at-eol
 /lab06/provenance/**/*.log whitespace=-blank-at-eol
+/lab06/improvement/**/*.raw binary
+/lab06/improvement/**/*.log -text -eol whitespace=-blank-at-eol
+/lab06/improvement/**/*.md -text -eol whitespace=-blank-at-eol

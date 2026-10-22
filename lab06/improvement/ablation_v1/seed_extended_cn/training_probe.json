@@ -1,0 +1,75 @@
+{
+  "name": "training_probe",
+  "n": 8,
+  "correct": 8,
+  "valid": 8,
+  "mean_iou": 0.4429931640625,
+  "blank_image": false,
+  "rows": [
+    {
+      "id": "T00",
+      "gold": "第3行第3列",
+      "prediction": "第3行第3列",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.5625
+    },
+    {
+      "id": "T01",
+      "gold": "第3行第2列",
+      "prediction": "第3行第2列",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.390625
+    },
+    {
+      "id": "T02",
+      "gold": "第3行第4列",
+      "prediction": "第3行第4列",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.410400390625
+    },
+    {
+      "id": "T03",
+      "gold": "第1行第1列",
+      "prediction": "第1行第1列",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.390625
+    },
+    {
+      "id": "T04",
+      "gold": "第1行第3列",
+      "prediction": "第1行第3列",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.371337890625
+    },
+    {
+      "id": "T05",
+      "gold": "第3行第4列",
+      "prediction": "第3行第4列",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.47265625
+    },
+    {
+      "id": "T06",
+      "gold": "第4行第4列",
+      "prediction": "第4行第4列",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.451416015625
+    },
+    {
+      "id": "T07",
+      "gold": "第3行第4列",
+      "prediction": "第3行第4列",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.494384765625
+    }
+  ],
+  "seconds": 5.420293506234884
+}

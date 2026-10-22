@@ -1,0 +1,55 @@
+[data] fully crossed train=128, development validation=128, sealed final_test=128
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[eval] legacy correct=0/8 format=0/8
+[eval] validation correct=0/128 format=0/128
+[rank] constrained16 correct=2/16
+[eval] legacy correct=0/8 format=0/8
+[eval] validation correct=0/128 format=0/128
+[rank] constrained16 correct=2/16
+[model] trainable=921600/257406528 (0.3580%) NF4=True
+/home/u2024311281/.conda/envs/yolo/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:745: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+[train] seed_extended_cn step=50/400 mean50=0.8853
+[train] seed_extended_cn step=100/400 mean50=0.2028
+[train] seed_extended_cn step=150/400 mean50=0.1157
+[train] seed_extended_cn step=200/400 mean50=0.0462
+[train] seed_extended_cn step=250/400 mean50=0.0092
+[train] seed_extended_cn step=300/400 mean50=0.0031
+[train] seed_extended_cn step=350/400 mean50=0.0019
+[train] seed_extended_cn step=400/400 mean50=0.0013
+[eval] training_probe correct=8/8 format=8/8
+[eval] legacy correct=2/8 format=8/8
+[eval] validation correct=10/128 format=128/128
+[eval] blank16 correct=1/16 format=16/16
+[rank] constrained16 correct=1/16
+[model] trainable=921600/257406528 (0.3580%) NF4=True
+[train] balanced_cn step=50/400 mean50=0.9565
+[train] balanced_cn step=100/400 mean50=0.3498
+[train] balanced_cn step=150/400 mean50=0.3049
+[train] balanced_cn step=200/400 mean50=0.2989
+[train] balanced_cn step=250/400 mean50=0.2985
+[train] balanced_cn step=300/400 mean50=0.2854
+[train] balanced_cn step=350/400 mean50=0.2986
+[train] balanced_cn step=400/400 mean50=0.2924
+[eval] training_probe correct=1/16 format=16/16
+[eval] legacy correct=1/8 format=8/8
+[eval] validation correct=8/128 format=128/128
+[eval] blank16 correct=1/16 format=16/16
+[rank] constrained16 correct=1/16
+[model] trainable=921600/257406528 (0.3580%) NF4=True
+[train] balanced_compact step=50/400 mean50=1.3480
+[train] balanced_compact step=100/400 mean50=0.6517
+[train] balanced_compact step=150/400 mean50=0.5896
+[train] balanced_compact step=200/400 mean50=0.5952
+[train] balanced_compact step=250/400 mean50=0.6039
+[train] balanced_compact step=300/400 mean50=0.5739
+[train] balanced_compact step=350/400 mean50=0.5871
+[train] balanced_compact step=400/400 mean50=0.5701
+[eval] training_probe correct=0/16 format=16/16
+[eval] legacy correct=1/8 format=8/8
+[eval] validation correct=11/128 format=128/128
+[eval] blank16 correct=1/16 format=16/16
+[rank] constrained16 correct=2/16
+[complete] localization ablation; final test remains sealed

@@ -1,0 +1,72 @@
+{
+  "selected": "rsi2",
+  "validation": {
+    "sft": {
+      "loc": {
+        "correct": 18,
+        "n": 128,
+        "valid": 128
+      },
+      "count": {
+        "correct": 17,
+        "n": 40,
+        "valid": 40
+      },
+      "exist": {
+        "correct": 11,
+        "n": 16,
+        "valid": 16
+      },
+      "total": {
+        "correct": 46,
+        "n": 184
+      },
+      "loc_iou": 0.052722930908203125
+    },
+    "rsi1": {
+      "loc": {
+        "correct": 20,
+        "n": 128,
+        "valid": 128
+      },
+      "count": {
+        "correct": 21,
+        "n": 40,
+        "valid": 40
+      },
+      "exist": {
+        "correct": 11,
+        "n": 16,
+        "valid": 16
+      },
+      "total": {
+        "correct": 52,
+        "n": 184
+      },
+      "loc_iou": 0.05600547790527344
+    },
+    "rsi2": {
+      "loc": {
+        "correct": 21,
+        "n": 128,
+        "valid": 128
+      },
+      "count": {
+        "correct": 20,
+        "n": 40,
+        "valid": 40
+      },
+      "exist": {
+        "correct": 13,
+        "n": 16,
+        "valid": 16
+      },
+      "total": {
+        "correct": 54,
+        "n": 184
+      },
+      "loc_iou": 0.05994606018066406
+    }
+  },
+  "final_test_evaluated_at_selection": false
+}

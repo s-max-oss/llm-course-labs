@@ -1,0 +1,45 @@
+{
+  "device": "cpu",
+  "dtype": "float32",
+  "nf4": false,
+  "threads": 8,
+  "date": "2026-10-22T01:25:20.524111+08:00",
+  "python": "3.11.16 | packaged by conda-forge | (main, Sep  2 2026, 23:31:17) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.14.0+cpu",
+  "transformers": "4.57.6",
+  "peft": "0.17.1",
+  "stages": [
+    {
+      "mode": "make_data",
+      "exit_code": 0,
+      "seconds": 0.2900298999993538
+    },
+    {
+      "mode": "make_sft",
+      "exit_code": 0,
+      "seconds": 0.16732220000085363
+    },
+    {
+      "mode": "infer",
+      "exit_code": 0,
+      "seconds": 48.18605319999915
+    },
+    {
+      "mode": "sft",
+      "exit_code": 0,
+      "seconds": 60.422703600001114
+    },
+    {
+      "mode": "eval",
+      "exit_code": 1,
+      "seconds": 128.7736872000005
+    }
+  ],
+  "seconds": 244.25419310000143,
+  "success": false,
+  "source_sha256": "b18f0c0e960b92fbcd553af6b43375b4ae5c1c2e0c6cae0160018aefb3f2615f",
+  "log_encoding_normalization": {
+    "method": "UTF-8 parent lines preserved; GB18030 child lines transcoded to UTF-8; original bytes in full_run.raw",
+    "transcoded_lines": 56
+  }
+}

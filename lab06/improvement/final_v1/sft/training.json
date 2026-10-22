@@ -1,0 +1,2802 @@
+[
+  {
+    "step": 1,
+    "id": "aug_00487",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.826399028301239
+  },
+  {
+    "step": 2,
+    "id": "aug_01308",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.30211514234542847
+  },
+  {
+    "step": 3,
+    "id": "aug_02058",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.0016947522526606917
+  },
+  {
+    "step": 4,
+    "id": "train_count_6_1_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.1162705048918724
+  },
+  {
+    "step": 5,
+    "id": "train_exist_7_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 8.387924194335938
+  },
+  {
+    "step": 6,
+    "id": "aug_03896",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.9266635179519653
+  },
+  {
+    "step": 7,
+    "id": "aug_02096",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.17012564837932587
+  },
+  {
+    "step": 8,
+    "id": "aug_02650",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.1371963918209076
+  },
+  {
+    "step": 9,
+    "id": "train_count_0_0_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 2.8749074935913086
+  },
+  {
+    "step": 10,
+    "id": "train_exist_6_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 7.437295436859131
+  },
+  {
+    "step": 11,
+    "id": "aug_03522",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.9816706776618958
+  },
+  {
+    "step": 12,
+    "id": "aug_03903",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.10681068897247314
+  },
+  {
+    "step": 13,
+    "id": "aug_00420",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.20714060962200165
+  },
+  {
+    "step": 14,
+    "id": "train_count_7_4_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.8178728222846985
+  },
+  {
+    "step": 15,
+    "id": "train_exist_3_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 5.719074249267578
+  },
+  {
+    "step": 16,
+    "id": "aug_03621",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.23238389194011688
+  },
+  {
+    "step": 17,
+    "id": "aug_00914",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.0998569130897522
+  },
+  {
+    "step": 18,
+    "id": "aug_03665",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.3625343441963196
+  },
+  {
+    "step": 19,
+    "id": "train_count_1_2_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.0031017514411360025
+  },
+  {
+    "step": 20,
+    "id": "train_exist_1_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 3.7422115802764893
+  },
+  {
+    "step": 21,
+    "id": "aug_02461",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.3066684603691101
+  },
+  {
+    "step": 22,
+    "id": "aug_02545",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.17405812442302704
+  },
+  {
+    "step": 23,
+    "id": "aug_02279",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.00628094095736742
+  },
+  {
+    "step": 24,
+    "id": "train_count_4_2_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.1284429281949997
+  },
+  {
+    "step": 25,
+    "id": "train_exist_5_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 2.2488911151885986
+  },
+  {
+    "step": 26,
+    "id": "aug_01722",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.7690804600715637
+  },
+  {
+    "step": 27,
+    "id": "aug_03208",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.13839790225028992
+  },
+  {
+    "step": 28,
+    "id": "aug_02345",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.0060118697583675385
+  },
+  {
+    "step": 29,
+    "id": "train_count_2_3_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.1546299457550049
+  },
+  {
+    "step": 30,
+    "id": "train_exist_7_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 2.535283088684082
+  },
+  {
+    "step": 31,
+    "id": "aug_02243",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.09804756939411163
+  },
+  {
+    "step": 32,
+    "id": "aug_03450",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.10240234434604645
+  },
+  {
+    "step": 33,
+    "id": "aug_02992",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.20886126160621643
+  },
+  {
+    "step": 34,
+    "id": "train_count_7_4_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.006849413271993399
+  },
+  {
+    "step": 35,
+    "id": "train_exist_2_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.00919607188552618
+  },
+  {
+    "step": 36,
+    "id": "aug_03180",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.48219117522239685
+  },
+  {
+    "step": 37,
+    "id": "aug_03146",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.20344030857086182
+  },
+  {
+    "step": 38,
+    "id": "aug_02010",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.03833242133259773
+  },
+  {
+    "step": 39,
+    "id": "train_count_1_1_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 2.1637094020843506
+  },
+  {
+    "step": 40,
+    "id": "train_exist_3_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 1.4458798170089722
+  },
+  {
+    "step": 41,
+    "id": "aug_03076",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.32334089279174805
+  },
+  {
+    "step": 42,
+    "id": "aug_03166",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08696442097425461
+  },
+  {
+    "step": 43,
+    "id": "aug_02402",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.23279699683189392
+  },
+  {
+    "step": 44,
+    "id": "train_count_7_3_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.3843110799789429
+  },
+  {
+    "step": 45,
+    "id": "train_exist_6_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.038461294025182724
+  },
+  {
+    "step": 46,
+    "id": "aug_01806",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.15082994103431702
+  },
+  {
+    "step": 47,
+    "id": "aug_00982",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.15550903975963593
+  },
+  {
+    "step": 48,
+    "id": "aug_00010",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.010503705590963364
+  },
+  {
+    "step": 49,
+    "id": "train_count_7_1_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 3.304494857788086
+  },
+  {
+    "step": 50,
+    "id": "train_exist_2_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0011444233823567629
+  },
+  {
+    "step": 51,
+    "id": "aug_02515",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.4074006974697113
+  },
+  {
+    "step": 52,
+    "id": "aug_00330",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.029543500393629074
+  },
+  {
+    "step": 53,
+    "id": "aug_00453",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.2941991090774536
+  },
+  {
+    "step": 54,
+    "id": "train_count_5_3_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.2918034791946411
+  },
+  {
+    "step": 55,
+    "id": "train_exist_5_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 1.4867314100265503
+  },
+  {
+    "step": 56,
+    "id": "aug_01176",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.4238552451133728
+  },
+  {
+    "step": 57,
+    "id": "aug_03345",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.1911529153585434
+  },
+  {
+    "step": 58,
+    "id": "aug_00401",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.05108414962887764
+  },
+  {
+    "step": 59,
+    "id": "train_count_1_3_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.6416969895362854
+  },
+  {
+    "step": 60,
+    "id": "train_exist_0_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.07218623161315918
+  },
+  {
+    "step": 61,
+    "id": "aug_01841",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.45550379157066345
+  },
+  {
+    "step": 62,
+    "id": "aug_00047",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.018894610926508904
+  },
+  {
+    "step": 63,
+    "id": "aug_03337",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.2171725481748581
+  },
+  {
+    "step": 64,
+    "id": "train_count_6_0_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.3956209421157837
+  },
+  {
+    "step": 65,
+    "id": "train_exist_4_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.007164349313825369
+  },
+  {
+    "step": 66,
+    "id": "aug_03649",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.16529710590839386
+  },
+  {
+    "step": 67,
+    "id": "aug_02806",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.03518485277891159
+  },
+  {
+    "step": 68,
+    "id": "aug_02008",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.044402364641427994
+  },
+  {
+    "step": 69,
+    "id": "train_count_1_2_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.04363870248198509
+  },
+  {
+    "step": 70,
+    "id": "train_exist_5_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 2.307283401489258
+  },
+  {
+    "step": 71,
+    "id": "aug_02782",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.03273957222700119
+  },
+  {
+    "step": 72,
+    "id": "aug_01287",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.1986580342054367
+  },
+  {
+    "step": 73,
+    "id": "aug_00861",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.024687085300683975
+  },
+  {
+    "step": 74,
+    "id": "train_count_5_4_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.9277632236480713
+  },
+  {
+    "step": 75,
+    "id": "train_exist_4_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0066678873263299465
+  },
+  {
+    "step": 76,
+    "id": "aug_01627",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.11511693894863129
+  },
+  {
+    "step": 77,
+    "id": "aug_01030",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.19901227951049805
+  },
+  {
+    "step": 78,
+    "id": "aug_01424",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.38621985912323
+  },
+  {
+    "step": 79,
+    "id": "train_count_2_0_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 4.115557670593262
+  },
+  {
+    "step": 80,
+    "id": "train_exist_1_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.14821846783161163
+  },
+  {
+    "step": 81,
+    "id": "aug_03806",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.531767725944519
+  },
+  {
+    "step": 82,
+    "id": "aug_01460",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.021656811237335205
+  },
+  {
+    "step": 83,
+    "id": "aug_03297",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.39273637533187866
+  },
+  {
+    "step": 84,
+    "id": "train_count_1_3_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.4949946701526642
+  },
+  {
+    "step": 85,
+    "id": "train_exist_4_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.06933002173900604
+  },
+  {
+    "step": 86,
+    "id": "aug_01541",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.1856754720211029
+  },
+  {
+    "step": 87,
+    "id": "aug_03055",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08011232316493988
+  },
+  {
+    "step": 88,
+    "id": "aug_02103",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.04040903225541115
+  },
+  {
+    "step": 89,
+    "id": "train_count_1_4_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.5787290334701538
+  },
+  {
+    "step": 90,
+    "id": "train_exist_7_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.43458428978919983
+  },
+  {
+    "step": 91,
+    "id": "aug_02612",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.1895161122083664
+  },
+  {
+    "step": 92,
+    "id": "aug_00312",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.04447723180055618
+  },
+  {
+    "step": 93,
+    "id": "aug_02961",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08148113638162613
+  },
+  {
+    "step": 94,
+    "id": "train_count_4_3_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.40440812706947327
+  },
+  {
+    "step": 95,
+    "id": "train_exist_0_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.013005542568862438
+  },
+  {
+    "step": 96,
+    "id": "aug_01394",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.32238754630088806
+  },
+  {
+    "step": 97,
+    "id": "aug_00367",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.02155948244035244
+  },
+  {
+    "step": 98,
+    "id": "aug_02283",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08189602196216583
+  },
+  {
+    "step": 99,
+    "id": "train_count_2_0_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.717456340789795
+  },
+  {
+    "step": 100,
+    "id": "train_exist_7_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.803820788860321
+  },
+  {
+    "step": 101,
+    "id": "aug_02203",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.13491053879261017
+  },
+  {
+    "step": 102,
+    "id": "aug_01196",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.3613366484642029
+  },
+  {
+    "step": 103,
+    "id": "aug_01178",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.04863300174474716
+  },
+  {
+    "step": 104,
+    "id": "train_count_5_1_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.534907341003418
+  },
+  {
+    "step": 105,
+    "id": "train_exist_1_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.06954984366893768
+  },
+  {
+    "step": 106,
+    "id": "aug_01873",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.05636812373995781
+  },
+  {
+    "step": 107,
+    "id": "aug_00577",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.04522684961557388
+  },
+  {
+    "step": 108,
+    "id": "aug_03590",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.19056393206119537
+  },
+  {
+    "step": 109,
+    "id": "train_count_3_3_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.8486194014549255
+  },
+  {
+    "step": 110,
+    "id": "train_exist_3_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.04201987013220787
+  },
+  {
+    "step": 111,
+    "id": "aug_02641",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.1780521422624588
+  },
+  {
+    "step": 112,
+    "id": "aug_02883",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.17006948590278625
+  },
+  {
+    "step": 113,
+    "id": "aug_02934",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.022707408294081688
+  },
+  {
+    "step": 114,
+    "id": "train_count_5_0_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.3852021396160126
+  },
+  {
+    "step": 115,
+    "id": "train_exist_2_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 1.7074310779571533
+  },
+  {
+    "step": 116,
+    "id": "aug_02365",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.23356279730796814
+  },
+  {
+    "step": 117,
+    "id": "aug_01265",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.013622340746223927
+  },
+  {
+    "step": 118,
+    "id": "aug_00101",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.1120055764913559
+  },
+  {
+    "step": 119,
+    "id": "train_count_3_3_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.15607871115207672
+  },
+  {
+    "step": 120,
+    "id": "train_exist_3_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.009844045154750347
+  },
+  {
+    "step": 121,
+    "id": "aug_03472",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.1481318175792694
+  },
+  {
+    "step": 122,
+    "id": "aug_02911",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.09610895067453384
+  },
+  {
+    "step": 123,
+    "id": "aug_01510",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.12488506734371185
+  },
+  {
+    "step": 124,
+    "id": "train_count_1_4_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.26240864396095276
+  },
+  {
+    "step": 125,
+    "id": "train_exist_6_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.9817410111427307
+  },
+  {
+    "step": 126,
+    "id": "aug_01489",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.1854429543018341
+  },
+  {
+    "step": 127,
+    "id": "aug_01888",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.18358676135540009
+  },
+  {
+    "step": 128,
+    "id": "aug_01729",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.050075553357601166
+  },
+  {
+    "step": 129,
+    "id": "train_count_5_3_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.5864616632461548
+  },
+  {
+    "step": 130,
+    "id": "train_exist_6_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0030620675534009933
+  },
+  {
+    "step": 131,
+    "id": "aug_00371",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.29063624143600464
+  },
+  {
+    "step": 132,
+    "id": "aug_01633",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.19038125872612
+  },
+  {
+    "step": 133,
+    "id": "aug_03960",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08210516721010208
+  },
+  {
+    "step": 134,
+    "id": "train_count_4_4_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.7277345657348633
+  },
+  {
+    "step": 135,
+    "id": "train_exist_5_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.14018402993679047
+  },
+  {
+    "step": 136,
+    "id": "aug_02399",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.166062593460083
+  },
+  {
+    "step": 137,
+    "id": "aug_02271",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.2532321810722351
+  },
+  {
+    "step": 138,
+    "id": "aug_02041",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.335452139377594
+  },
+  {
+    "step": 139,
+    "id": "train_count_0_1_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.32448121905326843
+  },
+  {
+    "step": 140,
+    "id": "train_exist_2_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.17606794834136963
+  },
+  {
+    "step": 141,
+    "id": "aug_03552",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.06526725739240646
+  },
+  {
+    "step": 142,
+    "id": "aug_00476",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.24043378233909607
+  },
+  {
+    "step": 143,
+    "id": "aug_01742",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.11498616635799408
+  },
+  {
+    "step": 144,
+    "id": "train_count_6_4_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.8952886462211609
+  },
+  {
+    "step": 145,
+    "id": "train_exist_0_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 3.1983747482299805
+  },
+  {
+    "step": 146,
+    "id": "aug_02074",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.014938101172447205
+  },
+  {
+    "step": 147,
+    "id": "aug_03287",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08300770074129105
+  },
+  {
+    "step": 148,
+    "id": "aug_03072",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.5370748043060303
+  },
+  {
+    "step": 149,
+    "id": "train_count_2_1_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.1648088693618774
+  },
+  {
+    "step": 150,
+    "id": "train_exist_0_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0069723958149552345
+  },
+  {
+    "step": 151,
+    "id": "aug_03550",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.32022860646247864
+  },
+  {
+    "step": 152,
+    "id": "aug_02458",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.1661132127046585
+  },
+  {
+    "step": 153,
+    "id": "aug_03585",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08714960515499115
+  },
+  {
+    "step": 154,
+    "id": "train_count_0_4_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.8445029854774475
+  },
+  {
+    "step": 155,
+    "id": "train_exist_1_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.024450527504086494
+  },
+  {
+    "step": 156,
+    "id": "aug_02011",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.07059532403945923
+  },
+  {
+    "step": 157,
+    "id": "aug_01630",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.3888570964336395
+  },
+  {
+    "step": 158,
+    "id": "aug_03755",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.07112395763397217
+  },
+  {
+    "step": 159,
+    "id": "train_count_5_2_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.18044207990169525
+  },
+  {
+    "step": 160,
+    "id": "train_exist_4_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.4507014751434326
+  },
+  {
+    "step": 161,
+    "id": "aug_02148",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.31458598375320435
+  },
+  {
+    "step": 162,
+    "id": "aug_01059",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.13735824823379517
+  },
+  {
+    "step": 163,
+    "id": "aug_03458",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.004809698089957237
+  },
+  {
+    "step": 164,
+    "id": "train_count_4_2_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.5839307904243469
+  },
+  {
+    "step": 165,
+    "id": "train_exist_7_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0032396172173321247
+  },
+  {
+    "step": 166,
+    "id": "aug_01720",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.13795700669288635
+  },
+  {
+    "step": 167,
+    "id": "aug_02310",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.02898026444017887
+  },
+  {
+    "step": 168,
+    "id": "aug_03793",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.031865064054727554
+  },
+  {
+    "step": 169,
+    "id": "train_count_6_3_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.0935772955417633
+  },
+  {
+    "step": 170,
+    "id": "train_exist_3_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.026501275599002838
+  },
+  {
+    "step": 171,
+    "id": "aug_01962",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.17278245091438293
+  },
+  {
+    "step": 172,
+    "id": "aug_02101",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.05069298669695854
+  },
+  {
+    "step": 173,
+    "id": "aug_02121",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.21237066388130188
+  },
+  {
+    "step": 174,
+    "id": "train_count_4_0_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.2543914318084717
+  },
+  {
+    "step": 175,
+    "id": "train_exist_1_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.010729324072599411
+  },
+  {
+    "step": 176,
+    "id": "aug_03949",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.16937504708766937
+  },
+  {
+    "step": 177,
+    "id": "aug_00103",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.009995433501899242
+  },
+  {
+    "step": 178,
+    "id": "aug_02357",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.0193161740899086
+  },
+  {
+    "step": 179,
+    "id": "train_count_0_2_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.39209628105163574
+  },
+  {
+    "step": 180,
+    "id": "train_exist_4_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.03864956647157669
+  },
+  {
+    "step": 181,
+    "id": "aug_00919",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.38566291332244873
+  },
+  {
+    "step": 182,
+    "id": "aug_03136",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.007057534996420145
+  },
+  {
+    "step": 183,
+    "id": "aug_00528",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.016258949413895607
+  },
+  {
+    "step": 184,
+    "id": "train_count_7_0_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.9077903032302856
+  },
+  {
+    "step": 185,
+    "id": "train_exist_2_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.5721402168273926
+  },
+  {
+    "step": 186,
+    "id": "aug_03351",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.13521935045719147
+  },
+  {
+    "step": 187,
+    "id": "aug_00200",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.14427240192890167
+  },
+  {
+    "step": 188,
+    "id": "aug_02886",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.022172803059220314
+  },
+  {
+    "step": 189,
+    "id": "train_count_7_2_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.7677350640296936
+  },
+  {
+    "step": 190,
+    "id": "train_exist_6_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0010548876598477364
+  },
+  {
+    "step": 191,
+    "id": "aug_02143",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.08113159239292145
+  },
+  {
+    "step": 192,
+    "id": "aug_03632",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.05730435997247696
+  },
+  {
+    "step": 193,
+    "id": "aug_02746",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.07597532123327255
+  },
+  {
+    "step": 194,
+    "id": "train_count_4_1_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.01892801746726036
+  },
+  {
+    "step": 195,
+    "id": "train_exist_6_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.002603192813694477
+  },
+  {
+    "step": 196,
+    "id": "aug_03991",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.02413482591509819
+  },
+  {
+    "step": 197,
+    "id": "aug_02938",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.09048058092594147
+  },
+  {
+    "step": 198,
+    "id": "aug_02548",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.04710274934768677
+  },
+  {
+    "step": 199,
+    "id": "train_count_6_2_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.3134263753890991
+  },
+  {
+    "step": 200,
+    "id": "train_exist_0_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.010139303281903267
+  },
+  {
+    "step": 201,
+    "id": "aug_01758",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.4942502975463867
+  },
+  {
+    "step": 202,
+    "id": "aug_01925",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.019997548311948776
+  },
+  {
+    "step": 203,
+    "id": "aug_00583",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.016230788081884384
+  },
+  {
+    "step": 204,
+    "id": "train_count_7_0_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.44771048426628113
+  },
+  {
+    "step": 205,
+    "id": "train_exist_2_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.003155284794047475
+  },
+  {
+    "step": 206,
+    "id": "aug_01974",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.16146783530712128
+  },
+  {
+    "step": 207,
+    "id": "aug_03622",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.05651099234819412
+  },
+  {
+    "step": 208,
+    "id": "aug_00937",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.02500397525727749
+  },
+  {
+    "step": 209,
+    "id": "train_count_0_0_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.6985740065574646
+  },
+  {
+    "step": 210,
+    "id": "train_exist_0_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.024624042212963104
+  },
+  {
+    "step": 211,
+    "id": "aug_03480",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.258919894695282
+  },
+  {
+    "step": 212,
+    "id": "aug_03628",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.01963822916150093
+  },
+  {
+    "step": 213,
+    "id": "aug_00499",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.07551586627960205
+  },
+  {
+    "step": 214,
+    "id": "train_count_4_4_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.0520392656326294
+  },
+  {
+    "step": 215,
+    "id": "train_exist_2_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.04846198111772537
+  },
+  {
+    "step": 216,
+    "id": "aug_02566",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.11921355873346329
+  },
+  {
+    "step": 217,
+    "id": "aug_02870",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.07075515389442444
+  },
+  {
+    "step": 218,
+    "id": "aug_01871",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.37986093759536743
+  },
+  {
+    "step": 219,
+    "id": "train_count_7_2_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.11914420872926712
+  },
+  {
+    "step": 220,
+    "id": "train_exist_7_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.005059594288468361
+  },
+  {
+    "step": 221,
+    "id": "aug_02761",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.08529893308877945
+  },
+  {
+    "step": 222,
+    "id": "aug_01922",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.13745859265327454
+  },
+  {
+    "step": 223,
+    "id": "aug_02926",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.3020721971988678
+  },
+  {
+    "step": 224,
+    "id": "train_count_6_4_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.1069272756576538
+  },
+  {
+    "step": 225,
+    "id": "train_exist_4_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.07573495805263519
+  },
+  {
+    "step": 226,
+    "id": "aug_03807",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.062131308019161224
+  },
+  {
+    "step": 227,
+    "id": "aug_02234",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.012656559236347675
+  },
+  {
+    "step": 228,
+    "id": "aug_01028",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.7767223119735718
+  },
+  {
+    "step": 229,
+    "id": "train_count_3_2_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.13384254276752472
+  },
+  {
+    "step": 230,
+    "id": "train_exist_5_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.004899651277810335
+  },
+  {
+    "step": 231,
+    "id": "aug_02292",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.19283953309059143
+  },
+  {
+    "step": 232,
+    "id": "aug_01646",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.12230999767780304
+  },
+  {
+    "step": 233,
+    "id": "aug_02743",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.1349262148141861
+  },
+  {
+    "step": 234,
+    "id": "train_count_0_1_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.2214759588241577
+  },
+  {
+    "step": 235,
+    "id": "train_exist_2_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.006220984272658825
+  },
+  {
+    "step": 236,
+    "id": "aug_01260",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.2462274730205536
+  },
+  {
+    "step": 237,
+    "id": "aug_02245",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.36043015122413635
+  },
+  {
+    "step": 238,
+    "id": "aug_03275",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.2501298785209656
+  },
+  {
+    "step": 239,
+    "id": "train_count_0_3_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.40828990936279297
+  },
+  {
+    "step": 240,
+    "id": "train_exist_3_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.05012958496809006
+  },
+  {
+    "step": 241,
+    "id": "aug_02649",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.19514279067516327
+  },
+  {
+    "step": 242,
+    "id": "aug_02055",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08559723943471909
+  },
+  {
+    "step": 243,
+    "id": "aug_02860",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.2724175751209259
+  },
+  {
+    "step": 244,
+    "id": "train_count_4_0_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 2.2389886379241943
+  },
+  {
+    "step": 245,
+    "id": "train_exist_6_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.1320841908454895
+  },
+  {
+    "step": 246,
+    "id": "aug_01961",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.12281974405050278
+  },
+  {
+    "step": 247,
+    "id": "aug_03296",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08478857576847076
+  },
+  {
+    "step": 248,
+    "id": "aug_03875",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.3089483380317688
+  },
+  {
+    "step": 249,
+    "id": "train_count_6_1_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.05055297538638115
+  },
+  {
+    "step": 250,
+    "id": "train_exist_5_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.008194212801754475
+  },
+  {
+    "step": 251,
+    "id": "aug_03860",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.30832651257514954
+  },
+  {
+    "step": 252,
+    "id": "aug_01773",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.051710449159145355
+  },
+  {
+    "step": 253,
+    "id": "aug_00829",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08911976963281631
+  },
+  {
+    "step": 254,
+    "id": "train_count_1_0_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.4790221154689789
+  },
+  {
+    "step": 255,
+    "id": "train_exist_7_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0029382624197751284
+  },
+  {
+    "step": 256,
+    "id": "aug_01205",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.17974361777305603
+  },
+  {
+    "step": 257,
+    "id": "aug_03407",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.010363534092903137
+  },
+  {
+    "step": 258,
+    "id": "aug_01101",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.054870687425136566
+  },
+  {
+    "step": 259,
+    "id": "train_count_6_0_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.6079185605049133
+  },
+  {
+    "step": 260,
+    "id": "train_exist_0_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0033775456249713898
+  },
+  {
+    "step": 261,
+    "id": "aug_00037",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.12040445953607559
+  },
+  {
+    "step": 262,
+    "id": "aug_00135",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.13896526396274567
+  },
+  {
+    "step": 263,
+    "id": "aug_00613",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.09468407183885574
+  },
+  {
+    "step": 264,
+    "id": "train_count_0_3_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.31347712874412537
+  },
+  {
+    "step": 265,
+    "id": "train_exist_6_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.004857112653553486
+  },
+  {
+    "step": 266,
+    "id": "aug_02685",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.17387840151786804
+  },
+  {
+    "step": 267,
+    "id": "aug_03612",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.06971274316310883
+  },
+  {
+    "step": 268,
+    "id": "aug_02446",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.18323634564876556
+  },
+  {
+    "step": 269,
+    "id": "train_count_6_3_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.2447539120912552
+  },
+  {
+    "step": 270,
+    "id": "train_exist_7_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.002745006699115038
+  },
+  {
+    "step": 271,
+    "id": "aug_01876",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.3092072010040283
+  },
+  {
+    "step": 272,
+    "id": "aug_03291",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.03903301805257797
+  },
+  {
+    "step": 273,
+    "id": "aug_02141",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.23488011956214905
+  },
+  {
+    "step": 274,
+    "id": "train_count_3_4_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.05715416744351387
+  },
+  {
+    "step": 275,
+    "id": "train_exist_1_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.10726016014814377
+  },
+  {
+    "step": 276,
+    "id": "aug_03796",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.0926905944943428
+  },
+  {
+    "step": 277,
+    "id": "aug_02005",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.20861046016216278
+  },
+  {
+    "step": 278,
+    "id": "aug_01474",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.01795518398284912
+  },
+  {
+    "step": 279,
+    "id": "train_count_2_3_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.6936210989952087
+  },
+  {
+    "step": 280,
+    "id": "train_exist_3_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.012794327922165394
+  },
+  {
+    "step": 281,
+    "id": "aug_03774",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.1229412779211998
+  },
+  {
+    "step": 282,
+    "id": "aug_00818",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.16458547115325928
+  },
+  {
+    "step": 283,
+    "id": "aug_01065",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.10612034797668457
+  },
+  {
+    "step": 284,
+    "id": "train_count_2_2_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.2788725793361664
+  },
+  {
+    "step": 285,
+    "id": "train_exist_1_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.17958632111549377
+  },
+  {
+    "step": 286,
+    "id": "aug_02837",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.1736549437046051
+  },
+  {
+    "step": 287,
+    "id": "aug_01988",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.018394529819488525
+  },
+  {
+    "step": 288,
+    "id": "aug_01911",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.03151879459619522
+  },
+  {
+    "step": 289,
+    "id": "train_count_5_1_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.37838807702064514
+  },
+  {
+    "step": 290,
+    "id": "train_exist_0_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.03907265141606331
+  },
+  {
+    "step": 291,
+    "id": "aug_02094",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.225372314453125
+  },
+  {
+    "step": 292,
+    "id": "aug_03140",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.09902085363864899
+  },
+  {
+    "step": 293,
+    "id": "aug_03384",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.05857832357287407
+  },
+  {
+    "step": 294,
+    "id": "train_count_3_0_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.6475492715835571
+  },
+  {
+    "step": 295,
+    "id": "train_exist_3_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0013459729962050915
+  },
+  {
+    "step": 296,
+    "id": "aug_02036",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.07472354918718338
+  },
+  {
+    "step": 297,
+    "id": "aug_03309",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.015786774456501007
+  },
+  {
+    "step": 298,
+    "id": "aug_01778",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.017144164070487022
+  },
+  {
+    "step": 299,
+    "id": "train_count_4_1_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.5959561467170715
+  },
+  {
+    "step": 300,
+    "id": "train_exist_4_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.016447370871901512
+  },
+  {
+    "step": 301,
+    "id": "aug_02284",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.0737900584936142
+  },
+  {
+    "step": 302,
+    "id": "aug_02719",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.10380716621875763
+  },
+  {
+    "step": 303,
+    "id": "aug_03716",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.03219857066869736
+  },
+  {
+    "step": 304,
+    "id": "train_count_0_4_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.6182847023010254
+  },
+  {
+    "step": 305,
+    "id": "train_exist_5_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.014836368151009083
+  },
+  {
+    "step": 306,
+    "id": "aug_00137",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.07543350756168365
+  },
+  {
+    "step": 307,
+    "id": "aug_03405",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.006563395261764526
+  },
+  {
+    "step": 308,
+    "id": "aug_01188",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.11614251136779785
+  },
+  {
+    "step": 309,
+    "id": "train_count_5_0_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.6951626539230347
+  },
+  {
+    "step": 310,
+    "id": "train_exist_5_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.16671420633792877
+  },
+  {
+    "step": 311,
+    "id": "aug_01297",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.2416367083787918
+  },
+  {
+    "step": 312,
+    "id": "aug_01874",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.14175140857696533
+  },
+  {
+    "step": 313,
+    "id": "aug_03904",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.0111022824421525
+  },
+  {
+    "step": 314,
+    "id": "train_count_1_0_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.11609498411417007
+  },
+  {
+    "step": 315,
+    "id": "train_exist_1_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.010838588699698448
+  },
+  {
+    "step": 316,
+    "id": "aug_03325",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.42242375016212463
+  },
+  {
+    "step": 317,
+    "id": "aug_00402",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.07521945238113403
+  },
+  {
+    "step": 318,
+    "id": "aug_01795",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.6595554947853088
+  },
+  {
+    "step": 319,
+    "id": "train_count_1_1_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.18221749365329742
+  },
+  {
+    "step": 320,
+    "id": "train_exist_4_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0015660449862480164
+  },
+  {
+    "step": 321,
+    "id": "aug_02823",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.10565265268087387
+  },
+  {
+    "step": 322,
+    "id": "aug_03931",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.009620720520615578
+  },
+  {
+    "step": 323,
+    "id": "aug_03215",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.04623543471097946
+  },
+  {
+    "step": 324,
+    "id": "train_count_4_3_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.10870596021413803
+  },
+  {
+    "step": 325,
+    "id": "train_exist_5_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.017653021961450577
+  },
+  {
+    "step": 326,
+    "id": "aug_02110",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.12787801027297974
+  },
+  {
+    "step": 327,
+    "id": "aug_01060",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.023918379098176956
+  },
+  {
+    "step": 328,
+    "id": "aug_01855",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.08639916777610779
+  },
+  {
+    "step": 329,
+    "id": "train_count_5_4_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.26850101351737976
+  },
+  {
+    "step": 330,
+    "id": "train_exist_7_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0025813099928200245
+  },
+  {
+    "step": 331,
+    "id": "aug_03776",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.24004514515399933
+  },
+  {
+    "step": 332,
+    "id": "aug_00749",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.016410525888204575
+  },
+  {
+    "step": 333,
+    "id": "aug_01743",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.22125771641731262
+  },
+  {
+    "step": 334,
+    "id": "train_count_7_3_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.48369669914245605
+  },
+  {
+    "step": 335,
+    "id": "train_exist_6_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0015225913375616074
+  },
+  {
+    "step": 336,
+    "id": "aug_03980",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.17375651001930237
+  },
+  {
+    "step": 337,
+    "id": "aug_02981",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.0333310030400753
+  },
+  {
+    "step": 338,
+    "id": "aug_03897",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.05592859536409378
+  },
+  {
+    "step": 339,
+    "id": "train_count_2_4_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.5431237816810608
+  },
+  {
+    "step": 340,
+    "id": "train_exist_3_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.01792876049876213
+  },
+  {
+    "step": 341,
+    "id": "aug_00263",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.23783981800079346
+  },
+  {
+    "step": 342,
+    "id": "aug_02656",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.1344928741455078
+  },
+  {
+    "step": 343,
+    "id": "aug_01091",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.8250547647476196
+  },
+  {
+    "step": 344,
+    "id": "train_count_2_4_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.5649018287658691
+  },
+  {
+    "step": 345,
+    "id": "train_exist_5_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.011272752657532692
+  },
+  {
+    "step": 346,
+    "id": "aug_03699",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.4491528570652008
+  },
+  {
+    "step": 347,
+    "id": "aug_03916",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.22178205847740173
+  },
+  {
+    "step": 348,
+    "id": "aug_01516",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.14799968898296356
+  },
+  {
+    "step": 349,
+    "id": "train_count_2_2_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.12657834589481354
+  },
+  {
+    "step": 350,
+    "id": "train_exist_5_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.004537425469607115
+  },
+  {
+    "step": 351,
+    "id": "aug_00395",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.6247669458389282
+  },
+  {
+    "step": 352,
+    "id": "aug_00797",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.05182794854044914
+  },
+  {
+    "step": 353,
+    "id": "aug_03061",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.06361015886068344
+  },
+  {
+    "step": 354,
+    "id": "train_count_3_1_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.18149864673614502
+  },
+  {
+    "step": 355,
+    "id": "train_exist_4_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.010429592803120613
+  },
+  {
+    "step": 356,
+    "id": "aug_03508",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.32065942883491516
+  },
+  {
+    "step": 357,
+    "id": "aug_01684",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.16202276945114136
+  },
+  {
+    "step": 358,
+    "id": "aug_00599",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.061339370906353
+  },
+  {
+    "step": 359,
+    "id": "train_count_0_2_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.3085399866104126
+  },
+  {
+    "step": 360,
+    "id": "train_exist_0_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.003701127367094159
+  },
+  {
+    "step": 361,
+    "id": "aug_01840",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.009240702725946903
+  },
+  {
+    "step": 362,
+    "id": "aug_03753",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.20285601913928986
+  },
+  {
+    "step": 363,
+    "id": "aug_00057",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.0795028954744339
+  },
+  {
+    "step": 364,
+    "id": "train_count_6_2_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.8647648692131042
+  },
+  {
+    "step": 365,
+    "id": "train_exist_1_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.008712613955140114
+  },
+  {
+    "step": 366,
+    "id": "aug_00377",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.12696288526058197
+  },
+  {
+    "step": 367,
+    "id": "aug_00000",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.013985788449645042
+  },
+  {
+    "step": 368,
+    "id": "aug_01848",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.045691363513469696
+  },
+  {
+    "step": 369,
+    "id": "train_count_3_1_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 1.9420276880264282
+  },
+  {
+    "step": 370,
+    "id": "train_exist_3_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.01682080142199993
+  },
+  {
+    "step": 371,
+    "id": "aug_02378",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.3852427899837494
+  },
+  {
+    "step": 372,
+    "id": "aug_02238",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.018688704818487167
+  },
+  {
+    "step": 373,
+    "id": "aug_03425",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.031346455216407776
+  },
+  {
+    "step": 374,
+    "id": "train_count_3_2_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.425665020942688
+  },
+  {
+    "step": 375,
+    "id": "train_exist_6_2_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0003584897785913199
+  },
+  {
+    "step": 376,
+    "id": "aug_00340",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.0629827156662941
+  },
+  {
+    "step": 377,
+    "id": "aug_02499",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.3330962061882019
+  },
+  {
+    "step": 378,
+    "id": "aug_03251",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.1587972790002823
+  },
+  {
+    "step": 379,
+    "id": "train_count_5_2_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.3386971056461334
+  },
+  {
+    "step": 380,
+    "id": "train_exist_2_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.08712707459926605
+  },
+  {
+    "step": 381,
+    "id": "aug_00814",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.1407768279314041
+  },
+  {
+    "step": 382,
+    "id": "aug_01015",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.5001703500747681
+  },
+  {
+    "step": 383,
+    "id": "aug_00494",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.02491203509271145
+  },
+  {
+    "step": 384,
+    "id": "train_count_3_4_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.25183647871017456
+  },
+  {
+    "step": 385,
+    "id": "train_exist_2_2_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.001552431844174862
+  },
+  {
+    "step": 386,
+    "id": "aug_02543",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.08933176100254059
+  },
+  {
+    "step": 387,
+    "id": "aug_00182",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.016478238627314568
+  },
+  {
+    "step": 388,
+    "id": "aug_03079",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.10007385909557343
+  },
+  {
+    "step": 389,
+    "id": "train_count_7_1_1",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.09557389467954636
+  },
+  {
+    "step": 390,
+    "id": "train_exist_7_0_1",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.02291562594473362
+  },
+  {
+    "step": 391,
+    "id": "aug_03801",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.1142052561044693
+  },
+  {
+    "step": 392,
+    "id": "aug_01099",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.028714101761579514
+  },
+  {
+    "step": 393,
+    "id": "aug_02738",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.05156726762652397
+  },
+  {
+    "step": 394,
+    "id": "train_count_2_1_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.15901662409305573
+  },
+  {
+    "step": 395,
+    "id": "train_exist_7_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.0017895216587930918
+  },
+  {
+    "step": 396,
+    "id": "aug_03103",
+    "type": "loc",
+    "tool_conditioned": true,
+    "loss": 0.13879096508026123
+  },
+  {
+    "step": 397,
+    "id": "aug_02602",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.017161084339022636
+  },
+  {
+    "step": 398,
+    "id": "aug_01463",
+    "type": "loc",
+    "tool_conditioned": false,
+    "loss": 0.33941975235939026
+  },
+  {
+    "step": 399,
+    "id": "train_count_3_0_0",
+    "type": "count",
+    "tool_conditioned": false,
+    "loss": 0.9089959263801575
+  },
+  {
+    "step": 400,
+    "id": "train_exist_1_0_0",
+    "type": "exist",
+    "tool_conditioned": false,
+    "loss": 0.04327543079853058
+  }
+]

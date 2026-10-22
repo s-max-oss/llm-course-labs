@@ -1,0 +1,35 @@
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] visual+connector+language LoRA 1614336/258099264
+[train] visual step=50/1200 mean50=1.2564
+[train] visual step=100/1200 mean50=0.6375
+[train] visual step=150/1200 mean50=0.5871
+[train] visual step=200/1200 mean50=0.5244
+[train] visual step=250/1200 mean50=0.5641
+[train] visual step=300/1200 mean50=0.5022
+[train] visual step=350/1200 mean50=0.5165
+[train] visual step=400/1200 mean50=0.4630
+[eval] validation correct=13/128 format=128/128
+[train] visual step=450/1200 mean50=0.4077
+[train] visual step=500/1200 mean50=0.4669
+[train] visual step=550/1200 mean50=0.3533
+[train] visual step=600/1200 mean50=0.4096
+[train] visual step=650/1200 mean50=0.3712
+[train] visual step=700/1200 mean50=0.2740
+[train] visual step=750/1200 mean50=0.2274
+[train] visual step=800/1200 mean50=0.2049
+[train] visual step=850/1200 mean50=0.1774
+[train] visual step=900/1200 mean50=0.1879
+[train] visual step=950/1200 mean50=0.0961
+[train] visual step=1000/1200 mean50=0.1468
+[train] visual step=1050/1200 mean50=0.0802
+[train] visual step=1100/1200 mean50=0.0642
+[train] visual step=1150/1200 mean50=0.0503
+[train] visual step=1200/1200 mean50=0.0358
+[eval] validation correct=16/128 format=126/128
+[eval] training_probe correct=16/16 format=16/16
+[eval] legacy correct=0/8 format=8/8
+[eval] blank16 correct=1/16 format=16/16
+[rank] constrained16 correct=4/16
+[complete] visual grounding diagnostics

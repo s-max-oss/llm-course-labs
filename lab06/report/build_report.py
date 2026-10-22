@@ -14,7 +14,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 sys.stdout.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parents[1]
-COURSE = ROOT.parents[1]
+COURSE = next(parent for parent in ROOT.parents if (parent / '实验指南与模板').is_dir())
 TEMPLATE = COURSE / "实验指南与模板" / "实验六_RSI递归自进化_实验报告样板.docx"
 OUT = COURSE / "提交材料" / "2024311281_孙驰_实验作业六.docx"
 SUMMARY = json.loads((ROOT / "analysis" / "summary.json").read_text(encoding="utf-8"))
@@ -170,17 +170,22 @@ def main():
     assert sect, 'Template section properties missing'
     if 'xmlns:v=' not in prefix:
         prefix = prefix.replace('<w:document ', '<w:document xmlns:v="urn:schemas-microsoft-com:vml" ',1)
-    content = create_content()
+    if (ROOT / 'improvement/final_v1/summary.json').exists():
+        import improved_content
+        content = improved_content.create_content(sys.modules[__name__])
+    else:
+        content = create_content()
     rels = package['word/_rels/document.xml.rels'].decode('utf-8')
     next_id = max(map(int,re.findall(r'Id="rId(\d+)"',rels)))+1
     rid = f'rId{next_id}'
-    figure = ROOT / 'figures' / 'accuracy.png'
+    figure = ROOT / 'figures' / ('improved_accuracy.png' if (ROOT / 'improvement/final_v1/summary.json').exists() else 'accuracy.png')
+    figure_width = 440 if (ROOT / 'improvement/final_v1/summary.json').exists() else 390
     from PIL import Image
     with Image.open(figure) as image:
-        height = 390 * image.height / image.width
+        height = figure_width * image.height / image.width
     figure_xml = (f'<w:p w:rsidR="{RSID}" w:rsidRDefault="{RSID}"><w:pPr><w:keepNext/><w:keepLines/>'
                   f'<w:jc w:val="center"/><w:spacing w:after="30"/></w:pPr><w:r><w:pict>'
-                  f'<v:shape id="lab06_accuracy" type="#_x0000_t75" style="width:390pt;height:{height:.1f}pt">'
+                  f'<v:shape id="lab06_accuracy" type="#_x0000_t75" style="width:{figure_width}pt;height:{height:.1f}pt">'
                   f'<v:imagedata r:id="{rid}" o:title="accuracy"/></v:shape></w:pict></w:r></w:p>')
     content[content.index('FIGURE_PLACEHOLDER')] = figure_xml
     rels = rels.replace('</Relationships>',f'<Relationship Id="{rid}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/lab06_accuracy.png"/></Relationships>')

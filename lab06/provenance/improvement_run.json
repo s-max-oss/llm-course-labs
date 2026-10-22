@@ -1,0 +1,87 @@
+{
+  "job_id": 15397,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:25:43",
+  "elapsed_seconds": 1543,
+  "start": "2026-10-22T01:29:37",
+  "end": "2026-10-22T01:55:20",
+  "node": "gpu4",
+  "allocation": "billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1",
+  "final_job": 15397,
+  "jobs": [
+    {
+      "job_id": 15392,
+      "state": "CANCELLED by 6762648",
+      "exit_code": "0:0",
+      "elapsed": "00:02:03",
+      "elapsed_seconds": 123,
+      "start": "2026-10-22T00:27:43",
+      "end": "2026-10-22T00:29:46",
+      "node": "gpu4",
+      "allocation": "billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1"
+    },
+    {
+      "job_id": 15393,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:17:51",
+      "elapsed_seconds": 1071,
+      "start": "2026-10-22T00:30:29",
+      "end": "2026-10-22T00:48:20",
+      "node": "gpu4",
+      "allocation": "billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1"
+    },
+    {
+      "job_id": 15394,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:11:37",
+      "elapsed_seconds": 697,
+      "start": "2026-10-22T00:41:56",
+      "end": "2026-10-22T00:53:33",
+      "node": "gpu4",
+      "allocation": "billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1"
+    },
+    {
+      "job_id": 15395,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:33:45",
+      "elapsed_seconds": 2025,
+      "start": "2026-10-22T00:55:52",
+      "end": "2026-10-22T01:29:37",
+      "node": "gpu4",
+      "allocation": "billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1"
+    },
+    {
+      "job_id": 15396,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:12:41",
+      "elapsed_seconds": 761,
+      "start": "2026-10-22T00:56:33",
+      "end": "2026-10-22T01:09:14",
+      "node": "gpu4",
+      "allocation": "billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1"
+    },
+    {
+      "job_id": 15397,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:25:43",
+      "elapsed_seconds": 1543,
+      "start": "2026-10-22T01:29:37",
+      "end": "2026-10-22T01:55:20",
+      "node": "gpu4",
+      "allocation": "billing=4,cpu=4,gres/gpu:a30=1,gres/gpu=1,node=1"
+    }
+  ],
+  "gpu_job_minutes": 103.66666666666667,
+  "queue_after": [],
+  "experiment_allocations_released": true,
+  "runtime_source_sha256": "a79cdcdb7e0021281882be5bc7519a412a02e8171645d2f58e6876be2a167e9e",
+  "submitted_source_sha256": "dd2bdd6b16237c075de18874840d855eae43a3bfe80b11db68815b41c4047e3b",
+  "source_annotation_note": "Only answer_origin provenance categories refined after runtime snapshot; AST comparison and raw pool backups in bootstrap_origins.json",
+  "cpu_reference": "improvement/cpu_reference/metadata.json"
+}

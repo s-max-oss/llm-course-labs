@@ -1,0 +1,25 @@
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=1614336/258099264 (0.6255%) NF4=True
+[train] sft 50/400 mean50=0.7825
+[train] sft 100/400 mean50=0.4415
+[train] sft 150/400 mean50=0.3696
+[train] sft 200/400 mean50=0.2393
+[train] sft 250/400 mean50=0.1913
+[train] sft 300/400 mean50=0.1274
+[train] sft 350/400 mean50=0.2054
+[train] sft 400/400 mean50=0.2302
+[eval] sft_validation {'loc': {'correct': 18, 'n': 128, 'valid': 128}, 'count': {'correct': 17, 'n': 40, 'valid': 40}, 'exist': {'correct': 11, 'n': 16, 'valid': 16}, 'total': {'correct': 46, 'n': 184}, 'loc_iou': 0.052722930908203125}
+[eval] sft_legacy {'loc': {'correct': 1, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 1, 'n': 3, 'valid': 3}, 'total': {'correct': 4, 'n': 15}, 'loc_iou': 0.067413330078125}
+[eval] sft_weak_tool_legacy {'loc': {'correct': 2, 'n': 8, 'valid': 8}, 'count': {'correct': 4, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 9, 'n': 15}, 'loc_iou': 0.10919189453125}
+[eval] sft_tool_legacy {'loc': {'correct': 3, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 8, 'n': 15}, 'loc_iou': 0.14874267578125}
+[eval] rsi1_feedback {'loc': {'correct': 2, 'n': 8, 'valid': 8}, 'count': {'correct': 3, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 8, 'n': 15}, 'loc_iou': 0.107666015625}
+[train] rsi1 50/80 mean50=0.1505
+[eval] rsi1_validation {'loc': {'correct': 20, 'n': 128, 'valid': 128}, 'count': {'correct': 21, 'n': 40, 'valid': 40}, 'exist': {'correct': 11, 'n': 16, 'valid': 16}, 'total': {'correct': 52, 'n': 184}, 'loc_iou': 0.05600547790527344}
+[eval] rsi1_legacy {'loc': {'correct': 2, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 1, 'n': 3, 'valid': 3}, 'total': {'correct': 5, 'n': 15}, 'loc_iou': 0.121246337890625}
+[eval] rsi2_feedback {'loc': {'correct': 2, 'n': 8, 'valid': 8}, 'count': {'correct': 3, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 8, 'n': 15}, 'loc_iou': 0.1026611328125}
+[train] rsi2 50/80 mean50=0.0791
+[eval] rsi2_validation {'loc': {'correct': 21, 'n': 128, 'valid': 128}, 'count': {'correct': 20, 'n': 40, 'valid': 40}, 'exist': {'correct': 13, 'n': 16, 'valid': 16}, 'total': {'correct': 54, 'n': 184}, 'loc_iou': 0.05994606018066406}
+[eval] rsi2_legacy {'loc': {'correct': 2, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 1, 'n': 3, 'valid': 3}, 'total': {'correct': 5, 'n': 15}, 'loc_iou': 0.121246337890625}
+[complete] development-only multi-task and RSI comparison; test remains sealed

@@ -1,0 +1,9 @@
+[data] balanced train=128, development validation=64, sealed final_test=128
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[eval] legacy correct=0/8 format=0/8
+[eval] validation correct=0/64 format=0/64
+[rank] constrained16 correct=1/16
+[eval] legacy correct=0/8 format=0/8
+slurmstepd: error: *** JOB 15392 ON gpu4 CANCELLED AT 2026-10-22T00:29:46 ***

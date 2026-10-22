@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "device": "cpu",
+    "dtype": "torch.float32",
+    "nf4": false,
+    "processor_longest_edge": 512,
+    "image_splitting": false,
+    "parameters": {
+      "trainable": 921600,
+      "total": 257406528,
+      "percent": 0.3580328778608132
+    }
+  },
+  "steps": [
+    {
+      "step": 1,
+      "loss": 2.35853910446167
+    },
+    {
+      "step": 2,
+      "loss": 2.2348570823669434
+    },
+    {
+      "step": 3,
+      "loss": 1.5615756511688232
+    },
+    {
+      "step": 4,
+      "loss": 1.728508710861206
+    },
+    {
+      "step": 5,
+      "loss": 1.8830547332763672
+    },
+    {
+      "step": 6,
+      "loss": 1.6771513223648071
+    },
+    {
+      "step": 7,
+      "loss": 5.825439453125
+    },
+    {
+      "step": 8,
+      "loss": 4.938781261444092
+    },
+    {
+      "step": 9,
+      "loss": 8.166678428649902
+    },
+    {
+      "step": 10,
+      "loss": 8.20373249053955
+    }
+  ]
+}
