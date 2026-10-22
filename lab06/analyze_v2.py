@@ -31,10 +31,16 @@ def audit_links():
     assert summary['rounds'] == read(OUT/'rounds.json')
     for name in ('v1','v2'):
         assert summary['fresh_test'][name] == read(OUT/f'{name}_fresh_test.json')['summary']
-    resume = read(OUT/'evaluation_resume.json')
-    assert not resume['training_restarted']
-    assert resume['selection_sha256'] == hashlib.sha256((OUT/'selection.json').read_bytes()).hexdigest()
-    assert resume['source_sha256'] == hashlib.sha256((OUT/'sources/resume_v2_evaluation.py').read_bytes()).hexdigest()
+    if summary.get('evaluation_only_resume'):
+        resume = read(OUT/'evaluation_resume.json')
+        assert not resume['training_restarted']
+        assert resume['selection_sha256'] == hashlib.sha256((OUT/'selection.json').read_bytes()).hexdigest()
+        assert resume['source_sha256'] == hashlib.sha256((OUT/'sources/resume_v2_evaluation.py').read_bytes()).hexdigest()
+        resume_status = 'passed'
+    else:
+        # A reproduction with a longer Slurm allocation finishes in one job.
+        assert not (OUT/'evaluation_resume.json').exists(), 'Unexpected resume metadata in a single-job run'
+        resume_status = 'not_applicable_single_job'
     for stage, updates in [('sft',1600),('rsi1',200),('rsi2',200)]:
         logs = read(OUT/stage/'training.json')
         pool = [] if stage=='sft' else read(OUT/f'pool_round{stage[-1]}.json')
@@ -49,7 +55,7 @@ def audit_links():
             if index%2:
                 assert math.isfinite(row['gradient_norm_before_clip']) and row['gradient_norm_before_clip']>=0
         assert sum(r['replay'] for r in logs)==(50 if pool else 0)
-    return {'summary_selection_links':'passed','resume_selection_hash':'passed','learning_rate_replay_schedule':'passed'}
+    return {'summary_selection_links':'passed','resume_selection_hash':resume_status,'learning_rate_replay_schedule':'passed'}
 
 
 def audit():
