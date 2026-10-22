@@ -1,0 +1,112 @@
+[
+  {
+    "round": 1,
+    "regular_pool_size": 3840,
+    "verified_pool_size": 15,
+    "added": 15,
+    "raw_correct_count": 153,
+    "feedback_n": 199,
+    "corrected_correct": 168,
+    "self_attempts": 25,
+    "tool_attempts": 36,
+    "bootstrap_posttrain": {
+      "loc": {
+        "correct": 4,
+        "n": 10,
+        "valid": 10
+      },
+      "count": {
+        "correct": 0,
+        "n": 3,
+        "valid": 3
+      },
+      "exist": {
+        "correct": 0,
+        "n": 2,
+        "valid": 2
+      },
+      "total": {
+        "correct": 4,
+        "n": 15
+      },
+      "loc_iou": 0.1005859375
+    },
+    "legacy": {
+      "loc": {
+        "correct": 8,
+        "n": 8,
+        "valid": 8
+      },
+      "count": {
+        "correct": 2,
+        "n": 4,
+        "valid": 4
+      },
+      "exist": {
+        "correct": 3,
+        "n": 3,
+        "valid": 3
+      },
+      "total": {
+        "correct": 13,
+        "n": 15
+      },
+      "loc_iou": 0.392974853515625
+    }
+  },
+  {
+    "round": 2,
+    "regular_pool_size": 3840,
+    "verified_pool_size": 27,
+    "added": 12,
+    "raw_correct_count": 148,
+    "feedback_n": 199,
+    "corrected_correct": 164,
+    "self_attempts": 29,
+    "tool_attempts": 46,
+    "bootstrap_posttrain": {
+      "loc": {
+        "correct": 8,
+        "n": 18,
+        "valid": 18
+      },
+      "count": {
+        "correct": 2,
+        "n": 6,
+        "valid": 6
+      },
+      "exist": {
+        "correct": 1,
+        "n": 3,
+        "valid": 3
+      },
+      "total": {
+        "correct": 11,
+        "n": 27
+      },
+      "loc_iou": 0.117431640625
+    },
+    "legacy": {
+      "loc": {
+        "correct": 8,
+        "n": 8,
+        "valid": 8
+      },
+      "count": {
+        "correct": 2,
+        "n": 4,
+        "valid": 4
+      },
+      "exist": {
+        "correct": 3,
+        "n": 3,
+        "valid": 3
+      },
+      "total": {
+        "correct": 13,
+        "n": 15
+      },
+      "loc_iou": 0.392974853515625
+    }
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "formal_job": 15397,
+  "formal_job": 15427,
   "default_reference_job": 15391,
   "default_raw_files_verified": 85,
   "improved_audit": {
@@ -10,7 +10,7 @@
     "selection": "passed",
     "split_isolation": "passed"
   },
-  "unit_tests_passed": 10,
+  "unit_tests_passed": 12,
   "cpu_full_chain_stages": 6,
   "source_ast_equal_except_origin_annotation": true,
   "template_unchanged": true,
@@ -22,12 +22,67 @@
   ],
   "report_pages": 3,
   "three_report_copies_identical": true,
-  "docx_sha256": "8c50909eb02e8f45ae9c04045bad33418c17e4342d45c0339e46f546f165826d",
-  "pdf_sha256": "da8ae67f67d9cd920e43c6455ab9020f47864ba20ff14fadda01f8d8f530fe8a",
+  "docx_sha256": "073f98ab3a3e849e8652b872a77db75e44101520a8254fa91bb0586d58b37128",
+  "pdf_sha256": "86171e4adae261348955b52111187dad148093d449597004d01e02a4acbc065c",
   "figure_matches_report": true,
   "visual_review": "All three final pages inspected; no clipping, overlap or blank page",
   "renderer": "Word COM read-only PDF export and pypdfium2; packaged renderer unavailable because LibreOffice is absent",
   "independent_review": "All important findings resolved; numeric and attribution checks passed",
   "hpc_allocations_released": true,
-  "queue_after": []
+  "queue_after": [],
+  "training_job": 15408,
+  "optimization_v2_audit": {
+    "questions_checked": 4760,
+    "unique_images": 4744,
+    "prediction_rows_recomputed": 2723,
+    "data_isolation": "passed",
+    "pixel_labels": "passed",
+    "strict_scores": "passed",
+    "bootstrap_provenance": "passed",
+    "training_trace": {
+      "sft": {
+        "optimizer_updates": 1600,
+        "microsteps": 3200,
+        "bootstrap_microsteps": 0,
+        "unique_bootstrap_images_trained": 0,
+        "unique_regular_images": 3200,
+        "task_exposures": {
+          "loc": 1920,
+          "count": 960,
+          "exist": 320
+        }
+      },
+      "rsi1": {
+        "optimizer_updates": 200,
+        "microsteps": 400,
+        "bootstrap_microsteps": 50,
+        "unique_bootstrap_images_trained": 15,
+        "unique_regular_images": 350,
+        "task_exposures": {
+          "loc": 242,
+          "count": 111,
+          "exist": 47
+        }
+      },
+      "rsi2": {
+        "optimizer_updates": 200,
+        "microsteps": 400,
+        "bootstrap_microsteps": 50,
+        "unique_bootstrap_images_trained": 27,
+        "unique_regular_images": 350,
+        "task_exposures": {
+          "loc": 244,
+          "count": 110,
+          "exist": 46
+        }
+      }
+    },
+    "selection": "passed",
+    "sources_match_runtime": "passed",
+    "paired_test_ids": "passed",
+    "summary_selection_links": "passed",
+    "resume_selection_hash": "passed",
+    "learning_rate_replay_schedule": "passed"
+  },
+  "selection_unchanged_after_timeout": true
 }

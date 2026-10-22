@@ -1,0 +1,139 @@
+{
+  "name": "v2_blank16",
+  "n": 16,
+  "correct": 1,
+  "valid": 16,
+  "mean_iou": 0.015625,
+  "blank_image": true,
+  "rows": [
+    {
+      "id": "fresh_test_loc_00085",
+      "gold": "第1行第1列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00093",
+      "gold": "第1行第2列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00184",
+      "gold": "第1行第3列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00136",
+      "gold": "第1行第4列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00016",
+      "gold": "第2行第1列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00177",
+      "gold": "第2行第2列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00055",
+      "gold": "第2行第3列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00119",
+      "gold": "第2行第4列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00027",
+      "gold": "第3行第1列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00028",
+      "gold": "第3行第2列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00087",
+      "gold": "第3行第3列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00104",
+      "gold": "第3行第4列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00102",
+      "gold": "第4行第1列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00198",
+      "gold": "第4行第2列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00053",
+      "gold": "第4行第3列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": false,
+      "iou": 0.0
+    },
+    {
+      "id": "fresh_test_loc_00165",
+      "gold": "第4行第4列",
+      "prediction": "r4c4",
+      "format_valid": true,
+      "correct": true,
+      "iou": 0.25
+    }
+  ],
+  "seconds": 6.366470111533999
+}

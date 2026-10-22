@@ -1,0 +1,7 @@
+{
+  "reason": "Job 15408 time limit after all training, selection and fresh-test creation",
+  "training_restarted": false,
+  "selection_sha256": "1adf966b399d173eb0f235e396a71865d7485d878318546ba77f70514c5cd7b0",
+  "source_sha256": "4aefed4506666a1b3ec9d8eb6aa2accd9a4aeb431ecf2503154924dd93cee8cd",
+  "seed": 20261030
+}

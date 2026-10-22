@@ -1,0 +1,8272 @@
+[
+  {
+    "id": "feedback2_loc_00000",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00000.png",
+    "gold": "第4行第2列",
+    "box": [
+      70,
+      198,
+      106,
+      234
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          70,
+          198,
+          106,
+          234
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          6,
+          198,
+          52,
+          244
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          71,
+          7,
+          118,
+          54
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          137,
+          216,
+          171,
+          250
+        ]
+      }
+    ],
+    "pixel_sha256": "19a14d48e6904e4309cb72e50e6eec7de661bbe9887bfdcd7ede902c291ca904",
+    "cell": [
+      3,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00001",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00001.png",
+    "gold": "第1行第3列",
+    "box": [
+      136,
+      18,
+      173,
+      55
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          136,
+          18,
+          173,
+          55
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          141,
+          204,
+          186,
+          249
+        ]
+      }
+    ],
+    "pixel_sha256": "47e34294a73f508aefa4f8017f2cd5fabc6f3703146628c7954652bea21515fd",
+    "cell": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00002",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00002.png",
+    "gold": "第1行第4列",
+    "box": [
+      204,
+      7,
+      236,
+      39
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          204,
+          7,
+          236,
+          39
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          11,
+          207,
+          48,
+          244
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          12,
+          150,
+          48,
+          186
+        ]
+      }
+    ],
+    "pixel_sha256": "2b6ad3f767342f4e52841f71582578927106eeab18ce58a750c7e605f4b98b8a",
+    "cell": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00003",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00003.png",
+    "gold": "第4行第1列",
+    "box": [
+      8,
+      207,
+      44,
+      243
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          8,
+          207,
+          44,
+          243
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          206,
+          145,
+          247,
+          186
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          16,
+          139,
+          58,
+          181
+        ]
+      }
+    ],
+    "pixel_sha256": "e928b6083000199d381a6bc90b57d3b7cfa1a9c4765f2f582f7461bc6ad2f83e",
+    "cell": [
+      3,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00004",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00004.png",
+    "gold": "第4行第3列",
+    "box": [
+      141,
+      211,
+      179,
+      249
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          141,
+          211,
+          179,
+          249
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          135,
+          147,
+          168,
+          180
+        ]
+      }
+    ],
+    "pixel_sha256": "5ec9243f951721d032ae1c9a3640ddde36e11d3c51b83e20f9a215c321cde3c3",
+    "cell": [
+      3,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00005",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00005.png",
+    "gold": "第4行第3列",
+    "box": [
+      134,
+      198,
+      181,
+      245
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          134,
+          198,
+          181,
+          245
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          22,
+          216,
+          54,
+          248
+        ]
+      }
+    ],
+    "pixel_sha256": "5e613bc6b746cb258c8e86a6f8303f2533b026848237e9dd21108f430b71aebe",
+    "cell": [
+      3,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00006",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00006.png",
+    "gold": "第2行第2列",
+    "box": [
+      72,
+      77,
+      117,
+      122
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          72,
+          77,
+          117,
+          122
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          137,
+          205,
+          181,
+          249
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          7,
+          199,
+          51,
+          243
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          212,
+          70,
+          246,
+          104
+        ]
+      }
+    ],
+    "pixel_sha256": "317fc35e464cd927072cd1e2ad8358185c708dc5f9677a9734a8adbcdfd08e46",
+    "cell": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00007",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00007.png",
+    "gold": "第1行第3列",
+    "box": [
+      138,
+      9,
+      186,
+      57
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          138,
+          9,
+          186,
+          57
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          199,
+          12,
+          244,
+          57
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          74,
+          139,
+          121,
+          186
+        ]
+      }
+    ],
+    "pixel_sha256": "91c3d29b4b9ed3bb26298d70ddbe1746939cc0112aae127ff7edbb85a7127830",
+    "cell": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00008",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00008.png",
+    "gold": "第2行第4列",
+    "box": [
+      202,
+      81,
+      238,
+      117
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          202,
+          81,
+          238,
+          117
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          22,
+          10,
+          57,
+          45
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          10,
+          136,
+          52,
+          178
+        ]
+      }
+    ],
+    "pixel_sha256": "31a20706b5ffe8c6db560b89e8526208cecb0d2c2e67f76263f9ec58dd825bb2",
+    "cell": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00009",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00009.png",
+    "gold": "第2行第2列",
+    "box": [
+      74,
+      75,
+      120,
+      121
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          74,
+          75,
+          120,
+          121
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          10,
+          137,
+          57,
+          184
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          144,
+          79,
+          181,
+          116
+        ]
+      }
+    ],
+    "pixel_sha256": "6aec18cbeb79d7bb421aa70c2ff8399d71ca1514b0de8125c174862be5b4b7d5",
+    "cell": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00010",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00010.png",
+    "gold": "第2行第1列",
+    "box": [
+      12,
+      74,
+      57,
+      119
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          12,
+          74,
+          57,
+          119
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          140,
+          76,
+          184,
+          120
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          11,
+          203,
+          50,
+          242
+        ]
+      }
+    ],
+    "pixel_sha256": "5d29214664ff70935f7a839c523ba9ec547807e06894c738378b13b8cde92ca9",
+    "cell": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00011",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00011.png",
+    "gold": "第1行第1列",
+    "box": [
+      21,
+      12,
+      57,
+      48
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          21,
+          12,
+          57,
+          48
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          75,
+          13,
+          114,
+          52
+        ]
+      }
+    ],
+    "pixel_sha256": "8eb55b5f133393629a66f6b224fe27868cb28a6f36004e8d12fb3465ef51cdd3",
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00012",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00012.png",
+    "gold": "第2行第4列",
+    "box": [
+      209,
+      75,
+      249,
+      115
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          209,
+          75,
+          249,
+          115
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          8,
+          138,
+          56,
+          186
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          22,
+          85,
+          53,
+          116
+        ]
+      }
+    ],
+    "pixel_sha256": "9d460ef2390461b105b4c860781556e2d8ae427eda253443913af99e9deba2be",
+    "cell": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00013",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00013.png",
+    "gold": "第1行第2列",
+    "box": [
+      80,
+      23,
+      110,
+      53
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          80,
+          23,
+          110,
+          53
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          74,
+          136,
+          114,
+          176
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          137,
+          22,
+          172,
+          57
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          72,
+          80,
+          112,
+          120
+        ]
+      }
+    ],
+    "pixel_sha256": "7c34f54ea65b49b09ff1d2019a985774b186881f35ae8a9c91f4b2103c6f7515",
+    "cell": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00014",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00014.png",
+    "gold": "第2行第4列",
+    "box": [
+      205,
+      85,
+      242,
+      122
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          205,
+          85,
+          242,
+          122
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          70,
+          77,
+          105,
+          112
+        ]
+      }
+    ],
+    "pixel_sha256": "3bfb1034ca5b59fc92079c305f9b4c67e6a9f0540035e31c82321ea58f5cd091",
+    "cell": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00015",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00015.png",
+    "gold": "第2行第3列",
+    "box": [
+      134,
+      75,
+      173,
+      114
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          134,
+          75,
+          173,
+          114
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          139,
+          8,
+          183,
+          52
+        ]
+      }
+    ],
+    "pixel_sha256": "ffb1af6a85afd8ae8c7d476168f302d8c9d74590b8ff1a8c1037608e1ba0c90c",
+    "cell": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00016",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00016.png",
+    "gold": "第2行第1列",
+    "box": [
+      11,
+      73,
+      56,
+      118
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          11,
+          73,
+          56,
+          118
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          73,
+          141,
+          110,
+          178
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          82,
+          204,
+          113,
+          235
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          214,
+          82,
+          250,
+          118
+        ]
+      }
+    ],
+    "pixel_sha256": "c21976f92b935c2accbe112c6d75529c60a90655636a5e016f54e4645734730a",
+    "cell": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00017",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00017.png",
+    "gold": "第3行第1列",
+    "box": [
+      22,
+      135,
+      52,
+      165
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          22,
+          135,
+          52,
+          165
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          6,
+          11,
+          53,
+          58
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          142,
+          80,
+          173,
+          111
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          199,
+          204,
+          245,
+          250
+        ]
+      }
+    ],
+    "pixel_sha256": "18f27a0154487b512a9fc014b748fed28351f56610998afae4857b041b2ff0a4",
+    "cell": [
+      2,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00018",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00018.png",
+    "gold": "第1行第4列",
+    "box": [
+      204,
+      18,
+      236,
+      50
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          204,
+          18,
+          236,
+          50
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          13,
+          199,
+          58,
+          244
+        ]
+      }
+    ],
+    "pixel_sha256": "315641982d0c71322d0d0bcbdc9d9900513d4448a587a93c9dd9f5e361ce0c95",
+    "cell": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00019",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00019.png",
+    "gold": "第2行第4列",
+    "box": [
+      202,
+      90,
+      234,
+      122
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          202,
+          90,
+          234,
+          122
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          75,
+          10,
+          122,
+          57
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          140,
+          73,
+          173,
+          106
+        ]
+      }
+    ],
+    "pixel_sha256": "3b6c32125470c9e636a935bbae6e59583e98c0d1e812e7b62638c67f1b76b9b5",
+    "cell": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00020",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00020.png",
+    "gold": "第4行第4列",
+    "box": [
+      200,
+      198,
+      247,
+      245
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          200,
+          198,
+          247,
+          245
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          202,
+          140,
+          248,
+          186
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          10,
+          137,
+          52,
+          179
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          77,
+          146,
+          108,
+          177
+        ]
+      }
+    ],
+    "pixel_sha256": "31aa81f34733dcf69cda7493a565e660c5fd61ea98426d8d326b10dd9da4b593",
+    "cell": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00021",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00021.png",
+    "gold": "第1行第2列",
+    "box": [
+      83,
+      19,
+      121,
+      57
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          83,
+          19,
+          121,
+          57
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          211,
+          11,
+          250,
+          50
+        ]
+      }
+    ],
+    "pixel_sha256": "0593d43692168b8eca843c62892b50a158eaf1129833f16592d871971dca51a3",
+    "cell": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00022",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00022.png",
+    "gold": "第4行第3列",
+    "box": [
+      147,
+      200,
+      179,
+      232
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          147,
+          200,
+          179,
+          232
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          70,
+          201,
+          114,
+          245
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          138,
+          141,
+          171,
+          174
+        ]
+      }
+    ],
+    "pixel_sha256": "9e773d337874a56e139445e73c0da37ecf94fc0e7ce4aa64356c695c081b8eb8",
+    "cell": [
+      3,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00023",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00023.png",
+    "gold": "第3行第4列",
+    "box": [
+      199,
+      150,
+      235,
+      186
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          199,
+          150,
+          235,
+          186
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          201,
+          18,
+          241,
+          58
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          140,
+          76,
+          171,
+          107
+        ]
+      }
+    ],
+    "pixel_sha256": "b30a7391b755d60dd9a57954aa4e7d2fc32cfc89d22d1f1c587f6a0f7f4a5ac3",
+    "cell": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00024",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00024.png",
+    "gold": "第2行第1列",
+    "box": [
+      19,
+      83,
+      50,
+      114
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          19,
+          83,
+          50,
+          114
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          138,
+          200,
+          181,
+          243
+        ]
+      }
+    ],
+    "pixel_sha256": "be9d70bdbc6bbd0f11c5415eb386aee2c9e92f9a611b31b3cb10d105258c552c",
+    "cell": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00025",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00025.png",
+    "gold": "第3行第2列",
+    "box": [
+      72,
+      142,
+      115,
+      185
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          72,
+          142,
+          115,
+          185
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          8,
+          10,
+          56,
+          58
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          140,
+          204,
+          176,
+          240
+        ]
+      }
+    ],
+    "pixel_sha256": "60de0c14c6f56a932049cf31268b004e2c24360b37a1039c51a7ca98c8c287ed",
+    "cell": [
+      2,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00026",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00026.png",
+    "gold": "第3行第2列",
+    "box": [
+      73,
+      144,
+      113,
+      184
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          73,
+          144,
+          113,
+          184
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          145,
+          144,
+          183,
+          182
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          11,
+          202,
+          54,
+          245
+        ]
+      }
+    ],
+    "pixel_sha256": "02e6daa220ac553dd5fb2049ea6657520a28c915ebcebf5efed595d9d7f7e82d",
+    "cell": [
+      2,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00027",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00027.png",
+    "gold": "第3行第4列",
+    "box": [
+      208,
+      136,
+      249,
+      177
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          208,
+          136,
+          249,
+          177
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          70,
+          8,
+          115,
+          53
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          210,
+          209,
+          246,
+          245
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          83,
+          137,
+          122,
+          176
+        ]
+      }
+    ],
+    "pixel_sha256": "8d8a9640336e9db0c04a608dcbabd6902bab0144bb0cd2b1dd56af7c71796608",
+    "cell": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00028",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00028.png",
+    "gold": "第3行第4列",
+    "box": [
+      202,
+      134,
+      249,
+      181
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          202,
+          134,
+          249,
+          181
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          7,
+          19,
+          45,
+          57
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          76,
+          141,
+          119,
+          184
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          19,
+          78,
+          55,
+          114
+        ]
+      }
+    ],
+    "pixel_sha256": "b9f00f9df9c1e6261f6f603c91bcbccb65d4f54b048e26b876b30dbc9aab8d85",
+    "cell": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00029",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00029.png",
+    "gold": "第3行第4列",
+    "box": [
+      208,
+      141,
+      248,
+      181
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          208,
+          141,
+          248,
+          181
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          76,
+          156,
+          106,
+          186
+        ]
+      }
+    ],
+    "pixel_sha256": "10471f871f46ba268c89541035ad7a1808e1fe4edc66f11f93f67bc2e93ab7b8",
+    "cell": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00030",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00030.png",
+    "gold": "第3行第1列",
+    "box": [
+      16,
+      139,
+      48,
+      171
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          16,
+          139,
+          48,
+          171
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          135,
+          212,
+          171,
+          248
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          134,
+          75,
+          180,
+          121
+        ]
+      }
+    ],
+    "pixel_sha256": "2f880ca25b3af45e87c2b57890030111d28fd87aa1d463d399fe35a5494e3751",
+    "cell": [
+      2,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00031",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00031.png",
+    "gold": "第4行第3列",
+    "box": [
+      135,
+      209,
+      173,
+      247
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          135,
+          209,
+          173,
+          247
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          12,
+          209,
+          53,
+          250
+        ]
+      }
+    ],
+    "pixel_sha256": "6dd93dd801325731085211b49d0e29a03ae793fe30a89d91ad2d755b47825595",
+    "cell": [
+      3,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00032",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00032.png",
+    "gold": "第3行第3列",
+    "box": [
+      135,
+      134,
+      166,
+      165
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          135,
+          134,
+          166,
+          165
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          85,
+          148,
+          122,
+          185
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          136,
+          200,
+          170,
+          234
+        ]
+      }
+    ],
+    "pixel_sha256": "36d71530da7576fc9053d31fb39a87c0b0a392af7d7f48ab9956c02135edfd0e",
+    "cell": [
+      2,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00033",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00033.png",
+    "gold": "第1行第3列",
+    "box": [
+      136,
+      8,
+      168,
+      40
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          136,
+          8,
+          168,
+          40
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          72,
+          72,
+          120,
+          120
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          72,
+          204,
+          118,
+          250
+        ]
+      }
+    ],
+    "pixel_sha256": "c19a2256d824508a36147c32e02b65ce23cf921601d92feb2fa0026e83cd4908",
+    "cell": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00034",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00034.png",
+    "gold": "第4行第3列",
+    "box": [
+      149,
+      207,
+      186,
+      244
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          149,
+          207,
+          186,
+          244
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          80,
+          206,
+          122,
+          248
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          75,
+          75,
+          119,
+          119
+        ]
+      }
+    ],
+    "pixel_sha256": "92d938dc2baddc52cda90d4c1f28bee12cc931006ad918be669d1885c3cb1ebb",
+    "cell": [
+      3,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00035",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00035.png",
+    "gold": "第1行第4列",
+    "box": [
+      207,
+      9,
+      248,
+      50
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          207,
+          9,
+          248,
+          50
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          205,
+          202,
+          249,
+          246
+        ]
+      }
+    ],
+    "pixel_sha256": "a489f5b95ec607d209563e206738b210fd677fdb44eed86cbd68b7fa26cf1b81",
+    "cell": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00036",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00036.png",
+    "gold": "第1行第1列",
+    "box": [
+      14,
+      7,
+      56,
+      49
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          14,
+          7,
+          56,
+          49
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          200,
+          12,
+          246,
+          58
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          75,
+          6,
+          122,
+          53
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          85,
+          77,
+          116,
+          108
+        ]
+      }
+    ],
+    "pixel_sha256": "62bba03f89830a7fa863a07deaef82f3cc96941cc8ad8eff2cbc331725f20c45",
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00037",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00037.png",
+    "gold": "第1行第1列",
+    "box": [
+      7,
+      14,
+      50,
+      57
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          7,
+          14,
+          50,
+          57
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          203,
+          142,
+          239,
+          178
+        ]
+      }
+    ],
+    "pixel_sha256": "81575f5211fa45dca2b89b5730a54dcd5205e3c7ea274a8f51fcb919474204ca",
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00038",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00038.png",
+    "gold": "第2行第3列",
+    "box": [
+      135,
+      72,
+      175,
+      112
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          135,
+          72,
+          175,
+          112
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          71,
+          147,
+          108,
+          184
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          8,
+          209,
+          44,
+          245
+        ]
+      }
+    ],
+    "pixel_sha256": "3b961c14ad104b3598d17023c3e0c08f54558e35b68d7470e1319d0619cbd84c",
+    "cell": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00039",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00039.png",
+    "gold": "第2行第3列",
+    "box": [
+      151,
+      77,
+      184,
+      110
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          151,
+          77,
+          184,
+          110
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          7,
+          75,
+          54,
+          122
+        ]
+      }
+    ],
+    "pixel_sha256": "99bca2c1da244bd439c17c0220b9d5f245b9614b68727e1c4a4c65095e9b314f",
+    "cell": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00040",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00040.png",
+    "gold": "第2行第3列",
+    "box": [
+      146,
+      77,
+      182,
+      113
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          146,
+          77,
+          182,
+          113
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          10,
+          17,
+          42,
+          49
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          90,
+          70,
+          120,
+          100
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          80,
+          140,
+          120,
+          180
+        ]
+      }
+    ],
+    "pixel_sha256": "05c1eb4c3ebb57ca68055f372150d398aec6b4646eb70884af6aa8202c15883a",
+    "cell": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00041",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00041.png",
+    "gold": "第4行第1列",
+    "box": [
+      18,
+      206,
+      48,
+      236
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          18,
+          206,
+          48,
+          236
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          135,
+          84,
+          167,
+          116
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          137,
+          8,
+          182,
+          53
+        ]
+      }
+    ],
+    "pixel_sha256": "0835377030302d4159417f7954b7aa782a2ebf659587e9d1450522196616fffd",
+    "cell": [
+      3,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00042",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00042.png",
+    "gold": "第4行第1列",
+    "box": [
+      9,
+      203,
+      53,
+      247
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          9,
+          203,
+          53,
+          247
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          76,
+          70,
+          113,
+          107
+        ]
+      }
+    ],
+    "pixel_sha256": "4c841565e083ce51466e38fc97b39c34a2a454641d261dfa1f5946cf19b2f2ca",
+    "cell": [
+      3,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00043",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00043.png",
+    "gold": "第1行第2列",
+    "box": [
+      75,
+      25,
+      105,
+      55
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          75,
+          25,
+          105,
+          55
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          199,
+          204,
+          244,
+          249
+        ]
+      }
+    ],
+    "pixel_sha256": "b3aa77b62c80fe3ef8df121733e28dc214057ae9b898a41784803ae1f0a35dd0",
+    "cell": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00044",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00044.png",
+    "gold": "第4行第2列",
+    "box": [
+      77,
+      201,
+      121,
+      245
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          77,
+          201,
+          121,
+          245
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          142,
+          200,
+          179,
+          237
+        ]
+      }
+    ],
+    "pixel_sha256": "a7af3a23855f4b89f08ccbdc384a3807d68f3d41a70603c092ec5234e6f7ef14",
+    "cell": [
+      3,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00045",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00045.png",
+    "gold": "第3行第2列",
+    "box": [
+      76,
+      138,
+      121,
+      183
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          76,
+          138,
+          121,
+          183
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          204,
+          72,
+          244,
+          112
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          206,
+          201,
+          249,
+          244
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          71,
+          71,
+          119,
+          119
+        ]
+      }
+    ],
+    "pixel_sha256": "166a858007d6b8ca7beef18927fc509051a944aa00bc988bd09860a861e3e9f2",
+    "cell": [
+      2,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00046",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00046.png",
+    "gold": "第4行第2列",
+    "box": [
+      75,
+      203,
+      111,
+      239
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          75,
+          203,
+          111,
+          239
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          84,
+          16,
+          117,
+          49
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          25,
+          217,
+          57,
+          249
+        ]
+      }
+    ],
+    "pixel_sha256": "f5f324389e0d1495bf7a7554ba5c185f0d4e0464366d3d049b8f2521a4d6c657",
+    "cell": [
+      3,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00047",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00047.png",
+    "gold": "第1行第4列",
+    "box": [
+      208,
+      16,
+      247,
+      55
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          208,
+          16,
+          247,
+          55
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          146,
+          71,
+          178,
+          103
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          201,
+          137,
+          249,
+          185
+        ]
+      }
+    ],
+    "pixel_sha256": "10b62397908642d32d6a8eb8a4b84289e4b8267ddcc7c481f6c2667cb3f1d318",
+    "cell": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00048",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00048.png",
+    "gold": "第4行第3列",
+    "box": [
+      134,
+      210,
+      167,
+      243
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          134,
+          210,
+          167,
+          243
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          138,
+          75,
+          181,
+          118
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          200,
+          74,
+          248,
+          122
+        ]
+      }
+    ],
+    "pixel_sha256": "2e241115f648f2c59056ad6c8c6782677d1570014d901187bb67b842d4e91a81",
+    "cell": [
+      3,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00049",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00049.png",
+    "gold": "第1行第3列",
+    "box": [
+      145,
+      13,
+      178,
+      46
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          145,
+          13,
+          178,
+          46
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          70,
+          73,
+          117,
+          120
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          141,
+          88,
+          175,
+          122
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          82,
+          135,
+          121,
+          174
+        ]
+      }
+    ],
+    "pixel_sha256": "0b01244b0dc47fc4eac333b02869dcf403fd7854bebb2e7ed539b21040c83e22",
+    "cell": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00050",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00050.png",
+    "gold": "第4行第3列",
+    "box": [
+      149,
+      211,
+      179,
+      241
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          149,
+          211,
+          179,
+          241
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          72,
+          137,
+          118,
+          183
+        ]
+      }
+    ],
+    "pixel_sha256": "a883eefa4f60267ae353e3c49d36dd442fccbc3b48e51a56cae313b09ed69042",
+    "cell": [
+      3,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00051",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00051.png",
+    "gold": "第4行第3列",
+    "box": [
+      150,
+      210,
+      181,
+      241
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          150,
+          210,
+          181,
+          241
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          203,
+          11,
+          250,
+          58
+        ]
+      }
+    ],
+    "pixel_sha256": "8920fd6b1c42a2822e332e6cd6d9c6862ed604b0e53e09b993382545b62cb291",
+    "cell": [
+      3,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00052",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00052.png",
+    "gold": "第1行第1列",
+    "box": [
+      17,
+      13,
+      50,
+      46
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          17,
+          13,
+          50,
+          46
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          12,
+          71,
+          52,
+          111
+        ]
+      }
+    ],
+    "pixel_sha256": "40be576c803b1fdd4355ee018ec14a7334e927f03b56c36bcad4133f05528af9",
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00053",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00053.png",
+    "gold": "第3行第4列",
+    "box": [
+      207,
+      135,
+      245,
+      173
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          207,
+          135,
+          245,
+          173
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          83,
+          138,
+          117,
+          172
+        ]
+      }
+    ],
+    "pixel_sha256": "e82f64a1d21da890a621475232390997dc1452636c2183af64d94eb16b3e764e",
+    "cell": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00054",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00054.png",
+    "gold": "第4行第2列",
+    "box": [
+      77,
+      214,
+      110,
+      247
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          77,
+          214,
+          110,
+          247
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          81,
+          144,
+          115,
+          178
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          7,
+          204,
+          39,
+          236
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          140,
+          208,
+          179,
+          247
+        ]
+      }
+    ],
+    "pixel_sha256": "7a946866e1e4e7801662127b5ff413c41b09c4213d3320296778ac62876f2bd8",
+    "cell": [
+      3,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00055",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00055.png",
+    "gold": "第2行第4列",
+    "box": [
+      216,
+      78,
+      249,
+      111
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          216,
+          78,
+          249,
+          111
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          138,
+          9,
+          184,
+          55
+        ]
+      }
+    ],
+    "pixel_sha256": "1793f975ba6fad0cff2b6d6438532a2e883ad55fd478b6e8eaeb8d5449dc0258",
+    "cell": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00056",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00056.png",
+    "gold": "第3行第4列",
+    "box": [
+      210,
+      142,
+      240,
+      172
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          210,
+          142,
+          240,
+          172
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          6,
+          13,
+          51,
+          58
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          79,
+          11,
+          119,
+          51
+        ]
+      }
+    ],
+    "pixel_sha256": "420fe782d2bd793005b727d6adb491413e16df2c49e50ecb9c765843e7c9d188",
+    "cell": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00057",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00057.png",
+    "gold": "第1行第3列",
+    "box": [
+      134,
+      10,
+      182,
+      58
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          134,
+          10,
+          182,
+          58
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          198,
+          148,
+          236,
+          186
+        ]
+      }
+    ],
+    "pixel_sha256": "b44bcb852a99c9444335593a72ef6d8c8235e34b003a1a35264841cb3eb8716e",
+    "cell": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00058",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00058.png",
+    "gold": "第4行第1列",
+    "box": [
+      8,
+      212,
+      42,
+      246
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          8,
+          212,
+          42,
+          246
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          76,
+          18,
+          114,
+          56
+        ]
+      }
+    ],
+    "pixel_sha256": "1e9a35bfd4661c12baa91679a32b65269333a2df70bacbcc712e3853df8b40f4",
+    "cell": [
+      3,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00059",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00059.png",
+    "gold": "第2行第4列",
+    "box": [
+      198,
+      81,
+      228,
+      111
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          198,
+          81,
+          228,
+          111
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          80,
+          17,
+          115,
+          52
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          18,
+          83,
+          52,
+          117
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          18,
+          7,
+          48,
+          37
+        ]
+      }
+    ],
+    "pixel_sha256": "df1955de639e1516fe1719ea95cb0c654e8c6afdf59e15bcd82a8af229832f43",
+    "cell": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00060",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00060.png",
+    "gold": "第1行第4列",
+    "box": [
+      206,
+      20,
+      243,
+      57
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          206,
+          20,
+          243,
+          57
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          205,
+          76,
+          250,
+          121
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          7,
+          8,
+          53,
+          54
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          13,
+          198,
+          57,
+          242
+        ]
+      }
+    ],
+    "pixel_sha256": "ce20fdc44059f69c04192acef5676b028275bc35a269c52660a2463f8c7f3ed0",
+    "cell": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00061",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00061.png",
+    "gold": "第1行第1列",
+    "box": [
+      8,
+      17,
+      39,
+      48
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          8,
+          17,
+          39,
+          48
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          77,
+          135,
+          122,
+          180
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          79,
+          11,
+          116,
+          48
+        ]
+      }
+    ],
+    "pixel_sha256": "ccd53e874829887e55ebce93aaf834da9229ce6baf2a4a2677ee4d381f7e4498",
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00062",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00062.png",
+    "gold": "第4行第4列",
+    "box": [
+      214,
+      205,
+      248,
+      239
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          214,
+          205,
+          248,
+          239
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          202,
+          144,
+          243,
+          185
+        ]
+      }
+    ],
+    "pixel_sha256": "2955aae0123a23ece68a4a237db23793687f3746701de33aebf2404fb4907755",
+    "cell": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00063",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00063.png",
+    "gold": "第3行第3列",
+    "box": [
+      134,
+      145,
+      174,
+      185
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          134,
+          145,
+          174,
+          185
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          134,
+          10,
+          181,
+          57
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          134,
+          209,
+          174,
+          249
+        ]
+      }
+    ],
+    "pixel_sha256": "9f2cbe35e7988403430a186620117c790a338a64fb9474b118a6ac43a3e31972",
+    "cell": [
+      2,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00064",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00064.png",
+    "gold": "第1行第4列",
+    "box": [
+      201,
+      7,
+      249,
+      55
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          201,
+          7,
+          249,
+          55
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          84,
+          12,
+          122,
+          50
+        ]
+      }
+    ],
+    "pixel_sha256": "a7b851c132fd20bfdda702c805570e2221d80f66e943ce86504c40a4f87f882d",
+    "cell": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00065",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00065.png",
+    "gold": "第1行第3列",
+    "box": [
+      141,
+      10,
+      182,
+      51
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          141,
+          10,
+          182,
+          51
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          80,
+          146,
+          120,
+          186
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          10,
+          139,
+          49,
+          178
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          140,
+          138,
+          181,
+          179
+        ]
+      }
+    ],
+    "pixel_sha256": "f1048f009e59b14cb98ae8defd507cd09d204f3c250e6307068c849547fe1dd7",
+    "cell": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00066",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00066.png",
+    "gold": "第1行第2列",
+    "box": [
+      89,
+      21,
+      120,
+      52
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          89,
+          21,
+          120,
+          52
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          21,
+          205,
+          52,
+          236
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          16,
+          74,
+          58,
+          116
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          144,
+          146,
+          176,
+          178
+        ]
+      }
+    ],
+    "pixel_sha256": "ccd8fd58f78b8fdb2ef2801a3c9440601c19ef553a40a615e69de7ef0022fe30",
+    "cell": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00067",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00067.png",
+    "gold": "第2行第3列",
+    "box": [
+      136,
+      72,
+      172,
+      108
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          136,
+          72,
+          172,
+          108
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          84,
+          7,
+          122,
+          45
+        ]
+      }
+    ],
+    "pixel_sha256": "1ec30762d447ea4ab2282375cf472e51a7979622dc8ffa89ded94a259032d72d",
+    "cell": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00068",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00068.png",
+    "gold": "第4行第4列",
+    "box": [
+      207,
+      206,
+      243,
+      242
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          207,
+          206,
+          243,
+          242
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          11,
+          19,
+          48,
+          56
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          19,
+          206,
+          50,
+          237
+        ]
+      }
+    ],
+    "pixel_sha256": "d82fab0fb0acfad24771423f3007200cfef2685a20ee171e5d30fca39f773dff",
+    "cell": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00069",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00069.png",
+    "gold": "第4行第1列",
+    "box": [
+      15,
+      206,
+      55,
+      246
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          15,
+          206,
+          55,
+          246
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          74,
+          208,
+          116,
+          250
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          8,
+          11,
+          47,
+          50
+        ]
+      }
+    ],
+    "pixel_sha256": "3aa6817520fabb2cd1c28c3fa72d79bbcb799c35814bf08d3b85c928ae4f6b8c",
+    "cell": [
+      3,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00070",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00070.png",
+    "gold": "第3行第2列",
+    "box": [
+      71,
+      146,
+      111,
+      186
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          71,
+          146,
+          111,
+          186
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          147,
+          208,
+          186,
+          247
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          145,
+          22,
+          181,
+          58
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          136,
+          76,
+          182,
+          122
+        ]
+      }
+    ],
+    "pixel_sha256": "e500d6ecc0fe7d8a4565447e8a8a5a988d818cc805bbe8b1b5fd6e543fbbad13",
+    "cell": [
+      2,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00071",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00071.png",
+    "gold": "第1行第2列",
+    "box": [
+      72,
+      7,
+      118,
+      53
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          72,
+          7,
+          118,
+          53
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          82,
+          206,
+          115,
+          239
+        ]
+      }
+    ],
+    "pixel_sha256": "d86d2af9c58776dfea75b0d64ee631390a6a01f2def895d956483506a9255b23",
+    "cell": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00072",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00072.png",
+    "gold": "第2行第2列",
+    "box": [
+      75,
+      83,
+      114,
+      122
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          75,
+          83,
+          114,
+          122
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          136,
+          137,
+          183,
+          184
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          205,
+          206,
+          241,
+          242
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          73,
+          200,
+          114,
+          241
+        ]
+      }
+    ],
+    "pixel_sha256": "60d9a95a4c0ee3e5de6244d14180cabb5e363856c9afde4943b832135de5afcb",
+    "cell": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00073",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00073.png",
+    "gold": "第1行第3列",
+    "box": [
+      145,
+      6,
+      176,
+      37
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          145,
+          6,
+          176,
+          37
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          12,
+          11,
+          52,
+          51
+        ]
+      }
+    ],
+    "pixel_sha256": "1a428f87e70af5713b215aff8fa283fc7708d560f2fe5be44cbb946b267ee144",
+    "cell": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00074",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00074.png",
+    "gold": "第2行第3列",
+    "box": [
+      139,
+      71,
+      172,
+      104
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          139,
+          71,
+          172,
+          104
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          75,
+          8,
+          110,
+          43
+        ]
+      }
+    ],
+    "pixel_sha256": "bec3e8951f9d59311c6ad9e660046c7820d7400572b3ab850dadc6d3f834f6d4",
+    "cell": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00075",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00075.png",
+    "gold": "第1行第1列",
+    "box": [
+      11,
+      7,
+      57,
+      53
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          11,
+          7,
+          57,
+          53
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          74,
+          6,
+          109,
+          41
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          80,
+          203,
+          110,
+          233
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          211,
+          148,
+          248,
+          185
+        ]
+      }
+    ],
+    "pixel_sha256": "868f3ed9e42a9f1f47cea359f0a44ec7abc7308f5f180573173e4ae74b56e781",
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00076",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00076.png",
+    "gold": "第3行第1列",
+    "box": [
+      14,
+      142,
+      58,
+      186
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          14,
+          142,
+          58,
+          186
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          11,
+          73,
+          54,
+          116
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          79,
+          13,
+          121,
+          55
+        ]
+      }
+    ],
+    "pixel_sha256": "cb5846abf984bdf9dec8f272fd9308b5922a2c811fbee5892f21d0186d187b35",
+    "cell": [
+      2,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00077",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00077.png",
+    "gold": "第2行第2列",
+    "box": [
+      83,
+      85,
+      119,
+      121
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          83,
+          85,
+          119,
+          121
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          18,
+          85,
+          55,
+          122
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          139,
+          71,
+          181,
+          113
+        ]
+      }
+    ],
+    "pixel_sha256": "d58d10a30f41454481ccac062f461251ef2b48c95b445823cebfb1c1e75d9b92",
+    "cell": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00078",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00078.png",
+    "gold": "第3行第1列",
+    "box": [
+      15,
+      148,
+      52,
+      185
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          15,
+          148,
+          52,
+          185
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          141,
+          76,
+          182,
+          117
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          200,
+          134,
+          238,
+          172
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          207,
+          208,
+          244,
+          245
+        ]
+      }
+    ],
+    "pixel_sha256": "fcf15d25141b15905cbb38e9f4cabfd81fb2fecd24b117ea1999a3afc95301b0",
+    "cell": [
+      2,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00079",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00079.png",
+    "gold": "第2行第2列",
+    "box": [
+      90,
+      92,
+      120,
+      122
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          90,
+          92,
+          120,
+          122
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          16,
+          136,
+          53,
+          173
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          140,
+          198,
+          186,
+          244
+        ]
+      }
+    ],
+    "pixel_sha256": "03deda967482aadfd7fa40785c23723df69c03b901e07d51c9c2e3007acec533",
+    "cell": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00080",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00080.png",
+    "gold": "第2行第1列",
+    "box": [
+      9,
+      76,
+      41,
+      108
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          9,
+          76,
+          41,
+          108
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          15,
+          198,
+          53,
+          236
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          206,
+          200,
+          248,
+          242
+        ]
+      }
+    ],
+    "pixel_sha256": "9503c33d329aa25b333617e30ea49e260e806cf8208b1b9bbdfd163645e0b088",
+    "cell": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00081",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00081.png",
+    "gold": "第3行第3列",
+    "box": [
+      141,
+      145,
+      177,
+      181
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          141,
+          145,
+          177,
+          181
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          10,
+          15,
+          50,
+          55
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          74,
+          200,
+          117,
+          243
+        ]
+      }
+    ],
+    "pixel_sha256": "3a6a69a4e11dbadd561af17403a7d2a9fb9ddef4f50eac15491669898439e00d",
+    "cell": [
+      2,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00082",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00082.png",
+    "gold": "第3行第1列",
+    "box": [
+      17,
+      139,
+      57,
+      179
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          17,
+          139,
+          57,
+          179
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          200,
+          152,
+          234,
+          186
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          18,
+          84,
+          55,
+          121
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          145,
+          72,
+          182,
+          109
+        ]
+      }
+    ],
+    "pixel_sha256": "2238ca7b7c22486bd3d1395cfdaa2735ece97d09e61d01cb9a57b0eaccfd1816",
+    "cell": [
+      2,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00083",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00083.png",
+    "gold": "第3行第4列",
+    "box": [
+      200,
+      137,
+      245,
+      182
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          200,
+          137,
+          245,
+          182
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          215,
+          16,
+          248,
+          49
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          7,
+          203,
+          51,
+          247
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          136,
+          15,
+          172,
+          51
+        ]
+      }
+    ],
+    "pixel_sha256": "04f561e0b292a991917fcc698bf537e83ad57a89648c7b43df63c2a8ba798dff",
+    "cell": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00084",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00084.png",
+    "gold": "第1行第4列",
+    "box": [
+      206,
+      16,
+      244,
+      54
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          206,
+          16,
+          244,
+          54
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          84,
+          203,
+          122,
+          241
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          198,
+          200,
+          232,
+          234
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          204,
+          72,
+          247,
+          115
+        ]
+      }
+    ],
+    "pixel_sha256": "da01ce9246ea97937eed34968a1dd54104671517b61b5f77a13cb897a5e5cf76",
+    "cell": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00085",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00085.png",
+    "gold": "第2行第3列",
+    "box": [
+      141,
+      75,
+      182,
+      116
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          141,
+          75,
+          182,
+          116
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          82,
+          6,
+          120,
+          44
+        ]
+      }
+    ],
+    "pixel_sha256": "459e83fb09ccdda37c17d2209b28f4593f2766dbe4016295da2d7883f7ef5593",
+    "cell": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00086",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00086.png",
+    "gold": "第1行第1列",
+    "box": [
+      7,
+      14,
+      50,
+      57
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          7,
+          14,
+          50,
+          57
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          87,
+          78,
+          121,
+          112
+        ]
+      }
+    ],
+    "pixel_sha256": "432325c17950a05a7f20990068d2e55dbd28c47e7baf0c17872cee8e4d441c24",
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00087",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00087.png",
+    "gold": "第1行第4列",
+    "box": [
+      203,
+      23,
+      236,
+      56
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          203,
+          23,
+          236,
+          56
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          85,
+          18,
+          115,
+          48
+        ]
+      }
+    ],
+    "pixel_sha256": "e0feace8911ab6042d26bc04da65f39322f9b7160c83e077b422c45f9e5754e5",
+    "cell": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00088",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00088.png",
+    "gold": "第4行第1列",
+    "box": [
+      21,
+      209,
+      51,
+      239
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          21,
+          209,
+          51,
+          239
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          205,
+          20,
+          242,
+          57
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          25,
+          147,
+          58,
+          180
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          82,
+          142,
+          122,
+          182
+        ]
+      }
+    ],
+    "pixel_sha256": "0b24fa58acae04ba95fffce9f458992ec3acbb6cff14a06b857548d099a9acc4",
+    "cell": [
+      3,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00089",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00089.png",
+    "gold": "第4行第1列",
+    "box": [
+      10,
+      201,
+      58,
+      249
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          10,
+          201,
+          58,
+          249
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          75,
+          213,
+          111,
+          249
+        ]
+      }
+    ],
+    "pixel_sha256": "0e7cb01eaf51d4cc862e21a2b9ca43e4034b7ba9da307c0f9299ca639521b934",
+    "cell": [
+      3,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00090",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00090.png",
+    "gold": "第1行第2列",
+    "box": [
+      87,
+      9,
+      120,
+      42
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          87,
+          9,
+          120,
+          42
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          210,
+          145,
+          250,
+          185
+        ]
+      }
+    ],
+    "pixel_sha256": "e80d337dd0d71dcad3d918c79401e3baaeac4043da52446d9fbf37802ab78892",
+    "cell": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00091",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00091.png",
+    "gold": "第4行第4列",
+    "box": [
+      203,
+      198,
+      248,
+      243
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          203,
+          198,
+          248,
+          243
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          80,
+          81,
+          118,
+          119
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          144,
+          6,
+          181,
+          43
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          147,
+          145,
+          183,
+          181
+        ]
+      }
+    ],
+    "pixel_sha256": "77d48c4ff0fe5525e30ef1bbdb62cc451f709324432c58f479210a45341a42ba",
+    "cell": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00092",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00092.png",
+    "gold": "第3行第1列",
+    "box": [
+      7,
+      139,
+      54,
+      186
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          7,
+          139,
+          54,
+          186
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          138,
+          72,
+          182,
+          116
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          82,
+          77,
+          122,
+          117
+        ]
+      }
+    ],
+    "pixel_sha256": "6d0a79ae24b16e77cb5ded7cd934ec48350f1f2d6acb1be2bc43d9f4820197bc",
+    "cell": [
+      2,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00093",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00093.png",
+    "gold": "第3行第2列",
+    "box": [
+      79,
+      142,
+      122,
+      185
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          79,
+          142,
+          122,
+          185
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          208,
+          211,
+          246,
+          249
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          205,
+          136,
+          247,
+          178
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          141,
+          80,
+          173,
+          112
+        ]
+      }
+    ],
+    "pixel_sha256": "0eeb54ece31a00974eac25c2bf3b2214436252f7d2e739b347448462116eabee",
+    "cell": [
+      2,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00094",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00094.png",
+    "gold": "第2行第2列",
+    "box": [
+      70,
+      75,
+      115,
+      120
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          70,
+          75,
+          115,
+          120
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          71,
+          8,
+          118,
+          55
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          143,
+          207,
+          180,
+          244
+        ]
+      }
+    ],
+    "pixel_sha256": "48e82cbd5dfad93df5bb1952d1c18ea2dcf6e56e8c512e8bb07de6fe30e46f82",
+    "cell": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00095",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00095.png",
+    "gold": "第3行第3列",
+    "box": [
+      141,
+      141,
+      173,
+      173
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          141,
+          141,
+          173,
+          173
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          209,
+          199,
+          245,
+          235
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          16,
+          200,
+          52,
+          236
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          16,
+          75,
+          55,
+          114
+        ]
+      }
+    ],
+    "pixel_sha256": "1e3b2fc42fe44f3822e69f29d64defe9ac033b974d6211b063a5ab8362367174",
+    "cell": [
+      2,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00096",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00096.png",
+    "gold": "第3行第2列",
+    "box": [
+      75,
+      141,
+      116,
+      182
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          75,
+          141,
+          116,
+          182
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          137,
+          142,
+          171,
+          176
+        ]
+      }
+    ],
+    "pixel_sha256": "2e628b4a01c26b05a1d7d581741614c244fba123a249ff151590e8da20e479af",
+    "cell": [
+      2,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00097",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00097.png",
+    "gold": "第2行第2列",
+    "box": [
+      73,
+      77,
+      114,
+      118
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          73,
+          77,
+          114,
+          118
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          17,
+          204,
+          53,
+          240
+        ]
+      }
+    ],
+    "pixel_sha256": "5a4716287a70c8f28c7aea2cbb826ad97a5ad853c1ce828ff83583f08bcb4234",
+    "cell": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00098",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00098.png",
+    "gold": "第1行第1列",
+    "box": [
+      13,
+      12,
+      53,
+      52
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          13,
+          12,
+          53,
+          52
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          75,
+          199,
+          111,
+          235
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          70,
+          10,
+          116,
+          56
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          210,
+          19,
+          246,
+          55
+        ]
+      }
+    ],
+    "pixel_sha256": "53135a17d49b3aa7bf5f6fb97610fac7bc8418137404410bc02d82cdc80f4524",
+    "cell": [
+      0,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00099",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00099.png",
+    "gold": "第2行第4列",
+    "box": [
+      208,
+      83,
+      245,
+      120
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          208,
+          83,
+          245,
+          120
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          7,
+          11,
+          54,
+          58
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          12,
+          153,
+          44,
+          185
+        ]
+      }
+    ],
+    "pixel_sha256": "368aae26b8c2981dda1b1e86d85aae0cf21187e17e98015e41b9da741dd74bb6",
+    "cell": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00100",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00100.png",
+    "gold": "第3行第3列",
+    "box": [
+      143,
+      146,
+      181,
+      184
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          143,
+          146,
+          181,
+          184
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          11,
+          9,
+          49,
+          47
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          15,
+          208,
+          51,
+          244
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          139,
+          7,
+          181,
+          49
+        ]
+      }
+    ],
+    "pixel_sha256": "937c019b30e99cd719c2898eb26ff88bd9c2dc8cf96c22b3be8f4d9927a0486e",
+    "cell": [
+      2,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00101",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00101.png",
+    "gold": "第3行第1列",
+    "box": [
+      7,
+      134,
+      55,
+      182
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          7,
+          134,
+          55,
+          182
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          136,
+          11,
+          181,
+          56
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          74,
+          74,
+          121,
+          121
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          207,
+          81,
+          244,
+          118
+        ]
+      }
+    ],
+    "pixel_sha256": "65501698677cae84ac19316e4d6f36c09760c40bfe7f40c0ab843a229b97ae31",
+    "cell": [
+      2,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00102",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00102.png",
+    "gold": "第4行第2列",
+    "box": [
+      76,
+      206,
+      118,
+      248
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          76,
+          206,
+          118,
+          248
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          78,
+          141,
+          115,
+          178
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          22,
+          212,
+          53,
+          243
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          138,
+          79,
+          177,
+          118
+        ]
+      }
+    ],
+    "pixel_sha256": "38ee5a8a30d5104ba48b09b8ad2e93d779d87a87723d99df386079efcd962a9d",
+    "cell": [
+      3,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00103",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00103.png",
+    "gold": "第4行第4列",
+    "box": [
+      204,
+      205,
+      247,
+      248
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          204,
+          205,
+          247,
+          248
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          8,
+          10,
+          51,
+          53
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          18,
+          154,
+          50,
+          186
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          83,
+          82,
+          115,
+          114
+        ]
+      }
+    ],
+    "pixel_sha256": "443162f78b8ab2e45219621027a2a213b6d363b58cf6bc48b51a0a958ce6d1ac",
+    "cell": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00104",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00104.png",
+    "gold": "第2行第1列",
+    "box": [
+      8,
+      79,
+      49,
+      120
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          8,
+          79,
+          49,
+          120
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          198,
+          10,
+          236,
+          48
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          136,
+          9,
+          166,
+          39
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          209,
+          218,
+          239,
+          248
+        ]
+      }
+    ],
+    "pixel_sha256": "ca8c6fe6f61abd0ffa286ef51fca0a620b28c1c679b7e633eba07be1c195ff46",
+    "cell": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00105",
+    "type": "loc",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00105.png",
+    "gold": "第3行第4列",
+    "box": [
+      199,
+      139,
+      242,
+      182
+    ],
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          199,
+          139,
+          242,
+          182
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          70,
+          206,
+          108,
+          244
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          74,
+          6,
+          117,
+          49
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          198,
+          79,
+          241,
+          122
+        ]
+      }
+    ],
+    "pixel_sha256": "0348896ecb781d8bc80a86b6fad0461bd7ca9cda4eb50856349585dcb0389d08",
+    "cell": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00106",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00106.png",
+    "gold": "第2行第1列",
+    "box": [
+      10,
+      75,
+      55,
+      120
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          10,
+          75,
+          55,
+          120
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          134,
+          10,
+          179,
+          55
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          136,
+          203,
+          183,
+          250
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          70,
+          9,
+          111,
+          50
+        ]
+      }
+    ],
+    "pixel_sha256": "9afe6985c15eebf9caca372772cfd8594d60c441c482c59619f2be9ac9e0b70a",
+    "cell": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00107",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00107.png",
+    "gold": "第4行第4列",
+    "box": [
+      203,
+      203,
+      249,
+      249
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          203,
+          203,
+          249,
+          249
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          9,
+          136,
+          56,
+          183
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          10,
+          18,
+          46,
+          54
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          141,
+          201,
+          183,
+          243
+        ]
+      }
+    ],
+    "pixel_sha256": "28ab193a9572c475473e96819c350bc94d4c86e3da95059a0b3b5de61000b21f",
+    "cell": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00108",
+    "type": "loc",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/loc_00108.png",
+    "gold": "第2行第2列",
+    "box": [
+      72,
+      76,
+      117,
+      121
+    ],
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          72,
+          76,
+          117,
+          121
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          72,
+          140,
+          113,
+          181
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          199,
+          199,
+          244,
+          244
+        ]
+      }
+    ],
+    "pixel_sha256": "6b6dc10dbe64864434b4e8875a082cfb22d2290b473dd29667d150889bb459c4",
+    "cell": [
+      1,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00109",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00109.png",
+    "gold": "第4行第2列",
+    "box": [
+      79,
+      201,
+      121,
+      243
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          79,
+          201,
+          121,
+          243
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          136,
+          70,
+          184,
+          118
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          212,
+          8,
+          244,
+          40
+        ]
+      }
+    ],
+    "pixel_sha256": "7084610cffbec3fcf02d398137dfae991edaf968b015762bdb718c910c42ecca",
+    "cell": [
+      3,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00110",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00110.png",
+    "gold": "第1行第2列",
+    "box": [
+      74,
+      10,
+      121,
+      57
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          74,
+          10,
+          121,
+          57
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          22,
+          11,
+          56,
+          45
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          199,
+          73,
+          243,
+          117
+        ]
+      }
+    ],
+    "pixel_sha256": "ab90cf1f67de6a08be7aedbfac9d3da436201579e75dd438b44c21b69a74db60",
+    "cell": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00111",
+    "type": "loc",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00111.png",
+    "gold": "第3行第2列",
+    "box": [
+      77,
+      141,
+      122,
+      186
+    ],
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          77,
+          141,
+          122,
+          186
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          136,
+          142,
+          167,
+          173
+        ]
+      }
+    ],
+    "pixel_sha256": "1392ff2eac5780ed25bd0e8d6a0ff07c9302fdf735f922cf52ad3cffee72bd49",
+    "cell": [
+      2,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00112",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00112.png",
+    "gold": "第3行第1列",
+    "box": [
+      10,
+      140,
+      53,
+      183
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          10,
+          140,
+          53,
+          183
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          138,
+          74,
+          184,
+          120
+        ]
+      }
+    ],
+    "pixel_sha256": "722d5f6908c9d46fa15647c9e15aa796d6843577486c2739f9c13e431ba0caca",
+    "cell": [
+      2,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00113",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00113.png",
+    "gold": "第4行第1列",
+    "box": [
+      14,
+      204,
+      58,
+      248
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          14,
+          204,
+          58,
+          248
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          75,
+          137,
+          114,
+          176
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          74,
+          72,
+          122,
+          120
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          8,
+          73,
+          44,
+          109
+        ]
+      }
+    ],
+    "pixel_sha256": "8f2fb4a91f13a0b2a9de628638877a7286418a8b90ae0d6f8c9dfaff27eb2184",
+    "cell": [
+      3,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00114",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00114.png",
+    "gold": "第3行第3列",
+    "box": [
+      149,
+      149,
+      184,
+      184
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          149,
+          149,
+          184,
+          184
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          144,
+          82,
+          182,
+          120
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          73,
+          72,
+          119,
+          118
+        ]
+      }
+    ],
+    "pixel_sha256": "a08fb30d67a9630dd69d2155b1d8f1506bf3859a9f7c32c98b52606cecf0afff",
+    "cell": [
+      2,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00115",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00115.png",
+    "gold": "第4行第2列",
+    "box": [
+      78,
+      206,
+      120,
+      248
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          78,
+          206,
+          120,
+          248
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          204,
+          11,
+          241,
+          48
+        ]
+      }
+    ],
+    "pixel_sha256": "220bb2981b6b1c0bcc511c39b6b05cac9b72b58bd3fe91d6cd6b16512a2364a2",
+    "cell": [
+      3,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00116",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00116.png",
+    "gold": "第2行第3列",
+    "box": [
+      148,
+      79,
+      179,
+      110
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          148,
+          79,
+          179,
+          110
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          75,
+          8,
+          120,
+          53
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          143,
+          209,
+          184,
+          250
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          70,
+          134,
+          103,
+          167
+        ]
+      }
+    ],
+    "pixel_sha256": "14883a7efbda197fc23368bf095dc655276fa44d67b57a547c5746499de2ad5d",
+    "cell": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00117",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00117.png",
+    "gold": "第2行第1列",
+    "box": [
+      9,
+      73,
+      57,
+      121
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          9,
+          73,
+          57,
+          121
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          8,
+          139,
+          54,
+          185
+        ]
+      }
+    ],
+    "pixel_sha256": "5afcc940c346a3aabfa391834dc13ddcb03165dd38aa4fa136b93d993c0e2981",
+    "cell": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00118",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00118.png",
+    "gold": "第3行第3列",
+    "box": [
+      148,
+      139,
+      182,
+      173
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          148,
+          139,
+          182,
+          173
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          200,
+          74,
+          243,
+          117
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          10,
+          76,
+          51,
+          117
+        ]
+      }
+    ],
+    "pixel_sha256": "ef73a0e5ee49659a7cfe2a0886104e42bd8c85f659fa4e50f811528d347b38a1",
+    "cell": [
+      2,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00119",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00119.png",
+    "gold": "第1行第2列",
+    "box": [
+      72,
+      11,
+      107,
+      46
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          72,
+          11,
+          107,
+          46
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          198,
+          6,
+          245,
+          53
+        ]
+      }
+    ],
+    "pixel_sha256": "b7aae0da5f08061d833eb72173ff3a14e1c3940701a6e2dc4358526ff39d9df0",
+    "cell": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00120",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00120.png",
+    "gold": "第2行第4列",
+    "box": [
+      198,
+      75,
+      245,
+      122
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          198,
+          75,
+          245,
+          122
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          20,
+          16,
+          54,
+          50
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          212,
+          21,
+          249,
+          58
+        ]
+      }
+    ],
+    "pixel_sha256": "ed057d1f979f87e6aae3d528b70b5d3ae51266118f19b3ce92c624184d6f4f96",
+    "cell": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00121",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00121.png",
+    "gold": "第1行第3列",
+    "box": [
+      144,
+      20,
+      175,
+      51
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          144,
+          20,
+          175,
+          51
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          6,
+          137,
+          51,
+          182
+        ]
+      }
+    ],
+    "pixel_sha256": "b8445bcb5ca04a70d368d461e554203615209849211b6500770e437b9b008f72",
+    "cell": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_loc_00122",
+    "type": "loc",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/loc_00122.png",
+    "gold": "第4行第2列",
+    "box": [
+      79,
+      211,
+      110,
+      242
+    ],
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          79,
+          211,
+          110,
+          242
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          199,
+          139,
+          245,
+          185
+        ]
+      }
+    ],
+    "pixel_sha256": "d77229d92c6389832b2f2f4354042daf07da0ff58acc2804cf17a0966a7e5253",
+    "cell": [
+      3,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00123",
+    "type": "loc",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/loc_00123.png",
+    "gold": "第4行第4列",
+    "box": [
+      204,
+      199,
+      249,
+      244
+    ],
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          204,
+          199,
+          249,
+          244
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          7,
+          7,
+          54,
+          54
+        ]
+      }
+    ],
+    "pixel_sha256": "e00c03b075326c35821bcdee0f24768002983d2e74a73a23816fad048db520e3",
+    "cell": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00124",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00124.png",
+    "gold": "第2行第1列",
+    "box": [
+      16,
+      80,
+      56,
+      120
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          16,
+          80,
+          56,
+          120
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          78,
+          73,
+          117,
+          112
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          135,
+          11,
+          182,
+          58
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          73,
+          198,
+          115,
+          240
+        ]
+      }
+    ],
+    "pixel_sha256": "db0c21859899424140269a586ff7fc113210940bca3cc2bb896ea452f26aff3a",
+    "cell": [
+      1,
+      0
+    ]
+  },
+  {
+    "id": "feedback2_loc_00125",
+    "type": "loc",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00125.png",
+    "gold": "第4行第4列",
+    "box": [
+      200,
+      212,
+      238,
+      250
+    ],
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          200,
+          212,
+          238,
+          250
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          14,
+          206,
+          48,
+          240
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          76,
+          200,
+          122,
+          246
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          142,
+          141,
+          179,
+          178
+        ]
+      }
+    ],
+    "pixel_sha256": "4d92615668650189681245eee08f3217f59da4947351d7b127e5add917522526",
+    "cell": [
+      3,
+      3
+    ]
+  },
+  {
+    "id": "feedback2_loc_00126",
+    "type": "loc",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/loc_00126.png",
+    "gold": "第3行第2列",
+    "box": [
+      73,
+      139,
+      109,
+      175
+    ],
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          73,
+          139,
+          109,
+          175
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          199,
+          7,
+          237,
+          45
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          137,
+          11,
+          183,
+          57
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          201,
+          73,
+          247,
+          119
+        ]
+      }
+    ],
+    "pixel_sha256": "160b23f055035abe195d6f4f5cd6ae04f5c84e0755781c1c67b2fb704498f571",
+    "cell": [
+      2,
+      1
+    ]
+  },
+  {
+    "id": "feedback2_loc_00127",
+    "type": "loc",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/loc_00127.png",
+    "gold": "第3行第3列",
+    "box": [
+      138,
+      141,
+      182,
+      185
+    ],
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          138,
+          141,
+          182,
+          185
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          22,
+          139,
+          52,
+          169
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          9,
+          200,
+          53,
+          244
+        ]
+      }
+    ],
+    "pixel_sha256": "5a5b30e7ff72c139eb9eb38897bb5a4f793460b4a1adaf72b317eb7d52cf8782",
+    "cell": [
+      2,
+      2
+    ]
+  },
+  {
+    "id": "feedback2_count_00000",
+    "type": "count",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/count_00000.png",
+    "gold": "3个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          211,
+          201,
+          246,
+          236
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          79,
+          73,
+          109,
+          103
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          144,
+          23,
+          177,
+          56
+        ]
+      }
+    ],
+    "pixel_sha256": "83faa20fe3841237e1c4adb02aa22c4a5b03c1b868c0f93a0301a88ed92e8055"
+  },
+  {
+    "id": "feedback2_count_00001",
+    "type": "count",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/count_00001.png",
+    "gold": "4个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          138,
+          12,
+          183,
+          57
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          77,
+          83,
+          111,
+          117
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          149,
+          202,
+          179,
+          232
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          80,
+          150,
+          116,
+          186
+        ]
+      }
+    ],
+    "pixel_sha256": "11bbbfdb7f753ba82ddbb6175d766c0c31e40cf4a531380d037b1ed7ebce5a2d"
+  },
+  {
+    "id": "feedback2_count_00002",
+    "type": "count",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/count_00002.png",
+    "gold": "3个",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          14,
+          74,
+          48,
+          108
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          10,
+          7,
+          51,
+          48
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          146,
+          75,
+          181,
+          110
+        ]
+      }
+    ],
+    "pixel_sha256": "3ad0c9bf077e6b030c371ea83b8bf8c15b03e2470abe998a73fc9d76ae4313ca"
+  },
+  {
+    "id": "feedback2_count_00003",
+    "type": "count",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/count_00003.png",
+    "gold": "4个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          81,
+          87,
+          115,
+          121
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          135,
+          9,
+          183,
+          57
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          139,
+          140,
+          185,
+          186
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          205,
+          74,
+          237,
+          106
+        ]
+      }
+    ],
+    "pixel_sha256": "672c428cf4905951a21f291e4fe8b20337e570a520d5a8c817f772811646a7b4"
+  },
+  {
+    "id": "feedback2_count_00004",
+    "type": "count",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/count_00004.png",
+    "gold": "1个",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          13,
+          9,
+          55,
+          51
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          202,
+          200,
+          247,
+          245
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          77,
+          139,
+          113,
+          175
+        ]
+      }
+    ],
+    "pixel_sha256": "74af8938c5fb6228455331a82cffd1897fb80cf8dd8e8bec0c0e77dd6fedc39f"
+  },
+  {
+    "id": "feedback2_count_00005",
+    "type": "count",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/count_00005.png",
+    "gold": "3个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          12,
+          6,
+          49,
+          43
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          206,
+          86,
+          239,
+          119
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          11,
+          210,
+          47,
+          246
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          144,
+          85,
+          181,
+          122
+        ]
+      }
+    ],
+    "pixel_sha256": "75bad8993e3b28836e1997a1d9eb28cb3f30a01c83860d5ad3150c97526ec998"
+  },
+  {
+    "id": "feedback2_count_00006",
+    "type": "count",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/count_00006.png",
+    "gold": "2个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          10,
+          201,
+          41,
+          232
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          25,
+          24,
+          57,
+          56
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          199,
+          73,
+          246,
+          120
+        ]
+      }
+    ],
+    "pixel_sha256": "9bb9b392db606912f61c8010aaa383966bda413fc04f00f6ba4d4141f705426e"
+  },
+  {
+    "id": "feedback2_count_00007",
+    "type": "count",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/count_00007.png",
+    "gold": "0个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          14,
+          14,
+          56,
+          56
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          10,
+          70,
+          56,
+          116
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          136,
+          14,
+          177,
+          55
+        ]
+      }
+    ],
+    "pixel_sha256": "63b45ea64726d5ef6048eb08ac504311e145ab03884a1d352a9e98b19330b61a"
+  },
+  {
+    "id": "feedback2_count_00008",
+    "type": "count",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/count_00008.png",
+    "gold": "2个",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          76,
+          87,
+          111,
+          122
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          142,
+          137,
+          182,
+          177
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          142,
+          10,
+          185,
+          53
+        ]
+      }
+    ],
+    "pixel_sha256": "249abf844c42afef0685061f88fba981915ee8b5f99535b2acfef3c12d12375f"
+  },
+  {
+    "id": "feedback2_count_00009",
+    "type": "count",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/count_00009.png",
+    "gold": "3个",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          12,
+          10,
+          43,
+          41
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          135,
+          70,
+          182,
+          117
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          207,
+          10,
+          247,
+          50
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          137,
+          17,
+          178,
+          58
+        ]
+      }
+    ],
+    "pixel_sha256": "e275a00b19163819457d1a7afad0bc67605a50db160f910fc4842fd92532c541"
+  },
+  {
+    "id": "feedback2_count_00010",
+    "type": "count",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/count_00010.png",
+    "gold": "3个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          73,
+          204,
+          107,
+          238
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          6,
+          203,
+          52,
+          249
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          202,
+          9,
+          250,
+          57
+        ]
+      }
+    ],
+    "pixel_sha256": "c2be965e161828cbf03e9653927271f8c9620d7f8b66c45f8a0ed77e69603ebc"
+  },
+  {
+    "id": "feedback2_count_00011",
+    "type": "count",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/count_00011.png",
+    "gold": "2个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          140,
+          139,
+          180,
+          179
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          201,
+          77,
+          236,
+          112
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          208,
+          141,
+          248,
+          181
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          137,
+          203,
+          178,
+          244
+        ]
+      }
+    ],
+    "pixel_sha256": "aa66451039b207502e2748aded5ec8df6117fca1f6d4161b58471d76d737ae47"
+  },
+  {
+    "id": "feedback2_count_00012",
+    "type": "count",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/count_00012.png",
+    "gold": "4个",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          22,
+          134,
+          56,
+          168
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          80,
+          213,
+          116,
+          249
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          208,
+          19,
+          247,
+          58
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          138,
+          79,
+          171,
+          112
+        ]
+      }
+    ],
+    "pixel_sha256": "8c7f6c0a8b1475c45e6d6378c7c6216ff111f23da6966fdd9b610cebfd0e5f36"
+  },
+  {
+    "id": "feedback2_count_00013",
+    "type": "count",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/count_00013.png",
+    "gold": "2个",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          10,
+          136,
+          58,
+          184
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          203,
+          11,
+          237,
+          45
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          140,
+          86,
+          173,
+          119
+        ]
+      }
+    ],
+    "pixel_sha256": "3259412eea5a494dd6daeff267f23ea15deba0c03f55c4575407cd3b9a584664"
+  },
+  {
+    "id": "feedback2_count_00014",
+    "type": "count",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/count_00014.png",
+    "gold": "1个",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          79,
+          76,
+          120,
+          117
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          10,
+          135,
+          48,
+          173
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          74,
+          140,
+          118,
+          184
+        ]
+      }
+    ],
+    "pixel_sha256": "6469240caa596699ec654ed9d41b330824a040c9233d9ddee92f251211b4f59f"
+  },
+  {
+    "id": "feedback2_count_00015",
+    "type": "count",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/count_00015.png",
+    "gold": "0个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          134,
+          24,
+          168,
+          58
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          12,
+          138,
+          47,
+          173
+        ]
+      }
+    ],
+    "pixel_sha256": "f8ee84f9cf6ea7fbe9cdc00bd4a93e4035cb3cddf320f3ba20ec054a0a7bef00"
+  },
+  {
+    "id": "feedback2_count_00016",
+    "type": "count",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/count_00016.png",
+    "gold": "3个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          77,
+          142,
+          121,
+          186
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          24,
+          145,
+          57,
+          178
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          9,
+          80,
+          47,
+          118
+        ]
+      }
+    ],
+    "pixel_sha256": "46201843c73143dead19273c061a6b79a9bba7acc03360d465aa4d7128483683"
+  },
+  {
+    "id": "feedback2_count_00017",
+    "type": "count",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/count_00017.png",
+    "gold": "1个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          207,
+          76,
+          245,
+          114
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          9,
+          203,
+          56,
+          250
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          19,
+          16,
+          57,
+          54
+        ]
+      }
+    ],
+    "pixel_sha256": "332ac93cb6212f33597ec3ebd39c3c86c93239d2e5948bb3d8fc09e76c10bb62"
+  },
+  {
+    "id": "feedback2_count_00018",
+    "type": "count",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/count_00018.png",
+    "gold": "4个",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          9,
+          201,
+          57,
+          249
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          84,
+          83,
+          118,
+          117
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          78,
+          14,
+          120,
+          56
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          10,
+          6,
+          52,
+          48
+        ]
+      }
+    ],
+    "pixel_sha256": "b7f58d150b78d9bbfc79fcf5f9049108ac12732bb54d77411b764cb8791edcb5"
+  },
+  {
+    "id": "feedback2_count_00019",
+    "type": "count",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/count_00019.png",
+    "gold": "0个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          217,
+          88,
+          248,
+          119
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          82,
+          137,
+          119,
+          174
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          16,
+          144,
+          53,
+          181
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          215,
+          23,
+          245,
+          53
+        ]
+      }
+    ],
+    "pixel_sha256": "bb91c0197d650dacbeab02aceaafb2b64fda30fc2635c8c442a2a11d593d45f1"
+  },
+  {
+    "id": "feedback2_count_00020",
+    "type": "count",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/count_00020.png",
+    "gold": "4个",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          73,
+          8,
+          121,
+          56
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          15,
+          9,
+          48,
+          42
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          139,
+          87,
+          169,
+          117
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          71,
+          75,
+          117,
+          121
+        ]
+      }
+    ],
+    "pixel_sha256": "e24c430c1a131df8ce77c72f2b64796a9d59c5973a6297ba41b4aed4880067e0"
+  },
+  {
+    "id": "feedback2_count_00021",
+    "type": "count",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/count_00021.png",
+    "gold": "0个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          203,
+          136,
+          247,
+          180
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          202,
+          17,
+          234,
+          49
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          74,
+          144,
+          116,
+          186
+        ]
+      }
+    ],
+    "pixel_sha256": "87803f88de16ddd6b07b2ecc2556abe0ade33f0acdb9ab3c47f04ab608efa131"
+  },
+  {
+    "id": "feedback2_count_00022",
+    "type": "count",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/count_00022.png",
+    "gold": "0个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          209,
+          79,
+          248,
+          118
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          9,
+          9,
+          56,
+          56
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          200,
+          206,
+          237,
+          243
+        ]
+      }
+    ],
+    "pixel_sha256": "7f0e12174575cc457a71efa496798e3db8068cb133745f2b03df632fa6dfb876"
+  },
+  {
+    "id": "feedback2_count_00023",
+    "type": "count",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/count_00023.png",
+    "gold": "0个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          70,
+          200,
+          118,
+          248
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          139,
+          79,
+          182,
+          122
+        ]
+      }
+    ],
+    "pixel_sha256": "3746610577410d9ee70ffc36c125698cb8e37bbfd2557685c98449ff8ab3f24d"
+  },
+  {
+    "id": "feedback2_count_00024",
+    "type": "count",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/count_00024.png",
+    "gold": "4个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          6,
+          79,
+          37,
+          110
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          7,
+          198,
+          54,
+          245
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          203,
+          138,
+          250,
+          185
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          141,
+          7,
+          181,
+          47
+        ]
+      }
+    ],
+    "pixel_sha256": "1d35bfd5c4b7da424455fabc0478a03fb33048f632c7f979a4aebcaf186da821"
+  },
+  {
+    "id": "feedback2_count_00025",
+    "type": "count",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/count_00025.png",
+    "gold": "4个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          145,
+          201,
+          186,
+          242
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          199,
+          91,
+          230,
+          122
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          13,
+          147,
+          52,
+          186
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          13,
+          205,
+          53,
+          245
+        ]
+      }
+    ],
+    "pixel_sha256": "c2823483191b4514f5c4fe18b9e80f404f7210f828feace832665a011959e1c5"
+  },
+  {
+    "id": "feedback2_count_00026",
+    "type": "count",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/count_00026.png",
+    "gold": "1个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          150,
+          22,
+          186,
+          58
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          199,
+          151,
+          230,
+          182
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          207,
+          205,
+          240,
+          238
+        ]
+      }
+    ],
+    "pixel_sha256": "7d8d062686f25af555bab9b0f90a62ea21d3a71bff7a3a94e006e75dcff35d6f"
+  },
+  {
+    "id": "feedback2_count_00027",
+    "type": "count",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/count_00027.png",
+    "gold": "2个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          7,
+          142,
+          42,
+          177
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          202,
+          136,
+          248,
+          182
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          71,
+          134,
+          117,
+          180
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          72,
+          71,
+          114,
+          113
+        ]
+      }
+    ],
+    "pixel_sha256": "a8ef4c5bf8854b03b5d9867055bc9b636a21e69bae0e9fb8537b05a7d2ede871"
+  },
+  {
+    "id": "feedback2_count_00028",
+    "type": "count",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/count_00028.png",
+    "gold": "1个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          149,
+          73,
+          179,
+          103
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          202,
+          70,
+          241,
+          109
+        ]
+      }
+    ],
+    "pixel_sha256": "33e61ff4d2e6394a84be44d85894bc8345d163c2dacfb80adfe5632098bb90fd"
+  },
+  {
+    "id": "feedback2_count_00029",
+    "type": "count",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/count_00029.png",
+    "gold": "4个",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          206,
+          75,
+          244,
+          113
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          140,
+          82,
+          174,
+          116
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          141,
+          14,
+          183,
+          56
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          201,
+          151,
+          232,
+          182
+        ]
+      }
+    ],
+    "pixel_sha256": "3baa1bd774b9896f2eb848d10a117792a23ffce825d73f99addc3cad145664aa"
+  },
+  {
+    "id": "feedback2_count_00030",
+    "type": "count",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/count_00030.png",
+    "gold": "0个",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          134,
+          137,
+          180,
+          183
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          137,
+          202,
+          181,
+          246
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          82,
+          78,
+          113,
+          109
+        ]
+      }
+    ],
+    "pixel_sha256": "a4d46c99efcbfca15a593876c5a5b27dff89e66ef5a9749a716d43ddfb63619b"
+  },
+  {
+    "id": "feedback2_count_00031",
+    "type": "count",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/count_00031.png",
+    "gold": "2个",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          76,
+          213,
+          110,
+          247
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          6,
+          201,
+          49,
+          244
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          198,
+          137,
+          246,
+          185
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          73,
+          77,
+          117,
+          121
+        ]
+      }
+    ],
+    "pixel_sha256": "bd1ef258838ba7940e37e61843f25edcda19e83d9ad42a6d6f32a5ca763d8f25"
+  },
+  {
+    "id": "feedback2_count_00032",
+    "type": "count",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/count_00032.png",
+    "gold": "1个",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          135,
+          12,
+          178,
+          55
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          204,
+          11,
+          240,
+          47
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          147,
+          214,
+          181,
+          248
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          198,
+          70,
+          245,
+          117
+        ]
+      }
+    ],
+    "pixel_sha256": "5009ca301e1b74983759733c2483be4641ec41dd77ffca097e624df5cfc0a00a"
+  },
+  {
+    "id": "feedback2_count_00033",
+    "type": "count",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/count_00033.png",
+    "gold": "2个",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          74,
+          139,
+          119,
+          184
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          71,
+          205,
+          113,
+          247
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          77,
+          7,
+          118,
+          48
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          205,
+          22,
+          237,
+          54
+        ]
+      }
+    ],
+    "pixel_sha256": "514c780f9a40bda8e20ffcda7ff9fd477d6ea39b9fddbda6a8663234c6f2199d"
+  },
+  {
+    "id": "feedback2_count_00034",
+    "type": "count",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/count_00034.png",
+    "gold": "1个",
+    "box": null,
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          143,
+          16,
+          185,
+          58
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          74,
+          6,
+          107,
+          39
+        ]
+      }
+    ],
+    "pixel_sha256": "a31c3fe8f270a39672af694eab2d3f328fc6868bd14e2be47a8bb4a212e33636"
+  },
+  {
+    "id": "feedback2_count_00035",
+    "type": "count",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/count_00035.png",
+    "gold": "1个",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          137,
+          211,
+          175,
+          249
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          142,
+          17,
+          172,
+          47
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          78,
+          10,
+          122,
+          54
+        ]
+      }
+    ],
+    "pixel_sha256": "70f841e80983b1ee63325d3a4fe0fe74818dfde570d6afbe0968693e24db016d"
+  },
+  {
+    "id": "feedback2_count_00036",
+    "type": "count",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/count_00036.png",
+    "gold": "3个",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          218,
+          87,
+          249,
+          118
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          15,
+          140,
+          45,
+          170
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          85,
+          152,
+          115,
+          182
+        ]
+      }
+    ],
+    "pixel_sha256": "6aa80e6737ce31c6c0bc3838b44d3fdb370c28161ea9aad2ff386c6254eb680d"
+  },
+  {
+    "id": "feedback2_count_00037",
+    "type": "count",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/count_00037.png",
+    "gold": "0个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          12,
+          12,
+          55,
+          55
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          88,
+          90,
+          120,
+          122
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          74,
+          13,
+          117,
+          56
+        ]
+      }
+    ],
+    "pixel_sha256": "47ba432fa02b42ff3430d0d1afd1a70afe7343f77631b17b920d23373960a341"
+  },
+  {
+    "id": "feedback2_count_00038",
+    "type": "count",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/count_00038.png",
+    "gold": "3个",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          138,
+          134,
+          175,
+          171
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          6,
+          23,
+          39,
+          56
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          20,
+          78,
+          53,
+          111
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          144,
+          11,
+          186,
+          53
+        ]
+      }
+    ],
+    "pixel_sha256": "1f49f79d19eafd21b90dbf1a8e6a0c78614a74624350de4b4bc7310aa80586eb"
+  },
+  {
+    "id": "feedback2_count_00039",
+    "type": "count",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/count_00039.png",
+    "gold": "2个",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          147,
+          85,
+          184,
+          122
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          73,
+          134,
+          113,
+          174
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          25,
+          74,
+          58,
+          107
+        ]
+      }
+    ],
+    "pixel_sha256": "b74c93c909c2593965a55cba45b4ffed66e2249e73538165eb471d99f7cba9fb"
+  },
+  {
+    "id": "feedback2_exist_00000",
+    "type": "exist",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/exist_00000.png",
+    "gold": "没有",
+    "box": null,
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          75,
+          18,
+          111,
+          54
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          199,
+          75,
+          243,
+          119
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          11,
+          79,
+          53,
+          121
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          74,
+          207,
+          111,
+          244
+        ]
+      }
+    ],
+    "pixel_sha256": "d639f3e4a8a715dbd63ed7a38dd1527468152c80a63bf20d76d40aae46550be1"
+  },
+  {
+    "id": "feedback2_exist_00001",
+    "type": "exist",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/exist_00001.png",
+    "gold": "有",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          71,
+          200,
+          116,
+          245
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          208,
+          81,
+          240,
+          113
+        ]
+      }
+    ],
+    "pixel_sha256": "976e48b521bf664b864958f3032f651027c3b746ddee667aa9b110b029231bff"
+  },
+  {
+    "id": "feedback2_exist_00002",
+    "type": "exist",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/exist_00002.png",
+    "gold": "没有",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          12,
+          20,
+          45,
+          53
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          137,
+          206,
+          177,
+          246
+        ]
+      }
+    ],
+    "pixel_sha256": "7e6b22e32c92b27e0230e8737adea2513a7e189ee94b5c0fa249997265445d9e"
+  },
+  {
+    "id": "feedback2_exist_00003",
+    "type": "exist",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/exist_00003.png",
+    "gold": "有",
+    "box": null,
+    "objects": [
+      {
+        "class": "红方",
+        "box": [
+          138,
+          17,
+          177,
+          56
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          70,
+          73,
+          118,
+          121
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          212,
+          210,
+          248,
+          246
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          199,
+          7,
+          229,
+          37
+        ]
+      }
+    ],
+    "pixel_sha256": "cbe8b8686fd9afa6493940b4bfcec0e459176de8baae28bc70b3f84778e33849"
+  },
+  {
+    "id": "feedback2_exist_00004",
+    "type": "exist",
+    "target": "红圆",
+    "image": "improvement/final_v2/data/feedback2/exist_00004.png",
+    "gold": "有",
+    "box": null,
+    "objects": [
+      {
+        "class": "红圆",
+        "box": [
+          12,
+          212,
+          47,
+          247
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          15,
+          78,
+          57,
+          120
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          9,
+          9,
+          57,
+          57
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          137,
+          134,
+          177,
+          174
+        ]
+      }
+    ],
+    "pixel_sha256": "7b17b926c380bce054db23d44d3f5fdc6ef5f78514f45ad2541604e736df7e26"
+  },
+  {
+    "id": "feedback2_exist_00005",
+    "type": "exist",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/exist_00005.png",
+    "gold": "有",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          14,
+          146,
+          46,
+          178
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          208,
+          75,
+          246,
+          113
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          19,
+          207,
+          54,
+          242
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          76,
+          200,
+          122,
+          246
+        ]
+      }
+    ],
+    "pixel_sha256": "205052fabbbc05ff0154b40da561de4093e59f36a445a161b3478dd354d9062c"
+  },
+  {
+    "id": "feedback2_exist_00006",
+    "type": "exist",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/exist_00006.png",
+    "gold": "没有",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          73,
+          207,
+          114,
+          248
+        ]
+      },
+      {
+        "class": "红方",
+        "box": [
+          205,
+          76,
+          250,
+          121
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          201,
+          15,
+          244,
+          58
+        ]
+      },
+      {
+        "class": "绿圆",
+        "box": [
+          210,
+          202,
+          244,
+          236
+        ]
+      }
+    ],
+    "pixel_sha256": "69238506895cd271d80df7a243c0ea6fece9c82efa0bc360a97ea386d43867d7"
+  },
+  {
+    "id": "feedback2_exist_00007",
+    "type": "exist",
+    "target": "绿方",
+    "image": "improvement/final_v2/data/feedback2/exist_00007.png",
+    "gold": "有",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          15,
+          12,
+          56,
+          53
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          202,
+          135,
+          244,
+          177
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          147,
+          147,
+          181,
+          181
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          71,
+          209,
+          107,
+          245
+        ]
+      }
+    ],
+    "pixel_sha256": "b9c254cf8c1f2afab2785e14b453d31c27fae52c9647c325d2d380798439c2b2"
+  },
+  {
+    "id": "feedback2_exist_00008",
+    "type": "exist",
+    "target": "蓝圆",
+    "image": "improvement/final_v2/data/feedback2/exist_00008.png",
+    "gold": "没有",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          136,
+          198,
+          183,
+          245
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          75,
+          72,
+          117,
+          114
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          206,
+          205,
+          249,
+          248
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          12,
+          21,
+          42,
+          51
+        ]
+      }
+    ],
+    "pixel_sha256": "e96be7b834fc59a7fec74c962df5fa66402836a14bb5be60a274c7c61be3c9e8"
+  },
+  {
+    "id": "feedback2_exist_00009",
+    "type": "exist",
+    "target": "红方",
+    "image": "improvement/final_v2/data/feedback2/exist_00009.png",
+    "gold": "没有",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿圆",
+        "box": [
+          76,
+          139,
+          107,
+          170
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          217,
+          207,
+          249,
+          239
+        ]
+      }
+    ],
+    "pixel_sha256": "713fe827abfa5bae29aef0b4aa343e7dc5c5cd4aa711d98871d85a9cef7f43b1"
+  },
+  {
+    "id": "feedback2_exist_00010",
+    "type": "exist",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/exist_00010.png",
+    "gold": "没有",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          27,
+          210,
+          58,
+          241
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          199,
+          142,
+          235,
+          178
+        ]
+      }
+    ],
+    "pixel_sha256": "8e50f9ba8022ec6af5bef795a9e85dd3f1b72a32ddd855194bc6c1f3f65f0f6c"
+  },
+  {
+    "id": "feedback2_exist_00011",
+    "type": "exist",
+    "target": "绿圆",
+    "image": "improvement/final_v2/data/feedback2/exist_00011.png",
+    "gold": "没有",
+    "box": null,
+    "objects": [
+      {
+        "class": "绿方",
+        "box": [
+          202,
+          135,
+          247,
+          180
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          19,
+          209,
+          53,
+          243
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          14,
+          6,
+          58,
+          50
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          78,
+          74,
+          121,
+          117
+        ]
+      }
+    ],
+    "pixel_sha256": "c54e44979e94ba9a153906b5e68ed6620f710b3f3e70f6d47d7e9cf80160e366"
+  },
+  {
+    "id": "feedback2_exist_00012",
+    "type": "exist",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/exist_00012.png",
+    "gold": "没有",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝圆",
+        "box": [
+          198,
+          9,
+          245,
+          56
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          203,
+          203,
+          245,
+          245
+        ]
+      },
+      {
+        "class": "红圆",
+        "box": [
+          142,
+          71,
+          186,
+          115
+        ]
+      },
+      {
+        "class": "蓝圆",
+        "box": [
+          200,
+          142,
+          241,
+          183
+        ]
+      }
+    ],
+    "pixel_sha256": "5f0cdc2bb16c535105e9de1f053011eeaf5717ddc7dd103087847e8e69b57038"
+  },
+  {
+    "id": "feedback2_exist_00013",
+    "type": "exist",
+    "target": "黄方",
+    "image": "improvement/final_v2/data/feedback2/exist_00013.png",
+    "gold": "有",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄方",
+        "box": [
+          19,
+          86,
+          54,
+          121
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          142,
+          139,
+          177,
+          174
+        ]
+      },
+      {
+        "class": "黄方",
+        "box": [
+          89,
+          72,
+          121,
+          104
+        ]
+      }
+    ],
+    "pixel_sha256": "85dce2dbdb34c07b361fae16047e4c3c46e2af861b696646148b7cea2a1a8d5e"
+  },
+  {
+    "id": "feedback2_exist_00014",
+    "type": "exist",
+    "target": "黄圆",
+    "image": "improvement/final_v2/data/feedback2/exist_00014.png",
+    "gold": "有",
+    "box": null,
+    "objects": [
+      {
+        "class": "黄圆",
+        "box": [
+          134,
+          73,
+          180,
+          119
+        ]
+      },
+      {
+        "class": "黄圆",
+        "box": [
+          140,
+          211,
+          179,
+          250
+        ]
+      }
+    ],
+    "pixel_sha256": "ec1a968413d2dccc36410a30e6d7b69f076173c0d2a557fba0b2d79570b49367"
+  },
+  {
+    "id": "feedback2_exist_00015",
+    "type": "exist",
+    "target": "蓝方",
+    "image": "improvement/final_v2/data/feedback2/exist_00015.png",
+    "gold": "有",
+    "box": null,
+    "objects": [
+      {
+        "class": "蓝方",
+        "box": [
+          10,
+          204,
+          55,
+          249
+        ]
+      },
+      {
+        "class": "蓝方",
+        "box": [
+          203,
+          11,
+          242,
+          50
+        ]
+      },
+      {
+        "class": "绿方",
+        "box": [
+          74,
+          138,
+          120,
+          184
+        ]
+      }
+    ],
+    "pixel_sha256": "a63a7e6382eb665df1f1d8fcedb7c831be00e595a61306e154f29f8f48ff7faa"
+  }
+]

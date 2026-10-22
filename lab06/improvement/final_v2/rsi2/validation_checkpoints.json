@@ -1,0 +1,24 @@
+{
+  "200": {
+    "loc": {
+      "correct": 111,
+      "n": 128,
+      "valid": 127
+    },
+    "count": {
+      "correct": 28,
+      "n": 40,
+      "valid": 40
+    },
+    "exist": {
+      "correct": 15,
+      "n": 16,
+      "valid": 16
+    },
+    "total": {
+      "correct": 154,
+      "n": 184
+    },
+    "loc_iou": 0.32113075256347656
+  }
+}

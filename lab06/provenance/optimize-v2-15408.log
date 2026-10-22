@@ -1,0 +1,45 @@
+[data-v2] train generated and verified 512 images
+[data-v2] train generated and verified 1024 images
+[data-v2] train generated and verified 1536 images
+[data-v2] train generated and verified 2048 images
+[data-v2] train generated and verified 2560 images
+[data-v2] train generated and verified 3072 images
+[data-v2] train generated and verified 3584 images
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[model] trainable=1614336/258099264 (0.6255%) NF4=True
+[eval] v1_validation {'loc': {'correct': 106, 'n': 128, 'valid': 128}, 'count': {'correct': 22, 'n': 40, 'valid': 40}, 'exist': {'correct': 14, 'n': 16, 'valid': 15}, 'total': {'correct': 142, 'n': 184}, 'loc_iou': 0.309417724609375}
+[train-v2] sft update=100/1600 mean200=0.2336
+[train-v2] sft update=200/1600 mean200=0.2622
+[train-v2] sft update=300/1600 mean200=0.2560
+[train-v2] sft update=400/1600 mean200=0.2381
+[eval] validation {'loc': {'correct': 108, 'n': 128, 'valid': 127}, 'count': {'correct': 26, 'n': 40, 'valid': 40}, 'exist': {'correct': 16, 'n': 16, 'valid': 16}, 'total': {'correct': 150, 'n': 184}, 'loc_iou': 0.31131935119628906}
+[train-v2] sft update=500/1600 mean200=0.2439
+[train-v2] sft update=600/1600 mean200=0.2325
+[train-v2] sft update=700/1600 mean200=0.2134
+[train-v2] sft update=800/1600 mean200=0.2154
+[eval] validation {'loc': {'correct': 111, 'n': 128, 'valid': 127}, 'count': {'correct': 29, 'n': 40, 'valid': 40}, 'exist': {'correct': 15, 'n': 16, 'valid': 16}, 'total': {'correct': 155, 'n': 184}, 'loc_iou': 0.32064247131347656}
+[train-v2] sft update=900/1600 mean200=0.2644
+[train-v2] sft update=1000/1600 mean200=0.1801
+[train-v2] sft update=1100/1600 mean200=0.2226
+[train-v2] sft update=1200/1600 mean200=0.2668
+[train-v2] sft update=1300/1600 mean200=0.2196
+[train-v2] sft update=1400/1600 mean200=0.1930
+[train-v2] sft update=1500/1600 mean200=0.1647
+[train-v2] sft update=1600/1600 mean200=0.1552
+[eval] validation {'loc': {'correct': 110, 'n': 128, 'valid': 127}, 'count': {'correct': 34, 'n': 40, 'valid': 40}, 'exist': {'correct': 15, 'n': 16, 'valid': 16}, 'total': {'correct': 159, 'n': 184}, 'loc_iou': 0.3202991485595703}
+[model] trainable=1614336/258099264 (0.6255%) NF4=True
+[eval] rsi1_feedback {'loc': {'correct': 121, 'n': 136, 'valid': 136}, 'count': {'correct': 30, 'n': 44, 'valid': 44}, 'exist': {'correct': 17, 'n': 19, 'valid': 19}, 'total': {'correct': 168, 'n': 199}, 'loc_iou': 0.3321748621323529}
+[train-v2] rsi1 update=100/200 mean200=0.3267
+[train-v2] rsi1 update=200/200 mean200=0.2532
+[eval] validation {'loc': {'correct': 112, 'n': 128, 'valid': 127}, 'count': {'correct': 28, 'n': 40, 'valid': 40}, 'exist': {'correct': 15, 'n': 16, 'valid': 16}, 'total': {'correct': 155, 'n': 184}, 'loc_iou': 0.32259559631347656}
+[eval] rsi1_bootstrap_posttrain {'loc': {'correct': 4, 'n': 10, 'valid': 10}, 'count': {'correct': 0, 'n': 3, 'valid': 3}, 'exist': {'correct': 0, 'n': 2, 'valid': 2}, 'total': {'correct': 4, 'n': 15}, 'loc_iou': 0.1005859375}
+[eval] rsi1_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 13, 'n': 15}, 'loc_iou': 0.392974853515625}
+[eval] rsi2_feedback {'loc': {'correct': 115, 'n': 136, 'valid': 136}, 'count': {'correct': 30, 'n': 44, 'valid': 43}, 'exist': {'correct': 19, 'n': 19, 'valid': 19}, 'total': {'correct': 164, 'n': 199}, 'loc_iou': 0.317047119140625}
+[train-v2] rsi2 update=100/200 mean200=0.2497
+[train-v2] rsi2 update=200/200 mean200=0.2405
+[eval] validation {'loc': {'correct': 111, 'n': 128, 'valid': 127}, 'count': {'correct': 28, 'n': 40, 'valid': 40}, 'exist': {'correct': 15, 'n': 16, 'valid': 16}, 'total': {'correct': 154, 'n': 184}, 'loc_iou': 0.32113075256347656}
+[eval] rsi2_bootstrap_posttrain {'loc': {'correct': 8, 'n': 18, 'valid': 18}, 'count': {'correct': 2, 'n': 6, 'valid': 6}, 'exist': {'correct': 1, 'n': 3, 'valid': 3}, 'total': {'correct': 11, 'n': 27}, 'loc_iou': 0.117431640625}
+[eval] rsi2_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 13, 'n': 15}, 'loc_iou': 0.392974853515625}
+slurmstepd: error: *** JOB 15408 ON gpu4 CANCELLED AT 2026-10-22T14:48:43 DUE TO TIME LIMIT ***

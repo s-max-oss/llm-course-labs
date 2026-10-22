@@ -1,0 +1,478 @@
+{
+  "name": "rsi1_bootstrap_posttrain",
+  "summary": {
+    "loc": {
+      "correct": 4,
+      "n": 10,
+      "valid": 10
+    },
+    "count": {
+      "correct": 0,
+      "n": 3,
+      "valid": 3
+    },
+    "exist": {
+      "correct": 0,
+      "n": 2,
+      "valid": 2
+    },
+    "total": {
+      "correct": 4,
+      "n": 15
+    },
+    "loc_iou": 0.1005859375
+  },
+  "seconds": 10.274771556258202,
+  "rows": [
+    {
+      "id": "T23",
+      "type": "count",
+      "target": "蓝圆",
+      "image": "hw6_imgs/train/t23.png",
+      "gold": "1个",
+      "raw": "0",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "1个",
+        "parsed": "0个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "Your count answer fails the independent target-color and shape check. Recheck the image. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[77, 199, 117, 239]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "0",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": null
+    },
+    {
+      "id": "T25",
+      "type": "count",
+      "target": "蓝圆",
+      "image": "hw6_imgs/train/t25.png",
+      "gold": "1个",
+      "raw": "0",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "1个",
+        "parsed": "0个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "Your count answer fails the independent target-color and shape check. Recheck the image. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[17, 207, 59, 249]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "0",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": null
+    },
+    {
+      "id": "T27",
+      "type": "exist",
+      "target": "蓝方",
+      "image": "hw6_imgs/train/t27.png",
+      "gold": "有",
+      "raw": "no",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "有",
+        "parsed": "没有",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "Your exist answer fails the independent target-color and shape check. Recheck the image. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[208, 203, 248, 243]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "no",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": null
+    },
+    {
+      "id": "T28",
+      "type": "exist",
+      "target": "蓝圆",
+      "image": "hw6_imgs/train/t28.png",
+      "gold": "有",
+      "raw": "no",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "有",
+        "parsed": "没有",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "Your exist answer fails the independent target-color and shape check. Recheck the image. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[14, 209, 53, 248]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "no",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": null
+    },
+    {
+      "id": "feedback1_loc_00013",
+      "type": "loc",
+      "target": "蓝圆",
+      "image": "improvement/final_v2/data/feedback1/loc_00013.png",
+      "gold": "第4行第1列",
+      "raw": "r4c1",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "pixel_result": "第4行第1列",
+        "parsed": "第4行第1列",
+        "evidence": {
+          "box": [
+            10,
+            210,
+            47,
+            247
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell passes the target-center check; it covers 100% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[10, 210, 47, 247]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r4c1",
+      "correct": true,
+      "valid": true,
+      "final_verified": true,
+      "iou": 0.31640625
+    },
+    {
+      "id": "feedback1_loc_00020",
+      "type": "loc",
+      "target": "黄圆",
+      "image": "improvement/final_v2/data/feedback1/loc_00020.png",
+      "gold": "第4行第1列",
+      "raw": "r4c1",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "pixel_result": "第4行第1列",
+        "parsed": "第4行第1列",
+        "evidence": {
+          "box": [
+            25,
+            219,
+            56,
+            250
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell passes the target-center check; it covers 100% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[25, 219, 56, 250]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r4c1",
+      "correct": true,
+      "valid": true,
+      "final_verified": true,
+      "iou": 0.2197265625
+    },
+    {
+      "id": "feedback1_loc_00026",
+      "type": "loc",
+      "target": "黄圆",
+      "image": "improvement/final_v2/data/feedback1/loc_00026.png",
+      "gold": "第2行第2列",
+      "raw": "r1c4",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "第2行第2列",
+        "parsed": "第1行第4列",
+        "evidence": {
+          "box": [
+            76,
+            81,
+            114,
+            119
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell fails the target-center check; it covers 0% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[76, 81, 114, 119]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r1c4",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": 0.0
+    },
+    {
+      "id": "feedback1_loc_00061",
+      "type": "loc",
+      "target": "黄圆",
+      "image": "improvement/final_v2/data/feedback1/loc_00061.png",
+      "gold": "第4行第4列",
+      "raw": "r4c4",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "pixel_result": "第4行第4列",
+        "parsed": "第4行第4列",
+        "evidence": {
+          "box": [
+            205,
+            217,
+            238,
+            250
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell passes the target-center check; it covers 100% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[205, 217, 238, 250]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r4c4",
+      "correct": true,
+      "valid": true,
+      "final_verified": true,
+      "iou": 0.25
+    },
+    {
+      "id": "feedback1_loc_00080",
+      "type": "loc",
+      "target": "绿圆",
+      "image": "improvement/final_v2/data/feedback1/loc_00080.png",
+      "gold": "第4行第3列",
+      "raw": "r3c3",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "第4行第3列",
+        "parsed": "第3行第3列",
+        "evidence": {
+          "box": [
+            145,
+            209,
+            184,
+            248
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell fails the target-center check; it covers 0% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[145, 209, 184, 248]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r3c3",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": 0.0
+    },
+    {
+      "id": "feedback1_loc_00091",
+      "type": "loc",
+      "target": "红方",
+      "image": "improvement/final_v2/data/feedback1/loc_00091.png",
+      "gold": "第1行第3列",
+      "raw": "r2c3",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "第1行第3列",
+        "parsed": "第2行第3列",
+        "evidence": {
+          "box": [
+            148,
+            20,
+            186,
+            58
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell fails the target-center check; it covers 0% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[148, 20, 186, 58]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r2c3",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": 0.0
+    },
+    {
+      "id": "feedback1_loc_00092",
+      "type": "loc",
+      "target": "绿圆",
+      "image": "improvement/final_v2/data/feedback1/loc_00092.png",
+      "gold": "第4行第2列",
+      "raw": "r2c4",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "第4行第2列",
+        "parsed": "第2行第4列",
+        "evidence": {
+          "box": [
+            74,
+            203,
+            118,
+            247
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell fails the target-center check; it covers 0% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[74, 203, 118, 247]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r2c4",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": 0.0
+    },
+    {
+      "id": "feedback1_loc_00094",
+      "type": "loc",
+      "target": "红方",
+      "image": "improvement/final_v2/data/feedback1/loc_00094.png",
+      "gold": "第4行第2列",
+      "raw": "r4c2",
+      "raw_correct": true,
+      "verification": {
+        "passed": true,
+        "pixel_result": "第4行第2列",
+        "parsed": "第4行第2列",
+        "evidence": {
+          "box": [
+            76,
+            214,
+            107,
+            245
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell passes the target-center check; it covers 100% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[76, 214, 107, 245]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r4c2",
+      "correct": true,
+      "valid": true,
+      "final_verified": true,
+      "iou": 0.2197265625
+    },
+    {
+      "id": "feedback1_loc_00121",
+      "type": "loc",
+      "target": "蓝方",
+      "image": "improvement/final_v2/data/feedback1/loc_00121.png",
+      "gold": "第2行第4列",
+      "raw": "r3c3",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "第2行第4列",
+        "parsed": "第3行第3列",
+        "evidence": {
+          "box": [
+            207,
+            75,
+            245,
+            113
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell fails the target-center check; it covers 0% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[207, 75, 245, 113]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r3c3",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": 0.0
+    },
+    {
+      "id": "feedback1_loc_00124",
+      "type": "loc",
+      "target": "红圆",
+      "image": "improvement/final_v2/data/feedback1/loc_00124.png",
+      "gold": "第3行第2列",
+      "raw": "r2c3",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "第3行第2列",
+        "parsed": "第2行第3列",
+        "evidence": {
+          "box": [
+            77,
+            134,
+            121,
+            178
+          ],
+          "components": 1
+        },
+        "hint": "The selected cell fails the target-center check; it covers 0% of the target box. Recheck row and column. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[77, 134, 121, 178]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "r2c3",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": 0.0
+    },
+    {
+      "id": "feedback1_count_00005",
+      "type": "count",
+      "target": "黄方",
+      "image": "improvement/final_v2/data/feedback1/count_00005.png",
+      "gold": "1个",
+      "raw": "0",
+      "raw_correct": false,
+      "verification": {
+        "passed": false,
+        "pixel_result": "1个",
+        "parsed": "0个",
+        "evidence": {
+          "components": 1
+        },
+        "hint": "Your count answer fails the independent target-color and shape check. Recheck the image. Detected matching target bounding boxes [left,top,right,bottom] in pixels: [[75, 202, 121, 248]]. Image size is 256 by 256; each of the four rows/columns is 64 pixels wide. Derive the requested answer from these observations."
+      },
+      "self_check": null,
+      "tool_check": null,
+      "candidate_search": null,
+      "final": "0",
+      "correct": false,
+      "valid": true,
+      "final_verified": false,
+      "iou": null
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 """Validate template preservation, OOXML, report copies and final evidence."""
 import hashlib
 import json
+import re
 from pathlib import Path
 from zipfile import ZipFile
 
@@ -15,6 +16,7 @@ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 
 
 def main():
+    v2=(ROOT/'improvement/final_v2/summary.json').exists()
     template=COURSE/'实验指南与模板/实验六_RSI递归自进化_实验报告样板.docx'
     assert sha(template)=='b2ba41dca8634f1b37d54d7f0fe57aa0c4df7b08357f371de529d7ca91467272'
     main=COURSE/'提交材料';docx=main/(NAME+'.docx');pdf=main/(NAME+'.pdf')
@@ -26,7 +28,8 @@ def main():
             if name.endswith(('.xml','.rels')):etree.fromstring(z.read(name));count+=1
         xml=etree.fromstring(z.read('word/document.xml'));ns={'w':'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}
         text=''.join(xml.xpath('//w:t/text()',namespaces=ns))
-        assert all(s in text for s in ('孙驰','2024311281','计算机10班','109/128','144/184','表6','表7','ChartQA'))
+        expected=('孙驰','2024311281','计算机10班','表6','表7','ChartQA')+ (('215/256','290/368','168/199','164/199') if v2 else ('109/128','144/184'))
+        assert all(s in text for s in expected)
         assert not any(s in text for s in ('________________','TODO','待填写'))
         assert xml.xpath('//w:sectPr',namespaces=ns)[0].attrib==etree.fromstring(original.read('word/document.xml')).xpath('//w:sectPr',namespaces=ns)[0].attrib
         sections=xml.xpath('//w:sectPr',namespaces=ns)[0]
@@ -35,7 +38,8 @@ def main():
             assert sections.find('w:'+tag,ns).attrib==original_sections.find('w:'+tag,ns).attrib
         rel=etree.fromstring(z.read('word/_rels/document.xml.rels'))
         ids=[r.get('Id') for r in rel];assert len(ids)==len(set(ids))
-        assert hashlib.sha256(z.read('word/media/lab06_accuracy.png')).hexdigest()==sha(ROOT/'figures/improved_accuracy.png')
+        figure=ROOT/'figures'/('optimized_v2_accuracy.png' if v2 else 'improved_accuracy.png')
+        assert hashlib.sha256(z.read('word/media/lab06_accuracy.png')).hexdigest()==sha(figure)
         modified=[n for n in original.namelist() if original.read(n)!=z.read(n)]
         assert set(modified)<={'[Content_Types].xml','word/document.xml','word/_rels/document.xml.rels'}
     pages=len(PdfReader(pdf).pages);assert pages==3
@@ -54,6 +58,18 @@ def main():
             'renderer':'Word COM read-only PDF export and pypdfium2; packaged renderer unavailable because LibreOffice is absent',
             'independent_review':'All important findings resolved; numeric and attribution checks passed',
             'hpc_allocations_released':True,'queue_after':run['queue_after']}
+    if v2:
+        optimized=read(ROOT/'analysis/optimization_v2.json')['audit']
+        assert all(optimized[k]=='passed' for k in ('data_isolation','pixel_labels','strict_scores','bootstrap_provenance','selection','sources_match_runtime','paired_test_ids','summary_selection_links','resume_selection_hash','learning_rate_replay_schedule'))
+        assert optimized['questions_checked']==4760
+        run2=read(ROOT/'provenance/optimization_v2_run.json')
+        assert run2['evaluation_state']=='COMPLETED' and run2['evaluation_exit_code']=='0:0' and run2['allocations_released']
+        assert run2['selection_unchanged'] and not run2['training_restarted']
+        tests=(ROOT/'analysis/unit_tests_v2.log').read_text(encoding='utf-8')
+        assert re.search(r'Ran 12 tests in [0-9.]+s',tests) and '\nOK\n' in tests
+        result.update({'formal_job':run2['evaluation_job'],'training_job':run2['training_job'],
+                       'optimization_v2_audit':optimized,'unit_tests_passed':12,
+                       'queue_after':run2['queue_after'],'selection_unchanged_after_timeout':True})
     (ROOT/'report/validation.json').write_bytes((json.dumps(result,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     print(json.dumps({'pages':pages,'xml_parts':count,'audit':audit,'report_copies_identical':True},ensure_ascii=False))
 

@@ -1,0 +1,158 @@
+{
+  "rule": "maximum development localization accuracy, then overall accuracy; earlier stage wins ties",
+  "stages": {
+    "v1_sft": {
+      "adapter": "improvement/final_v1/sft/adapter",
+      "summary": {
+        "loc": {
+          "correct": 106,
+          "n": 128,
+          "valid": 128
+        },
+        "count": {
+          "correct": 22,
+          "n": 40,
+          "valid": 40
+        },
+        "exist": {
+          "correct": 14,
+          "n": 16,
+          "valid": 15
+        },
+        "total": {
+          "correct": 142,
+          "n": 184
+        },
+        "loc_iou": 0.309417724609375
+      }
+    },
+    "sft400": {
+      "adapter": "improvement/final_v2/sft/update400/adapter",
+      "summary": {
+        "loc": {
+          "correct": 108,
+          "n": 128,
+          "valid": 127
+        },
+        "count": {
+          "correct": 26,
+          "n": 40,
+          "valid": 40
+        },
+        "exist": {
+          "correct": 16,
+          "n": 16,
+          "valid": 16
+        },
+        "total": {
+          "correct": 150,
+          "n": 184
+        },
+        "loc_iou": 0.31131935119628906
+      }
+    },
+    "sft800": {
+      "adapter": "improvement/final_v2/sft/update800/adapter",
+      "summary": {
+        "loc": {
+          "correct": 111,
+          "n": 128,
+          "valid": 127
+        },
+        "count": {
+          "correct": 29,
+          "n": 40,
+          "valid": 40
+        },
+        "exist": {
+          "correct": 15,
+          "n": 16,
+          "valid": 16
+        },
+        "total": {
+          "correct": 155,
+          "n": 184
+        },
+        "loc_iou": 0.32064247131347656
+      }
+    },
+    "sft1600": {
+      "adapter": "improvement/final_v2/sft/update1600/adapter",
+      "summary": {
+        "loc": {
+          "correct": 110,
+          "n": 128,
+          "valid": 127
+        },
+        "count": {
+          "correct": 34,
+          "n": 40,
+          "valid": 40
+        },
+        "exist": {
+          "correct": 15,
+          "n": 16,
+          "valid": 16
+        },
+        "total": {
+          "correct": 159,
+          "n": 184
+        },
+        "loc_iou": 0.3202991485595703
+      }
+    },
+    "rsi1": {
+      "adapter": "improvement/final_v2/rsi1/update200/adapter",
+      "summary": {
+        "loc": {
+          "correct": 112,
+          "n": 128,
+          "valid": 127
+        },
+        "count": {
+          "correct": 28,
+          "n": 40,
+          "valid": 40
+        },
+        "exist": {
+          "correct": 15,
+          "n": 16,
+          "valid": 16
+        },
+        "total": {
+          "correct": 155,
+          "n": 184
+        },
+        "loc_iou": 0.32259559631347656
+      }
+    },
+    "rsi2": {
+      "adapter": "improvement/final_v2/rsi2/update200/adapter",
+      "summary": {
+        "loc": {
+          "correct": 111,
+          "n": 128,
+          "valid": 127
+        },
+        "count": {
+          "correct": 28,
+          "n": 40,
+          "valid": 40
+        },
+        "exist": {
+          "correct": 15,
+          "n": 16,
+          "valid": 16
+        },
+        "total": {
+          "correct": 154,
+          "n": 184
+        },
+        "loc_iou": 0.32113075256347656
+      }
+    }
+  },
+  "selected": "rsi1",
+  "sft_selected_before_rsi": "sft800",
+  "fresh_test_created_at_selection": false
+}

@@ -1,0 +1,17 @@
+{
+  "tests": 12,
+  "seconds": 68.628,
+  "success": true,
+  "log": "analysis/unit_tests_v2.log",
+  "log_sha256": "5b36b08882dfa790e9efab56d92a7399a3d859300e143ab7a3f85a85680ad34f",
+  "source_sha256": {
+    "test_hw6.py": "ed54a047253c6688350dab9fc4a97aa9cd2a91f2a1291e4f274a91a76c4f58b0",
+    "test_localization_improvement.py": "967e061b6d2eb18d672808a739301a3775e58838513906d6e3c12c830e8f217b",
+    "test_finish_grounding.py": "7d59899c9df2825ce55e3c61b9d335ee13017e4a5fedb71afff5a8b23a7872c6",
+    "test_optimize_v2.py": "67bb90f07bd5d6f8f82666edc6d4ce01c153f3d0c1f3580842e93cc962d84649",
+    "hw6_rsi_localize.py": "b18f0c0e960b92fbcd553af6b43375b4ae5c1c2e0c6cae0160018aefb3f2615f",
+    "improve_localization.py": "dbdb6bf1e96a3aeb414ecb22647415b3e875b7b3fb276d155b23cd7a62b94f67",
+    "finish_grounding.py": "dd2bdd6b16237c075de18874840d855eae43a3bfe80b11db68815b41c4047e3b",
+    "optimize_grounding_v2.py": "c4ffa6264f85e3dd6f29fe34ec379fc18ce3d9059ed655926b53b50ebede3964"
+  }
+}

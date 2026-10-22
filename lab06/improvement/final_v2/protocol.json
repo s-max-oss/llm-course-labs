@@ -1,0 +1,63 @@
+{
+  "seed": 20261030,
+  "train_image_seed": 20261031,
+  "feedback_image_seeds": [
+    20261032,
+    20261033
+  ],
+  "test_image_seed": 20261036,
+  "initial_adapter": "improvement/final_v1/sft/adapter",
+  "sft_checkpoints_optimizer_updates": [
+    400,
+    800,
+    1600
+  ],
+  "gradient_accumulation": 2,
+  "sft_lr": 3e-05,
+  "sft_min_lr": 3e-06,
+  "warmup_updates": 80,
+  "max_grad_norm": 1.0,
+  "task_cycle": [
+    "loc",
+    "loc",
+    "loc",
+    "loc",
+    "loc",
+    "loc",
+    "count",
+    "count",
+    "count",
+    "exist"
+  ],
+  "train_questions": {
+    "loc": 2048,
+    "count": 1280,
+    "exist": 512
+  },
+  "rsi_rounds": 2,
+  "rsi_optimizer_updates_per_round": 200,
+  "rsi_lr": 3e-06,
+  "bootstrap_replay_microstep_period": 8,
+  "feedback_questions_per_round": {
+    "loc": 128,
+    "count": 40,
+    "exist": 16
+  },
+  "test_questions": {
+    "loc": 256,
+    "count": 80,
+    "exist": 32
+  },
+  "selection": "maximum development localization accuracy, then overall accuracy; earlier stage wins ties",
+  "test_policy": "generate fresh test only after stage selection; compare fixed v1 SFT and selected v2 once",
+  "training_tools": "No observations in regular SFT prompts. Only verified model answers supervise RSI replay.",
+  "feedback_tools": "purple overlay self-check, then neutral pixel bounding boxes; no exhaustive candidate fallback",
+  "comparison": "Cumulative improvement, not a matched-compute ablation; identical native decoding and NF4 base.",
+  "source_sha256": {
+    "hw6_rsi_localize.py": "b18f0c0e960b92fbcd553af6b43375b4ae5c1c2e0c6cae0160018aefb3f2615f",
+    "improve_localization.py": "dbdb6bf1e96a3aeb414ecb22647415b3e875b7b3fb276d155b23cd7a62b94f67",
+    "finish_grounding.py": "dd2bdd6b16237c075de18874840d855eae43a3bfe80b11db68815b41c4047e3b",
+    "optimize_grounding_v2.py": "c4ffa6264f85e3dd6f29fe34ec379fc18ce3d9059ed655926b53b50ebede3964"
+  },
+  "final_test_created": false
+}

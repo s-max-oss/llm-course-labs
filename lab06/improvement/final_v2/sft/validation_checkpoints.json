@@ -1,0 +1,68 @@
+{
+  "400": {
+    "loc": {
+      "correct": 108,
+      "n": 128,
+      "valid": 127
+    },
+    "count": {
+      "correct": 26,
+      "n": 40,
+      "valid": 40
+    },
+    "exist": {
+      "correct": 16,
+      "n": 16,
+      "valid": 16
+    },
+    "total": {
+      "correct": 150,
+      "n": 184
+    },
+    "loc_iou": 0.31131935119628906
+  },
+  "800": {
+    "loc": {
+      "correct": 111,
+      "n": 128,
+      "valid": 127
+    },
+    "count": {
+      "correct": 29,
+      "n": 40,
+      "valid": 40
+    },
+    "exist": {
+      "correct": 15,
+      "n": 16,
+      "valid": 16
+    },
+    "total": {
+      "correct": 155,
+      "n": 184
+    },
+    "loc_iou": 0.32064247131347656
+  },
+  "1600": {
+    "loc": {
+      "correct": 110,
+      "n": 128,
+      "valid": 127
+    },
+    "count": {
+      "correct": 34,
+      "n": 40,
+      "valid": 40
+    },
+    "exist": {
+      "correct": 15,
+      "n": 16,
+      "valid": 16
+    },
+    "total": {
+      "correct": 159,
+      "n": 184
+    },
+    "loc_iou": 0.3202991485595703
+  }
+}

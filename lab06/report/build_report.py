@@ -170,7 +170,10 @@ def main():
     assert sect, 'Template section properties missing'
     if 'xmlns:v=' not in prefix:
         prefix = prefix.replace('<w:document ', '<w:document xmlns:v="urn:schemas-microsoft-com:vml" ',1)
-    if (ROOT / 'improvement/final_v1/summary.json').exists():
+    if (ROOT / 'improvement/final_v2/summary.json').exists():
+        import optimized_content
+        content = optimized_content.create_content(sys.modules[__name__])
+    elif (ROOT / 'improvement/final_v1/summary.json').exists():
         import improved_content
         content = improved_content.create_content(sys.modules[__name__])
     else:
@@ -178,7 +181,7 @@ def main():
     rels = package['word/_rels/document.xml.rels'].decode('utf-8')
     next_id = max(map(int,re.findall(r'Id="rId(\d+)"',rels)))+1
     rid = f'rId{next_id}'
-    figure = ROOT / 'figures' / ('improved_accuracy.png' if (ROOT / 'improvement/final_v1/summary.json').exists() else 'accuracy.png')
+    figure = ROOT / 'figures' / ('optimized_v2_accuracy.png' if (ROOT / 'improvement/final_v2/summary.json').exists() else 'improved_accuracy.png' if (ROOT / 'improvement/final_v1/summary.json').exists() else 'accuracy.png')
     figure_width = 440 if (ROOT / 'improvement/final_v1/summary.json').exists() else 390
     from PIL import Image
     with Image.open(figure) as image:

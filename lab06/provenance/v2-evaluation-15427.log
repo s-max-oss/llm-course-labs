@@ -1,0 +1,11 @@
+/home/u2024311281/llm_course_lab05/.venv/lib/python3.10/site-packages/transformers/models/auto/modeling_auto.py:2284: FutureWarning: The class `AutoModelForVision2Seq` is deprecated and will be removed in v5.0. Please use `AutoModelForImageTextToText` instead.
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+[eval] v1_fresh_test {'loc': {'correct': 201, 'n': 256, 'valid': 256}, 'count': {'correct': 31, 'n': 80, 'valid': 80}, 'exist': {'correct': 28, 'n': 32, 'valid': 32}, 'total': {'correct': 260, 'n': 368}, 'loc_iou': 0.2994203567504883}
+[eval] v2_fresh_test {'loc': {'correct': 215, 'n': 256, 'valid': 256}, 'count': {'correct': 45, 'n': 80, 'valid': 80}, 'exist': {'correct': 30, 'n': 32, 'valid': 32}, 'total': {'correct': 290, 'n': 368}, 'loc_iou': 0.3200340270996094}
+[eval] selected_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 13, 'n': 15}, 'loc_iou': 0.392974853515625}
+[eval] selected_weak_tool_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 13, 'n': 15}, 'loc_iou': 0.392974853515625}
+[eval] selected_rich_tool_legacy {'loc': {'correct': 8, 'n': 8, 'valid': 8}, 'count': {'correct': 2, 'n': 4, 'valid': 4}, 'exist': {'correct': 3, 'n': 3, 'valid': 3}, 'total': {'correct': 13, 'n': 15}, 'loc_iou': 0.392974853515625}
+[eval] v2_rich_tool_fresh_test {'loc': {'correct': 233, 'n': 256, 'valid': 256}, 'count': {'correct': 51, 'n': 80, 'valid': 80}, 'exist': {'correct': 31, 'n': 32, 'valid': 32}, 'total': {'correct': 315, 'n': 368}, 'loc_iou': 0.345916748046875}
+[eval] v2_blank16 correct=1/16 format=16/16
+[complete-v2-resume] selected=rsi1 fresh_test={'v1': {'loc': {'correct': 201, 'n': 256, 'valid': 256}, 'count': {'correct': 31, 'n': 80, 'valid': 80}, 'exist': {'correct': 28, 'n': 32, 'valid': 32}, 'total': {'correct': 260, 'n': 368}, 'loc_iou': 0.2994203567504883}, 'v2': {'loc': {'correct': 215, 'n': 256, 'valid': 256}, 'count': {'correct': 45, 'n': 80, 'valid': 80}, 'exist': {'correct': 30, 'n': 32, 'valid': 32}, 'total': {'correct': 290, 'n': 368}, 'loc_iou': 0.3200340270996094}}
