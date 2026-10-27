@@ -30,6 +30,10 @@ def main():
         text=''.join(xml.xpath('//w:t/text()',namespaces=ns))
         expected=('孙驰','2024311281','计算机10班','表6','表7','ChartQA')+ (('215/256','290/368','168/199','164/199') if v2 else ('109/128','144/184'))
         assert all(s in text for s in expected)
+        if v2:
+            assert all(s in text for s in ('r=8','α=16','0.3580%','python hw6_rsi_localize.py --mode',
+                                          'make_data','make_sft','infer','sft --steps 10','eval','rsi --rounds 2 --steps 10',
+                                          '自查8/41','框重答17/70','错→对25','对→错0','A30/NF4'))
         assert not any(s in text for s in ('________________','TODO','待填写'))
         assert xml.xpath('//w:sectPr',namespaces=ns)[0].attrib==etree.fromstring(original.read('word/document.xml')).xpath('//w:sectPr',namespaces=ns)[0].attrib
         sections=xml.xpath('//w:sectPr',namespaces=ns)[0]
@@ -67,9 +71,17 @@ def main():
         assert run2['selection_unchanged'] and not run2['training_restarted']
         tests=(ROOT/'analysis/unit_tests_v2.log').read_text(encoding='utf-8')
         assert re.search(r'Ran 12 tests in [0-9.]+s',tests) and '\nOK\n' in tests
+        test_proof=read(ROOT/'analysis/unit_tests_v2.json')
+        assert sha(ROOT/'analysis/unit_tests_v2.log')==test_proof['log_sha256']
+        assert all(sha(ROOT/name)==digest for name,digest in test_proof['source_sha256'].items())
         result.update({'formal_job':run2['evaluation_job'],'training_job':run2['training_job'],
                        'optimization_v2_audit':optimized,'unit_tests_passed':12,
                        'queue_after':run2['queue_after'],'selection_unchanged_after_timeout':True})
+        result['pre_submission_review']={'date':'2026-10-27','guide_sha256':sha(next((COURSE/'实验指南与模板').glob('作业六*.pdf'))),
+                                        'lesson11_sha256':sha(COURSE.parent/'课件/Lesson11.pdf'),
+                                        'lesson12_sha256':sha(COURSE.parent/'课件/Lesson12.pdf'),
+                                        'commands_lora_tool_transitions':'passed',
+                                        'prior_passing_tests_sources_and_log_unchanged':True}
     (ROOT/'report/validation.json').write_bytes((json.dumps(result,ensure_ascii=False,indent=2)+'\n').encode('utf-8'))
     print(json.dumps({'pages':pages,'xml_parts':count,'audit':audit,'report_copies_identical':True},ensure_ascii=False))
 

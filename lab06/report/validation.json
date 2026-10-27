@@ -22,8 +22,8 @@
   ],
   "report_pages": 3,
   "three_report_copies_identical": true,
-  "docx_sha256": "073f98ab3a3e849e8652b872a77db75e44101520a8254fa91bb0586d58b37128",
-  "pdf_sha256": "86171e4adae261348955b52111187dad148093d449597004d01e02a4acbc065c",
+  "docx_sha256": "7d92bd50f3cd7448bcf1a4f6ca68c26612d556d02e5aacfe3031091c2cb59f60",
+  "pdf_sha256": "09b9925fbc3a2ddcdf1e7bcd6487c8d21245cdd69e64a9b21bbd5c458f30650f",
   "figure_matches_report": true,
   "visual_review": "All three final pages inspected; no clipping, overlap or blank page",
   "renderer": "Word COM read-only PDF export and pypdfium2; packaged renderer unavailable because LibreOffice is absent",
@@ -84,5 +84,13 @@
     "resume_selection_hash": "passed",
     "learning_rate_replay_schedule": "passed"
   },
-  "selection_unchanged_after_timeout": true
+  "selection_unchanged_after_timeout": true,
+  "pre_submission_review": {
+    "date": "2026-10-27",
+    "guide_sha256": "485b57b07e03c98f5cf1fb339805105aa739bafdfd75415d389b1f4d11e9e81f",
+    "lesson11_sha256": "3d6646cba42d83ab5c400c2b1e420e1cbf295f6ad02458481a3e9d4e9a8407af",
+    "lesson12_sha256": "9d6f0c3ee74054c815f6503c0532e50fb2b3ab0cf268c49f79f9cc6cf9f34b4a",
+    "commands_lora_tool_transitions": "passed",
+    "prior_passing_tests_sources_and_log_unchanged": true
+  }
 }
