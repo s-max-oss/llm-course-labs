@@ -1,0 +1,44 @@
+[data] vocab=322 train=52456 validation=5656 batch=4 threads=8
+[teacher] step=   1/8 loss=5.8410 ce=5.8410 elapsed=0.0s
+[teacher] step=   2/8 loss=5.5677 ce=5.5677 elapsed=0.1s
+[teacher] step=   4/8 loss=4.8807 ce=4.8807 elapsed=0.1s
+[teacher] step=   6/8 loss=4.3537 ce=4.3537 elapsed=0.1s
+[teacher] step=   8/8 loss=3.8822 ce=3.8822 elapsed=0.2s
+[teacher] params=0.737M val_loss=3.6871 ppl=39.929 time=0.2s
+[scratch] step=   1/6 loss=5.7858 ce=5.7858 elapsed=0.0s
+[scratch] step=   2/6 loss=5.7127 ce=5.7127 elapsed=0.0s
+[scratch] step=   4/6 loss=5.5383 ce=5.5383 elapsed=0.0s
+[scratch] step=   6/6 loss=5.3122 ce=5.3122 elapsed=0.1s
+[kd] step=   1/6 loss=3.1029 ce=5.7858 kd_T2=0.4200 elapsed=0.0s
+[kd] step=   2/6 loss=3.0611 ce=5.7112 kd_T2=0.4111 elapsed=0.0s
+[kd] step=   4/6 loss=2.9595 ce=5.5330 kd_T2=0.3859 elapsed=0.1s
+[kd] step=   6/6 loss=2.7970 ce=5.2941 kd_T2=0.2999 elapsed=0.1s
+[comparison] scratch=5.2036 kd=5.1756 improvement=0.54%
+[ablation] T=1 alpha=0.3 val_loss=5.5450 agreement=0.138
+[ablation] T=1 alpha=0.5 val_loss=5.5403 agreement=0.141
+[ablation] T=1 alpha=0.7 val_loss=5.5347 agreement=0.148
+[ablation] T=1 alpha=0.9 val_loss=5.5332 agreement=0.154
+[ablation] T=2 alpha=0.3 val_loss=5.5466 agreement=0.133
+[ablation] T=2 alpha=0.5 val_loss=5.5431 agreement=0.135
+[ablation] T=2 alpha=0.7 val_loss=5.5399 agreement=0.137
+[ablation] T=2 alpha=0.9 val_loss=5.5460 agreement=0.124
+[ablation] T=4 alpha=0.3 val_loss=5.5474 agreement=0.133
+[ablation] T=4 alpha=0.5 val_loss=5.5447 agreement=0.132
+[ablation] T=4 alpha=0.7 val_loss=5.5429 agreement=0.132
+[ablation] T=4 alpha=0.9 val_loss=5.5527 agreement=0.112
+[ablation] T=8 alpha=0.3 val_loss=5.5477 agreement=0.132
+[ablation] T=8 alpha=0.5 val_loss=5.5453 agreement=0.131
+[ablation] T=8 alpha=0.7 val_loss=5.5439 agreement=0.130
+[ablation] T=8 alpha=0.9 val_loss=5.5556 agreement=0.109
+[feature-kd] step=   1/6 loss=3.2424 ce=5.7858 kd_T2=0.4200 feat=1.3951 elapsed=0.0s
+[feature-kd] step=   2/6 loss=3.1964 ce=5.7119 kd_T2=0.4111 feat=1.3489 elapsed=0.0s
+[feature-kd] step=   4/6 loss=3.0886 ce=5.5368 kd_T2=0.3869 feat=1.2674 elapsed=0.1s
+[feature-kd] step=   6/6 loss=2.9189 ce=5.3035 kd_T2=0.3029 feat=1.1578 elapsed=0.1s
+D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab08\distill_lm.py:793: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  int8_model = quantize_dynamic(copy.deepcopy(fp32_model), {nn.Linear}, dtype=torch.qint8)
+[done] results=D:\HuaweiMoveData\Users\20805\Desktop\homework\大模型课程\课程实验\labs_repo\lab08\runs_distill\quick

@@ -1,0 +1,35 @@
+[data] vocab=322 train=52456 validation=5656 batch=24 threads=8
+[teacher] step=   1/200 loss=5.8247 ce=5.8247 elapsed=0.1s
+[teacher] step=  50/200 loss=1.3378 ce=1.3378 elapsed=1.2s
+[teacher] step= 100/200 loss=0.7932 ce=0.7932 elapsed=2.3s
+[teacher] step= 150/200 loss=0.7316 ce=0.7316 elapsed=3.5s
+[teacher] step= 200/200 loss=0.7159 ce=0.7159 elapsed=4.6s
+[teacher] params=0.737M val_loss=0.8322 ppl=2.298 time=4.6s
+[scratch] step=   1/120 loss=5.7839 ce=5.7839 elapsed=0.0s
+[scratch] step=  50/120 loss=1.7239 ce=1.7239 elapsed=0.6s
+[scratch] step= 100/120 loss=1.0905 ce=1.0905 elapsed=1.2s
+[scratch] step= 120/120 loss=0.9982 ce=0.9982 elapsed=1.4s
+[kd] step=   1/120 loss=5.6559 ce=5.7839 kd_T2=5.5279 elapsed=0.0s
+[kd] step=  50/120 loss=2.0594 ce=1.8565 kd_T2=2.2624 elapsed=1.0s
+[kd] step= 100/120 loss=1.0640 ce=1.0717 kd_T2=1.0562 elapsed=2.0s
+[kd] step= 120/120 loss=0.8802 ce=0.9444 kd_T2=0.8159 elapsed=2.4s
+[comparison] scratch=1.2722 kd=1.2101 improvement=4.88%
+[teacher-c96] step=   1/200 loss=5.7899 ce=5.7899 elapsed=0.1s
+[teacher-c96] step=  50/200 loss=1.4709 ce=1.4709 elapsed=0.8s
+[teacher-c96] step= 100/200 loss=0.9513 ce=0.9513 elapsed=1.6s
+[teacher-c96] step= 150/200 loss=0.7855 ce=0.7855 elapsed=2.3s
+[teacher-c96] step= 200/200 loss=0.7412 ce=0.7412 elapsed=3.1s
+[kd-teacher-c96] step=   1/120 loss=5.1665 ce=5.7839 kd_T2=4.5491 elapsed=0.0s
+[kd-teacher-c96] step=  50/120 loss=1.8177 ce=1.8560 kd_T2=1.7793 elapsed=0.9s
+[kd-teacher-c96] step= 100/120 loss=0.9542 ce=1.0796 kd_T2=0.8288 elapsed=1.9s
+[kd-teacher-c96] step= 120/120 loss=0.8349 ce=0.9841 kd_T2=0.6857 elapsed=2.2s
+[teacher-c256] step=   1/200 loss=5.8277 ce=5.8277 elapsed=0.1s
+[teacher-c256] step=  50/200 loss=1.1311 ce=1.1311 elapsed=2.0s
+[teacher-c256] step= 100/200 loss=0.7447 ce=0.7447 elapsed=4.0s
+[teacher-c256] step= 150/200 loss=0.7270 ce=0.7270 elapsed=5.9s
+[teacher-c256] step= 200/200 loss=0.7112 ce=0.7112 elapsed=7.8s
+[kd-teacher-c256] step=   1/120 loss=6.0239 ce=5.7839 kd_T2=6.2639 elapsed=0.0s
+[kd-teacher-c256] step=  50/120 loss=2.2471 ce=1.8607 kd_T2=2.6336 elapsed=1.3s
+[kd-teacher-c256] step= 100/120 loss=1.1467 ce=1.0644 kd_T2=1.2290 elapsed=2.5s
+[kd-teacher-c256] step= 120/120 loss=0.9607 ce=0.9473 kd_T2=0.9742 elapsed=3.0s
+[done] results=/home/u2024311281/llm_course_lab08/runs_distill_hpc

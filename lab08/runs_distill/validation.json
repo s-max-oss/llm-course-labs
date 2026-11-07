@@ -1,0 +1,179 @@
+{
+  "result_path": "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab08\\runs_distill\\results_full.json",
+  "passed": true,
+  "check_count": 43,
+  "checks": [
+    {
+      "check": "教师结构配置精确匹配正式方案",
+      "passed": true
+    },
+    {
+      "check": "学生结构配置精确匹配正式方案",
+      "passed": true
+    },
+    {
+      "check": "正式训练步数为 200/120/80",
+      "passed": true
+    },
+    {
+      "check": "正式批大小与随机种子正确",
+      "passed": true
+    },
+    {
+      "check": "正式 KD 温度与权重正确",
+      "passed": true
+    },
+    {
+      "check": "教师参数量为 737280",
+      "passed": true
+    },
+    {
+      "check": "学生参数量为 147456",
+      "passed": true
+    },
+    {
+      "check": "参数压缩比为 5.0x",
+      "passed": true
+    },
+    {
+      "check": "两名学生参数量独立核对一致",
+      "passed": true
+    },
+    {
+      "check": "两名学生训练步数独立核对一致",
+      "passed": true
+    },
+    {
+      "check": "两名学生批次随机种子独立核对一致",
+      "passed": true
+    },
+    {
+      "check": "教师曲线含 200 个有限训练点",
+      "passed": true
+    },
+    {
+      "check": "两名学生曲线各含 120 个有限训练点",
+      "passed": true
+    },
+    {
+      "check": "正式基线 KD 未混入特征损失",
+      "passed": true
+    },
+    {
+      "check": "教师留出集 loss 低于学生基线",
+      "passed": true
+    },
+    {
+      "check": "KD 学生优于从零学生",
+      "passed": true
+    },
+    {
+      "check": "KD 提高教师一致率",
+      "passed": true
+    },
+    {
+      "check": "4x4 消融的 16 组均存在且唯一",
+      "passed": true
+    },
+    {
+      "check": "每个消融组合均保存 80 个有限训练点且末值一致",
+      "passed": true
+    },
+    {
+      "check": "消融共享批次缓存种子正确",
+      "passed": true
+    },
+    {
+      "check": "消融最优行计算正确",
+      "passed": true
+    },
+    {
+      "check": "消融最差行计算正确",
+      "passed": true
+    },
+    {
+      "check": "FitNet 投影层与权重已启用",
+      "passed": true
+    },
+    {
+      "check": "FitNet 的总损失与特征损失各保存 120 个有限点",
+      "passed": true
+    },
+    {
+      "check": "教师宽度 96/160/256 扫描完整",
+      "passed": true
+    },
+    {
+      "check": "规模扫描复用同一从零学生基线",
+      "passed": true
+    },
+    {
+      "check": "三组规模扫描均保存完整有限曲线、步数与批次种子",
+      "passed": true
+    },
+    {
+      "check": "动态量化减小序列化模型体积",
+      "passed": true
+    },
+    {
+      "check": "量化后 loss 为有限值",
+      "passed": true
+    },
+    {
+      "check": "FP32/INT8 使用同口径 state_dict",
+      "passed": true
+    },
+    {
+      "check": "验证器独立重载 FP32/INT8 state_dict 并完成有限前向",
+      "passed": true
+    },
+    {
+      "check": "训练与验证曲线图存在",
+      "passed": true
+    },
+    {
+      "check": "消融热力图存在",
+      "passed": true
+    },
+    {
+      "check": "教师规模扫描图存在",
+      "passed": true
+    },
+    {
+      "check": "训练文本与留出文本不完全相同",
+      "passed": true
+    },
+    {
+      "check": "结果清单指向的源代码存在",
+      "passed": true
+    },
+    {
+      "check": "源代码 SHA-256 与结果清单一致",
+      "passed": true
+    },
+    {
+      "check": "核心检查点均写入制品清单",
+      "passed": true
+    },
+    {
+      "check": "检查点 student_kd.pt 的大小与 SHA-256 一致",
+      "passed": true
+    },
+    {
+      "check": "检查点 student_kd_fp32_state.pt 的大小与 SHA-256 一致",
+      "passed": true
+    },
+    {
+      "check": "检查点 student_kd_int8_state.pt 的大小与 SHA-256 一致",
+      "passed": true
+    },
+    {
+      "check": "检查点 student_scratch.pt 的大小与 SHA-256 一致",
+      "passed": true
+    },
+    {
+      "check": "检查点 teacher.pt 的大小与 SHA-256 一致",
+      "passed": true
+    }
+  ]
+}

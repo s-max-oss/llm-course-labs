@@ -1,0 +1,8 @@
+2.6.0+cu124
+[data] vocab=322 train=52456 validation=5656 batch=24 threads=8
+[teacher] step=   1/200 loss=5.8247 ce=5.8247 elapsed=2.1s
+[teacher] step=  50/200 loss=1.3378 ce=1.3378 elapsed=3.2s
+[teacher] step= 100/200 loss=0.7932 ce=0.7932 elapsed=4.4s
+[teacher] step= 150/200 loss=0.7316 ce=0.7316 elapsed=5.5s
+[teacher] step= 200/200 loss=0.7159 ce=0.7159 elapsed=6.7s
+[teacher] params=0.737M val_loss=0.8322 ppl=2.298 time=6.7s

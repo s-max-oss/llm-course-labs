@@ -1,0 +1,31 @@
+{
+  "report": "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab08\\report\\2024311281_孙驰_实验作业八.docx",
+  "report_sha256": "712B6CF10AC37A51B298F925C487BC776A86E51C259CE7396618EA74C49E1017",
+  "template": "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\实验指南与模板\\作业八_自制语言模型知识蒸馏_实验报告（空白模板）.docx",
+  "template_sha256": "A2BAF61699F7F8AC11EE6EEAA5EBAE38DE12715657F775A9E987A3AEC6127217",
+  "page_geometry_inches": {
+    "width": 8.27,
+    "height": 11.69
+  },
+  "checks": {
+    "template_sha256_unchanged": true,
+    "table_count_12": true,
+    "single_section": true,
+    "identity_present": true,
+    "model_counts_present": true,
+    "baseline_metrics_present": true,
+    "all_thought_answers_present": true,
+    "no_placeholders": true,
+    "three_figures_embedded": true
+  },
+  "passed": true,
+  "pdf": "D:\\HuaweiMoveData\\Users\\20805\\Desktop\\homework\\大模型课程\\课程实验\\labs_repo\\lab08\\report\\2024311281_孙驰_实验作业八.pdf",
+  "pdf_sha256": "D5BDCE4B0D603A3180C4AC3B6C0A4F8ED4A4BF4FCC40AED5274DC93BC1FA12EB",
+  "pdf_page_count": 6,
+  "pdf_checks": {
+    "pdf_nonempty": true,
+    "pdf_page_count_6": true,
+    "pdf_identity_present": true,
+    "pdf_key_metrics_present": true
+  }
+}

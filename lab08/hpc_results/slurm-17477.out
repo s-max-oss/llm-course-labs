@@ -1,0 +1,37 @@
+[data] vocab=322 train=52456 validation=5656 batch=24 threads=8
+[teacher] step=   1/200 loss=5.8247 ce=5.8247 elapsed=4.1s
+[teacher] step=  50/200 loss=1.3378 ce=1.3378 elapsed=5.2s
+[teacher] step= 100/200 loss=0.7932 ce=0.7932 elapsed=6.4s
+[teacher] step= 150/200 loss=0.7316 ce=0.7316 elapsed=7.5s
+[teacher] step= 200/200 loss=0.7159 ce=0.7159 elapsed=8.6s
+[teacher] params=0.737M val_loss=0.8322 ppl=2.298 time=8.6s
+[scratch] step=   1/120 loss=5.7839 ce=5.7839 elapsed=0.0s
+[scratch] step=  50/120 loss=1.7239 ce=1.7239 elapsed=0.6s
+[scratch] step= 100/120 loss=1.0905 ce=1.0905 elapsed=1.2s
+[scratch] step= 120/120 loss=0.9982 ce=0.9982 elapsed=1.5s
+[kd] step=   1/120 loss=5.6559 ce=5.7839 kd_T2=5.5279 elapsed=0.0s
+[kd] step=  50/120 loss=2.0594 ce=1.8565 kd_T2=2.2624 elapsed=1.1s
+[kd] step= 100/120 loss=1.0640 ce=1.0717 kd_T2=1.0562 elapsed=2.2s
+[kd] step= 120/120 loss=0.8802 ce=0.9444 kd_T2=0.8159 elapsed=2.6s
+[comparison] scratch=1.2722 kd=1.2101 improvement=4.88%
+[ablation] T=1 alpha=0.3 val_loss=1.4207 agreement=0.661
+[ablation] T=1 alpha=0.5 val_loss=1.4189 agreement=0.675
+[ablation] T=1 alpha=0.7 val_loss=1.4199 agreement=0.690
+[ablation] T=1 alpha=0.9 val_loss=1.4213 agreement=0.700
+[ablation] T=2 alpha=0.3 val_loss=1.4272 agreement=0.655
+[ablation] T=2 alpha=0.5 val_loss=1.4397 agreement=0.656
+[ablation] T=2 alpha=0.7 val_loss=1.4587 agreement=0.658
+[ablation] T=2 alpha=0.9 val_loss=1.4876 agreement=0.664
+[ablation] T=4 alpha=0.3 val_loss=1.4024 agreement=0.643
+[ablation] T=4 alpha=0.5 val_loss=1.4028 agreement=0.639
+[ablation] T=4 alpha=0.7 val_loss=1.4261 agreement=0.631
+[ablation] T=4 alpha=0.9 val_loss=1.5391 agreement=0.628
+[ablation] T=8 alpha=0.3 val_loss=1.4007 agreement=0.641
+[ablation] T=8 alpha=0.5 val_loss=1.4041 agreement=0.636
+[ablation] T=8 alpha=0.7 val_loss=1.4359 agreement=0.630
+[ablation] T=8 alpha=0.9 val_loss=1.6721 agreement=0.597
+[feature-kd] step=   1/120 loss=5.8199 ce=5.7839 kd_T2=5.5279 feat=1.6399 elapsed=0.5s
+[feature-kd] step=  50/120 loss=2.1409 ce=1.8560 kd_T2=2.2508 feat=0.8747 elapsed=1.6s
+[feature-kd] step= 100/120 loss=1.1175 ce=1.0719 kd_T2=1.0504 feat=0.5635 elapsed=2.6s
+[feature-kd] step= 120/120 loss=0.9363 ce=0.9563 kd_T2=0.8184 feat=0.4896 elapsed=3.0s
+[done] results=/home/u2024311281/llm_course_lab08/runs_distill_hpc

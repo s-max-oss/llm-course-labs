@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+runs_distill/*.pt
+runs_distill/results_full.json
+runs_distill/quick/
+runs_distill_hpc/*.pt
+report/rendered_*/
+report/template_*/

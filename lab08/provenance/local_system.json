@@ -1,0 +1,13 @@
+{
+  "operating_system": "Microsoft Windows 11 家庭版 中文版",
+  "os_version": "10.0.26300",
+  "architecture": "64 位",
+  "cpu": "Intel(R) Core(TM) Ultra 5 125H",
+  "physical_cores": 14,
+  "logical_processors": 18,
+  "memory_bytes": 16666390528,
+  "python": "3.13.12",
+  "pytorch": "2.12.0+cpu",
+  "experiment_threads": 8,
+  "gpu_used": false
+}
