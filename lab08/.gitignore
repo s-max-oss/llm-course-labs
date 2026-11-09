@@ -1,7 +1,7 @@
 __pycache__/
 .pytest_cache/
-runs_distill/*.pt
-runs_distill/results_full.json
+runs_distill/teacher_c*.pt
+runs_distill/student_kd_int8_model.pt
 runs_distill/quick/
 runs_distill_hpc/*.pt
 report/rendered_*/

@@ -1,0 +1,7 @@
+job_id=17863
+state=COMPLETED
+elapsed=00:01:27
+exit_code=0:0
+remote_source_sha256=9db5c1669c1b6fccfab4bf02e473b51a2ffa1bf1dbf583b13f7ace3d1091ac88
+formal_manifest_source_sha256=9db5c1669c1b6fccfab4bf02e473b51a2ffa1bf1dbf583b13f7ace3d1091ac88
+source_hash_match=true

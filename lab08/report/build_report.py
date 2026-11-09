@@ -241,6 +241,13 @@ def build_report(
         ],
         center_columns={1, 2},
     )
+    insert_after_table(
+        tables[3],
+        "参数量手算核对：按指南近似式 2VC+TC+L×12C²，教师为 732,800（实测 737,280，差 0.61%）；"
+        "学生为 145,664（实测 147,456，差 1.22%，宽度较小时偏置与 LayerNorm 占比更高）。"
+        "进一步补计每层 13C 个偏置/LayerNorm 参数及末层 2C，精确式为 2VC+TC+L×(12C²+13C)+2C，"
+        "两者分别得到 737,280 与 147,456，与实测值完全一致。",
+    )
     fill_table(
         tables[4],
         [
@@ -382,7 +389,9 @@ def build_report(
         "答：softmax(z/T) 对 logits 的导数含 1/T，KL 两端的差异再引入一个约 1/T，整体梯度量级约按 1/T² 缩小。乘 T² 后不同温度的梯度可比。若漏乘并把 T 从 4 加倍到 8，梯度约降至四分之一，需把学习率近似增至 4 倍才能保持更新量，但这不如直接保留 T² 稳定。",
         "答：0.74M 不是现代意义的通用大模型，只是本实验中的相对大教师。扫描结果为：" + scan_text + "。更宽教师的自身 loss 整体更低，但学生收益并未严格随宽度单调增加，说明教师既要强，也要提供学生可吸收的软结构；容量差距过大时并非所有信息都能在 120 步内转移。",
         "答：可设计信息量控制实验。组 A 使用真实教师软标签；组 B 在每个样本内打乱非目标类别概率，同时保持熵、最大概率和 CE 权重；组 C 使用标签平滑，使正则强度与组 A 接近但不含教师类别关系。若 A 明显优于 B/C，说明主要来自结构信息；若三者接近，则更像平滑正则。所有组应固定初始化、批次和步数，并用多个种子报告均值。",
-        "答：T=100 时 logits 差异被大幅压缩，softmax 接近均匀分布，仅剩很弱的相对次序。乘 T² 可恢复梯度量级，却无法恢复已被压平的有效结构；教师信号接近对所有字符施加相似概率，蒸馏会退化为弱而含噪的约束。",
+        "答：T=100 时 softmax 近似均匀，单类概率差异很小。乘 T² 后高温极限仍近似匹配中心化 logits，所以并非没有梯度；"
+        "但有限精度下相对次序更难辨，教师微小 logit 偏差也可能影响优化。是否有效须实测。本实验仅扫描到 T=8，"
+        "T=8、alpha=0.9 的退化说明高温与高教师权重存在不利耦合，不能外推为 T=100 必然失效。",
         f"答：蒸馏压缩知识到更少参数的学生；量化降低权重和激活的数值精度；剪枝移除权重、通道或结构。三者可以叠加：先训练高质量教师，再蒸馏 0.147M 学生，验证精度后对 Linear 层做 INT8 动态量化，重新测 loss、体积和延迟，最后可做结构化剪枝并短暂微调。本次前两步已将参数压缩 5.0x，量化文件再缩小约 {quant['size_compression_ratio']:.2f}x。",
     ]
     thought_heading_index = next(
@@ -397,7 +406,9 @@ def build_report(
         raise ValueError(f"未找到 6 道思考题，实际 {len(questions)}")
     for question, answer in zip(questions, answers):
         question.paragraph_format.keep_with_next = True
-        insert_after(question, answer, bold_lead="答：")
+        answer_paragraph = insert_after(question, answer, bold_lead="答：")
+        answer_paragraph.paragraph_format.line_spacing = 1.30
+        answer_paragraph.paragraph_format.space_after = Pt(4)
 
     if hpc:
         hpc_baseline = hpc.get("baseline")
