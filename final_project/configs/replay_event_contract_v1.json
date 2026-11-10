@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "contract_id": "robot_replay_detection_frame_v1",
+  "status": "frozen_before_replay",
+  "replay_level": "A",
+  "authoritative_robot_source": {
+    "branch": "WindySky-Final",
+    "commit": "e26b48ebd6871eb5753ac4b7750726c36b05a65a",
+    "tree_access": "committed_tree_read_only",
+    "files": {
+      "docs/INTERFACE_REGISTRY.md": "551c4272e0f3eb3edaf60b4a329d836e1cd49d7d",
+      "docs/WINDYSKY5_ROOM_ARCHITECTURE.md": "ce9b9cf45d311c1a4360840cff26d2f06b0157d2",
+      "scripts/exploration/vision_v2_perception.py": "4251d5a84ec88b0db68fbafaa7c2a4c17f9a830f",
+      "src/danger_vision/config/detector.yaml": "9c906760fae839ee63251283eba2c634e8e58f75",
+      "src/danger_vision/config/model_manifest.yaml": "a1fdfb043d3dcac4cd96d294e5c446094f59bec6",
+      "src/danger_vision/msg/DangerDetection.msg": "a00d2fd9445857d7d5e5f5c699f861f235b7d0f1",
+      "src/danger_vision/msg/DangerDetectionArray.msg": "047f37f29775b8a7062859d04afa1e61412094f7",
+      "src/danger_vision/src/danger_vision/result_writer.py": "a9a1761f6a29fbf48ed42d82463958bdec580b96"
+    }
+  },
+  "interfaces": {
+    "rgb_input": {
+      "topic": "/real_sense/rgb/image_raw",
+      "ros_type": "sensor_msgs/Image"
+    },
+    "detection_output_equivalent": {
+      "topic": "/danger_vision/detection_array",
+      "ros_type": "danger_vision/DangerDetectionArray",
+      "empty_array_is_heartbeat": true
+    },
+    "processed_pose_level_b_only": {
+      "topic": "/danger_vision/processed_pose",
+      "ros_type": "geometry_msgs/PoseStamped"
+    },
+    "world_alignment_level_b_only": {
+      "topic": "/danger_vision/world_alignment",
+      "ros_type": "std_msgs/String"
+    },
+    "official_result_level_b_only": "results/detected_danger.json"
+  },
+  "canonical_classes": [
+    "danger_red_sphere",
+    "distractor_red_box",
+    "distractor_green_sphere",
+    "distractor_green_wall"
+  ],
+  "class_aliases": {
+    "Red_ball": "danger_red_sphere",
+    "red_ball": "danger_red_sphere",
+    "danger_red_sphere": "danger_red_sphere",
+    "red_cube": "distractor_red_box",
+    "distractor_red_box": "distractor_red_box",
+    "Green_ball": "distractor_green_sphere",
+    "green_ball": "distractor_green_sphere",
+    "distractor_green_sphere": "distractor_green_sphere",
+    "Green_wall": "distractor_green_wall",
+    "green_wall": "distractor_green_wall",
+    "distractor_green_wall": "distractor_green_wall"
+  },
+  "frame_required_fields": [
+    "schema_version",
+    "contract_id",
+    "record_id",
+    "sample_id",
+    "sequence_index",
+    "sequence_semantics",
+    "stamp",
+    "stamp_source",
+    "frame_id",
+    "frame_id_source",
+    "input_sha256",
+    "inference_record_sha256",
+    "source_model",
+    "source_model_sha256",
+    "inference_run_id",
+    "processing_ms",
+    "detections"
+  ],
+  "detection_required_fields": [
+    "prediction_index",
+    "track_id",
+    "raw_class_name",
+    "class_name",
+    "confidence",
+    "bbox_xyxy",
+    "temporal_hits",
+    "temporal_confirmed",
+    "localized",
+    "position",
+    "position_frame",
+    "quality_accepted",
+    "quality_rejection_reasons"
+  ],
+  "forbidden_runtime_fields": [
+    "target_label",
+    "record_labels",
+    "labels",
+    "ground_truth",
+    "danger_truth",
+    "truth_label",
+    "label_source",
+    "label_status",
+    "label_reliability",
+    "scene_seed",
+    "room_id",
+    "source_split",
+    "exact_duplicate_group",
+    "oracle_bbox",
+    "layout",
+    "world_layout"
+  ],
+  "level_a_constraints": {
+    "stamp": null,
+    "stamp_source": "unavailable_legacy_rgb",
+    "frame_id": "replay_camera",
+    "frame_id_source": "offline_namespace_not_ros_tf",
+    "sequence_semantics": "seed_grouped_storyboard_non_temporal",
+    "localized": false,
+    "position": null,
+    "position_frame": null,
+    "temporal_hits": 0,
+    "temporal_confirmed": false,
+    "quality_accepted": false,
+    "official_result_output_allowed": false
+  },
+  "source_model": {
+    "name": "RF-DETR-Seg Medium",
+    "sha256": "ec2de357f402901cf624835f11d5c54bb0eab8980d1268d7ee8a9122a446fa50",
+    "run_id": "rfdetr_pilot_cpu_full_v1"
+  },
+  "g0_decision": {
+    "decision": "level_a_only",
+    "missing_resources": [
+      "trusted_capture_timestamps_or_frame_intervals",
+      "synchronized_depth",
+      "rgb_and_depth_camera_info",
+      "autonomous_pose_or_odometry",
+      "tf_or_permitted_world_alignment",
+      "ros_bag_mcap_or_db3"
+    ],
+    "world_coordinate_output_allowed": false
+  }
+}

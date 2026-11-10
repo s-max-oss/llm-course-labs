@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "protocol_id": "pilot_v1",
+  "expected_labels": [
+    "danger_red_sphere",
+    "distractor_red_box",
+    "distractor_green_sphere",
+    "background_or_unknown"
+  ],
+  "inference_forbidden_fields": [
+    "target_label",
+    "record_labels",
+    "boxes",
+    "bbox_xyxy_pixels",
+    "padded_crop_xyxy_pixels",
+    "candidate_type",
+    "detector_class",
+    "label_source",
+    "label_status",
+    "label_reliability",
+    "scene_seed",
+    "room_id",
+    "source_split",
+    "exact_duplicate_group"
+  ],
+  "rfdetr": {
+    "baseline_id": "b0_rfdetr_seg_medium",
+    "model_class": "RFDETRSegMedium",
+    "checkpoint_env": "DANGER_VISION_MODEL",
+    "checkpoint_sha256": "ec2de357f402901cf624835f11d5c54bb0eab8980d1268d7ee8a9122a446fa50",
+    "confidence_threshold": 0.5,
+    "resolution": 432,
+    "num_classes": 4,
+    "class_names": {
+      "0": "Red_ball",
+      "1": "Green_ball",
+      "2": "Green_wall",
+      "3": "red_cube"
+    },
+    "class_aliases": {
+      "Red_ball": "danger_red_sphere",
+      "red_ball": "danger_red_sphere",
+      "red_cube": "distractor_red_box",
+      "Green_ball": "distractor_green_sphere",
+      "green_ball": "distractor_green_sphere",
+      "Green_wall": "distractor_green_wall",
+      "green_wall": "distractor_green_wall"
+    }
+  },
+  "smolvlm": {
+    "baseline_id": "b1_smolvlm_256m_zero_shot_oracle_crop",
+    "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+    "model_path_env": "SMOLVLM_MODEL",
+    "local_files_only": true,
+    "model_files": {
+      "added_tokens.json": "74135b8664b56088c0006f1c8e848d79a8eba003411f72ebf1dc2ee96227be3a",
+      "chat_template.json": "a68ad1a42681ae44eacd109ff8dd56a840f761c03d72f4ff4c515d092f882168",
+      "model.safetensors": "74dea5904032e5ae99a2e0eef5179e6ac0f1dedc3ab0c7c2a5d4d387c843203e",
+      "config.json": "b70fb4bfde88df9eeebc9d8ff523733b8bf70d6c9b06c610325960e06ae9db52",
+      "generation_config.json": "067a2a54e5f87162ecac6e0e911cc4665fc8f7f3324794ecbac0f76badb56636",
+      "processor_config.json": "e7bff42da73ae9eec9042ef20e066e11f1ee20f025358ff79131e3c0fb549b46",
+      "preprocessor_config.json": "6cb6e36d6fcb88ca1502c4a26750715dc3e7dedddc9a8f17b27d8d167d1457e7",
+      "special_tokens_map.json": "aa0ff906077086dfa9734a7f97f68c825877a48f9468807be65504495cdeef09",
+      "tokenizer_config.json": "36c6fd44d07d10fd8180ee6b46dcccf69fb7c06753968ff0d7e17b8bfe17b777",
+      "tokenizer.json": "5ece781dc8d2b2f3e2f289ca0ae50b17cfc27dd27bfe7971bb8241e0b964331a"
+    },
+    "input_variant": "offline_oracle_padded_crop_or_background_full_frame",
+    "deployment_eligible": false,
+    "image_longest_edge": 512,
+    "max_new_tokens": 24,
+    "prompt": "Classify the image into exactly one label and output only that label: danger_red_sphere, distractor_red_box, distractor_green_sphere, background_or_unknown."
+  }
+}

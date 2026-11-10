@@ -1,0 +1,3 @@
+# Compatibility entry point for the frozen SmolVLM environment.
+# RF-DETR must use a separate environment; see requirements-rfdetr.txt.
+-r requirements-smolvlm.txt

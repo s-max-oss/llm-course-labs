@@ -1,0 +1,289 @@
+{
+  "project": "final_robot_vlm",
+  "last_updated": "2026-11-10T00:00:00+08:00",
+  "features": [
+    {
+      "id": "F001",
+      "title": "Read-only data asset audit",
+      "area": "data",
+      "priority": 1,
+      "status": "passing",
+      "evidence": [
+        "2026-11-07: audited legacy 500-image set, labels, duplicates, and VISION V2 logs without modifying source repositories"
+      ],
+      "verification": ["manual asset audit"]
+    },
+    {
+      "id": "F002",
+      "title": "Deterministic legacy manifest and validation",
+      "area": "data",
+      "priority": 1,
+      "status": "passing",
+      "evidence": [
+        "2026-11-07: generated 500-record JSONL manifest with SHA-256, dHash, seed, label status, and 426 parsed boxes",
+        "2026-11-07: hash validation passed with 0 errors and two expected readiness warnings",
+        "2026-11-07: unittest suite passed 4/4"
+      ],
+      "verification": [
+        "python scripts/build_manifest.py --config configs/data_sources.local.json",
+        "python scripts/validate_manifest.py --config configs/data_sources.local.json --verify-hashes",
+        "python -m unittest discover -s tests -v"
+      ]
+    },
+    {
+      "id": "F003",
+      "title": "Leakage-safe five-seed pilot split",
+      "area": "data",
+      "priority": 1,
+      "status": "passing",
+      "evidence": [
+        "2026-11-07: user approved a leakage-controlled five-seed pilot protocol instead of supplemental collection",
+        "2026-11-07: conservative duplicate quarantine leaves 401/500 images; 99 images are excluded globally",
+        "2026-11-07: five rotating seed-disjoint folds contain 444 eligible candidates; every eligible image appears once in test, once in validation, and three times in train",
+        "2026-11-07: independent validator recomputes exact/dHash quarantine and candidate membership; 11/11 tests pass, including disabled-policy, missing-record, stale-hash, duplicate-fold, and reporting-policy corruptions",
+        "2026-11-07: fold_02 has no eligible red-box test support, so per-fold four-class Macro-F1 is prohibited; pooled out-of-fold predictions are primary"
+      ],
+      "verification": [
+        "python scripts/build_pilot_splits.py",
+        "python scripts/validate_pilot_splits.py",
+        "python -m unittest discover -s tests -v",
+        "powershell -ExecutionPolicy Bypass -File scripts/run_checks.ps1"
+      ]
+    },
+    {
+      "id": "F006",
+      "title": "Candidate-level VLM input manifest",
+      "area": "data",
+      "priority": 2,
+      "status": "passing",
+      "evidence": [
+        "2026-11-07: generated 543 candidate records: 426 annotated objects and 117 background frames",
+        "2026-11-07: candidate class counts match source annotations and all crop rectangles pass bounds checks",
+        "2026-11-07: unittest suite passed 6/6"
+      ],
+      "verification": [
+        "python scripts/build_candidate_manifest.py",
+        "python -m unittest discover -s tests -v"
+      ]
+    },
+    {
+      "id": "F007",
+      "title": "Local supplemental Gazebo collection environment",
+      "area": "environment",
+      "priority": 1,
+      "status": "passing",
+      "evidence": [
+        "2026-11-07: existing VMware guest is Ubuntu 20.04.6 with Gazebo 11.15.1, 4 vCPU, 7.7 GiB RAM, and 23 GiB free disk",
+        "2026-11-07: VMware 3D is enabled in VMX, but vmware.log shows WHP execution; user reports unusably slow prior simulation",
+        "2026-11-07: ROS Noetic roscore is absent",
+        "2026-11-09: SSH alias oslab-vm reached the Ubuntu 20.04.6 guest; ROS Noetic and Gazebo 11.15.1 are installed and the built SimEnv workspace was kept read-only",
+        "2026-11-09: Xvfb plus the ROS/Gazebo plugin paths enabled the project RealSense RGB, depth, CameraInfo, point cloud, odometry, TF, and TF-static streams without exposing any /ground_truth topic",
+        "2026-11-09: a 7.1-second LZ4 gate bag closed cleanly with 7549 messages and SHA-256 a1dc67870cd6a78dbb70e4a66a0789fe43ebca6bf12ac40160d9276d60d48128",
+        "2026-11-09: the first gate bag is retained as a negative quality sample because the robot was not stabilized and its camera view was unusable; it is not an accepted Level-B inference input"
+      ],
+      "verification": [
+        "ssh oslab-vm 'source /opt/ros/noetic/setup.bash; rostopic list'",
+        "rosbag info /home/sunchi/levelb_capture/gate_seed7701_20261109.bag",
+        "verify RGB rgb8 and depth 32FC1 are 640x480 in real_sense_optical_frame",
+        "verify odom->base->real_sense_optical_frame and zero /ground_truth topics"
+      ]
+    },
+    {
+      "id": "F004",
+      "title": "RF-DETR and SmolVLM B1 baselines",
+      "area": "models",
+      "priority": 2,
+      "status": "passing",
+      "evidence": [
+        "2026-11-07: audited production RF-DETR-Seg Medium contract from the external robot repository Git HEAD and the existing local SmolVLM-256M model directory without modifying either source repository",
+        "2026-11-07: deterministically generated 401 label-free detector jobs and 444 label-free SmolVLM jobs across five sealed folds",
+        "2026-11-07: pinned the RF-DETR checkpoint and all 10 local SmolVLM runtime files by SHA-256; runners reject missing, changed, or unexpected model files plus policy changes, truth leaks, malformed jobs, and duplicate IDs",
+        "2026-11-07: per-sample image/hash/decode failures are preserved as error records instead of aborting a real inference batch",
+        "2026-11-07: offline evaluator verifies all five sealed truth-candidate hashes plus exact result schema, job identity, oracle/full-frame proposal provenance, and status/label/error consistency before computing metrics",
+        "2026-11-07: full rebuild and validation passes 25/25 tests; fold-01 dry-runs validate 98 RF-DETR and 114 SmolVLM inputs",
+        "2026-11-07: real five-fold SmolVLM CPU inference completed for all 444 candidates; every response failed the strict single-label contract, yielding 0% coverage, pooled Macro-F1 0.0, accuracy 0.0, danger recall 0.0, and p50 latency 2145.0 ms",
+        "2026-11-07: raw prediction and metric hashes are sealed in experiments/pilot_v1/smolvlm_zero_shot_run.json; RF-DETR real inference remains pending because the exact production checkpoint is not present locally",
+        "2026-11-07: B1 is frozen as a negative baseline; F004 was blocked only on obtaining the exact production RF-DETR checkpoint",
+        "2026-11-08: recovered the exact 143,429,329-byte production checkpoint through the source repository's Git LFS record without modifying that repository; local SHA-256 matches ec2de357f402901cf624835f11d5c54bb0eab8980d1268d7ee8a9122a446fa50",
+        "2026-11-08: isolated RF-DETR from the frozen SmolVLM environment because rfdetr 1.9.4 requires Transformers 5.x while SmolVLM uses 4.57.6",
+        "2026-11-08: real one-image RF-DETR CPU smoke passed with status ok and 782.748 ms latency; local CPU full inference replaces the previous GPU-rental plan",
+        "2026-11-08: froze RF-DETR evaluation protocol before full inference with confidence 0.5, bbox IoU 0.5, exact 401-image coverage, per-class confidence-ordered one-to-one matching, and explicit missing-label/mask-IoU limitations",
+        "2026-11-08: independent pre-run review found a multi-detection index mismatch and a dirty dependency/import path; both were fixed before full inference",
+        "2026-11-08: repeated real CPU smoke passed at 769.107 ms without an external PYTHONPATH; pip check is clean, all active versions and source hashes are sealed in experiments/pilot_v1/rfdetr_preflight.json",
+        "2026-11-08: full RF-DETR CPU run completed 401/401 images with zero errors; three-target Macro-F1 0.9635, danger-object recall 0.9892, and P50 latency 653.1 ms",
+        "2026-11-08: five raw result files, pooled metrics, run manifest, preflight bindings, and Git-anchored tamper-resistant validator are sealed; the full regression suite passes 48/48",
+        "2026-11-08: checkpoint training-sample lineage is unavailable, so training/evaluation overlap is unknown and the RF result is limited to fixed-checkpoint in-domain exploratory performance"
+      ],
+      "verification": [
+        "python scripts/prepare_baseline_jobs.py",
+        "python scripts/validate_baseline_jobs.py",
+        "powershell -ExecutionPolicy Bypass -File scripts/run_checks.ps1",
+        "dry-run both fold_01 queues against source-image SHA-256 values",
+        "verify experiments/pilot_v1/smolvlm_zero_shot_run.json against the five local result files and strict evaluator output",
+        "verify the exact checkpoint SHA-256 and one-sample real smoke before full inference",
+        "python scripts/evaluate_rfdetr_baseline.py --results <five-fold-results> --output <new-empty-output-path>",
+        "python scripts/validate_rfdetr_run.py",
+        "verify experiments/pilot_v1/rfdetr_checkpoint_provenance.json and retain its prohibited-claim boundary"
+      ]
+    },
+    {
+      "id": "F008",
+      "title": "Constrained SmolVLM B2 exploratory classifier",
+      "area": "models",
+      "priority": 2,
+      "status": "passing",
+      "evidence": [
+        "2026-11-07: revised strategy and decision gates recorded in next-phase-plan.md after observing the frozen B1 negative baseline",
+        "2026-11-08: user confirmed continuing with WP1; B2 protocol draft and machine-readable frozen-parameter proposal created without implementation or model execution",
+        "2026-11-08: protocol prevents treating pooled validation and pooled test as independent by reserving seeds 101/202 for development and locking 303/404/505 for exploratory evaluation",
+        "2026-11-08: user accepted all six protocol decisions; v1 status changed to frozen_before_execution before any implementation or B2 run",
+        "2026-11-08: generated label-free B2 queues with 193 development, 8 smoke, and 251 locked-evaluation jobs; an independent validator reconstructs exact membership and verifies source and queue hashes",
+        "2026-11-08: implemented CPU-only strict-generation and fixed-candidate scoring runners plus an offline evaluator; locked evaluation is fail-closed unless the preregistered B2-B development gates all pass",
+        "2026-11-08: independent review found and verified fixes for forged gate reports and mutable queue manifests; full deterministic rebuild and regression suite passed 33/33 before model execution",
+        "2026-11-08: repeated 8-sample technical smoke produced 8/8 valid outputs for both variants with zero semantic/rank/score mismatches across repeats",
+        "2026-11-08: B2-A development run recovered 100% output coverage but collapsed to Macro-F1 0.2433, with zero red-box and green-sphere recall",
+        "2026-11-08: B2-B development run completed 193/193 valid predictions and passed all preregistered gates: Macro-F1 0.6240, danger recall 0.9886, red-box recall 1.0; background recall remained 0.0 and red-box precision 0.3810",
+        "2026-11-08: locked evaluation remained unexecuted and hard-disabled until explicit user authorization",
+        "2026-11-08: user authorized continuing; the exact passing development gate-report SHA-256 was pinned before any locked-evaluation execution",
+        "2026-11-08: exactly one B2-B locked run completed on 251/251 candidates: coverage 1.0, accuracy 0.9084, Macro-F1 0.7217, danger recall 1.0, red-box recall 1.0, green-sphere recall 1.0, and background recall 0.0",
+        "2026-11-08: all 23 background examples were predicted as red box; B2-B is frozen as a proposal-conditioned three-object classifier diagnostic and explicitly rejected as a standalone presence detector or deployable four-class system",
+        "2026-11-08: B1 was independently recomputed on the same 251 candidates (coverage, Macro-F1, and danger recall all 0.0); the raw B2 result, metrics, comparison, and their SHA-256 values are sealed in experiments/pilot_v1/smolvlm_b2_locked_run.json",
+        "2026-11-08: next-phase-plan.md v1.2 forbids locked-set tuning and pivots the next executable model step to exact RF-DETR checkpoint acquisition and detector-gated evaluation"
+      ],
+      "verification": [
+        "freeze a B2 protocol before implementation",
+        "python scripts/prepare_smolvlm_b2_jobs.py",
+        "python scripts/validate_smolvlm_b2_jobs.py",
+        "powershell -ExecutionPolicy Bypass -File scripts/run_checks.ps1",
+        "develop prompts, fixed candidates, mappings, and thresholds on training/validation data only",
+        "require 100% fixed-candidate coverage and evaluate the preregistered validation gates",
+        "label any reuse of the existing pilot test folds as exploratory rather than confirmatory",
+        "python scripts/compare_smolvlm_b1_b2_locked.py --output <new-empty-output-path>",
+        "verify experiments/pilot_v1/smolvlm_b2_locked_run.json against the sealed raw predictions, metrics, and same-subset comparison"
+      ]
+    },
+    {
+      "id": "F005",
+      "title": "Confidence-aware router and multi-view fusion",
+      "area": "models",
+      "priority": 3,
+      "status": "passing",
+      "evidence": [
+        "2026-11-08: RF-only is now the default recommendation because RF-DETR reached 0.9635 Macro-F1 and the residual danger misses include absent proposals that B2 cannot recover",
+        "2026-11-08: next step is restricted to a development-only low-confidence detector-proposal feasibility test; multi-view fusion remains postponed",
+        "2026-11-08: protocol frozen and independently reviewed before implementation; deterministic label-free queue contains 24 RF proposals from 22 seed-101/202 images, including 8 of 11 unmatched development target predictions",
+        "2026-11-08: dedicated runner dry-run validates every real proposal crop; offline evaluator preserves danger predictions, binds truth hashes only after inference, and fails the cascade when strict gain gates are not met; full suite passes 55/55 before model execution",
+        "2026-11-08: pre-run review found and fixed incomplete result metadata consistency checks plus a no-overwrite race; successful/error payloads are now mutually exclusive and output is atomically reserved before model loading",
+        "2026-11-08: real development run completed 24/24 proposal crops with zero errors; B2 repeated all 6 danger and 18 green-sphere RF labels, changing no prediction",
+        "2026-11-08: RF-only and the safety cascade both scored Macro-F1 0.96918, danger recall 0.98864, and 11 target false positives; strict gain gate failed, so locked cascade was stopped, multi-view remained postponed, and RF-only became the final recommendation",
+        "2026-11-08: per-call B2 CPU latency was P50 5114.7 ms and P95 5539.6 ms; stopped evidence is sealed in experiments/pilot_v1/cascade_development_run.json",
+        "2026-11-08: run manifest, raw results, and recomputed metrics are byte-bound to Git evidence commit 636f828; coherent replacement test brings the full suite to 57/57"
+      ],
+      "verification": [
+        "freeze the detector-proposal routing protocol before any B2 cascade run",
+        "require no danger-recall loss, positive Macro-F1 gain, no target-FP increase, and bounded VLM call rate on development data",
+        "independent pre-run review before executing the 24-job development queue",
+        "python scripts/validate_cascade_run.py",
+        "verify the failed strict-gain gate keeps locked_evaluation_authorized=false"
+      ]
+    },
+    {
+      "id": "F009",
+      "title": "Report-ready evidence bundle and current handoff",
+      "area": "reporting",
+      "priority": 2,
+      "status": "passing",
+      "evidence": [
+        "2026-11-08: started after B2 locked evidence passed independent review; no model rerun or external-repository modification was required",
+        "2026-11-08: report-evidence-index.md maps every reportable number to sealed JSON evidence and lists prohibited extrapolations plus missing RF-DETR/cascade results",
+        "2026-11-08: report-draft.md records the completed dataset, B1, B2-A, and B2-B evidence with oracle-crop, exploratory, background-failure, and latency limitations adjacent to the results",
+        "2026-11-08: report draft and evidence index now include RF-DETR results, checkpoint-provenance limitations, and the RF-only default decision",
+        "2026-11-08: four report figures are regenerated directly from sealed metric JSON by scripts/generate_report_figures.py and visually inspected",
+        "2026-11-09: final-report.md and the course-template-based 13-page Word report were generated from the sealed evidence bundle; the final report contains five evidence-derived figures and three tables",
+        "2026-11-09: all 13 rendered pages were visually inspected with no clipping, overlap, missing glyphs, or broken tables; DOCX XML, A4 geometry, margins, image placement, and accessibility audits passed"
+      ],
+      "verification": [
+        "cross-check every reported number against sealed JSON artifacts",
+        "keep exploratory, oracle-crop, and deployment limitations adjacent to each result",
+        "python scripts/generate_report_figures.py",
+        "python scripts/build_final_report.py",
+        "open the DOCX in Microsoft Word, export to PDF, and visually inspect every rendered page",
+        "powershell -ExecutionPolicy Bypass -File scripts/run_checks.ps1"
+      ]
+    },
+    {
+      "id": "F010",
+      "title": "Robot-simulation perception-to-decision replay integration",
+      "area": "integration",
+      "priority": 1,
+      "status": "passing",
+      "evidence": [
+        "2026-11-09: planning-only audit confirmed the robot contract uses /real_sense/rgb/image_raw, /danger_vision/detection_array, processed world pose/alignment, and results/detected_danger.json",
+        "2026-11-09: existing 500-frame asset contains RGB and 2-D annotations but no synchronized depth, camera calibration, timestamp, pose, TF, or bag data; world-coordinate replay is therefore gated on new resources",
+        "2026-11-09: robot-simulation-replay-plan.md freezes a two-level implementation plan while preserving commit e93c619 and the existing report",
+        "2026-11-09: user clarified that the complete robot code must come from the project final branch; read-only audit recorded WindySky-Final at e26b48ebd6871eb5753ac4b7750726c36b05a65a and requires committed-tree reads because the external worktree has pre-existing local deletions",
+        "2026-11-09: WP0 preservation passed: the original DOCX SHA-256 remains 464D267FFFD8D7BA5FD442631DD7FFDDD81FBE84A85EDBC75A464A636A8D1BFB and the pre-extension regression remains 57/57",
+        "2026-11-09: WP1 froze configs/replay_event_contract_v1.json against eight blob IDs from the committed WindySky-Final tree without importing or copying external implementation code",
+        "2026-11-09: G0 failed closed to Level A because trusted time, synchronized RGB-D, CameraInfo, autonomous pose, TF/alignment, and bag data are absent; the contract forbids temporal, localization, world-coordinate, and official-result claims",
+        "2026-11-09: six replay-contract tests pass, including empty heartbeat acceptance plus frozen-boundary weakening, recursive truth-field, forged-time, forged-world-frame, track, localization, alias, bbox, hash, and ordering rejection",
+        "2026-11-09: WP2 froze exact development inputs, output paths, decision rules, non-temporal ordering, truth prohibition, and storyboard selection policy in configs/replay_protocol_v1.json",
+        "2026-11-09: WP3 deterministically produced 172 frame events and 226 detections from development folds 01/02 only; states are HELD_UNLOCALIZED=84, REJECTED=77, SEARCHING=11, with zero confirmation, reporting, world coordinates, truth joins, or official result files",
+        "2026-11-09: WP5 generated a 12-case label-free GIF and an independently recomputed selection manifest, four cases per reachable Level-A state",
+        "2026-11-09: WP6 produced separate Markdown and three-page Word supplements without modifying the sealed original report; page-by-page visual QA passed",
+        "2026-11-09: the exact replay artifact set and schemas are fail-closed, the original report hash remains unchanged, and the full suite passes 68/68; run status remains complete_pending_git_anchor until a Git evidence commit is created"
+      ],
+      "verification": [
+        "preserve commit e93c619 and the existing DOCX SHA-256",
+        "verify the external robot source is the user-designated WindySky-Final committed tree before any interface audit",
+        "freeze an inference-only replay protocol with no labels or simulator truth in runtime inputs",
+        "validate the independent detection-event and decision-state contracts",
+        "require synchronized RGB-D, CameraInfo, and permitted pose/alignment before world-coordinate output",
+        "python scripts/validate_replay_contract.py",
+        "run the existing scripts/run_checks.ps1 suite plus new replay tests",
+        "visually inspect the replay video and independently review all new report claims"
+      ]
+    },
+    {
+      "id": "F011",
+      "title": "Level-B Gazebo-pose-oracle RGB-D debug replay",
+      "area": "integration",
+      "priority": 1,
+      "status": "passing",
+      "evidence": [
+        "2026-11-09: the VMware resource gate supplied synchronized RGB, aligned depth, both CameraInfo streams, /Odometry_gazebo, and a complete TF chain; the odometry topic was initially misclassified as permitted pose input",
+        "2026-11-09: runtime audit found zero /ground_truth/* topics, but this narrow check failed to classify /Odometry_gazebo as Gazebo pose ground truth",
+        "2026-11-09: configs/level_b_replay_protocol_v1.json was frozen before accepting any Level-B inference input or generating any world-coordinate result",
+        "2026-11-09: the first unstabilized capture is preserved as rejected evidence instead of being silently reused",
+        "2026-11-09: accepted segment01 is a 9.3-second danger-target-label-free but pose-oracle LZ4 bag with 10124 messages and SHA-256 d485dc5ee8ee07a209dc3202b701166769fb04414f1e759f80942b3add5f5638",
+        "2026-11-09: synchronization export rejected one cached stale RGB frame, accepted 135 RGB-D pairs, and exported 21 frames with RGB-depth delta 0 ms and image-odometry delta at most 6 ms",
+        "2026-11-09: pinned RF-DETR inference completed 21/21 frames with 49 predictions, including a danger-red-sphere proposal in every frame; prediction SHA-256 is a66f2202d1fe15165549152627e0e90c41daccdca6b10f9c05cd2e640f8a60b8",
+        "2026-11-09: G3/G5 stopped the run because the red sphere has only about 19-21 finite depth pixels in a roughly 1000-pixel bbox and zero valid pixels in most frozen 60% inner regions; the 50% depth-validity gate was not weakened",
+        "2026-11-09: no official detected_danger.json was generated; the empty schema candidate is explicitly named detected_danger.rejected_candidate.json",
+        "2026-11-09: repeated replay outputs are byte-identical and the complete regression suite passes 72/72",
+        "2026-11-10: root-cause analysis isolated the failed red-sphere depth to the RealSense OpenNI plugin's missing pointCloudCutoffMax; the original SimEnv remained read-only and an overlay-only patch set the advertised 8.0 m cutoff",
+        "2026-11-10: configs/level_b_replay_protocol_v2.json was frozen before recapture and preserved every v1 localization threshold; only the declared sensor-cutoff correction changed",
+        "2026-11-10: the authoritative robot baseline is the committed WindySky-Final tree at e26b48ebd6871eb5753ac4b7750726c36b05a65a; a clean VM clone passed the production-boundary audit while the user's dirty external worktree remained untouched",
+        "2026-11-10: the accepted v2 bag is danger-target-label-free but contains Gazebo pose truth through /Odometry_gazebo; it is 11.17 seconds, 11967 messages, and SHA-256 57fb48742bffa4d32c97b52de15e3ca792583c5b34d5d7a5c0dc57a5069302f7",
+        "2026-11-10: pinned RF-DETR produced 28 predictions on 14/14 frames; all 28 localized, including stable green- and red-sphere tracks",
+        "2026-11-10: the confirmed red-sphere track used 14 observations and produced official-format result [7.7, 22.55, 0.17] using Gazebo pose truth; repeated canonical replay outputs are byte-identical",
+        "2026-11-10: the recorded workflow attached simulator truth only after finalization; the unchanged official evaluator reports TP=1, FN=1, FP=0 and objective 23/37, while a separate post-hoc spatial audit computes 0.124 m matched error; no independent pre-truth signature or Git anchor exists",
+        "2026-11-10: research-integrity correction reclassified v2 as completed_pose_oracle_debug_replay after WindySky-Final docs identified /Odometry_gazebo as forbidden pose truth; G2 truth isolation is preserved as failed",
+        "2026-11-10: a corrected 14-frame GIF discloses TARGET-TRUTH-FREE and GAZEBO POSE ORACLE while preserving the deterministic frame sequence",
+        "2026-11-10: the corrected four-page Word supplement distinguishes valid RGB-D/debug-chain evidence from invalid autonomous-localization claims; Word PDF export, all-page visual QA, and accessibility audit pass, SHA-256 8ae0d5edc0e61762b7822139b1a2102809071a4d653277e198eedc70b9f17190",
+        "2026-11-10: scripts/validate_level_b_run.py now fails closed on any attempt to relabel the pose-oracle run as truth-isolated, while still verifying hashes, reconstruction, scoring, and report bindings; the complete regression passes 87/87",
+        "2026-11-10: F011 is passing only as an honestly classified pose-oracle debug-replay feature; autonomous Level-B spatial closure remains outside the completed course scope"
+      ],
+      "verification": [
+        "python scripts/extract_level_b_bag.py --bag <accepted-bag> --output-dir <new-output-dir> --sample-stride 7 --protocol-id level_b_replay_v2 --protocol configs/level_b_replay_protocol_v2.json",
+        ".venv-rfdetr/Scripts/python scripts/run_level_b_rfdetr.py --manifest <input-manifest> --protocol configs/level_b_replay_protocol_v2.json --checkpoint <pinned-checkpoint> --output <new-output>",
+        "python scripts/build_level_b_replay.py --manifest <input-manifest> --predictions <predictions> --protocol configs/level_b_replay_protocol_v2.json --output-dir <new-output-dir>",
+        "python scripts/generate_level_b_storyboard.py",
+        "verify the corrected Level-B DOCX through PDF export, page-by-page PNG review, and accessibility audit",
+        "python scripts/validate_level_b_run.py",
+        "powershell -ExecutionPolicy Bypass -File scripts/run_checks.ps1",
+        "repeat the accepted replay and require byte-identical canonical outputs",
+        "verify danger-target truth is absent during inference and Gazebo pose truth is explicitly disclosed"
+      ]
+    }
+  ]
+}

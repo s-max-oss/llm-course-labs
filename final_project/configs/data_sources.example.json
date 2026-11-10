@@ -1,0 +1,23 @@
+{
+  "dataset_id": "legacy_batch_500",
+  "image_root_id": "batch_500_images",
+  "image_root": "D:/path/to/batch_500/batch_500",
+  "label_root": "D:/path/to/labels_vision_data_for_yolo",
+  "missing_labels_are_background": true,
+  "label_source": "legacy_yolo_annotation",
+  "near_duplicate_hamming_threshold": 4,
+  "class_map": {
+    "0": {
+      "detector_class": "red_ball",
+      "semantic_label": "danger_red_sphere"
+    },
+    "1": {
+      "detector_class": "red_cube",
+      "semantic_label": "distractor_red_box"
+    },
+    "2": {
+      "detector_class": "green_ball",
+      "semantic_label": "distractor_green_sphere"
+    }
+  }
+}

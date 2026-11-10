@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "protocol_id": "rfdetr_smolvlm_cascade_feasibility_v1",
+  "created_at": "2026-11-08T17:45:00+08:00",
+  "status": "frozen_before_implementation",
+  "scope_label": "development-only post-hoc falsification of detector-proposal semantic rerouting",
+  "confirmatory_claim_allowed": false,
+  "deployment_claim_allowed": false,
+  "implementation_started": false,
+  "execution_started": false,
+  "pre_protocol_code_commit": "9ce17d0a5124852e14536b882b8c88d2c8635f34",
+  "preimplementation_review": {
+    "reviewed_at": "2026-11-08T18:05:00+08:00",
+    "status": "corrected_before_implementation",
+    "correction": "the routed interval contains 8 of 11 unmatched development target predictions, not 1 of 4; all route counts, parent hashes, and baseline metrics were unchanged"
+  },
+  "parent_artifacts": {
+    "baseline_config": {
+      "path": "configs/baselines.json",
+      "sha256": "31a6beb19742d5e7eb06f263eb975662090b459ef48f2d13da9aa4b11108052e"
+    },
+    "b2_protocol": {
+      "path": "configs/smolvlm_b2_protocol.json",
+      "sha256": "4f789ea6d81e10240912db57b2457a2210d5e020ca739c5d4bde93dfd5dc9ba8"
+    },
+    "b2_protocol_lock": {
+      "path": "experiments/pilot_v1/smolvlm_b2_protocol.lock.json",
+      "sha256": "df59f3d372f843e60404b359b49055a99b39bf3d898f76ffdbc76b321eca2349"
+    },
+    "rfdetr_run": {
+      "path": "experiments/pilot_v1/rfdetr_run.json",
+      "sha256": "ca33491b1af3e98a68ea2239790d8a512d8f6e7cf0c2d4610bfeac7e41f1abb4"
+    },
+    "rfdetr_checkpoint_provenance": {
+      "path": "experiments/pilot_v1/rfdetr_checkpoint_provenance.json",
+      "sha256": "300ae137aa5140b70bae30e3b2d971e7ac894f5d3b6952222641b5172894f15b"
+    },
+    "fold_01_rfdetr_jobs": {
+      "path": "experiments/pilot_v1/baseline_jobs/fold_01/rfdetr_images.jsonl",
+      "sha256": "c443bd05d76d87dec40eb947b56342ee87668b8ea1ce1813390a36bf229113fa"
+    },
+    "fold_02_rfdetr_jobs": {
+      "path": "experiments/pilot_v1/baseline_jobs/fold_02/rfdetr_images.jsonl",
+      "sha256": "415e874b8753dbb8366f60ed6e7f40b77bec54c2a44b20e028217e81af16a14c"
+    },
+    "fold_01_rfdetr_results": {
+      "path": "experiments/pilot_v1/results/rfdetr_fold_01.jsonl",
+      "sha256": "4731adfabfbcf486708189f2a0a97f5b4b7230875569e5b7c215c4dcdcbf0d7a"
+    },
+    "fold_02_rfdetr_results": {
+      "path": "experiments/pilot_v1/results/rfdetr_fold_02.jsonl",
+      "sha256": "6d234f8b7a41bd193d6e450a859fda86e568d9ca7dbcd658ec91e5f6d7d67457"
+    }
+  },
+  "development_partition": {
+    "scene_seeds": [101, 202],
+    "fold_ids": ["fold_01", "fold_02"],
+    "locked_scene_seeds_forbidden": [303, 404, 505],
+    "reason": "reuse the previously frozen B2 development partition; locked seeds remain unavailable for router design"
+  },
+  "proposal_selection": {
+    "allowed_detector_labels": [
+      "danger_red_sphere",
+      "distractor_red_box",
+      "distractor_green_sphere"
+    ],
+    "exclude_auxiliary_green_wall": true,
+    "confidence_min_inclusive": 0.5,
+    "confidence_max_exclusive": 0.7,
+    "selection_basis": "development-only confidence/error audit using the frozen same-class one-to-one IoU=0.5 matcher; captures 24 of 172 target proposals, including 8 of 11 unmatched development target predictions",
+    "expected_job_count": 24,
+    "expected_routed_image_count": 22,
+    "bbox_padding_fraction": 0.15,
+    "crop_source": "rfdetr_prediction_bbox_only",
+    "ground_truth_available_to_job_generation": false,
+    "ground_truth_available_to_inference": false
+  },
+  "vlm_contract": {
+    "variant": "b2_b_fixed_candidate_scoring",
+    "inherit_exact_model_prompt_candidates_scoring_and_label_mapping_from": "configs/smolvlm_b2_protocol.json",
+    "input_variant": "rfdetr_proposal_15_percent_padded_crop",
+    "proposal_source": "rfdetr_seg_medium_fixed_checkpoint",
+    "full_frame_input_forbidden": true,
+    "oracle_crop_forbidden": true,
+    "record_all_candidate_scores": true
+  },
+  "primary_fusion_policy": {
+    "policy_id": "safety_preserving_distractor_relabel_v1",
+    "on_vlm_error": "keep_rfdetr_prediction",
+    "on_vlm_none": "keep_rfdetr_prediction",
+    "danger_rfdetr_prediction": "never_demote_or_suppress",
+    "non_danger_to_vlm_danger": "keep_rfdetr_prediction",
+    "non_danger_between_red_box_and_green_sphere": "use_vlm_label",
+    "bbox_confidence_and_mask": "retain_original_rfdetr_values"
+  },
+  "diagnostic_policy": {
+    "policy_id": "direct_vlm_top1_relabel_non_deployable",
+    "behavior": "replace every routed detector label with B2 top1, including none as suppression",
+    "purpose": "upper-bound diagnostic only; never the recommended safety policy"
+  },
+  "development_baseline": {
+    "danger_counts": {"true_positive": 87, "false_positive": 4, "false_negative": 1},
+    "red_box_counts": {"true_positive": 16, "false_positive": 0, "false_negative": 0},
+    "green_sphere_counts": {"true_positive": 58, "false_positive": 7, "false_negative": 1},
+    "three_target_macro_f1": 0.9691836366912957,
+    "target_false_positive_total": 11
+  },
+  "continuation_gates": {
+    "danger_recall_must_not_decrease": true,
+    "three_target_macro_f1_must_strictly_increase": true,
+    "target_false_positive_total_must_not_increase": true,
+    "routed_target_proposal_fraction_max": 0.15,
+    "all_gates_required": true,
+    "on_failure": "stop_cascade_and_recommend_rfdetr_only",
+    "locked_evaluation_authorized": false
+  },
+  "reporting_boundaries": [
+    "development-only post-hoc feasibility result",
+    "not a confirmation that RF plus B2 generalizes",
+    "checkpoint training overlap remains unknown",
+    "CPU latency is not GPU or robot latency",
+    "do not run locked seeds under this protocol"
+  ],
+  "prohibited_actions": [
+    "using_ground_truth_to_create_or_modify_inference_jobs",
+    "using_oracle_boxes_for_cascade_inputs",
+    "routing_full_frames_to_b2",
+    "overriding_or_suppressing_high_confidence_danger_predictions",
+    "tuning_on_seeds_303_404_505",
+    "claiming_deployable_or_confirmatory_performance",
+    "modifying_external_robot_or_course_repositories"
+  ]
+}

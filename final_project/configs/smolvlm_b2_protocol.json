@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "protocol_id": "smolvlm_b2_exploratory_v1",
+  "created_at": "2026-11-08T00:23:04+08:00",
+  "status": "frozen_before_execution",
+  "confirmed_at": "2026-11-08T00:27:45+08:00",
+  "confirmed_by": "user",
+  "scope_label": "post-B1 exploratory constrained-classification pilot",
+  "confirmatory_claim_allowed": false,
+  "implementation_started": false,
+  "execution_started": false,
+  "parent_artifacts": {
+    "baseline_config": {
+      "path": "configs/baselines.json",
+      "sha256": "31a6beb19742d5e7eb06f263eb975662090b459ef48f2d13da9aa4b11108052e"
+    },
+    "pilot_protocol": {
+      "path": "data/splits/pilot_v1/protocol.json",
+      "sha256": "fc790fd734e113d31471444d07ca2d3a44c08b08c340e474e203a86c24814eed"
+    },
+    "baseline_jobs_protocol": {
+      "path": "experiments/pilot_v1/baseline_jobs/protocol.json",
+      "sha256": "10286dfa7d5b883985f6e137956697a86623e30030ea30d0a4572d61dc64ab60"
+    },
+    "b1_run_manifest": {
+      "path": "experiments/pilot_v1/smolvlm_zero_shot_run.json",
+      "sha256": "6f5e39a19ff52000244a686e99c120eb18fd3235134a81a254b600af2f36c594"
+    }
+  },
+  "model_contract": {
+    "model_id": "HuggingFaceTB/SmolVLM-256M-Instruct",
+    "model_file_manifest_source": "configs/baselines.json#smolvlm.model_files",
+    "require_exact_top_level_file_set": true,
+    "local_files_only": true,
+    "device": "cpu",
+    "dtype": "float32",
+    "image_longest_edge": 512,
+    "image_splitting": false,
+    "do_sample": false
+  },
+  "input_contract": {
+    "object_input": "offline_annotation_oracle_15_percent_padded_crop",
+    "background_input": "full_frame",
+    "deployment_eligible": false,
+    "ground_truth_available_to_inference": false
+  },
+  "partition": {
+    "reason": "pooled validation and pooled test contain the same 444 candidates for a global zero-shot method",
+    "development": {
+      "scene_seeds": [101, 202],
+      "candidate_count": 193,
+      "class_support": {
+        "background_or_unknown": 30,
+        "danger_red_sphere": 88,
+        "distractor_green_sphere": 59,
+        "distractor_red_box": 16
+      }
+    },
+    "locked_evaluation": {
+      "scene_seeds": [303, 404, 505],
+      "candidate_count": 251,
+      "class_support": {
+        "background_or_unknown": 23,
+        "danger_red_sphere": 97,
+        "distractor_green_sphere": 41,
+        "distractor_red_box": 90
+      }
+    }
+  },
+  "label_mapping": {
+    "red ball": "danger_red_sphere",
+    "red box": "distractor_red_box",
+    "green ball": "distractor_green_sphere",
+    "none": "background_or_unknown"
+  },
+  "variants": {
+    "b2_a_strict_natural_generation": {
+      "role": "secondary_output_compliance_diagnostic",
+      "prompt": "Choose exactly one answer from this list: red ball, red box, green ball, none. Return only the answer, with no punctuation or explanation.",
+      "max_new_tokens": 8,
+      "parser_regex": "^\\s*(red ball|red box|green ball|none)\\s*[.!]?\\s*$",
+      "case_sensitive": false,
+      "forbidden_postprocessing": [
+        "substring_keyword_matching",
+        "fuzzy_matching",
+        "adding_synonyms_after_execution",
+        "extracting_labels_from_explanations"
+      ]
+    },
+    "b2_b_fixed_candidate_scoring": {
+      "role": "primary",
+      "prompt": "Classify the image into one category. The answer is",
+      "candidate_completions_in_tie_order": [
+        " red ball",
+        " red box",
+        " green ball",
+        " none"
+      ],
+      "tokenizer_add_special_tokens": false,
+      "include_eos_in_score": false,
+      "score_formula": "mean_teacher_forced_continuation_token_log_probability",
+      "rejection_threshold": null,
+      "require_finite_scores": true,
+      "record_all_candidate_scores": true,
+      "record_top1_top2_margin": true
+    }
+  },
+  "smoke_test": {
+    "partition": "development",
+    "selection": "first two candidate IDs per expected class after lexical sort",
+    "candidate_count": 8,
+    "may_change_protocol_based_on_outputs": false
+  },
+  "development_gates_for_b2_b": {
+    "prediction_coverage_min": 1.0,
+    "macro_f1_min": 0.5,
+    "danger_red_sphere_recall_min": 0.9,
+    "distractor_red_box_recall_min": 0.5,
+    "all_gates_required": true,
+    "on_failure": "stop_vlm_classifier_route_and_do_not_run_locked_evaluation"
+  },
+  "reporting_contract": {
+    "primary_locked_result": "b2_b_on_251_locked_evaluation_candidates",
+    "comparison": "b1_recomputed_on_the_same_251_candidates",
+    "b2_a_locked_evaluation_default": "do_not_run",
+    "latency_scope": "post-load image_preprocessing_through_result_construction",
+    "report_mean_p50_p95": true
+  },
+  "prohibited_actions": [
+    "using_target_labels_in_inference_jobs",
+    "changing_v1_after_locked_evaluation",
+    "reporting_oracle_crop_as_deployable_end_to_end",
+    "treating_locked_evaluation_as_confirmatory_or_formal_generalization",
+    "modifying_external_robot_or_course_repositories"
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_id": "level_b_replay_v2",
+  "status": "frozen_before_v2_acquisition_and_inference",
+  "frozen_at": "2026-11-09T21:06:36+08:00",
+  "relationship_to_v1": {
+    "v1_protocol": "configs/level_b_replay_protocol_v1.json",
+    "v1_result": "stopped_spatial_quality_gate_failed",
+    "v1_quality_thresholds_changed": false,
+    "v2_change": "declare an isolated OpenNI depth cutoff maximum matching the existing 8.0 m camera far clip",
+    "reason": "v1 diagnostics showed the unconfigured plugin maximum produced NaN depth beyond approximately 5 m"
+  },
+  "scope": {
+    "purpose": "development-only synchronized RGB-D spatial replay demonstration",
+    "formal_benchmark": false,
+    "online_robot_control": false,
+    "canonical_world_frame": "odom",
+    "prohibited_claims": [
+      "production CUDA competition entry passed in the VMware guest",
+      "online closed-loop navigation",
+      "held-out detector generalization",
+      "formal multi-seed performance",
+      "continuous trajectory when acquisition contains a discrete pose reset"
+    ]
+  },
+  "authoritative_sources": {
+    "robot_interface_branch": "WindySky-Final",
+    "robot_interface_commit": "e26b48ebd6871eb5753ac4b7750726c36b05a65a",
+    "robot_core_archive_sha256": "045a0a15a7bae3052ac7b94f0c81e7bb451750c80ca969ed28de4bc12b448924",
+    "robot_history_bundle_sha256": "08baece3cc2d1b897ecd7d84c35a20d80a51f2d9f1cef8f2cb41960c140a87be",
+    "simulation_repository_commit": "9111f203e660e21b878434372b95dfe7792b118e",
+    "sensor_overlay_patch": "experiments/level_b_v2/deployment/realsense_depth_cutoff.patch",
+    "sensor_overlay_patch_sha256": "21c473d839d3ec262d7b4a78063b60e278ca5f8274b18f0a130466bc59619885",
+    "external_repositories_read_only": true,
+    "isolated_vm_workspace": "/home/sunchi/DG_202602_Code_levelb_clean",
+    "isolated_sensor_overlay": "/home/sunchi/levelb_sensor_overlay_v2"
+  },
+  "production_chain_audit": {
+    "boundary_audit": "passed",
+    "boundary_audit_baseline": "4313ca2e",
+    "standard_entry_executed": false,
+    "standard_entry_blocker": "VMware guest has no NVIDIA/CUDA device while the production environment gate requires torch.cuda.is_available()",
+    "fallback_policy": "use the pinned CPU RF-DETR replay runner and retain the production repository only as the interface and result contract"
+  },
+  "acquisition": {
+    "scene_seed": 7701,
+    "scene_parameters": {
+      "floor_count": 1,
+      "rooms_per_floor": 2,
+      "danger_count": 2,
+      "distractor_count": 2
+    },
+    "runtime": {
+      "gui": false,
+      "xvfb_screen": "1280x720x24",
+      "realsense": true,
+      "realsense_camera_far_clip_m": 8.0,
+      "openni_point_cloud_cutoff_max_m": 8.0,
+      "referee_odometry": true,
+      "ground_truth_topics": false,
+      "livox": false
+    },
+    "required_topics": [
+      "/clock",
+      "/real_sense/rgb/image_raw",
+      "/real_sense/rgb/camera_info",
+      "/real_sense/depth/image_raw",
+      "/real_sense/depth/camera_info",
+      "/Odometry_gazebo",
+      "/tf",
+      "/tf_static"
+    ],
+    "forbidden_runtime_inputs": [
+      "/ground_truth/*",
+      "danger_truth.json",
+      "scene_manifest.json",
+      "competition_scene.world",
+      "labels",
+      "simulator target coordinates"
+    ],
+    "view_selection": {
+      "method": "replay the exact v1 truth-free fixed-grid detector-positive view x=8.0 y=16.0 yaw=90 deg after the isolated sensor correction",
+      "uses_ground_truth": false,
+      "development_selection_bias_declared": true,
+      "discrete_pose_resets_must_start_new_segments": true
+    }
+  },
+  "input_acceptance": {
+    "rgb": {
+      "encoding": "rgb8",
+      "width": 640,
+      "height": 480,
+      "frame_id": "real_sense_optical_frame"
+    },
+    "depth": {
+      "encoding": "32FC1",
+      "width": 640,
+      "height": 480,
+      "frame_id": "real_sense_optical_frame",
+      "aligned_to_rgb": true
+    },
+    "camera_info": {
+      "distortion_model": "plumb_bob",
+      "require_finite_positive_fx_fy": true
+    },
+    "synchronization": {
+      "max_rgb_depth_delta_ms": 20,
+      "max_rgb_camera_info_delta_ms": 1000,
+      "max_depth_camera_info_delta_ms": 1000,
+      "max_image_odometry_delta_ms": 20,
+      "timestamps_must_be_monotonic_per_segment": true
+    },
+    "pose": {
+      "odom_frame": "odom",
+      "base_frame": "base",
+      "camera_frame": "real_sense_optical_frame",
+      "require_odom_to_base": true,
+      "require_base_to_camera": true
+    },
+    "reject_if": [
+      "required topic absent",
+      "forbidden runtime input present",
+      "camera not stabilized",
+      "image is blank or near-field occluded",
+      "timestamp synchronization gate fails",
+      "TF chain is unavailable"
+    ]
+  },
+  "detector": {
+    "name": "RF-DETR-Seg Medium",
+    "checkpoint_sha256": "ec2de357f402901cf624835f11d5c54bb0eab8980d1268d7ee8a9122a446fa50",
+    "confidence_threshold": 0.5,
+    "allowed_classes": [
+      "danger_red_sphere",
+      "distractor_red_box",
+      "distractor_green_sphere",
+      "distractor_green_wall"
+    ],
+    "smolvlm_enabled": false,
+    "reason": "the frozen development cascade produced no metric gain"
+  },
+  "localization": {
+    "bbox_depth_region": {
+      "inner_fraction": 0.6,
+      "estimator": "median",
+      "minimum_valid_pixels": 30,
+      "minimum_valid_fraction": 0.5,
+      "minimum_depth_m": 0.2,
+      "maximum_depth_m": 8.0,
+      "maximum_mad_m": 0.25
+    },
+    "projection": "pinhole using RGB CameraInfo K because depth is aligned in the same optical frame",
+    "transform_order": [
+      "camera optical point",
+      "base",
+      "odom"
+    ],
+    "center_pixel_fallback": false,
+    "missing_depth_policy": "reject localization and preserve a non-localized event"
+  },
+  "association_and_confirmation": {
+    "same_class_required": true,
+    "maximum_world_distance_m": 0.75,
+    "maximum_time_gap_s": 2.0,
+    "minimum_observations": 3,
+    "minimum_distinct_frames": 3,
+    "maximum_position_std_m": 0.35,
+    "discrete_pose_reset_breaks_track": true,
+    "report_only_confirmed_localized_tracks": true
+  },
+  "outputs": {
+    "root": "experiments/level_b_v2",
+    "input_manifest": "inputs/input_manifest.json",
+    "detection_events": "outputs/danger_detection_events.jsonl",
+    "decision_trace": "outputs/decision_trace.jsonl",
+    "detected_danger": "outputs/detected_danger.json",
+    "run_manifest": "level_b_run.json",
+    "overwrite": false,
+    "canonical_json": true
+  },
+  "evaluation": {
+    "ground_truth_attach_after_output_finalized": true,
+    "truth_must_not_be_available_to_inference_process": true,
+    "single_seed_results_are_demonstration_only": true
+  },
+  "quality_gates": {
+    "G0_data_sufficiency": "all input acceptance checks pass",
+    "G1_contract": "event and result schemas validate",
+    "G2_truth_isolation": "forbidden runtime inputs are absent",
+    "G3_spatial_quality": "depth, synchronization, TF, and position-variance gates pass",
+    "G4_determinism": "repeat run produces byte-identical canonical outputs",
+    "G5_system_value": "at least one localized confirmed track reaches detected_danger.json"
+  },
+  "stop_conditions": [
+    "any truth leakage before output finalization",
+    "no accepted RGB-D segment at the frozen v2 view",
+    "no detector proposal above the frozen threshold",
+    "no localization passes the frozen depth and transform gates",
+    "non-deterministic canonical outputs"
+  ]
+}

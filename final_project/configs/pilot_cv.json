@@ -1,0 +1,31 @@
+{
+  "protocol_id": "pilot_v1",
+  "created_date": "2026-11-07",
+  "scene_seeds": [101, 202, 303, 404, 505],
+  "expected_classes": [
+    "danger_red_sphere",
+    "distractor_red_box",
+    "distractor_green_sphere",
+    "background_or_unknown"
+  ],
+  "folds": [
+    {"fold_id": "fold_01", "test_seed": 101, "validation_seed": 202},
+    {"fold_id": "fold_02", "test_seed": 202, "validation_seed": 303},
+    {"fold_id": "fold_03", "test_seed": 303, "validation_seed": 404},
+    {"fold_id": "fold_04", "test_seed": 404, "validation_seed": 505},
+    {"fold_id": "fold_05", "test_seed": 505, "validation_seed": 101}
+  ],
+  "quarantine_policy": {
+    "exclude_all_images_in_exact_duplicate_groups": true,
+    "exclude_all_images_in_cross_seed_dhash_pairs": true,
+    "dhash_hamming_threshold": 4,
+    "near_duplicates_are_candidates_not_proven_duplicates": true
+  },
+  "reporting_policy": {
+    "primary_metric_aggregation": "pooled_out_of_fold_predictions",
+    "per_fold_metrics_require_nonzero_class_support": true,
+    "average_of_per_fold_macro_f1_is_primary": false,
+    "formal_generalization_claim_allowed": false,
+    "scope_label": "five-seed leakage-controlled pilot study"
+  }
+}

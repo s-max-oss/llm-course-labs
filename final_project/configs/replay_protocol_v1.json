@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "protocol_id": "robot_replay_level_a_v1",
+  "status": "frozen_before_replay",
+  "replay_level": "A",
+  "event_contract": {
+    "path": "configs/replay_event_contract_v1.json",
+    "sha256": "698de5fcd3be87cdd5dfa0f4d31c71bc61885fc5502a85761b3b295bcd5707c6"
+  },
+  "development_inputs": [
+    {
+      "fold_id": "fold_01",
+      "scene_group": "development_group_1",
+      "job_path": "experiments/pilot_v1/baseline_jobs/fold_01/rfdetr_images.jsonl",
+      "job_sha256": "c443bd05d76d87dec40eb947b56342ee87668b8ea1ce1813390a36bf229113fa",
+      "result_path": "experiments/pilot_v1/results/rfdetr_fold_01.jsonl",
+      "result_sha256": "4731adfabfbcf486708189f2a0a97f5b4b7230875569e5b7c215c4dcdcbf0d7a",
+      "expected_records": 98
+    },
+    {
+      "fold_id": "fold_02",
+      "scene_group": "development_group_2",
+      "job_path": "experiments/pilot_v1/baseline_jobs/fold_02/rfdetr_images.jsonl",
+      "job_sha256": "415e874b8753dbb8366f60ed6e7f40b77bec54c2a44b20e028217e81af16a14c",
+      "result_path": "experiments/pilot_v1/results/rfdetr_fold_02.jsonl",
+      "result_sha256": "6d234f8b7a41bd193d6e450a859fda86e568d9ca7dbcd658ec91e5f6d7d67457",
+      "expected_records": 74
+    }
+  ],
+  "ordering": {
+    "method": "fold_order_then_sample_id_lexicographic",
+    "semantics": "seed_grouped_storyboard_non_temporal",
+    "trusted_time_available": false
+  },
+  "decision_policy": {
+    "detector_threshold": 0.5,
+    "danger_class": "danger_red_sphere",
+    "no_detection_state": "SEARCHING",
+    "danger_state_path": ["SEARCHING", "CANDIDATE", "HELD_UNLOCALIZED"],
+    "distractor_state_path": ["SEARCHING", "REJECTED"],
+    "confirmation_allowed": false,
+    "reporting_allowed": false,
+    "timeout_policy": "disabled_no_trusted_time",
+    "cross_frame_state_carry": false
+  },
+  "locked_folds_prohibited": ["fold_03", "fold_04", "fold_05"],
+  "truth_join_policy": "forbidden_during_replay_allowed_only_in_separate_posthoc_evaluation",
+  "storyboard_policy": {
+    "states_in_order": ["HELD_UNLOCALIZED", "REJECTED", "SEARCHING"],
+    "cases_per_state": 4,
+    "selection_rule": "first_by_sequence_index_per_state",
+    "truth_used_for_selection": false,
+    "artifact": "demo/replay_v1_level_a.gif",
+    "manifest": "demo/replay_v1_storyboard_manifest.json"
+  },
+  "outputs": {
+    "manifest": "experiments/replay_v1/outputs/replay_manifest.jsonl",
+    "events": "experiments/replay_v1/outputs/danger_detection_events.jsonl",
+    "decision_trace": "experiments/replay_v1/outputs/decision_trace.jsonl",
+    "summary": "experiments/replay_v1/outputs/replay_summary.json"
+  }
+}

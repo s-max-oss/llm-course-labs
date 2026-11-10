@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "protocol_id": "rfdetr_pilot_evaluation_v1",
+  "created_at": "2026-11-08T10:45:00+08:00",
+  "status": "frozen_before_full_inference",
+  "scope_label": "five-seed leakage-controlled exploratory detector pilot",
+  "formal_generalization_claim_allowed": false,
+  "full_inference_started": false,
+  "technical_smoke_observed": true,
+  "technical_smoke_scope": "one seed-101 background-convention image; environment and schema check only",
+  "technical_smoke_may_change_thresholds": false,
+  "parent_artifacts": {
+    "baseline_config": {
+      "path": "configs/baselines.json",
+      "sha256": "31a6beb19742d5e7eb06f263eb975662090b459ef48f2d13da9aa4b11108052e"
+    },
+    "baseline_jobs_protocol": {
+      "path": "experiments/pilot_v1/baseline_jobs/protocol.json",
+      "sha256": "10286dfa7d5b883985f6e137956697a86623e30030ea30d0a4572d61dc64ab60"
+    },
+    "pilot_protocol": {
+      "path": "data/splits/pilot_v1/protocol.json",
+      "sha256": "fc790fd734e113d31471444d07ca2d3a44c08b08c340e474e203a86c24814eed"
+    }
+  },
+  "inference_contract": {
+    "checkpoint_sha256": "ec2de357f402901cf624835f11d5c54bb0eab8980d1268d7ee8a9122a446fa50",
+    "confidence_threshold": 0.5,
+    "resolution": 432,
+    "expected_image_count": 401,
+    "expected_result_file_count": 5,
+    "result_partitioning": "one_nonempty_file_per_fold",
+    "ground_truth_available_to_inference": false
+  },
+  "evaluation_contract": {
+    "bbox_iou_threshold": 0.5,
+    "matching": "per_class_greedy_descending_confidence_one_to_one",
+    "target_classes": [
+      "danger_red_sphere",
+      "distractor_red_box",
+      "distractor_green_sphere"
+    ],
+    "auxiliary_unscored_classes": [
+      "distractor_green_wall"
+    ],
+    "ground_truth_boxes": "eligible pooled out-of-fold test candidate bbox_xyxy_pixels",
+    "unmatched_target_prediction": "false_positive",
+    "unmatched_target_ground_truth": "false_negative",
+    "inference_error_policy": "retain image error and count every ground-truth target on that image as false_negative",
+    "background_convention_policy": "target-class predictions count as false positives, but results are reported with an explicit missing-label uncertainty limitation",
+    "primary_metrics": [
+      "per_target_class_precision_recall_f1",
+      "three_target_class_macro_f1",
+      "danger_red_sphere_precision_recall_f1",
+      "target_false_positive_and_false_negative_counts",
+      "image_level_danger_presence_precision_recall_f1"
+    ],
+    "segmentation_diagnostics": [
+      "mask_area_fraction_distribution",
+      "mask_coverage_in_bbox_distribution"
+    ],
+    "segmentation_iou_reportable": false,
+    "segmentation_iou_reason": "the legacy pilot has bounding boxes but no sealed ground-truth masks"
+  },
+  "prohibited_actions": [
+    "changing_confidence_or_iou_threshold_after_full_results",
+    "scoring_unannotated_green_wall_as_a_target_false_positive",
+    "reporting_box_metrics_as_mask_iou",
+    "treating_missing-label backgrounds as audited negatives",
+    "using_ground_truth_in_inference",
+    "claiming_formal_generalization"
+  ]
+}
