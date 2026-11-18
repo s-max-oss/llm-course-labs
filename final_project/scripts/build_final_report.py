@@ -220,6 +220,8 @@ def add_markdown_table(doc: Document, rows: list[list[str]]) -> None:
             )
             paragraph.paragraph_format.line_spacing = 1.15
             paragraph.paragraph_format.space_after = Pt(0)
+            if row_index < len(rows) - 1:
+                paragraph.paragraph_format.keep_with_next = True
             add_text_runs(paragraph, value, size=10.5, bold=row_index == 0)
             if row_index == 0:
                 for run in paragraph.runs:

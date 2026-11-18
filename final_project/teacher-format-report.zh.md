@@ -7,13 +7,13 @@ From Competition Hazard Search to Auditable Multimodal Perception
 
 ## Abstract
 
-This study grew out of my participation in the DG-202602 quadruped-robot competition project, in which a robot must search an unfamiliar building, distinguish red spherical hazards from visually similar red blocks and green balls, and return hazard coordinates to the task system. During development, I found that a visually plausible prediction was not enough: a missed proposal could never reach localization, a false alarm could create a nonexistent hazard, and a free-form model response could break the robot interface even when its description sounded reasonable. I therefore extracted a narrower course research question from the competition pipeline: can a compact vision-language model improve a fixed real-time detector on ambiguous proposals without weakening safety, reproducibility, or latency? The study audits 500 historical RGB frames from five simulation seeds, globally isolates 99 duplicate-risk images, and evaluates a fixed RF-DETR-Seg Medium checkpoint on 401 retained images. RF-DETR reaches 0.9635 three-class Macro-F1 and 0.9892 hazard recall, although unavailable training lineage limits the claim to in-domain exploratory performance. Free-form SmolVLM-256M produces no strictly valid single-label outputs. Frozen candidate scoring restores 100% output coverage and reaches 0.7217 Macro-F1 on 251 oracle crops, but rejects none of 23 background cases. On 24 real low-confidence RF-DETR proposals, SmolVLM repeats every detector class, adds 5.11 s CPU median latency, and yields no metric gain. The preregistered continuation gate therefore stops the cascade. The final recommendation is RF-DETR-only, with Level A interface replay accepted and Level B retained only as Gazebo-pose-oracle debugging evidence.
+This study grew out of my participation in the DG-202602 quadruped-robot competition project, in which a robot must search an unfamiliar building, distinguish red spherical hazards from visually similar red blocks and green balls, and return hazard coordinates to the task system. During development, I found that a visually plausible prediction was not enough: a missed proposal could never reach localization, a false alarm could create a nonexistent hazard, and a free-form model response could break the robot interface even when its description sounded reasonable. I therefore extracted a narrower course research question from the competition pipeline: can a compact vision-language model improve a fixed real-time detector on ambiguous proposals without weakening safety, reproducibility, or latency? The study audits 500 historical RGB frames from five simulation seeds, globally isolates 99 duplicate-risk images, and evaluates a fixed RF-DETR-Seg Medium checkpoint on 401 retained images. RF-DETR reaches 0.9635 three-class Macro-F1 and 0.9892 hazard recall, although unavailable training lineage limits the claim to in-domain exploratory performance. Free-form SmolVLM-256M produces no strictly valid single-label outputs. Frozen candidate scoring restores 100% output coverage and reaches 0.7217 Macro-F1 on 251 oracle crops, but rejects none of 23 background cases. On 24 real low-confidence RF-DETR proposals, SmolVLM repeats every detector class, adds 5.11 s CPU median latency, and yields no metric gain. The preregistered continuation gate therefore stops the cascade. The final recommendation is RF-DETR-only. The integrated system replay verifies the detection-event and state-machine contract; its RGB-D spatial segment is retained only as Gazebo-pose-oracle debugging evidence.
 
 Keywords: quadruped robot; hazard recognition; RF-DETR; SmolVLM; multimodal intelligence
 
 ## 摘要
 
-本研究源于我参与的 DG-202602 四足机器人竞赛项目：机器人必须在陌生建筑中搜索，把红色球形危险源与视觉上相近的红色方块、绿色球体区分开，并把危险源坐标回传给任务系统。研发过程中我发现，视觉上“看起来合理”的预测远远不够：漏检的候选永远无法进入定位环节；一次误报会凭空制造出一个并不存在的危险源；而自由形式的模型输出哪怕描述再合理，也可能直接破坏机器人接口。因此我从竞赛流程中抽取出一个范围更窄的课程研究问题：在模糊候选上，紧凑的视觉语言模型能否在不损害安全性、可复现性与时延的前提下，改进一个固定的实时检测器？本研究审计了来自五个仿真种子的 500 张历史 RGB 帧，全局隔离 99 张存在重复风险的图像，并在保留的 401 张图像上评测固定的 RF-DETR-Seg Medium 检查点。RF-DETR 达到 0.9635 的三分类 Macro-F1 与 0.9892 的危险源召回率，但由于训练数据溯源不可得，该结论仅限于域内探索性表现。自由生成的 SmolVLM-256M 无法产出任何严格合法的单标签输出。冻结候选打分恢复了 100% 的输出覆盖率，并在 251 个基于真值框的裁剪（oracle crop）上达到 0.7217 的 Macro-F1，但对 23 个背景样本无一拒识。在 24 个真实低置信度 RF-DETR 候选上，SmolVLM 复现了检测器给出的每一个类别，额外带来 5.11 s 的 CPU 中位时延，且没有任何指标增益。因此，预注册的继续门限判定停止级联。最终建议为仅使用 RF-DETR：Level A 接口回放予以接受，Level B 仅作为使用 Gazebo 位姿真值的调试证据保留。
+本研究源于我参与的 DG-202602 四足机器人竞赛项目：机器人必须在陌生建筑中搜索，把红色球形危险源与视觉上相近的红色方块、绿色球体区分开，并把危险源坐标回传给任务系统。研发过程中我发现，视觉上“看起来合理”的预测远远不够：漏检的候选永远无法进入定位环节；一次误报会凭空制造出一个并不存在的危险源；而自由形式的模型输出哪怕描述再合理，也可能直接破坏机器人接口。因此我从竞赛流程中抽取出一个范围更窄的课程研究问题：在模糊候选上，紧凑的视觉语言模型能否在不损害安全性、可复现性与时延的前提下，改进一个固定的实时检测器？本研究审计了来自五个仿真种子的 500 张历史 RGB 帧，全局隔离 99 张存在重复风险的图像，并在保留的 401 张图像上评测固定的 RF-DETR-Seg Medium 检查点。RF-DETR 达到 0.9635 的三分类 Macro-F1 与 0.9892 的危险源召回率，但由于训练数据溯源不可得，该结论仅限于域内探索性表现。自由生成的 SmolVLM-256M 无法产出任何严格合法的单标签输出。冻结候选打分恢复了 100% 的输出覆盖率，并在 251 个基于真值框的裁剪（oracle crop）上达到 0.7217 的 Macro-F1，但对 23 个背景样本无一拒识。在 24 个真实低置信度 RF-DETR 候选上，SmolVLM 复现了检测器给出的每一个类别，额外带来 5.11 s 的 CPU 中位时延，且没有任何指标增益。因此，预注册的继续门限判定停止级联，最终建议为仅使用 RF-DETR。整体系统回放验证了检测事件与状态机契约；其中的 RGB-D 空间链路因使用 Gazebo 位姿真值，仅作为调试证据保留。
 
 关键词：四足机器人；危险源识别；RF-DETR；SmolVLM；多模态智能
 
@@ -31,7 +31,7 @@ Keywords: quadruped robot; hazard recognition; RF-DETR; SmolVLM; multimodal inte
 
 第一个目标是：在经过重复风险控制的历史数据上，测量机器人项目已在使用的固定 RF-DETR 检查点的行为。第二个目标是：通过比较自由生成与冻结候选打分，把 SmolVLM 的语义能力与其指令格式合规性分离开。第三个目标是：检验当 VLM 得到的是真实低置信度检测候选，而不是基于真值框的裁剪时，它能否产生可测量的净收益。
 
-本研究做出四项课程层面的贡献：构建了带 SHA-256 封印、按仿真种子组织的数据与证据协议；把生成式 VLM 改造为封闭候选集合打分器；在运行真实候选级联之前预注册路由、融合与停止条件；以及保留级联的负结果，而不是在观察结果后继续调参。Level A 事件回放展示了检测结果如何进入机器人状态机。Level B RGB-D 回放也被保留，但其使用 `/Odometry_gazebo` 的事实已明确披露，且 G2 真值隔离门仍未通过。
+本研究做出四项课程层面的贡献：构建了带 SHA-256 封印、按仿真种子组织的数据与证据协议；把生成式 VLM 改造为封闭候选集合打分器；在运行真实候选级联之前预注册路由、融合与停止条件；以及保留级联的负结果，而不是在观察结果后继续调参。整体系统回放进一步展示了检测结果进入机器人状态机并扩展到 RGB-D 空间数据链的过程；其中 `/Odometry_gazebo` 属于位姿真值，因而空间结果只作为调试证据，G2 真值隔离门仍未通过。
 
 ![从竞赛实践到可审计结论的研究闭环](figures/research_pipeline_overview_zh.png)
 
@@ -90,7 +90,7 @@ DETR 使用 Transformer 编码器—解码器与可学习的目标查询，产�
 
 SmolVLM 以图像与文本表示为条件驱动自回归解码器 [5]。自由生成是选择一段 token 序列，因此即便提示只要求给出一个标签，它仍可能附加解释或标点。冻结候选打分则改为逐一评估每一个允许的续写，并对其 token 对数概率取平均。最高的有限分数成为候选预测。这把开放的输出空间变成确定性的四标签决策，同时保留同一个底层模型。
 
-机器人接口增加了一层契约。一个检测帧记录图像标识、模型溯源、有序候选与状态机输入。Level A 禁止世界坐标与时序跟踪；它校验事件结构与故障闭锁（fail-closed）状态转移。Level B 增加 RGB-D 反投影与坐标变换，但其位姿来源必须与目标真值分开审计。由于 `/Odometry_gazebo` 属于仿真器位姿真值，Level B 被归为使用位姿真值的调试，而非自主定位。
+机器人接口增加了一层契约。一个检测帧记录图像标识、模型溯源、有序候选与状态机输入。系统回放先校验不含世界坐标和时序跟踪的事件结构与故障闭锁（fail-closed）状态转移，再扩展到 RGB-D 反投影与坐标变换。由于空间链路读取的 `/Odometry_gazebo` 属于仿真器位姿真值，其结果被归为使用位姿真值的调试，而非自主定位。
 
 ### 3.3 核心模型与算法设计
 
@@ -175,13 +175,13 @@ B1 产出 444 条流畅回答，但没有任何严格单标签输出。B2-A 修�
 
 RF-DETR 的图表显示三个目标类别的 F1 较为均衡，最弱的是绿球。混淆矩阵给出 SmolVLM 的另一视角：目标裁剪大多可分，但每一张背景帧都被强行判入某个目标类别。这不是轻微的格式问题。它意味着在冻结的四标签设计下，VLM 无法独立判断候选是否存在。
 
-Level A 分镜把有序检测结果转换为不带坐标的机器人事件与状态。它包含 12 个预选案例，涵盖正确的危险源确认、干扰物排除、空候选与低置信度处理。重复相同输入会产生逐字节一致的事件、日志与 GIF 输出。该可视化是确定性的接口演示，而不是一条连续轨迹。
+接口与状态机分镜把有序检测结果转换为不带坐标的机器人事件与状态。它包含 12 个预选案例，涵盖正确的危险源确认、干扰物排除、空候选与低置信度处理。重复相同输入会产生逐字节一致的事件、日志与 GIF 输出。该可视化是确定性的接口演示，而不是一条连续轨迹。
 
-![Level A 机器人接口回放](figures/level_a_replay_overview.png)
+![机器人接口与状态机回放](figures/level_a_replay_overview.png)
 
-Level B 图像展示 RGB-D 反投影与时序确认。四份规范输出产物在两次回放之间逐字节一致。一个危险源被匹配、一个被漏检，且未报告虚假危险源；技术得分为 23/37。被匹配位置的误差 0.1238 m 依赖 Gazebo 位姿真值，因此它证明的是内部调试链路的一致性，而不是自主定位精度。
+空间调试图像展示 RGB-D 反投影与时序确认。四份规范输出产物在两次回放之间逐字节一致。一个危险源被匹配、一个被漏检，且未报告虚假危险源；技术得分为 23/37。被匹配位置的误差 0.1238 m 依赖 Gazebo 位姿真值，因此它证明的是内部调试链路的一致性，而不是自主定位精度。
 
-![Level B Gazebo 位姿真值回放](figures/level_b_pose_oracle_overview.png)
+![使用 Gazebo 位姿真值的 RGB-D 空间调试回放](figures/level_b_pose_oracle_overview.png)
 
 ### 4.5 结果讨论
 
@@ -197,23 +197,23 @@ https://github.com/s-max-oss/llm-course-labs/tree/main/final_project
 
 提交的期末项目目录包含 `configs`、`scripts`、`src`、`tests`、数据清单、封印的实验汇总、图表与操作手册。大型虚拟环境与缓存目录已排除。RF-DETR 检查点以 SHA-256 标识，模型与运行时版本均已记录。数据源路径仅保存在未提交的本地配置文件中。
 
-完整研究目录可用一条命令检查：`powershell -ExecutionPolicy Bypass -File scripts/run_checks.ps1`。最终运行报告 `Ran 87 tests` 与 `OK`。课程压缩包省略了约 677 MB 的机器人 Git 历史包与部署 tar，但保留了它们的清单、哈希、补丁、更正记录与回放输出。因此完整的 Level B 封印必须在原始研究目录中重做。
+完整研究目录可用一条命令检查：`powershell -ExecutionPolicy Bypass -File scripts/run_checks.ps1`。最终运行报告 `Ran 87 tests` 与 `OK`。课程压缩包省略了约 677 MB 的机器人 Git 历史包与部署 tar，但保留了它们的清单、哈希、补丁、更正记录与回放输出。因此完整的 RGB-D 空间调试封印必须在原始研究目录中重做。
 
 可复现性有两项明确的限制。RF-DETR 的训练图像溯源缺失，因此该检查点不能被称为无泄漏。GitHub 链接指向课程仓库；除非在记录的修订版本上发布同一个期末项目目录，否则提交的压缩包仍是本报告的权威快照。
 
 ## 6 系统演示 System Demonstration
 
-演示按证据级别组织，而不是用一段打磨过的视频充当完整机器人任务的证明。Level A 消费冻结的 RF-DETR 预测，发出 `robot_replay_detection_frame_v1` 事件。它校验类别映射、置信度、输入哈希、从 SEARCHING 到 REPORTED 的状态转移以及故障闭锁行为。它有意禁止世界坐标、时序跟踪与在线控制。
+系统演示被组织为一条从二维检测到机器人接口、再到 RGB-D 空间数据链的整体回放，而不是用一段打磨过的视频充当完整机器人任务的证明。首先，冻结的 RF-DETR 预测被转换为 `robot_replay_detection_frame_v1` 事件，用于校验类别映射、置信度、输入哈希、从 SEARCHING 到 REPORTED 的状态转移以及故障闭锁行为；这一环节有意禁止世界坐标、时序跟踪与在线控制。
 
-Level B v2 消费一段同步的 11.17 s RGB-D 记录，含 92 个可用配对，选出 14 帧并处理 28 个检测。它校验深度质量、相机反投影、坐标格式、三次命中确认、结果写入与确定性回放。然而其变换链读取 `/Odometry_gazebo`。权威机器人契约将该话题判定为 Gazebo 位姿真值，因此 G2 真值隔离门必须保持未通过。该演示对调试数据通路有用，但不能报告为符合竞赛要求的自主定位。
+随后，同步的 11.17 s RGB-D 记录把同一条数据链扩展到深度质量、相机反投影、坐标格式、三次命中确认、结果写入与确定性回放。记录包含 92 个可用配对，选出 14 帧并处理 28 个检测。然而其变换链读取 `/Odometry_gazebo`。权威机器人契约将该话题判定为 Gazebo 位姿真值，因此 G2 真值隔离门必须保持未通过。该环节对调试数据通路有用，但不能报告为符合竞赛要求的自主定位。
 
-| 证据级别 | 已验证能力 | 不被支持的结论 |
+| 系统回放环节 | 已验证能力 | 不被支持的结论 |
 |---|---|---|
-| Level A | 事件模式、状态机、确定性故障闭锁回放 | 连续轨迹、三维定位、在线控制 |
-| Level B v1 | 同步 RGB-D 的失败证据 | 正式空间结果或完整真值隔离 |
-| Level B v2 | RGB-D 几何、确认、输出格式、回放确定性 | 自主位姿、竞赛合规、完整建筑搜索 |
+| 接口与状态机回放 | 事件模式、状态机、确定性故障闭锁回放 | 连续轨迹、三维定位、在线控制 |
+| RGB-D 数据链初始回放 | 同步 RGB-D 的失败证据 | 正式空间结果或完整真值隔离 |
+| RGB-D 空间调试回放 | RGB-D 几何、确认、输出格式、回放确定性 | 自主位姿、竞赛合规、完整建筑搜索 |
 
-![实验结论与证据等级](figures/evidence_boundary_map_zh.png)
+![实验结论与系统验证边界](figures/evidence_boundary_map_zh.png)
 
 提交包中的两段 GIF 直接展示接口行为。它们配有清单与校验器，使读者能区分视觉解释与封印结果。这对应竞赛给出的教训：过程证据必须能追溯到确切的输入、状态与输出，而不能由一张最终截图推断。
 
@@ -229,7 +229,7 @@ RF-DETR 的高基线也改变了复核器的价值。被路由的区域里，候
 
 主要优势是证据纪律。数据划分、任务队列、输出模式、候选字符串、融合规则、停止条件与哈希都被冻结并独立重算。负结果与未通过的门限保留在最终叙述中。报告还把一段真实的竞赛工作流与一个有界的课程问题连接起来，同时不宣称课程实验完成了竞赛。
 
-局限是实质性的。历史种子只有五个。99 张图像因重复风险被隔离，但这无法建立检测器的训练—测试分离。117 帧缺少标签文件，不能算作经过严格人工核验的负例。B2 使用真值框裁剪。B1 已观测过锁定种子。级联只在开发种子上运行。CPU 时延不能代表 GPU 或机载运行速度。Level B 使用仿真器位姿真值。这些条件把结论限制在受测产物与协议之内。
+局限是实质性的。历史种子只有五个。99 张图像因重复风险被隔离，但这无法建立检测器的训练—测试分离。117 帧缺少标签文件，不能算作经过严格人工核验的负例。B2 使用真值框裁剪。B1 已观测过锁定种子。级联只在开发种子上运行。CPU 时延不能代表 GPU 或机载运行速度。RGB-D 空间调试链路使用仿真器位姿真值。这些条件把结论限制在受测产物与协议之内。
 
 ### 7.3 课程学习反思
 
@@ -241,11 +241,11 @@ RF-DETR 的高基线也改变了复核器的价值。被路由的区域里，候
 
 下一步的优先项是新的可审计数据，而不是更大的 GPU。新的仿真或实景场景应记录种子、房间、相机位姿、目标身份、完整标签与采集溯源。检测器应在有公开训练清单的情况下重训或重选。评估应纳入未见过的布局与严格人工核验的负帧。
 
-对 VLM 而言，值得检验的假设包括：加入显式的“无目标”候选、联合使用整帧与候选区域上下文、引入经过校准的拒答机制，以及训练以检测器出错概率为目标的监督式路由器。多视角融合应当只在单帧复核器于相同停止条件下展现净增益之后才开始。Level B 应先用经过审计的自主位姿链替换 Gazebo 位姿真值，才谈得上重新考虑任何定位或竞赛合规主张。
+对 VLM 而言，值得检验的假设包括：加入显式的“无目标”候选、联合使用整帧与候选区域上下文、引入经过校准的拒答机制，以及训练以检测器出错概率为目标的监督式路由器。多视角融合应当只在单帧复核器于相同停止条件下展现净增益之后才开始。RGB-D 空间调试链路应先用经过审计的自主位姿链替换 Gazebo 位姿真值，才谈得上重新考虑任何定位或竞赛合规主张。
 
 ## 8 结论 Conclusion
 
-本论文把一个具体的四足机器人竞赛问题，转化为一项可审计的视觉与多模态智能课程研究。竞赛流程要求机器人找到红色球形危险源、排除相近的干扰物，并把稳定结果交给定位与任务逻辑。对固定 RF-DETR 检查点进行重复风险控制后的评估，在 401 张历史图像上达到 0.9635 的三分类 Macro-F1 与 0.9892 的危险源召回率，但训练数据溯源缺失使该结果仅限于域内探索。SmolVLM 的自由生成无法通过严格的标签接口。冻结候选打分恢复了完整的输出覆盖率并能识别目标裁剪，但其背景召回率为零。在 24 个真实检测候选上，VLM 复现了每一个 RF-DETR 类别，没有改变任何指标，并额外增加 5.11 s 的 CPU 中位时延。因此，预注册的增益门限终止了级联，仅使用 RF-DETR 仍是推荐的语义检测方案。Level A 验证了事件与状态机接口。Level B 验证了一条 RGB-D 调试通路，但它使用 Gazebo 位姿真值，未通过 G2 隔离要求。最终贡献不是宣称已经完成竞赛所需的完整自主系统，而是给出一份可复现的说明：检测器、VLM 与机器人接口的证据在何处一致、在何处失效，以及系统决策为何由这些证据边界推出。
+本论文把一个具体的四足机器人竞赛问题，转化为一项可审计的视觉与多模态智能课程研究。竞赛流程要求机器人找到红色球形危险源、排除相近的干扰物，并把稳定结果交给定位与任务逻辑。对固定 RF-DETR 检查点进行重复风险控制后的评估，在 401 张历史图像上达到 0.9635 的三分类 Macro-F1 与 0.9892 的危险源召回率，但训练数据溯源缺失使该结果仅限于域内探索。SmolVLM 的自由生成无法通过严格的标签接口。冻结候选打分恢复了完整的输出覆盖率并能识别目标裁剪，但其背景召回率为零。在 24 个真实检测候选上，VLM 复现了每一个 RF-DETR 类别，没有改变任何指标，并额外增加 5.11 s 的 CPU 中位时延。因此，预注册的增益门限终止了级联，仅使用 RF-DETR 仍是推荐的语义检测方案。整体系统回放验证了事件、状态机与 RGB-D 调试数据链，但空间环节使用 Gazebo 位姿真值，未通过 G2 隔离要求。最终贡献不是宣称已经完成竞赛所需的完整自主系统，而是给出一份可复现的说明：检测器、VLM 与机器人接口的证据在何处一致、在何处失效，以及系统决策为何由这些证据边界推出。
 
 ## References 参考文献
 
@@ -283,6 +283,6 @@ GitHub repository: https://github.com/s-max-oss/llm-course-labs/tree/main/final_
 
 ### B 补充证据与主张边界
 
-检测器运行由 `experiments/pilot_v1/rfdetr_run.json` 封印。锁定的 B2 研究由 `experiments/pilot_v1/smolvlm_b2_locked_run.json` 封印。已停止的真实候选级联由 `experiments/pilot_v1/cascade_development_run.json` 封印。Level A 证据位于 `experiments/replay_v1`，Level B v2 证据位于 `experiments/level_b_v2`。
+检测器运行由 `experiments/pilot_v1/rfdetr_run.json` 封印。锁定的 B2 研究由 `experiments/pilot_v1/smolvlm_b2_locked_run.json` 封印。已停止的真实候选级联由 `experiments/pilot_v1/cascade_development_run.json` 封印。为保持与现有代码兼容，接口与状态机回放在产物中沿用 Level A 标识，证据位于 `experiments/replay_v1`；RGB-D 空间调试回放沿用 Level B v2 标识，证据位于 `experiments/level_b_v2`。这些标识仅用于代码与产物追溯，不再作为正文的概念分层。
 
-以下陈述为证据所禁止：无泄漏的检测器泛化、严格的背景负例验证、GPU 实时性能、Level B 自主定位、符合竞赛要求的空间闭合，以及完整的建筑搜索验证。有效的结论更为收窄：在冻结的探索性协议下，仅用 RF-DETR 是推荐的语义检测器；SmolVLM 的结果记录了模型与接口的边界；机器人回放验证了其声明证据级别上的具体契约。
+以下陈述为证据所禁止：无泄漏的检测器泛化、严格的背景负例验证、GPU 实时性能、自主定位、符合竞赛要求的空间闭合，以及完整的建筑搜索验证。有效的结论更为收窄：在冻结的探索性协议下，仅用 RF-DETR 是推荐的语义检测器；SmolVLM 的结果记录了模型与接口的边界；整体系统回放验证了事件、状态机和空间调试数据链上的具体契约。

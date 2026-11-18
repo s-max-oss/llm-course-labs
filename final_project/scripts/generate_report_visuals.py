@@ -76,7 +76,7 @@ def create_research_pipeline():
         ("检测基线", "固定 RF-DETR 检查点\n401 张保留图像", GREEN),
         ("语义复核", "SmolVLM 自由生成\n→ 冻结候选打分", AMBER),
         ("真实级联", "24 个低置信度候选\n预注册融合与停止条件", RED),
-        ("机器人接口", "Level A 接受\nLevel B 仅作调试证据", NAVY),
+        ("系统回放", "接口契约予以接受\n空间链路仅作调试证据", NAVY),
     ]
     boxes = [
         (160, 265, 760, 590), (1000, 265, 1600, 590), (1840, 265, 2440, 590),
@@ -99,21 +99,21 @@ def create_evidence_map():
     width, height = 2600, 1360
     image = Image.new("RGB", (width, height), PAPER)
     draw = ImageDraw.Draw(image)
-    centered(draw, (width / 2, 95), "实验结论与证据等级", font(54, bold=True), NAVY)
+    centered(draw, (width / 2, 95), "实验结论与系统验证边界", font(54, bold=True), NAVY)
     centered(draw, (width / 2, 160), "绿色表示在本研究边界内接受；橙色表示停止；红色表示仅保留为诊断证据", font(28), MUTED)
 
     columns = [190, 505, 1190, 1770, 2070]
-    labels = ["层级", "被检验对象", "关键结果", "判定", "可支持的主张"]
+    labels = ["环节", "被检验对象", "关键结果", "判定", "可支持的主张"]
     for x, label in zip(columns, labels):
         anchor = "mm" if label in ("层级", "判定") else "lm"
         draw.text((x, 270), label, font=font(29, bold=True), fill=NAVY, anchor=anchor)
     draw.line((80, 320, 2520, 320), fill=GRID, width=4)
 
     rows = [
-        (430, "A", "RF-DETR 固定检查点", "Macro-F1 0.9635\n危险源召回率 0.9892", "接受", GREEN, "域内探索性语义检测"),
-        (650, "B", "SmolVLM 真实候选级联", "24 个候选全部复现原类别\n增加 5.11 s CPU 中位时延", "停止", AMBER, "不进入最终决策路径"),
-        (870, "Level A", "事件与状态机回放", "模式、哈希、状态转移\n故障闭锁均可复现", "接受", GREEN, "接口契约与确定性回放"),
-        (1090, "Level B", "RGB-D 几何回放", "几何链可运行，但读取\n/Odometry_gazebo 位姿真值", "诊断", RED, "不可宣称自主定位或竞赛合规"),
+        (430, "语义检测", "RF-DETR 固定检查点", "Macro-F1 0.9635\n危险源召回率 0.9892", "接受", GREEN, "域内探索性语义检测"),
+        (650, "语义复核", "SmolVLM 真实候选级联", "24 个候选全部复现原类别\n增加 5.11 s CPU 中位时延", "停止", AMBER, "不进入最终决策路径"),
+        (870, "接口回放", "事件与状态机回放", "模式、哈希、状态转移\n故障闭锁均可复现", "接受", GREEN, "接口契约与确定性回放"),
+        (1090, "空间回放", "RGB-D 几何回放", "几何链可运行，但读取\n/Odometry_gazebo 位姿真值", "诊断", RED, "不可宣称自主定位或竞赛合规"),
     ]
     for y, level, object_text, result, status, color, claim in rows:
         pill(draw, (80, y - 54, 300, y + 54), level, color, size=27)
@@ -139,4 +139,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
