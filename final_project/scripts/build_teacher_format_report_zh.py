@@ -244,9 +244,9 @@ def render_body(doc: Document, lines: list[str]) -> None:
             continue
         if line.startswith("## "):
             heading_text = line[3:]
+            heading = add_heading(doc, heading_text, 1)
             if heading_text.startswith(("References", "参考文献")):
-                doc.add_page_break()
-            add_heading(doc, heading_text, 1)
+                heading.paragraph_format.page_break_before = True
             index += 1
             continue
         if line.startswith("### "):

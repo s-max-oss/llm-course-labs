@@ -211,7 +211,7 @@ def add_markdown_table(doc: Document, rows: list[list[str]]) -> None:
             cell.vertical_alignment = WD_ALIGN_VERTICAL.CENTER
             set_cell_margins(cell)
             if row_index == 0:
-                set_cell_shading(cell, "D9EAF7")
+                set_cell_shading(cell, "244A67")
             elif row_index % 2 == 0:
                 set_cell_shading(cell, "F5F8FA")
             paragraph = cell.paragraphs[0]
@@ -221,6 +221,9 @@ def add_markdown_table(doc: Document, rows: list[list[str]]) -> None:
             paragraph.paragraph_format.line_spacing = 1.15
             paragraph.paragraph_format.space_after = Pt(0)
             add_text_runs(paragraph, value, size=10.5, bold=row_index == 0)
+            if row_index == 0:
+                for run in paragraph.runs:
+                    run.font.color.rgb = RGBColor(255, 255, 255)
     doc.add_paragraph().paragraph_format.space_after = Pt(2)
 
 
